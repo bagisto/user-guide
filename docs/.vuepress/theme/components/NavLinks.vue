@@ -33,8 +33,6 @@
 
     <div class="nav-item" v-if="$route.path.split('/')[1] !== ''">
       <select v-model="version" @change="changeVersion">
-        <option value="1.x">1.x</option>
-        <option value="1.5.x">1.5.x</option>
         <option value="2.x">2.x</option>
       </select>
     </div>
@@ -58,12 +56,6 @@ export default {
     return {
       version: '2.x',
     };
-  },
-
-  mounted() {
-    let currentPath = this.$route.path.split('/');
-
-    this.version = currentPath[1];
   },
 
   computed: {
