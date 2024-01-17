@@ -5,11 +5,11 @@ Configurable products are items or services that offer customers the flexibility
 This customization allows for a diverse range of variations without the need for creating unique products. Configurable products are designed to meet individual needs, enhancing customer satisfaction and providing a tailored experience in [Bagisto](https://bagisto.com/en/).
 
 ### How to Create a Configurable Product in Bagisto 2.0
-1. **Add Product:** Click on **Catalog >>** select **Configurable** as Product Type >> select **Family** >> enter SKU and then save the product as shown in the below image.
+1. **Add Product:** Click on **Catalog >>** select **Configurable** as Product Type >> select **Family** >> enter **SKU** and then **Save the Product** as shown in the below image.
 
  ![Configurable](../../assets/2.x/images/configurable-product/configurable.png)
 
-   After you Save the Product, you get an option to select the Color & Size. In case you want some other attribute in your configurable product, you need to create an attribute first and then save the product as shown in the below image.
+   After you Save the Product, you get an option to select the **Color & Size**. In case you want some other attribute in your configurable product, you need to create an attribute first and then save the product as shown in the below image.
 
    ![Configurable](../../assets/2.x/images/configurable-product/configurableAttributes.png)
 
@@ -54,11 +54,13 @@ Add the product images, click on **Add Images**. You can add multiple images for
 
    ![Configurable](../../assets/2.x/images/configurable-product/image.png)
 
-Now you will be able to see the Variations right below the video section as shown below. You can simply Edit each product as we have created according to the Color and Size.
+### Variations
+
+Now you will be able to see the **Variations** right below the video section as shown below. You can simply Edit each product as we have created according to the Color and Size.
 
    ![Configurable](../../assets/2.x/images/configurable-product/variations.png)
 
-After all Variations are created, finally, Save the Product.
+After all Variations are created, finally, **Save the Product**.
 
 ### Front End
 The product will be visible as given below on the front end.

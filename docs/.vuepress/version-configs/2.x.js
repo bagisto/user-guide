@@ -15,6 +15,14 @@ function setVersionPrefix(children) {
 /* module export */
 module.exports = [
     {
+        title: 'Introduction',
+        path: setVersionPrefix('introduction'),
+        collapsable: true,
+        children: setVersionPrefix([   
+            ['introduction/bagisto', 'Getting Started'],
+        ])
+    }, 
+    {
         title: 'Product Types',
         path: setVersionPrefix('products'),
         collapsable: true,

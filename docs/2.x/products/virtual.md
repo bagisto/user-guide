@@ -6,8 +6,8 @@ A virtual product, unlike a downloadable product, is not something that can be d
 
 ### Steps To Create Virtual Product In Bagisto 2.0
 
-1. Go to Catalog >> Products >> Select Virtual under Product Type select Family.
-2. Enter SKU and save the product, as shown in the image below.
+1. Go to **Catalog >> Products >> Select Virtual** under Product Type select **Family**.
+2. Enter **SKU** and **Save the Product**, as shown in the image below.
 
     ![Virtual](../../assets/2.x/images/virtual-product/virtual.png)
 
@@ -16,7 +16,8 @@ After clicking on the Save Product button, you'll be redirected to the next page
 ### General Settings
 
 - **Name:** Enter the name of the product.
-- **URL Key:** This will be the end of the URL, e.g., http://bagisto.test.com/products/fitness-membership (fitness-membership is a URL key).
+- **URL Key:** This will be the end of the URL, 
+    e.g., http://bagisto.test.com/products/fitness-membership (fitness-membership is a URL key).
 - **Tax Category:** Select the tax category from the dropdown list.
 
     ![editProduct](../../assets/2.x/images/virtual-product/editProduct.png)
@@ -64,7 +65,7 @@ Fill in the following fields under meta description for improved searchability o
 
 ### Images
 
-Add product images by clicking on Add Images. Multiple images can be added.
+Add product images by clicking on **Add Images**. Multiple images can be added.
 
  ![image](../../assets/2.x/images/virtual-product/image.png)
 
@@ -81,6 +82,8 @@ Insert the price, cost, and special price. Set the special price date for displa
 ![price](../../assets/2.x/images/virtual-product/price.png)
 
 ### Product At Front End
+
+The virtual product will be visible at the front end.
 
 ![output](../../assets/2.x/images/virtual-product/output.png)
 

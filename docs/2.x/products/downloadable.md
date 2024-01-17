@@ -4,16 +4,20 @@ Today, in this document, we will explore "How to Create Downloadable Product in 
 
 ### Steps to Create a Downloadable Product in Bagisto 2.0
 
-1. On the Bagisto admin dashboard, go to Catalog Section >> Products >> select Downloadable under the Product Type.
-2. Select Attribute Family.
-3. Enter SKU (Stock Keeping Unit) of the product, unique to every product.
-4. Save the Product, and you will be redirected to the next page with general settings.
+1. On the Bagisto admin dashboard, go to **Catalog Section >> Products >> select Downloadable** under the Product Type.
+2. Select **Attribute Family**.
+3. Enter **SKU** (Stock Keeping Unit) of the product, unique to every product.
+4. Now **Save the Product**, and you will be redirected to the next page with general settings.
+
+![downloadable](../../assets/2.x/images/downloadable-product/downloadable.png)
 
 ### General Settings
 
 - **Name:** Enter the name of the product.
 - **URL Key:** This will be the end of the URL, e.g., http://bagisto.test.com/products/bagisto-e-book (bagisto-e-book is the URL key).
 - **Tax Category:** Select the Tax Category from the drop-down list.
+
+![editProduct](../../assets/2.x/images/downloadable-product/editProduct.png)
 
 #### New
 
@@ -31,12 +35,16 @@ Today, in this document, we will explore "How to Create Downloadable Product in 
 
 - Enable the toggle button to enable the product on your eCommerce store.
 
+![toggleButtons](../../assets/2.x/images/downloadable-product/toggleButtons.png)
+
 ### Description
 
 Fill in the following fields under the description:
 
 - **Short Description:** Enter a brief description of the product feature.
 - **Description:** Mention your product in detail.
+
+![description](../../assets/2.x/images/downloadable-product/description.png)
 
 ### Meta Description
 
@@ -46,13 +54,19 @@ Fill in the following fields under meta description for improved searchability o
 - **Meta Keyword:** Provide meta keywords for specific search engine optimization.
 - **Meta Description:** Enter a description for better search engine listings.
 
+![metaDescription](../../assets/2.x/images/downloadable-product/metaDescription.png)
+
 ### Price
 
 Insert the price, cost, and special price. Set the special price date for which the special price will be shown on the website.
 
+![price](../../assets/2.x/images/downloadable-product/price.png)
+
 ### Images
 
 To add product images, click on Add Images. You can add multiple images for your product.
+
+![image](../../assets/2.x/images/downloadable-product/image.png)
 
 ### Downloadable Information
 
@@ -66,12 +80,17 @@ Here, enter the downloadable information about your product:
 - **Sample:** Insert URL/upload file to give a free sample.
 - **Download Allow:** Specify the maximum number of downloads. Enter "0" for unlimited downloads.
 
+![downlodableInfo](../../assets/2.x/images/downloadable-product/downlodableInfo.png)
+
 ### Samples
 
 If you want to provide a free sample of your product, add a new link from the Samples section below the Links section. Enter the title and attach the sample file.
+
+![link](../../assets/2.x/images/downloadable-product/link.png)
 
 ### Product At Front End
 
 The downloadable product will be visible at the front end.
 
-Thanks for reading this blog. Please comment below if you have any questions. Also, you can hire Laravel Developers for your custom Laravel projects. If you encounter any issues, feel free to raise a ticket at our Support Portal.
+![output](../../assets/2.x/images/downloadable-product/output.png)
+

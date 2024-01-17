@@ -9,7 +9,7 @@ Therefore, any service, such as downloadable items, does not count as a simple p
 
     ![Simple](../../assets/2.x/images/simple-product/simple.png)
 
-Now Save the Product, and you will get redirected to the Edit product page as shown below.
+Now **Save the Product**, and you will get redirected to the Edit product page as shown below.
 
 ### General Attributes
 Below is the list of fields you need to fill under General Attributes.
@@ -78,7 +78,7 @@ Insert the quantity of the product that is there in your inventory. By default, 
 
 ![inventories](../../assets/2.x/images/simple-product/inventories.png)
 
-At last, Save the Product.
+At last, **Save the Product**.
 
 ### Front End
 The product will be visible as given below on the front end.

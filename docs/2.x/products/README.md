@@ -9,7 +9,7 @@
 - Leader
 - User
 
-Inventory Management supports inventory and order management for all product types in Bagisto: simple, configurable, virtual, downloadable, bundle, and grouped. Options and requirements may differ per product type for sources, stocks, and shipping.
+Inventory Management supports inventory and order management for all product types in [Bagisto](https://bagisto.com/en/): simple, configurable, virtual, downloadable, bundle, and grouped. Options and requirements may differ per product type for sources, stocks, and shipping.
 
 Single-source merchants create and update product settings and quantities without requiring additional updates. All created and newly imported products automatically assign to the Default Source and Default Stock, immediately available to customers if enabled and In-Stock.
 

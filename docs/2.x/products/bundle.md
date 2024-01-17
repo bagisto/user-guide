@@ -4,15 +4,15 @@ Today's document will guide you on how to create bundle products in Bagisto. Bun
 
 Each item in a bundle product can be based on one of the following product types:
 
-- Simple Product
-- Variants of Configurable Products
+- [Simple Product](https://bagisto.com/en/how-to-create-simple-product-in-bagisto/)
+- [Configurable Products](https://bagisto.com/en/how-to-create-configurable-product-in-bagisto/)
 
 ### Steps To Create A Bundle Product In Bagisto 2.0
 
-1. On the Bagisto admin dashboard, go to Catalog Section >> Products >> select Bundle under the Product Type.
-2. Select Attribute Family.
-3. Enter the SKU (Stock Keeping Unit) for the product (unique to every product).
-4. Click the Save Button.
+1. On the Bagisto admin dashboard, go to **Catalog Section >> Products >> select Bundle** under the Product Type.
+2. Select **Attribute Family**.
+3. Enter the **SKU** (Stock Keeping Unit) for the product (unique to every product).
+4. Click the **Save Button**.
 
     ![Bundle](../../assets/2.x/images/bundle-product/bundle.png)
 
@@ -69,7 +69,7 @@ Fill in the following fields under meta description for improved searchability o
 
 ### Images
 
-To add product images, click on Add Images. You can add multiple images for your product.
+To add product images, click on **Add Images**. You can add multiple images for your product.
 
 ![image](../../assets/2.x/images/bundle-product/image.png)
 
@@ -77,9 +77,9 @@ To add product images, click on Add Images. You can add multiple images for your
 
 Click on Add Option and:
 
-- Enter the Option Title.
-- Set the Input Type (Select, Radio buttons, Checkbox, Multi-Select).
-- Mark the Required checkbox if the field is mandatory.
+- Enter the **Option Title**.
+- Set the **Input Type** (Select, Radio buttons, Checkbox, Multi-Select).
+- Mark the **Required** checkbox if the field is mandatory.
 
 ![options](../../assets/2.x/images/bundle-product/options.png)
 
