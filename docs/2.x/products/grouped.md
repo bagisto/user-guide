@@ -42,12 +42,6 @@ After clicking on the Save Product button, you will be redirected to the next pa
 
 ![toggleButtons](../../assets/2.x/images/grouped-product/toggleButtons.png)
 
-### Price
-
-- Insert the price, cost, and special price. Set the special price date for which the special price will be shown on the website.
-
-![price](../../assets/2.x/images/grouped-product/price.png)
-
 ### Description
 
 Fill in the following fields under the description:

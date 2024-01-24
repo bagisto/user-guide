@@ -7,5 +7,7 @@ actionLink: /2.x/products/
 features:
 - title: Product Types
   details: Learn how to create Products for Bagisto.
+- title: Category
+  details: Learn how to create Category for Bagisto.  
 footer: Copyright © 2024 Bagisto
 ---
