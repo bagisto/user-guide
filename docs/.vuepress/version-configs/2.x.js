@@ -34,5 +34,14 @@ module.exports = [
             ['products/grouped', 'Grouped Product'],
             ['products/downloadable', 'Downloadable Product'],
         ])
+    },
+    {
+        title: 'Category',
+        path: setVersionPrefix('category'),
+        collapsable: true,
+        children: setVersionPrefix([
+            ['category/overview', 'Category Overview'],
+            ['category/createCategory', 'Create Category'],
+        ])
     }
 ]
