@@ -48,5 +48,16 @@ module.exports = [
             ['attribute/attribute-family', 'Attribute Family'],
             ['attribute/attribute-input', 'Attribute Input Type'],
         ])
+    },
+    {
+        title: 'Orders',
+        path: setVersionPrefix('orders'),
+        collapsable: true,
+        children: setVersionPrefix([
+            ['orders/create-order', 'Orders'],
+            ['orders/create-invoice', 'Invoice'],
+            ['orders/create-shipment', 'Shipment'],
+            ['orders/refunds', 'Refunds'],
+        ])
     }
 ]

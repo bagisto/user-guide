@@ -1,4 +1,4 @@
-# Introduction
+# Attribute
 
 An *Attribute* is a specification or characteristic of a product, for example, Color, Size, and Pattern are attributes of a T-Shirt. You can also create many attributes for a single product. Product attributes play a major role in the buying decision of the customer.
 Attributes determine the type of input control that is used for product options, and provide additional information for product pages.They are also used as search parameters and criteria for layered navigation, product comparison reports, and promotions. You can create as many **attributes** and **attribute families** as necessary to describe the products in your catalog in Bagisto.
