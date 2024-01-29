@@ -10,6 +10,6 @@ features:
 - title: Category
   details: Learn how to create Category for Bagisto.  
 - title: Attribute
-  details: Learn how to create Attribute for Bagisto.  
+  details: Learn how to create Product Attribute and Attribute Families for Bagisto.  
 footer: Copyright © 2024 Bagisto
 ---
