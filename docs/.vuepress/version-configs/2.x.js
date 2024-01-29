@@ -37,5 +37,16 @@ module.exports = [
             ['category/overview', 'Category Overview'],
             ['category/create-category', 'Create Category'],
         ])
+    },
+    {
+        title: 'Attributes',
+        path: setVersionPrefix('attribute'),
+        collapsable: true,
+        children: setVersionPrefix([
+            ['attribute/overview', 'Attribute Overview'],
+            ['attribute/product-attribute', 'Create Product Attribute'],
+            ['attribute/attribute-family', 'Attribute Family'],
+            ['attribute/attribute-input', 'Attribute Input Type'],
+        ])
     }
 ]

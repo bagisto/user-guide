@@ -9,5 +9,7 @@ features:
   details: Learn how to create Products for Bagisto.
 - title: Category
   details: Learn how to create Category for Bagisto.  
+- title: Attribute
+  details: Learn how to create Attribute for Bagisto.  
 footer: Copyright © 2024 Bagisto
 ---
