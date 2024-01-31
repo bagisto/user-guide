@@ -59,5 +59,15 @@ module.exports = [
             ['orders/create-shipment', 'Shipment'],
             ['orders/refunds', 'Refunds'],
         ])
+    },
+    {
+        title: 'Customers',
+        path: setVersionPrefix('customer'),
+        collapsable: true,
+        children: setVersionPrefix([
+            ['customer/create-customer', 'Customers'],
+            ['customer/customer-groups', 'Groups'],
+            ['customer/customer-reviews', 'Reviews'],
+        ])
     }
 ]
