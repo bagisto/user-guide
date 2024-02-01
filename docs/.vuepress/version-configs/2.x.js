@@ -14,7 +14,7 @@ function setVersionPrefix(children) {
 
 /* module export */
 module.exports = [
-    [setVersionPrefix('introduction/getting-started'), 'Introduction'],
+    [setVersionPrefix('introduction/introductions'), 'Introduction'],
 
     {
         title: 'Product Types',
@@ -69,5 +69,18 @@ module.exports = [
             ['customer/customer-groups', 'Groups'],
             ['customer/customer-reviews', 'Reviews'],
         ])
-    }
+    },
+
+    [setVersionPrefix('cms/cms-page'), 'CMS'],
+
+    {
+        title: 'Marketing',
+        path: setVersionPrefix('marketing'),
+        collapsable: true,
+        children: setVersionPrefix([
+            ['marketing/promotions', 'Promotions'],
+            ['marketing/communications', 'Communications'],
+            ['marketing/sitemaps', 'Sitemaps'],
+        ])
+    }  
 ]
