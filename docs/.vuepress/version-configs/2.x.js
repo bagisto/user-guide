@@ -82,5 +82,21 @@ module.exports = [
             ['marketing/communications', 'Communications'],
             ['marketing/sitemaps', 'Sitemaps'],
         ])
+    }, 
+    {
+        title: 'Settings',
+        path: setVersionPrefix('settings'),
+        collapsable: true,
+        children: setVersionPrefix([
+            ['settings/locals', 'Locals'],
+            ['settings/currencies', 'Currencies'],
+            ['settings/exchange-rates', 'Exchange Rates'],
+            ['settings/inventory-source', 'Inventory Source'],
+            ['settings/channels', 'Channels'],
+            ['settings/users', 'Users'],
+            ['settings/roles', 'Roles'],
+            ['settings/themes', 'Themes'],
+            ['settings/taxes', 'Taxes'],
+        ])
     }  
 ]
