@@ -98,5 +98,7 @@ module.exports = [
             ['settings/themes', 'Themes'],
             ['settings/taxes', 'Taxes'],
         ])
-    }  
+    },
+
+    [setVersionPrefix('configure/configurations'), 'Configure'],  
 ]
