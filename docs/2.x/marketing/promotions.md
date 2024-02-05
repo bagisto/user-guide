@@ -28,7 +28,7 @@ By using it, you can set one or multiple discounts on the same product. Follow t
 
 **6.Coupon Type:-** Select coupon type with or without the coupon. If you want to cart rule applied on all the cart Set “No Coupon“.
 
-If you want to use coupon then select “Specific coupon” and do the entry in the following field.
+### If you want to use coupon then select “Specific coupon” and do the entry in the following field.
 
 **1.Auto Generate Coupon:-** Set  Yes/No, If you select No then do the following step. if you  Set “Yes” then generate the automatic coupon.
 

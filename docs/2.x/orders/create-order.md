@@ -20,7 +20,7 @@ When a customer places an order from the front end, on the admin panel, the orde
 
  ![Billing Address](../../assets/2.x/images/orders/billingAddress.png)
 
-**Step 4**: After confirming add the shipping method, and payment method and click on Place Order as shown in the below image.
+**Step 4**: After confirming add the shipping method, and payment method and click on **Place Order** as shown in the below image.
 
  ![Cart Summary](../../assets/2.x/images/orders/cartSummary.png)
 

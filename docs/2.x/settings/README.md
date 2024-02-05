@@ -2,7 +2,7 @@
 
 You can easily manage your almost Admin panel from the Setting menu.
 
-### Locals
+### Locales
 
 To display your website in a different language you need to set the Locale in bagisto. Having more than one language for your website can improve the shopping experience for your customers.
 

@@ -12,4 +12,4 @@ Itemized commercial document that records the products or services delivered to 
 
   ![Invoice Submit](../../assets/2.x/images/orders/invoiceSubmit.png)
 
-By following the above steps, you can easily create a Invoice in Bagisto.
+By following the above steps, you can easily create a **Invoice** in Bagisto.

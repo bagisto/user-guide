@@ -14,11 +14,11 @@ With the help of CMS(content management system), you can create a new page, edit
 
  ![General](../../assets/2.x/images/cms/general.png)
 
-**Step 3:** Add the **Content** of the CMS page under **Descrition**.
+**Step 3:** Add the **Content** of the CMS page under **Description**.
 
  ![Description](../../assets/2.x/images/cms/description.png)
 
-**Step 4:** Add the below fiels under **SEO**
+**Step 4:** Add the below fields under **SEO**
 
 1. **Meta Description**
 Enter the description so that **CMS Page** can easily appear in search engine listings.

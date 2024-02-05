@@ -20,5 +20,5 @@ And now to check the results you can go to **Sales >> Orders** will able to see 
 
   ![Order Grid](../../assets/2.x/images/orders/orderGrid.png)
 
-By the above steps you can easily Refund in Bagisto.  
+By the above steps you can easily **Refund** in Bagisto.  
 

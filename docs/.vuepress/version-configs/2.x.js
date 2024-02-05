@@ -88,7 +88,7 @@ module.exports = [
         path: setVersionPrefix('settings'),
         collapsable: true,
         children: setVersionPrefix([
-            ['settings/locals', 'Locals'],
+            ['settings/locale', 'Locales'],
             ['settings/currencies', 'Currencies'],
             ['settings/exchange-rates', 'Exchange Rates'],
             ['settings/inventory-source', 'Inventory Source'],
