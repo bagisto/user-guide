@@ -190,6 +190,8 @@ After click on **Save Configuration** button.
 
 ## Rich Snippets
 
+Rich Snippets (also known as “Rich Results”) are normal Google search results with additional data displayed. This extra data is usually pulled from Structured Data found in a page's HTML.
+
 Set products and categories configurations.To add go Admin Paneland click on **Configure >> Rich Snippets** 
 
 ### Products
