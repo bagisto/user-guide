@@ -118,7 +118,7 @@ After click on **Save Configuration** button.
 
 Storefront is the customer-facing interface of an online shop, showcasing products, categories, and navigation for a seamless shopping experience.
 
-To add go to Admin Panel and click on **Configure >> Products**
+To add go to Admin Panel and click on **Configure >> Products >> Storefront**
 
 **1.Search Mode:** Select the search mode by **Dropdown or Elasticsearch** as per your requirements.
 
@@ -160,7 +160,7 @@ After click on **Save Configuration** button.
 
 Evaluation or assessment of something, often involving opinions and feedback.
 
-To add go to Admin Panel and click on **Configure >> Products**
+To add go to Admin Panel and click on **Configure >> Products >> Review**
 
  ![Image](../../assets/2.x/images/configure/image.png)
 
@@ -172,7 +172,7 @@ Characteristic or property that defines an object, influencing its behavior, app
 
 You can easily allow **Image and File** upload size (in KB) from here.
 
-To add go to Admin Panel and click on **Configure >> Products**
+To add go to Admin Panel and click on **Configure >> Products >> Attribute**
 
  ![Attribute](../../assets/2.x/images/configure/attribute.png)
 
@@ -182,17 +182,23 @@ After click on **Save Configuration** button.
 
 Sharing things from a website with friends on social media platforms like Facebook, Twitter, or Instagram.
 
-To add go to Admin Panel and click on **Configure >> Social Share**
+To add go to Admin Panel and click on **Configure >> Products >> Social Share**
 
  ![Social Share](../../assets/2.x/images/configure/socialShare.png)
 
 After click on **Save Configuration** button. 
 
+### Frontend:-
+
+All the icons that you just enabled from the Admin Panel are created as shown in the below image.
+
+![Social Share Output](../../assets/2.x/images/configure/socialOutput.png)
+
 ## Rich Snippets
 
 Rich Snippets (also known as “Rich Results”) are normal Google search results with additional data displayed. This extra data is usually pulled from Structured Data found in a page's HTML.
 
-Set products and categories configurations.To add go Admin Paneland click on **Configure >> Rich Snippets** 
+Set products and categories configurations.To add go Admin Panel and click on **Configure >> Rich Snippets** 
 
 ### Products
 
