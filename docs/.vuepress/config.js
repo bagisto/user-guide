@@ -25,7 +25,8 @@ module.exports = {
             { text: 'Community Forum', link: 'https://forums.bagisto.com/' }
         ],
         sidebar: {
-            '/2.x/': require('./version-configs/2.x')
+            '/2.0/': require('./version-configs/2.0'),
+            '/2.1.0/': require('./version-configs/2.1.0')
         }
     },
     markdown: {

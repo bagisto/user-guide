@@ -33,7 +33,8 @@
 
     <div class="nav-item" v-if="$route.path.split('/')[1] !== ''">
       <select v-model="version" @change="changeVersion">
-        <option value="2.x">2.x</option>
+        <option value="2.0">2.0</option>
+        <option value="2.1.0">2.1.0</option>
       </select>
     </div>
   </nav>
@@ -54,10 +55,10 @@ export default {
 
   data() {
     return {
-      version: '2.x',
+      version: '2.0',
     };
   },
-
+  
   computed: {
     userNav () {
       return this.$themeLocaleConfig.nav || this.$site.themeConfig.nav || []
