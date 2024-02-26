@@ -4,6 +4,28 @@ Generally, a configuration is the arrangement - or the process of making the arr
 
 How the parts of something, or a group of things, are arranged.
 
+## Magic AI
+
+To add Magic AI go to Admin Panel and go to **Configure >> General >> Magic AI** as shown in the below image.
+
+ ![Magic](../../assets/2.1.0/images/configure/magic.png)
+
+1) If you want to enable it for the **Content Generation** kindly enable it from here.
+
+ ![Magic Content](../../assets/2.1.0/images/configure/content.png)
+
+2) Kindly Enable it for the **Image Generation** from here.
+
+![Magic Image](../../assets/2.1.0/images/configure/imageMagic.png)
+
+3) For **Review Translation** add you model and Enable it as shown in the below image.
+
+![Magic Review](../../assets/2.1.0/images/configure/reviewMagic.png)
+
+4) For the **Personalized Checkout Message** Enable it and add the model.
+
+![Magic Personalized Checkout](../../assets/2.1.0/images/configure/personalizedCheckout.png)
+
 ## Weight Unit
 
 **1)** To add Weight Unit go to the Admin panel and go to **Configure >> General**.Next, select the **Weight Unit** from dropdown **lbs or kgs** according to your requirement and click on the **Save Configuration** button as shown in the below image.

@@ -5,11 +5,17 @@ Magical AI is the ultimate tool for professionals in diverse fields looking to e
 
 Bagisto 2.1.0 integrates Magic AI, using artificial intelligence to simplify e-commerce management.
 
+You can manage Magic AI configurations from [here](http://192.168.25.130:8080/2.1.0/configure/configurations.html#magic-ai)
+
 ## Content Generation
 
 With Magic AI, store owners can effortlessly generate engaging **Products, Categories, and CMS** content. 
 
-![Magic AI](../../assets/2.1.0/images/magic-ai/configuration.png)
+### In Bagisto 2.1.0 it provides Native Support to various LLMs.
+
+**A) For Content** – OpenAI gpt-3.5-turbo, Llama 2, Mistral, Dolphin Phi, Phi-2, Starling, Llama 2 Uncensored, Llama 2 13B, Llama 2 70B, Orca Mini, Vicuna, LLaVA.
+
+![Magic Content](../../assets/2.1.0/images/magic-ai/content.png)
 
 Say goodbye to time-consuming manual content creation as Magic AI crafts compelling and unique descriptions, saving you valuable time and effort.
 
@@ -17,7 +23,9 @@ Say goodbye to time-consuming manual content creation as Magic AI crafts compell
 
 Empower your store’s visual appeal with Magic AI’s image-generation capabilities. 
 
-![Magic Image Generation](../../assets/2.1.0/images/magic-ai/imageGeneration.png) 
+**B) For Images** – Dall.E 2 , Dall.E 3
+
+![Magic image](../../assets/2.1.0/images/magic-ai/image-ai.png)
 
 Admins can now generate stunning product images, ensuring a visually appealing and consistent presentation across the entire product catalogue.
 
