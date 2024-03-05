@@ -1,4 +1,4 @@
-# Cusetomer Groups
+# Customer Groups
 
 Customer groups allow you to organize your customers, give them discounts, and restrict access to specific products or categories. With Customer Groups, you can: set up a loyalty group — give access to specific products or categories at discounted rates to select customers.
 
