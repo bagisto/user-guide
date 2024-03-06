@@ -14,17 +14,21 @@ Bulk import is a feature that allows users to import large quantities of data in
 
 **2) File** – Choose the file in your desired format (CSV, XLS, XLSX), and kindly make sure you have all the required fields in the file.
 
-**3) Image Directory Path** – Use relative path to /project-root/storage/import/app, e.g. product-images, import-images.
+**Note** - While Import the product data **Simple, Configurable, Virtual, Bundled & Grouped product types** can be imported except **Downloadable products**.
 
-**4) Action** – Kindly select from the settings configuration that you want to Create/Update or Delete the records.
+**3) Download Sample** – You can also download the sample files of types (Products, Customers, Tax Rates). Kindly make sure the file you are uploading is similar to this sample file.
 
-**5) Validation Strategy** – This unique feature allows you to **Skip the Errors** or to **Stop on Errors** while Importing the data.
+**4) Image Directory Path** – Use relative path to /project-root/storage/import/app, e.g. product-images, import-images.
 
-**6) Allowed Errors** – This feature allows you how much quantity of errors will get neglected while importing the data.
+**5) Action** – Kindly select from the settings configuration that you want to Create/Update or Delete the records.
 
-**7) Field Separator** – This feature allows you to set the fields.
+**6) Validation Strategy** – This unique feature allows you to **Skip the Errors** or to **Stop on Errors** while Importing the data.
 
-**8) Process in Queue** – This feature allows you to run your import process in a queue.
+**7) Allowed Errors** – This feature allows you how much quantity of errors will get neglected while importing the data.
+
+**8) Field Separator** – This feature allows you to set the fields.
+
+**9) Process in Queue** – This feature allows you to run your import process in a queue.
 
 So now click on the **Save Import** Button.
 
