@@ -60,7 +60,7 @@ Now click on the **Save Search Term** button.
 
 **Step 3:** A new search field by the name of **Adorable** is created successfully as shown in the below image.
 
- ![Search Grid](../../assets/2.1.0/images/marketing/searchGrid.png)
+ ![Search Grid](../../assets/2.1.0/images/marketing/searchGrids.png)
 
 **Step 4:** Frontend
 
