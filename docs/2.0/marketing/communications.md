@@ -93,3 +93,31 @@ Now you will able to see the new **Campaign** as shown below.
 ![Campaign Output](../../assets/2.0/images/marketing/campaignOutput.png)
 
 By this, you can easily create a **Campaigns** in Bagisto.
+
+## Newsletter Subscriptions
+
+Bagisto newsletter subscription is an opportunity for the store owners to let their customers receive an interesting newsletter from your Bagisto website.
+
+Email marketing is one of the most powerful tools for your website.
+
+This feature allows you to communicate with your customers in bulk about upcoming offers of your stores such as Black Friday sales, Christmas sales, and New Year offers.
+
+### Admin Configuration
+
+**Step 1)** Firstly the admin can navigate to Configue >> Customer >> Settings
+
+![Newsletter Settings](../../assets/2.0/images/marketing/newsletterSettings.png)
+
+**Step 2)** Now Enable the **Newsletter Subscription** and click on **Save Configuration** button as shown in below image.
+
+![Newsletter Settings](../../assets/2.0/images/marketing/enableNewsletter.png)
+
+### Newsletter subscriptions
+
+Here the admin can see all their customers who subscribed to the newsletter subscription.
+
+Also, the admin will navigate to **Marketing >> Communications >> Newsletter Subscriptions** as shown in the below image.
+
+![Newsletter Settings](../../assets/2.0/images/marketing/newsletterGrid.png)
+
+
