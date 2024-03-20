@@ -34,7 +34,7 @@ All the amount refunded **$7 as Shipping & Handling and Adjustment Refund** as s
 
 **Adjustment Fee:-** Enter the amount that will be subtracted from the sub-total amount.
 
- In the below image **Refund Shiiping is $3 and Adjustment Fee is $1**
+ In the below image **Refund Shipping is $3 and Adjustment Fee is $1**
 
  ![Refund](../../assets/2.1.0/images/orders/adjustFee.png) 
 
