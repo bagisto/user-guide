@@ -46,9 +46,5 @@ After that it will get redirected to the **Refund Grid** and show the refunded a
 
 ![Refund Grid](../../assets/2.1.0/images/orders/refundGrid.png)
 
-And now to check the results you can go to **Sales >> Orders** and will able to see an order status is **Closed** now as shown in the below image.
-
-  ![Order Grid](../../assets/2.1.0/images/orders/orderGrid.png)
-
 By the above steps, you can easily **Refund** in Bagisto.  
 
