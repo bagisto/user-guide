@@ -104,7 +104,7 @@ This feature allows you to communicate with your customers in bulk about upcomin
 
 ### Admin Configuration
 
-**Step 1)** Firstly the admin can navigate to Configue >> Customer >> Settings
+**Step 1)** Firstly the admin can navigate to **Configue >> Customer >> Settings**
 
 ![Newsletter Settings](../../assets/2.1.0/images/marketing/newsletterSettings.png)
 
@@ -112,12 +112,10 @@ This feature allows you to communicate with your customers in bulk about upcomin
 
 ![Newsletter Settings](../../assets/2.1.0/images/marketing/enableNewsletter.png)
 
-### Newsletter Subscriptions
+### Newsletter subscriptions
 
 Here the admin can see all their customers who subscribed to the newsletter subscription.
 
 Also, the admin will navigate to **Marketing >> Communications >> Newsletter Subscriptions** as shown in the below image.
 
 ![Newsletter Settings](../../assets/2.1.0/images/marketing/newsletterGrid.png)
-
-
