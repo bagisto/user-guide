@@ -102,7 +102,7 @@ Sitemaps inform search engines which pages on a website should be crawled, and m
 
 ### Step 1: Add New Sitemap
 
-1. On Admin panel, go to **Marketing >> Sitemaps** click on **Create Sitemap** as shown in below image
+1. On Admin panel, go to **Marketing >> Search & SEO >> Sitemaps** click on **Create Sitemap** as shown in below image
 
  ![Create Sitemap](../../assets/2.1.0/images/marketing/createSitemap.png)
 
