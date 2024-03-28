@@ -78,8 +78,6 @@ In the Action section, we have to set actions like how we want to apply the rule
 
 **7.Maximum Quantity allowed to be discounted:-** Add the number of the quantity you wanted to apply the discount for
 
-![Attribute Condition](../../assets/2.1.0/images/marketing/actions.png)
-
 So after clicking the **Save Cart Rule** button 
 
 Now copy the **Coupon Code** as shown in the below image
