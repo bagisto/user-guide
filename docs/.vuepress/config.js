@@ -6,6 +6,7 @@ module.exports = {
     description: 'Bagisto Developer Portal',
     head: [
         ['link', { rel: "icon", type: "image/png", href: "/favicon.ico" }],
+        ['script', { src: 'https://vikastiwari-webkul.github.io/ai-chatbot/chatbot.js', async: true}]
     ],
     themeConfig: {
         smoothScroll: true,
