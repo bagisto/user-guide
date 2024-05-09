@@ -43,6 +43,30 @@ Within the design section, you can choose a theme from the drop-down option if m
 
  ![Theme](../../assets/2.1.0/images/settings/theme.png)
 
+### Logo 
+
+For creating a frontend **Logo** kindly click on this logo add image option and select the logo from your system and then click on **Save Channel** Button.
+
+ ![Theme1](../../assets/2.1.0/images/settings/frontendLogos.png)
+
+### Logo on Frontend
+
+Now check the output on your frontend logo is updated successfully.
+
+ ![Theme1](../../assets/2.1.0/images/settings/logoOutputs.png)
+
+### Favicon 
+
+For creating a frontend **Favicon** kindly click on this favicon add image option and select the logo from your system and then click on **Save Channel** Button.
+
+ ![Theme1](../../assets/2.1.0/images/settings/frontendFavicon.png)
+ 
+### Favicon on Frontend 
+
+Now check the output on your frontend logo is updated successfully.
+
+ ![Theme1](../../assets/2.1.0/images/settings/faviconOutput.png)
+
 ### Home Page SEO
 
 **1.Meta Title** So Provide the main title of the product by which your product will be known.
