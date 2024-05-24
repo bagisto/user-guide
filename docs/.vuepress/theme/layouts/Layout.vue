@@ -80,6 +80,7 @@ export default {
         || themeConfig.logo
         || themeConfig.repo
         || themeConfig.nav
+        || themeConfig.contactUs
         || this.$themeLocaleConfig.nav
       )
     },
