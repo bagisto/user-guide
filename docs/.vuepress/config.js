@@ -25,6 +25,9 @@ module.exports = {
             { text: 'Extensions', link: 'https://bagisto.com/en/extensions/' },
             { text: 'Community Forum', link: 'https://forums.bagisto.com/' }
         ],
+
+        contactUs: { text: 'Contact Us', link: 'https://bagisto.com/en/contacts/' },
+
         sidebar: {
             '/2.0/': require('./version-configs/2.0'),
             '/2.1.0/': require('./version-configs/2.1.0')
