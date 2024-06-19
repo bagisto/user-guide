@@ -30,7 +30,8 @@ module.exports = {
 
         sidebar: {
             '/2.0/': require('./version-configs/2.0'),
-            '/2.1.0/': require('./version-configs/2.1.0')
+            '/2.1.0/': require('./version-configs/2.1.0'),
+            '/2.2.0/': require('./version-configs/2.2.0')
         }
     },
     markdown: {
