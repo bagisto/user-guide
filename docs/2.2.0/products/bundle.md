@@ -73,6 +73,12 @@ To add product images, click on **Add Images**. You can add multiple images for 
 
 ![image](../../assets/2.2.0/images/bundle-product/image.png)
 
+### Channels
+
+Select the channels in which you want to save this product.
+
+![Channels](../../assets/2.2.0/images/simple-product/channels.png)
+
 ### Bundle Item
 
 Click on Add Option and:

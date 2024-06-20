@@ -67,6 +67,13 @@ To add product images, click on Add Images. You can add multiple images for your
 
 ![image](../../assets/2.2.0/images/grouped-product/image.png)
 
+### Channels
+
+Select the channels in which you want to save this product.
+
+![Channels](../../assets/2.2.0/images/simple-product/channels.png)
+
+
 ### Grouped Products
 
 Search Products Under this **Search Product** section, you can simply search the Simple Product to in the Grouped Product. Once you added all the required products to the grouped product then all those simple products will be listed

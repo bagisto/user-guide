@@ -69,6 +69,12 @@ Add product images by clicking on **Add Images**. Multiple images can be added.
 
  ![image](../../assets/2.2.0/images/virtual-product/image.png)
 
+### Channels
+
+Select the channels in which you want to save this product.
+
+![Channels](../../assets/2.2.0/images/simple-product/channels.png)
+
 ### Inventory
 
 Insert the quantity of the product available in your inventory. The default is set to 0, indicating out of stock on the frontend.

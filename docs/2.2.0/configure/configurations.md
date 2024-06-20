@@ -295,6 +295,31 @@ After clicking on the **Save Configuration** button.
 
  ![Taxes](../../assets/2.2.0/images/configure/taxes.png)
 
+## Checkout
+
+Checkout configuration are listed below.
+
+### Shopping Cart
+
+Enable guest checkout, cart page, cross-sell products, and estimated shipping to enhance user convenience and streamline the shopping process for increased sales.
+
+ ![Checkout](../../assets/2.2.0/images/configure/checkout.png)
+
+### My Cart
+
+Enable settings for My Cart to show a summary of item quantities and display the total number of items in the cart for easy tracking. 
+
+  ![Checkout My Cart](../../assets/2.2.0/images/configure/checkoutMycart.png )
+
+### Mini Cart
+
+Enable Mini Cart settings to display the mini cart and show Mini Cart Offer Information for quick access to cart details and promotions.
+
+![miniCart](../../assets/2.2.0/images/configure/miniCart.png)
+
+
+
+
 ## Notifications
 
 "Notification" is a message or alert that informs users about events, updates, or actions, enhancing user engagement and awareness.
@@ -367,8 +392,14 @@ To add go to the Admin Panel and click on **Configure >> Order Settings**
 
 **Minimum Order Settings:-** Configured criteria specifying the lowest required quantity or value for an order to be processed or qualify for benefits.
 
+In the Order section added new configuration setting to that the order has Include Discount Amount, Include Tax to Amount and the Description in cart page.
+
  ![Order Settings](../../assets/2.2.0/images/configure/orderSettings.png)
 
+**Allow Reorder:-** Enable or disable the reordering feature for admin users.
+
+![Allow Reorder](../../assets/2.2.0/images/configure/allowReorder.png)
+ 
 After clicking on the **Save Configuration** button. 
 
 ## Invoice Settings

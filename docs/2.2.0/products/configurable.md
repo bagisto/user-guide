@@ -54,6 +54,12 @@ Add the product images, click on **Add Images**. You can add multiple images for
 
    ![Configurable](../../assets/2.2.0/images/configurable-product/image.png)
 
+### Channels
+
+Select the channels in which you want to save this product.
+
+![Channels](../../assets/2.2.0/images/simple-product/channels.png)
+
 ### Variations
 
 Now you will be able to see the **Variations** right below the video section as shown below. You can simply Edit each product as we have created according to the Color and Size.

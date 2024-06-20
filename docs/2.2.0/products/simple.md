@@ -78,6 +78,12 @@ Insert the quantity of the product that is there in your inventory. By default, 
 
 ![inventories](../../assets/2.2.0/images/simple-product/inventories.png)
 
+### Channels
+
+Select the channels in which you want to save this product.
+
+![Channels](../../assets/2.2.0/images/simple-product/channels.png)
+
 At last, **Save the Product**.
 
 ### Front End

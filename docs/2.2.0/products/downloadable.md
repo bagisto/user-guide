@@ -68,6 +68,13 @@ To add product images, click on Add Images. You can add multiple images for your
 
 ![image](../../assets/2.2.0/images/downloadable-product/image.png)
 
+### Channels
+
+Select the channels in which you want to save this product.
+
+![Channels](../../assets/2.2.0/images/simple-product/channels.png)
+
+
 ### Downloadable Information
 
 Here, enter the downloadable information about your product:

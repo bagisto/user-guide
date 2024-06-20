@@ -4,6 +4,10 @@ The theme of the website is the overall look of it and that is why it plays a ma
 
 The theme contains different options like slider section with different slider options, Product section, Footer option, right-sidebar, Logo resizer option, Button settings, Blog Settings, Site preloader option, Related option, Icon changer option, full-width-template, color options, widgets, sidebar layouts, header.
 
+The theme_customizations table now supports customizations for multiple themes and multiple channels. This enhancement allows you to define different customizations for each theme and channel combination, providing greater flexibility and control over your application's appearance.
+
+Enhanced the theme customization section by adding a feature to filter attributes.
+
 ### Create Themes
 
 **Step 1:** It can be set on the admin panel by going to **Setting >> Themes**. Here you can create new role by clicking on the button **Create Theme** as shown in below image.
@@ -19,6 +23,8 @@ The theme contains different options like slider section with different slider o
 **3.Type:-** Select the Type from the dropdown according to your requirement.We have selected a product carousel in this
 
 **4.Channels:-** Select the Channel.
+
+**5.Themes:-** Select the Theme.
 
 Now click on **Save Theme** button and you will get redirected to type which you just selected.
 
@@ -44,7 +50,9 @@ Now click on **Save Theme** button and you will get redirected to type which you
 
 **3.Channels:-** Select the Channel.
 
-**4.Status** Enable the Status.
+**4.Themes** Select the themes.
+
+**5.Status** Enable the Status.
 
 ![General Theme](../../assets/2.2.0/images/settings/generalTheme.png)
 
