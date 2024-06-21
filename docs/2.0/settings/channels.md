@@ -77,6 +77,18 @@ Now check the output on your frontend logo is updated successfully.
 
  ![SEO](../../assets/2.0/images/settings/seo.png)
 
+### Maintenance Mode
+
+In Bagisto, **maintenance mode** refers to a feature that allows you to put your online store into a temporary offline state. This mode is typically used when you need to perform updates, maintenance tasks, or make significant changes to your store's backend or frontend without disrupting the customer experience.
+
+**1) Message-** Enter the message that will visible to the customers when they visit your store under maintenance mode.
+
+**2) Allowed IPs-** Enter the IP address that will run under maintenance mode
+
+**3) Status-** Enable/Disable the status for the maintenance mode.
+
+ ![Maintenance Mode](../../assets/2.0/images/settings/maintenanceMode.png)
+
 Now click on **Save Channel** and you will able to see the new **Channel** as shown below.
 
  ![Channel Grid](../../assets/2.0/images/settings/channelGrid.png)
