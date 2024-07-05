@@ -126,9 +126,9 @@ To add go to Admin Panel and click on **Configure >> Products >> Storefront**
 
 **3.Products Per Page:** You can enter the quantity that how many products that will be visible per page on the Storefront.
 
-**4. Sort By** Select a sort-by option from the dropdown according to your requirements.
+**4.Sort By** Select a sort-by option from the dropdown according to your requirements.
 
-**5.Allow customers to directly buy products** Select from the **Enable/Disable** option as per requirement.After enabling it will get visible on product detail page as shown in the below image.
+**5.Buy Now Products** Select from the **Enable/Disable** option as per requirement.After enabling it will get visible on product detail page as shown in the below image.
 
  ![Storefront](../../assets/2.0/images/configure/storefront.png)
 

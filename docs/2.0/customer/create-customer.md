@@ -16,5 +16,5 @@ Visitors to your website can open an account to manage their purchases and activ
    
  ![Customer Grid](../../assets/2.0/images/customer/customerGrid.png)
 
- So by the above steps, you can easily create a customer from the admin panel in Bagisto.
+So by the above steps, you can easily create a customer from the admin panel in Bagisto.
  
