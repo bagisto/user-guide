@@ -34,7 +34,7 @@ module.exports = [
         path: setVersionPrefix('category'),
         collapsable: true,
         children: setVersionPrefix([
-            ['category/overview', 'Category Overview'],
+
             ['category/create-category', 'Create Category'],
         ])
     },
@@ -43,12 +43,11 @@ module.exports = [
         path: setVersionPrefix('attribute'),
         collapsable: true,
         children: setVersionPrefix([
-            ['attribute/overview', 'Attribute Overview'],
             ['attribute/product-attribute', 'Create Product Attribute'],
-            ['attribute/attribute-family', 'Attribute Family'],
             ['attribute/attribute-input', 'Attribute Input Type'],
         ])
     },
+        [setVersionPrefix('attribute-family/attribute-families'), 'Attribute Family'],
     {
         title: 'Orders',
         path: setVersionPrefix('orders'),
@@ -71,7 +70,7 @@ module.exports = [
         ])
     },
 
-    [setVersionPrefix('cms/cms-page'), 'CMS'],
+        [setVersionPrefix('cms/cms-page'), 'CMS'],
 
     {
         title: 'Marketing',

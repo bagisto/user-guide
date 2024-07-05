@@ -2,11 +2,9 @@
 
 The category is a structure of your catalog. By creating a category, customers can easily find the specific product amongst the lot on your e-commerce website. It is used for making the hierarchical arrangement of your website. Here we have listed down steps to create a new category and root category in Bagisto.
 
-### Root Category
-
 Bagisto comes with a default root category, i.e., Root, but you can also create your root category. The Root Category is not visible on the front end because it acts as a container to contain the categories to be displayed on the website.
 
-### Steps to Create a New Root Category in Bagisto 2.2.0
+### Steps to Create a New Category in Bagisto 2.2.0
 
 1. Click on **Catalog >> Categories >> Create Category** as shown in the below image.
 
@@ -20,8 +18,6 @@ Bagisto comes with a default root category, i.e., Root, but you can also create 
    - Description
 
    - **Product and Description:** When you set the display mode to "Product and Description," then the product and description about the category both will be visible on the front end as shown below image.
-
-
 
    - **Description:** When you set the display mode to "Description," then only the category description will be visible on the front end.
 

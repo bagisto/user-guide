@@ -150,9 +150,11 @@ To add go to Admin Panel and click on **Configure >> Products >> Storefront**
 
 **4. Sort By** Select a sort-by option from the dropdown according to your requirements.
 
-**5.Allow customers to directly buy products** Select from the **Enable/Disable** option as per requirement.
+**5.Allow customers to directly buy products** Select from the **Enable/Disable** option as per requirement.After enabling it will get visible on product detail page as shown in the below image.
 
  ![Storefront](../../assets/2.1.0/images/configure/storefront.png)
+
+ ![Storefront Buynow](../../assets/2.1.0/images/configure/buyNow.png)
 
 After clicking on the **Save Configuration** button. 
 

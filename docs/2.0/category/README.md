@@ -12,3 +12,15 @@ Product categories in e-commerce are broad classifications used to organize and 
 - **Automotive:** Covers car parts, accessories, and tools.
 
 These categories make it easier for shoppers to find and explore products of interest efficiently on e-commerce platforms.
+
+### Root Category
+
+Bagisto comes with a default root category i.e. Root, but you can also create your root category. Root Category is not visible on the front end because it acts as a container to contain the categories to be displayed on the website.
+
+### Sub Category 
+
+In e-commerce, a subcategory is a more specific classification or subset within a broader category. It is a way of further organizing and structuring products on an online store to help users navigate and find what they are looking for more easily. Subcategories are nested within larger or parent categories, creating a hierarchical structure.
+
+For example, if "Electronics" is a main category, you might have subcategories such as "Smartphones," "Laptops," and "Audio Devices" underneath it. Each of these subcategories may then have additional subcategories. This hierarchical organization helps shoppers drill down into specific product types and makes the browsing and shopping experience more intuitive.
+
+In summary, subcategories in e-commerce provide a way to organize and present products in a structured manner, facilitating smoother navigation for online shoppers.
