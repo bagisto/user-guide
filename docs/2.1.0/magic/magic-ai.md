@@ -5,8 +5,6 @@ Magical AI is the ultimate tool for professionals in diverse fields looking to e
 
 Bagisto 2.1.0 integrates Magic AI, using artificial intelligence to simplify e-commerce management.
 
-You can manage Magic AI configurations from [here](http://192.168.25.130:8080/2.1.0/configure/configurations.html#magic-ai)
-
 ## Content Generation
 
 With Magic AI, store owners can effortlessly generate engaging **Products, Categories, and CMS** content. 

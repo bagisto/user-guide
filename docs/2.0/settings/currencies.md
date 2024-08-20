@@ -18,7 +18,7 @@ Before launching your eCommerce website you need to set up the currency in which
 
 ### Channel Setting For Currency
 
-On the admin panel open **Settings >> Channels** you will able to see Currency section and you new currency right there.
+On the admin panel open **Settings >> Channels** you will able to see Currency section and your new currency right there.
 
 Once the channel setting has been done click on **Save Channel** as shown in below image.
 

@@ -8,7 +8,7 @@ By using Attribute Families, you can import all the required information about t
 
  ![Attribute Family](../../assets/2.0/images/attribute/createFamily.png)
 
-**Step 1**:-  Enter the **Attribute Family Code** and **Name** as shown in the below image.
+**Step 2**:-  Enter the **Attribute Family Code** and **Name** as shown in the below image.
 
  ![Save Family](../../assets/2.0/images/attribute/saveFamily.png)
 
@@ -16,7 +16,7 @@ By using Attribute Families, you can import all the required information about t
 
   ![Family Grid](../../assets/2.0/images/attribute/familyGrid.png)
 
- Now that the new attribute family has been created, you can edit it through the **Action**. Add the desired **Attributes** to this family based on your specific requirements. Afterward, to verify the output during the product creation process, you will be able to see the new Attribute family. Now all Attribute will be visible on the product page that belongs to these Attribute Families.
+ Now the new attribute family has been created, you can edit it through the **Action**. Add the desired **Attributes** to this family based on your specific requirements. Afterward, to verify the output during the product creation process, you will be able to see the new Attribute family. Now all Attribute will be visible on the product page that belongs to these Attribute Families.
 
    ![Output](../../assets/2.0/images/attribute/output.png)
 
