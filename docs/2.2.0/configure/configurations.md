@@ -78,7 +78,7 @@ After clicking on the **Save Configuration** button.
 
 Admin logo is the distinctive image or emblem representing the administration interface of a system or website, often customizable.
 
-To add **Designs** like **Admin logo, Favicon** go to the Admin Panel and click on **Configure >> Design** and you can easily update a new logo image and favicon from here. click on the **Choose Files**  option to select an image last click on the **Save Configuration** button.
+To add **Designs** like **Admin logo, Favicon** go to the Admin Panel and click on **Configure >> Design** and you can easily update a new logo image and favicon from here. click on the **Choose Files** option to select an image last click on the **Save Configuration** button.
 
  ![Design](../../assets/2.2.0/images/configure/design.png)
 
@@ -288,11 +288,11 @@ After clicking on the **Save Configuration** button.
 
 ## Taxes 
 
-**A) Tax Categories -** Tax categories are classifications for different types of taxes, such as sales tax, value-added tax, or excise tax, used to categorize and apply tax rates to products or services.
+**A) Tax Categories -** Tax categories are classifications for different types of taxes, such as sales tax, value-added tax, or excise tax, used to categorize and apply tax rates to products or services.
 
 **B) Calculation Settings -** Details about the cost of goods or services, including base price, discounts, taxes, and additional charges information.
 
-**C) Default Destination Calculation -** Automated determination of a standard or initial destination based on predefined factors or settings.
+**C) Default Destination Calculation -** Automated determination of a standard or initial destination based on predefined factors or settings.
 
 **D) Shopping Cart Display Settings -** Set the display of taxes in the shopping cart by Display Prices, Display Subtotal, and Display Shipping Amount.
 
@@ -312,20 +312,47 @@ Enable guest checkout, cart page, cross-sell products, and estimated shipping to
 
 Enable settings for My Cart to show a summary of item quantities and display the total number of items in the cart for easy tracking. 
 
-  ![Checkout My Cart](../../assets/2.2.0/images/configure/checkoutMycart.png )
+In this, we provide two options:
+
+**A) Display numbers of items in cart** - Select **Display number of items in cart** option and then click on **Save Configuration** button.
+
+ ![Number Items](../../assets/2.2.0/images/configure/items.png )
+
+After clicking the Add to Cart button this option shows you the total number of quantities. For example, we add 5 products inside the cart. 5 products will be visible on the front end as shown in the image below.
+
+ ![Number Items](../../assets/2.2.0/images/configure/numberItems.png )
+
+**B) Display Items Quantities** - Select Display items quantities option and then click on **Save Configuration** button.
+
+ ![Display Items Quantities](../../assets/2.2.0/images/configure/itemQuantity.png)
+
+After clicking the Add to Cart button for eg. 7 products you have added inside the cart only 1 quantity will be visible on frontend 
+
+ ![Display Items Quantities](../../assets/2.2.0/images/configure/1mycart.png)
+
+To check the total number of items then you have to go inside the mini-cart.
+
+ ![Display Items Quantities](../../assets/2.2.0/images/configure/7mycart.png)
 
 ### Mini Cart
 
-Enable Mini Cart settings to display the mini cart and show Mini Cart Offer Information for quick access to cart details and promotions.
+Mini Cart is the option where you can able to see the information after adding the product to the cart.
 
-![miniCart](../../assets/2.2.0/images/configure/miniCart.png)
+To enable mini cart settings go to **Configure >> Checkout >> Mini Cart** you can also add a mini cart offer information message as shown in the image below.
 
+ ![Display Items Quantities](../../assets/2.2.0/images/configure/mini-cart.png)
 
+Mini cart able to get open with offer message as shown in the image below.
 
+ ![Display Items Quantities](../../assets/2.2.0/images/configure/mini-cart1.png)
+
+Now, if we disable this Mini-Cart user is not able to open the mini-cart, and the user directly gets redirected to the checkout page.
+
+ ![Disable Mini Cart](../../assets/2.2.0/images/configure/disableminiCart.png)
 
 ## Notifications
 
-"Notification" is a message or alert that informs users about events, updates, or actions, enhancing user engagement and awareness.
+A notification is a message or alert that provides information or prompts an action to users, usually within software applications, websites, or devices. 
 
 To add go to the Admin Panel and click on **Configure >> Notifications** 
 
