@@ -10,7 +10,7 @@ To add Magic AI go to Admin Panel and go to **Configure >> General >> Magic AI**
 
  ![Magic](../../assets/2.2.0/images/configure/magic.png)
 
-1) If you want to enable it for the **Content Generation** kindly enable it from here.
+1) If you want to enable it for the **Content Generation** kindly allow it from here.
 
  ![Magic Content](../../assets/2.2.0/images/configure/content.png)
 
@@ -18,7 +18,7 @@ To add Magic AI go to Admin Panel and go to **Configure >> General >> Magic AI**
 
 ![Magic Image](../../assets/2.2.0/images/configure/imageMagic.png)
 
-3) For **Review Translation** add you model and Enable it as shown in the below image.
+3) For **Review Translation** add your model and Enable it as shown in the below image.
 
 ![Magic Review](../../assets/2.2.0/images/configure/reviewMagic.png)
 
@@ -28,7 +28,7 @@ To add Magic AI go to Admin Panel and go to **Configure >> General >> Magic AI**
 
 ## Weight Unit
 
-**1)** To add Weight Unit go to the Admin panel and go to **Configure >> General**.Next, select the **Weight Unit** from dropdown **lbs or kgs** according to your requirement and click on the **Save Configuration** button as shown in the below image.
+**1)** To add Weight Unit go to the Admin panel and go to **Configure >> General**.Next, select the **Weight Unit** from dropdown **lbs or kgs** according to your requirement and click on the **Save Configuration** button as shown in the image below
 
  ![Weight](../../assets/2.2.0/images/configure/weight.png)
 
@@ -72,13 +72,12 @@ You can apply javascript also according to your requirement and click on the **S
 
  ![JS](../../assets/2.2.0/images/configure/js.png)
 
-After clicking on the **Save Configuration** button. 
-
+After then click on the  **Save Configuration** button.
 ## Design 
 
 Admin logo is the distinctive image or emblem representing the administration interface of a system or website, often customizable.
 
-To add **Designs** like **Admin logo, Favicon** go to the Admin Panel and click on **Configure >> Design** and you can easily update a new logo image and favicon from here. click on the **Choose Files** option to select an image last click on the **Save Configuration** button.
+To add **Designs** like **Admin logo, Favicon** go to the Admin Panel and click on **Configure >> Design** and you can easily update a new logo image and favicon from here. Click on the **Choose Files** option to select an image last click on the **Save Configuration** button.
 
  ![Design](../../assets/2.2.0/images/configure/design.png)
 
@@ -98,7 +97,7 @@ There is an option present to **Enable or Disable** a Backorder and then click o
 
  ![Back Orders](../../assets/2.2.0/images/configure/backorder.png)
 
-**Note:- If the product is Out of Stock then also customer is able to Place an Order after Enabling the Backorder Option**
+**Note:- If the product is Out of Stock then also the customer is able to Place an Order after Enabling the Backorder Option**
 
  ![Out Of Stock](../../assets/2.2.0/images/configure/outofstock.png)
 
@@ -118,9 +117,13 @@ To manage Guest checkout go to Admin Panel and click on **Configure >> Products*
 
 ## Product View Page
 
-Product view page configuration entails adjusting the layout and elements on a product's display page, enhancing user experience and information presentation.
+A Product View Page is a dedicated web page or interface within an online store or catalog where detailed information about a specific product is displayed. 
+
+This page provides customers with comprehensive insights and details to help them make purchasing decisions.
 
 To add go to Admin Panel and click on **Configure >> Products**
+
+Here you can able to manage a number of Related Products & Up Sell Products will be visible on the front end.
 
  ![Page Configuration](../../assets/2.2.0/images/configure/pageConfiguration.png)
 
@@ -132,33 +135,45 @@ Cart view page configuration involves arranging items, details, and options on t
 
 To add go to Admin Panel and click on **Configure >> Products**
 
+Here you can able to manage several cross-selling products that will be visible on the front end.
+ 
  ![Cart Configuration](../../assets/2.2.0/images/configure/cartpageConfiguration.png)
 
-After clicking on the **Save Configuration** button. 
+After then click on the  **Save Configuration** button.
+## Frontend
 
-## Storefront
-
-Storefront is the customer-facing interface of an online shop, showcasing products, categories, and navigation for a seamless shopping experience.
+The storefront serves as the customer-facing component of an online store, featuring product displays, category listings, and intuitive navigation to ensure a smooth and enjoyable shopping experience.
 
 To add go to Admin Panel and click on **Configure >> Products >> Storefront**
 
-**1.Search Mode:** Select the search mode by **Dropdown or Elasticsearch** as per your requirements.
+**1.Search Mode:** Select the search mode by **Database or Elasticsearch** as per your requirements.
+
+**A) Elastic Search-** When you have a large number of products on your website it is quite difficult to search the product. Elastic Search mode helps for fast search mode of products.
+
+**B) Database-** It is recommended when you have a small number of products on your website choose the database option for search mode.
 
 **2.Default List Mode:** You manage in which format your products will be visible on the storefront select from the dropdown **Grid or List**.
+
+### List Mode
+
+ ![Storefront](../../assets/2.2.0/images/configure/listmode.png)
+
+### Grid Mode 
+
+ ![Storefront](../../assets/2.2.0/images/configure/gridmode.png)
 
 **3.Products Per Page:** You can enter the quantity that how many products that will be visible per page on the Storefront.
 
 **4. Sort By** Select a sort-by option from the dropdown according to your requirements.
 
-**5.Buy Now Products** Select from the **Enable/Disable** option as per requirement. After enabling it will get visible on product detail page as shown in the below image.
+**5. Buy Now Products** Select from the **Enable/Disable** option as per requirement. After enabling it will be visible on the product detail page as shown in the below image.
 
  ![Storefront](../../assets/2.2.0/images/configure/storefront.png)
 
  ![Storefront Buynow](../../assets/2.2.0/images/configure/buyNow.png)
 
 
-After clicking on the **Save Configuration** button. 
-
+After then click on the  **Save Configuration** button.
 ## Image Size
 
 Storefront is the customer-facing interface of an online shop, showcasing products, categories, and navigation for a seamless shopping experience.
@@ -179,30 +194,28 @@ Select **Height and Width** for the Large images.
 
  ![Image Size](../../assets/2.2.0/images/configure/imageSize.png)
 
-After clicking on the **Save Configuration** button. 
-
+After then click on the  **Save Configuration** button.
 ## Review
 
-Evaluation or assessment of something, often involving opinions and feedback.
+Here are the configurations where you can manage the review for Guest Users. 
 
 To add go to Admin Panel and click on **Configure >> Products >> Review**
 
+By enabling, this option Guest Users are also able to write a review for the product.
+
  ![Image](../../assets/2.2.0/images/configure/image.png)
 
-After clicking on the **Save Configuration** button. 
+After then click on the **Save Configuration** button. 
 
 ## Attribute
 
-Characteristic or property that defines an object, influencing its behavior, appearance, or function.
-
-You can easily allow **Image and File** upload size (in KB) from here.
+In this option, you can easily add the size of an **Image and File** upload size (in KB) from here to improve the behavior, appearance, or function.
 
 To add go to Admin Panel and click on **Configure >> Products >> Attribute**
 
  ![Attribute](../../assets/2.2.0/images/configure/attribute.png)
 
-After clicking on the **Save Configuration** button. 
-
+After then click on the  **Save Configuration** button.
 ## Social Share
 
 Sharing things from a website with friends on social media platforms like Facebook, Twitter, or Instagram.
@@ -211,8 +224,7 @@ To add go to Admin Panel and click on **Configure >> Products >> Social Share**
 
  ![Social Share](../../assets/2.2.0/images/configure/socialShare.png)
 
-After clicking on the **Save Configuration** button. 
-
+After then click on the  **Save Configuration** button.
 ### Frontend:-
 
 All the icons that you just enabled from the Admin Panel are created as shown in the below image.
@@ -253,8 +265,7 @@ On the Admin Panel go to **Configure >> Captcha** add the **Site Key & Secret Ke
 
  ![Captcha](../../assets/2.2.0/images/configure/captcha.png)
 
-After clicking on the **Save Configuration** button. 
-
+After then click on the  **Save Configuration** button.
 ## Settings
 
 Set newsletter subscriptions, email verifications, and social login.
@@ -288,19 +299,53 @@ After clicking on the **Save Configuration** button.
 
 ## Taxes 
 
-**A) Tax Categories -** Tax categories are classifications for different types of taxes, such as sales tax, value-added tax, or excise tax, used to categorize and apply tax rates to products or services.
+**A) Tax Categories -** Tax categories are classifications for different types of taxes, such as sales tax, value-added tax, or excise tax, used to categorize and apply tax rates to products or services that will be visible over here.
 
-**B) Calculation Settings -** Details about the cost of goods or services, including base price, discounts, taxes, and additional charges information.
+**B) Calculation Settings -** Information about how much things cost, including the starting price, any discounts, taxes, and extra fees.
 
-**C) Default Destination Calculation -** Automated determination of a standard or initial destination based on predefined factors or settings.
+**1) Calculation Based On-** By default, there are 3 options for calculations i.e. Shipping Address, Billing Address, Shipping Origin.
+
+**A) Shipping Address-** A shipping address is the location where goods or products are sent for delivery. It includes details like the recipient’s name, street address, city, state or province, postal or ZIP code, and sometimes additional information like a company name or suite number.
+
+**B) Billing Address-** A billing address is the address associated with a payment method, such as a credit or debit card. It’s used to verify the identity of the cardholder and to process transactions.
+
+**C) Shipping Origin-** Shipping origin refers to the location from which goods or products are dispatched or sent out. It is the starting point of the shipment journey before it is transported to the destination address.
+The shipping origin typically includes details such as the address of the warehouse, store, or supplier where the shipment begins. 
+This information is important for tracking the shipment, calculating shipping costs, and estimating delivery times.
+
+**2) Product Pricing-** There are two options available. Include Tax and Exclude Tax 
+
+**A) Excluding Tax-** It simply means that no taxes have been included in the product pricing. For example in the below image product price is 599 and the tax amount is 167.72 and it is separately calculated.
+
+ ![Email Settings](../../assets/2.2.0/images/configure/excludeTax.png)
+
+**B) Including Tax-** It means tax are already factored into the price you have received for a good or service. For example in the below image product price is 599 and the tax amount is 167.72 and the calculation is showing all the amount altogether.
+
+ ![Email Settings](../../assets/2.2.0/images/configure/includeTax.png)
+
+**C) Default Destination Calculation -** Select **Country, State & Pin Code** it typically refers to the automatic determination of a shipping or delivery address based on preset criteria or system.
+
+ ![Email Settings](../../assets/2.2.0/images/configure/destination.png)
 
 **D) Shopping Cart Display Settings -** Set the display of taxes in the shopping cart by Display Prices, Display Subtotal, and Display Shipping Amount.
 
- ![Taxes](../../assets/2.2.0/images/configure/taxes.png)
+By default, we provide Three options:
+
+**A) Excluding Tax-** It simply means that no taxes have been included in the product pricing. For example in the below image product price is 599 and the tax amount is 167.72 and it is separately calculated.
+
+ ![Email Settings](../../assets/2.2.0/images/configure/excludeTax.png)
+
+**B) Including Tax-** It means tax are already factored into the price you have received for a good or service. For example in the below image product price is 599 and the tax amount is 167.72 and the calculation shows the amount is altogether.
+
+ ![Email Settings](../../assets/2.2.0/images/configure/includeTax.png)
+
+**C) Excluding and Including Both-** Excluding tax simply means that no taxes have been included in the product pricing and Include Tax are already factored into the price you have received for a good or service.
+
+ ![Email Settings](../../assets/2.2.0/images/configure/includeexcludeBoth.png)
 
 ## Checkout
 
-Checkout configuration are listed below.
+Checkout configurations are listed below.
 
 ### Shopping Cart
 
@@ -342,7 +387,7 @@ To enable mini cart settings go to **Configure >> Checkout >> Mini Cart** you ca
 
  ![Display Items Quantities](../../assets/2.2.0/images/configure/mini-cart.png)
 
-Mini cart able to get open with offer message as shown in the image below.
+The mini cart is able to open with an offer message as shown in the image below.
 
  ![Display Items Quantities](../../assets/2.2.0/images/configure/mini-cart1.png)
 
@@ -358,11 +403,10 @@ To add go to the Admin Panel and click on **Configure >> Notifications**
 
  ![Notifications](../../assets/2.2.0/images/configure/notifications.png)
 
-After clicking on the **Save Configuration** button. 
-
+After then click on the  **Save Configuration** button.
 ## Shipping
 
-Shipping origin refers to the location where goods or products originate before being transported to their destination.
+Shipping Origin refers to the location from which goods or products are dispatched or shipped. It is the starting point of the shipping process before the items are transported to their destination.
 
 To add go to the Admin Panel and click on **Configure >> Shipping** 
 
@@ -380,7 +424,10 @@ To add go to the Admin Panel and click on **Configure >> Shipping Methods**
 
  ![Shipping Methods](../../assets/2.2.0/images/configure/shippingMethods.png)
 
-After clicking on the **Save Configuration** button. 
+After then click on the  **Save Configuration** button.
+### Shipping Mentod Frontend
+
+ ![Shipping Methods](../../assets/2.2.0/images/configure/shippingOutput.png)
 
 ## Payment Methods
 
@@ -414,15 +461,20 @@ PayPal Standard is a basic PayPal payment option for online businesses, enabling
 
 After clicking on the **Save Configuration** button.  
 
+### Payment Methods Forntend
+
+ ![Paypal Standard](../../assets/2.2.0/images/configure/paymentmethod.png)
+
 ## Order Settings
 
 To add go to the Admin Panel and click on **Configure >> Order Settings** 
 
-**Order Number Settings:-** Unique identifier assigned to a specific customer order, aiding tracking, communication, and reference throughout the purchasing process.
+**Order Number Settings:-** Order Number Settings refer to the configuration parameters that determine how order numbers are generated, formatted, and managed within a system.
+These settings are crucial for organizing and tracking orders efficiently. 
 
 **Minimum Order Settings:-** Configured criteria specifying the lowest required quantity or value for an order to be processed or qualify for benefits.
 
-In the Order section added new configuration setting to that the order has Include Discount Amount, Include Tax to Amount and the Description in cart page.
+In the Order section add a new configuration setting so that the order has Included Discount Amount, Include Tax to Amount, and the Description in the cart page.
 
  ![Order Settings](../../assets/2.2.0/images/configure/orderSettings.png)
 
@@ -430,7 +482,18 @@ In the Order section added new configuration setting to that the order has Inclu
 
 ![Allow Reorder](../../assets/2.2.0/images/configure/allowReorder.png)
  
-After clicking on the **Save Configuration** button. 
+After then click on the  **Save Configuration** button.
+**Admin Reorder**
+
+To check Admin Reorder go to **Sales >> Orders** and go inside the order which is showing the pending status. Here you will able to see the option of Reorder on the admin side. 
+
+![Allow Reorder](../../assets/2.2.0/images/configure/adminReorder.png)
+
+**Frontend Reorder**
+
+After completing your order go inside **My Accounts >> Orders** here you will able to see the Reorder button at the top right corner as shown in the below image.
+
+![Allow Reorder](../../assets/2.2.0/images/configure/frontreorder.png)
 
 ## Invoice Settings
 
@@ -448,12 +511,11 @@ To add go to the Admin Panel and click on **Configure >> Invoice Settings**
 
  ![Invoice Slip Design](../../assets/2.2.0/images/configure/invoiceSlip.png)
 
-**4.Invoice Reminders** Automated notifications or communications sent to customers to remind them of upcoming or overdue payments for invoices.
+**4.Invoice Reminders** Automated notifications or communications sent to customers to remind them of upcoming or overdue invoice payments.
 
  ![Invoice Reminder](../../assets/2.2.0/images/configure/invoiceReminder.png)
 
-After clicking on the **Save Configuration** button. 
-
+After then click on the  **Save Configuration** button.
 ## Pricing
 
 Details about the cost of goods or services, including base price, discounts, taxes, and additional charges information.
