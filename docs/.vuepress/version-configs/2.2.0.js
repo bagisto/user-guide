@@ -60,6 +60,7 @@ module.exports = [
             ['orders/refunds', 'Refunds'],
             ['orders/reorder', 'Reorder'],
             ['orders/admin-order', 'Admin Order'],
+            ['orders/transaction', 'Transactions'],
         ])
     },
     {

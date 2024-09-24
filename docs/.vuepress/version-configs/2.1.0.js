@@ -59,6 +59,7 @@ module.exports = [
             ['orders/create-invoice', 'Invoice'],
             ['orders/create-shipment', 'Shipment'],
             ['orders/refunds', 'Refunds'],
+            ['orders/transaction', 'Transactions'],
         ])
     },
     {
