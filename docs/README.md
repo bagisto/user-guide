@@ -1,6 +1,6 @@
 ---
 home: true
-heroText: Bagisto User Guide
+heroText: Bagisto User Documentation
 tagline: A Comprehensive User Guide to Seamlessly Navigate Bagisto.
 actionText: Get Started →
 actionLink: /2.2.0/introduction/

@@ -2,7 +2,7 @@ module.exports = {
     base: '/',
     port: '8080',
     cache: false,
-    title: 'Bagisto User Guide',
+    title: 'Bagisto User Documentation',
     description: 'Unlock the full potential of Bagisto with our detailed user guide. This step-by-step documentation is perfect for beginners, covering installation, configuration, and advanced features to help you master your eCommerce platform',
     head: [
         ['link', { rel: "icon", type: "image/png", href: "/favicon.ico" }],
@@ -11,8 +11,6 @@ module.exports = {
     themeConfig: {
         smoothScroll: true,
         lastUpdated: 'Last Updated',
-        repo: 'bagisto/bagisto',
-        repoLabel: 'Contribute to Bagisto',
         docsRepo: 'bagisto/bagisto-docs',
         docsDir: 'docs',
         docsBranch: 'master',
@@ -21,9 +19,9 @@ module.exports = {
 
         logo: '/logo.png',
         nav: [
-            { text: 'Home', link: '/' },
             { text: 'Extensions', link: 'https://bagisto.com/en/extensions/' },
-            { text: 'Community Forum', link: 'https://forums.bagisto.com/' }
+            { text: 'Community Forum', link: 'https://forums.bagisto.com/' },
+            { text: 'Dev Docs', link: 'https://devdocs.bagisto.com/' }
         ],
 
         contactUs: { text: 'Contact Us', link: 'https://bagisto.com/en/contacts/' },
