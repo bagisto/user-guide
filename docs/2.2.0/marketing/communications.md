@@ -119,3 +119,22 @@ Here the admin can see all their customers who subscribed to the newsletter subs
 Also, the admin will navigate to **Marketing >> Communications >> Newsletter Subscriptions** as shown in the below image.
 
 ![Newsletter Settings](../../assets/2.2.0/images/marketing/newsletterGrid.png)
+
+**Step 3)** After all the configuration you need to run the command under your project root to send the emails as below :
+
+**php artisan campaign:process**
+
+![Newsletter Settings](../../assets/2.2.0/images/marketing/command.png)
+
+**Customer Configuration**
+
+Now it’s time to see about our store customers from where they can subscribe to the newsletters.
+
+The customers can subscribe to the newsletter during the sign-up and once the customer is done with the sign-up, they can easily see all the kinds of the offer.
+
+![Newsletter Settings](../../assets/2.2.0/images/marketing/newsletter.png)
+
+Also, the customer can subscribe to the newsletter from the Homepage at the footer side as shown in the below image.
+
+![Newsletter Settings](../../assets/2.2.0/images/marketing/news.png)
+

@@ -104,7 +104,7 @@ This feature allows you to communicate with your customers in bulk about upcomin
 
 ### Admin Configuration
 
-**Step 1)** Firstly the admin can navigate to **Configue >> Customer >> Settings**
+**Step 1)** Firstly the admin can navigate to **Configure >> Customer >> Settings**
 
 ![Newsletter Settings](../../assets/2.1.0/images/marketing/newsletterSettings.png)
 
