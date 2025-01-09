@@ -11,5 +11,5 @@ features:
   details: Learn how to create Category for Bagisto.  
 - title: Attribute
   details: Learn how to create Product Attribute and Attribute Families for Bagisto.  
-footer: Copyright © 2024 Bagisto
+footer: Copyright © 2025 Bagisto
 ---
