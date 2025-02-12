@@ -5,7 +5,7 @@ Today's document will guide you on how to create bundle products in Bagisto. Bun
 Each item in a bundle product can be based on one of the following product types:
 
 - [Simple Product](https://bagisto.com/en/how-to-create-simple-product-in-bagisto/)
-- [Variants of Configurable Products](https://bagisto.com/en/how-to-create-configurable-product-in-bagisto/)
+- [Configurable Products](https://bagisto.com/en/how-to-create-configurable-product-in-bagisto/)
 
 ### Steps To Create A Bundle Product In Bagisto 2.1.0
 
