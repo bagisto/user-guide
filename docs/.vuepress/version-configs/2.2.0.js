@@ -87,6 +87,18 @@ module.exports = [
       ["marketing/searchseo", "Search & SEO"],
     ]),
   },
+
+  {
+    title: "Reporting",
+    path: setVersionPrefix("reporting"),
+    collapsable: true,
+    children: setVersionPrefix([
+      ["reporting/sales", "Sales"],
+      ["reporting/customers", "Customers"],
+      ["reporting/products", "Products"],
+    ]),
+  },
+
   {
     title: "Settings",
     path: setVersionPrefix("settings"),
