@@ -28,3 +28,10 @@ Customer reviews are an important aspect of an eCommerce business. And as an eCo
 
 It helps other customers with the selection of the product. A customer review is an evaluation of a product or service made by someone who has purchased and used or had experience with, a product or service. Customer reviews are a form of customer feedback on electronic commerce and online shopping sites.
 
+### GDPR Request
+
+ The General Data Protection Regulation (GDPR) is a comprehensive European law designed to protect users' personal data by enforcing strict guidelines on data collection, processing, and storage. For eCommerce businesses, GDPR compliance is not just a legal requirement but a fundamental step toward building customer trust and ensuring data security.
+
+ Under GDPR, customers are granted specific rights over their personal information. The Right to Access empowers users to request a complete record of the data stored about them, ensuring transparency in how businesses handle personal information. Additionally, the Right to be Forgotten allows customers to request the permanent deletion of their data, reinforcing their control over personal information. 
+
+ For eCommerce platforms, compliance involves implementing robust data protection measures, such as encrypted data storage, explicit consent mechanisms, and transparent privacy policies. 
