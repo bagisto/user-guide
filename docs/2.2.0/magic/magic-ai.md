@@ -13,7 +13,6 @@ With Magic AI, store owners can effortlessly generate engaging **Products, Categ
 
 **A) For Content** – OpenAI gpt-3.5-turbo, Llama 2, Mistral, Dolphin Phi, Phi-2, Starling, Llama 2 Uncensored, Llama 2 13B, Llama 2 70B, Orca Mini, Vicuna, LLaVA.
 
-
 ![Magic Content](../../assets/2.2.0/images/magic-ai/content.png)
 
 Say goodbye to time-consuming manual content creation as Magic AI crafts compelling and unique descriptions, saving you valuable time and effort.
