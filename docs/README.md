@@ -3,7 +3,7 @@ home: true
 heroText: Bagisto User Documentation
 tagline: A Comprehensive User Guide to Seamlessly Navigate Bagisto.
 actionText: Get Started →
-actionLink: /2.2.0/introduction/
+actionLink: /2.3.0/introduction/
 features:
 - title: Product Types
   details: Learn how to create Products for Bagisto.

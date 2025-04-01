@@ -41,10 +41,20 @@
       <OutboundLink />
     </a>
 
-    <div class="nav-item" v-if="$route.path.split('/')[1] !== ''">
-      <select v-model="version" @change="changeVersion">
+    <div
+      class="nav-item" 
+      v-if="$route.path.split('/')[1] !== ''"
+    >
+      <select
+        v-model="version"
+        @change="changeVersion"
+      >
+        <option value="2.3.0">2.3.0</option>
+
         <option value="2.2.0">2.2.0</option>
+
         <option value="2.1.0">2.1.0</option>
+
         <option value="2.0">2.0</option>
       </select>   
     </div>
@@ -66,8 +76,22 @@ export default {
 
   data() {
     return {
-      version: '2.2.0',
+      version: '2.3.0',
     };
+  },
+
+  mounted() {
+    let currentPath = this.$route.path.split('/');
+
+    this.version = currentPath[1] || '2.3.0';
+
+    this.currentVersion();
+  },
+
+  watch: {
+    $route() {
+      this.currentVersion();
+    }
   },
   
   computed: {
@@ -154,10 +178,14 @@ export default {
     changeVersion() {
       let currentPath = this.$route.path.split('/');
 
-      currentPath[1] = this.version;
+      currentPath[1] = this.version;      
 
       this.$router.push(currentPath.join('/'));
     },
+
+    currentVersion() {
+      this.version = this.$route.path.split('/')[1] || '2.3.0';
+    }
   },
 }
 </script>
