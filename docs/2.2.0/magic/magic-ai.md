@@ -11,7 +11,7 @@ With Magic AI, store owners can effortlessly generate engaging **Products, Categ
 
 ### In Bagisto 2.2.0 it provides Native Support to various LLMs.
 
-**A) For Content** – GPT-4o, OpenAI GPT-4o Mini, Gemini, Llama 3.3 (70B), Mistral, Phi 4, Llama 3.2 (1B and 3B), Llama 3.1 (8B, 70B, and 405B), Qwen 2.5, LLaVA, Llama 3.2 Vision (90B, 11B), Grok (xAI), Deepseek.
+**A) For Content** – OpenAI gpt-3.5-turbo, Llama 2, Mistral, Dolphin Phi, Phi-2, Starling, Llama 2 Uncensored, Llama 2 13B, Llama 2 70B, Orca Mini, Vicuna, LLaVA.
 
 
 ![Magic Content](../../assets/2.2.0/images/magic-ai/content.png)
