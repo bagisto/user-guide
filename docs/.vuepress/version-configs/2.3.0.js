@@ -72,6 +72,7 @@ module.exports = [
       ["customer/create-customer", "Customers"],
       ["customer/customer-groups", "Groups"],
       ["customer/customer-reviews", "Reviews"],
+      ["customer/gdpr-request", "GDPR Request"],
     ]),
   },
 
@@ -110,6 +111,7 @@ module.exports = [
     collapsable: true,
     children: setVersionPrefix([
       ["configure/magic-ai", "Magic AI"],
+      ["configure/gdpr", "GDPR"],
       ["configure/weight-unit", "Weight Unit"],
       ["configure/configurable-choices", "Configurable Choices"],
       ["configure/custom-scripts", "Custom Script"],

@@ -70,12 +70,14 @@ Customization options allow customers to personalize products based on their pre
 
 ![customization](../../assets/2.3.0/images/simple-product/customization.png)
 
-### Is Required
+**Is Required**
+
 This Feature allows admins to specify whether a customization field must be filled before checkout.
 
 ![customization](../../assets/2.3.0/images/simple-product/is-required.png)
 
 **Front End**
+
 The customization on product will be visible as given below on the front end.
 
 ![customization](../../assets/2.3.0/images/simple-product/custom-item.png)

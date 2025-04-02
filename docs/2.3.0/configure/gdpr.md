@@ -1,9 +1,9 @@
 # GDPR
 Bagisto provides essential GDPR (General Data Protection Regulation) compliance features to help businesses ensure data privacy and transparency for their customers. Below are the key sections where GDPR-related settings and options are available:
 
-**Enable GDPR Compliance Settings**
+## Enable GDPR Compliance Settings
 
-To add go to Admin Panel and click on **Configure >> GDPR >> Enable GDPR Compliance Settings** 
+To add go to Admin Panel and click on **Configure >> GDPR >> Enable GDPR** 
 This section empowers store owners to configure GDPR-related policies and efficiently manage customer data requests. Key features include:
 
 - **GDPR Request** button appears on the customer's profile page in the store frontend.
@@ -13,8 +13,9 @@ This section empowers store owners to configure GDPR-related policies and effici
 
 After then click on the **Save Configuration** button.
 
-**2. GDPR Agreement Button**
-To add go to Admin Panel and click on **Configure >> GDPR >> Enable GDPR Agreement** 
+## GDPR Agreement
+
+To add go to Admin Panel and click on **Configure >> GDPR >> Enable Customer Agreement** 
 The GDPR Agreement button is used to obtain explicit consent from customers before they proceed with account registration, checkout, or other data-related actions. It ensures:
 - Users acknowledge and accept the store's privacy policy.
 - Consent is recorded for legal compliance.
@@ -27,8 +28,9 @@ There is the list of fields you need to provide under the GDPR Agreement section
 
 After then click on the **Save Configuration** button.
 
-**Cookie Notice Settings**
-To add go to Admin Panel and click on **Configure >> GDPR >> Enable Cookie Notice Settings** 
+## Cookie Notice Settings
+
+To add go to Admin Panel and click on **Configure >> GDPR >> Enable Cookie Notice** 
 This section allows store owners to configure how the cookie notice appears to users. Key settings include:
 
 - **Cookie Block Display Position** – Determines where the cookie notice will appear on the page. Available options:
@@ -46,7 +48,8 @@ This section allows store owners to configure how the cookie notice appears to u
 
 After then click on the **Save Configuration** button.
 
-**Manage Your Cookie Preferences**
+## Manage Your Cookie Preferences
+
 This section enables users to personalize their cookie settings based on their preferences. The available categories include:
 
 - **Strictly Necessary** – Essential cookies required for the website to function properly, such as session management and security features. These cannot be disabled.
