@@ -18,11 +18,11 @@ It helps other customers with the selection of the product. A customer review is
 
   ![Admin Review](../../assets/2.3.0/images/customer/adminReview.png)
 
-**Step 3**: Next you can also change the **Status** of the Review as **Pending** to **Approved** and **Disapproved** and click on **Save** button as shown below.
+**Step 4**: Next you can also change the **Status** of the Review as **Pending** to **Approved** and **Disapproved** and click on **Save** button as shown below.
 
 ![Review Status](../../assets/2.3.0/images/customer/reviewStatus.png)
 
-**Step 4**: It will get redirected to the Review Grid and you will able to see a new record is registered successfully.
+**Step 5**: It will get redirected to the Review Grid and you will able to see a new record is registered successfully.
 
 ![output](../../assets/2.3.0/images/customer/output.png)
 

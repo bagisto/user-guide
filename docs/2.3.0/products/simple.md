@@ -46,6 +46,22 @@ To add the product images, click on **Add Images**. You can add multiple images 
 
 ![image](../../assets/2.3.0/images/simple-product/image.png)
 
+### Customizable Item
+There is the list of fields you need to provide under the Customizable Item section to allow product personalization in Bagisto:
+
+### Title
+Provide the title of the customization by which will be known in Product.
+
+### Type
+These options enhance flexibility, allowing customers to personalize their purchases easily. 
+
+![customization](../../assets/2.3.0/images/simple-product/customization.png)
+
+### Is Required
+This Feature allows admins to specify whether a customization field must be filled before checkout.
+
+![customization](../../assets/2.3.0/images/simple-product/is-required.png)
+
 ### New
 Enable the toggle button if you want to feature the product as a new product. The resulting product will be shown under the New Products section.
 
