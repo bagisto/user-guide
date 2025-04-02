@@ -69,14 +69,27 @@ Add product images by clicking on **Add Images**. Multiple images can be added.
 
  ![image](../../assets/2.3.0/images/virtual-product/image.png)
 
- ### Customizable Item
-There is the list of fields you need to provide under the Customizable Item section to allow product personalization in Bagisto:
+### Customizable Item
+A customization item is a feature, component, or service that can be tailored to meet specific user needs, ensuring a personalized experience. There is the list of fields you need to provide under the Customizable Item section to allow product personalization in Bagisto:
 
-### Title
+**Title**
+
 Provide the title of the customization by which will be known in Product.
 
-### Type
-These options enhance flexibility, allowing customers to personalize their purchases easily. 
+**Type**
+
+Customization options allow customers to personalize products based on their preferences. Different input types help businesses collect specific details from customers. Below is a detailed explanation of various customization types .
+
+1. **Text :** Allows users to enter a short text, such as a name or a short message.
+2. **Textarea :** Provides a larger text box where users can enter longer messages or   instructions.
+3. **Checkbox :** Allows customers to select multiple options from a list.
+4. **Radio :** Allows customers to select one option from multiple choices.
+5. **Select :** Provides a dropdown list with multiple choices but allows the selection of only one.
+6. **Multi-Select :** Similar to the select dropdown, but customers can select more than one option.
+7. **Date :** Allows customers to select a specific date.
+8. **DateTime :** Allows users to choose both a date and a time together. 
+9. **Time :** Enables users to select only a time value.
+10. **File :** Allows users to upload an image, logo, or other files for customization.
 
 ![customization](../../assets/2.3.0/images/simple-product/customization.png)
 
@@ -84,6 +97,11 @@ These options enhance flexibility, allowing customers to personalize their purch
 This Feature allows admins to specify whether a customization field must be filled before checkout.
 
 ![customization](../../assets/2.3.0/images/simple-product/is-required.png)
+
+**Front End**
+The customization on product will be visible as given below on the front end.
+
+![customization](../../assets/2.3.0/images/virtual-product/virtual-custom.png)
 
 ### Channels
 
