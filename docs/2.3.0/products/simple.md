@@ -74,13 +74,7 @@ Customization options allow customers to personalize products based on their pre
 
 This Feature allows admins to specify whether a customization field must be filled before checkout.
 
-![customization](../../assets/2.3.0/images/simple-product/is-required.png)
-
-**Front End**
-
-The customization on product will be visible as given below on the front end.
-
-![customization](../../assets/2.3.0/images/simple-product/custom-item.png)
+![customization](../../assets/2.3.0/images/simple-product/custom-shoes.png)
 
 ### New
 Enable the toggle button if you want to feature the product as a new product. The resulting product will be shown under the New Products section.
@@ -125,5 +119,5 @@ At last, **Save the Product**.
 ### Front End
 The product will be visible as given below on the front end.
 
-![product](../../assets/2.3.0/images/simple-product/product.png)
+![product](../../assets/2.3.0/images/simple-product/simple-product.png)
 

@@ -91,19 +91,13 @@ Customization options allow customers to personalize products based on their pre
 9. **Time :** Enables users to select only a time value.
 10. **File :** Allows users to upload an image, logo, or other files for customization.
 
-![customization](../../assets/2.3.0/images/simple-product/customization.png)
+![customization](../../assets/2.3.0/images/virtual-product/customization.png)
 
 **Is Required**
 
 This Feature allows admins to specify whether a customization field must be filled before checkout.
 
-![customization](../../assets/2.3.0/images/simple-product/is-required.png)
-
-**Front End**
-
-The customization on product will be visible as given below on the front end.
-
-![customization](../../assets/2.3.0/images/virtual-product/virtual-custom.png)
+![customization](../../assets/2.3.0/images/virtual-product/virtual-customization.png)
 
 ### Channels
 
