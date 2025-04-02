@@ -6,7 +6,7 @@
 
  For eCommerce platforms, compliance involves implementing robust data protection measures, such as encrypted data storage, explicit consent mechanisms, and transparent privacy policies. 
 
- ### How to Manage GDPR Request in Bagisto2.3.0
+ ### How to Manage GDPR Request 
 
  **Step 1**: After get logged in as a customer go to the GDPR Request section of the customer profile and you will able to see the **Create Request** section as shown in the below image
 
