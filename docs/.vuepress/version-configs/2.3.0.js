@@ -115,6 +115,7 @@ module.exports = [
       ["configure/weight-unit", "Weight Unit"],
       ["configure/configurable-choices", "Configurable Choices"],
       ["configure/custom-scripts", "Custom Script"],
+      ["configure/content", "Content"],
       ["configure/design", "Design"],
       ["configure/back-orders", "Back Orders"],
       ["configure/guest-checkout", "Guest Checkout"],
