@@ -22,7 +22,11 @@ To update the **Admin Logo** and **Favicon** in Bagisto:
 
 After saving the configuration, the new **Admin Logo** and **Favicon** will be visible in the admin panel interface.
 
+**Logo**
 ![Design Output](../../assets/2.3.0/images/configure/designOutput.png)
+
+**Favicon**
+![Design Output](../../assets/2.3.0/images/configure/designOutput2.png)
 
 
 **Menu Category View**, Bagisto v2.3.x introduced a new option to configure how product categories are displayed in the storefront menu.
@@ -47,4 +51,3 @@ You can now choose between:
 
 ![Menu Category View Setting](../../assets/2.3.0/images/configure/catSide.png)
 
----

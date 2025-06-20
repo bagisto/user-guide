@@ -10,8 +10,6 @@ To update the **Content** configuration in Bagisto:
 2. Navigate to **Configure → Content**.
 3. You will find the following options to configure:
 
----
-
 **Header Offer Title**
 
 Display a promotional banner on the storefront header.
@@ -25,9 +23,7 @@ Display a promotional banner on the storefront header.
 - **Redirection Link**  
   Enter a valid URL (e.g., `/products/sale`)
 
-  ![Content](../../assets/2.3.0/images/configure/Header.png)
-
----
+  ![Content](../../assets/2.3.0/images/configure/header.png)
 
 **Speculation Rules**
 
@@ -56,9 +52,7 @@ These rules improve perceived performance by prefetching or prerendering pages i
 - **Enable Prefetch Speculation Rules**  
   Enables link prefetching to accelerate navigation.
 
-![Content](../../assets/2.3.0/images/configure/Speculation.png)
-
----
+![Content](../../assets/2.3.0/images/configure/contentspec.png)
 
 **Custom Scripts**
 
@@ -71,6 +65,4 @@ Add your own scripts to enhance or integrate custom features.
   Insert scripts for chat widgets, analytics, or any custom interaction.
 
 
-![Content](../../assets/2.3.0/images/configure/CustomScript.png)
-
----
+![Content](../../assets/2.3.0/images/configure/custom.png)
