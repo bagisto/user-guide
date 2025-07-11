@@ -6,7 +6,7 @@ module.exports = {
     description: 'Unlock the full potential of Bagisto with our detailed user guide. This step-by-step documentation is perfect for beginners, covering installation, configuration, and advanced features to help you master your eCommerce platform',
     head: [
         ['link', { rel: "icon", type: "image/png", href: "/favicon.ico" }],
-        ['script', { src: 'https://vikastiwari-webkul.github.io/ai-chatbot/chatbot.js', async: true}]
+        ['script', { src: 'https://bagisto.github.io/ai-chatbot/chatbot.js', async: true}]
     ],
     themeConfig: {
         smoothScroll: true,
