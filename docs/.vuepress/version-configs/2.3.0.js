@@ -145,4 +145,15 @@ module.exports = [
   [setVersionPrefix("shipping-method/shipping-method"), "Shipping Method"],
   [setVersionPrefix("payment-method/payment-method"), "Payment Method"],
   [setVersionPrefix("magic/magic-ai"), "Magic AI"],
+
+
+ {
+    title: "Multi Vendor Marketplace",
+    path: setVersionPrefix("MultiVendorMarketplace"),
+    collapsable: true,
+    children: setVersionPrefix([
+      ["MultiVendorMarketplace/vendor-management", "Vendor Management"],
+      ["MultiVendorMarketplace/order-management", "Order Management"],
+    ]),
+  },
 ];
