@@ -1,7 +1,5 @@
 # Multi Vendor Marketpace
 
-A multi-vendor marketplace in Bagisto is an eCommerce platform where multiple independent sellers can register, list, and manage their own products within a single online storefront. 
-
 Bagisto’s Marketplace Module transforms a standard store into a complete marketplace, allowing the admin to manage sellers, commissions, product approvals, and order handling, while giving vendors a dedicated dashboard to manage their catalog, orders, and transactions. 
 
 ### Vendor Management
