@@ -162,6 +162,7 @@ module.exports = [
     children: setVersionPrefix([
       ["MultiVendorMarketplace/vendor-management", "Vendor Management"],
       ["MultiVendorMarketplace/order-management", "Order Management"],
+      ["MultiVendorMarketplace/commission-management", "Commission Management"],
     ]),
   },
 ];

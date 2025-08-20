@@ -13,7 +13,6 @@ Go to the **"Orders"** menu and click on it.
 
 ![Template Name](../../assets/2.0/images/MultiVendorMarketplace/dashboard-order.png)
 
-
 The order management page will open, where you can see all customer orders in one place. You can also filter orders by date or status, track progress, and update delivery status. 
 
 This helps you manage orders quickly and keep your customers happy.

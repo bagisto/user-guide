@@ -15,3 +15,9 @@ Order management in a Multi Vendor Marketplace helps sellers and admins track, m
 From the moment a buyer places an order to shipping and delivery, everything is handled in one place.
  
 It ensures smooth processing, timely updates, and better coordination between vendors and buyers for a hassle free shopping experience.
+
+### Commission Management
+
+The Marketplace Commission Management system in Bagisto lets platform owners (admins) set and manage commission rates for sellers in a flexible and clear way.
+
+This system helps the marketplace earn steady income, and it also gives admins the ability to give special commission rates to sellers as rewards or incentives when necessary.
