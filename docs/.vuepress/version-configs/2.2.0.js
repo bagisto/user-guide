@@ -157,12 +157,13 @@ module.exports = [
 
   {
     title: "Multi Vendor Marketplace",
-    path: setVersionPrefix("MultiVendorMarketplace"),
+    path: setVersionPrefix("multi-vendor-marketplace"),
     collapsable: true,
     children: setVersionPrefix([
-      ["MultiVendorMarketplace/vendor-management", "Vendor Management"],
-      ["MultiVendorMarketplace/order-management", "Order Management"],
-      ["MultiVendorMarketplace/commission-management", "Commission Management"],
+      ["multi-vendor-marketplace/vendor-management", "Vendor Management"],
+      ["multi-vendor-marketplace/order-management", "Order Management"],
+      ["multi-vendor-marketplace/commission-management", "Commission Management"],
+      ["multi-vendor-marketplace/product-management", "Product Management"],
     ]),
   },
 ];
