@@ -28,15 +28,15 @@ You can add a product in two ways:
 
 ![Template](../../assets/2.0/images/multi-vendor-marketplace/3-product-creation.png)
 
-**1. Add New Product**
+### Add New Product
 
 To create a new product, fill in the basic details:
 
-**Product Type:** Select the type of product you want to add.
+**1) Product Type:** Select the type of product you want to add.
 
-**Attribute Family:** Choose the attribute set that defines product features.
+**2) Attribute Family:** Choose the attribute set that defines product features.
 
-**SKU:** Enter a unique product code for easy identification.
+**3) SKU:** Enter a unique product code for easy identification.
 
 Click on the **Continue** button to proceed further.
 
@@ -97,6 +97,7 @@ A customizable item is a feature, component, or service that can be tailored to 
 Below is the list of fields you need to provide under the Customizable Item section to allow product personalization.
 
 **1) Title:** Provide the title of the customization by which it will be known in the product.
+
 **2) Type:** Select the type of customization input you want to offer customers.
 
 **Customization Data Types:**
@@ -166,7 +167,10 @@ In this section, you need to provide the product’s physical details for accura
 ![Template](../../assets/2.0/images/multi-vendor-marketplace/13-setting.png)
 
 **Inventories**
-In this section, enter the quantity of the product available in your inventory. By default, the quantity is set to 0, which means the product will appear as Out of Stock on the storefront.
+
+In this section, enter the quantity of the product available in your inventory. 
+
+By default, the quantity is set to 0, which means the product will appear as Out of Stock on the storefront.
 
 **Category**
 
@@ -203,10 +207,6 @@ To approve a product, follow these steps:
 4) Select **Approved** to approve the product.
 
 ![Template](../../assets/2.0/images/multi-vendor-marketplace/17-admin-update-status.png)
-
-**Product Preview – Admin**
-
-![Template](../../assets/2.0/images/multi-vendor-marketplace/18-admin-assign-product-view-page.png)
 
 **Note:** Once the product is approved, it will show as **Approved** on the seller’s dashboard and will also become visible on the storefront for customers.
 

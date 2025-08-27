@@ -164,6 +164,7 @@ module.exports = [
       ["multi-vendor-marketplace/order-management", "Order Management"],
       ["multi-vendor-marketplace/commission-management", "Commission Management"],
       ["multi-vendor-marketplace/product-management", "Product Management"],
+      ["multi-vendor-marketplace/rating-management", "Rating Management"],
     ]),
   },
 ];
