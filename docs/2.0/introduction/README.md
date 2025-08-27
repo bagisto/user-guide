@@ -1,4 +1,4 @@
-# Introduction
+# Introduction <span style="background-color: rgb(40, 167, 69);color: white;padding: 6px 16px;border-radius: 8px;font-size: 22px;font-weight: bold;">Open Source</span>
 
 [Bagisto](https://bagisto.com/en/) is a fantastic open-source eCommerce platform that allows businesses to create modern online stores easily. Bagisto offers a wide range of customizable features to meet the specific needs of any online business.
 
