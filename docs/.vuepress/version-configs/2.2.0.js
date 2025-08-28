@@ -167,4 +167,13 @@ module.exports = [
       ["multi-vendor-marketplace/rating-management", "Rating Management"],
     ]),
   },
+
+  {
+    title: "B2B Marketplace",
+    path: setVersionPrefix("b2b-marketplace"),
+    collapsable: true,
+    children: setVersionPrefix([
+      ["b2b-marketplace/request-for-quotes", "Request for Quotes"],
+    ]),
+  },
 ];
