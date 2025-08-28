@@ -165,6 +165,7 @@ module.exports = [
       ["multi-vendor-marketplace/commission-management", "Commission Management"],
       ["multi-vendor-marketplace/product-management", "Product Management"],
       ["multi-vendor-marketplace/rating-management", "Rating Management"],
+      ["multi-vendor-marketplace/payment-management", "Payment Management"],
     ]),
   },
 
