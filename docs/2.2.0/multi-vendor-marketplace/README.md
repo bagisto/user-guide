@@ -1,6 +1,6 @@
 # Multi Vendor Marketpace <span style="background-color: rgb(40, 167, 69);color: white;padding: 6px 16px;border-radius: 8px;font-size: 22px;font-weight: bold;">Paid</span>
 
-Bagisto’s Marketplace Module transforms a standard store into a complete marketplace, allowing the admin to manage sellers, commissions, product approvals, and order handling, while giving vendors a dedicated dashboard to manage their catalog, orders, and transactions. 
+[Mutltivendor Marketplace Module](https://store.webkul.com/laravel-multi-vendor-marketplace.html) transforms a standard store into a complete marketplace, allowing the admin to manage sellers, commissions, product approvals, and order handling, while giving vendors a dedicated dashboard to manage their catalog, orders, and transactions. 
 
 ### Vendor Management
 
@@ -33,3 +33,9 @@ With easy to use tools, sellers can quickly edit or update products whenever nee
 Ratings and reviews build trust in an online marketplace, guide customer purchases, and help sellers improve their service.
 
 In a Laravel Multi Vendor Marketplace, Rating Management allows buyers to leave star ratings and detailed feedback on both products and sellers after completing a purchase.
+
+### Payment Management 
+
+Payment management in a Multi-Vendor Marketplace helps both sellers and admins handle finances with ease and clarity. Sellers can quickly check their earnings, see payment details for orders, and request payouts without hassle. 
+
+Admins can easily track all payments, manage commissions, and make sure settlements are secure and on time.

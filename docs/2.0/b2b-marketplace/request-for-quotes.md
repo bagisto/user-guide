@@ -66,7 +66,7 @@ A pop-up window will appear where the customer can enter product details such as
 
 **4) Expected Price Per Quantity:** Mention the price you expect per unit.
 
-**5) Is Required:** Choose if the product needs a sample or not.
+**5) Is Samples:** Choose if the product needs a sample or not.
 
 **6) Image:** Enter Image for reference.
 
@@ -108,7 +108,7 @@ Click the **‘Send Quotes’** button to send a quote to the customer.
 
 The **‘Send Quote Request’** page will open.
 
-Enter the required details, including **Quote Quantity, Price per Quantity, Sample Information, and Shipping Information,** then click the **‘Send’** button.
+Enter the required details, including **Quote Quantity, RFQ Quote Price per Quantity, Sample Information, and Shipping Information,** then click the **‘Send’** button.
 
  ![b2b-marketplace](../../assets/2.0/images/b2b-marketplace/13-send-quote-request-to-customer.png)
 

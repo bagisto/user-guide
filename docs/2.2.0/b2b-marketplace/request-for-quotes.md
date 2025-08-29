@@ -108,7 +108,7 @@ Click the **‘Send Quotes’** button to send a quote to the customer.
 
 The **‘Send Quote Request’** page will open.
 
-Enter the required details, including **Quote Quantity, Price per Quantity, Sample Information, and Shipping Information,** then click the **‘Send’** button.
+Enter the required details, including **Quote Quantity, RFQ Quote Price per Quantity, Sample Information, and Shipping Information,** then click the **‘Send’** button.
 
  ![b2b-marketplace](../../assets/2.2.0/images/b2b-marketplace/13-send-quote-request-to-customer.png)
 

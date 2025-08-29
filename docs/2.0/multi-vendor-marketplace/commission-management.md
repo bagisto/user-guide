@@ -26,7 +26,7 @@ This is the easiest and most reliable way to make money from sales since every s
 
 **Steps to set the global commission**
 
-1) In the Admin Panel, go to **Configure → Marketplace → General Settings**.
+1) In the Admin Panel, go to **Configure → Marketplace → General**.
 
 2) Locate the **Admin Commission Percentage** field.
 
@@ -38,7 +38,7 @@ This is the easiest and most reliable way to make money from sales since every s
 
 **Example:**
 
-If the global rate is 10%, and a seller sells something for ₹1,000, the admin will automatically get ₹100 as their commission, while the seller keeps ₹900.
+If the global rate is 10%, and a seller sells something for $1,000, the admin will automatically get $100 as their commission, while the seller keeps $900.
 
 ### Seller Commission (Custom Rate)
 
@@ -100,5 +100,5 @@ This openness helps create trust between the marketplace and sellers by making s
 
 **Example:**
 
-A seller selling ₹50,000 worth of goods at a 10% commission rate will see ₹5,000 listed in the “Total Commission Paid” section.
+A seller selling $50,000 worth of goods at a 10% commission rate will see $5,000 listed in the “Total Commission Paid” section.
 
