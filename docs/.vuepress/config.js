@@ -2,7 +2,7 @@ module.exports = {
     base: '/',
     port: '8080',
     cache: false,
-    title: '',
+    title: 'Bagisto User Documentation',
     description: 'Unlock the full potential of Bagisto with our detailed user guide. This step-by-step documentation is perfect for beginners, covering installation, configuration, and advanced features to help you master your eCommerce platform',
     head: [
         ['link', { rel: "icon", type: "image/png", href: "/favicon.ico" }],
