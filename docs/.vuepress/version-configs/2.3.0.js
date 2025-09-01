@@ -1,5 +1,5 @@
 /* set version */
-let version = "2.3.0";
+let version = "2.0";
 
 /* version prefix setter */
 function setVersionPrefix(children) {
@@ -27,7 +27,6 @@ module.exports = [
       ["products/bundle", "Bundle Product"],
       ["products/grouped", "Grouped Product"],
       ["products/downloadable", "Downloadable Product"],
-      ["products/booking", "Booking Product"],
     ]),
   },
   {
@@ -47,9 +46,7 @@ module.exports = [
       ["attribute/attribute-input", "Attribute Input Type"],
     ]),
   },
-
   [setVersionPrefix("attribute-family/attribute-families"), "Attribute Family"],
-
   {
     title: "Orders",
     path: setVersionPrefix("orders"),
@@ -59,8 +56,6 @@ module.exports = [
       ["orders/create-invoice", "Invoice"],
       ["orders/create-shipment", "Shipment"],
       ["orders/refunds", "Refunds"],
-      ["orders/reorder", "Reorder"],
-      ["orders/admin-order", "Admin Order"],
       ["orders/transaction", "Transactions"],
     ]),
   },
@@ -72,7 +67,6 @@ module.exports = [
       ["customer/create-customer", "Customers"],
       ["customer/customer-groups", "Groups"],
       ["customer/customer-reviews", "Reviews"],
-      ["customer/gdpr-request", "GDPR Request"],
     ]),
   },
 
@@ -85,7 +79,17 @@ module.exports = [
     children: setVersionPrefix([
       ["marketing/promotions", "Promotions"],
       ["marketing/communications", "Communications"],
-      ["marketing/searchseo", "Search & SEO"],
+      ["marketing/sitemaps", "Sitemaps"],
+    ]),
+  },
+  {
+    title: "Reporting",
+    path: setVersionPrefix("reporting"),
+    collapsable: true,
+    children: setVersionPrefix([
+      ["reporting/sales", "Sales"],
+      ["reporting/customers", "Customers"],
+      ["reporting/products", "Products"],
     ]),
   },
   {
@@ -102,20 +106,17 @@ module.exports = [
       ["settings/roles", "Roles"],
       ["settings/themes", "Themes"],
       ["settings/taxes", "Taxes"],
-      ["settings/data-transfer", "Data Transfer"],
     ]),
   },
+
   {
     title: "Configure",
     path: setVersionPrefix("configure"),
     collapsable: true,
     children: setVersionPrefix([
-      ["configure/magic-ai", "Magic AI"],
-      ["configure/gdpr", "GDPR"],
       ["configure/weight-unit", "Weight Unit"],
       ["configure/configurable-choices", "Configurable Choices"],
       ["configure/custom-scripts", "Custom Script"],
-      ["configure/content", "Content"],
       ["configure/design", "Design"],
       ["configure/back-orders", "Back Orders"],
       ["configure/guest-checkout", "Guest Checkout"],
@@ -131,8 +132,6 @@ module.exports = [
       ["configure/captcha", "Captcha"],
       ["configure/settings", "Settings"],
       ["configure/email-settings", "E-mail Settings"],
-      ["configure/taxes", "Taxes"],
-      ["configure/checkout", "Checkout"],
       ["configure/notifications", "Notifications"],
       ["configure/shipping", "Shipping"],
       ["configure/shipping-methods", "Shipping Methods"],
@@ -144,9 +143,8 @@ module.exports = [
   },
   [setVersionPrefix("shipping-method/shipping-method"), "Shipping Method"],
   [setVersionPrefix("payment-method/payment-method"), "Payment Method"],
-  [setVersionPrefix("magic/magic-ai"), "Magic AI"],
 
- {
+  {
     title: "Multi Vendor Marketplace",
     path: setVersionPrefix("multi-vendor-marketplace"),
     collapsable: true,
@@ -168,6 +166,15 @@ module.exports = [
       ["b2b-marketplace/request-for-quotes", "Request for Quotes"],
       ["b2b-marketplace/buyer-seller-communication", "Buyer Seller Communication"],
       ["b2b-marketplace/supplier microsite", "Supplier Microsite"],
+    ]),
+  },
+
+  {
+    title: "Multi Tenant Ecommerce",
+    path: setVersionPrefix("multi-tenant-ecommerce"),
+    collapsable: true,
+    children: setVersionPrefix([
+      ["multi-tenant-ecommerce/super-admin-management", "Super Admin Management"],
     ]),
   },
 ];

@@ -1,5 +1,5 @@
 /* set version */
-let version = "2.1.0";
+let version = "2.0";
 
 /* version prefix setter */
 function setVersionPrefix(children) {
@@ -46,9 +46,7 @@ module.exports = [
       ["attribute/attribute-input", "Attribute Input Type"],
     ]),
   },
-
   [setVersionPrefix("attribute-family/attribute-families"), "Attribute Family"],
-
   {
     title: "Orders",
     path: setVersionPrefix("orders"),
@@ -81,10 +79,9 @@ module.exports = [
     children: setVersionPrefix([
       ["marketing/promotions", "Promotions"],
       ["marketing/communications", "Communications"],
-      ["marketing/searchseo", "Search & SEO"],
+      ["marketing/sitemaps", "Sitemaps"],
     ]),
   },
-
   {
     title: "Reporting",
     path: setVersionPrefix("reporting"),
@@ -95,7 +92,6 @@ module.exports = [
       ["reporting/products", "Products"],
     ]),
   },
-
   {
     title: "Settings",
     path: setVersionPrefix("settings"),
@@ -110,7 +106,6 @@ module.exports = [
       ["settings/roles", "Roles"],
       ["settings/themes", "Themes"],
       ["settings/taxes", "Taxes"],
-      ["settings/data-transfer", "Data Transfer"],
     ]),
   },
 
@@ -119,7 +114,6 @@ module.exports = [
     path: setVersionPrefix("configure"),
     collapsable: true,
     children: setVersionPrefix([
-      ["configure/magic-ai", "Magic AI"],
       ["configure/weight-unit", "Weight Unit"],
       ["configure/configurable-choices", "Configurable Choices"],
       ["configure/custom-scripts", "Custom Script"],
@@ -128,7 +122,7 @@ module.exports = [
       ["configure/guest-checkout", "Guest Checkout"],
       ["configure/product-view-page", "Product View Page"],
       ["configure/cart-view-page", "Cart View Page"],
-      ["configure/frontend", "Shop Front"],
+      ["configure/frontend", "Frontend"],
       ["configure/image-size", "Image Size"],
       ["configure/review", "Review"],
       ["configure/attribute", "Attribute"],
@@ -149,8 +143,6 @@ module.exports = [
   },
   [setVersionPrefix("shipping-method/shipping-method"), "Shipping Method"],
   [setVersionPrefix("payment-method/payment-method"), "Payment Method"],
-
-  [setVersionPrefix("magic/magic-ai"), "Magic AI"],
 
   {
     title: "Multi Vendor Marketplace",
@@ -174,6 +166,15 @@ module.exports = [
       ["b2b-marketplace/request-for-quotes", "Request for Quotes"],
       ["b2b-marketplace/buyer-seller-communication", "Buyer Seller Communication"],
       ["b2b-marketplace/supplier microsite", "Supplier Microsite"],
+    ]),
+  },
+
+  {
+    title: "Multi Tenant Ecommerce",
+    path: setVersionPrefix("multi-tenant-ecommerce"),
+    collapsable: true,
+    children: setVersionPrefix([
+      ["multi-tenant-ecommerce/super-admin-management", "Super Admin Management"],
     ]),
   },
 ];

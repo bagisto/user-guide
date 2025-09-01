@@ -15,3 +15,9 @@ This makes it easier to compare prices, negotiate, and choose the right deal.
 Buyer and Seller communication in a B2B Marketplace ensures smooth and transparent interactions. Buyers can send messages, negotiate prices, and discuss product details, while sellers respond with offers, updates, and order information. 
 
 It builds strong relationships while keeping both parties clear and coordinated before closing.
+
+### Supplier Microsite 
+
+The Supplier Microsite in Bagisto B2B Marketplace is like a mini online store for each supplier. It lets suppliers showcase their brand, products, company details, and policies in one place.
+
+Buyers can visit the microsite to explore products, request quotes, or place orders directly. This helps suppliers build trust, promote their business, and reach more customers easily.

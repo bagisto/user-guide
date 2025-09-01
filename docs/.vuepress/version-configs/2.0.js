@@ -168,4 +168,13 @@ module.exports = [
       ["b2b-marketplace/supplier microsite", "Supplier Microsite"],
     ]),
   },
+
+  {
+    title: "Multi Tenant Ecommerce",
+    path: setVersionPrefix("multi-tenant-ecommerce"),
+    collapsable: true,
+    children: setVersionPrefix([
+      ["multi-tenant-ecommerce/super-admin-management", "Super Admin Management"],
+    ]),
+  },
 ];
