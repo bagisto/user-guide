@@ -21,3 +21,9 @@ It builds strong relationships while keeping both parties clear and coordinated 
 The Supplier Microsite in Bagisto B2B Marketplace is like a mini online store for each supplier. It lets suppliers showcase their brand, products, company details, and policies in one place.
 
 Buyers can visit the microsite to explore products, request quotes, or place orders directly. This helps suppliers build trust, promote their business, and reach more customers easily.
+
+### Buying leads
+
+In a B2B marketplace, buying leads is a smart way for businesses to connect with genuine buyers. Instead of waiting for customers to find you, leads bring ready to buy opportunities straight to your business. 
+
+This saves time, increases sales chances, and helps sellers grow faster in a competitive market.

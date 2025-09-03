@@ -165,7 +165,8 @@ module.exports = [
     children: setVersionPrefix([
       ["b2b-marketplace/request-for-quotes", "Request for Quotes"],
       ["b2b-marketplace/buyer-seller-communication", "Buyer Seller Communication"],
-      ["b2b-marketplace/supplier microsite", "Supplier Microsite"],
+      ["b2b-marketplace/supplier-microsite", "Supplier Microsite"],
+      ["b2b-marketplace/buying-leads", "Buying leads"],
     ]),
   },
 
