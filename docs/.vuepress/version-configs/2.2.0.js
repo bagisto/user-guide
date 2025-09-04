@@ -167,6 +167,7 @@ module.exports = [
       ["b2b-marketplace/buyer-seller-communication", "Buyer Seller Communication"],
       ["b2b-marketplace/supplier-microsite", "Supplier Microsite"],
       ["b2b-marketplace/buying-leads", "Buying leads"],
+      ["b2b-marketplace/b2b-marketplace-review", "B2B Marketplace Review"],
     ]),
   },
 

@@ -27,3 +27,7 @@ Buyers can visit the microsite to explore products, request quotes, or place ord
 In a B2B marketplace, buying leads is a smart way for businesses to connect with genuine buyers. Instead of waiting for customers to find you, leads bring ready to buy opportunities straight to your business. 
 
 This saves time, increases sales chances, and helps sellers grow faster in a competitive market.
+
+### B2B Marketplace Review
+
+The Review feature allows buyers to share their experience with sellers in the marketplace. It is designed to build trust and make buying decisions easier.
