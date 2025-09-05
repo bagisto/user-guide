@@ -168,7 +168,6 @@ module.exports = [
       ["b2b-marketplace/supplier-microsite", "Supplier Microsite"],
       ["b2b-marketplace/buying-leads", "Buying leads"],
       ["b2b-marketplace/b2b-marketplace-review", "B2B Marketplace Review"],
-
     ]),
   },
 
@@ -178,6 +177,7 @@ module.exports = [
     collapsable: true,
     children: setVersionPrefix([
       ["multi-tenant-ecommerce/super-admin-management", "Super Admin Management"],
+      ["multi-tenant-ecommerce/tenant-management", "Tenant Management"],
     ]),
   },
 ];

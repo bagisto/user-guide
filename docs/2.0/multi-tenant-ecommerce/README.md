@@ -13,3 +13,13 @@ This role includes managing merchants (tenants), giving roles to staff (agents),
 Super Admins set up what products are visible, manage channels, and design themes to keep a consistent look and branding for all tenant stores.
 
 They also take care of CMS pages, send out email broadcasts, and manage global settings to ensure clear communication and proper governance of the platform.
+
+### Tenant Management
+
+Tenant Management in the SaaS module makes it easy for tenants to sign up and quickly create their online store by filling in their login, personal, and organization information.
+
+After they register, the tenant’s storefront is set up automatically, so they can begin selling immediately without any technical difficulties.
+
+Using the Tenant Admin Panel, tenants can manage products, categories, attributes, customers, and more through a user-friendly interface similar to Bagisto.
+
+Tenants can also manage orders by making invoices, setting up shipments, and using other menu options to run their store efficiently.

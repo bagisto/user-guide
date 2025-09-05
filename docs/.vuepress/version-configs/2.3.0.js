@@ -177,6 +177,7 @@ module.exports = [
     collapsable: true,
     children: setVersionPrefix([
       ["multi-tenant-ecommerce/super-admin-management", "Super Admin Management"],
+      ["multi-tenant-ecommerce/tenant-management", "Tenant Management"],
     ]),
   },
 ];
