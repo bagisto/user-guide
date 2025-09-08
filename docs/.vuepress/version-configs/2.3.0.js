@@ -178,6 +178,7 @@ module.exports = [
     children: setVersionPrefix([
       ["multi-tenant-ecommerce/super-admin-management", "Super Admin Management"],
       ["multi-tenant-ecommerce/tenant-management", "Tenant Management"],
+      ["multi-tenant-ecommerce/cname-mapping", "CName Mapping"],
     ]),
   },
 ];

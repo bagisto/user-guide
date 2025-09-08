@@ -23,3 +23,13 @@ After they register, the tenant’s storefront is set up automatically, so they 
 Using the Tenant Admin Panel, tenants can manage products, categories, attributes, customers, and more through a user-friendly interface similar to Bagisto.
 
 Tenants can also manage orders by making invoices, setting up shipments, and using other menu options to run their store efficiently.
+
+### CName Mapping
+
+CName Mapping lets tenants connect their own domain to the subdomain made by the SaaS module, which helps with professional branding.
+
+When a tenant signs up, a default subdomain like **username.rootdomain.com** is created. With CNAME, their actual domain can be directed to this subdomain.
+
+This makes it easy for customers to find the store and keeps a reliable, consistent online image.
+
+The mapping is set up through the tenant's DNS provider and the SaaS module by the Super Admin, and it doesn't need any extra plugins.
