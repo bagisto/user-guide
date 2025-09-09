@@ -14,7 +14,7 @@ The mapping is set up through the tenant's DNS provider and the SaaS by the Supe
 
 Log in to your DNS provider (like GoDaddy) and go to the settings for the domain you want to map.
 
-![Template](../../assets/2.0/images/multi-tenant-ecommerce/1-godaddy.png)
+![Template](../../assets/2.3.0/images/multi-tenant-ecommerce/1-godaddy.png)
 
 **Step 2: Add DNS Record**
 
@@ -22,23 +22,23 @@ Once you log in, set up an A record for your domain that directs to the IP of th
 
 For example, to map the domain **myshopdemo.com** with the SaaS server **IP: 206.189.131.29**, add an A record in your DNS settings as shown in the image below.
 
-![Template](../../assets/2.0/images/multi-tenant-ecommerce/2-dns-record.png)
+![Template](../../assets/2.3.0/images/multi-tenant-ecommerce/2-dns-record.png)
 
 **Step 3: Configure CNAME in SaaS**
 
 After mapping the domain with the server IP, login as **Super Admin** in the SaaS. You will see the tenant’s subdomain already created (e.g., **site1.bagisto.com**).
 
-![Template](../../assets/2.0/images/multi-tenant-ecommerce/3-super-tenants.png)
+![Template](../../assets/2.3.0/images/multi-tenant-ecommerce/3-super-tenants.png)
 
 To map the tenant’s real domain (e.g., myshopdemo.com), click the edit (pencil) icon, enter the domain in the CNAME field, and then click Save Tenant to save. 
 
-![Template](../../assets/2.0/images/multi-tenant-ecommerce/4-edit-tenant.png)
+![Template](../../assets/2.3.0/images/multi-tenant-ecommerce/4-edit-tenant.png)
 
 **Step 4: Test the Domain**
 
 Open the tenant's website in a browser and see if it loads properly.
 
-![Template](../../assets/2.0/images/multi-tenant-ecommerce/5-tenant-store.png)
+![Template](../../assets/2.3.0/images/multi-tenant-ecommerce/5-tenant-store.png)
 
 If the website loads on the tenant's original domain (like myshopdemo.com), it means the connection with the SaaS subdomain worked well.
 

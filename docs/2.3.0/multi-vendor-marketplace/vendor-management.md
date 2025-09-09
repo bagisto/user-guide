@@ -4,13 +4,13 @@ Managing multiple vendors is important for any online marketplace. It helps the 
 
 In the Laravel Multi Vendor Marketplace, this system is made to be user friendly for vendors and very effective for admins.
 
-![Template](../../assets/2.0/images/multi-vendor-marketplace/homepage.png)
+![Template](../../assets/2.3.0/images/multi-vendor-marketplace/homepage.png)
 
 ### Seller Login Button
 
 To access the seller dashboard, a vendor first needs to click the **"Seller Login"** button on the top right of the marketplace home page.
 
-![Template](../../assets/2.0/images/multi-vendor-marketplace/Seller-login.png)
+![Template](../../assets/2.3.0/images/multi-vendor-marketplace/Seller-login.png)
 
 Once you log in using your approved seller account, you’ll get access to your seller dashboard where you can easily manage products, view orders, track sales, and update store details.
 
@@ -33,12 +33,12 @@ This dashboard helps sellers stay updated, make informed decisions, and grow the
 
 The Manage Profile section is the first step in creating your store’s identity. Here, vendors can add basic details like **Store Name, Logo, and Contact Info**.
 
-![Template](../../assets/2.0/images/multi-vendor-marketplace/dashboard-manage-profile.png)
+![Template](../../assets/2.3.0/images/multi-vendor-marketplace/dashboard-manage-profile.png)
 
 A complete profile builds trust with customers and makes your shop look professional. 
 Go to **Manage Profile >> Edit Profile** button and see the seller’s details.
 
-![Template](../../assets/2.0/images/multi-vendor-marketplace/edit-profile.png)
+![Template](../../assets/2.3.0/images/multi-vendor-marketplace/edit-profile.png)
 
 This section is very useful for shop branding, as it provides customers with important information about your store. 
 
@@ -48,7 +48,7 @@ Below are the fields you’ll find in the Profile section:
 
 **2)** Add your store logo to create brand identity
 
-![Template](../../assets/2.0/images/multi-vendor-marketplace/banner-logo.png)
+![Template](../../assets/2.3.0/images/multi-vendor-marketplace/banner-logo.png)
 
 These visual elements help attract customers and make your store stand out on the platform.
 
@@ -84,7 +84,7 @@ Here’s what to fill in:
 
 **5) Country:** The country where your business operates.
 
-![Template](../../assets/2.0/images/multi-vendor-marketplace/store-address.png)
+![Template](../../assets/2.3.0/images/multi-vendor-marketplace/store-address.png)
 
 Make sure the details are correct, as they may be used for shipping, invoices, or customer communication.
 
@@ -96,7 +96,7 @@ In this section, you can write a short description about your shop. Tell custome
 
 In this section, you can add links to your shop’s social media pages such as Facebook, Twitter, Pinterest, and LinkedIn.
 
-![Template](../../assets/2.0/images/multi-vendor-marketplace/aboutstore-sociallinkt.png)
+![Template](../../assets/2.3.0/images/multi-vendor-marketplace/aboutstore-sociallinkt.png)
 
 
 Sharing your social links helps customers follow your brand, stay updated on new products or offers, and build stronger connections with your store.
@@ -140,7 +140,7 @@ Meta Keywords, and Meta Description. These fields play a key role in how your st
 
 **3) Meta Description:** A short summary that tells what your shop offers.
 
-![Template](../../assets/2.0/images/multi-vendor-marketplace/Meta-desc.png)
+![Template](../../assets/2.3.0/images/multi-vendor-marketplace/Meta-desc.png)
 
 Adding strong SEO content helps more customers discover your shop and increases your chances of getting organic traffic.
 
@@ -155,9 +155,9 @@ To ensure a clear and trustworthy shopping experience, you can add important pol
 **3) Return Policy:** Let customers know how they can return or exchange products, including conditions and timeframes.
 
 
-![Template](../../assets/2.0/images/multi-vendor-marketplace/privacy-policy.png)
+![Template](../../assets/2.3.0/images/multi-vendor-marketplace/privacy-policy.png)
 
-![Template](../../assets/2.0/images/multi-vendor-marketplace/return-policy.png)
+![Template](../../assets/2.3.0/images/multi-vendor-marketplace/return-policy.png)
 
 
 Adding these policies builds trust with customers, reduces disputes, and shows that your store is reliable and transparent.
@@ -166,17 +166,17 @@ Adding these policies builds trust with customers, reduces disputes, and shows t
 
 After filling in all the required details, simply click on the **“Save Profile”** button. This will update your store information and make it visible on the frontend.
 
-![Template](../../assets/2.0/images/multi-vendor-marketplace/Save.png)
+![Template](../../assets/2.3.0/images/multi-vendor-marketplace/Save.png)
 
 
 After saving your profile, look for the **“Visit Shop”** icon in the top right corner and click on it.
 
-![Template](../../assets/2.0/images/multi-vendor-marketplace/visit-page.png)
+![Template](../../assets/2.3.0/images/multi-vendor-marketplace/visit-page.png)
 
 This will take you to your live storefront, where you can see how your shop looks to customers.
 
 ### Store Frontend View
 
-![Template](../../assets/2.0/images/multi-vendor-marketplace/frontend3.png)
+![Template](../../assets/2.3.0/images/multi-vendor-marketplace/frontend3.png)
 
-![Template](../../assets/2.0/images/multi-vendor-marketplace/frontend2.png)
+![Template](../../assets/2.3.0/images/multi-vendor-marketplace/frontend2.png)
