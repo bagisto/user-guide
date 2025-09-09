@@ -2,7 +2,7 @@
 
 Managing multiple vendors is important for any online marketplace. It helps the platform owner (admin) keep track of all the vendors (sellers), their products, orders, and earnings in an easy and organized manner.
 
-In the Laravel Multi Vendor Marketplace Module, this system is made to be user friendly for vendors and very effective for admins.
+In the Laravel Multi Vendor Marketplace, this system is made to be user friendly for vendors and very effective for admins.
 
 ![Template](../../assets/2.0/images/multi-vendor-marketplace/homepage.png)
 

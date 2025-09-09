@@ -1,6 +1,6 @@
 # Tenant Management
 
-Tenant Management in the SaaS module makes it easy for tenants to sign up and quickly create their online store by filling in their login, personal, and organization information.
+Tenant Management in the SaaS makes it easy for tenants to sign up and quickly create their online store by filling in their login, personal, and organization information.
 
 After they register, the tenant’s storefront is set up automatically, so they can begin selling immediately without any technical difficulties.
 
@@ -10,7 +10,7 @@ Tenants can also manage orders by making invoices, setting up shipments, and usi
 
 ### Tenant Registration
 
-There are three steps to register on the SaaS module.
+There are three steps to register on the SaaS.
 
 **Step 1:** The Tenant has to enter the Authentication Credentials, like **email, password, and confirm password**, then click on **Continue** button.
 

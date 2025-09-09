@@ -1,12 +1,12 @@
 # Multi Vendor Marketpace <span style="background-color: rgb(40, 167, 69);color: white;padding: 6px 16px;border-radius: 8px;font-size: 22px;font-weight: bold;">Paid</span>
 
-[Mutltivendor Marketplace Module](https://store.webkul.com/laravel-multi-vendor-marketplace.html) transforms a standard store into a complete marketplace, allowing the admin to manage sellers, commissions, product approvals, and order handling, while giving vendors a dedicated dashboard to manage their catalog, orders, and transactions. 
+[Multi Vendor Marketplace](https://store.webkul.com/laravel-multi-vendor-marketplace.html) transforms a standard store into a complete marketplace, allowing the admin to manage sellers, commissions, product approvals, and order handling, while giving vendors a dedicated dashboard to manage their catalog, orders, and transactions. 
 
 ### Vendor Management
 
 Managing multiple vendors is important for any online marketplace. It helps the platform owner (admin) keep track of all the vendors (sellers), their products, orders, and earnings in an easy and organized manner.
 
-In the Multi Vendor Marketplace Module, this system is made to be user friendly for vendors and very effective for admins.
+In the Multi Vendor Marketplace, this system is made to be user friendly for vendors and very effective for admins.
 
 ### Orders management 
 

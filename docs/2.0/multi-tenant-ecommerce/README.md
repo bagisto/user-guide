@@ -1,6 +1,6 @@
 # Multi Tenant Ecommerce <span style="background-color: rgb(40, 167, 69);color: white;padding: 6px 16px;border-radius: 8px;font-size: 22px;font-weight: bold;">Paid</span>
 
-[Mutlti-Tenant eCommerce Module](https://store.webkul.com/bagisto-laravel-ecommerce-multi-company-saas.html) in Bagisto allows businesses to build a SaaS-based marketplace platform where multiple vendors or merchants can create and manage their own individual stores under a single system.
+[Mutlti-Tenant eCommerce](https://store.webkul.com/bagisto-laravel-ecommerce-multi-company-saas.html) in Bagisto allows businesses to build a SaaS-based marketplace platform where multiple vendors or merchants can create and manage their own individual stores under a single system.
 
 Each tenant (merchant) gets a dedicated storefront with complete control over products, categories, orders, and customers, while the platform owner manages the overall infrastructure, subscriptions, and revenue models. This setup reduces operational costs for merchants, as they don’t need to invest in separate eCommerce development or hosting.
 
@@ -16,7 +16,7 @@ They also take care of CMS pages, send out email broadcasts, and manage global s
 
 ### Tenant Management
 
-Tenant Management in the SaaS module makes it easy for tenants to sign up and quickly create their online store by filling in their login, personal, and organization information.
+Tenant Management in the SaaS makes it easy for tenants to sign up and quickly create their online store by filling in their login, personal, and organization information.
 
 After they register, the tenant’s storefront is set up automatically, so they can begin selling immediately without any technical difficulties.
 
@@ -26,10 +26,10 @@ Tenants can also manage orders by making invoices, setting up shipments, and usi
 
 ### CName Mapping
 
-CName Mapping lets tenants connect their own domain to the subdomain made by the SaaS module, which helps with professional branding.
+CName Mapping lets tenants connect their own domain to the subdomain made by the SaaS, which helps with professional branding.
 
 When a tenant signs up, a default subdomain like **username.rootdomain.com** is created. With CNAME, their actual domain can be directed to this subdomain.
 
 This makes it easy for customers to find the store and keeps a reliable, consistent online image.
 
-The mapping is set up through the tenant's DNS provider and the SaaS module by the Super Admin, and it doesn't need any extra plugins.
+The mapping is set up through the tenant's DNS provider and the SaaS by the Super Admin, and it doesn't need any extra plugins.
