@@ -1,6 +1,6 @@
 # B2B Marketplace <span style="background-color: rgb(40, 167, 69);color: white;padding: 6px 16px;border-radius: 8px;font-size: 22px;font-weight: bold;">Paid</span>
 
-[B2B Marketplace](https://store.webkul.com/laravel-b2b-marketplace.html) is an advanced solution that transforms your store into a complete wholesale and B2B commerce platform. It enables businesses to manage bulk orders, negotiate pricing, and streamline procurement between buyers, suppliers, and distributors.
+[B2B Marketplace](https://bagisto.com/en/laravel-b2b-marketplace/) is an advanced solution that transforms your store into a complete wholesale and B2B commerce platform. It enables businesses to manage bulk orders, negotiate pricing, and streamline procurement between buyers, suppliers, and distributors.
 
 With features like RFQ (Request for Quote), tiered pricing, customer-specific catalogs, and vendor management, the B2B Marketplace offers flexibility and scalability for manufacturers, wholesalers, and enterprises. It combines the power of open-source with enterprise-ready tools to deliver a seamless B2B buying experience.
 

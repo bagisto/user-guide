@@ -1,6 +1,6 @@
 # Multi Tenant Ecommerce <span style="background-color: rgb(40, 167, 69);color: white;padding: 6px 16px;border-radius: 8px;font-size: 22px;font-weight: bold;">Paid</span>
 
-[Mutlti-Tenant eCommerce](https://store.webkul.com/bagisto-laravel-ecommerce-multi-company-saas.html) in Bagisto allows businesses to build a SaaS-based marketplace platform where multiple vendors or merchants can create and manage their own individual stores under a single system.
+[Mutlti-Tenant eCommerce](https://bagisto.com/en/laravel-multi-tenant-saas/) in Bagisto allows businesses to build a SaaS-based marketplace platform where multiple vendors or merchants can create and manage their own individual stores under a single system.
 
 Each tenant (merchant) gets a dedicated storefront with complete control over products, categories, orders, and customers, while the platform owner manages the overall infrastructure, subscriptions, and revenue models. This setup reduces operational costs for merchants, as they don’t need to invest in separate eCommerce development or hosting.
 
