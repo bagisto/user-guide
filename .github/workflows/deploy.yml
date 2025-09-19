@@ -1,4 +1,4 @@
-name: Deploy to GitHub pages
+name: Deploy To GitHub Pages
 on:
   push:
     branches:
@@ -12,15 +12,15 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: NPM install 📦
+      - name: NPM Install 📦
         uses: bahmutov/npm-install@v1
         
-      - name: Build docs 🏗
-        run: export NODE_OPTIONS=--openssl-legacy-provider && npm run docs:build
+      - name: Build Docs 🏗
+        run: npm run docs:build
 
       - name: Deploy 🚀
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/.vuepress/dist
+          publish_dir: ./.vitepress/dist
           cname: docs.bagisto.com
