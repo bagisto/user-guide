@@ -2,36 +2,65 @@
 
 You can find the online version of the Bagisto documentation at [https://docs.bagisto.com](https://docs.bagisto.com).
 
-## Contribution guide
+## Contribution Guide
 
-For contributing to the docs, you first need to set up the project,
+We welcome contributions to improve the Bagisto documentation! Follow these steps to get started:
 
-- Fork the repository.
+### Getting Started
 
-- Clone your fork.
+1. **Fork the repository** - Click the "Fork" button on GitHub.
 
-- Follow the [Install Dependencies](#Install-dependencies) section.
+2. **Clone your fork** - Download your forked repository locally.
 
-Make sure your PR follows all these points,
+3. **Install dependencies** - Follow the [Installation](#installation) section below.
 
-- Before writing the docs just make sure to check that if that topic is already written or not.
+4. **Create a branch** - Make your changes in a feature branch
 
-- Make sure your markdown indentation should be proper. You can install `mark-down` lint also. This will help you to follow the markdown conventions.
+### Contribution Guidelines
 
-- If you are creating new files for the docs, then make sure the filename should be `kebab-case`. For e.g. `file-1.md`, `file-2.md`.
+Before submitting your pull request, please ensure:
 
-## Install dependencies
+- **Check for existing content** - Verify the topic isn't already documented to avoid duplication.
 
-- Run the following command,
+- **Follow markdown standards** - Use proper indentation and formatting (consider installing a markdown linter).
 
-  ~~~sh
-  npm install
-  ~~~
+- **VitePress standards** - Use VitePress containers (`::: info`, `::: tip`, `::: warning`) for better presentation.
 
-- Run the docs locally,
+- **Clear structure** - Use proper headings, lists, and sections for readability.
 
-  ~~~sh
-  npm run docs:dev
-  ~~~
+### Content Standards
 
-- Open your browser and go to [http://localhost:8080](http://localhost:8080).
+- Write clear, concise documentation with practical examples.
+- Include step-by-step instructions for complex procedures.
+- Use proper grammar and professional tone.
+- Add relevant cross-references to related documentation.
+
+## Installation
+
+### Prerequisites
+
+- Node.js (version 16 or higher)
+- npm or yarn package manager
+
+### Setup Instructions
+
+1. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+2. **Start development server**
+
+   ```bash
+   npm run docs:dev
+   ```
+
+3. **Access the documentation**
+
+   Open your browser and navigate to [http://localhost:5173](http://localhost:5173)
+
+### Available Scripts
+
+- `npm run docs:dev` - Start development server with hot reload
+- `npm run docs:build` - Build documentation for production
