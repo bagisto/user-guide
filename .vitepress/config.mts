@@ -5,7 +5,7 @@ import path from 'path'
 
 export default defineConfig({
   lang: 'en-US',
-  title: "Bagisto",
+  title: "Bagisto User Documentation",
   description: "Bagisto User Documentation",
 
   vite: {
@@ -205,6 +205,7 @@ export default defineConfig({
         text: 'Multi Vendor Marketplace',
         collapsed: false,
         items: [
+          { text: 'Introduction', link: '/multi-vendor-marketplace/introduction' },
           { text: 'Vendor Management', link: '/multi-vendor-marketplace/vendor-management' },
           { text: 'Order Management', link: '/multi-vendor-marketplace/order-management' },
           { text: 'Commission Management', link: '/multi-vendor-marketplace/commission-management' },
@@ -218,6 +219,7 @@ export default defineConfig({
         text: 'B2B Marketplace',
         collapsed: false,
         items: [
+          { text: 'Introduction', link: '/b2b-marketplace/introduction' },
           { text: 'Request for Quotes', link: '/b2b-marketplace/request-for-quotes' },
           { text: 'Buyer Seller Communication', link: '/b2b-marketplace/buyer-seller-communication' },
           { text: 'Supplier Microsite', link: '/b2b-marketplace/supplier-microsite' },
@@ -230,6 +232,7 @@ export default defineConfig({
         text: 'Multi Tenant Ecommerce',
         collapsed: false,
         items: [
+          { text: 'Introduction', link: '/multi-tenant-ecommerce/introduction' },
           { text: 'Super Admin Management', link: '/multi-tenant-ecommerce/super-admin-management' },
           { text: 'Tenant Management', link: '/multi-tenant-ecommerce/tenant-management' },
           { text: 'CName Mapping', link: '/multi-tenant-ecommerce/cname-mapping' },
