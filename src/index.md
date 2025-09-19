@@ -25,7 +25,7 @@ features:
   - title: Multi Vendor Marketplace (Paid)
     details: Build a platform where multiple vendors can register, sell their products, and manage their stores independently.
     icon: 🏬
-    link: http://localhost:5173/multi-vendor-marketplace/introduction.html
+    link: /multi-vendor-marketplace/introduction.html
   - title: B2B Marketplace (Paid)
     details: Create a business-to-business marketplace with bulk pricing, customer segmentation, and wholesale order management.
     icon: 🏢 
