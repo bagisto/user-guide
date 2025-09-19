@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started →
-      link: /getting-started/why-choose-bagisto
+      link: /getting-started/introduction
     - theme: alt
       text: View on GitHub
       link: https://github.com/bagisto/bagisto
@@ -21,7 +21,7 @@ features:
   - title: Open Source
     details: Leverage open-source technology to customize, extend, and contribute to the platform freely.
     icon: 🔓
-    link: /getting-started/why-choose-bagisto.html
+    link: /getting-started/introduction.html
   - title: Multi Vendor Marketplace (Paid)
     details: Build a platform where multiple vendors can register, sell their products, and manage their stores independently.
     icon: 🏬

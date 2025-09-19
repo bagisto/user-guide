@@ -1,4 +1,7 @@
 import { defineConfig } from 'vitepress'
+import { redirects, makeRedirectHtml } from './_redirects'
+import fs from 'fs'
+import path from 'path'
 
 export default defineConfig({
   lang: 'en-US',
@@ -43,7 +46,7 @@ export default defineConfig({
     sidebar: [
       {
         text: 'Introduction',
-        link: '/getting-started/why-choose-bagisto'
+        link: '/getting-started/introduction'
       },
 
       {
@@ -234,7 +237,7 @@ export default defineConfig({
       },
     ],
 
-    outline: {
+      outline: {
       level: 'deep'
     },
 
@@ -250,5 +253,28 @@ export default defineConfig({
     search: {
       provider: 'local'
     }
+  },
+
+  buildEnd(siteConfig) {
+    const outDir = siteConfig.outDir
+
+    Object.entries(redirects).forEach(([from, to]) => {
+      if (from.includes('*')) {
+        console.warn(`⚠️ Skipping wildcard redirect: ${from} -> ${to}`)
+        return
+      }
+
+      let filePath
+
+      if (from.endsWith('.html')) {
+        filePath = path.join(outDir, from)
+      } else {
+        filePath = path.join(outDir, from, 'index.html')
+      }
+
+      fs.mkdirSync(path.dirname(filePath), { recursive: true })
+      fs.writeFileSync(filePath, makeRedirectHtml(to), 'utf-8')
+      console.log(`✅ Redirect created: ${from} -> ${to}`)
+    })
   }
 })
