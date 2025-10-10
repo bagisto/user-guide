@@ -97,6 +97,7 @@ export default defineConfig({
         items: [
           { text: 'Create Customer', link: '/customer/create-customer' },
           { text: 'Customer Group', link: '/customer/customer-group' },
+          { text: 'Customer Group Pricing', link: '/customer/customer-group-price' },
           { text: 'Customer Review', link: '/customer/customer-review' },
         ]
       },
