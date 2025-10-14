@@ -151,6 +151,7 @@ export default defineConfig({
           { text: 'Roles', link: '/settings/roles' },
           { text: 'Themes', link: '/settings/themes' },
           { text: 'Taxes', link: '/settings/taxes' },
+          { text: 'Data Transfer', link: '/settings/data-transfer' },
         ]
       },
 

@@ -9,6 +9,7 @@ export const redirects = {
     '/2.3.0/introduction/introductions.html': '/getting-started/introduction.html',
 
     // Product Types
+    '/2.3.0/products/': '/product-types/simple-product',
     '/2.3.0/product-types/simple.html': '/product-types/simple-product',
     '/2.3.0/product-types/configurable.html': '/product-types/configurable-product',
     '/2.3.0/product-types/virtual.html': '/product-types/virtual-product',
@@ -17,15 +18,17 @@ export const redirects = {
     '/2.3.0/product-types/downloadable.html': '/product-types/downloadable-product',
 
     // Category
+    '/2.3.0/category/': '/category/create-category',
     '/2.3.0/category/create-category.html': '/category/create-category',
 
     // Attribute
-
+    '/2.3.0/attribute': '/attribute/attribute-input',
     '/2.3.0/attribute/attribute-input.html': '/attribute/attribute-input',
     '/2.3.0/attribute/product-attribute.html': '/attribute/product-attribute',
     '/2.3.0/attribute-family/attribute-families.html': '/attribute/attribute-family',
 
     // Orders
+    '/2.3.0/orders/': '/orders/create-order',
     '/2.3.0/orders/create-order.html': '/orders/create-order',
     '/2.3.0/orders/create-invoice.html': '/orders/create-invoice',
     '/2.3.0/orders/create-shipment.html': '/orders/create-shipment',
@@ -33,6 +36,7 @@ export const redirects = {
     '/2.3.0/orders/transaction.html': '/orders/transactions',
 
     // Customers
+    '/2.3.0/customers/': '/customer/create-customer',
     '/2.3.0/customer/create-customer.html': '/customer/create-customer',
     '/2.3.0/customer/customer-groups.html': '/customer/customer-group',
     '/2.3.0/customer/customer-reviews.html': '/customer/customer-review',
@@ -41,6 +45,7 @@ export const redirects = {
     '/2.3.0/cms/cms-page.html': '/cms/create-cms',
 
     // Marketing
+    '/2.3.0/marketing/': '/marketing/cart-rules',
     '/2.3.0/marketing/promotions.html#cart-rules': '/marketing/cart-rules',
     '/2.3.0/marketing/promotions.html#catalog-rules': '/marketing/catalog-rules',
     '/2.3.0/marketing/communications.html#email-templates': '/marketing/email-templates',
@@ -50,6 +55,7 @@ export const redirects = {
 
     // Settings
 
+    '/2.3.0/settings/': '/settings/locales',
     '/2.3.0/settings/locale.html': '/settings/locales',
     '/2.3.0/settings/currencies.html': '/settings/currencies',
     '/2.3.0/settings/exchange-rates.html': '/settings/exchange-rates',
@@ -59,10 +65,12 @@ export const redirects = {
     '/2.3.0/settings/roles.html': '/settings/roles',
     '/2.3.0/settings/themes.html': '/settings/themes',
     '/2.3.0/settings/taxes.html': '/settings/taxes',
+    '/2.3.0/settings/data-transfer.html': '/settings/data-transfer',
 
 
     // Configure
 
+    '/2.3.0/configure/': '/configure/weight-unit',
     '/2.3.0/configure/weight-unit.html': '/configure/weight-unit',
     '/2.3.0/configure/configurable-choices.html': '/configure/configurable-choices',
     '/2.3.0/configure/custom-scripts.html': '/configure/custom-scripts',
@@ -95,6 +103,7 @@ export const redirects = {
 
     // Multi Vendor Marketplace
 
+    '/2.3.0/multi-vendor-marketplace/': '/multi-vendor-marketplace/vendor-management',
     '/2.3.0/multi-vendor-marketplace/vendor-management.html': '/multi-vendor-marketplace/vendor-management',
     '/2.3.0/multi-vendor-marketplace/order-management.html': '/multi-vendor-marketplace/order-management',
     '/2.3.0/multi-vendor-marketplace/commission-management.html': '/multi-vendor-marketplace/commission-management',
@@ -105,6 +114,7 @@ export const redirects = {
 
     // B2B Marketplace
 
+    '/2.3.0/b2b-marketplace/': '/b2b-marketplace/request-for-quotes',
     '/2.3.0/b2b-marketplace/request-for-quotes.html': '/b2b-marketplace/request-for-quotes',
     '/2.3.0/b2b-marketplace/buyer-seller-communication.html': '/b2b-marketplace/buyer-seller-communication',
     '/2.3.0/b2b-marketplace/supplier-microsite.html': 'b2b-marketplace/supplier-microsite',
@@ -113,6 +123,7 @@ export const redirects = {
 
     // Multi Tenant ECommerce 
 
+    '/2.3.0/multi-tenant-ecommerce/': '/multi-tenant-ecommerce/super-admin-management',
     '/2.3.0/multi-tenant-ecommerce/super-admin-management.html': '/multi-tenant-ecommerce/super-admin-management',
     '/2.3.0/multi-tenant-ecommerce/tenant-management.html': '/multi-tenant-ecommerce/tenant-management',
     '/2.3.0/multi-tenant-ecommerce/cname-mapping.html': '/multi-tenant-ecommerce/cname-mapping',
@@ -127,6 +138,7 @@ export const redirects = {
     '/2.2.0/introduction/introductions.html': '/getting-started/introduction.html',
 
     // Product Types
+    '/2.2.0/products/': '/product-types/simple-product',
     '/2.2.0/product-types/simple.html': '/product-types/simple-product',
     '/2.2.0/product-types/configurable.html': '/product-types/configurable-product',
     '/2.2.0/product-types/virtual.html': '/product-types/virtual-product',
@@ -135,15 +147,18 @@ export const redirects = {
     '/2.2.0/product-types/downloadable.html': '/product-types/downloadable-product',
 
     // Category
+    '/2.2.0/category/': '/category/create-category',
     '/2.2.0/category/create-category.html': '/category/create-category',
 
     // Attribute
 
+    '/2.2.0/attribute': '/attribute/attribute-input',
     '/2.2.0/attribute/attribute-input.html': '/attribute/attribute-input',
     '/2.2.0/attribute/product-attribute.html': '/attribute/product-attribute',
     '/2.2.0/attribute-family/attribute-families.html': '/attribute/attribute-family',
 
     // Orders
+    '/2.2.0/orders/': '/orders/create-order',
     '/2.2.0/orders/create-order.html': '/orders/create-order',
     '/2.2.0/orders/create-invoice.html': '/orders/create-invoice',
     '/2.2.0/orders/create-shipment.html': '/orders/create-shipment',
@@ -152,6 +167,8 @@ export const redirects = {
 
 
     // Customers
+
+    '/2.2.0/customers/': '/customer/create-customer',
     '/2.2.0/customer/create-customer.html': '/customer/create-customer',
     '/2.2.0/customer/customer-groups.html': '/customer/customer-group',
     '/2.2.0/customer/customer-reviews.html': '/customer/customer-review',
@@ -160,6 +177,7 @@ export const redirects = {
     '/2.2.0/cms/cms-page.html': '/cms/create-cms',
 
     // Marketing
+    '/2.2.0/marketing/': '/marketing/cart-rules',
     '/2.2.0/marketing/promotions.html#cart-rules': '/marketing/cart-rules',
     '/2.2.0/marketing/promotions.html#catalog-rules': '/marketing/catalog-rules',
     '/2.2.0/marketing/communications.html#email-templates': '/marketing/email-templates',
@@ -169,12 +187,14 @@ export const redirects = {
 
     // Reporting 
 
+    '2.2.0/reporting/': '/reporting/sales-report',
     '/2.2.0/reporting/sales.html': '/reporting/sales-report',
     '/2.2.0/reporting/customers.html': '/reporting/customers-report',
     '/2.2.0/reporting/products.html': '/reporting/product-report',
 
     // Settings
 
+    '2.2.0/settings/': '/settings/locales',
     '/2.2.0/settings/locale.html': '/settings/locales',
     '/2.2.0/settings/currencies.html': '/settings/currencies',
     '/2.2.0/settings/exchange-rates.html': '/settings/exchange-rates',
@@ -184,10 +204,12 @@ export const redirects = {
     '/2.2.0/settings/roles.html': '/settings/roles',
     '/2.2.0/settings/themes.html': '/settings/themes',
     '/2.2.0/settings/taxes.html': '/settings/taxes',
+    '/2.2.0/settings/data-transfer.html': '/settings/data-transfer',
 
 
     // Configure
 
+    '2.2.0/configure/': '/configure/weight-unit',
     '/2.2.0/configure/weight-unit.html': '/configure/weight-unit',
     '/2.2.0/configure/configurable-choices.html': '/configure/configurable-choices',
     '/2.2.0/configure/custom-scripts.html': '/configure/custom-scripts',
@@ -220,6 +242,7 @@ export const redirects = {
 
     // Multi Vendor Marketplace
 
+    '2.2.0/multi-vendor-marketplace/': '/multi-vendor-marketplace/vendor-management',
     '/2.2.0/multi-vendor-marketplace/vendor-management.html': '/multi-vendor-marketplace/vendor-management',
     '/2.2.0/multi-vendor-marketplace/order-management.html': '/multi-vendor-marketplace/order-management',
     '/2.2.0/multi-vendor-marketplace/commission-management.html': '/multi-vendor-marketplace/commission-management',
@@ -230,6 +253,7 @@ export const redirects = {
 
     // B2B Marketplace
 
+    '2.2.0/b2b-marketplace/': '/b2b-marketplace/request-for-quotes',
     '/2.2.0/b2b-marketplace/request-for-quotes.html': '/b2b-marketplace/request-for-quotes',
     '/2.2.0/b2b-marketplace/buyer-seller-communication.html': '/b2b-marketplace/buyer-seller-communication',
     '/2.2.0/b2b-marketplace/supplier-microsite.html': 'b2b-marketplace/supplier-microsite',
@@ -238,6 +262,7 @@ export const redirects = {
 
     // Multi Tenant ECommerce 
 
+    '2.2.0/multi-tenant-ecommerce/': '/multi-tenant-ecommerce/super-admin-management',
     '/2.2.0/multi-tenant-ecommerce/super-admin-management.html': '/multi-tenant-ecommerce/super-admin-management',
     '/2.2.0/multi-tenant-ecommerce/tenant-management.html': '/multi-tenant-ecommerce/tenant-management',
     '/2.2.0/multi-tenant-ecommerce/cname-mapping.html': '/multi-tenant-ecommerce/cname-mapping',
@@ -252,6 +277,8 @@ export const redirects = {
     '/2.1.0/introduction/introductions.html': '/getting-started/introduction.html',
 
     // Product Types
+
+    '2.1.0/products/': '/product-types/simple-product',
     '/2.1.0/product-types/simple.html': '/product-types/simple-product',
     '/2.1.0/product-types/configurable.html': '/product-types/configurable-product',
     '/2.1.0/product-types/virtual.html': '/product-types/virtual-product',
@@ -260,15 +287,20 @@ export const redirects = {
     '/2.1.0/product-types/downloadable.html': '/product-types/downloadable-product',
 
     // Category
+
+    '2.1.0/category/': '/category/create-category',
     '/2.1.0/category/create-category.html': '/category/create-category',
 
     // Attribute
 
+    '2.1.0/attribute': '/attribute/attribute-input',
     '/2.1.0/attribute/attribute-input.html': '/attribute/attribute-input',
     '/2.1.0/attribute/product-attribute.html': '/attribute/product-attribute',
     '/2.1.0/attribute-family/attribute-families.html': '/attribute/attribute-family',
 
     // Orders
+
+    '2.1.0/orders/': '/orders/create-order',
     '/2.1.0/orders/create-order.html': '/orders/create-order',
     '/2.1.0/orders/create-invoice.html': '/orders/create-invoice',
     '/2.1.0/orders/create-shipment.html': '/orders/create-shipment',
@@ -276,6 +308,8 @@ export const redirects = {
     '/2.1.0/orders/transaction.html': '/orders/transactions',
 
     // Customers
+
+    '2.1.0/customers/': '/customer/create-customer',
     '/2.1.0/customer/create-customer.html': '/customer/create-customer',
     '/2.1.0/customer/customer-groups.html': '/customer/customer-group',
     '/2.1.0/customer/customer-reviews.html': '/customer/customer-review',
@@ -284,6 +318,8 @@ export const redirects = {
     '/2.1.0/cms/cms-page.html': '/cms/create-cms',
 
     // Marketing
+
+    '2.1.0/marketing/': '/marketing/cart-rules',
     '/2.1.0/marketing/promotions.html#cart-rules': '/marketing/cart-rules',
     '/2.1.0/marketing/promotions.html#catalog-rules': '/marketing/catalog-rules',
     '/2.1.0/marketing/communications.html#email-templates': '/marketing/email-templates',
@@ -293,6 +329,7 @@ export const redirects = {
 
     // Reporting 
 
+    '2.1.0/reporting/': '/reporting/sales-report',
     '/2.1.0/reporting/sales.html': '/reporting/sales-report',
     '/2.1.0/reporting/customers.html': '/reporting/customers-report',
     '/2.1.0/reporting/products.html': '/reporting/product-report',
@@ -300,6 +337,7 @@ export const redirects = {
 
     // Settings
 
+    '2.1.0/settings/': '/settings/locales',
     '/2.1.0/settings/locale.html': '/settings/locales',
     '/2.1.0/settings/currencies.html': '/settings/currencies',
     '/2.1.0/settings/exchange-rates.html': '/settings/exchange-rates',
@@ -309,9 +347,11 @@ export const redirects = {
     '/2.1.0/settings/roles.html': '/settings/roles',
     '/2.1.0/settings/themes.html': '/settings/themes',
     '/2.1.0/settings/taxes.html': '/settings/taxes',
+    '/2.1.0/settings/data-transfer.html': '/settings/data-transfer',
 
     // Configure
 
+    '2.1.0/configure/': '/configure/weight-unit',
     '/2.1.0/configure/weight-unit.html': '/configure/weight-unit',
     '/2.1.0/configure/configurable-choices.html': '/configure/configurable-choices',
     '/2.1.0/configure/custom-scripts.html': '/configure/custom-scripts',
@@ -343,7 +383,8 @@ export const redirects = {
     '/2.1.0/payment-method/payment-method.html': '/payment-method/payment-methods',
 
     // Multi Vendor Marketplace
-
+    
+    '2.1.0/multi-vendor-marketplace/': '/multi-vendor-marketplace/vendor-management',
     '/2.1.0/multi-vendor-marketplace/vendor-management.html': '/multi-vendor-marketplace/vendor-management',
     '/2.1.0/multi-vendor-marketplace/order-management.html': '/multi-vendor-marketplace/order-management',
     '/2.1.0/multi-vendor-marketplace/commission-management.html': '/multi-vendor-marketplace/commission-management',
@@ -354,6 +395,7 @@ export const redirects = {
 
     // B2B Marketplace
 
+    '2.1.0/b2b-marketplace/': '/b2b-marketplace/request-for-quotes',
     '/2.1.0/b2b-marketplace/request-for-quotes.html': '/b2b-marketplace/request-for-quotes',
     '/2.1.0/b2b-marketplace/buyer-seller-communication.html': '/b2b-marketplace/buyer-seller-communication',
     '/2.1.0/b2b-marketplace/supplier-microsite.html': 'b2b-marketplace/supplier-microsite',
@@ -362,6 +404,7 @@ export const redirects = {
 
     // Multi Tenant ECommerce 
 
+    '2.1.0/multi-tenant-ecommerce/': '/multi-tenant-ecommerce/super-admin-management',
     '/2.1.0/multi-tenant-ecommerce/super-admin-management.html': '/multi-tenant-ecommerce/super-admin-management',
     '/2.1.0/multi-tenant-ecommerce/tenant-management.html': '/multi-tenant-ecommerce/tenant-management',
     '/2.1.0/multi-tenant-ecommerce/cname-mapping.html': '/multi-tenant-ecommerce/cname-mapping',
@@ -378,6 +421,8 @@ export const redirects = {
     '/2.0/introduction/introductions.html': '/getting-started/introduction.html',
 
     // Product Types
+
+    '2.0/products/': '/product-types/simple-product',
     '/2.0/product-types/simple.html': '/product-types/simple-product',
     '/2.0/product-types/configurable.html': '/product-types/configurable-product',
     '/2.0/product-types/virtual.html': '/product-types/virtual-product',
@@ -386,15 +431,20 @@ export const redirects = {
     '/2.0/product-types/downloadable.html': '/product-types/downloadable-product',
 
     // Category
+
+    '2.0/category/': '/category/create-category',
     '/2.0/category/create-category.html': '/category/create-category',
 
     // Attribute
 
+    '2.0/attribute': '/attribute/attribute-input',
     '/2.0/attribute/attribute-input.html': '/attribute/attribute-input',
     '/2.0/attribute/product-attribute.html': '/attribute/product-attribute',
     '/2.0/attribute-family/attribute-families.html': '/attribute/attribute-family',
 
     // Orders
+
+    '2.0/orders/': '/orders/create-order',
     '/2.0/orders/create-order.html': '/orders/create-order',
     '/2.0/orders/create-invoice.html': '/orders/create-invoice',
     '/2.0/orders/create-shipment.html': '/orders/create-shipment',
@@ -403,6 +453,8 @@ export const redirects = {
 
 
     // Customers
+
+    '2.0/customers/': '/customer/create-customer',
     '/2.0/customer/create-customer.html': '/customer/create-customer',
     '/2.0/customer/customer-groups.html': '/customer/customer-group',
     '/2.0/customer/customer-reviews.html': '/customer/customer-review',
@@ -411,6 +463,8 @@ export const redirects = {
     '/2.0/cms/cms-page.html': '/cms/create-cms',
 
     // Marketing
+
+    '2.0/marketing/': '/marketing/cart-rules',
     '/2.0/marketing/promotions.html#cart-rules': '/marketing/cart-rules',
     '/2.0/marketing/promotions.html#catalog-rules': '/marketing/catalog-rules',
     '/2.0/marketing/communications.html#email-templates': '/marketing/email-templates',
@@ -420,12 +474,14 @@ export const redirects = {
 
     // Reporting 
 
+    '2.0/reporting/': '/reporting/sales-report',
     '/2.0/reporting/sales.html': '/reporting/sales-report',
     '/2.0/reporting/customers.html': '/reporting/customers-report',
     '/2.0/reporting/products.html': '/reporting/product-report',
 
     // Settings
 
+    '2.0/settings/': '/settings/locales',
     '/2.0/settings/locale.html': '/settings/locales',
     '/2.0/settings/currencies.html': '/settings/currencies',
     '/2.0/settings/exchange-rates.html': '/settings/exchange-rates',
@@ -439,6 +495,7 @@ export const redirects = {
 
     // Configure
 
+    '2.0/configure/': '/configure/weight-unit',
     '/2.0/configure/weight-unit.html': '/configure/weight-unit',
     '/2.0/configure/configurable-choices.html': '/configure/configurable-choices',
     '/2.0/configure/custom-scripts.html': '/configure/custom-scripts',
@@ -471,6 +528,7 @@ export const redirects = {
 
     // Multi Vendor Marketplace
 
+    '2.0/multi-vendor-marketplace/': '/multi-vendor-marketplace/vendor-management',
     '/2.0/multi-vendor-marketplace/vendor-management.html': '/multi-vendor-marketplace/vendor-management',
     '/2.0/multi-vendor-marketplace/order-management.html': '/multi-vendor-marketplace/order-management',
     '/2.0/multi-vendor-marketplace/commission-management.html': '/multi-vendor-marketplace/commission-management',
@@ -481,6 +539,7 @@ export const redirects = {
 
     // B2B Marketplace
 
+    '2.0/b2b-marketplace/': '/b2b-marketplace/request-for-quotes',
     '/2.0/b2b-marketplace/request-for-quotes.html': '/b2b-marketplace/request-for-quotes',
     '/2.0/b2b-marketplace/buyer-seller-communication.html': '/b2b-marketplace/buyer-seller-communication',
     '/2.0/b2b-marketplace/supplier-microsite.html': 'b2b-marketplace/supplier-microsite',
@@ -489,6 +548,7 @@ export const redirects = {
 
     // Multi Tenant ECommerce 
 
+    '2.0/multi-tenant-ecommerce/': '/multi-tenant-ecommerce/super-admin-management',
     '/2.0/multi-tenant-ecommerce/super-admin-management.html': '/multi-tenant-ecommerce/super-admin-management',
     '/2.0/multi-tenant-ecommerce/tenant-management.html': '/multi-tenant-ecommerce/tenant-management',
     '/2.0/multi-tenant-ecommerce/cname-mapping.html': '/multi-tenant-ecommerce/cname-mapping',
