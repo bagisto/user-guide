@@ -8,6 +8,14 @@ Managing multiple vendors is important for any online marketplace. It helps the 
 
 In the Multi Vendor Marketplace, this system is made to be user friendly for vendors and very effective for admins.
 
+### Dealership Management
+
+The Dealer Management system allows dealers to sell products that are already available in the marketplace, added by the Admin.
+
+Instead of creating a new listing from scratch, dealers can use existing products added by the Admin, customize their price, quantity, product condition, and add a new description.
+
+This feature helps dealers save time by reusing existing product listings and maintaining consistent product information across the marketplace.
+
 ### Orders management 
 
 Order management in a Multi Vendor Marketplace helps sellers and admins track, manage, and fulfill customer orders with ease. 

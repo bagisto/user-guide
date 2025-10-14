@@ -59,6 +59,7 @@ export default defineConfig({
           { text: 'Bundle Product', link: '/product-types/bundle-product' },
           { text: 'Grouped Product', link: '/product-types/grouped-product' },
           { text: 'Downlodable Product', link: '/product-types/downloadable-product' },
+          { text: 'Booking Product', link: '/product-types/booking-product' },
         ]
       },
 
@@ -209,6 +210,7 @@ export default defineConfig({
         items: [
           { text: 'Introduction', link: '/multi-vendor-marketplace/introduction' },
           { text: 'Vendor Management', link: '/multi-vendor-marketplace/vendor-management' },
+          { text: 'Dealership Management', link: '/multi-vendor-marketplace/dealership-management' },
           { text: 'Order Management', link: '/multi-vendor-marketplace/order-management' },
           { text: 'Commission Management', link: '/multi-vendor-marketplace/commission-management' },
           { text: 'Product Management', link: '/multi-vendor-marketplace/product-management' },
