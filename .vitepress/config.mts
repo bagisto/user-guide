@@ -242,6 +242,15 @@ export default defineConfig({
           { text: 'CName Mapping', link: '/multi-tenant-ecommerce/cname-mapping' },
         ]
       },
+
+        {
+        text: 'B2B eCommerce Platform',
+        collapsed: false,
+        items: [
+          { text: 'Introduction', link: '/b2b-ecommerce-platform/introduction' },
+          { text: 'Company Registration', link: '/b2b-ecommerce-platform/company-registration' },
+        ]
+      },
     ],
 
       outline: {

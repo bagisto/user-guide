@@ -47,3 +47,5 @@ In a Laravel Multi Vendor Marketplace, Rating Management allows buyers to leave 
 Payment management in a Multi-Vendor Marketplace helps both sellers and admins handle finances with ease and clarity. Sellers can quickly check their earnings, see payment details for orders, and request payouts without hassle. 
 
 Admins can easily track all payments, manage commissions, and make sure settlements are secure and on time.
+
+<img src="/images/multi-vendor-marketplace/multi-vendor-marketplace.webp" alt="Super Admin Login" />

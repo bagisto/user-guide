@@ -10,7 +10,6 @@ This role includes:
 Super Admins set up product visibility, manage channels, and design themes to maintain a consistent look and branding for all tenant stores. They also handle CMS pages, send email broadcasts, and manage global settings to ensure clear communication and proper governance of the platform.
 
 
-
 ## Access the Super Admin Panel
 
 ### Steps to Sign In

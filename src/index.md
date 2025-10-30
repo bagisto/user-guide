@@ -34,4 +34,9 @@ features:
     details: Deploy a multi-tenant SaaS e-commerce platform with separate stores, shared resources, and centralized administration.
     icon: ☁️
     link: /multi-tenant-ecommerce/introduction.html
+
+  - title: Open Source B2B eCommerce Platform
+    details: The B2B eCommerce Platform enhances your Bagisto store with advanced Business-to-Business (B2B) features.
+    icon: 💼
+    link: /b2b-ecommerce-platform/introduction.html
 ---

@@ -33,3 +33,5 @@ When a tenant signs up, a default subdomain like **username.rootdomain.com** is 
 This makes it easy for customers to find the store and keeps a reliable, consistent online image.
 
 The mapping is set up through the tenant's DNS provider and the SaaS by the Super Admin, and it doesn't need any extra plugins.
+
+<img src="/images/multi-tenant-ecommerce/multi-tenant.webp" alt="Super Admin Login" />
