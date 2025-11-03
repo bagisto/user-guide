@@ -249,6 +249,8 @@ export default defineConfig({
         items: [
           { text: 'Introduction', link: '/b2b-ecommerce-platform/introduction' },
           { text: 'Company Registration', link: '/b2b-ecommerce-platform/company-registration' },
+          { text: 'Role Based Permissions', link: '/b2b-ecommerce-platform/role-based-permissions' },
+          { text: 'Purchase Orders', link: '/b2b-ecommerce-platform/purchase-orders' },
         ]
       },
     ],
