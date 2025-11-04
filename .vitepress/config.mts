@@ -251,6 +251,8 @@ export default defineConfig({
           { text: 'Company Registration', link: '/b2b-ecommerce-platform/company-registration' },
           { text: 'Role Based Permissions', link: '/b2b-ecommerce-platform/role-based-permissions' },
           { text: 'Purchase Orders', link: '/b2b-ecommerce-platform/purchase-orders' },
+          { text: 'Requisition Lists', link: '/b2b-ecommerce-platform/requisition-lists' },
+          { text: 'Quick Order', link: '/b2b-ecommerce-platform/quick-order' },
         ]
       },
     ],
@@ -260,7 +262,7 @@ export default defineConfig({
     },
 
     footer: {
-      message: 'Released under the <a href="https://opensource.org/licenses/mit" target="_blank" class="mit-license">MIT License</a>.',
+      message: 'Released under the <a href="https://opensource.org/licenses/mit" target="_blank" class="mit-licens">MIT License</a>.',
       copyright: `Copyright © ${new Date().getFullYear()} Webkul`
     },
 

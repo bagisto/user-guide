@@ -1,4 +1,4 @@
-# Purchase Orders (Company End)
+# Purchase Orders 
 
 The Purchase Orders feature allows companies to view and manage all their purchase orders directly from their dashboard.
 
@@ -14,21 +14,21 @@ The My Purchase Orders page will appear, showing all existing purchase orders wi
 
 ### Purchase Order Details Include:
 
-*A) ID –* Displays the unique purchase order ID.
+**A) ID –** Displays the unique purchase order ID.
 
-*B) Quotation Name –* Shows the name or reference of the quotation linked to the purchase order.
+**B) Quotation Name –** Shows the name or reference of the quotation linked to the purchase order.
 
-*C) Company –* Indicates the company associated with the order.
+**C) Company –** Indicates the company associated with the order.
 
-*D) Base Total –* Displays the original order amount before negotiation or discount.
+**D) Base Total –** Displays the original order amount before negotiation or discount.
 
-*E) Negotiated Total –* Shows the final amount after price negotiation.
+**E) Negotiated Total –** Shows the final amount after price negotiation.
 
-*F) Status –* Indicates the current status of the purchase order (e.g., Completed, Pending, Ordered).
+**F) Status –** Indicates the current status of the purchase order (e.g., Completed, Pending, Ordered).
 
-*G) Created At –* Displays the date and time when the order was created.
+**G) Created At –** Displays the date and time when the order was created.
 
-*H) Actions –* Provides options to view order details or perform further actions.
+**H) Actions –** Provides options to view order details or perform further actions.
 
 **Note:**
 
@@ -52,13 +52,13 @@ Admins can **search, filter, export** and view detailed information for each ord
 
 ### Purchase Order Details Include:
 
-*A) Purchase Order ID / Quotation Name / Status –* Displays the unique order ID, related quotation title, and current order status (e.g., Completed, Ordered, Pending).
+**A) Purchase Order ID / Quotation Name / Status –** Displays the unique order ID, related quotation title, and current order status (e.g., Completed, Ordered, Pending).
 
-*B) Company / Customer / Created At –* Shows the company name, customer name, and the date when the purchase order was created.
+**B) Company / Customer / Created At –** Shows the company name, customer name, and the date when the purchase order was created.
 
-*C) Base Total / Negotiated Total / Expiration Date –* Displays the original order value, final negotiated price, and the expiration date of the quotation or order.
+**C) Base Total / Negotiated Total / Expiration Date –** Displays the original order value, final negotiated price, and the expiration date of the quotation or order.
 
-*D) Items –* Lists the products included in the purchase order.
+**D) Items –** Lists the products included in the purchase order.
 
 **Note:**
 
