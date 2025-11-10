@@ -1,4 +1,4 @@
-# B2B eCommerce Platform
+# B2B eCommerce Platform 
 
 [B2B eCommerce Platform](https://bagisto.com/en/b2b-commerce-platform/) is an open-source solution that adds advanced Business-to-Business features to the Bagisto eCommerce platform. It helps companies manage corporate accounts, bulk orders, and team access with ease.
 
