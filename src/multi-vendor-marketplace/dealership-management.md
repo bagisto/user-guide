@@ -1,34 +1,60 @@
 # Dealership Management
 
-The Dealer Management system allows dealers to sell products that are already available in the marketplace, added by the Admin.
+The Dealership Management system lets marketplace sellers add products that already exist in the store catalog, created by the admin. 
 
-Instead of creating a new listing from scratch, dealers can perform Product Listing from Global Catalog, customize their price, quantity, product condition, and add a new description.
+Instead of building every product from scratch, dealers can simply pick items from the master catalog and publish them with their own price, stock, and details.
 
-This feature helps dealers save time by reusing existing product listings and ensuring consistency across the marketplace, and supporting List Existing Catalog Product functionality.
+This makes listing faster, keeps product information consistent, and reduces the effort needed to start selling.
 
-### Dealership Guide: Adding Existing Products
+Dealers can also perform product listing from global catalog, making it simple to list products that already exist in the marketplace system.
 
-From the seller dashboard, go to Products and click on it to open the product page.
+### Vendor Listing from Central Catalog
 
-<img src="/images/multi-vendor-marketplace/01-seller-dashboards.png" alt="Global Commission Configuration" />
+The Vendor Listing feature lets customers view all sellers in one place.
 
-Click on the **Add New Product** button at the top right corner to begin adding a new product to your store.
+<img src="/images/multi-vendor-marketplace/1.1marketplace.png" alt="Global Commission Configuration" />
 
-<img src="/images/multi-vendor-marketplace/02-product-page.png" alt="Global Commission Configuration" />
+Each vendor is shown with important details like the store name, logo, address, ratings, and number of reviews. 
 
-On the Search Products page, dealers can easily Add Product from Marketplace Catalog by finding items already added by the admin.
+This makes it easier for buyers to find and explore different sellers in the marketplace.
 
-<img src="/images/multi-vendor-marketplace/03-search-product.png" alt="Global Commission Configuration" />
+<img src="/images/multi-vendor-marketplace/2-vendor-listing-from-catlog.png" alt="Global Commission Configuration" />
 
-Go to the search bar and enter the product name to find the existing product in the marketplace.
+Customers can click on any vendor to open their store page, where they can view all products, read reviews, and check the complete seller information.
 
-<img src="/images/multi-vendor-marketplace/04-sell-as-your-product.png" alt="Global Commission Configuration" />
+<img src="/images/multi-vendor-marketplace/3-vendor-profile-page.png" alt="Global Commission Configuration" />
 
-The system will display the matching products in the search results, allowing you to select a product and sell on an Existing Listing with your own price and stock quantity.
+This helps build trust and gives vendors more visibility to attract buyers and increase sales.
+
+### Add Product from Marketplace Catalog
+
+From the seller dashboard, go to **Products** and click on it to open the product page.
+
+<img src="/images/multi-vendor-marketplace/4-seller-dashboards.png" alt="Global Commission Configuration" />
+
+Click on the Add New Product button at the top right corner to begin adding a new product to your store.
+
+<img src="/images/multi-vendor-marketplace/5-product-page.png" alt="Global Commission Configuration" />
+
+On the Search Products page, dealers can assign a product from the Master Catalog by searching for items already available.
+
+<img src="/images/multi-vendor-marketplace/6-search-product.png" alt="Global Commission Configuration" />
+
+Type the product name in the search bar to locate it in the marketplace catalog.
+
+<img src="/images/multi-vendor-marketplace/7-sell-as-your-product.png" alt="Global Commission Configuration" />
+
+The system shows matching products in the search results. Dealers can select a product and sell on existing listing by using their own price and stock quantity.
 
 Click on **‘Sell As Yours’** to create your personalized version of the existing product
 
-### Product Attributes
+### List Existing Catalog Product
+
+The platform also supports the list existing catalog product feature, which allows sellers to quickly add products from the global catalog without recreating product information.
+
+This helps dealers save time and ensures product data stays consistent across the marketplace.
+
+#### Product Attributes
 
 Enter all the required details for your personalized version of the existing product.
 
@@ -44,52 +70,55 @@ Enter all the required details for your personalized version of the existing pro
 
 **6) Video:** Optionally, add a video to give customers a better view of the product.
 
-<img src="/images/multi-vendor-marketplace/05-product-updated-by-dealler.png" alt="Global Commission Configuration" />
+<img src="/images/multi-vendor-marketplace/8-product-updated-by-dealler.png" alt="Global Commission Configuration" />
 
-Click on the **Save button** at the top right corner to add the product to your store, but initially, it will be in a disapproved state. 
+Click **Save** to add the product to your store. Initially, it will be marked as **Disapproved**.
 
-<img src="/images/multi-vendor-marketplace/06-product-disapprove-states.png" alt="Global Commission Configuration" />
+<img src="/images/multi-vendor-marketplace/9-product-disapprove-states.png" alt="Global Commission Configuration" />
 
-**Note:** Once the admin reviews and approves it, the status will change to **Approved**, and only then will the product be visible on the store frontend.
+**Note: Once the admin reviews and approves it, the status will change to Approved, and only then will the product be visible on the store frontend.**
 
-### Admin Panel: Manage Products Added by Dealers
+### Admin Panel: Manage Dealers Product
 
-From the Admin Dashboard, the admin has the authority to approve or disapprove products created by dealers. Only approved products will appear on the storefront.
+From the Admin Dashboard, admins can approve or disapprove dealer added products. Only approved items appear on the storefront.
 
-This process allows the admin to Assign Product from Master Catalog and ensure all dealer listings maintain consistent data quality.
-
+This ensures master catalog products stay consistent across all dealer listings.
 
 Go to **Marketplace >> Products** to view and manage all your products from the seller dashboard.
 
-<img src="/images/multi-vendor-marketplace/07-admin-product-page.png" alt="Global Commission Configuration" />
+<img src="/images/multi-vendor-marketplace/10-admin-product-page.png" alt="Global Commission Configuration" />
 
 To approve a product, follow these steps:
 
-1) Check the **product checkbox** for the item want to approve.
-2) Go to the **Select Action** dropdown.
-3) Click on **Update Status**.
-4) Select **Approved** to approve the product.
+1) Check the product checkbox for the item want to approve.
 
-<img src="/images/multi-vendor-marketplace/08-select-action.png" alt="Global Commission Configuration" />
+2) Go to the Select Action dropdown.
 
-Once the product is approved, it will show as **Approved** on the **Seller’s Product page** and will also become visible on the storefront for customers.
+3) Click on Update Status.
 
-<img src="/images/multi-vendor-marketplace/09-admin-approved-states.png" alt="Global Commission Configuration" />
+4) Select Approved to approve the product.
+
+<img src="/images/multi-vendor-marketplace/11-select-action.png" alt="Global Commission Configuration" />
+
+Once the product is approved, it will show as Approved on the Vendor Product page and under vendor listing, and will also become visible on the storefront for customers.
+
+<img src="/images/multi-vendor-marketplace/12-admin-approved-states.png" alt="Global Commission Configuration" />
 
 ### Product Preview – Dealership Side
 
-The changes will reflect on the dealer’s side, including any items selected via Vendor Listing from Central Catalog.
+After approval, changes reflect on the dealer side, including any products added through the dealer from the central catalog.
 
-<img src="/images/multi-vendor-marketplace/10-seller-side-preview.png" alt="Global Commission Configuration" />
+<img src="/images/multi-vendor-marketplace/13-seller-side-preview.png" alt="Global Commission Configuration" />
 
-### Store Frontend view
+### Store view
 
-The product appears on your store’s frontend for customers to view and buy.
+The approved product appears on the storefront for customers to browse and purchase.
 
-<img src="/images/multi-vendor-marketplace/11-store-frontend-view.png" alt="Global Commission Configuration" />
+<img src="/images/multi-vendor-marketplace/14-store-frontend-view.png" alt="Global Commission Configuration" />
 
-Click on  **“1 more seller selling same product”** to see dealer listings of the same product, a great way to manage Sell on Existing Listing opportunities efficiently.
+Customers can also click “1 more seller selling this product” to view other dealers offering the same item, making comparisons and purchases easier and helping dealers sell on existing listings more effectively.
 
-<img src="/images/multi-vendor-marketplace/12-storefrontend-part-two.png" alt="Global Commission Configuration" />
+<img src="/images/multi-vendor-marketplace/15-storefrontend-part-two.png" alt="Global Commission Configuration" />
+
 
 
