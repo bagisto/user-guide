@@ -254,6 +254,7 @@ export default defineConfig({
           { text: 'Requisition Lists', link: '/b2b-ecommerce-platform/requisition-lists' },
           { text: 'Quick Order', link: '/b2b-ecommerce-platform/quick-order' }, 
           { text: 'Request for Quote', link: '/b2b-ecommerce-platform/request-for-quote' }, 
+          { text: 'Quotation Handling', link: '/b2b-ecommerce-platform/quotation-handling' }, 
         ]
       },
     ],
