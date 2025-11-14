@@ -6,7 +6,7 @@ Instead of building every product from scratch, dealers can simply pick items fr
 
 This makes listing faster, keeps product information consistent, and reduces the effort needed to start selling.
 
-Dealers can also perform product listing from global catalog, making it simple to list products that already exist in the marketplace system.
+Dealers can also assign product from master catalog, making it simple to list products that already exist in the marketplace system.
 
 ### Vendor Listing from Central Catalog
 
