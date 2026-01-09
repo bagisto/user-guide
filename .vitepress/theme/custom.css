@@ -25,6 +25,10 @@
   }
 }
 
+html.dark {
+color-scheme:initial!important;
+}
+
 @media (min-width: 960px) {
   :root {
     --vp-home-hero-image-filter: blur(68px);

@@ -16,6 +16,33 @@ export default defineConfig({
 
   srcDir: './src',
 
+  head: [
+    [
+      'link',
+      { rel: 'icon', type: 'image/png', href: '/favicon.ico' }
+    ],
+    [
+      'script',
+      {},
+      `
+(function () {
+let script = document.createElement('script');
+
+script.innerHTML = 'window.chatbotConfig = { url: "https://ask.bagisto.com:5000/chat" };';
+
+document.body.appendChild(script);
+})();;
+`
+    ],
+    [
+      'script',
+      {
+        src: 'https://bagisto.github.io/ai-chatbot/chatbot.js',
+        async: true
+      }
+    ],
+  ],
+
   themeConfig: {
     siteTitle: false,
 
@@ -138,7 +165,6 @@ export default defineConfig({
         ]
       },
 
-
       {
         text: 'Settings',
         collapsed: false,
@@ -219,7 +245,7 @@ export default defineConfig({
         ]
       },
 
-       {
+      {
         text: 'B2B Marketplace',
         collapsed: false,
         items: [
@@ -232,7 +258,7 @@ export default defineConfig({
         ]
       },
 
-       {
+      {
         text: 'Multi Tenant Ecommerce',
         collapsed: false,
         items: [
@@ -243,7 +269,7 @@ export default defineConfig({
         ]
       },
 
-        {
+      {
         text: 'B2B eCommerce Platform',
         collapsed: false,
         items: [
@@ -252,19 +278,19 @@ export default defineConfig({
           { text: 'Role Based Permissions', link: '/b2b-ecommerce-platform/role-based-permissions' },
           { text: 'Purchase Orders', link: '/b2b-ecommerce-platform/purchase-orders' },
           { text: 'Requisition Lists', link: '/b2b-ecommerce-platform/requisition-lists' },
-          { text: 'Quick Order', link: '/b2b-ecommerce-platform/quick-order' }, 
-          { text: 'Request for Quote', link: '/b2b-ecommerce-platform/request-for-quote' }, 
-          { text: 'Quotation Handling', link: '/b2b-ecommerce-platform/quotation-handling' }, 
+          { text: 'Quick Order', link: '/b2b-ecommerce-platform/quick-order' },
+          { text: 'Request for Quote', link: '/b2b-ecommerce-platform/request-for-quote' },
+          { text: 'Quotation Handling', link: '/b2b-ecommerce-platform/quotation-handling' },
         ]
       },
     ],
 
-      outline: {
+    outline: {
       level: 'deep'
     },
-
+    
     footer: {
-      message: 'Released under the <a href="https://opensource.org/licenses/mit" target="_blank" class="mit-licens">MIT License</a>.',
+      message: 'Released under the <a href="https://opensource.org/licenses/mit" target="_blank" class="mit-license">MIT License</a>.',
       copyright: `Copyright © ${new Date().getFullYear()} Webkul`
     },
 
