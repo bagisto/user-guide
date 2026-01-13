@@ -243,6 +243,8 @@ export default defineConfig({
           { text: 'Rating Management', link: '/multi-vendor-marketplace/rating-management' },
           { text: 'Payment Management', link: '/multi-vendor-marketplace/payment-management' },
           { text: 'Return Merchandise Authorization (RMA)', link: '/multi-vendor-marketplace/return-merchandise-authorization' },
+          { text: 'Seller Catalog Bulk Upload', link: '/multi-vendor-marketplace/seller-catalog-bulk-upload' },
+          { text: 'Seller Attributes', link: '/multi-vendor-marketplace/seller-attributes' },
 
         ]
       },
