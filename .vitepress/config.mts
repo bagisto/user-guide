@@ -25,14 +25,14 @@ export default defineConfig({
       'script',
       {},
       `
-(function () {
-let script = document.createElement('script');
+       (function () {
+       let script = document.createElement('script');
 
-script.innerHTML = 'window.chatbotConfig = { url: "https://ask.bagisto.com:5000/chat" };';
+       script.innerHTML = 'window.chatbotConfig = { url: "https://ask.bagisto.com:5000/chat" };';
 
-document.body.appendChild(script);
-})();;
-`
+       document.body.appendChild(script);
+       })();;
+       `
     ],
     [
       'script',
@@ -242,6 +242,8 @@ document.body.appendChild(script);
           { text: 'Product Management', link: '/multi-vendor-marketplace/product-management' },
           { text: 'Rating Management', link: '/multi-vendor-marketplace/rating-management' },
           { text: 'Payment Management', link: '/multi-vendor-marketplace/payment-management' },
+          { text: 'Return Merchandise Authorization (RMA)', link: '/multi-vendor-marketplace/return-merchandise-authorization' },
+
         ]
       },
 
