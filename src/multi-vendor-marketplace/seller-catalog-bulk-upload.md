@@ -1,6 +1,6 @@
 # Seller Catalog Bulk Upload
 
-Thea Seller Catalog Bulk Upload feature allows sellers to upload, update, and delete products in bulk using CSV, XLS, or XLSX files, saving time by managing multiple products at once instead of handling them individually.
+The Seller Catalog Bulk Upload feature allows sellers to upload, update, and delete products in bulk using CSV, XLS, or XLSX files, saving time by managing multiple products at once instead of handling them individually.
 
 <img src="/images/multi-vendor-marketplace/1-data-transfer-settings.webp" alt="Customer Email and Password" />
 
