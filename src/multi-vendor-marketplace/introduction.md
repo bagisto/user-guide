@@ -1,4 +1,4 @@
-# Multi Vendor Marketpace 
+# Multi Vendor Marketplace 
 
 [Multi Vendor Marketplace](https://bagisto.com/en/laravel-multi-vendor-marketplace/) transforms a standard store into a complete marketplace, allowing the admin to manage sellers, commissions, product approvals, and order handling, while giving vendors a dedicated dashboard to manage their catalog, orders, and transactions. 
 

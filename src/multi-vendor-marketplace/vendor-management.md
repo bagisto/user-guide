@@ -138,7 +138,7 @@ Just paste your Google Analytics ID to start collecting insights.
 
 - **Understand customer behavior and popular pages.**
 
-- **Make better multi-vendor-marketplace and sales decisions.**
+- **Make better multi-vendor marketplace and sales decisions.**
 
 ---
 

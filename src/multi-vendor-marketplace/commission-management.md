@@ -82,7 +82,7 @@ This openness helps create trust between the marketplace and sellers by making s
 
 1) Sellers can track their total commission paid to the admin.  
 2) Provides insights into how commissions impact overall profits.  
-3) Encourages healthy business relationships through openness.  
+3) Encourages healthy business relationships.  
 
 **Where sellers can find this report:**
 

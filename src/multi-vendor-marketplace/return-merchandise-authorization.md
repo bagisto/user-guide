@@ -88,8 +88,8 @@ Now, the admin can create RMA rules by navigating to the RMA Rules section.
 
 **Resolutions Period:** Provide the number of days for the resolution of the RMA.
    
-   - Exchange Period(Days)
-   - Return Period(Days)
+   - Exchange Period (Days)
+   - Return Period (Days)
 
 <img src="/images/multi-vendor-marketplace/7-create-rma-rule.webp" alt="Customer Email and Password" />
 
@@ -138,7 +138,7 @@ Admins can configure field type, label, validation, and position. This makes the
 
 <img src="/images/multi-vendor-marketplace/10-custom-field.webp" alt="Customer Email and Password" />
 
-**Step 2:** Further navigate to the create new rma Custom Field page.
+**Step 2:** Further navigate to the create new RMA Custom Field page.
 
 **1) Label:** Defines the name of the field displayed on the RMA form.
 
@@ -196,11 +196,11 @@ When the customer or guest selects Cancel as the resolution type for pending ord
 
 **2) Declined:** If the seller rejects the cancellation request, this status can be selected.
 
-**3) Item Canceled:** Once the seller accepts the request and cancels the ordered item, this status can be applied.
+**3) Item Cancelled:** Once the seller accepts the request and cancels the ordered item, this status can be applied.
 
 <img src="/images/multi-vendor-marketplace/16-item-cancel.webp" alt="Customer Email and Password" />
 
-After selecting **Item Canceled** and clicking **Save Changes**, the order is canceled automatically.
+After selecting **Item Cancelled** and clicking **Save Changes**, the order is canceled automatically.
 
 <img src="/images/multi-vendor-marketplace/17-canceled-order.webp" alt="Customer Email and Password" />
 
@@ -216,7 +216,7 @@ When the customer or guest selects Exchange as the resolution type for pending o
 
 **4) Solved:** After the customer or guest receives the exchanged product, the seller can mark the RMA as Solved.
 
-**Note:** The Same process is followed by the admin in the Admin -> Marketplace -> RMA section.
+**Note:** The same process is followed by the admin in the Admin -> Marketplace -> RMA section.
 
 ### How to Create an RMA Request from the Storefront
 
