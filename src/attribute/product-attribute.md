@@ -8,9 +8,7 @@ To create Bagisto Attributes, open the Admin Panel and then follow the steps bel
 
 ### Add Attributes
 
-Click on **Catalog** >> **Attributes** >> **Create Attributes** as shown in the below image.
-
-<ImagePopup src="/images/attribute/createAttribute.png" alt="Create Attribute" />
+Click on **Catalog** >> **Attributes** >> **Create Attributes** from your admin panel 
 
 ### Attribute Types
 
