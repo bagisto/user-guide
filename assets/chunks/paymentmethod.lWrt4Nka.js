@@ -1,1 +1,0 @@
-const s="/assets/paypal.DkxhpBLu.png",t="/assets/cod.CeTwkVcI.png",a="/assets/moneyTransfer.BeNtjor2.png",p="/assets/paypalStandard._L7Z1imC.png",o="/assets/paymentmethod.X_ux3zof.png";export{s as _,t as a,a as b,p as c,o as d};
