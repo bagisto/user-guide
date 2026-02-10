@@ -4,6 +4,6 @@
 
 On the Admin Panel go to **Configure >> Captcha**, add the **Site Key & Secret Key**, and enable/disable the **Status** according to your requirement.
 
-<img src="/images/configure/captcha.png" alt="Captcha" />
+<ImagePopup src="/images/configure/captcha.png" alt="Captcha" />
 
 After that, click on the **Save Configuration** button.

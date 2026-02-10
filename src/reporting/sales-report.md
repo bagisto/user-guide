@@ -22,7 +22,7 @@ This section provides a graphical view of sales trends over different time perio
 - Identify peak sales periods.  
 - Adjust marketing strategies based on trends.  
 
-<img src="/images/reporting/total-sale.png" alt="Total Sales" />
+<ImagePopup src="/images/reporting/total-sale.png" alt="Total Sales" />
 
 ### 3) Purchase Funnel
 
@@ -35,7 +35,7 @@ The purchase funnel tracks customer behavior from visiting the store to completi
 - **Added to Cart –** Percentage of visitors who added a product to the cart.  
 - **Purchased –** Percentage of visitors who completed a purchase.  
 
-<img src="/images/reporting/purchase-funnel.png" alt="Purchase Funnel" />
+<ImagePopup src="/images/reporting/purchase-funnel.png" alt="Purchase Funnel" />
 
 ### 4) Abandoned Carts
 
@@ -48,7 +48,7 @@ This report tracks the revenue lost due to customers adding products to the cart
 - **Abandonment Rate:** Percentage of abandoned carts compared to initiated checkouts.  
 - **Abandoned Products:** Specific products left in abandoned carts.  
 
-<img src="/images/reporting/abandoned-cart.png" alt="Abandoned Cart" />
+<ImagePopup src="/images/reporting/abandoned-cart.png" alt="Abandoned Cart" />
 
 ### 5) Total Orders
 
@@ -59,7 +59,7 @@ Displays the total number of orders placed during the selected period.
 - Helps track order trends over time.  
 - A decrease in orders may indicate the need for promotional activities.  
 
-<img src="/images/reporting/total-order.png" alt="Total Orders" />
+<ImagePopup src="/images/reporting/total-order.png" alt="Total Orders" />
 
 ### 6) Average Order Value (AOV)
 
@@ -70,7 +70,7 @@ AOV calculates the average amount spent per order. It helps measure customer spe
 - Higher AOV indicates customers are buying more per transaction.  
 - Strategies to increase AOV include product bundling and upselling.  
 
-<img src="/images/reporting/average-order-value.png" alt="Average Order Value" />
+<ImagePopup src="/images/reporting/average-order-value.png" alt="Average Order Value" />
 
 ### 7) Tax Collected
 
@@ -81,7 +81,7 @@ Shows the total tax amount collected from orders based on tax rules set in the s
 - **Tax Collected:** Total tax amount from all sales.  
 - **Top Tax Categories:** Categories contributing the most to tax collection.  
 
-<img src="/images/reporting/tax-collected.png" alt="Tax Collected" />
+<ImagePopup src="/images/reporting/tax-collected.png" alt="Tax Collected" />
 
 ### 8) Shipping Collected
 
@@ -92,7 +92,7 @@ Displays the total amount collected for shipping fees during the selected period
 - **Shipping Revenue:** Total shipping fees collected.  
 - **Top Shipping Methods:** Most frequently used shipping methods.  
 
-<img src="/images/reporting/shipping-collected.png" alt="Shipping Collected" />
+<ImagePopup src="/images/reporting/shipping-collected.png" alt="Shipping Collected" />
 
 ### 9) Refunds
 
@@ -103,7 +103,7 @@ This report tracks the amount refunded to customers for returned or canceled ord
 - **Total Refunds:** The total amount refunded.  
 - **Refund Trend:** Helps track frequent refund reasons.  
 
-<img src="/images/reporting/refund.png" alt="Refunds" />
+<ImagePopup src="/images/reporting/refund.png" alt="Refunds" />
 
 ### 10) Top Payment Methods
 
@@ -114,4 +114,4 @@ Shows which payment methods customers use the most.
 - If a payment method has low usage, consider offering alternatives.  
 - Helps optimize checkout for preferred payment options.  
 
-<img src="/images/reporting/top-payment-method.png" alt="Top Payment Methods" />
+<ImagePopup src="/images/reporting/top-payment-method.png" alt="Top Payment Methods" />

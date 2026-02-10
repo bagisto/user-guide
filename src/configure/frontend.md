@@ -14,11 +14,11 @@ To add, go to Admin Panel and click on **Configure >> Products >> Storefront**.
 
 ### List Mode
 
-<img src="/images/configure/listmode.png" alt="List Mode" />
+<ImagePopup src="/images/configure/listmode.png" alt="List Mode" />
 
 ### Grid Mode
 
-<img src="/images/configure/gridmode.png" alt="Grid Mode" />
+<ImagePopup src="/images/configure/gridmode.png" alt="Grid Mode" />
 
 **3. Products Per Page:** Enter the number of products visible per page on the storefront.
 
@@ -26,8 +26,8 @@ To add, go to Admin Panel and click on **Configure >> Products >> Storefront**.
 
 **5. Buy Now Products:** Select from the **Enable/Disable** option as required. Once enabled, it will be visible on the product detail page.
 
-<img src="/images/configure/storefront.png" alt="Storefront Settings" />
+<ImagePopup src="/images/configure/storefront.png" alt="Storefront Settings" />
 
-<img src="/images/configure/buyNow.png" alt="Buy Now Products" />
+<ImagePopup src="/images/configure/buyNow.png" alt="Buy Now Products" />
 
 After that, click on the **Save Configuration** button.

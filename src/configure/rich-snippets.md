@@ -8,10 +8,10 @@ To configure, go to the Admin Panel and navigate to **Configure >> Rich Snippets
 
 Products are items available for purchase. Select **Enable/Disable** and click the **Save Configuration** button.
 
-<img src="/images/configure/products.png" alt="Products Rich Snippets" />
+<ImagePopup src="/images/configure/products.png" alt="Products Rich Snippets" />
 
 ### Categories
 
 Categories are groups that organize similar products for easier browsing and navigation. Select **Enable/Disable** and click the **Save Configuration** button.
 
-<img src="/images/configure/categories.png" alt="Categories Rich Snippets" />
+<ImagePopup src="/images/configure/categories.png" alt="Categories Rich Snippets" />

@@ -14,10 +14,10 @@ The seller can send either paper or electronic invoices to the customer. It is a
 
 It contains information about the item and its price, tax charges associated with it, etc.
 
-<img src="/images/orders/invoice.png" alt="Invoice" />
+<ImagePopup src="/images/orders/invoice.png" alt="Invoice" />
 
 After creating an Invoice order status automatically goes from **Pending** to **Processing**
 
-<img src="/images/orders/invoiceSubmit.png" alt="Invoice Submit" />
+<ImagePopup src="/images/orders/invoiceSubmit.png" alt="Invoice Submit" />
 
 By following the above steps, you can easily create a **Invoice** in Bagisto.

@@ -17,4 +17,4 @@ Social login lets users access the website using their social media accounts, si
 
 After making changes, click on the **Save Configuration** button.
 
-<img src="/images/configure/settings.png" alt="Settings Configuration" />
+<ImagePopup src="/images/configure/settings.png" alt="Settings Configuration" />

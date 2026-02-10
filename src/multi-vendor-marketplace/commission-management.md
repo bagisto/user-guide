@@ -31,7 +31,7 @@ This is the easiest and most reliable way to make money from sales since every s
 3) Enter the percentage rate you want to apply globally.  
 4) Click **Save Configuration** — the rate will now be applied automatically to all sellers.  
 
-<img src="/images/multi-vendor-marketplace/configure_commission.png" alt="Global Commission Configuration" />
+<ImagePopup src="/images/multi-vendor-marketplace/configure_commission.png" alt="Global Commission Configuration" />
 
 **Example:**  
 If the global rate is 10%, and a seller sells something for $1,000, the admin will automatically get $100 as their commission, while the seller keeps $900.
@@ -65,7 +65,7 @@ This is called a custom commission rate and it can be either higher or lower tha
 4) Enter the desired rate and use the **Status Toggle** to turn it ON.  
 5) Save the settings — the custom rate will now apply only to that seller.  
 
-<img src="/images/multi-vendor-marketplace/seller_commission.png" alt="Seller Custom Commission" />
+<ImagePopup src="/images/multi-vendor-marketplace/seller_commission.png" alt="Seller Custom Commission" />
 
 **Example:**  
 If the global rate is 10%, but Seller A is given a custom rate of 5%, only 5% will be deducted from Seller A’s sales, while others continue to be charged 10%.
@@ -88,7 +88,7 @@ This openness helps create trust between the marketplace and sellers by making s
 
 1) From the **Seller Dashboard**, navigate to: **Reporting → Total Commission Paid**.  
 
-<img src="/images/multi-vendor-marketplace/total_commission_paid_reporting.png" alt="Total Commission Paid Reporting" />
+<ImagePopup src="/images/multi-vendor-marketplace/total_commission_paid_reporting.png" alt="Total Commission Paid Reporting" />
 
 **Example:**  
 A seller selling $50,000 worth of goods at a 10% commission rate will see $5,000 listed in the “Total Commission Paid” section.

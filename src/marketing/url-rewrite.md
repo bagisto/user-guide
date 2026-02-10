@@ -8,7 +8,7 @@ If an admin modifies their URL for any reason, this functionality ensures seamle
 
 On the Admin panel, go to **Marketing > Search & SEO > URL Rewrites** and click on **Create URL Rewrite** as shown below.
 
-![URL Rewrite](/images/marketing/urlRewrite.png)
+<ImagePopup src="/images/marketing/urlRewrite.png" alt="Search Field" />
 
 ## Step 2: Add URL Rewrite Details
 
@@ -30,10 +30,10 @@ Fill in the following fields:
 
 Finally, click the **Save URL Rewrite** button.
 
-![URL Fields](/images/marketing/urlFields.png)
+<ImagePopup src="/images/marketing/urlFields.png" alt="Search Field" />
 
 ## Step 3: URL Redirection
 
 The new URL will now redirect as per the **Target Path** permanently.  
 
-![URL Output](/images/marketing/urlOutput.png)
+<ImagePopup src="/images/marketing/urlOutput.png" alt="Search Field" />

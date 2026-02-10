@@ -6,6 +6,6 @@ To configure, go to the Admin Panel and navigate to **Configure >> Products >> R
 
 By enabling this option, **Guest Users** can also write reviews for products.
 
-<img src="/images/configure/image.png" alt="Review Configuration" />
+<ImagePopup src="/images/configure/image.png" alt="Review Configuration" />
 
 After configuring, click the **Save Configuration** button.

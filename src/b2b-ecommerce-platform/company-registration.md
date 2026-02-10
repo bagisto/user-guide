@@ -10,11 +10,11 @@ Once registered, companies can manage their profile, access dashboards, and use 
 
 **Step: 1** On the storefront, click on **Sign Up** from the header menu, as shown in the image below.
 
-<img src="/images/b2b-ecommerce-platform/1.png" alt="Super Admin Login" />
+<ImagePopup src="/images/b2b-ecommerce-platform/1.png" alt="Super Admin Login" />
 
 **Step: 2** After clicking, the registration form will open, as shown in the image below.
 
-<img src="/images/b2b-ecommerce-platform/2.png" alt="Super Admin Login" />
+<ImagePopup src="/images/b2b-ecommerce-platform/2.png" alt="Super Admin Login" />
 
 **Step: 3** Fill in the company details:
 
@@ -46,7 +46,7 @@ If you already have a company account, you can log in from the storefront using 
 
 **Step: 1** Click Sign In from the header menu on the storefront. The login form will open, as shown in the image below.
 
-<img src="/images/b2b-ecommerce-platform/3.png" alt="Super Admin Login" />
+<ImagePopup src="/images/b2b-ecommerce-platform/3.png" alt="Super Admin Login" />
 
 **Step: 2** Enter your credentials in the form:
 
@@ -58,7 +58,7 @@ If you already have a company account, you can log in from the storefront using 
 
 Once signed in, you can manage your company profile, users, orders, requisition lists, quotations, and other B2B operations, as shown in the profile section image below.
 
-<img src="/images/b2b-ecommerce-platform/4.png" alt="Super Admin Login" />
+<ImagePopup src="/images/b2b-ecommerce-platform/4.png" alt="Super Admin Login" />
 
 ## Companies Management (Admin End)
 
@@ -70,7 +70,7 @@ Using the Companies menu in the admin panel, you can view a list of all register
 
 Log in to the Admin Panel and navigate to **Customers → Companies**. The companies list will be displayed, as shown in the image below.
 
-<img src="/images/b2b-ecommerce-platform/5.png" alt="Super Admin Login" />
+<ImagePopup src="/images/b2b-ecommerce-platform/5.png" alt="Super Admin Login" />
 
 ### Create Company
 
@@ -98,7 +98,7 @@ Admins can create a new company from the backend by filling in all the required 
 
 **8) VAT Tax ID –** Enter the company’s tax identification num.
 
-<img src="/images/b2b-ecommerce-platform/6.png" alt="Super Admin Login" />
+<ImagePopup src="/images/b2b-ecommerce-platform/6.png" alt="Super Admin Login" />
 
 ### Fill in the Address details:
 
@@ -112,7 +112,7 @@ State – Enter the state.
 
 Postcode – Enter the postal code.
 
-<img src="/images/b2b-ecommerce-platform/7.png" alt="Super Admin Login" />
+<ImagePopup src="/images/b2b-ecommerce-platform/7.png" alt="Super Admin Login" />
 
 ### Set company Policies
 
@@ -122,7 +122,7 @@ Postcode – Enter the postal code.
 
 **3) Privacy Policy –** Enter privacy policy details.
 
-<img src="/images/b2b-ecommerce-platform/8.png" alt="Super Admin Login" />
+<ImagePopup src="/images/b2b-ecommerce-platform/8.png" alt="Super Admin Login" />
 
 ### Add Meta Description
 
@@ -132,7 +132,7 @@ Postcode – Enter the postal code.
 
 **3) Meta Description –** Enter meta description.
 
-<img src="/images/b2b-ecommerce-platform/9.png" alt="Super Admin Login" />
+<ImagePopup src="/images/b2b-ecommerce-platform/9.png" alt="Super Admin Login" />
 
 ### Add Social Links
 
@@ -146,4 +146,4 @@ After completing all details, click Save Company to create the company. Use Back
 
 **Note: Admin can edit or delete any company later from the companies list using the Actions column.**
 
-<img src="/images/b2b-ecommerce-platform/10.png" alt="Super Admin Login" />
+<ImagePopup src="/images/b2b-ecommerce-platform/10.png" alt="Super Admin Login" />

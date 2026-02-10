@@ -23,7 +23,7 @@ Display a promotional banner on the storefront header.
 - **Redirection Link**  
   Enter a valid URL (e.g., `/products/sale`)
 
-<img src="/images/configure/header.png" alt="Header Offer Title" />
+<ImagePopup src="/images/configure/header.png" alt="Header Offer Title" />
 
 ### Speculation Rules
 
@@ -52,7 +52,7 @@ These rules improve perceived performance by prefetching or prerendering pages i
 - **Enable Prefetch Speculation Rules**  
   Enables link prefetching to accelerate navigation.
 
-<img src="/images/configure/contentspec.png" alt="Speculation Rules" />
+<ImagePopup src="/images/configure/contentspec.png" alt="Speculation Rules" />
 
 ### Custom Scripts
 
@@ -64,4 +64,4 @@ Add your own scripts to enhance or integrate custom features.
 - **Custom JavaScript**  
   Insert scripts for chat widgets, analytics, or any custom interaction.
 
-<img src="/images/configure/custom.png" alt="Custom Scripts" />
+<ImagePopup src="/images/configure/custom.png" alt="Custom Scripts" />

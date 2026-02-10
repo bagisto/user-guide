@@ -12,16 +12,16 @@ To add **Custom Scripts**, go to the Admin panel: **Configure >> Content**. You 
 
 We have used a background color **Light Blue** and saved the configurations.
 
-<img src="/images/configure/css.png" alt="Custom CSS" />
+<ImagePopup src="/images/configure/css.png" alt="Custom CSS" />
 
 Now the storefront background color has changed, as shown below:
 
-<img src="/images/configure/cssOutput.png" alt="Custom CSS Output" />
+<ImagePopup src="/images/configure/cssOutput.png" alt="Custom CSS Output" />
 
 ### Custom JS
 
 You can apply JavaScript according to your requirement and click on the **Save Configuration** button.
 
-<img src="/images/configure/js.png" alt="Custom JS" />
+<ImagePopup src="/images/configure/js.png" alt="Custom JS" />
 
 After that, click on the **Save Configuration** button.

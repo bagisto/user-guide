@@ -10,7 +10,7 @@ The `theme_customizations` table supports customizations for multiple themes and
 
 **Step 1:** In the admin panel, go to **Settings >> Themes**. Click on **Create Theme**.
 
-<img src="/images/settings/createTheme.png" alt="Create Theme" />
+<ImagePopup src="/images/settings/createTheme.png" alt="Create Theme" />
 
 **Step 2:** Fill in the required details:  
 
@@ -22,7 +22,7 @@ The `theme_customizations` table supports customizations for multiple themes and
 
 Click **Save Theme** to proceed.
 
-<img src="/images/settings/saveTheme.png" alt="Save Theme" />
+<ImagePopup src="/images/settings/saveTheme.png" alt="Save Theme" />
 
 ### Product Carousel 
 
@@ -32,7 +32,7 @@ Click **Save Theme** to proceed.
 **2. Sort Order:** Define the order.  
 **3. Limit:** Set the limit for products in the carousel.  
 
-<img src="/images/settings/productCarousel.png" alt="Product Carousel" />
+<ImagePopup src="/images/settings/productCarousel.png" alt="Product Carousel" />
 
 ### General
 
@@ -42,19 +42,19 @@ Click **Save Theme** to proceed.
 **4. Themes:** Select the theme.  
 **5. Status:** Enable or disable the status.  
 
-<img src="/images/settings/generalTheme.png" alt="General Theme" />
+<ImagePopup src="/images/settings/generalTheme.png" alt="General Theme" />
 
 ### Filters
 
 **1. Key:** Enter the key.  
 **2. Value:** Enter the value.  
 
-<img src="/images/settings/filters.png" alt="Filters" />
+<ImagePopup src="/images/settings/filters.png" alt="Filters" />
 
 Click **Save** to finalize.
 
 **Step 4:** The new **Theme** entry will now appear in the product carousel list, as shown below.
 
-<img src="/images/settings/themeOutput.png" alt="Theme Output" />
+<ImagePopup src="/images/settings/themeOutput.png" alt="Theme Output" />
 
 You have now successfully created and customized a **Theme** in Bagisto.

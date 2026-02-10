@@ -8,7 +8,7 @@ The Request for Quote (RFQ) feature allows companies to submit quotation request
 
 Go to the Cart page from the storefront. Here, you will find the Request For Quote button below the Cart Summary section.
 
-<img src="/images/b2b-ecommerce-platform/1-cart-page.png" alt="Super Admin Login" />
+<ImagePopup src="/images/b2b-ecommerce-platform/1-cart-page.png" alt="Super Admin Login" />
 
 Click the **Request For Quote** button to proceed with creating a quotation.
 
@@ -24,7 +24,7 @@ After clicking the **Request For Quote** button, the **Quotation Form** will app
 
 **3) Attach File –** Upload supporting files if required.
 
-<img src="/images/b2b-ecommerce-platform/2-request-for-quote.png" alt="Super Admin Login" />
+<ImagePopup src="/images/b2b-ecommerce-platform/2-request-for-quote.png" alt="Super Admin Login" />
 
 At the bottom of the form, two buttons are available:
 
@@ -38,5 +38,5 @@ Once you submit your quotation request, it will be listed under the **Quotations
 
 Each quotation displays key details, including ID, Quotation Name, Company, Base Total, Status (Open/Accepted/Rejected/Draft), and Created At, for easy tracking and management.
 
-<img src="/images/b2b-ecommerce-platform/3-quotation.png" alt="Super Admin Login" />
+<ImagePopup src="/images/b2b-ecommerce-platform/3-quotation.png" alt="Super Admin Login" />
 

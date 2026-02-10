@@ -10,6 +10,6 @@ Settings refer to configurable choices that control how a system, application, o
 
 **Image Search Option** - Helps to search your images.
 
-<img src="/images/configure/options.png" alt="Configurable Choices Options" />
+<ImagePopup src="/images/configure/options.png" alt="Configurable Choices Options" />
 
 After selecting your desired options, click on the **Save Configuration** button.

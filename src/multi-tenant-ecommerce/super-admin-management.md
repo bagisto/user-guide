@@ -18,17 +18,17 @@ Super Admins set up product visibility, manage channels, and design themes to ma
 
 2. Enter your registered **Email Address and Password**, then click **Sign In** to access the panel.
 
-<img src="/images/multi-tenant-ecommerce/1-super-login.png" alt="Super Admin Login" />
+<ImagePopup src="/images/multi-tenant-ecommerce/1-super-login.png" alt="Super Admin Login" />
 
 After successfully signing in, the **Super Admin Dashboard** will open, as shown below. The Super Admin can view all the tenants registered on their SaaS panel.
 
-<img src="/images/multi-tenant-ecommerce/2-super-dashboard.png" alt="Super Admin Dashboard" />
+<ImagePopup src="/images/multi-tenant-ecommerce/2-super-dashboard.png" alt="Super Admin Dashboard" />
 
 Here, you can browse through the list of tenants and use options to **search, filter, and paginate** for easy access.
 
 Additionally, the **Super Admin** can register a new tenant directly from the Super Admin panel by clicking the **Register Tenant** button in the top right-hand corner.
 
-<img src="/images/multi-tenant-ecommerce/3-super-create-tenant.png" alt="Super Admin Create Tenant" />
+<ImagePopup src="/images/multi-tenant-ecommerce/3-super-create-tenant.png" alt="Super Admin Create Tenant" />
 
 ### Enter the Following Super Admin Details
 
@@ -52,14 +52,13 @@ Additionally, the **Super Admin** can register a new tenant directly from the Su
 
 Finally, click the **Save Tenant** button to save the new tenant.
 
-
 ## Tenant Insights
 
 To view all the details about a tenant, navigate to **Tenants → Tenants** and click on the **View** icon.
 
 Under the **Tenant Insights**, the Super Admin can see all the information about the tenant's store, as shown in the image below:
 
-<img src="/images/multi-tenant-ecommerce/4-Super-tenant-Insights.png" alt="Super Admin Tenant Insights" />
+<ImagePopup src="/images/multi-tenant-ecommerce/4-Super-tenant-Insights.png" alt="Super Admin Tenant Insights" />
 
 ### Tenant Insights Information
 
@@ -83,17 +82,17 @@ Under the **Tenant Insights**, the Super Admin can see all the information about
 
 The **Super Admin** can edit tenant details such as name, contact info, or organization, as shown below:
 
-<img src="/images/multi-tenant-ecommerce/5-super-edit-tenant.png" alt="Super Admin Edit Tenant" />
+<ImagePopup src="/images/multi-tenant-ecommerce/5-super-edit-tenant.png" alt="Super Admin Edit Tenant" />
 
 However, the **Super Admin** also has the ability to **delete** a tenant if needed by clicking the **Delete** button for that tenant.
 
-<img src="/images/multi-tenant-ecommerce/6-super-delete-tenant.png" alt="Super Admin Delete Tenant" />
+<ImagePopup src="/images/multi-tenant-ecommerce/6-super-delete-tenant.png" alt="Super Admin Delete Tenant" />
 
 ## Tenant’s Customer
 
 By navigating to **Tenants → Customers**, the Super Admin can view all the customer lists of their tenants, as shown in the image below:
 
-<img src="/images/multi-tenant-ecommerce/7-super-customer-list.png" alt="Super Admin Customer List" />
+<ImagePopup src="/images/multi-tenant-ecommerce/7-super-customer-list.png" alt="Super Admin Customer List" />
 
 **Note:** The Super Admin can only **view** the customer list and cannot delete, update, or edit any customer details.
 
@@ -101,7 +100,7 @@ By navigating to **Tenants → Customers**, the Super Admin can view all the cus
 
 By navigating to **Tenants → Products**, the Super Admin can view all the product lists of their tenants, as shown in the image below:
 
-<img src="/images/multi-tenant-ecommerce/8-super-product-list.png" alt="Super Admin Product List" />
+<ImagePopup src="/images/multi-tenant-ecommerce/8-super-product-list.png" alt="Super Admin Product List" />
 
 **Note:** The Super Admin can only **view** the product list and cannot delete, update, or edit any product details.
 
@@ -109,6 +108,6 @@ By navigating to **Tenants → Products**, the Super Admin can view all the prod
 
 By navigating to **Tenants → Orders**, the Super Admin can view all the orders of their tenants, as shown in the image below:
 
-<img src="/images/multi-tenant-ecommerce/9-super-order-list.png" alt="Super Admin Order List" />
+<ImagePopup src="/images/multi-tenant-ecommerce/9-super-order-list.png" alt="Super Admin Order List" />
 
 **Note:** The Super Admin can only **view** the orders list and cannot delete, update, or edit any order details.

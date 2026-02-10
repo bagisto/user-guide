@@ -26,7 +26,7 @@ The Quick Order page will appear, allowing you to search products, enter SKUs, o
 
 **5) Download Sample File –** Download a sample CSV for reference before uploading your own.
 
-<img src="/images/b2b-ecommerce-platform/1-quick-order.png" alt="Super Admin Login" />
+<ImagePopup src="/images/b2b-ecommerce-platform/1-quick-order.png" alt="Super Admin Login" />
 
 ### Selected Products
 
@@ -34,7 +34,7 @@ After entering the SKU in the field, the product associated with that SKU will b
 
 Click the **Add to List** button, and the product will be added under the Selected Products section.
 
-<img src="/images/b2b-ecommerce-platform/2-selected-products.png" alt="Super Admin Login" />
+<ImagePopup src="/images/b2b-ecommerce-platform/2-selected-products.png" alt="Super Admin Login" />
 
 Once you have reviewed the selected products, click **Add To Cart** to move them directly to your shopping cart for checkout.
 

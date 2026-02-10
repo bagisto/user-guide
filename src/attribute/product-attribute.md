@@ -10,7 +10,7 @@ To create Bagisto Attributes, open the Admin Panel and then follow the steps bel
 
 Click on **Catalog** >> **Attributes** >> **Create Attributes** as shown in the below image.
 
-<img src="/images/attribute/createAttribute.png" alt="Create Attribute" />
+<ImagePopup src="/images/attribute/createAttribute.png" alt="Create Attribute" />
 
 ### Attribute Types
 
@@ -19,18 +19,18 @@ Enter **Label**, **Attribute Code**, and select **Attribute Type**.
 - **Attribute Code**: Enter the Attribute Code to identify the Attribute.  
 - **Attribute Type**: Bagisto provides various attribute types such as Text, Textarea, Price, Boolean, Select, Multi-select, and DateTime.
 
-<img src="/images/attribute/attributeTypes.png" alt="Attribute Types" />
+<ImagePopup src="/images/attribute/attributeTypes.png" alt="Attribute Types" />
 
 Now add validation & configuration as per your requirement.
 
-<img src="/images/attribute/validation.png" alt="Validation" />
+<ImagePopup src="/images/attribute/validation.png" alt="Validation" />
 
 So, **Save the Attribute** and then go to the **Attribute Family** from **Catalog >> Attribute Families** and assign it from the unassigned attributes by drag and drop at your desired place as shown in the below image.
 
-<img src="/images/attribute/attributeFamily.png" alt="Attribute Family" />
+<ImagePopup src="/images/attribute/attributeFamily.png" alt="Attribute Family" />
 
 Now, **Save the Attribute Family** and check the output while creating products on the product edit page as shown in the below image.
 
-<img src="/images/attribute/editPage.png" alt="Product Edit Page with Attributes" />
+<ImagePopup src="/images/attribute/editPage.png" alt="Product Edit Page with Attributes" />
 
 By following the above steps, you can easily create a Product Attribute in Bagisto.

@@ -6,6 +6,6 @@ To add, go to Admin Panel and click on **Configure >> Products**.
 
 Here you can manage several cross-selling products that will be visible on the front end.
 
-<img src="/images/configure/cartpageConfiguration.png" alt="Cart Configuration" />
+<ImagePopup src="/images/configure/cartpageConfiguration.png" alt="Cart Configuration" />
 
 After that, click on the **Save Configuration** button.

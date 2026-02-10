@@ -8,18 +8,18 @@ For example: Birthdays, Anniversaries, Baby Showers, etc.
 
 On the Admin panel, go to **Marketing >> Communications >> Events** and click on **Create Event** as shown in the below image.
 
-<img src="/images/marketing/event.png" alt="Event" />
+<ImagePopup src="/images/marketing/event.png" alt="Event" />
 
 ### Step 2: Enter Details
 
 Now add the **Event Name, Description, Date** as shown in the below image.
 
-<img src="/images/marketing/eventName.png" alt="Event Name" />
+<ImagePopup src="/images/marketing/eventName.png" alt="Event Name" />
 
 ### Step 3: 
 
 Now you will be able to see the new **Event** as shown below.
 
-<img src="/images/marketing/eventOutput.png" alt="Event Output" />
+<ImagePopup src="/images/marketing/eventOutput.png" alt="Event Output" />
 
 By this, you can easily create an **Event** in Bagisto.

@@ -10,7 +10,7 @@ You can easily Bulk Upload **Products, Customers & Tax Rates**.
 
 **Step 1:** Go to the Admin panel of Bagisto click on **Settings >> Data Transfer** and click on **Create Import** button.
 
-<img src="/images/settings/import.png" alt="Import" />
+<ImagePopup src="/images/settings/import.png" alt="Import" />
 
 **Step 2:** Under general configurations select the below fields:
 
@@ -36,14 +36,14 @@ You can easily Bulk Upload **Products, Customers & Tax Rates**.
 
 So now click on the **Save Import** Button.
 
-<img src="/images/settings/createImport.png" alt="Import" />
+<ImagePopup src="/images/settings/createImport.png" alt="Import" />
 
 **Step 3:** Now the import process will get started and after it is completed the product import process will be done.
 
-<img src="/images/settings/importDone.png" alt="Import" />
+<ImagePopup src="/images/settings/importDone.png" alt="Import" />
 
 **Step 4:** Now you will able see to all the products under the **Catalog >> Products** section as shown in the given image.
 
-<img src="/images/settings/importOutput.png" alt="Import" />
+<ImagePopup src="/images/settings/importOutput.png" alt="Import" />
 
 By the above steps, you can easily create a **Bulk Import** in Bagisto.

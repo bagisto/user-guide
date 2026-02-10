@@ -10,7 +10,7 @@ Go to **My Account → Profile → Purchase Orders** from the company storefront
 
 The My Purchase Orders page will appear, showing all existing purchase orders with options to search, filter, and manage them.
 
-<img src="/images/b2b-ecommerce-platform/1-my-purchase-orders.png" alt="Super Admin Login" />
+<ImagePopup src="/images/b2b-ecommerce-platform/1-my-purchase-orders.png" alt="Super Admin Login" />
 
 ### Purchase Order Details Include:
 
@@ -48,7 +48,7 @@ The Purchase Orders page will appear, showing a complete list of all purchase or
 
 Admins can **search, filter, export** and view detailed information for each order.
 
-<img src="/images/b2b-ecommerce-platform/2-purchase-orders-admin.png" alt="Super Admin Login" />
+<ImagePopup src="/images/b2b-ecommerce-platform/2-purchase-orders-admin.png" alt="Super Admin Login" />
 
 ### Purchase Order Details Include:
 

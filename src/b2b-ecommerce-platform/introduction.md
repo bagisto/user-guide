@@ -10,4 +10,4 @@ Role-based permissions let companies assign roles and control access, ensuring a
 
 The B2B Suite is ideal for wholesalers, manufacturers, and distributors looking to run a scalable, flexible, and efficient B2B online store.
 
-<img src="/images/b2b-ecommerce-platform/intro-banner.webp" alt="Super Admin Login" />
+<ImagePopup src="/images/b2b-ecommerce-platform/intro-banner.webp" alt="Super Admin Login" />

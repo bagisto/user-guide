@@ -8,7 +8,7 @@ Here are the steps to set Locales in Bagisto:
 
 **Step 1:** On the Admin panel of Bagisto, go to **Settings >> Locales >> Create Locale** as shown below.
 
-<img src="/images/settings/locales.png" alt="Locales" />
+<ImagePopup src="/images/settings/locales.png" alt="Locales" />
 
 **Step 2:** Now add the following fields:
 
@@ -22,14 +22,14 @@ Here are the steps to set Locales in Bagisto:
 
 Now click **Save Locale** as shown in the below image.
 
-<img src="/images/settings/newLocale.png" alt="New Locale" />
+<ImagePopup src="/images/settings/newLocale.png" alt="New Locale" />
 
 **Step 3:** You will now be able to see the new **Locale** as shown below.
 
-<img src="/images/settings/localeGrid.png" alt="Locale Grid" />
+<ImagePopup src="/images/settings/localeGrid.png" alt="Locale Grid" />
 
 **Step 4:** On the Admin panel, open **Settings >> Channels**. You will see your new language in the Currencies and Locales section. To enable this, select it and click **Save Channel** as shown in the image below.
 
-<img src="/images/settings/localeChannel.png" alt="Locale Channel" />
+<ImagePopup src="/images/settings/localeChannel.png" alt="Locale Channel" />
 
 So, by following these steps, you can easily create **Locales** in Bagisto and make your website available in your desired language.

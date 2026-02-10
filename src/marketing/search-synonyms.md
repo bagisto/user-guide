@@ -8,7 +8,7 @@ For example, if a customer searches for *shoe*, it can also match with *formal s
 
 On the Admin panel, go to **Marketing >> Search & SEO >> Search Synonyms** and click on the **Create Search Synonyms** button as shown below.
 
-<img src="/images/marketing/searchSynonym.png" alt="Search Synonym" />
+<ImagePopup src="/images/marketing/searchSynonym.png" alt="Search Synonym" />
 
 ### Step 2: Enter Synonym Details
 
@@ -18,7 +18,7 @@ Fill in the following fields:
 
 - **Terms** – Add the related terms that belong to the synonym name.  
 
-<img src="/images/marketing/synonymField.png" alt="Search Synonym Fields" />
+<ImagePopup src="/images/marketing/synonymField.png" alt="Search Synonym Fields" />
 
 Click on the **Save Search Synonym** button.
 
@@ -26,7 +26,7 @@ Click on the **Save Search Synonym** button.
 
 A new synonym field (for example, **shoe**) is created successfully as shown below.
 
-<img src="/images/marketing/synonymGrid.png" alt="Synonym Grid" />
+<ImagePopup src="/images/marketing/synonymGrid.png" alt="Synonym Grid" />
 
 ### Step 4: Frontend 
 
@@ -34,4 +34,4 @@ Now test the result by searching your synonym.
 
 It will display all related categories of the synonym (e.g., shoes) as shown below.
 
-<img src="/images/marketing/synonymOutput.png" alt="Synonym Output" />
+<ImagePopup src="/images/marketing/synonymOutput.png" alt="Synonym Output" />

@@ -21,7 +21,7 @@ A billing address is linked to the payment method and is used for verification.
 Shipping origin refers to the location from which products are dispatched.  
 This information is important for shipment tracking, calculating shipping costs, and estimating delivery times.
 
-<img src="/images/configure/shipping.png" alt="Shipping Origin" />
+<ImagePopup src="/images/configure/shipping.png" alt="Shipping Origin" />
 
 ### Product Pricing
 You can select how taxes are included in product pricing:
@@ -29,17 +29,17 @@ You can select how taxes are included in product pricing:
 **A) Excluding Tax**  
 No taxes are included in the product price.  
 
-<img src="/images/configure/excludeTax.png" alt="Exclude Tax" />
+<ImagePopup src="/images/configure/excludeTax.png" alt="Exclude Tax" />
 
 **B) Including Tax**  
 Taxes are already included in the product price.  
 
-<img src="/images/configure/includeTax.png" alt="Include Tax" />
+<ImagePopup src="/images/configure/includeTax.png" alt="Include Tax" />
 
 **C) Default Destination Calculation**  
 Select **Country, State & Pin Code** to automatically determine the shipping/delivery address.  
 
-<img src="/images/configure/destination.png" alt="Destination Calculation" />
+<ImagePopup src="/images/configure/destination.png" alt="Destination Calculation" />
 
 ### Shopping Cart Display Settings
 Controls how taxes are displayed in the shopping cart.
@@ -47,14 +47,14 @@ Controls how taxes are displayed in the shopping cart.
 **A) Excluding Tax**  
 Taxes shown separately.  
 
-<img src="/images/configure/excludeTax.png" alt="Exclude Tax" />
+<ImagePopup src="/images/configure/excludeTax.png" alt="Exclude Tax" />
 
 **B) Including Tax**  
 Taxes included in total.  
 
-<img src="/images/configure/includeTax.png" alt="Include Tax" />
+<ImagePopup src="/images/configure/includeTax.png" alt="Include Tax" />
 
 **C) Excluding and Including Both**  
 Shows both excluded and included tax amounts.  
 
-<img src="/images/configure/includeexcludeBoth.png" alt="Include & Exclude Both" />
+<ImagePopup src="/images/configure/includeexcludeBoth.png" alt="Include & Exclude Both" />

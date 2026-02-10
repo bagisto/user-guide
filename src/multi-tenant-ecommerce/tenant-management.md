@@ -18,7 +18,7 @@ The tenant must enter the **Authentication Credentials**, such as:
 
 Then, click on the **Continue** button.
 
-<img src="/images/multi-tenant-ecommerce/1-registration-tenant.png" alt="Tenant Registration Step 1" />
+<ImagePopup src="/images/multi-tenant-ecommerce/1-registration-tenant.png" alt="Tenant Registration Step 1" />
 
 ### Step 2
 The tenant must enter their **Personal Details**, such as:
@@ -28,20 +28,20 @@ The tenant must enter their **Personal Details**, such as:
 
 Then, click on **Continue**.
 
-<img src="/images/multi-tenant-ecommerce/2-registration-tenant.png" alt="Tenant Registration Step 2" />
+<ImagePopup src="/images/multi-tenant-ecommerce/2-registration-tenant.png" alt="Tenant Registration Step 2" />
 
 ### Step 3
 The tenant must enter the **Organization Details**, such as:
 - **Username**
 - **Organization Name**
 
-<img src="/images/multi-tenant-ecommerce/3-registration-tenant.png" alt="Tenant Registration Step 3" />
+<ImagePopup src="/images/multi-tenant-ecommerce/3-registration-tenant.png" alt="Tenant Registration Step 3" />
 
 ## Tenant Storefront
 
 After registration is complete, the tenant's online store is set up automatically. As shown in the image below, this store is where customers can browse and purchase products.
 
-<img src="/images/multi-tenant-ecommerce/4-tenant-store.png" alt="Tenant Storefront" />
+<ImagePopup src="/images/multi-tenant-ecommerce/4-tenant-store.png" alt="Tenant Storefront" />
 
 ## Tenant Admin Panel
 
@@ -49,13 +49,13 @@ After registration, tenants can access their admin panel through a unique URL (e
 
 As shown in the image below, the panel provides a **Bagisto-like backend** where tenants can manage their store operations.
 
-<img src="/images/multi-tenant-ecommerce/5-tenant-dashboard.png" alt="Tenant Admin Dashboard" />
+<ImagePopup src="/images/multi-tenant-ecommerce/5-tenant-dashboard.png" alt="Tenant Admin Dashboard" />
 
 ## Order Management
 
 Tenants can easily handle their orders from the admin panel, as shown in the image below.
 
-<img src="/images/multi-tenant-ecommerce/6-order.png" alt="Order Management" />
+<ImagePopup src="/images/multi-tenant-ecommerce/6-order.png" alt="Order Management" />
 
 This allows them to:
 - Check order details
@@ -66,19 +66,19 @@ This allows them to:
 
 Tenants can generate invoices for their orders by selecting the **Invoice** option and clicking the **Create Invoice** button, as shown below.
 
-<img src="/images/multi-tenant-ecommerce/7-invoice.png" alt="Invoice Management" />
+<ImagePopup src="/images/multi-tenant-ecommerce/7-invoice.png" alt="Invoice Management" />
 
 ## Manage Shipments
 
 Tenants can create shipments for their orders by selecting the **Ship** option and proceeding with the **Create Shipment** button, as shown below.
 
-<img src="/images/multi-tenant-ecommerce/8-create-shipment.png" alt="Create Shipment" />
+<ImagePopup src="/images/multi-tenant-ecommerce/8-create-shipment.png" alt="Create Shipment" />
 
 ## Manage Products and Catalog
 
 Tenants can **create, edit, and delete** products for their store as needed. They can also update the product status as **Active** or **Disable** whenever required.
 
-<img src="/images/multi-tenant-ecommerce/9-product.png" alt="Product Management" />
+<ImagePopup src="/images/multi-tenant-ecommerce/9-product.png" alt="Product Management" />
 
 Apart from **products**, tenants can also create and manage:
 - **Categories**
@@ -97,7 +97,7 @@ Under the **Tenant Side Menu**, tenants can manage and change their profile deta
 - **CName**
 - **Phone Number**
 
-<img src="/images/multi-tenant-ecommerce/10-tenant-profile.png" alt="Tenant Profile Details" />
+<ImagePopup src="/images/multi-tenant-ecommerce/10-tenant-profile.png" alt="Tenant Profile Details" />
 
 Once the details are updated, tenants can click **Save Detail** or choose **Back** to return to the previous screen.
 

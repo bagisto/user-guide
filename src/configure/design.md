@@ -16,17 +16,17 @@ To update the **Admin Logo** and **Favicon** in Bagisto:
 
 **Design Configuration Interface**
 
-<img src="/images/configure/design.png" alt="Design Configuration" />
+<ImagePopup src="/images/configure/design.png" alt="Design Configuration" />
 
 **Updated Logo & Favicon Output**
 
 After saving the configuration, the new **Admin Logo** and **Favicon** will be visible in the admin panel interface.
 
 **Logo**
-<img src="/images/configure/designOutput.png" alt="Updated Admin Logo" />
+<ImagePopup src="/images/configure/designOutput.png" alt="Updated Admin Logo" />
 
 **Favicon**
-<img src="/images/configure/designOutput2.png" alt="Updated Favicon" />
+<ImagePopup src="/images/configure/designOutput2.png" alt="Updated Favicon" />
 
 **Menu Category View**
 
@@ -46,8 +46,8 @@ You can now choose between:
    - `Sidebar Menu` from the dropdown.
 4. Click **Save Configuration**.
 
-<img src="/images/configure/catAdmin.png" alt="Menu Category View Setting" />
+<ImagePopup src="/images/configure/catAdmin.png" alt="Menu Category View Setting" />
 
 **Shopfront view**
 
-<img src="/images/configure/catSide.png" alt="Shopfront Menu Category View" />
+<ImagePopup src="/images/configure/catSide.png" alt="Shopfront Menu Category View" />

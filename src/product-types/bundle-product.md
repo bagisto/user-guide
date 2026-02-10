@@ -14,7 +14,7 @@ Each item in a bundle product can be based on one of the following product types
 3. Enter the **SKU** (Stock Keeping Unit) for the product (unique to every product).
 4. Click the **Save Button**.
 
-<img src="/images/bundle-product/bundle.png" alt="Bundle Product" />
+<ImagePopup src="/images/bundle-product/bundle.png" alt="Bundle Product" />
 
 After clicking on the Save Product button, you will be redirected to the next page with several new settings.
 
@@ -24,7 +24,7 @@ After clicking on the Save Product button, you will be redirected to the next pa
 - **URL Key:** This will be the end of the URL, e.g., products/assembled-core-i3-4-gb-ddr3500-gbwindows-10-pro151-inch-screen-black.
 - **Tax Category:** Select the Tax Category from the dropdown list.
 
-<img src="/images/bundle-product/editProduct.png" alt="Edit Product" />
+<ImagePopup src="/images/bundle-product/editProduct.png" alt="Edit Product" />
 
 #### New
 
@@ -46,7 +46,7 @@ After clicking on the Save Product button, you will be redirected to the next pa
 
 - Enable the toggle button to allow guest customers to order the product.
 
-<img src="/images/bundle-product/toggleButtons.png" alt="Toggle Buttons" />
+<ImagePopup src="/images/bundle-product/toggleButtons.png" alt="Toggle Buttons" />
 
 ### Description
 
@@ -55,7 +55,7 @@ Fill in the following fields under description:
 - **Short Description:** Enter a short description of the product feature.
 - **Description:** Mention your product in detail.
 
-<img src="/images/bundle-product/description.png" alt="Product Description" />
+<ImagePopup src="/images/bundle-product/description.png" alt="Product Description" />
 
 ### Meta Description
 
@@ -65,13 +65,13 @@ Fill in the following fields under meta description for improved searchability o
 - **Meta Keyword:** Provide meta keywords for specific search engine optimization.
 - **Meta Description:** Enter a description for better search engine listings.
 
-<img src="/images/bundle-product/metaDescription.png" alt="Meta Description" />
+<ImagePopup src="/images/bundle-product/metaDescription.png" alt="Meta Description" />
 
 ### Images
 
 To add product images, click on **Add Images**. You can add multiple images for your product.
 
-<img src="/images/bundle-product/image.png" alt="Product Images" />
+<ImagePopup src="/images/bundle-product/image.png" alt="Product Images" />
 
 ### Bundle Item
 
@@ -81,16 +81,16 @@ Click on Add Option and:
 - Set the **Input Type** (Select, Radio buttons, Checkbox, Multi-Select).
 - Mark the **Required** checkbox if the field is mandatory.
 
-<img src="/images/bundle-product/options.png" alt="Bundle Options" />
+<ImagePopup src="/images/bundle-product/options.png" alt="Bundle Options" />
 
 In the Search Product section, search for the product to add to the bundle. Once found, add the product to the bundle, specifying the quantity for each item.
 
 At the front end, customers can increase the quantity of the product to add to the cart, but the default quantity included in a bundle item cannot be changed.
 
-<img src="/images/bundle-product/bundleOptions.png" alt="Bundle Product Options" />
+<ImagePopup src="/images/bundle-product/bundleOptions.png" alt="Bundle Product Options" />
 
 ### Product At Front End
 
 The bundle product will be visible at the front end.
 
-<img src="/images/bundle-product/output.png" alt="Front End Output" />
+<ImagePopup src="/images/bundle-product/output.png" alt="Front End Output" />

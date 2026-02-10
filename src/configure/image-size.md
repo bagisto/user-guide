@@ -16,6 +16,6 @@ Set the **Height** and **Width** for medium images.
 
 Set the **Height** and **Width** for large images.
 
-<img src="/images/configure/imageSize.png" alt="Image Size Configuration" />
+<ImagePopup src="/images/configure/imageSize.png" alt="Image Size Configuration" />
 
 After making the changes, click on the **Save Configuration** button.

@@ -16,11 +16,11 @@ This feature creates a transparent B2B marketplace where genuine feedback suppor
 
 The customer opens the **Supplier Page** to view details about the seller. From this page, they can click on the **“Review”** button.
 
-<img src="/images/b2b-marketplace/1-seller-profile-page.png" alt="Seller Profile Page" />
+<ImagePopup src="/images/b2b-marketplace/1-seller-profile-page.png" alt="Seller Profile Page" />
 
 Once the **Review Page** is open, click on the **“Write a Review”** button to start adding your feedback about the seller.
 
-<img src="/images/b2b-marketplace/2-write-a-review.png" alt="Write a Review Button" />
+<ImagePopup src="/images/b2b-marketplace/2-write-a-review.png" alt="Write a Review Button" />
 
 A popup box will open on your screen.
 
@@ -32,7 +32,7 @@ A popup box will open on your screen.
 
 Finally, click on the **“Submit”** button to post the review.
 
-<img src="/images/b2b-marketplace/3-review-msg.png" alt="Review Submission Popup" />
+<ImagePopup src="/images/b2b-marketplace/3-review-msg.png" alt="Review Submission Popup" />
 
 **Note:** Reviews show on the page only after the admin approves.
 
@@ -44,11 +44,11 @@ Go to **B2B Marketplace >> Supplier Reviews** to handle and approve supplier rev
 
 The seller's review page will open, where the admin can see all customer ratings and feedback in one place.
 
-<img src="/images/b2b-marketplace/4-review-unapproved-state.png" alt="Review Unapproved State" />
+<ImagePopup src="/images/b2b-marketplace/4-review-unapproved-state.png" alt="Review Unapproved State" />
 
 To approve or disapprove a review, the admin selects it using the checkbox and chooses the desired action from the **“Select Action”** dropdown.
 
-<img src="/images/b2b-marketplace/5-select-action.png" alt="Select Action Dropdown" />
+<ImagePopup src="/images/b2b-marketplace/5-select-action.png" alt="Select Action Dropdown" />
 
 The admin can then either approve or disapprove the review.
 
@@ -58,7 +58,7 @@ The admin can then either approve or disapprove the review.
 
 Below is a detailed view of admin supplier reviews.
 
-<img src="/images/b2b-marketplace/6-approved.png" alt="Admin Approved Supplier Reviews" />
+<ImagePopup src="/images/b2b-marketplace/6-approved.png" alt="Admin Approved Supplier Reviews" />
 
 ---
 
@@ -66,7 +66,7 @@ Below is a detailed view of admin supplier reviews.
 
 Here’s a detailed view of seller reviews for easy monitoring.
 
-<img src="/images/b2b-marketplace/7-supplier-review.png" alt="Supplier Review Page" />
+<ImagePopup src="/images/b2b-marketplace/7-supplier-review.png" alt="Supplier Review Page" />
 
 ---
 
@@ -74,4 +74,4 @@ Here’s a detailed view of seller reviews for easy monitoring.
 
 The display below shows how reviews appear to customers.
 
-<img src="/images/b2b-marketplace/8-review-at-frontend.png" alt="Review Frontend View" />
+<ImagePopup src="/images/b2b-marketplace/8-review-at-frontend.png" alt="Review Frontend View" />

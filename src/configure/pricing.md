@@ -4,6 +4,6 @@ Pricing refers to the details about the cost of goods or services, including bas
 
 To configure pricing, go to the Admin Panel and navigate to **Configure >> Pricing**.
 
-<img src="/images/configure/pricing.png" alt="Pricing" />
+<ImagePopup src="/images/configure/pricing.png" alt="Pricing" />
 
 After configuring, click the **Save Configuration** button.

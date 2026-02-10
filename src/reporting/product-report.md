@@ -26,7 +26,7 @@ Provides a timeline-based view of product sales to help identify sales trends.
 
 3) Adjust inventory and marketing strategies based on demand.
 
-<img src="/images/reporting/sold-products.png" alt="Sold Products" />
+<ImagePopup src="/images/reporting/sold-products.png" alt="Sold Products" />
 
 ### C) Products Added to Wishlist
 
@@ -40,7 +40,7 @@ Shows how many products have been added to customers' wishlists over the selecte
 
 **3) View Details:** Click to see a list of the most wished-for products.
 
-<img src="/images/reporting/products-wishlist.png" alt="Products Wishlist" />
+<ImagePopup src="/images/reporting/products-wishlist.png" alt="Products Wishlist" />
 
 ### D) Top Selling Products by Revenue
 
@@ -54,7 +54,7 @@ Lists the products that have generated the most revenue within the selected peri
 
 **3) View Details:** Click to see a detailed revenue breakdown.
 
-<img src="/images/reporting/revenue-products.png" alt="Top Selling Products by Revenue" />
+<ImagePopup src="/images/reporting/revenue-products.png" alt="Top Selling Products by Revenue" />
 
 ### E) Top Selling Products by Quantity
 
@@ -68,7 +68,7 @@ Displays products that have been sold the most in terms of quantity.
 
 **3) View Details:** Click to see a breakdown of sales by product.
 
-<img src="/images/reporting/products-quantity.png" alt="Top Selling Products by Quantity" />
+<ImagePopup src="/images/reporting/products-quantity.png" alt="Top Selling Products by Quantity" />
 
 ### F) Products with Most Reviews
 
@@ -82,7 +82,7 @@ Shows which products have received the highest number of customer reviews.
 
 **3) View Details:** Click to view customer feedback and ratings.
 
-<img src="/images/reporting/product-review.png" alt="Products with Most Reviews" />
+<ImagePopup src="/images/reporting/product-review.png" alt="Products with Most Reviews" />
 
 ### G) Products with Most Visits
 
@@ -96,7 +96,7 @@ Tracks which products have received the highest number of visits from customers.
 
 **3) View Details:** Click to analyze traffic sources.
 
-<img src="/images/reporting/product-visits.png" alt="Products with Most Visits" />
+<ImagePopup src="/images/reporting/product-visits.png" alt="Products with Most Visits" />
 
 ### H) Last Search Terms
 
@@ -110,7 +110,7 @@ Tracks the most recent search terms used by customers on the store.
 
 **3) View Details:** Click to analyze customer search behavior.
 
-<img src="/images/reporting/last-searchTerm.png" alt="Last Search Terms" />
+<ImagePopup src="/images/reporting/last-searchTerm.png" alt="Last Search Terms" />
 
 ### I) Top Search Terms
 
@@ -122,4 +122,4 @@ Displays the most frequently searched terms in the store within the selected dat
 
 **2) Total Searches:** The number of times the term has been used.
 
-<img src="/images/reporting/top-searchTerm.png" alt="Top Search Terms" />
+<ImagePopup src="/images/reporting/top-searchTerm.png" alt="Top Search Terms" />

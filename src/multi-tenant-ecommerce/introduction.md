@@ -34,4 +34,4 @@ This makes it easy for customers to find the store and keeps a reliable, consist
 
 The mapping is set up through the tenant's DNS provider and the SaaS by the Super Admin, and it doesn't need any extra plugins.
 
-<img src="/images/multi-tenant-ecommerce/multi-tenant.webp" alt="Super Admin Login" />
+<ImagePopup src="/images/multi-tenant-ecommerce/multi-tenant.webp" alt="Super Admin Login" />

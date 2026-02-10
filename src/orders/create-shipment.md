@@ -10,10 +10,10 @@ To create a shipment for that order, click on the **Ship** button. Enter the **C
 
  Enter the quantity to ship then click on **Create Shipment**
 
-<img src="/images/orders/createShipment.png" alt="Create Shipment" />
+<ImagePopup src="/images/orders/createShipment.png" alt="Create Shipment" />
 
 Now the order is **Completed** which you can check in the order list as shown in the below image.
 
-<img src="/images/orders/shipmentOutput.png" alt="Shipment Output" />
+<ImagePopup src="/images/orders/shipmentOutput.png" alt="Shipment Output" />
 
 By following the above steps, you can easily create a **Shipment** in Bagisto.

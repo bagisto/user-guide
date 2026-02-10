@@ -10,7 +10,7 @@ This section empowers store owners to configure GDPR-related policies and effici
 - **GDPR Request** button appears on the customer's profile page in the store frontend.
 - Handling customer requests for data deletion or updation.
 
-<img src="/images/configure/gdpr-agreement.png" alt="Enable GDPR Compliance Settings" />
+<ImagePopup src="/images/configure/gdpr-agreement.png" alt="Enable GDPR Compliance Settings" />
 
 After that, click on the **Save Configuration** button.
 
@@ -27,7 +27,7 @@ Fields to provide under the GDPR Agreement section:
 - **Agreement Checkbox Label** – I agree to the terms and conditions and the privacy policy.  
 - **Agreement Content** – By checking this box, you consent to the processing of your personal data in accordance with our GDPR-compliant privacy policy.
 
-<img src="/images/configure/gdpr-agreement2.png" alt="GDPR Agreement Settings" />
+<ImagePopup src="/images/configure/gdpr-agreement2.png" alt="GDPR Agreement Settings" />
 
 After that, click on the **Save Configuration** button.
 
@@ -46,7 +46,7 @@ This section allows store owners to configure how the cookie notice appears to u
 - **Static Block Identifier** – Specifies a custom static block to display within the cookie notice.  
 - **Description** – A customizable text field to describe the purpose of cookies, privacy details, and how users can manage their preferences.
 
-<img src="/images/configure/cookies-position.png" alt="Cookie Notice Settings" />
+<ImagePopup src="/images/configure/cookies-position.png" alt="Cookie Notice Settings" />
 
 After that, click on the **Save Configuration** button.
 

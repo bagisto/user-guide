@@ -14,7 +14,7 @@ By assigning customers to specific groups, you can control how much each group p
 
 Create a new product and go to the product edit page. You will be able to see the **Customer Group Price** section as shown in the below image.  
 
-<img src="/images/customer/customerPrice.png" alt="Customer Group Price" />
+<ImagePopup src="/images/customer/customerPrice.png" alt="Customer Group Price" />
 
 **Step 3**: Now click on **Add New** and add the below fields:  
 
@@ -38,13 +38,13 @@ It means if you purchase one piece of this product at $2500, and a Customer Grou
 
 So now click on the **Save** button as shown below.  
 
-<img src="/images/customer/groupPrice.png" alt="Save Customer Group Price" />
+<ImagePopup src="/images/customer/groupPrice.png" alt="Save Customer Group Price" />
 
 Now save the product. You can see the price change according to the group.  
 
 As set for the Guest group with the fixed price, it is showing the pricing according to the guest group as shown below.  
 
-<img src="/images/customer/priceOutput.png" alt="Group Price Output" />
+<ImagePopup src="/images/customer/priceOutput.png" alt="Group Price Output" />
 
 ### Adding Multiple Customer Group Pricing
 
@@ -62,9 +62,9 @@ For example, you can configure the following tier pricing structure:
 
 These pricing tiers can be added directly in the Customer Group Price section of the Admin Panel, as shown below:
 
-<img src="/images/customer/all-group-price.png" alt="Multiple Customer Group Pricing" />
+<ImagePopup src="/images/customer/all-group-price.png" alt="Multiple Customer Group Pricing" />
 
 You can check the Storefront view to see how all the tiered customer pricing options appear together for the same product.
 
-<img src="/images/customer/priceOutput1.png" alt="Storefront Multiple Customer Group Pricing" />
+<ImagePopup src="/images/customer/priceOutput1.png" alt="Storefront Multiple Customer Group Pricing" />
 

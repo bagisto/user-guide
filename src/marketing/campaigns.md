@@ -6,7 +6,7 @@ E-commerce marketing campaigns are designed to drive traffic and increase sales.
 
 On the Admin panel, go to **Marketing >> Communications >> Campaigns** and click on **Create Campaign** as shown in the below image.
 
-<img src="/images/marketing/campaign.png" alt="Campaign" />
+<ImagePopup src="/images/marketing/campaign.png" alt="Campaign" />
 
 ### Fill in the necessary fields
 
@@ -24,12 +24,12 @@ On the Admin panel, go to **Marketing >> Communications >> Campaigns** and click
 
 **7. Status** – Set the status to Yes/No.  
 
-<img src="/images/marketing/campaignConfigration.png" alt="Campaign Configuration" />
+<ImagePopup src="/images/marketing/campaignConfigration.png" alt="Campaign Configuration" />
 
 ### Step 4
 
 Now you will be able to see the new **Campaign** as shown below.
 
-<img src="/images/marketing/campaignOutput.png" alt="Campaign Output" />
+<ImagePopup src="/images/marketing/campaignOutput.png" alt="Campaign Output" />
 
 By this, you can easily create a **Campaign** in Bagisto.

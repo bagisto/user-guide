@@ -10,7 +10,7 @@ So let’s get started with how to create booking products in Bagisto.
 
 **Step-1** Click on Catalog >> Products  >> Select Booking under Product Type as shown in the below image.
 
-<img src="/images/booking-product/1.png" alt="Bundle Product" />
+<ImagePopup src="/images/booking-product/1.png" alt="Bundle Product" />
 
 **Step-2** Select **Attribute Family >> enter SKU >>** Click to **Save Product** Now once you click on the Save Product button, you will be redirected to the next page, where you will find several new settings
 
@@ -24,7 +24,7 @@ So let’s get started with how to create booking products in Bagisto.
 
 **5) Price:-** Insert the price, cost, and special price, and set the special price date for which the special price will be shown on the website.
 
-<img src="/images/booking-product/2.png" alt="Bundle Product" />
+<ImagePopup src="/images/booking-product/2.png" alt="Bundle Product" />
 
 ### Toggle Button
 
@@ -48,7 +48,7 @@ Enable the toggle button to enable the product on your eCommerce store.
 
 Enable the toggle button to allow the product to be ordered by guest customers.
 
-<img src="/images/booking-product/3.png" alt="Bundle Product" />
+<ImagePopup src="/images/booking-product/3.png" alt="Bundle Product" />
 
 ### Short Description
 
@@ -58,7 +58,7 @@ Enter a short description of the features of the product.
 
 Mention your product in detail.
 
-<img src="/images/booking-product/4.png" alt="Bundle Product" />
+<ImagePopup src="/images/booking-product/4.png" alt="Bundle Product" />
 
 ### Meta Title
 
@@ -72,13 +72,13 @@ The meta keyword for the product needs to be provided to improve its searchabili
 
 Enter the description so that products can easily appear in search engine listings.
 
-<img src="/images/booking-product/5.png" alt="Bundle Product" />
+<ImagePopup src="/images/booking-product/5.png" alt="Bundle Product" />
 
 ### Images
 
 To add the product images, click on Add Images. You can add multiple images for your product.
 
-<img src="/images/booking-product/6.png" alt="Bundle Product" />
+<ImagePopup src="/images/booking-product/6.png" alt="Bundle Product" />
 
 ### Booking Information
 
@@ -98,7 +98,7 @@ To create the Booking Product, select the Booking type as per choice. There are 
 
 The admin can create a Default booking product as shown below in the screenshot. In default booking products, there are two types.
 
-<img src="/images/booking-product/7.png" alt="Bundle Product" />
+<ImagePopup src="/images/booking-product/7.png" alt="Bundle Product" />
 
 **A) One Booking for Many days**
 
@@ -120,17 +120,17 @@ To create many bookings for one day, configure the below booking detail.
 
 **7) Break Time b/w Slots(Mins):-** Set the break time between slots in min. By default, it is 15 min.
 
-<img src="/images/booking-product/8.png" alt="Bundle Product" />
+<ImagePopup src="/images/booking-product/8.png" alt="Bundle Product" />
 
 ### Add Slots
 
 Click on **Add icon** and add the timing slots and status and then click on **Save** as shown in the below image.
 
-<img src="/images/booking-product/9.png" alt="Bundle Product" />
+<ImagePopup src="/images/booking-product/9.png" alt="Bundle Product" />
 
 Slots have been added for Sunday in the below image.
 
-<img src="/images/booking-product/10.png" alt="Bundle Product" />
+<ImagePopup src="/images/booking-product/10.png" alt="Bundle Product" />
 
 At last click on the **Save Product** button.
 
@@ -138,7 +138,7 @@ At last click on the **Save Product** button.
 
 Here, you need to first select the **date** for which you want the booking. After that, you need to select the **required slot**. You can also view the location on Google Maps.
 
-<img src="/images/booking-product/11.png" alt="Bundle Product" />
+<ImagePopup src="/images/booking-product/11.png" alt="Bundle Product" />
 
 ### One Booking For Many Days
 
@@ -152,23 +152,23 @@ To create the one bookings for many day, configure the below booking detail.
 
 **4) To Time:-** Select the To time of the booking.
 
-<img src="/images/booking-product/12.png" alt="Bundle Product" />
+<ImagePopup src="/images/booking-product/12.png" alt="Bundle Product" />
 
 Slot Duration is booked for One booking for many days as shown in the below image.
 
-<img src="/images/booking-product/13.png" alt="Bundle Product" />
+<ImagePopup src="/images/booking-product/13.png" alt="Bundle Product" />
 
 ### Front End:-
 
 Here, you need to first select the **date** for which you want the booking. After that, you need to select the **required slot**. You can also view the location on google map.
 
-<img src="/images/booking-product/14.png" alt="Bundle Product" />
+<ImagePopup src="/images/booking-product/14.png" alt="Bundle Product" />
 
 ### Appointment Booking:-
 
 The admin can create an **Appointment** booking product as shown below in the screenshot. Here Admin has to select the Appointment Booking type.
 
-<img src="/images/booking-product/15.png" alt="Bundle Product" />
+<ImagePopup src="/images/booking-product/15.png" alt="Bundle Product" />
 
 **1) Location:-** Enter the location for Appointment booking products.
 
@@ -182,15 +182,15 @@ The admin can create an **Appointment** booking product as shown below in the sc
 
 **6) Same Slot All Days:-** Set “Yes” for the same slot for all the days add from and to timings check the below image for reference.
 
-<img src="/images/booking-product/16.png" alt="Bundle Product" />
+<ImagePopup src="/images/booking-product/16.png" alt="Bundle Product" />
 
 Else set **“No”**  for the different slots for each day add from and to timings according to the days check the below image for reference.
 
-<img src="/images/booking-product/17.png" alt="Bundle Product" />
+<ImagePopup src="/images/booking-product/17.png" alt="Bundle Product" />
 
 ### Front End:-
 
-<img src="/images/booking-product/18.png" alt="Bundle Product" />
+<ImagePopup src="/images/booking-product/18.png" alt="Bundle Product" />
 
 ### Event Booking:-
 
@@ -202,19 +202,19 @@ The Admin can create an Event booking product as shown below in the screenshot. 
 
 **3) Available To:-** Select the end date for the booking.
 
-<img src="/images/booking-product/19.png" alt="Bundle Product" />
+<ImagePopup src="/images/booking-product/19.png" alt="Bundle Product" />
 
 **Tickets**
 
 Add the below details
 
-<img src="/images/booking-product/20.png" alt="Bundle Product" />
+<ImagePopup src="/images/booking-product/20.png" alt="Bundle Product" />
 
 ### Front End:-
 
 On the front end, you have to select the ticket quantity. This base price will be applied to each type of ticket for each quantity.
 
-<img src="/images/booking-product/21.png" alt="Bundle Product" />
+<ImagePopup src="/images/booking-product/21.png" alt="Bundle Product" />
 
 ### Rental Booking:-
 
@@ -228,33 +228,33 @@ The Admin can create a **Rental booking** product as shown below in the screensh
 
 If you don’t want to configure the time slots for all the days of the week set **“No“**
 
-<img src="/images/booking-product/22.png" alt="Bundle Product" />
+<ImagePopup src="/images/booking-product/22.png" alt="Bundle Product" />
 
 **Renting Type:-** There are three Renting Types
 
 **a) Daily Basis:-** If you have selected the “Renting Type” as a Daily Basis. Then set the per day rent then click on save product.
 
-<img src="/images/booking-product/23.png" alt="Bundle Product" />
+<ImagePopup src="/images/booking-product/23.png" alt="Bundle Product" />
 
 **b) Hourly Basis:-** If you have selected the “Renting Type” as Hourly Basis. Then configure the below booking detail.
 
-<img src="/images/booking-product/24.png" alt="Bundle Product" />
+<ImagePopup src="/images/booking-product/24.png" alt="Bundle Product" />
 
 **c) Both(Daily and Hourly Basis):-** If you have selected the “Renting Type” as both (Daily and Hourly Basis). Then configure the details as above like daily price, hourly price, and same slot on all days then click on Save Product.
 
-<img src="/images/booking-product/25.png" alt="Bundle Product" />
+<ImagePopup src="/images/booking-product/25.png" alt="Bundle Product" />
 
 ### Front End:-
 
 Here customer has to select the option to choose the Rent option either Daily Basis or Hourly Basis (if this is already configured in the backend).
 
-<img src="/images/booking-product/26.png" alt="Bundle Product" />
+<ImagePopup src="/images/booking-product/26.png" alt="Bundle Product" />
 
 ### Table Booking:-
 
 The admin can create a Table booking product as shown below in the screenshot. Here Admin has to select the Table Booking type.
 
-<img src="/images/booking-product/27.png" alt="Bundle Product" />
+<ImagePopup src="/images/booking-product/27.png" alt="Bundle Product" />
 
 **Now configure the below Table booking detail.**
 
@@ -274,17 +274,17 @@ The admin can create a Table booking product as shown below in the screenshot. H
 
 **8) Same Slot All Days:-** Set “Yes” for the same slot for all the days.
 
-<img src="/images/booking-product/28.png" alt="Bundle Product" />
+<ImagePopup src="/images/booking-product/28.png" alt="Bundle Product" />
 
 Else set **“No”** for the different slots for each day.
 
-<img src="/images/booking-product/29.png" alt="Bundle Product" />
+<ImagePopup src="/images/booking-product/29.png" alt="Bundle Product" />
 
 ### Front End:-
 
 Here customer has to select the date and time and add a note for admin.
 
-<img src="/images/booking-product/30.png" alt="Bundle Product" />
+<ImagePopup src="/images/booking-product/30.png" alt="Bundle Product" />
 
 ### Admin Panel
 
@@ -292,12 +292,12 @@ After placing the order login to the admin panel of bagisto
 
 Click on **Sales >> Booking Product** and you will be able to see the ordered product in the booking product datagrid also you can see the calendar view of your booking for this click on **Calendar button** as shown in the below image.
 
-<img src="/images/booking-product/31.png" alt="Bundle Product" />
+<ImagePopup src="/images/booking-product/31.png" alt="Bundle Product" />
 
 ### Calendar View
 
 The ordered slot is booked in the calendar view as shown in the below image.
 
-<img src="/images/booking-product/32.png" alt="Bundle Product" />
+<ImagePopup src="/images/booking-product/32.png" alt="Bundle Product" />
 
 That’s all about Booking Products in bagisto.

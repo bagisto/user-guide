@@ -48,4 +48,4 @@ Payment management in a Multi-Vendor Marketplace helps both sellers and admins h
 
 Admins can easily track all payments, manage commissions, and make sure settlements are secure and on time.
 
-<img src="/images/multi-vendor-marketplace/multi-vendor-marketplace.webp" alt="Super Admin Login" />
+<ImagePopup src="/images/multi-vendor-marketplace/multi-vendor-marketplace.webp" alt="Super Admin Login" />

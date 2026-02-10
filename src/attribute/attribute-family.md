@@ -11,16 +11,16 @@ In this tutorial, we’ll guide you on how to create attribute families in Bagis
 ### Step 1
 On the Admin Dashboard, navigate to **Catalog → Attribute Families → Create Attribute Family**.
 
-<img src="/images/attribute/createFamily.png" alt="Attribute Family" />
+<ImagePopup src="/images/attribute/createFamily.png" alt="Attribute Family" />
 
 ### Step 2
 Enter the **Attribute Family Code** and **Name**, as shown below.
 
-<img src="/images/attribute/saveFamily.png" alt="Save Family" />
+<ImagePopup src="/images/attribute/saveFamily.png" alt="Save Family" />
 
 Once done, click **Save Attribute Family**. A new Attribute Family will be created and displayed in the grid.
 
-<img src="/images/attribute/familyGrid.png" alt="Family Grid" />
+<ImagePopup src="/images/attribute/familyGrid.png" alt="Family Grid" />
 
 ### Step 3
 After the Attribute Family is created, you can edit it via the **Action** option.  
@@ -29,6 +29,6 @@ After the Attribute Family is created, you can edit it via the **Action** option
 
 All assigned attributes will then be visible on the product page for products belonging to this Attribute Family.
 
-<img src="/images/attribute/output.png" alt="Output" />
+<ImagePopup src="/images/attribute/output.png" alt="Output" />
 
 By following these steps, you can easily create and manage **Attribute Families** in Bagisto.

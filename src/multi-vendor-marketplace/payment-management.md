@@ -14,10 +14,11 @@ Follow the steps below to request a payment.
 
 The request is submitted and will be visible to the admin for review.
 
-<img src="/images/multi-vendor-marketplace/1-seller-payment-request-to-admin.png" alt="Seller Payment Request to Admin" />
+<ImagePopup src="/images/multi-vendor-marketplace/1-seller-payment-request-to-admin.png" alt="Seller Payment Request to Admin" />
 
 Once the admin releases the payment, it appears in the **Seller’s Transaction** section.
-<img src="/images/multi-vendor-marketplace/2-seller-transtion.png" alt="Seller Transaction" />
+
+<ImagePopup src="/images/multi-vendor-marketplace/2-seller-transtion.png" alt="Seller Transaction" />
 
 **Note:** Payment requests start as Pending. After admin review, they move to Processing, and once paid out, the status updates to Paid.
 
@@ -30,13 +31,13 @@ On the Payment Request page, admins can see complete product and order details. 
 
 After verification, the admin clicks on the **Pay Now** button to release the payment to the seller.
 
-<img src="/images/multi-vendor-marketplace/3-admin-payment-request-byseller.png" alt="Admin Payment Request by Seller" />
+<ImagePopup src="/images/multi-vendor-marketplace/3-admin-payment-request-byseller.png" alt="Admin Payment Request by Seller" />
 
 A popup will appear. The admin can enter a comment or note in the box and then click on Pay Now again to release the payment to the seller.
 
-<img src="/images/multi-vendor-marketplace/4-popup.png" alt="Payment Confirmation Popup" />
+<ImagePopup src="/images/multi-vendor-marketplace/4-popup.png" alt="Payment Confirmation Popup" />
 
 After payment completion, the details are stored in the **Transaction.**
 Admins can access these by going to **Marketplace >> Transactions**.
 
-<img src="/images/multi-vendor-marketplace/5-admin-transaction.png" alt="Admin Transaction" />
+<ImagePopup src="/images/multi-vendor-marketplace/5-admin-transaction.png" alt="Admin Transaction" />

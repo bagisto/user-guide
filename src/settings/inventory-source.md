@@ -12,26 +12,26 @@ By using Multi-Warehouse Inventory, you can easily manage all inventory sources.
 
 **Step 1:** On the Admin panel of Bagisto, go to **Settings >> Inventory Sources >> Create Inventory Source** as shown below.  
 
-<img src="/images/settings/inventorySource.png" alt="Inventory Source" />
+<ImagePopup src="/images/settings/inventorySource.png" alt="Inventory Source" />
 
 **Step 2: General**  
 Enter the **Code, Name, Description, Latitude, Longitude, and Priority**, and set the **Status** as active.  
 
-<img src="/images/settings/inventoryConfiguration.png" alt="Inventory Configuration" />
+<ImagePopup src="/images/settings/inventoryConfiguration.png" alt="Inventory Configuration" />
 
 **Step 3: Contact Information**  
 Enter **Name, Email, Fax, and Contact Number**.  
 
-<img src="/images/settings/contactInfo.png" alt="Contact Information" />
+<ImagePopup src="/images/settings/contactInfo.png" alt="Contact Information" />
 
 **Step 4: Source Address**  
 Enter the source address details like country, address, state, and city.  
 
-<img src="/images/settings/sourceAddress.png" alt="Source Address" />
+<ImagePopup src="/images/settings/sourceAddress.png" alt="Source Address" />
 
 After that, click on **Save Inventory Source**. You will now see the newly created inventory source as shown below.  
 
-<img src="/images/settings/inventoryOutput.png" alt="Inventory Output" />
+<ImagePopup src="/images/settings/inventoryOutput.png" alt="Inventory Output" />
 
 **Step 5:** Go to **Settings >> Channels**. Open the selected channel in **Edit Mode >> Inventory Sources**. This is a multi-select field where you can select multiple inventory sources for your channels. After that, click **Save Channel**.
 
@@ -41,7 +41,7 @@ Go to **Catalog >> Products**. Open the selected product in **Edit Mode** and en
 
 **Note:** If you do not enter any quantity, by default 0 is saved, and an inventory with 0 quantity will not be visible in the shipment page inventory options.  
 
-<img src="/images/settings/productInventory.png" alt="Product Inventory" />
+<ImagePopup src="/images/settings/productInventory.png" alt="Product Inventory" />
 
 ### Inventory Setting on the Shipment Page
 
@@ -49,7 +49,7 @@ Go to **Sales >> Orders**. Open the selected order in **Edit Mode >> Invoice >> 
 
 Under the **Product Ordered Section**, the Admin can decide from which inventory the product should be delivered.  
 
-<img src="/images/settings/inventorySetting.png" alt="Inventory Setting" />
+<ImagePopup src="/images/settings/inventorySetting.png" alt="Inventory Setting" />
 
 **Note:** You can enable only one Inventory at a time. When one inventory is selected, others will automatically be disabled.  
 For example, if you select **Noida Warehouse**, other inventories will be disabled. Enter the quantity to ship and click **Create Shipment**.

@@ -6,7 +6,7 @@ Before launching your eCommerce website, you need to set up the currency in whic
 
 **Step 1:** On the Admin panel of Bagisto, go to **Settings >> Currencies >> Create Currency** as shown in the image below.
 
-<img src="/images/settings/createCurrency.png" alt="Currency" />
+<ImagePopup src="/images/settings/createCurrency.png" alt="Currency" />
 
 **Step 2:** Now enter the following details:  
 
@@ -24,11 +24,11 @@ Before launching your eCommerce website, you need to set up the currency in whic
 
 **7) Position** – It helps to position the currency (left, right, etc.).  
 
-<img src="/images/settings/saveCurrency.png" alt="Save Currency" />
+<ImagePopup src="/images/settings/saveCurrency.png" alt="Save Currency" />
 
 **Step 3:** Now you will be able to see the new **Currency** by the name of **Dirham** as shown below.
 
-<img src="/images/settings/newCurrency.png" alt="New Currency" />
+<ImagePopup src="/images/settings/newCurrency.png" alt="New Currency" />
 
 ### Channel Setting for Currency
 
@@ -36,6 +36,6 @@ On the Admin panel, open **Settings >> Channels**. You will see the Currency sec
 
 Once the channel setting has been done, click on **Save Channel** as shown in the image below.
 
-<img src="/images/settings/currencyChannel.png" alt="Currency Channel" />
+<ImagePopup src="/images/settings/currencyChannel.png" alt="Currency Channel" />
 
 So, by following these steps, you can easily create a **Currency** in Bagisto.

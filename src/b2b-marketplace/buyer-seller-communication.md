@@ -11,7 +11,7 @@ In B2B Marketplace, customers have two simple ways to contact suppliers:
 **1) From the Product Page:**
 Customers can send a direct message to the supplier right from the product page. This is useful for asking about price, stock, or product details instantly.
 
-<img src="/images/b2b-marketplace/1-product-page-msg.png" alt="Product Page Message Button" />
+<ImagePopup src="/images/b2b-marketplace/1-product-page-msg.png" alt="Product Page Message Button" />
 
 ---
 
@@ -22,7 +22,7 @@ Customers can send a direct message to the supplier right from the product page.
 - **Step 3:** Type your message clearly in the message box.
 - **Step 4:** Click on the **Submit** button to send your message directly to the supplier.
 
-<img src="/images/b2b-marketplace/2-write-msg.png" alt="Write Message to Supplier" />
+<ImagePopup src="/images/b2b-marketplace/2-write-msg.png" alt="Write Message to Supplier" />
 
 ---
 
@@ -30,7 +30,7 @@ Customers can send a direct message to the supplier right from the product page.
 
 Customers can navigate to the supplier response page, where they can view replies, continue discussions, and manage communication more effectively.
 
-<img src="/images/b2b-marketplace/3-supplier-msg.png" alt="Supplier Response Page" />
+<ImagePopup src="/images/b2b-marketplace/3-supplier-msg.png" alt="Supplier Response Page" />
 
 ---
 
@@ -42,7 +42,7 @@ Customers can navigate to the supplier response page, where they can view replie
 - **Step 4:** Write your message clearly in the text box.
 - **Step 5:** Click **Send** to deliver the message to the supplier.
 
-<img src="/images/b2b-marketplace/4-reply-to-supplier.png" alt="Reply to Supplier" />
+<ImagePopup src="/images/b2b-marketplace/4-reply-to-supplier.png" alt="Reply to Supplier" />
 
 ---
 
@@ -60,4 +60,4 @@ In the Bagisto B2B Marketplace, suppliers can easily communicate with customers 
 - **Step 4:** Type your response clearly in the message box.
 - **Step 5:** Click **Send** to deliver your reply to the customer.
 
-<img src="/images/b2b-marketplace/5-reply-to-customer.png" alt="Reply to Customer" />
+<ImagePopup src="/images/b2b-marketplace/5-reply-to-customer.png" alt="Reply to Customer" />

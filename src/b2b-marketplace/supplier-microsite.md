@@ -4,7 +4,7 @@ The **Supplier Microsite** in Bagisto B2B Marketplace is like a mini online stor
 
 This helps suppliers build trust, promote their business, and reach more customers easily.
 
-<img src="/images/b2b-marketplace/1-supplier-login-button.png" alt="Supplier Login Button" />
+<ImagePopup src="/images/b2b-marketplace/1-supplier-login-button.png" alt="Supplier Login Button" />
 
 ## Create a New Supplier Account
 
@@ -26,7 +26,7 @@ This helps suppliers build trust, promote their business, and reach more custome
 
 **Step 3:** Click the **Register** button to create a supplier account.
 
-<img src="/images/b2b-marketplace/2-create-supplier.png" alt="Create Supplier Account" />
+<ImagePopup src="/images/b2b-marketplace/2-create-supplier.png" alt="Create Supplier Account" />
 
 ## Admin: Approve or Disapprove New Supplier
 
@@ -46,21 +46,21 @@ In the admin panel, the administrator has full control to approve or disapprove 
 
 - **Disapprove:** Supplier request is rejected and access is denied.
 
-<img src="/images/b2b-marketplace/3-admin-suppliers-disapproved-state.png" alt="Admin Suppliers Disapproved State" />
+<ImagePopup src="/images/b2b-marketplace/3-admin-suppliers-disapproved-state.png" alt="Admin Suppliers Disapproved State" />
 
 Once the supplier is approved, their account becomes active in the marketplace.
 
-<img src="/images/b2b-marketplace/4-supplier-approved-by-admin.png" alt="Supplier Approved by Admin" />
+<ImagePopup src="/images/b2b-marketplace/4-supplier-approved-by-admin.png" alt="Supplier Approved by Admin" />
 
 ## Accessing the Supplier Dashboard
 
 The supplier can log in using their registered email ID and password to access their dashboard.
 
-<img src="/images/b2b-marketplace/5-supplier-sign-in.png" alt="Supplier Sign In" />
+<ImagePopup src="/images/b2b-marketplace/5-supplier-sign-in.png" alt="Supplier Sign In" />
 
 The supplier dashboard opens, giving suppliers access to manage their products, quotes, orders, and account details.
 
-<img src="/images/b2b-marketplace/6-supplier-dashboard.png" alt="Supplier Dashboard" />
+<ImagePopup src="/images/b2b-marketplace/6-supplier-dashboard.png" alt="Supplier Dashboard" />
 
 The supplier needs to set up their profile to build trust and visibility in the marketplace.
 
@@ -70,7 +70,7 @@ To set up a new supplier profile, fill in the basic details such as:
 - **Banner Image:** Click to add a professional banner that highlights your brand.
 - **Logo:** Click to upload your company logo and represent your brand identity.
 
-<img src="/images/b2b-marketplace/7-profile-banner-and-logo.png" alt="Profile Banner and Logo" />
+<ImagePopup src="/images/b2b-marketplace/7-profile-banner-and-logo.png" alt="Profile Banner and Logo" />
 
 ## General
 
@@ -110,7 +110,7 @@ Enter the complete business address where the company operates:
 
 - **Post Code:** Postal/ZIP code of the business address.
 
-<img src="/images/b2b-marketplace/8-general-and-operational-address.png" alt="General and Operational Address" />
+<ImagePopup src="/images/b2b-marketplace/8-general-and-operational-address.png" alt="General and Operational Address" />
 
 ## Corporate Address
 
@@ -134,7 +134,7 @@ Buyers can use this information to reach out, verify the business, and ensure sm
 
 This section provides a brief overview of the supplier’s shop. It highlights the company’s brand, products, and services, helping buyers understand what the shop offers.
 
-<img src="/images/b2b-marketplace/9-corporate-address-and-about-shop.png" alt="Corporate Address and About Shop" />
+<ImagePopup src="/images/b2b-marketplace/9-corporate-address-and-about-shop.png" alt="Corporate Address and About Shop" />
 
 ## Policies
 
@@ -146,7 +146,7 @@ To ensure a clear and trustworthy shopping experience, suppliers can add importa
 
 - **Return Policy:** Let customers know how they can return or exchange products, including conditions and timeframes.
 
-<img src="/images/b2b-marketplace/10-policies.png" alt="Supplier Policies" />
+<ImagePopup src="/images/b2b-marketplace/10-policies.png" alt="Supplier Policies" />
 
 ## Social Links
 
@@ -166,7 +166,7 @@ In this section, the seller can add links to the shop’s social media pages to 
 
 - **Pinterest Id:** Link to the shop’s Pinterest page.
 
-<img src="/images/b2b-marketplace/11-social-links.png" alt="Social Links" />
+<ImagePopup src="/images/b2b-marketplace/11-social-links.png" alt="Social Links" />
 
 ## Search Engine Optimization
 
@@ -178,10 +178,10 @@ To boost your shop’s visibility on search engines, you can fill out SEO fields
 
 - **Meta Description:** A short summary that tells what your shop offers.
 
-<img src="/images/b2b-marketplace/12-seo.png" alt="SEO Settings" />
+<ImagePopup src="/images/b2b-marketplace/12-seo.png" alt="SEO Settings" />
 
 After filling in all the required details, click on the **Save** button.
 
 ## Store Frontend View
 
-<img src="/images/b2b-marketplace/13-store-frontend.png" alt="Store Frontend View" />
+<ImagePopup src="/images/b2b-marketplace/13-store-frontend.png" alt="Store Frontend View" />

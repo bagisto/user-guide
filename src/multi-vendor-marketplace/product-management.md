@@ -10,11 +10,11 @@ Product management is simple; sellers can add products, set details like price a
 
 From the seller dashboard, go to **Products** and click on it to open the product page.
 
-<img src="/images/multi-vendor-marketplace/1-seller-dashboard.png" alt="Seller Dashboard" />
+<ImagePopup src="/images/multi-vendor-marketplace/1-seller-dashboard.png" alt="Seller Dashboard" />
 
 ### Seller Products
 
-<img src="/images/multi-vendor-marketplace/2-product-page.png" alt="Product Page" />
+<ImagePopup src="/images/multi-vendor-marketplace/2-product-page.png" alt="Product Page" />
 
 Click on the **Add New Product** button at the top right corner to begin adding a new product to your store.
 
@@ -24,7 +24,7 @@ You can add a product in two ways:
 
 - **Add Existing Product:** Choose from existing products added by the admin.
 
-<img src="/images/multi-vendor-marketplace/3-product-creation.png" alt="Product Creation" />
+<ImagePopup src="/images/multi-vendor-marketplace/3-product-creation.png" alt="Product Creation" />
 
 ### Add New Product
 
@@ -38,7 +38,7 @@ To create a new product, fill in the basic details:
 
 Click on the **Continue** button to proceed further. These fields help define the structure and unique identity of your product in the store.
 
-<img src="/images/multi-vendor-marketplace/4-create-new-product.png" alt="Create New Product" />
+<ImagePopup src="/images/multi-vendor-marketplace/4-create-new-product.png" alt="Create New Product" />
 
 #### General Attribute
 
@@ -54,7 +54,7 @@ In the **General Attributes** section, you need to enter the following details:
 
 - **Tax Category:** Select the tax rules that apply to the product.
 
-<img src="/images/multi-vendor-marketplace/5-general-arrtibute.png" alt="General Attribute" />
+<ImagePopup src="/images/multi-vendor-marketplace/5-general-arrtibute.png" alt="General Attribute" />
 
 #### Description
 
@@ -62,11 +62,11 @@ Below is the list of fields you need to fill under the **Description** section:
 
 - **Short Description:** Enter a brief summary highlighting the key features of the product.
 
-<img src="/images/multi-vendor-marketplace/6-Short-description.png" alt="Short Description" />
+<ImagePopup src="/images/multi-vendor-marketplace/6-Short-description.png" alt="Short Description" />
 
 - **Description:** Provide a detailed explanation of the product, covering all important details to help customers understand it better.
 
-<img src="/images/multi-vendor-marketplace/7-description.png" alt="Description" />
+<ImagePopup src="/images/multi-vendor-marketplace/7-description.png" alt="Description" />
 
 #### Meta Description
 
@@ -78,13 +78,13 @@ Below is the list of fields you need to fill under the **Meta Description** sect
 
 - **Meta Description:** Enter a short description so the product can easily appear in search engine listings.
 
-<img src="/images/multi-vendor-marketplace/8-meta-description.png" alt="Meta Description" />
+<ImagePopup src="/images/multi-vendor-marketplace/8-meta-description.png" alt="Meta Description" />
 
 #### Images
 
 To add product images, click on **Add Images**. You can upload multiple images to showcase your product from different angles, helping customers get a better view before making a purchase.
 
-<img src="/images/multi-vendor-marketplace/9-Img.png" alt="Product Images" />
+<ImagePopup src="/images/multi-vendor-marketplace/9-Img.png" alt="Product Images" />
 
 #### Customizable Item
 
@@ -118,7 +118,7 @@ Below is the list of fields you need to provide under the **Customizable Item** 
 
 - **File:** Allows users to upload an image, logo, or other files for personalization.
 
-<img src="/images/multi-vendor-marketplace/10-customization-item.png" alt="Customizable Item" />
+<ImagePopup src="/images/multi-vendor-marketplace/10-customization-item.png" alt="Customizable Item" />
 
 #### Price
 
@@ -132,7 +132,7 @@ In this section, you need to set the pricing details of your product:
 
 - **Special Price Date:** Set the start and end date during which the special price will be visible on the website.
 
-<img src="/images/multi-vendor-marketplace/11-price.png" alt="Price" />
+<ImagePopup src="/images/multi-vendor-marketplace/11-price.png" alt="Price" />
 
 #### Shipping
 
@@ -146,7 +146,7 @@ In this section, you need to provide the product’s physical details for accura
 
 - **Weight:** Enter the weight of the product for shipping cost calculation.
 
-<img src="/images/multi-vendor-marketplace/12-shipping.png" alt="Shipping" />
+<ImagePopup src="/images/multi-vendor-marketplace/12-shipping.png" alt="Shipping" />
 
 #### Settings
 
@@ -160,7 +160,7 @@ In this section, you need to provide the product’s physical details for accura
 
 - **Guest Checkout:** Enable the toggle button to allow guest customers (without login) to purchase the product.
 
-<img src="/images/multi-vendor-marketplace/13-setting.png" alt="Settings" />
+<ImagePopup src="/images/multi-vendor-marketplace/13-setting.png" alt="Settings" />
 
 #### Inventories
 
@@ -172,13 +172,13 @@ In this section, assign the product to one or more categories available in your 
 
 You can select multiple categories to ensure better visibility of your product.
 
-<img src="/images/multi-vendor-marketplace/14-inventory-and-category.png" alt="Inventory and Category" />
+<ImagePopup src="/images/multi-vendor-marketplace/14-inventory-and-category.png" alt="Inventory and Category" />
 
 #### Save Product
 
 Click on the **Save Product** button. This will add the product to your store, but initially, it will be in a **Disapproved** state.
 
-<img src="/images/multi-vendor-marketplace/15-product-disapproved-state.png" alt="Product Disapproved State" />
+<ImagePopup src="/images/multi-vendor-marketplace/15-product-disapproved-state.png" alt="Product Disapproved State" />
 
 **Note:** Once the admin reviews and approves it, the status will change to **Approved**, and only then will the product be visible on the store frontend.
 
@@ -188,7 +188,7 @@ From the Admin Dashboard, the admin has the authority to approve or disapprove p
 
 Go to **Marketplace >> Products** to view and manage all your products from the seller dashboard.
 
-<img src="/images/multi-vendor-marketplace/16-admin-product-page.png" alt="Admin Product Page" />
+<ImagePopup src="/images/multi-vendor-marketplace/16-admin-product-page.png" alt="Admin Product Page" />
 
 To approve a product, follow these steps:
 
@@ -200,13 +200,13 @@ To approve a product, follow these steps:
 
 4. Select **Approved** to approve the product.
 
-<img src="/images/multi-vendor-marketplace/17-admin-update-status.png" alt="Admin Update Status" />
+<ImagePopup src="/images/multi-vendor-marketplace/17-admin-update-status.png" alt="Admin Update Status" />
 
 **Note:** Once the product is approved, it will show as **Approved** on the seller’s dashboard and will also become visible on the storefront for customers.
 
 ### Store Frontend
 
-<img src="/images/multi-vendor-marketplace/20-product-frontend-view.png" alt="Product Frontend View" />
+<ImagePopup src="/images/multi-vendor-marketplace/20-product-frontend-view.png" alt="Product Frontend View" />
 
 ### Add Existing Product
 
@@ -214,7 +214,7 @@ This feature allows sellers to quickly sell items that are already listed in the
 
 Go to the **Search Bar** and enter the product name to find the existing product in the marketplace.
 
-<img src="/images/multi-vendor-marketplace/21-search-product.png" alt="Search Product" />
+<ImagePopup src="/images/multi-vendor-marketplace/21-search-product.png" alt="Search Product" />
 
 The matching product will appear in the results, allowing you to select it and list it under your store with different prices and stock.
 
@@ -236,14 +236,14 @@ In this section, set all the necessary information for your version of the exist
 
 - **Video:** Optionally, add a video to give customers a better view of the product.
 
-<img src="/images/multi-vendor-marketplace/22-assign-produt-details.png" alt="Assign Product Details" />
+<ImagePopup src="/images/multi-vendor-marketplace/22-assign-produt-details.png" alt="Assign Product Details" />
 
 Click on the **Save** button at the top right corner to add the product to your store, but initially, it will be in a **Disapproved** state.
 
-<img src="/images/multi-vendor-marketplace/23-assign-product-disapproved.png" alt="Assign Product Disapproved" />
+<ImagePopup src="/images/multi-vendor-marketplace/23-assign-product-disapproved.png" alt="Assign Product Disapproved" />
 
 **Note:** Once the admin reviews and approves it, the status will change to **Approved**, and only then will the product be visible on the store frontend.
 
 ### Store Frontend
 
-<img src="/images/multi-vendor-marketplace/28-assign-product-store-frontend.png" alt="Assign Product Store Frontend" />
+<ImagePopup src="/images/multi-vendor-marketplace/28-assign-product-store-frontend.png" alt="Assign Product Store Frontend" />

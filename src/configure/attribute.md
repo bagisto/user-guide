@@ -4,6 +4,6 @@ In this option, you can easily add the size of an **Image and File** upload size
 
 To add go to Admin Panel and click on **Configure >> Products >> Attribute**
 
-<img src="/images/configure/attribute.png" alt="Attribute" />
+<ImagePopup src="/images/configure/attribute.png" alt="Attribute" />
 
 After then click on the **Save Configuration** button.
