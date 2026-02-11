@@ -39,4 +39,9 @@ features:
     details: The B2B eCommerce Platform enhances your Bagisto store with advanced Business-to-Business (B2B) features.
     icon: 💼
     link: /b2b-ecommerce-platform/introduction.html
+
+  - title: Native Mobile App 
+    details: Launch fully functional Android and iOS mobile applications for your Bagisto store with real-time synchronization, push notifications, and seamless shopping experiences.
+    icon: 📱
+    link: /open-source-mobile-app/open-source-mobile-app.html
 ---

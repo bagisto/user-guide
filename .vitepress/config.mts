@@ -216,7 +216,6 @@ export default defineConfig({
           { text: 'Social Share', link: '/configure/social-share' },
           { text: 'Taxes', link: '/configure/taxes' },
           { text: 'Weight Unit', link: '/configure/weight-unit' },
-
         ]
       },
 
@@ -287,6 +286,12 @@ export default defineConfig({
           { text: 'Quotation Handling', link: '/b2b-ecommerce-platform/quotation-handling' },
         ]
       },
+
+      {
+        text: 'Native Mobile App',
+        link: '/open-source-mobile-app/open-source-mobile-app'
+      },
+
     ],
 
     outline: {
