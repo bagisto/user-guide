@@ -6,6 +6,7 @@ export const redirects = {
      */
 
     // Introduction
+    '/2.3.0/introduction/': '/getting-started/introduction.html',
     '/2.3.0/introduction/introductions.html': '/getting-started/introduction.html',
 
     // Product Types
