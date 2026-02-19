@@ -1,19 +1,19 @@
-# Channels
+# Storefront (Channel)
 
 Bagisto allows you to set up and manage multiple domains or stores in a single backend. This guide explains how to create multiple websites with different domains in Bagisto.
 
-### Creating Channels in Bagisto
+### Creating Storefront in Bagisto
 
 **Step 1:** Go to **Settings >> Channels >> Create Channel**.
 
-<ImagePopup src="/images/settings/channels.png" alt="Channels" />
+<ImagePopup src="/images/settings/channels.png" alt="Storefront (Channel)" />
 
 ### General
 
-**1. Code:** Enter a code for your channel.  
-**2. Name:** Provide a name for your channel.  
-**3. Description:** Add details about your channel, its purpose, and products.  
-**4. Inventory Sources:** Select one or more inventories for this channel.  
+**1. Code:** Enter a code for your store.  
+**2. Name:** Provide a name for your store.  
+**3. Description:** Add details about your store, its purpose, and products.  
+**4. Inventory Sources:** Select one or more inventories for this store.  
 **5. Root Category:** Choose a root category from the dropdown.  
 **6. Hostname:** Enter the URL of your website to connect it with Bagisto.
 
@@ -21,9 +21,9 @@ Bagisto allows you to set up and manage multiple domains or stores in a single b
 
 ### Currencies and Locales
 
-**1. Locales:** Select one or more locales for the channel.  
+**1. Locales:** Select one or more locales for the store.  
 **2. Default Locale:** Choose the default locale.  
-**3. Currencies:** Select one or more currencies for the channel.
+**3. Currencies:** Select one or more currencies for the store.
 
 <ImagePopup src="/images/settings/currencyLocal.png" alt="Currency and Locales" />
 
@@ -75,10 +75,10 @@ Maintenance mode allows you to temporarily disable your store while making updat
 
 <ImagePopup src="/images/settings/maintenanceMode.png" alt="Maintenance Mode" />
 
-### Channel Created
+### Storefront Created
 
-After saving, your new channel will be listed.
+After saving, your new Storefront will be listed.
 
-<ImagePopup src="/images/settings/channelGrid.png" alt="Channel Grid" />
+<ImagePopup src="/images/settings/channelGrid.png" alt="Storefront Grid" />
 
-You have now successfully created a new **Channel** in Bagisto.
+You have now successfully created a new **Storefront** in Bagisto.
