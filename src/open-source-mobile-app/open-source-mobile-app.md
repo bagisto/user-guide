@@ -90,11 +90,11 @@ The homepage of the Laravel mobile app builder allows you to add various types o
 
 In this section, users of the Laravel Mobile app will find the highlighted items chosen by the app owner.
 
+<ImagePopup src="/images/native-mobile-app/6.png" alt="configuration" />
+
 #### New Products
 
 In the latest additions area, users can view the products that have just been added by the app owner.
-
-<ImagePopup src="/images/native-mobile-app/6.png" alt="configuration" />
 
 ### Side Drawer
 
@@ -175,19 +175,17 @@ The app user can click on any address to edit the details on the address from th
 
 **Recent Product:** Customers can look at the items they have recently seen in the recent products area, as illustrated in the picture below:
 
-<ImagePopup src="/images/native-mobile-app/15.png" alt="configuration" />
-
 **Reviews:** The app users can view all their reviews given by them to the products.
 
 **Wishlist:** The app user can view all the wishlist products from the Wishlist option.
 
-<ImagePopup src="/images/native-mobile-app/16.png" alt="configuration" />
+<ImagePopup src="/images/native-mobile-app/15.png" alt="configuration" />
 
-#### Compare
+#### Compare Products
 
 Users can compare products side by side within the app, allowing them to easily view and evaluate differences in features.
 
-<ImagePopup src="/images/native-mobile-app/17.png" alt="configuration" />
+<ImagePopup src="/images/native-mobile-app/16.png" alt="configuration" />
 
 #### Product View:-
 
@@ -195,77 +193,24 @@ The page shows information about the products that users of the app can look at.
 
 **Add to Cart –** Users can click the Add To Cart button to put the product in their cart for later checkout.
 
-**Cart Button –** The product gets added to the cart, and from there, it can be bought.
-
-<ImagePopup src="/images/native-mobile-app/18.png" alt="configuration" />
+<ImagePopup src="/images/native-mobile-app/17.png" alt="configuration" />
 
 Now, people using the app can go ahead with the product they added to their cart.
 
 Here, app users can use a code for their purchases. They also have the choice to keep shopping, update their cart, or empty the shopping cart before clicking to continue.
 
-<ImagePopup src="/images/native-mobile-app/19.png" alt="configuration" />
-
-Now users can choose an address and have the option to add, change, or edit it. Once they select the address, they can move on to the next step.
-
-Here, users need to pick a shipping method from the available choices and continue.
-
-<ImagePopup src="/images/native-mobile-app/20.png" alt="configuration" />
+<ImagePopup src="/images/native-mobile-app/18.png" alt="configuration" />
 
 In the next step, users have to choose how they want to pay for their order, which can be either Cash On Delivery or Money Transfer.
 
-Now, users can see all the choices for Billing Address, Shipping Address, Shipping Methods, Payment Methods, and Order Summary.
-
-<ImagePopup src="/images/native-mobile-app/21.png" alt="configuration" />
-
 Here users can check the price details of the order and can place the order. After that, the order has been placed and will get a confirmation with order ID and email.
 
-<ImagePopup src="/images/native-mobile-app/22.png" alt="configuration" />
-
-### Order
-
-The app provides users with a simple way to see their orders in this section. This makes it easy to access orders quickly.
-
-The customer in this section looks at the order details and takes action on the orders.
-
-<ImagePopup src="/images/native-mobile-app/23.png" alt="configuration" />
-
-Thus, the app user can click on any corresponding order and get the details of the complete order.
-
-### Language And Currencies
-
-The customer can choose the language from the side drawer that the admin added based on what they need.
-
-The customer can pick the currency they want according to their needs.
-
-<ImagePopup src="/images/native-mobile-app/24.png" alt="configuration" />
-
-### CMS Pages
-
-You can also locate a "CMS Pages" section here. This is where you can view all the CMS Pages created by the admin.
-
-These pages can include things like – About Us, Return Policy, Refund Policy, Contact Us, and other similar pages.
-
-**About Us:**
-
-Customers can check out the About Us section for the mobile app. The information in this section can be anything that the admin adds from the admin panel.
-
-<ImagePopup src="/images/native-mobile-app/25.png" alt="configuration" />
+<ImagePopup src="/images/native-mobile-app/19.png" alt="configuration" />
 
 ### Dark Theme
 
-**Contact Us** - The app has a dark theme that users can choose. If you tap on the Change theme button, the app will switch to a dark color theme, like you can see in the picture below.
+The app has a dark theme that users can choose. If you tap on the Change theme button, the app will switch to a dark color theme, like you can see in the picture below.
 
-Customers can reach out to the store owner or admin by sending a message from this area.
+<ImagePopup src="/images/native-mobile-app/20.png" alt="configuration" />
 
-This helps customers create a good relationship with the store owner.
-
-<ImagePopup src="/images/native-mobile-app/26.png" alt="configuration" />
-
-### Contact Us
-
-The customer can communicate with the store owner or admin by sharing a message from this section.
-
-Thus helping the customer to build a strong relationship with the store owner
-
-<ImagePopup src="/images/native-mobile-app/27.png" alt="configuration" />
 
