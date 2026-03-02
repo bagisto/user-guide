@@ -1,28 +1,37 @@
 # Native Mobile App
 
-Bagisto is changing the game in mobile shopping with its open-source eCommerce mobile app solution. 
+[Bagisto Mobile App](https://github.com/bagisto/opensource-ecommerce-mobile-app) is changing the game in shopping with its open-source eCommerce mobile app solution. 
 
 This app easily turns your Bagisto store into a strong mobile platform, allowing for real-time updates of products, categories, etc.
 
 With a simple interface, handling orders is super easy, making it a must-have for both tech-savvy people and those just starting with eCommerce.
 
-This mobile app is built on the Bagisto eCommerce framework and uses the powerful Laravel stack, providing lots of features for a smooth and effective mobile shopping experience. 
+Bagisto Mobile App is built on the Bagisto eCommerce framework and uses the powerful Laravel stack, providing lots of features for a smooth and effective mobile shopping experience. 
 
 The app makes it easy to manage product information and speeds up how quickly you can sell your products, all while giving you full control over your store.
+
+### Live Demo
+
+**Android:** Download the app from Google Play Store:
+
+https://play.google.com/store/apps/details?id=com.webkul.bagisto.mobikul
+
+**iOS:** Download the app from Apple App Store:
+
+https://apps.apple.com/us/app/mobikul-bagisto-laravel-app/id6447519140
 
 ### Requirements
 
 **Note –** To get the Bagisto Laravel Native Mobile App up and running, make sure you have the following.
 
- - Bagisto Version: v2.2.2+
- - Android Studio Version: Flamingo | 2022.2.1
- - Flutter Version: 3.19.2
- - Dart: 3.3.0
- - Xcode: 15.2
- - Swift: 5
+- Bagisto Version - v2.3.6
+- Android Studio Meerkat | 2024.3.2
+- Flutter Version - 3.38.9
+- Dart - 3.10.8
+- Xcode - 26.3
+- Swift - 6.1
 
 ### Bagisto Mobile App Admin Configuration
-
 
 The admin can control the Bagisto Laravel mobile app from the backend easily by following a few simple steps. 
 
