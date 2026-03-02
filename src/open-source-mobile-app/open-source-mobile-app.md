@@ -6,7 +6,7 @@ This app easily turns your Bagisto store into a strong mobile platform, allowing
 
 With a simple interface, handling orders is super easy, making it a must-have for both tech-savvy people and those just starting with eCommerce.
 
-This [Laravel Mobile App](https://bagisto.com/en/laravel-ecommerce-app/) is built on the Bagisto eCommerce framework and uses the powerful Laravel stack, providing lots of features for a smooth and effective mobile shopping experience. 
+This Laravel Mobile App is built on the Bagisto eCommerce framework and uses the powerful Laravel stack, providing lots of features for a smooth and effective mobile shopping experience. 
 
 The app makes it easy to manage product information and speeds up how quickly you can sell your products, all while giving you full control over your store.
 
