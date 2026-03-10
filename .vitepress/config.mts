@@ -246,6 +246,8 @@ export default defineConfig({
           { text: 'Seller Attributes', link: '/multi-vendor-marketplace/seller-attributes' },
           { text: 'Seller Attributes', link: '/multi-vendor-marketplace/seller-attributes' },
           { text: 'Seller Subscription Management', link: '/multi-vendor-marketplace/seller-subscription-management' },
+          { text: 'Mass Payout Management', link: '/multi-vendor-marketplace/mass-payout-management' },
+          { text: 'Communications', link: '/multi-vendor-marketplace/communications' },
         ]
       },
 
