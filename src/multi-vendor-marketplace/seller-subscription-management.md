@@ -22,16 +22,22 @@ By structuring these plans strategically, businesses can offer tiered services, 
 
 <ImagePopup src="/images/multi-vendor-marketplace/3-subscription-plans.webp" alt="Global Commission Configuration" />
 
-**Step-4** Sellers have a special section in their panel called Subscription Plan History. This section helps them keep track of all the plans they have bought, showing details about each plan, its status, when it was activated, and when it will expire.
+**Step-4** Once the seller has selected a suitable option, they simply need to click on the subscription plan they are interested in and proceed with the payment. 
+
+The payment can then be completed using the available payment methods to successfully activate the chosen plan.
+
+<ImagePopup src="/images/multi-vendor-marketplace/payment-method-subscription.png" alt="Global Commission Configuration" />
+
+**Step-5** Sellers have a special section in their panel called Subscription Plan History. This section helps them keep track of all the plans they have bought, showing details about each plan, its status, when it was activated, and when it will expire.
 
 <ImagePopup src="/images/multi-vendor-marketplace/5-subscription-purchases-by-admin-1.webp" alt="Global Commission Configuration" />
 
-**Step-5** Admins are able to see a full list of all the subscription plans that sellers have bought. 
+**Step-6** Admins are able to see a full list of all the subscription plans that sellers have bought. 
 
 This includes details about the plans, the payment status, and how long they are valid for.
 
 <ImagePopup src="/images/multi-vendor-marketplace/5-seller-list-as-per-purchased-subscription.webp" alt="Global Commission Configuration" />
 
-**Step-6** Admins can change or stop a seller's subscription plan whenever they need to, which helps keep subscription management flexible and under control.
+**Step-7** Admins can change or stop a seller's subscription plan whenever they need to, which helps keep subscription management flexible and under control.
 
 <ImagePopup src="/images/multi-vendor-marketplace/6-seller-subscriptions-plan-details-acrion.webp" alt="Global Commission Configuration" />
