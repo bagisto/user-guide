@@ -244,7 +244,8 @@ export default defineConfig({
           { text: 'Return Merchandise Authorization (RMA)', link: '/multi-vendor-marketplace/return-merchandise-authorization' },
           { text: 'Seller Catalog Bulk Upload', link: '/multi-vendor-marketplace/seller-catalog-bulk-upload' },
           { text: 'Seller Attributes', link: '/multi-vendor-marketplace/seller-attributes' },
-
+          { text: 'Seller Attributes', link: '/multi-vendor-marketplace/seller-attributes' },
+          { text: 'Seller Subscription Management', link: '/multi-vendor-marketplace/seller-subscription-management' },
         ]
       },
 
