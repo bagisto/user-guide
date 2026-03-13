@@ -194,6 +194,7 @@ export default defineConfig({
           { text: 'Checkout', link: '/configure/checkout' },
           { text: 'Configurable Choices', link: '/configure/configurable-choices' },
           { text: 'Content', link: '/configure/content' },
+          { text: 'Exchange Rates Configurations', link: '/configure/exchange-rates-configurations' },
           { text: 'Custom Scripts', link: '/configure/custom-scripts' },
           { text: 'Design', link: '/configure/design' },
           { text: 'Email Settings', link: '/configure/email-settings' },
