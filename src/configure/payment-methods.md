@@ -34,4 +34,4 @@ After configuring, click the **Save Configuration** button.
 
 This is how the payment methods will appear on the storefront during checkout.
 
-<ImagePopup src="/images/configure/paymentmethod.png" alt="Payment Methods Frontend" />
+<ImagePopup src="/images/configure/payment-method.png" alt="Payment Methods Frontend" />
