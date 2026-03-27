@@ -195,9 +195,7 @@ export default defineConfig({
           { text: 'Configurable Choices', link: '/configure/configurable-choices' },
           { text: 'Content', link: '/configure/content' },
           { text: 'Exchange Rates Configurations', link: '/configure/exchange-rates-configurations' },
-        
           { text: 'Coyright Content', link: '/configure/coyright-content' },
-
           { text: 'Custom Scripts', link: '/configure/custom-scripts' },
           { text: 'Design', link: '/configure/design' },
           { text: 'Email Settings', link: '/configure/email-settings' },
@@ -221,6 +219,11 @@ export default defineConfig({
           { text: 'Taxes', link: '/configure/taxes' },
           { text: 'Weight Unit', link: '/configure/weight-unit' },
         ]
+      },
+
+      {
+        text: '2 Factor Authentication',
+        link: '/authentication/2fa-authentication'
       },
 
       {
