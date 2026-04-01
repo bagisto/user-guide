@@ -189,6 +189,7 @@ export default defineConfig({
           { text: 'Address', link: '/configure/address' },
           { text: 'Attribute', link: '/configure/attribute' },
           { text: 'Back Orders', link: '/configure/back-orders' },
+          { text: 'Google Captcha', link: '/configure/google-captcha' },
           { text: 'Captcha', link: '/configure/captcha' },
           { text: 'Cart View Page', link: '/configure/cart-view-page' },
           { text: 'Checkout', link: '/configure/checkout' },
