@@ -22,9 +22,23 @@ On the Admin panel, go to **Marketing >> Communications >> Campaigns** and click
 
 **6. Customer Group** – Select the customer group to which you want to apply the campaign.  
 
-**7. Status** – Set the status to Yes/No.  
+By default, there are 3 customer groups:
+
+1) Guest
+2) General
+3) Wholesale
+
+For the **General** and **Wholesale** customer groups, campaign emails will be sent to customers who have subscribed to the newsletter and are Logged IN.
 
 <ImagePopup src="/images/marketing/campaignConfigration.png" alt="Campaign Configuration" />
+
+For the **Guest** customer group, emails will be sent only to those who have subscribed to the newsletter. 
+
+Customers who have registered an account will not receive the email of campaigns.
+
+ <ImagePopup src="/images/marketing/guest-campaign.png" alt="Campaign Configuration" />
+
+**7. Status** – Set the status to Yes/No.  
 
 ### Step 4
 
