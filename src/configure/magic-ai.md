@@ -4,7 +4,7 @@ To configure Magic AI, go to the Admin Panel and navigate to **Configure -> Magi
 
 Here you will able to see the seprate section to configure Magic AI **Settings, Providers, Admin Features and Storefront Features** as shown in the image below.
 
- <ImagePopup src="/images/configure/magic1.png" alt="Magic AI" />
+ <ImagePopup src="/images/configure/magic.png" alt="Magic AI" />
 
 ### General
 
