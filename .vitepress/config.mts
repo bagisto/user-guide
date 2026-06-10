@@ -172,7 +172,7 @@ export default defineConfig({
           { text: "Bundle Product", link: "/product-types/bundle-product" },
           { text: "Grouped Product", link: "/product-types/grouped-product" },
           {
-            text: "Downlodable Product",
+            text: "Downloadable Product",
             link: "/product-types/downloadable-product",
           },
           { text: "Booking Product", link: "/product-types/booking-product" },
@@ -207,6 +207,8 @@ export default defineConfig({
           { text: "Create Shipment", link: "/orders/create-shipment" },
           { text: "Create Refunds", link: "/orders/create-refunds" },
           { text: "Transactions", link: "/orders/transactions" },
+          { text: "EU Withdrawal", link: "/orders/eu-withdrawal" },
+          { text: "RMA", link: "/orders/rma" },
         ],
       },
       {
@@ -296,8 +298,10 @@ export default defineConfig({
             text: "Exchange Rates Configurations",
             link: "/configure/exchange-rates-configurations",
           },
-          { text: "Coyright Content", link: "/configure/coyright-content" },
+          { text: "Copyright Content", link: "/configure/coyright-content" },
           { text: "Custom Scripts", link: "/configure/custom-scripts" },
+          { text: "Cache Management", link: "/configure/cache-management" },
+          { text: "Magic AI", link: "/configure/magic-ai" },
           { text: "Design", link: "/configure/design" },
           { text: "Email Settings", link: "/configure/email-settings" },
           { text: "Frontend", link: "/configure/frontend" },
@@ -310,7 +314,7 @@ export default defineConfig({
           { text: "Order Settings", link: "/configure/orders-settings" },
           { text: "Payment Methods", link: "/configure/payment-methods" },
           { text: "Pricing", link: "/configure/pricing" },
-          { text: "Product View Page", link: "/configure/product-view-page " },
+          { text: "Product View Page", link: "/configure/product-view-page" },
           { text: "Review", link: "/configure/review" },
           { text: "Rich Snippets", link: "/configure/rich-snippets" },
           { text: "Settings", link: "/configure/settings" },
@@ -380,10 +384,6 @@ export default defineConfig({
           {
             text: "Seller Catalog Bulk Upload",
             link: "/multi-vendor-marketplace/seller-catalog-bulk-upload",
-          },
-          {
-            text: "Seller Attributes",
-            link: "/multi-vendor-marketplace/seller-attributes",
           },
           {
             text: "Seller Attributes",

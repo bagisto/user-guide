@@ -115,3 +115,16 @@ Shows which payment methods customers use the most.
 - Helps optimize checkout for preferred payment options.  
 
 <ImagePopup src="/images/reporting/top-payment-method.png" alt="Top Payment Methods" />
+
+### 11) Sales By Coupon
+
+This report tracks sales generated through specific discount coupons. It helps store owners measure the effectiveness of their marketing campaigns and coupon strategies.
+
+**Key Metrics:**
+
+- **Coupon Code:** The specific code used for the discount.
+- **Order ID:** Links to the order details.
+- **Sales Amount:** Total sales associated with the coupon.
+- **View Details:** Drill-down to see all orders that used a specific coupon.
+
+<ImagePopup src="/images/reporting/sales-by-coupon.png" alt="Sales By Coupon" />
