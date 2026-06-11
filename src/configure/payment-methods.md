@@ -16,7 +16,7 @@ When store owners use Stripe, they can easily handle online payments, refunds, k
 
 ### Razorpay
 
-Razorpay is a top digital payment service that helps businesses easily accept, process, and manage online payments. It started in India in 2014. 
+Razorpay is a top digital payment service that helps businesses easily accept, process, and manage online payments. It started in India in 2014.
 
 Razorpay has grown to be one of the most reliable payment gateways for startups, small and medium enterprises, and big companies all over India.
 
@@ -28,11 +28,17 @@ The platform allows merchants to take payments in various ways like UPI, credit 
 
 PayU allows businesses to handle transactions using various payment options like credit cards, debit cards, UPI, net banking, digital wallets, and EMI choices, making sure customers have a smooth and trustworthy checkout experience.
 
-With simple integration, real-time tracking of transactions, strong fraud protection, and adaptable settlement cycles, PayU assists companies in effectively managing their online payments. 
+With simple integration, real-time tracking of transactions, strong fraud protection, and adaptable settlement cycles, PayU assists companies in effectively managing their online payments.
 
 Merchants can set up the gateway with their Merchant Key and Salt, check payment statuses from the admin panel, and start refunds when necessary.
 
 <ImagePopup src="/images/configure/payu-admin.png" alt="PayU" />
+
+### PhonePe
+
+PhonePe is a popular digital payment platform in India that allows businesses to accept payments via UPI, credit/debit cards, and wallets. It offers a secure and seamless checkout experience for customers, supporting real-time transaction tracking and easy integration for merchants.
+
+<ImagePopup src="/images/configure/phonepe.png" alt="PhonePe" />
 
 ### Paypal
 

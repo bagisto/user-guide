@@ -14,13 +14,13 @@ To use the Magic AI feature, you need to enable this option and then click on **
 
  <ImagePopup src="/images/configure/general-setting.png" alt="Magic AI" />
 
-### Providers 
+### Providers
 
-By default, we provide multiple Magic AI providers such as **OpenAI, Anthropic, Gemini, Groq, xAI, DeepSeek, Mistral, and Ollama**. 
+By default, we provide multiple Magic AI providers such as **OpenAI, Anthropic, Gemini, Groq, xAI, DeepSeek, Mistral, and Ollama**.
 
-To start using any of these providers, you need to generate the **API key** from their respective official websites and add it under the Magic AI Providers configuration section.
+To start using any of these providers, you need to generate the **API key** from their respective official websites and add it under the Magic AI Providers configuration section. For the **Ollama** provider, you also need to specify the **Base URL** of your Ollama server.
 
-After adding the API key, make sure to click on the **Save Configuration** button to apply the changes successfully.
+After adding the API key and other required details, make sure to click on the **Save Configuration** button to apply the changes successfully.
 
  <ImagePopup src="/images/configure/providers-magicai.png" alt="Magic AI" />
 
@@ -32,9 +32,9 @@ In the Admin AI Features section, there are two main features available:
 
 **2) Image Generation**
 
-Each feature includes a toggle button to enable or disable it. Along with this, multiple AI providers are available, and the admin can select as many providers as required. 
+Each feature includes a toggle button to enable or disable it. Along with this, multiple AI providers are available, and the admin can select as many providers as required.
 
-The selected providers will be visible under the Text Generation and Image Generation sections, allowing the admin to easily choose which model or provider to use while proceeding. 
+The selected providers will be visible under the Text Generation and Image Generation sections, allowing the admin to easily choose which model or provider to use while proceeding.
 
 At last click on **Save Configurations** button.
 
@@ -44,7 +44,7 @@ At last click on **Save Configurations** button.
 
 The Text Generation feature in Magic AI helps you create product short descriptions and long descriptions easily.
 
-To use Text Generation with Magic AI, go to **Catalog → Products**, and click on the **Magic AI** button available in the description section. 
+To use Text Generation with Magic AI, go to **Catalog → Products**, and click on the **Magic AI** button available in the description section.
 
 This will allow you to generate AI-assisted content for product descriptions.
 
@@ -52,27 +52,27 @@ This will allow you to generate AI-assisted content for product descriptions.
 
 After clicking on the Magic AI button, a popup form will open where you need to enter the prompt related to the description you want to generate.
 
-Then, you need to select a model from the Model List, and finally click on the **Generate** button. 
+Then, you need to select a model from the Model List, and finally click on the **Generate** button.
 
 Once done, your AI-generated content will be created automatically. Then click on **Apply** button to add the changes.
 
  <ImagePopup src="/images/configure/textgeneration.png" alt="Magic AI" />
 
-### Image Generation 
+### Image Generation
 
 To use Image Generation, you can easily generate product images with the help of Magic AI.
 
 To use this feature, go to **Catalog → Products**, and in the Images section, click on **Magic AI Generate Images**.
 
-1) Enter the prompt based on the type of image you want to create.
+1. Enter the prompt based on the type of image you want to create.
 
-2) Specify the number of images (quantity) you want to generate.
+2. Specify the number of images (quantity) you want to generate.
 
-3) Choose the image size. By default, we provide three options: Square, Portrait, and Landscape.
+3. Choose the image size. By default, we provide three options: Square, Portrait, and Landscape.
 
-4) Select the image quality — High, Medium, or Low.
+4. Select the image quality — High, Medium, or Low.
 
-5) Finally, choose your preferred model from the Model List and click on the “Generate” button to create the images.
+5. Finally, choose your preferred model from the Model List and click on the “Generate” button to create the images.
 
   <ImagePopup src="/images/configure/image-generate.png" alt="Magic AI" />
 
@@ -84,17 +84,23 @@ If you are not satisfied with the generated images, you can simply click on the 
 
 ### Storefront Features
 
-In the Storefront Features section, there are two main features available:
+In the Storefront Features section, there are three main features available:
 
-**1) Review Translations**
+**1) AI Image Search**
 
-**2) Personalized Checkout Message**
+**2) Review Translations**
+
+**3) Personalized Checkout Message**
 
 Each feature includes a toggle button to enable or disable it. Along with this, multiple AI Models are available, and the admin can select a desired model as per their requirement.
 
 At last, click on the **Save Configuration** button to apply the changes.
 
  <ImagePopup src="/images/configure/storefront-features-magicai.png" alt="Magic AI" />
+
+### AI Image Search
+
+AI Image Search allows customers to search for products by uploading an image. Bagisto uses the Laravel AI SDK (MagicAI) to analyze the image and find matching products. You can configure the preferred AI model or use TensorFlow.js as a default fallback.
 
 ### Review Translations
 
@@ -106,9 +112,8 @@ If someone just wants to understand what is written, this feature can simply tra
 
 With the help of the Personalized Checkout Message feature in Bagisto, once you enable this option, customers will start seeing automatically generated messages after the checkout process and order gets completed.
 
-It helps store owners create a more personalized and engaging shopping experience by displaying dynamic and AI-generated messages to customers at the time of checkout. 
+It helps store owners create a more personalized and engaging shopping experience by displaying dynamic and AI-generated messages to customers at the time of checkout.
 
 These messages can improve customer interaction, build trust, and encourage successful order completion, ultimately enhancing the overall shopping experience.
 
   <ImagePopup src="/images/configure/personalized-chckout-message.png" alt="Magic AI" />
-
