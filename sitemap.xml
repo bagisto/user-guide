@@ -121,6 +121,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://docs.bagisto.com/configure/cache-management</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://docs.bagisto.com/configure/captcha</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -457,6 +462,16 @@
   </url>
   <url>
     <loc>https://docs.bagisto.com/orders/create-shipment</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://docs.bagisto.com/orders/eu-withdrawal</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://docs.bagisto.com/orders/rma</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
