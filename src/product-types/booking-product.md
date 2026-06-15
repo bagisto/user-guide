@@ -8,13 +8,13 @@ So let’s get started with how to create booking products in Bagisto.
 
 ### How to Create Booking Products In Bagisto
 
-**Step-1** Click on Catalog >> Products  >> Select Booking under Product Type as shown in the below image.
+**Step-1** Click on Catalog >> Products >> Select Booking under Product Type as shown in the below image.
 
 <ImagePopup src="/images/booking-product/1.png" alt="Bundle Product" />
 
 **Step-2** Select **Attribute Family >> enter SKU >>** Click to **Save Product** Now once you click on the Save Product button, you will be redirected to the next page, where you will find several new settings
 
-**1)  Name:-** Enter the name of the product.
+**1) Name:-** Enter the name of the product.
 
 **2) URL Key:-** This will be the end of the URL, for example, "products/set-of-men-casual-wear" (set-of-men-casual-wear is a URL key)
 
@@ -184,7 +184,7 @@ The admin can create an **Appointment** booking product as shown below in the sc
 
 <ImagePopup src="/images/booking-product/16.png" alt="Bundle Product" />
 
-Else set **“No”**  for the different slots for each day add from and to timings according to the days check the below image for reference.
+Else set **“No”** for the different slots for each day add from and to timings according to the days check the below image for reference.
 
 <ImagePopup src="/images/booking-product/17.png" alt="Bundle Product" />
 
@@ -224,7 +224,7 @@ The Admin can create a **Rental booking** product as shown below in the screensh
 
 **2) Quantity:-** Enter the quantity of booking products. This is the global quantity for each slot.
 
-**3) Available Every Week:-** Set **“Yes”** to configure time slots for all days of the week. 
+**3) Available Every Week:-** Set **“Yes”** to configure time slots for all days of the week.
 
 If you don’t want to configure the time slots for all the days of the week set **“No“**
 

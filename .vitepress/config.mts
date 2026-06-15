@@ -160,6 +160,17 @@ export default defineConfig({
       },
 
       {
+        text: "Account",
+        collapsed: false,
+        items: [
+          {
+            text: "Two Factor Authentication",
+            link: "/authentication/2fa-authentication",
+          },
+        ],
+      },
+
+      {
         text: "Product Types",
         collapsed: false,
         items: [
@@ -324,11 +335,6 @@ export default defineConfig({
           { text: "Taxes", link: "/configure/taxes" },
           { text: "Weight Unit", link: "/configure/weight-unit" },
         ],
-      },
-
-      {
-        text: "2 Factor Authentication",
-        link: "/authentication/2fa-authentication",
       },
 
       {
