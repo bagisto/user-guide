@@ -8,13 +8,13 @@ So let’s get started with how to create booking products in Bagisto.
 
 ### How to Create Booking Products In Bagisto
 
-**Step-1** Click on Catalog >> Products  >> Select Booking under Product Type as shown in the below image.
+**Step-1** Click on Catalog >> Products >> Select Booking under Product Type as shown in the below image.
 
 <ImagePopup src="/images/booking-product/1.png" alt="Bundle Product" />
 
 **Step-2** Select **Attribute Family >> enter SKU >>** Click to **Save Product** Now once you click on the Save Product button, you will be redirected to the next page, where you will find several new settings
 
-**1)  Name:-** Enter the name of the product.
+**1) Name:-** Enter the name of the product.
 
 **2) URL Key:-** This will be the end of the URL, for example, "products/set-of-men-casual-wear" (set-of-men-casual-wear is a URL key)
 
@@ -43,6 +43,10 @@ Enable the toggle button to make the product visible on the front end.
 **Status**
 
 Enable the toggle button to enable the product on your eCommerce store.
+
+**Allow Cancellation**
+
+Enable the toggle button to allow cancellation of the booking product. If disabled, customers cannot cancel their booking from their account. But Admin still allowed to cancel the order.
 
 **Guest Checkout**
 
@@ -120,6 +124,8 @@ To create many bookings for one day, configure the below booking detail.
 
 **7) Break Time b/w Slots(Mins):-** Set the break time between slots in min. By default, it is 15 min.
 
+**8) Allow Slot Overlap:-** Set "Yes" to allow overlapping time slots. Set "No" to prevent overlapping slots.
+
 <ImagePopup src="/images/booking-product/8.png" alt="Bundle Product" />
 
 ### Add Slots
@@ -180,11 +186,13 @@ The admin can create an **Appointment** booking product as shown below in the sc
 
 **5) Break Time b/w Slots(Mins):-** Set the break time between slots in min. By default, it is 15 min.
 
-**6) Same Slot All Days:-** Set “Yes” for the same slot for all the days add from and to timings check the below image for reference.
+**6) Allow Slot Overlap:-** Set "Yes" to allow overlapping time slots. Set "No" to prevent overlapping slots.
+
+**7) Same Slot All Days:-** Set “Yes” for the same slot for all the days add from and to timings check the below image for reference.
 
 <ImagePopup src="/images/booking-product/16.png" alt="Bundle Product" />
 
-Else set **“No”**  for the different slots for each day add from and to timings according to the days check the below image for reference.
+Else set **“No”** for the different slots for each day add from and to timings according to the days check the below image for reference.
 
 <ImagePopup src="/images/booking-product/17.png" alt="Bundle Product" />
 
@@ -206,7 +214,19 @@ The Admin can create an Event booking product as shown below in the screenshot. 
 
 **Tickets**
 
-Add the below details
+Add ticket details by clicking the **Add** button. Each ticket has the following fields:
+
+**1) Name:-** Enter the name of the ticket (e.g., General, VIP).
+
+**2) Quantity:-** Enter the number of tickets available.
+
+**3) Price:-** Set the base price for the ticket type.
+
+**4) Special Price:-** Set a discounted price for the ticket (optional).
+
+**5) Special Price From / To:-** Define the date range during which the special price is valid (optional).
+
+**6) Description:-** Provide a description of the ticket type.
 
 <ImagePopup src="/images/booking-product/20.png" alt="Bundle Product" />
 
@@ -224,7 +244,7 @@ The Admin can create a **Rental booking** product as shown below in the screensh
 
 **2) Quantity:-** Enter the quantity of booking products. This is the global quantity for each slot.
 
-**3) Available Every Week:-** Set **“Yes”** to configure time slots for all days of the week. 
+**3) Available Every Week:-** Set **“Yes”** to configure time slots for all days of the week.
 
 If you don’t want to configure the time slots for all the days of the week set **“No“**
 
@@ -272,7 +292,9 @@ The admin can create a Table booking product as shown below in the screenshot. H
 
 **7) Prevent Scheduling Before:-** the minutes to advance booking means that before the start time of the slot.
 
-**8) Same Slot All Days:-** Set “Yes” for the same slot for all the days.
+**8) Allow Slot Overlap:-** Set "Yes" to allow overlapping time slots. Set "No" to prevent overlapping slots.
+
+**9) Same Slot All Days:-** Set “Yes” for the same slot for all the days.
 
 <ImagePopup src="/images/booking-product/28.png" alt="Bundle Product" />
 
@@ -290,7 +312,7 @@ Here customer has to select the date and time and add a note for admin.
 
 After placing the order login to the admin panel of bagisto
 
-Click on **Sales >> Booking Product** and you will be able to see the ordered product in the booking product datagrid also you can see the calendar view of your booking for this click on **Calendar button** as shown in the below image.
+Click on **Sales >> Bookings** and you will be able to see the ordered product in the booking product datagrid also you can see the calendar view of your booking for this click on **Calendar button** as shown in the below image.
 
 <ImagePopup src="/images/booking-product/31.png" alt="Bundle Product" />
 
