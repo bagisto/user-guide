@@ -1,10 +1,10 @@
-# 2 Factor Authentication (2FA) 
+# Two Factor Authentication (2FA)
 
 To make admin accounts safer, we have added Two-Factor Authentication (2FA) in Bagisto.
 
 This feature gives an extra level of security by asking admins to confirm their identity with a second step when they log in.
 
-### Steps for 2 Factor Authentication (2FA)
+### Steps for Two Factor Authentication (2FA)
 
 **Step-1** First, you need to log in to the Bagisto admin panel using your credentials (username and password). After logging in, you will be redirected to the dashboard.
 
