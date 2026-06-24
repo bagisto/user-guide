@@ -10,7 +10,7 @@ Go to **My Account → Profile → Purchase Orders** from the company storefront
 
 The My Purchase Orders page will appear, showing all existing purchase orders with options to search, filter, and manage them.
 
-<ImagePopup src="/images/b2b-ecommerce-platform/1-my-purchase-orders.png" alt="Super Admin Login" />
+<ImagePopup src="/images/b2b-ecommerce-platform/purchase-order-1.png" alt="Super Admin Login" />
 
 ### Purchase Order Details Include:
 
@@ -34,6 +34,8 @@ The My Purchase Orders page will appear, showing all existing purchase orders wi
 
 Company users can easily track and manage their orders while maintaining visibility into negotiated totals and order statuses for efficient procurement management.
 
+> **View Order:** Once a purchase order has placed a sales order, any member of the company who has the **Purchase Orders** permission can open the underlying sales order using the **View Order** link from the purchase order details — not just the member who originally placed it.
+
 ### Purchase Orders (Admin End)
 
 The Purchase Orders (Admin End) feature allows the store admin to centrally view and manage all purchase orders created by different companies.
@@ -42,13 +44,13 @@ This section provides a complete overview of each company’s procurement activi
 
 ### Steps to View Purchase Orders
 
-Go to **Admin Panel → Customers → Purchase Orders**.
+Go to **Admin Panel → B2B → Purchase Orders**.
 
 The Purchase Orders page will appear, showing a complete list of all purchase orders placed by companies.
 
 Admins can **search, filter, export** and view detailed information for each order.
 
-<ImagePopup src="/images/b2b-ecommerce-platform/2-purchase-orders-admin.png" alt="Super Admin Login" />
+<ImagePopup src="/images/b2b-ecommerce-platform/purchase-order-2.png" alt="Super Admin Login" />
 
 ### Purchase Order Details Include:
 

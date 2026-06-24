@@ -4,39 +4,29 @@ The Quick Order feature allows companies to add multiple products to their cart 
 
 It helps save time during bulk or repeat purchases by simplifying the product selection process.
 
-### Steps to Use Quick Order
+## Steps to Use Quick Order
 
-Go to **My Account → Profile → Quick Orders** from the company storefront.
+**Step: 1** Go to **My Account → Profile → Quick Order** from the company storefront. The Quick Order page will open, as shown in the image below.
 
-The Quick Order page will appear, allowing you to search products, enter SKUs, or upload a file for quick bulk ordering.
+<ImagePopup src="/images/b2b-ecommerce-platform/quick-1.png" alt="Quick Order" />
 
-**Available Options:**
+### Available Options
 
-**1) Search Product by SKU or Name –** Enter a product’s SKU or name to locate it quickly.
+**1) Search Product by SKU or Name –** Enter a product SKU or name to search for products quickly.
 
-**2) Enter Multiple SKUs –** Add several SKUs at once by separating them with commas.
+**2) Enter Multiple SKUs –** Add multiple product SKUs at once by separating them with commas.
 
-**3) Upload File –** Upload a CSV file to add multiple products in one go.
+**3) Upload File –** Upload a CSV file to add products in bulk.
 
-**4) Supported Formats –** Only CSV files are supported. The columns should include:
 
-    - SKU – Product SKU
+**Step: 2** Search for a product using its SKU or product name. Once a matching product is found, it will be displayed in the search results, as shown in the image below.
 
-    - Quantity – Quantity to be added
+<ImagePopup src="/images/b2b-ecommerce-platform/quick-2.png" alt="Search Product in Quick Order" />
 
-**5) Download Sample File –** Download a sample CSV for reference before uploading your own.
+Click **Add to List** to include the product in the Selected Products section.
 
-<ImagePopup src="/images/b2b-ecommerce-platform/1-quick-order.png" alt="Super Admin Login" />
+**Step: 3** Review the products added to the Selected Products list. After confirming the required products and quantities, click **Add To Cart** to move all selected products directly to the shopping cart for checkout.
 
-### Selected Products
+<ImagePopup src="/images/b2b-ecommerce-platform/quick-3.png" alt="Add Products to Cart" />
 
-After entering the SKU in the field, the product associated with that SKU will be displayed.
-
-Click the **Add to List** button, and the product will be added under the Selected Products section.
-
-<ImagePopup src="/images/b2b-ecommerce-platform/2-selected-products.png" alt="Super Admin Login" />
-
-Once you have reviewed the selected products, click **Add To Cart** to move them directly to your shopping cart for checkout.
-
-This feature enables companies to place bulk orders quickly and efficiently, eliminating the need to browse through multiple product pages.
-
+The Quick Order feature enables companies to place bulk orders quickly and efficiently without browsing multiple product pages.

@@ -467,16 +467,32 @@ export default defineConfig({
             link: "/b2b-ecommerce-platform/introduction",
           },
           {
+            text: "Configuration",
+            link: "/b2b-ecommerce-platform/configuration",
+          },
+          {
             text: "Company Registration",
             link: "/b2b-ecommerce-platform/company-registration",
+          },
+          {
+            text: "Company Attributes",
+            link: "/b2b-ecommerce-platform/company-attributes",
           },
           {
             text: "Role Based Permissions",
             link: "/b2b-ecommerce-platform/role-based-permissions",
           },
           {
-            text: "Purchase Orders",
-            link: "/b2b-ecommerce-platform/purchase-orders",
+            text: "Sales Representatives",
+            link: "/b2b-ecommerce-platform/sales-representative",
+          },
+          {
+            text: "Company Catalog",
+            link: "/b2b-ecommerce-platform/company-catalog",
+          },
+          {
+            text: "Company Credit",
+            link: "/b2b-ecommerce-platform/company-credit",
           },
           {
             text: "Requisition Lists",
@@ -490,6 +506,10 @@ export default defineConfig({
           {
             text: "Quotation Handling",
             link: "/b2b-ecommerce-platform/quotation-handling",
+          },
+          {
+            text: "Purchase Orders",
+            link: "/b2b-ecommerce-platform/purchase-orders",
           },
         ],
       },

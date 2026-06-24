@@ -26,7 +26,27 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://docs.bagisto.com/b2b-ecommerce-platform/company-attributes</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://docs.bagisto.com/b2b-ecommerce-platform/company-catalog</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://docs.bagisto.com/b2b-ecommerce-platform/company-credit</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://docs.bagisto.com/b2b-ecommerce-platform/company-registration</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://docs.bagisto.com/b2b-ecommerce-platform/configuration</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -62,6 +82,11 @@
   </url>
   <url>
     <loc>https://docs.bagisto.com/b2b-ecommerce-platform/role-based-permissions</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://docs.bagisto.com/b2b-ecommerce-platform/sales-representative</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

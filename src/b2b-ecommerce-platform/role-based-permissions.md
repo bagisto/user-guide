@@ -12,7 +12,7 @@ The **Company Roles** page will appear, showing all existing roles with options 
 
 As shown in the image below, you can view the list of existing roles, such as “Administrator”.
 
-<ImagePopup src="/images/b2b-ecommerce-platform/1-company-roles.png" alt="Super Admin Login" />
+<ImagePopup src="/images/b2b-ecommerce-platform/role-1.png" alt="Super Admin Login" />
 
 **Step: 2** Click on Add Role to open the Add Company Role form.
 
@@ -30,7 +30,7 @@ As shown in the image below, you can view the list of existing roles, such as �
 
 **Step: 5** Once you have configured the access control settings, click Save Role to create the new role. As shown in the image below,
 
-<ImagePopup src="/images/b2b-ecommerce-platform/2-add-company-role.png" alt="Super Admin Login" />
+<ImagePopup src="/images/b2b-ecommerce-platform/role-2.png" alt="Super Admin Login" />
 
 **Note:**
 - You can edit or delete existing roles anytime from the same page.
@@ -51,7 +51,12 @@ Each user can have a defined role and access level, helping businesses maintain 
 
 As shown in the image below, the list will appear empty initially if no users are created.
 
-<ImagePopup src="/images/b2b-ecommerce-platform/3-company-users.png" alt="Super Admin Login" />
+The Company Users page offers two ways to add members:
+
+* **Add User –** Create a brand-new company user from scratch.
+* **Invite User –** Invite a customer who already has an account on the store to join your company.
+
+<ImagePopup src="/images/b2b-ecommerce-platform/role-3.png" alt="Super Admin Login" />
 
 **Step: 3** Click on Add User to open the Add Company User form.
 
@@ -79,10 +84,43 @@ As shown in the image below, the list will appear empty initially if no users ar
 
 **Step: 6** After filling in all required information, click **Save User** to add the new company user. As shown in the image below.
 
-<ImagePopup src="/images/b2b-ecommerce-platform/4-add-company-user.png" alt="Super Admin Login" />
+<ImagePopup src="/images/b2b-ecommerce-platform/role-4.png" alt="Super Admin Login" />
 
 **Note:**
 
 Company administrators can edit, suspend, or delete users at any time.
 
 Access to features depends on the role permissions assigned to each user.
+
+### Invite an Existing User
+
+Instead of creating a new user, you can invite a customer who already has an account on the store to join your company.
+
+**Step: 1** On the **Company Users** page, click **Invite User**.
+
+**Step: 2** Fill in the invitation details:
+
+**A) Customer Email –** Enter the email address of the existing customer you want to invite.
+
+**B) Role –** Choose the role the invited user will have once they join.
+
+**Step: 3** Click **Send Invitation**. The customer receives an email and becomes a company user once they accept.
+
+<ImagePopup src="/images/b2b-ecommerce-platform/role-5.png" alt="Invite Existing User" />
+
+#### Pending Invitations
+
+Invitations that have been sent but not yet accepted appear in the **Pending Invitations** list, showing the email, role, the date invited, and the expiry date. You can **Revoke** a pending invitation at any time.
+
+<ImagePopup src="/images/b2b-ecommerce-platform/role-6.png" alt="Pending Invitations" />
+
+> **Note:** A customer can only be invited if they are not already a member of another company.
+
+### Accepting an Invitation
+
+When a customer is invited, they receive an email with a **View Invitation** link. After signing in with the invited email address, they see the **Company Invitation** page showing which company and role they have been invited to.
+
+They can then **Accept Invitation** to join the company as a member, or **Decline** the invitation.
+
+
+> **Note:** The **Messages** permission separately controls whether a company user can view and participate in quotation / purchase order message threads.
