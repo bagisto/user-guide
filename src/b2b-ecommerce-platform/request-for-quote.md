@@ -1,42 +1,61 @@
 # Request for Quote (RFQ)
 
-The Request for Quote (RFQ) feature allows companies to submit quotation requests directly from the storefront for price negotiation or bulk purchase discussions.
+The Request for Quote (RFQ) feature allows companies to request custom pricing, negotiate rates, and discuss bulk purchases directly with the store administrator.
 
-**Note:** The RFQ feature can only be used by signed-in customers.
+> **Note:** The RFQ feature is available only for signed-in company customers.
 
-### Cart Page Overview
+## Steps to Create a Quotation Request
 
-Go to the Cart page from the storefront. Here, you will find the Request For Quote button below the Cart Summary section.
+**Step: 1** Navigate to any product page and add the desired product(s) to your cart.
 
-<ImagePopup src="/images/b2b-ecommerce-platform/1-cart-page.png" alt="Super Admin Login" />
+<ImagePopup src="/images/b2b-ecommerce-platform/1-qoute.png" alt="Add Product to Cart" />
 
-Click the **Request For Quote** button to proceed with creating a quotation.
+**Step: 2** Request a quote from the Cart page:
 
-### Create Quotation Request
+**1)** Go to the **Cart** page from the storefront.
 
-After clicking the **Request For Quote** button, the **Quotation Form** will appear.
+<ImagePopup src="/images/b2b-ecommerce-platform/2-qoute.png" alt="Cart Page" />
 
-### Fill in the following details:
+**2)** Click the **Request For Quote** button located below the Cart Summary section.
+
+<ImagePopup src="/images/b2b-ecommerce-platform/3-qoute.png" alt="Request For Quote Button" />
+
+**Step: 3** The quotation request form will appear. Fill in the required details:
 
 **1) Quotation Name –** Enter a name for your quotation.
 
-**2) Quotation Description –** Add a short note describing your request or purpose.
+**2) Quotation Description –** Add a short note describing your request or requirements.
 
-**3) Attach File –** Upload supporting files if required.
+**3) Attach File –** Upload any supporting documents or files if required. The allowed file formats and maximum file size are set by the administrator under the [Quotations & Purchase Orders configuration](./configuration).
 
-<ImagePopup src="/images/b2b-ecommerce-platform/2-request-for-quote.png" alt="Super Admin Login" />
+After entering the details, click **Request A Quotation** to submit your quotation request. You can also click **Save as Draft** to save the request and submit it later.
 
-At the bottom of the form, two buttons are available:
+> **Note:** The administrator can set a **Minimum Cart Amount** required before a quote can be requested. If your cart total is below that amount, you will see a message and the **Request For Quote** button will be unavailable until the minimum is met.
 
-**1) Save as Draft –** Save your quotation for later submission.
+**Step: 4** Once submitted, the quotation will be available under **My Account → Profile → Quotations**, where you can track its status and view quotation details.
 
-**2) Request A Quotation –** Submit the quotation request directly to the admin.
+<ImagePopup src="/images/b2b-ecommerce-platform/4-qoute.png" alt="Quotation Listing" />
 
-### Quotation Submission and Tracking
+## Quotation Management (Admin End)
 
-Once you submit your quotation request, it will be listed under the **Quotations** section in your **My Account** dashboard.
+The administrator can review all quotation requests by navigating to **B2B → Quotations** in the Admin Panel.
 
-Each quotation displays key details, including ID, Quotation Name, Company, Base Total, Status (Open/Accepted/Rejected/Draft), and Created At, for easy tracking and management.
+The admin can:
 
-<ImagePopup src="/images/b2b-ecommerce-platform/3-quotation.png" alt="Super Admin Login" />
+* View quotation details.
+* Review requested products and pricing.
+* Accept a quotation.
+* Reject a quotation.
+* Negotiate quotation prices with the customer.
 
+> **Note:** Both the customer and the admin can negotiate the quotation until a final agreement is reached.
+
+<ImagePopup src="/images/b2b-ecommerce-platform/5-qoute.png" alt="Quotation Management - Admin End" />
+
+## Complete the Purchase
+
+**Step: 5** Once the quotation is accepted, the customer will see the **Add To Cart** option for the approved quotation.
+
+The customer can add the quotation items to the cart and proceed through the normal checkout process to place the order using the negotiated pricing.
+
+<ImagePopup src="/images/b2b-ecommerce-platform/6-qoute.png" alt="Complete the Purchase" />
