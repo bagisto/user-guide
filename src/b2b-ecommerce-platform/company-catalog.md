@@ -44,6 +44,8 @@ For each product (or each variant / associated / bundle child of a composite pro
 * **Discount (%) –** A percentage discount off the base price.
 * **Default –** Leave the price unchanged (visibility only).
 
+<ImagePopup src="/images/b2b-ecommerce-platform/calalog-product.png" alt="Confirm Catalog Visibility" />
+
 ### Step 3 — Tier (Volume) Pricing
 
 For any priced product you can add **quantity price breaks**. Members automatically get the lower unit price once their cart quantity reaches a break.
@@ -53,6 +55,8 @@ For any priced product you can add **quantity price breaks**. Members automatica
 **2) Unit Price –** The unit price applied at that quantity.
 
 Use **Add price break** to add additional tiers. Break prices must decrease as the quantity rises.
+
+<ImagePopup src="/images/b2b-ecommerce-platform/calatog-tire.png" alt="Confirm Catalog Visibility" />
 
 ### Step 4 — Assign Companies
 

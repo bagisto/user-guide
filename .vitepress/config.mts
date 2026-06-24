@@ -495,10 +495,6 @@ export default defineConfig({
             link: "/b2b-ecommerce-platform/company-credit",
           },
           {
-            text: "Purchase Orders",
-            link: "/b2b-ecommerce-platform/purchase-orders",
-          },
-          {
             text: "Requisition Lists",
             link: "/b2b-ecommerce-platform/requisition-lists",
           },
@@ -510,6 +506,10 @@ export default defineConfig({
           {
             text: "Quotation Handling",
             link: "/b2b-ecommerce-platform/quotation-handling",
+          },
+          {
+            text: "Purchase Orders",
+            link: "/b2b-ecommerce-platform/purchase-orders",
           },
         ],
       },

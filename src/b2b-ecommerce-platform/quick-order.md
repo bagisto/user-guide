@@ -18,12 +18,6 @@ It helps save time during bulk or repeat purchases by simplifying the product se
 
 **3) Upload File –** Upload a CSV file to add products in bulk.
 
-**4) Supported Format –** The uploaded file must be in CSV format and contain the following columns:
-
-* **SKU** – Product SKU
-* **Quantity** – Quantity to be added
-
-**5) Download Sample File –** Download a sample CSV file for reference before uploading your own file.
 
 **Step: 2** Search for a product using its SKU or product name. Once a matching product is found, it will be displayed in the search results, as shown in the image below.
 
