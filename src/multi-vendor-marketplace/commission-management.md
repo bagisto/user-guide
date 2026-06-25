@@ -26,7 +26,7 @@ This is the easiest and most reliable way to make money from sales since every s
 
 **Steps to set the global commission**
 
-1) In the Admin Panel, go to **Configure → Marketplace → General**.  
+1) In the Admin Panel, go to **Configure → Marketplace → Settings → General**.  
 2) Locate the **Admin Commission Percentage** field.  
 3) Enter the percentage rate you want to apply globally.  
 4) Click **Save Configuration** — the rate will now be applied automatically to all sellers.  
@@ -86,7 +86,7 @@ This openness helps create trust between the marketplace and sellers by making s
 
 **Where sellers can find this report:**
 
-1) From the **Seller Dashboard**, navigate to: **Reporting → Total Commission Paid**.  
+1) From the **Seller Dashboard**, navigate to **Reporting → Sales** and view the **Total Commission Paid** card.  
 
 <ImagePopup src="/images/multi-vendor-marketplace/total_commission_paid_reporting.png" alt="Total Commission Paid Reporting" />
 

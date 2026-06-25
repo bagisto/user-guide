@@ -396,6 +396,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://docs.bagisto.com/multi-vendor-marketplace/booking-management</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://docs.bagisto.com/multi-vendor-marketplace/commission-management</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -406,12 +411,27 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://docs.bagisto.com/multi-vendor-marketplace/customer-management</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://docs.bagisto.com/multi-vendor-marketplace/dealership-management</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://docs.bagisto.com/multi-vendor-marketplace/featured-sellers</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://docs.bagisto.com/multi-vendor-marketplace/introduction</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://docs.bagisto.com/multi-vendor-marketplace/inventory-source-management</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -431,7 +451,17 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://docs.bagisto.com/multi-vendor-marketplace/product-barcode</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://docs.bagisto.com/multi-vendor-marketplace/product-management</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://docs.bagisto.com/multi-vendor-marketplace/quick-create-product</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -456,7 +486,22 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://docs.bagisto.com/multi-vendor-marketplace/seller-product-flagging</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://docs.bagisto.com/multi-vendor-marketplace/seller-reporting</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://docs.bagisto.com/multi-vendor-marketplace/seller-subscription-management</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://docs.bagisto.com/multi-vendor-marketplace/seller-user-role-management</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

@@ -8,7 +8,7 @@ It ensures smooth processing, timely updates, and better coordination between ve
 <ImagePopup src="/images/multi-vendor-marketplace/1homepage.png" alt="Homepage" />
 
 ### Orders
-Go to the **"Orders"** menu and click on it.
+Go to **Sales → Orders** and click on it. (Order, RMA, Bookings, and Transactions are now grouped under the **Sales** menu.)
 
 <ImagePopup src="/images/multi-vendor-marketplace/dashboard-order.png" alt="Dashboard Order" />
 

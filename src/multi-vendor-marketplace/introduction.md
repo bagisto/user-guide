@@ -36,6 +36,14 @@ In Multi Vendor Marketplace, Product management is designed to give sellers comp
 
 With easy to use tools, sellers can quickly edit or update products whenever needed, making sure their listings stay accurate and attractive. 
 
+### Quick Create Product
+
+Quick Create lets sellers add a ready-to-edit product in a single click from the seller header, pre-filled from their saved defaults (product type, attribute family, and attribute values) configured under **Settings → Quick Create**. The product opens directly on the edit page, saving sellers from repeating the full create form for similar listings.
+
+### Product Barcode
+
+Admins and sellers can generate, view, print, and download scannable barcodes (Code 128, EAN-13, UPC-A, and QR Code) for products. Barcodes can be auto-generated on product save and, when enabled, displayed to customers on the storefront product page.
+
 ### Rating Management
 
 Ratings and reviews build trust in an online marketplace, guide customer purchases, and help sellers improve their service.
@@ -47,5 +55,33 @@ In a Laravel Multi Vendor Marketplace, Rating Management allows buyers to leave 
 Payment management in a Multi-Vendor Marketplace helps both sellers and admins handle finances with ease and clarity. Sellers can quickly check their earnings, see payment details for orders, and request payouts without hassle. 
 
 Admins can easily track all payments, manage commissions, and make sure settlements are secure and on time.
+
+### More Marketplace Capabilities
+
+Beyond the core areas above, the Multi Vendor Marketplace also includes:
+
+- **Inventory Source Management** — sellers define multiple stock locations (warehouses/stores) and track per-source quantities.
+
+- **Booking Management** — sellers manage reservations for booking-type products in list and calendar views.
+
+- **Seller Users & Roles** — sellers add team members and control their access with custom permission roles.
+
+- **Seller Reporting** — sales, products, and customers reports with date filters and export.
+
+- **Customer Management** — sellers view the customers who have ordered from their store, with order and revenue insights.
+
+- **Seller & Product Flagging** — customers can report sellers or products, with an admin red-flag warning system.
+
+- **Featured Sellers** — admins highlight top sellers on the storefront based on orders, products, or ratings.
+
+- **Seller Subscription (Plans)** — sellers subscribe to plans that gate product/staff limits, allowed product types, and permissions.
+
+- **Communication** — direct seller ↔ customer messaging.
+
+- **Mass Payout** — admins pay multiple sellers at once.
+
+- **Seller Attributes & Bulk Upload** — custom seller profile fields and CSV/XLSX catalog import.
+
+- **Return Merchandise Authorization (RMA)** — seller-scoped returns layered on Bagisto core's RMA/Returns module.
 
 <ImagePopup src="/images/multi-vendor-marketplace/multi-vendor-marketplace.webp" alt="Super Admin Login" />

@@ -8,7 +8,9 @@ With easy-to-use tools, sellers can quickly edit or update products whenever nee
 
 Product management is simple; sellers can add products, set details like price and stock, upload images, and quickly make them available in the marketplace.
 
-From the seller dashboard, go to **Products** and click on it to open the product page.
+From the seller dashboard, go to **Product Catalog → Products** and click on it to open the product page.
+
+> **Note:** The seller navigation is now organised into grouped menus — **Profile**, **Product Catalog**, **Sales**, and **Settings**. Product screens (Products, Product Reviews, Data Transfer, Inventory Sources, Product Barcode) live under **Product Catalog**.
 
 <ImagePopup src="/images/multi-vendor-marketplace/1-seller-dashboard.png" alt="Seller Dashboard" />
 
@@ -23,6 +25,8 @@ You can add a product in two ways:
 - **Add New Product:** Add a completely new product with your own details.
 
 - **Add Existing Product:** Choose from existing products added by the admin.
+
+> **Tip — Quick Create:** Sellers can also create a ready-to-edit product in a single click using the **Quick Create** button in the seller header. The product is pre-filled from the seller's saved defaults (type, attribute family, and attribute values) configured under **Settings → Quick Create**, then opens directly on the product edit page. See **Quick Create Product**.
 
 <ImagePopup src="/images/multi-vendor-marketplace/3-product-creation.png" alt="Product Creation" />
 
@@ -173,6 +177,20 @@ In this section, assign the product to one or more categories available in your 
 You can select multiple categories to ensure better visibility of your product.
 
 <ImagePopup src="/images/multi-vendor-marketplace/14-inventory-and-category.png" alt="Inventory and Category" />
+
+#### Barcode
+
+The **Barcode** section lets you attach a scannable barcode to the product. It contains three fields:
+
+- **Barcode Type:** Choose the symbology used to generate the barcode — **Code 128**, **EAN-13**, **UPC-A**, or **QR Code**.
+
+- **Barcode Value:** The value encoded in the barcode (for example a product code, or the value used for the QR code). This value is unique per product. If left empty, the product **SKU** is used.
+
+- **Barcode:** The generated barcode image. It is **read-only and generated automatically** every time you save the product — you do not upload it manually. The image refreshes whenever the barcode value (or SKU) changes.
+
+<ImagePopup src="/images/multi-vendor-marketplace/barcode-attribute-group.png" alt="Product Barcode Section" />
+
+**Note:** The Barcode section appears on every product because the barcode attributes are added to all attribute families. You can later view, print, and download product barcodes from **Product Catalog → Product Barcodes**.
 
 #### Save Product
 

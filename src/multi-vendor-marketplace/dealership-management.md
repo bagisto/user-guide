@@ -28,7 +28,7 @@ This helps build trust and gives vendors more visibility to attract buyers and i
 
 ### Add Product from Marketplace Catalog
 
-From the seller dashboard, go to **Products** and click on it to open the product page.
+From the seller dashboard, go to **Product Catalog → Products** and click on it to open the product page.
 
 <ImagePopup src="/images/multi-vendor-marketplace/4-seller-dashboards.png" alt="Global Commission Configuration" />
 
