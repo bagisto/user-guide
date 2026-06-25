@@ -62,7 +62,7 @@ Finally, clicking the **Submit Review** button will publish the review and share
 
 Sellers can view all customer reviews from their dashboard, gaining valuable insights into product performance and buyer feedback.
 
-Go to the **Product Reviews**.
+Go to **Product Catalog → Product Reviews**.
 
 <ImagePopup src="/images/multi-vendor-marketplace/5-seller-dashboard-product-review.png" alt="Seller Dashboard Product Review" />
 

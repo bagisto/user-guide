@@ -32,6 +32,17 @@ Once signed in, sellers land on the **Dashboard** tab, which gives a clear and q
 
 This dashboard helps sellers stay updated, make informed decisions, and grow their business more efficiently.
 
+### Seller Panel Navigation
+
+The seller panel has been redesigned with a cleaner, grouped sidebar and full **dark-mode** support across forms, the rich-text editor, and headers. Menu items are organised under logical parent groups:
+
+- **Profile** — Manage Profile, Seller Reviews.
+- **Product Catalog** — Products, Product Reviews, Data Transfer, Inventory Sources, Product Barcode.
+- **Sales** — Orders, RMA, Bookings, Transactions.
+- **Settings** — General, Users, Roles, Quick Create.
+
+Additional sections such as **Plans**, **Communication**, and **Reporting** remain available in the sidebar. (Earlier flat menu items like *Products* and *Orders* now live inside the **Product Catalog** and **Sales** groups respectively, and the standalone *Extensions* board has been removed.)
+
 ### Manage Profile
 
 The **Manage Profile** section is the first step in creating your store’s identity. Here, vendors can add basic details like **Store Name, Logo, and Contact Info**.

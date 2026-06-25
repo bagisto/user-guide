@@ -364,28 +364,76 @@ export default defineConfig({
             link: "/multi-vendor-marketplace/dealership-management",
           },
           {
-            text: "Order Management",
-            link: "/multi-vendor-marketplace/order-management",
-          },
-          {
-            text: "Commission Management",
-            link: "/multi-vendor-marketplace/commission-management",
-          },
-          {
             text: "Product Management",
             link: "/multi-vendor-marketplace/product-management",
           },
           {
-            text: "Rating Management",
-            link: "/multi-vendor-marketplace/rating-management",
+            text: "Quick Create Product",
+            link: "/multi-vendor-marketplace/quick-create-product",
+          },
+          {
+            text: "Product Barcode",
+            link: "/multi-vendor-marketplace/product-barcode",
+          },
+          {
+            text: "Inventory Source Management",
+            link: "/multi-vendor-marketplace/inventory-source-management",
+          },
+          {
+            text: "Order Management",
+            link: "/multi-vendor-marketplace/order-management",
+          },
+          {
+            text: "Booking Management",
+            link: "/multi-vendor-marketplace/booking-management",
+          },
+          {
+            text: "Return Merchandise Authorization (RMA)",
+            link: "/multi-vendor-marketplace/return-merchandise-authorization",
           },
           {
             text: "Payment Management",
             link: "/multi-vendor-marketplace/payment-management",
           },
           {
-            text: "Return Merchandise Authorization (RMA)",
-            link: "/multi-vendor-marketplace/return-merchandise-authorization",
+            text: "Commission Management",
+            link: "/multi-vendor-marketplace/commission-management",
+          },
+          {
+            text: "Mass Payout Management",
+            link: "/multi-vendor-marketplace/mass-payout-management",
+          },
+          {
+            text: "Seller Subscription Management",
+            link: "/multi-vendor-marketplace/seller-subscription-management",
+          },
+          {
+            text: "Customer Management",
+            link: "/multi-vendor-marketplace/customer-management",
+          },
+          {
+            text: "Communications",
+            link: "/multi-vendor-marketplace/communications",
+          },
+          {
+            text: "Rating Management",
+            link: "/multi-vendor-marketplace/rating-management",
+          },
+          {
+            text: "Seller & Product Flagging",
+            link: "/multi-vendor-marketplace/seller-product-flagging",
+          },
+          {
+            text: "Featured Sellers",
+            link: "/multi-vendor-marketplace/featured-sellers",
+          },
+          {
+            text: "Seller Reporting",
+            link: "/multi-vendor-marketplace/seller-reporting",
+          },
+          {
+            text: "Seller Users & Roles",
+            link: "/multi-vendor-marketplace/seller-user-role-management",
           },
           {
             text: "Seller Catalog Bulk Upload",
@@ -394,18 +442,6 @@ export default defineConfig({
           {
             text: "Seller Attributes",
             link: "/multi-vendor-marketplace/seller-attributes",
-          },
-          {
-            text: "Seller Subscription Management",
-            link: "/multi-vendor-marketplace/seller-subscription-management",
-          },
-          {
-            text: "Mass Payout Management",
-            link: "/multi-vendor-marketplace/mass-payout-management",
-          },
-          {
-            text: "Communications",
-            link: "/multi-vendor-marketplace/communications",
           },
         ],
       },

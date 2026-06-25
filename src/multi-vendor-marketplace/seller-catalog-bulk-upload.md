@@ -6,7 +6,7 @@ The Seller Catalog Bulk Upload feature allows sellers to upload, update, and del
 
 ### How to Import Products in Bulk
 
-**Step 1:** Go to the **Seller Panel → Settings → Data Transfer**, then click on the **Create Import** button.
+**Step 1:** Go to the **Seller Panel → Product Catalog → Data Transfer**, then click on the **Create Import** button.
 
 <ImagePopup src="/images/multi-vendor-marketplace/2-data-transfer-settings.webp" alt="Customer Email and Password" />
 

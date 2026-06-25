@@ -8,7 +8,7 @@ Admins can easily track all payments, manage commissions, and make sure settleme
 Sellers can request their earnings once orders are completed.
 Follow the steps below to request a payment.
 
-1) Go to **Order >> Payment Request**.
+1) Go to **Sales → Transactions** (Payment Request). Transactions are now grouped under the **Sales** menu in the seller panel.
 
 2) Click **"Payment Request"** to send a payout request to the admin.
 
