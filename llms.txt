@@ -1,74 +1,167 @@
-# Bagisto Documentation
+# Bagisto User Guide
 
-> The comprehensive guide to developing with Bagisto e-commerce platform
+> The complete guide to running a Bagisto store
 
-A complete reference for developers building and extending Bagisto stores
+A reference for merchants and store administrators working in the Bagisto admin panel
 
 ## Table of Contents
 
-### Prologue
+### Introduction
 
-- [Upgrade Guide](/2.3/prologue/upgrade-guide)
-- [Contribution Guide](/2.3/prologue/contribution-guide)
+- [Introduction](/getting-started/introduction)
+
+### Account
+
+- [Two Factor Authentication](/authentication/2fa-authentication)
+
+### Product Types
+
+- [Simple Product](/product-types/simple-product)
+- [Configurable Product](/product-types/configurable-product)
+- [Virtual Product](/product-types/virtual-product)
+- [Bundle Product](/product-types/bundle-product)
+- [Grouped Product](/product-types/grouped-product)
+- [Downloadable Product](/product-types/downloadable-product)
+- [Booking Product](/product-types/booking-product)
+
+### Category
+
+- [Create Category](/category/create-category)
+
+### Attributes
+
+- [Attribute Input Types](/attribute/attribute-input)
+- [Create Product Attributes](/attribute/product-attribute)
+- [Attribute Family](/attribute/attribute-family)
+
+### Orders
+
+- [Create Order](/orders/create-order)
+- [Create Invoice](/orders/create-invoice)
+- [Create Shipment](/orders/create-shipment)
+- [Create Refunds](/orders/create-refunds)
+- [Transactions](/orders/transactions)
+- [EU Withdrawal](/orders/eu-withdrawal)
+- [RMA](/orders/rma)
+
+### Customers
+
+- [Create Customer](/customer/create-customer)
+- [Customer Group](/customer/customer-group)
+- [Customer Group Pricing](/customer/customer-group-price)
+- [Customer Review](/customer/customer-review)
+
+### CMS
+
+- [Create CMS](/cms/create-cms)
+
+### Marketing
+
+- [Cart Rules](/marketing/cart-rules)
+- [Catalog Rules](/marketing/catalog-rules)
+- [Email Templates](/marketing/email-templates)
+- [Events](/marketing/events)
+- [Campaigns](/marketing/campaigns)
+- [Newsletter Subscriptions](/marketing/newsletter-subscription)
+- [Sitemaps](/marketing/sitemaps)
+- [URL Rewrite](/marketing/url-rewrite)
+- [Search Terms](/marketing/search-terms)
+- [Search Synonyms](/marketing/search-synonyms)
+
+### Reporting
+
+- [Sales](/reporting/sales-report)
+- [Customers](/reporting/customers-report)
+- [Products](/reporting/product-report)
+
+### Appearance
+
+- [Themes & Sections](/appearance/themes)
+
+### Settings
+
+- [Locales](/settings/locales)
+- [Currencies](/settings/currencies)
+- [Exchange Rates](/settings/exchange-rates)
+- [Inventory Source](/settings/inventory-source)
+- [Channels](/settings/channels)
+- [Users](/settings/users)
+- [Roles](/settings/roles)
+- [Taxes](/settings/taxes)
+- [Data Transfer](/settings/data-transfer)
+
+### Configure
+
+- [Address](/configure/address)
+- [Attribute](/configure/attribute)
+- [Back Orders](/configure/back-orders)
+- [Google Captcha](/configure/google-captcha)
+- [Cart View Page](/configure/cart-view-page)
+- [Checkout](/configure/checkout)
+- [Configurable Choices](/configure/configurable-choices)
+- [Content](/configure/content)
+- [Exchange Rates Configurations](/configure/exchange-rates-configurations)
+- [Copyright Content](/configure/coyright-content)
+- [Custom Scripts](/configure/custom-scripts)
+- [Cache Management](/configure/cache-management)
+- [Magic AI](/configure/magic-ai)
+- [Design](/configure/design)
+- [Email Settings](/configure/email-settings)
+- [Frontend](/configure/frontend)
+- [GDPR](/configure/gdpr)
+- [Guest Checkout](/configure/guest-checkout)
+- [Image Size](/configure/image-size)
+- [Invoice Settings](/configure/invoice-settings)
+- [Magic AI](/configure/magic-ai)
+- [Notifications](/configure/notifications)
+- [Order Settings](/configure/orders-settings)
+- [Pricing](/configure/pricing)
+- [Product View Page](/configure/product-view-page)
+- [Review](/configure/review)
+- [Rich Snippets](/configure/rich-snippets)
+- [Settings](/configure/settings)
+- [Shipping](/configure/shipping)
+- [Social Share](/configure/social-share)
+- [Taxes](/configure/taxes)
+- [Weight Unit](/configure/weight-unit)
 
 ### Introduction
 
-- [Requirements](/2.3/introduction/requirements)
-- [Installation](/2.3/introduction/installation)
-- [Docker](/2.3/introduction/docker)
-- [LLMs.txt](/2.3/introduction/llms)
+- [Shipping Methods](/shipping-method/shipping-methods)
+- [Payment Methods](/payment-method/payment-methods)
 
-### Architecture Concepts
+### B2B Marketplace
 
-- [Packages](/2.3/architecture/packages)
-- [Frontend](/2.3/architecture/frontend)
-- [Theme](/2.3/architecture/theme)
-- [Performance](/2.3/architecture/performance)
-- [Repository Pattern](/2.3/architecture/repository-pattern)
-- [Modular Design](/2.3/architecture/modular-design)
+- [Introduction](/b2b-marketplace/introduction)
+- [Request for Quotes](/b2b-marketplace/request-for-quotes)
+- [Buyer Seller Communication](/b2b-marketplace/buyer-seller-communication)
+- [Supplier Microsite](/b2b-marketplace/supplier-microsite)
+- [Buying leads](/b2b-marketplace/buying-leads)
+- [Review Management](/b2b-marketplace/b2b-marketplace-review)
 
-### Package Development
+### Multi Tenant Ecommerce
 
-- [Getting Started](/2.3/packages/create-package)
-- [Migrations](/2.3/packages/create-migrations)
-- [Models](/2.3/packages/create-models)
-- [Repositories](/2.3/packages/store-data-through-repositories)
-- [Routes](/2.3/packages/routes)
-- [Controllers](/2.3/packages/controllers)
-- [Views](/2.3/packages/views)
-- [Localization](/2.3/packages/localization)
-- [Blade Components](/2.3/packages/blade-components)
-- [Layouts](/2.3/packages/layouts)
-- [Bundling Assets](/2.3/packages/bundling-assets)
-- [Admin Menu](/2.3/packages/add-menu-in-admin)
-- [Validation](/2.3/packages/validation)
-- [DataGrid](/2.3/packages/datagrid)
-- [Access Control List](/2.3/packages/create-acl)
-- [System Configuration](/2.3/packages/create-system-configuration)
+- [Introduction](/multi-tenant-ecommerce/introduction)
+- [Super Admin Management](/multi-tenant-ecommerce/super-admin-management)
+- [Tenant Management](/multi-tenant-ecommerce/tenant-management)
+- [CName Mapping](/multi-tenant-ecommerce/cname-mapping)
 
-### Digging Deeper
+### B2B eCommerce Platform
 
-- [Shipping Method](/2.3/advanced/create-shipping-method)
-- [Payment Method](/2.3/advanced/create-payment-method)
-- [Product Type](/2.3/advanced/create-product-type)
-- [Events Listeners](/2.3/advanced/events)
-- [Helpers](/2.3/advanced/helpers)
-- [Override Core Models](/2.3/advanced/override-core-model)
-- [View Render Event](/2.3/advanced/render-event)
-- [Email Template](/2.3/advanced/change-email-template.md)
-- [Configure Elasticsearch](/2.3/advanced/indexing-products-to-elasticsearch.md)
-- [Best Security Practices](/2.3/advanced/security-practice)
-- [Data Transfer](/2.3/advanced/create-data-import)
+- [Introduction](/b2b-ecommerce-platform/introduction)
+- [Configuration](/b2b-ecommerce-platform/configuration)
+- [Company Registration](/b2b-ecommerce-platform/company-registration)
+- [Company Attributes](/b2b-ecommerce-platform/company-attributes)
+- [Role Based Permissions](/b2b-ecommerce-platform/role-based-permissions)
+- [Sales Representatives](/b2b-ecommerce-platform/sales-representative)
+- [Company Catalog](/b2b-ecommerce-platform/company-catalog)
+- [Company Credit](/b2b-ecommerce-platform/company-credit)
+- [Requisition Lists](/b2b-ecommerce-platform/requisition-lists)
+- [Quick Order](/b2b-ecommerce-platform/quick-order)
+- [Request for Quote](/b2b-ecommerce-platform/request-for-quote)
+- [Quotation Handling](/b2b-ecommerce-platform/quotation-handling)
+- [Purchase Orders](/b2b-ecommerce-platform/purchase-orders)
 
-### Themes
+### Introduction
 
-- [Store Theme](/2.3/themes/create-store-theme)
-- [Admin Theme](/2.3/themes/create-admin-theme)
-
-### Bagisto APIs
-
-- [Rest API](/2.3/api/getting-started-with-the-api)
-
-### Other
-
-- [Home](/2.3/index)
+- [Native Mobile App](/open-source-mobile-app/open-source-mobile-app)
