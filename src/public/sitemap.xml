@@ -2,438 +2,426 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://docs.bagisto.com</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.bagisto.com/appearance/themes</loc>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/attribute/attribute-family</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/attribute/attribute-input</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/attribute/product-attribute</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/authentication/2fa-authentication</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/b2b-ecommerce-platform/company-attributes</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/b2b-ecommerce-platform/company-catalog</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/b2b-ecommerce-platform/company-credit</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/b2b-ecommerce-platform/company-registration</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/b2b-ecommerce-platform/configuration</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/b2b-ecommerce-platform/introduction</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/b2b-ecommerce-platform/purchase-orders</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/b2b-ecommerce-platform/quick-order</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/b2b-ecommerce-platform/quotation-handling</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/b2b-ecommerce-platform/request-for-quote</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/b2b-ecommerce-platform/requisition-lists</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/b2b-ecommerce-platform/role-based-permissions</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/b2b-ecommerce-platform/sales-representative</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/b2b-marketplace/b2b-marketplace-review</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/b2b-marketplace/buyer-seller-communication</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/b2b-marketplace/buying-leads</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/b2b-marketplace/introduction</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/b2b-marketplace/request-for-quotes</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/b2b-marketplace/supplier-microsite</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/category/create-category</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/cms/create-cms</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/configure/address</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/configure/attribute</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/configure/back-orders</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/configure/cache-management</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.bagisto.com/configure/captcha</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/configure/cart-view-page</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/configure/checkout</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/configure/configurable-choices</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/configure/content</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/configure/coyright-content</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/configure/custom-scripts</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/configure/design</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/configure/email-settings</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/configure/exchange-rates-configurations</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/configure/frontend</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/configure/gdpr</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/configure/google-captcha</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/configure/guest-checkout</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/configure/image-size</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/configure/invoice-settings</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/configure/magic-ai</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/configure/notifications</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/configure/orders-settings</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.bagisto.com/configure/payment-methods</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/configure/pricing</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/configure/product-view-page</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/configure/review</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/configure/rich-snippets</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/configure/settings</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.bagisto.com/configure/shipping-methods</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/configure/shipping</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/configure/social-share</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/configure/taxes</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/configure/weight-unit</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/customer/create-customer</loc>
-    <lastmod>2026-08-10T11:13:22.529Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/customer/customer-group-price</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/customer/customer-group</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/customer/customer-review</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/getting-started/introduction</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/marketing/campaigns</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/marketing/cart-rules</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/marketing/catalog-rules</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/marketing/email-templates</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/marketing/events</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/marketing/newsletter-subscription</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/marketing/search-synonyms</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/marketing/search-terms</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/marketing/sitemaps</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/marketing/url-rewrite</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/multi-tenant-ecommerce/cname-mapping</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/multi-tenant-ecommerce/introduction</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/multi-tenant-ecommerce/super-admin-management</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/multi-tenant-ecommerce/tenant-management</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/open-source-mobile-app/open-source-mobile-app</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/orders/create-invoice</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/orders/create-order</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/orders/create-refunds</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/orders/create-shipment</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/orders/eu-withdrawal</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/orders/rma</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/orders/transactions</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/payment-method/payment-methods</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/product-types/booking-product</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/product-types/bundle-product</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/product-types/configurable-product</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/product-types/downloadable-product</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/product-types/grouped-product</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/product-types/simple-product</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/product-types/virtual-product</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/reporting/customers-report</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/reporting/product-report</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/reporting/sales-report</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/settings/channels</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/settings/currencies</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/settings/data-transfer</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/settings/exchange-rates</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/settings/inventory-source</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/settings/locales</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/settings/roles</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/settings/taxes</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.bagisto.com/settings/themes</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/settings/users</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
   <url>
     <loc>https://docs.bagisto.com/shipping-method/shipping-methods</loc>
-    <lastmod>2026-08-10T11:13:22.530Z</lastmod>
+    <lastmod>2026-08-24T06:02:58.027Z</lastmod>
   </url>
 </urlset>

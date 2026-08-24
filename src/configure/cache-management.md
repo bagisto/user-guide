@@ -2,7 +2,43 @@
 
 Cache Management allows the Admin to clear and rebuild various system caches to ensure that both the storefront and admin panel display the most up-to-date information while maintaining optimal performance.
 
-To manage cache settings, go to the Admin Panel and navigate to **Configure > General > Cache Management**.
+To manage cache settings, go to the Admin Panel and navigate to **Configure >> Cache Management**.
+
+## Full Page Cache
+
+Full Page Cache keeps a rendered copy of your storefront pages and serves that
+copy to the next visitor, instead of building the page again for every one of
+them. It is the setting that decides how quickly your storefront responds under
+load, and it is now controlled from the admin rather than by editing the server
+configuration.
+
+Go to **Configure >> Cache Management >> Full Page Cache**.
+
+<ImagePopup src="/images/configure/full-page-cache.png" alt="Full Page Cache settings" />
+
+- **Enable Full Page Cache** — when on, storefront pages are served from the
+  cache. Turning it off makes every page render again on each visit, which is
+  slower for shoppers but useful while you are diagnosing a page that looks
+  stale.
+- **Cache Lifetime (Minutes)** — how long a cached page is kept before it is
+  built again. Leave it empty to use the store's default.
+
+Click **Save Configuration** to apply your changes.
+
+### You do not have to clear it after an edit
+
+A cached page is refreshed automatically when the content behind it changes.
+Editing a category or a product clears the pages that show it — your home page
+and category listings included — across every channel, locale and currency they
+were cached under. Publishing a section does the same for the storefront it
+belongs to.
+
+So a lifetime is a backstop rather than the main mechanism. Set it long, and
+trust the automatic refresh for day-to-day edits.
+
+**Note:** A short lifetime is not a fix for a page that looks out of date. It
+only shortens how long the wrong page is shown. If a change is not appearing at
+all, clear the cache with the actions below and check the change was published.
 
 ## Cache Actions
 
@@ -31,7 +67,7 @@ Use these actions to pre-build caches and improve application performance.
 
 ## How to Execute Cache Actions
 
-**Step 1:** Navigate to **Configure > General > Cache Management**.
+**Step 1:** Navigate to **Configure >> Cache Management**.
 
 **Step 2:** Click the desired cache action button under either **Clear Cache** or **Build Cache**.
 

@@ -41,12 +41,21 @@ edit, so you can see the result before anyone else does.
 
 - **Reorder** — drag a section by its handle to change where it appears.
 - **Switch on or off** — use the toggle on the row.
-- **Duplicate** or **Delete** — from the row's menu.
-- **Change locale or channel** — from the selectors at the top. Each combination
-  is edited separately.
+- **Duplicate** or **Delete** — from the row's menu. Duplicating copies the
+  section with everything configured in it, which is the quickest way to build a
+  second carousel that differs in one filter. Deleting asks you to confirm and
+  cannot be undone — to take a section off the storefront and keep it, switch it
+  off instead.
+- **Change locale or channel** — from the selectors at the top, when your store
+  has more than one. Each combination is edited separately.
 - **Change device** — preview the storefront at desktop, tablet or mobile width.
 
 <ImagePopup src="/images/appearance/section-editor.png" alt="Section Editor" />
+
+The footer links section is pinned to the bottom of the page, so it has no drag
+handle and cannot be duplicated. Everything else can be moved freely.
+
+<ImagePopup src="/images/appearance/section-actions.png" alt="Duplicate and Delete on a section row" />
 
 ### Nothing goes live until you publish
 
@@ -77,49 +86,93 @@ its fields, then **Publish** when you are ready for it to appear.
 
 ### Product Carousel
 
-Shows products in a responsive carousel.
+A scrollable strip of products, used for the collections on your home page.
 
 **Title:** The heading shown above the carousel.
-**Filters:** Choose which products appear and in what order — for example by
-sort order, limit, category, or whether a product is new or featured.
+
+**Filters:** Which products appear, and in what order. Click **Add Filter**, then
+choose the filter and its value:
+
+- **Sort** — the order products are shown in, using the same sort options your
+  storefront listing offers.
+- **Limit** — how many products the strip holds.
+- **Category ID** — restrict the strip to one category. Categories are listed by
+  their full path, so two categories sharing a name can be told apart.
+- **Featured** — set to **Yes** to show only featured products.
+- **New** — set to **Yes** to show only products marked as new.
+
+Once every available filter has been added, the editor says so rather than
+offering an empty row. To drop a filter, use the bin beside it.
+
+<ImagePopup src="/images/appearance/product-carousel.png" alt="Product Carousel section fields" />
 
 ### Category Carousel
 
-Shows categories in a responsive carousel.
+A scrollable strip of categories, so shoppers can jump straight into a
+department.
 
-**Filters:** Choose which categories appear and in what order — for example by
-parent, status, or limit.
+**Filters:** Which categories appear, and in what order:
+
+- **Sort** — **Asc** or **Desc**.
+- **Limit** — how many categories the strip holds.
+- **Parent ID** — show the children of one or more chosen categories. Pick
+  **Root** to show your top-level departments.
+
+<ImagePopup src="/images/appearance/category-carousel.png" alt="Category Carousel section fields" />
 
 ### Image Carousel
 
-A slider or banner area. Add a slide at a time, each with:
+The banner slideshow at the top of your storefront. Click **Add Slider** to add a
+slide at a time, each with:
 
-**Title:** The slide title.
-**Link:** Where the slide points.
-**Image:** The slide image. A resolution of **1920 × 700** is recommended.
+**Slider Image:** The image itself. A resolution of **1920 × 700** is
+recommended, and JPEG, JPG, PNG and WEBP files are accepted.
+
+**Image Title:** The heading shown over the slide.
+
+**Link:** Where a shopper who clicks the slide is taken.
+
+Slides play in the order they are listed, and you can drag them to change it.
+
+<ImagePopup src="/images/appearance/image-carousel.png" alt="Image Carousel section fields" />
 
 ### Static Content
 
-A free-form block of your own markup.
+A free-form block of your own markup, for an announcement strip or a promotional
+band between two carousels.
 
-**HTML:** The content itself.
-**CSS:** Styles for the block.
+**HTML:** The content itself. Use **Add Media** to upload an image and drop it
+into the markup.
+
+**CSS:** Styles that apply to this block only.
 
 Both are cleaned before they are saved, so scripts and unsafe markup are
-stripped. Images used inside the HTML can be uploaded from the editor.
+stripped — a block that relies on them will not behave as written.
+
+<ImagePopup src="/images/appearance/static-content.png" alt="Static Content section fields" />
 
 ### Footer Links
 
-The storefront footer's link columns. Each column takes a set of links with a
-title and a URL.
+The link columns in your storefront footer. The footer holds two columns,
+**Column 1** and **Column 2**. Use **Add Link** on either, and give each link a
+**Title** — the wording a shopper reads — and a **URL**. Links can be dragged
+into a different order within their column.
 
 A channel shows **one footer links section**, so once a channel has one, the type
-is no longer offered.
+is no longer offered when you create a section.
 
 ### Services Content
 
-The service promises shown across the storefront — free delivery, returns, and
-similar. Each entry takes a title, a description, and an icon.
+The service promises shown across the storefront — free delivery, easy returns,
+and similar. Click **Add Services** to add an entry, each with:
+
+**Service Icon:** The icon shown beside the promise.
+
+**Title:** The promise itself, kept to a few words.
+
+**Description:** A single line of supporting detail.
+
+<ImagePopup src="/images/appearance/services-content.png" alt="Services Content section fields" />
 
 Because this section and the footer are drawn on every page rather than just the
 home page, publishing a change to either refreshes the whole storefront cache.
