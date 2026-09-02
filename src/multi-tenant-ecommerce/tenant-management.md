@@ -1,104 +1,78 @@
 # Tenant Management
 
-**Tenant Management** in the SaaS makes it easy for tenants to sign up and quickly create their online store by filling in their login, personal, and organization information.
+A **tenant** is a merchant running their own store on the platform. Signing up takes three short steps, after which the tenant's storefront and admin panel are provisioned automatically, so they can start selling without any technical setup.
 
-After registration, the tenant’s storefront is set up automatically, allowing them to begin selling immediately without any technical difficulties.
+The **Tenant Admin panel** is a full Bagisto backend. A merchant manages products, categories, attributes, customers, and orders there exactly as in a standard Bagisto store, and also gets a **Billing** menu for their subscription.
 
-Using the **Tenant Admin Panel**, tenants can manage products, categories, attributes, customers, and more through a user-friendly interface similar to Bagisto. Tenants can also manage orders by creating invoices, setting up shipments, and using other menu options to run their store efficiently.
+## Register a store
 
-## Tenant Registration
+Open the platform address and go to the registration page. Registration runs in three steps, shown as **01 Your Sign**, **02 Account**, and **03 You**. The store's address is reserved at the first step.
 
-There are three steps to register on the SaaS:
+**Step 1 — Your Sign.** Enter the **Store name** and a **Username**. As you type the username, the subdomain your store will live at is previewed below it (for example, **aishaceramics.rootdomain.com**). Click **Reserve & continue**.
 
-### Step 1
-The tenant must enter the **Authentication Credentials**, such as:
-- **Email**
-- **Password**
-- **Confirm Password**
+<ImagePopup src="/images/multi-tenant-ecommerce/tenant-register-1.png" alt="Registration step 1 — store name and username" />
 
-Then, click on the **Continue** button.
+**Step 2 — Account.** Enter the **Email**, **Password**, and **Confirm password** the store will sign in with. Click **Continue**.
 
-<ImagePopup src="/images/multi-tenant-ecommerce/1-registration-tenant.png" alt="Tenant Registration Step 1" />
+<ImagePopup src="/images/multi-tenant-ecommerce/tenant-register-2.png" alt="Registration step 2 — account details" />
 
-### Step 2
-The tenant must enter their **Personal Details**, such as:
-- **First Name**
-- **Last Name**
-- **Phone Number**
+**Step 3 — You.** Enter the owner's **First name**, **Last name**, and **Phone**. Click **Open your store** to finish.
 
-Then, click on **Continue**.
+<ImagePopup src="/images/multi-tenant-ecommerce/tenant-register-3.png" alt="Registration step 3 — personal details" />
 
-<ImagePopup src="/images/multi-tenant-ecommerce/2-registration-tenant.png" alt="Tenant Registration Step 2" />
+### The store is set up for you
 
-### Step 3
-The tenant must enter the **Organization Details**, such as:
-- **Username**
-- **Organization Name**
+Once registration finishes, the storefront and admin panel are created automatically. There is nothing to install — the tenant can sign in and begin adding products right away.
 
-<ImagePopup src="/images/multi-tenant-ecommerce/3-registration-tenant.png" alt="Tenant Registration Step 3" />
+## Sign in to an existing store
 
-## Tenant Storefront
+A returning merchant goes to the **Sign in** page and enters their **Email**. The platform looks up their store and redirects them to sign in at their own store's address.
 
-After registration is complete, the tenant's online store is set up automatically. As shown in the image below, this store is where customers can browse and purchase products.
+<ImagePopup src="/images/multi-tenant-ecommerce/tenant-sign-in.png" alt="Find your store sign-in" />
 
-<ImagePopup src="/images/multi-tenant-ecommerce/4-tenant-store.png" alt="Tenant Storefront" />
+They can also go straight to their store's admin login at **their-domain/admin/login**.
 
-## Tenant Admin Panel
+<ImagePopup src="/images/multi-tenant-ecommerce/tenant-admin-login.png" alt="Tenant admin login" />
 
-After registration, tenants can access their admin panel through a unique URL (e.g., **site1.bagisto.com/saas-common/admin/dashboard**).
+## The storefront
 
-As shown in the image below, the panel provides a **Bagisto-like backend** where tenants can manage their store operations.
+After registration the store is live and ready for customers to browse and buy.
 
-<ImagePopup src="/images/multi-tenant-ecommerce/5-tenant-dashboard.png" alt="Tenant Admin Dashboard" />
+<ImagePopup src="/images/multi-tenant-ecommerce/tenant-store.png" alt="Tenant storefront" />
 
-## Order Management
+## The admin panel
 
-Tenants can easily handle their orders from the admin panel, as shown in the image below.
+Signing in opens the Tenant Admin dashboard. A **Store Setup** checklist walks a new merchant through getting ready to sell — add a product, group products into a category, name the store and pick a channel, choose a theme, turn on a payment method and a shipping method, and receive the first order. Below it, the dashboard shows store stats, overall and today's sales, orders, and customers.
 
-<ImagePopup src="/images/multi-tenant-ecommerce/6-order.png" alt="Order Management" />
+<ImagePopup src="/images/multi-tenant-ecommerce/tenant-dashboard.png" alt="Tenant admin dashboard" />
 
-This allows them to:
-- Check order details
-- Follow order status
-- Carry out actions related to their orders
+### Running the store
 
-## Invoice Management
+Because the Tenant Admin panel is a standard Bagisto backend, day-to-day store operations work exactly as documented in the rest of this guide:
 
-Tenants can generate invoices for their orders by selecting the **Invoice** option and clicking the **Create Invoice** button, as shown below.
+- **Products** — create and manage products under **Catalog >> Products**. See [Simple Product](../product-types/simple-product).
+- **Categories, attributes, and attribute families** — organize the catalog under **Catalog**. See [Create Category](../category/create-category).
+- **Orders** — handle orders under **Sales >> Orders**. See [Create Order](../orders/create-order), [Create Invoice](../orders/create-invoice), and [Create Shipment](../orders/create-shipment).
+- **Storefront theme** — choose and customize the store's design, depending on what the subscription allows. See [Storefront Themes](./storefront-themes).
 
-<ImagePopup src="/images/multi-tenant-ecommerce/7-invoice.png" alt="Invoice Management" />
+## Manage profile details
 
-## Manage Shipments
+Under **Settings**, a merchant opens **Edit Company Detail** to update their profile. They can change:
 
-Tenants can create shipments for their orders by selecting the **Ship** option and proceeding with the **Create Shipment** button, as shown below.
+**First Name** and **Last Name**
+**Email**
+**Skype**
+**cName** — the custom domain to point at the store (see [CName Mapping](./cname-mapping))
+**Phone**
 
-<ImagePopup src="/images/multi-tenant-ecommerce/8-create-shipment.png" alt="Create Shipment" />
+<ImagePopup src="/images/multi-tenant-ecommerce/tenant-profile.png" alt="Edit company detail" />
 
-## Manage Products and Catalog
+Click **Save Detail** to keep the changes, or **Back** to return.
 
-Tenants can **create, edit, and delete** products for their store as needed. They can also update the product status as **Active** or **Disable** whenever required.
+## Billing
 
-<ImagePopup src="/images/multi-tenant-ecommerce/9-product.png" alt="Product Management" />
+The **Billing** menu is where a merchant reviews their subscription plan, usage, invoices, and billing address, and upgrades or changes plans. This is covered in full in [Subscription Plans & Billing](./subscription).
 
-Apart from **products**, tenants can also create and manage:
-- **Categories**
-- **Attributes**
-- **Attribute Families**
+The **Billing Address** used on subscription invoices is managed under **Billing >> Billing Address** — click **Add Address** to add one.
 
-To organize their store efficiently.
-
-## Manage Profile Details
-
-Under the **Tenant Side Menu**, tenants can manage and change their profile details. They can modify information such as:
-
-- **First Name and Last Name**
-- **Email Address**
-- **Skype ID**
-- **CName**
-- **Phone Number**
-
-<ImagePopup src="/images/multi-tenant-ecommerce/10-tenant-profile.png" alt="Tenant Profile Details" />
-
-Once the details are updated, tenants can click **Save Detail** or choose **Back** to return to the previous screen.
-
-Additionally, tenants can explore other menu options available to manage their store more effectively.
+<ImagePopup src="/images/multi-tenant-ecommerce/tenant-billing-address.png" alt="Billing address" />

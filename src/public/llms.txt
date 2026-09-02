@@ -143,7 +143,12 @@ A reference for merchants and store administrators working in the Bagisto admin 
 
 - [Introduction](/multi-tenant-ecommerce/introduction)
 - [Super Admin Management](/multi-tenant-ecommerce/super-admin-management)
+- [Subscription Plans & Billing](/multi-tenant-ecommerce/subscription)
+- [Super Admin Settings](/multi-tenant-ecommerce/super-admin-settings)
+- [CMS Management](/multi-tenant-ecommerce/cms-management)
+- [Configuration](/multi-tenant-ecommerce/configuration)
 - [Tenant Management](/multi-tenant-ecommerce/tenant-management)
+- [Storefront Themes](/multi-tenant-ecommerce/storefront-themes)
 - [CName Mapping](/multi-tenant-ecommerce/cname-mapping)
 
 ### B2B eCommerce Platform

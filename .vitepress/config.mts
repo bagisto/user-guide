@@ -377,8 +377,28 @@ export default defineConfig({
             link: "/multi-tenant-ecommerce/super-admin-management",
           },
           {
+            text: "Subscription Plans & Billing",
+            link: "/multi-tenant-ecommerce/subscription",
+          },
+          {
+            text: "Super Admin Settings",
+            link: "/multi-tenant-ecommerce/super-admin-settings",
+          },
+          {
+            text: "CMS Management",
+            link: "/multi-tenant-ecommerce/cms-management",
+          },
+          {
+            text: "Configuration",
+            link: "/multi-tenant-ecommerce/configuration",
+          },
+          {
             text: "Tenant Management",
             link: "/multi-tenant-ecommerce/tenant-management",
+          },
+          {
+            text: "Storefront Themes",
+            link: "/multi-tenant-ecommerce/storefront-themes",
           },
           {
             text: "CName Mapping",
