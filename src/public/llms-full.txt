@@ -5299,264 +5299,500 @@ The display below shows how reviews appear to customers.
 
 ![Review Frontend View](/images/b2b-marketplace/8-review-at-frontend.png)
 
-# Multi Tenant Ecommerce 
+# Multi Tenant Ecommerce
 
-[Multi-Tenant eCommerce](https://bagisto.com/en/laravel-multi-tenant-saas/) in Bagisto allows businesses to build a SaaS-based marketplace platform where multiple vendors or merchants can create and manage their own individual stores under a single system.
+## Multi Tenant Ecommerce
 
-Each tenant (merchant) gets a dedicated storefront with complete control over products, categories, orders, and customers, while the platform owner manages the overall infrastructure, subscriptions, and revenue models. This setup reduces operational costs for merchants, as they don’t need to invest in separate eCommerce development or hosting.
+[Multi-Tenant eCommerce](https://bagisto.com/en/laravel-multi-tenant-saas/) in Bagisto lets you run a SaaS platform where many merchants create and manage their own individual stores under a single system.
 
-### Super Admin Management 
+Each tenant (merchant) gets a dedicated storefront and admin panel with complete control over products, categories, orders, and customers, while you — the platform owner — manage the overall infrastructure, subscription plans, and revenue from one place. This setup reduces operational costs for merchants, as they do not need to invest in separate eCommerce development or hosting.
 
-The Super Admin position is the top authority in the SaaS mall, in charge of overseeing tenants, staff, and the entire platform's operations.
+The platform is run from two separate panels:
 
-This role includes managing merchants (tenants), giving roles to staff (agents), and making sure everything works well together in the system.
+- The **Super Admin panel**, where you oversee every tenant, subscription plan, and platform-wide setting.
+- The **Tenant Admin panel**, a Bagisto-like backend each merchant uses to run their own store.
 
-Super Admins set up what products are visible, manage channels, and design themes to keep a consistent look and branding for all tenant stores.
+![Multi-tenant SaaS overview](/images/multi-tenant-ecommerce/multi-tenant.webp)
 
-They also take care of CMS pages, send out email broadcasts, and manage global settings to ensure clear communication and proper governance of the platform.
+## What you can do
 
-### Tenant Management
+### Super Admin
 
-Tenant Management in the SaaS makes it easy for tenants to sign up and quickly create their online store by filling in their login, personal, and organization information.
+The Super Admin is the top authority on the platform. From the Super Admin panel you can:
 
-After they register, the tenant’s storefront is set up automatically, so they can begin selling immediately without any technical difficulties.
+- Register tenants, view their store insights, edit them, and sign in as any tenant.
+- Create subscription plans, watch which tenants have purchased them, and review subscription invoices.
+- Manage platform staff (agents) and their roles, currencies, exchange rates, webhooks, and Super Admin themes.
+- Publish CMS pages and configure platform-wide payment, trial, and notification settings.
 
-Using the Tenant Admin Panel, tenants can manage products, categories, attributes, customers, and more through a user-friendly interface similar to Bagisto.
+See [Super Admin Management](./super-admin-management), [Subscription Plans & Billing](./subscription), [Super Admin Settings](./super-admin-settings), [CMS Management](./cms-management), and [Configuration](./configuration).
 
-Tenants can also manage orders by making invoices, setting up shipments, and using other menu options to run their store efficiently.
+### Tenant
+
+A tenant signs up, gets a storefront and admin panel provisioned automatically, and starts selling right away. Using the Tenant Admin panel, a merchant can manage products, categories, attributes, customers, and orders, and can review their own subscription plan, usage, and invoices.
+
+See [Tenant Management](./tenant-management).
 
 ### CName Mapping
 
-CName Mapping lets tenants connect their own domain to the subdomain made by the SaaS, which helps with professional branding.
+Each tenant is reachable at a default subdomain such as **username.rootdomain.com**. With CNAME mapping, a tenant can point their own domain at that subdomain for professional branding, without any extra plugins.
 
-When a tenant signs up, a default subdomain like **username.rootdomain.com** is created. With CNAME, their actual domain can be directed to this subdomain.
+See [CName Mapping](./cname-mapping).
 
-This makes it easy for customers to find the store and keeps a reliable, consistent online image.
+## Super Admin Management
 
-The mapping is set up through the tenant's DNS provider and the SaaS by the Super Admin, and it doesn't need any extra plugins.
+The **Super Admin** is the top authority on the platform, in charge of tenants, staff, and platform-wide operations. From the Super Admin panel you oversee every merchant store, manage subscription plans, and keep the platform running smoothly.
 
-![Super Admin Login](/images/multi-tenant-ecommerce/multi-tenant.webp)
+## Sign in to the Super Admin panel
 
-# Super Admin Management
+**Step 1:** Open the platform address and go to **/super/login**. You can also reach it from the **Super Admin Login** link on the registration page.
 
-The **Super Admin** position is the top authority in the SaaS mall, in charge of overseeing tenants, staff, and the entire platform's operations.
+**Step 2:** Enter your registered **Email Address** and **Password**, then click **Sign In**.
 
-This role includes:
-- Managing merchants (tenants)
-- Assigning roles to staff (agents)
-- Ensuring smooth system operations
+![Super Admin Sign In](/images/multi-tenant-ecommerce/super-login.png)
 
-Super Admins set up product visibility, manage channels, and design themes to maintain a consistent look and branding for all tenant stores. They also handle CMS pages, send email broadcasts, and manage global settings to ensure clear communication and proper governance of the platform.
+## Dashboard
 
+After you sign in, the **Dashboard** opens with an overview of the whole platform: total and active tenants, active subscriptions, total revenue, recent tenants, recent invoices, and expiring plans.
 
-## Access the Super Admin Panel
+![Super Admin Dashboard](/images/multi-tenant-ecommerce/super-dashboard.png)
 
-### Steps to Sign In
+## Insights
 
-1. Visit the registration page and click the **Super Admin Login** button located in the top right corner.
+Go to **Insights** for a performance view across all tenants. The top cards show **Gross Volume**, **Orders**, **Active Tenants**, and **New Signups** for the selected period, which you can switch between **7d**, **30d**, and **90d**.
 
-2. Enter your registered **Email Address and Password**, then click **Sign In** to access the panel.
+Below the cards, the **Trend** chart plots volume and orders over time, **Needs Attention** flags tenants that require a look, and the **Leaderboard** ranks tenants by gross volume, orders, average order, and customers. Use **Export** to download the leaderboard.
 
-![Super Admin Login](/images/multi-tenant-ecommerce/1-super-login.png)
+![Tenant Insights and Leaderboard](/images/multi-tenant-ecommerce/super-insights.png)
 
-After successfully signing in, the **Super Admin Dashboard** will open, as shown below. The Super Admin can view all the tenants registered on their SaaS panel.
+## Tenants
 
-![Super Admin Dashboard](/images/multi-tenant-ecommerce/2-super-dashboard.png)
+Go to **Tenants >> Tenants** to see every tenant on the platform. You can **search**, **filter**, and **paginate** the list to find a store quickly.
 
-Here, you can browse through the list of tenants and use options to **search, filter, and paginate** for easy access.
+![Tenants list](/images/multi-tenant-ecommerce/super-tenants.png)
 
-Additionally, the **Super Admin** can register a new tenant directly from the Super Admin panel by clicking the **Register Tenant** button in the top right-hand corner.
+### Register a tenant
 
-![Super Admin Create Tenant](/images/multi-tenant-ecommerce/3-super-create-tenant.png)
+You can add a tenant directly from the Super Admin panel. Click **Register Tenant** (or **Create**) in the top right and fill in the form.
 
-### Enter the Following Super Admin Details
+![Create Tenant form](/images/multi-tenant-ecommerce/super-create-tenant.png)
 
-- **First Name:** Enter the first name.
+**First Name:** The tenant's first name.
+**Last Name:** The tenant's last name.
+**Email:** The email the tenant signs in with.
+**Phone:** A contact number.
+**Organization Name:** The store's business name.
+**User Name:** Used to build the tenant's default subdomain.
+**Password / Confirm Password:** The tenant's sign-in password.
+**Profile Image:** An optional profile picture, in PNG or JPG at **110 × 110**.
 
-- **Last Name:** Enter the last name.
+Click **Save Tenant** to create the store. The tenant's storefront and admin panel are provisioned automatically.
 
-- **Phone:** Provide the phone number.
+### View a tenant's insights
 
-- **User Name:** Enter the username.
+Click the **View** (eye) icon on a tenant row to open **Tenant Insights**, a read-only summary of that store: its subscription plan, domain information, counts of attributes, attribute families, products, categories, customers, and customer groups, and the tenant's address list.
 
-- **Organization Name:** Mention the organization name.
+![Tenant Insights](/images/multi-tenant-ecommerce/super-tenant-view.png)
 
-- **Email Address:** Provide the email.
+From this screen you can also **Cancel Plan**, **Assign** a plan, or **Login As Tenant** (see below).
 
-- **Password:** Provide the password.
+### Edit or delete a tenant
 
-- **Confirm Password:** Confirm the password.
+Click the **Edit** (pencil) icon to change a tenant's details, such as name, contact information, organization, or CNAME.
 
-- **Profile Image:** Add the profile image.
+![Edit Tenant](/images/multi-tenant-ecommerce/super-edit-tenant.png)
 
-Finally, click the **Save Tenant** button to save the new tenant.
+To remove a tenant, click the **Delete** icon on the row and confirm.
 
-## Tenant Insights
+### Sign in as a tenant
 
-To view all the details about a tenant, navigate to **Tenants → Tenants** and click on the **View** icon.
+From a tenant's view page, click **Login As Tenant** to open that merchant's admin panel as them. This is useful for support — you see exactly what the merchant sees.
 
-Under the **Tenant Insights**, the Super Admin can see all the information about the tenant's store, as shown in the image below:
+### This does not undo a delete
 
-![Super Admin Tenant Insights](/images/multi-tenant-ecommerce/4-super-tenant-insights.png)
+Deleting a tenant removes the store and its data. There is no undo, so confirm you have the right tenant before you delete.
 
-### Tenant Insights Information
+## Tenants' customers, products, and orders
 
-- **Domain Information:** Details of the tenant.
+The Super Admin can review the data behind every tenant store in read-only lists.
 
-- **Attribute Information:** Number of attributes of the tenant.
+- **Customers** — go to **Tenants >> Customers** to see every customer across all tenant stores.
 
-- **Attribute Family Information:** Number of attribute families of the company.
+  ![All tenant customers](/images/multi-tenant-ecommerce/super-customers.png)
 
-- **Product Information:** Number of products available from that company.
+- **Products** — go to **Tenants >> Products** to see every product across all tenant stores.
 
-- **Category Information:** Number of categories available to that company.
+  ![All tenant products](/images/multi-tenant-ecommerce/super-products.png)
 
-- **Customer Information:** Number of customers available.
+- **Orders** — go to **Tenants >> Orders** to see every order across all tenant stores.
 
-- **Customer Group Information:** Number of customer groups of the tenant.
+  ![All tenant orders](/images/multi-tenant-ecommerce/super-orders.png)
 
-**Note:** The Super Admin can only **view** tenant insights and cannot delete, update, or edit any of the information shown here.
+### These lists are view only
 
-## Edit Tenant Details
+On the customers, products, and orders lists you can browse, search, and filter, but you cannot edit or delete a tenant's records. Only the tenant manages their own store data.
 
-The **Super Admin** can edit tenant details such as name, contact info, or organization, as shown below:
+## Subscription Plans & Billing
 
-![Super Admin Edit Tenant](/images/multi-tenant-ecommerce/5-super-edit-tenant.png)
+Subscriptions are how the platform earns from its tenants. As Super Admin you build the plans, set what each one allows, and price them. Each tenant then chooses a plan, pays for it, and runs their store within that plan's limits.
 
-However, the **Super Admin** also has the ability to **delete** a tenant if needed by clicking the **Delete** button for that tenant.
+There are two sides to this feature: the **Super Admin** side, where plans are created and tracked, and the **Tenant** side, where a merchant subscribes and manages their billing.
 
-![Super Admin Delete Tenant](/images/multi-tenant-ecommerce/6-super-delete-tenant.png)
+## Super Admin: create and manage plans
 
-## Tenant’s Customer
+Go to **Subscription >> Plans** to see every plan, with its code, name, monthly and yearly amount, and status.
 
-By navigating to **Tenants → Customers**, the Super Admin can view all the customer lists of their tenants, as shown in the image below:
+![Subscription plans list](/images/multi-tenant-ecommerce/super-plans.png)
 
-![Super Admin Customer List](/images/multi-tenant-ecommerce/7-super-customer-list.png)
+### Create a plan
 
-**Note:** The Super Admin can only **view** the customer list and cannot delete, update, or edit any customer details.
+Click **Create Plan** and fill in the form.
 
-## Tenant’s Products
+![Add Plan form](/images/multi-tenant-ecommerce/super-create-plan.png)
 
-By navigating to **Tenants → Products**, the Super Admin can view all the product lists of their tenants, as shown in the image below:
+**General**
 
-![Super Admin Product List](/images/multi-tenant-ecommerce/8-super-product-list.png)
+**Code:** A unique identifier for the plan. Use only letters, numbers, dashes, and underscores.
+**Name:** The plan name a tenant sees, such as *Starter* or *Growth*.
+**Description:** A short summary of what the plan offers.
 
-**Note:** The Super Admin can only **view** the product list and cannot delete, update, or edit any product details.
+**Billing Amount**
 
-## Tenant’s Orders
+**Monthly Amount:** The price when billed monthly.
+**Yearly Amount (Month by Month):** The per-month price when billed yearly.
 
-By navigating to **Tenants → Orders**, the Super Admin can view all the orders of their tenants, as shown in the image below:
+**Plan Limitation**
 
-![Super Admin Order List](/images/multi-tenant-ecommerce/9-super-order-list.png)
+These set the ceilings a tenant on this plan cannot exceed. Enter a number for each:
 
-**Note:** The Super Admin can only **view** the orders list and cannot delete, update, or edit any order details.
+**Allowed Products**, **Allowed Categories**, **Allowed Attributes**, **Allowed Attribute Families**, **Allowed Channels**, and **Allowed Orders**.
 
-# Tenant Management
+**Premium Themes:** Choose whether premium themes are **Included** or **Not included** on this plan. This controls which [storefront themes](./storefront-themes) a tenant on the plan can use.
 
-**Tenant Management** in the SaaS makes it easy for tenants to sign up and quickly create their online store by filling in their login, personal, and organization information.
+**Offers**
 
-After registration, the tenant’s storefront is set up automatically, allowing them to begin selling immediately without any technical difficulties.
+Add an optional discount shown against the plan:
 
-Using the **Tenant Admin Panel**, tenants can manage products, categories, attributes, customers, and more through a user-friendly interface similar to Bagisto. Tenants can also manage orders by creating invoices, setting up shipments, and using other menu options to run their store efficiently.
+**Status:** Whether the offer is active.
+**Title:** The offer label.
+**Type:** **Fixed** or **Percentage**.
+**Discount:** The amount taken off.
 
-## Tenant Registration
+Click **Save Plan** to publish it. You can **Edit** or **Delete** a plan later from the list.
 
-There are three steps to register on the SaaS:
+### A plan in use cannot be deleted
 
-### Step 1
-The tenant must enter the **Authentication Credentials**, such as:
-- **Email**
-- **Password**
-- **Confirm Password**
+Once a tenant has purchased a plan, you can no longer delete it, because it is tied to that tenant's subscription. Edit it instead, or create a new plan.
 
-Then, click on the **Continue** button.
+### Purchased Plans
 
-![Tenant Registration Step 1](/images/multi-tenant-ecommerce/1-registration-tenant.png)
+Go to **Subscription >> Purchased Plans** to see which tenants are on which plan, the amount, the billing period, and the profile state.
 
-### Step 2
-The tenant must enter their **Personal Details**, such as:
-- **First Name**
-- **Last Name**
-- **Phone Number**
+![Purchased plans](/images/multi-tenant-ecommerce/super-purchased-plans.png)
 
-Then, click on **Continue**.
+Click the **View** (eye) icon on a row to see the full subscription profile for that tenant.
 
-![Tenant Registration Step 2](/images/multi-tenant-ecommerce/2-registration-tenant.png)
+### Subscription Invoices
 
-### Step 3
-The tenant must enter the **Organization Details**, such as:
-- **Username**
-- **Organization Name**
+Go to **Subscription >> Invoices** to see every invoice raised for a subscription, with the customer, total, expiry, and creation date. Click the **View** icon to open an individual invoice.
 
-![Tenant Registration Step 3](/images/multi-tenant-ecommerce/3-registration-tenant.png)
+![Subscription invoices](/images/multi-tenant-ecommerce/super-invoices.png)
 
-## Tenant Storefront
+### Assign or cancel a tenant's plan
 
-After registration is complete, the tenant's online store is set up automatically. As shown in the image below, this store is where customers can browse and purchase products.
+From a tenant's [insights page](./super-admin-management#view-a-tenant-s-insights) you can **Assign** a plan to a tenant directly, or **Cancel Plan** to stop their current subscription.
 
-![Tenant Storefront](/images/multi-tenant-ecommerce/4-tenant-store.png)
+## Tenant: subscribe and manage billing
 
-## Tenant Admin Panel
+A merchant manages their own subscription from the **Billing** menu in their admin panel.
 
-After registration, tenants can access their admin panel through a unique URL (e.g., **site1.bagisto.com/saas-common/admin/dashboard**).
+### Plan Overview
 
-As shown in the image below, the panel provides a **Bagisto-like backend** where tenants can manage their store operations.
+Go to **Billing >> Overview** for a snapshot of the current plan: its name and price, next billing date, payment status, and payment method.
 
-![Tenant Admin Dashboard](/images/multi-tenant-ecommerce/5-tenant-dashboard.png)
+![Tenant plan overview](/images/multi-tenant-ecommerce/tenant-billing-overview.png)
 
-## Order Management
+**Plan Usage** shows how much of each allowance is used — products, categories, attributes, attribute families, channels, and orders — as a bar against the plan's limit. **Purchased Plan History** below lists every plan the store has been on.
 
-Tenants can easily handle their orders from the admin panel, as shown in the image below.
+### Approaching a limit
 
-![Order Management](/images/multi-tenant-ecommerce/6-order.png)
+When a store gets close to a plan allowance, the usage bar warns the merchant. To keep adding once a limit is reached, they upgrade to a plan with a higher allowance.
 
-This allows them to:
-- Check order details
-- Follow order status
-- Carry out actions related to their orders
+### Choose a plan
 
-## Invoice Management
+Go to **Billing >> Plans** to compare every available plan side by side, each with its price and feature list. Toggle between **Monthly** and **Yearly** pricing, and the current plan is marked. Click **Choose** on a plan to start subscribing to it.
 
-Tenants can generate invoices for their orders by selecting the **Invoice** option and clicking the **Create Invoice** button, as shown below.
+![Choose a subscription plan](/images/multi-tenant-ecommerce/tenant-plans.png)
 
-![Invoice Management](/images/multi-tenant-ecommerce/7-invoice.png)
+At checkout the merchant enters their billing details, picks a payment method — **Stripe**, **PayPal**, or **Manual** — and confirms. With Stripe or PayPal they are redirected to pay securely; with Manual, an invoice is generated instead.
 
-## Manage Shipments
+### Invoices
 
-Tenants can create shipments for their orders by selecting the **Ship** option and proceeding with the **Create Shipment** button, as shown below.
+Go to **Billing >> Invoices** for the store's own subscription invoices. Click the **View** icon to open one.
 
-![Create Shipment](/images/multi-tenant-ecommerce/8-create-shipment.png)
+![Tenant subscription invoices](/images/multi-tenant-ecommerce/tenant-invoices.png)
 
-## Manage Products and Catalog
+### Purchased Plan History
 
-Tenants can **create, edit, and delete** products for their store as needed. They can also update the product status as **Active** or **Disable** whenever required.
+Go to **Billing >> Plans** and open the history, or view it on the overview, to see every plan the store has subscribed to, with the paid amount, payment cycle, and state.
 
-![Product Management](/images/multi-tenant-ecommerce/9-product.png)
+![Purchased plan history](/images/multi-tenant-ecommerce/tenant-plan-history.png)
 
-Apart from **products**, tenants can also create and manage:
-- **Categories**
-- **Attributes**
-- **Attribute Families**
+## Super Admin Settings
 
-To organize their store efficiently.
+The **Settings** menu holds the platform-wide controls: who can run the platform with you, the currencies tenants are billed in, the webhooks that notify your other systems, and the themes and emails that shape how the platform presents itself.
 
-## Manage Profile Details
+## Agents
 
-Under the **Tenant Side Menu**, tenants can manage and change their profile details. They can modify information such as:
+Go to **Settings >> Agents** to manage the staff who help you run the platform. The list shows each agent's name, email, role, and status.
 
-- **First Name and Last Name**
-- **Email Address**
-- **Skype ID**
-- **CName**
-- **Phone Number**
+![Agents list](/images/multi-tenant-ecommerce/settings-agents.png)
 
-![Tenant Profile Details](/images/multi-tenant-ecommerce/10-tenant-profile.png)
+Click **Create Agent** to add a staff member with a name, email, password, and role. Use the **Edit** and **Delete** icons on a row to change or remove an agent.
 
-Once the details are updated, tenants can click **Save Detail** or choose **Back** to return to the previous screen.
+## Roles
 
-Additionally, tenants can explore other menu options available to manage their store more effectively.
+Go to **Settings >> Roles** to control what agents can do. A role is either given **All** access or a custom set of permissions across the platform's sections.
 
-# CName Mapping
+![Roles list](/images/multi-tenant-ecommerce/settings-roles.png)
+
+Click **Create Role**, give it a name and description, choose its access level, and save. Assign the role to an agent from the Agents screen.
+
+## Currencies
+
+Go to **Settings >> Currencies** to manage the currencies available on the platform. Each currency has a code, name, and symbol.
+
+![Currencies list](/images/multi-tenant-ecommerce/settings-currencies.png)
+
+## Exchange Rates
+
+Go to **Settings >> Exchange Rates** to set the rate of each currency against the base currency, so amounts convert correctly across the platform.
+
+![Exchange rates](/images/multi-tenant-ecommerce/settings-exchange-rates.png)
+
+## Webhooks
+
+Webhooks let the platform tell your other systems when something happens — a tenant signs up, a subscription changes, an invoice is paid. Go to **Settings >> Webhooks** to see every endpoint, its URL, the number of events it is subscribed to, its status, and when it was last delivered to.
+
+![Webhook endpoints](/images/multi-tenant-ecommerce/settings-webhooks.png)
+
+### Create an endpoint
+
+Click **Create Endpoint** and fill in the form.
+
+![Create webhook endpoint](/images/multi-tenant-ecommerce/settings-webhook-create.png)
+
+**Name:** A label for the endpoint.
+**Endpoint URL:** Where events are sent. HTTPS is required; redirects are not followed and internal addresses are blocked.
+**Description:** An optional note.
+**Status:** Whether the endpoint is **Active**.
+
+Under **Subscribed Events**, choose which events this endpoint receives, grouped as **Tenant** (created, provisioned, updated, deleted), **Subscription** (activated, changed, cancelled, trial ending, expired), and **Billing** (invoice paid, payment failed). Only the selected events are delivered.
+
+Click **Save Endpoint**. Events are delivered as signed JSON requests.
+
+### Webhook Deliveries
+
+Go to **Settings >> Webhook Deliveries** to see the log of every delivery attempt, its event, status, and timing. Open a delivery to inspect it, and retry one that failed.
+
+![Webhook deliveries log](/images/multi-tenant-ecommerce/settings-webhook-deliveries.png)
+
+## Themes
+
+Go to **Settings >> Themes** to manage the content blocks that make up the platform's registration and landing pages, such as the hero signboard, pricing, and footer links. Each block has a name, type, sort order, and status.
+
+![Super Admin themes](/images/multi-tenant-ecommerce/settings-themes.png)
+
+Use **Create Theme** to add a block, the **Edit** icon to change one, and the sort order to control where it appears.
+
+## Send email
+
+Go to **Settings >> Send email** to send an email to your tenants. Enter a **Subject** and compose the **Body** in the rich-text editor, then click **Send Email**.
+
+![Send email to tenants](/images/multi-tenant-ecommerce/settings-send-email.png)
+
+## CMS Management
+
+CMS pages are the informational pages the platform shows to visitors and tenants — pages such as **Privacy Policy**, **Terms & Conditions**, **Contact Us**, and **Refund Policy**. As Super Admin you manage them from one place.
+
+## CMS pages
+
+Go to **CMS** to see every page, with its title, URL key, and id.
+
+![CMS page list](/images/multi-tenant-ecommerce/super-cms.png)
+
+From the list you can **Edit** or **Delete** a page, and use **Export** to download the pages.
+
+## Create a page
+
+Click **Create Page** and fill in the form.
+
+![Create CMS page](/images/multi-tenant-ecommerce/super-cms-create.png)
+
+**Title:** The page title.
+**Content:** The page body, written in the rich-text editor.
+**Meta Title:** The title shown to search engines.
+**URL Key:** The address the page lives at, added to the platform URL. This must be unique.
+**Meta Keywords:** Keywords for search engines.
+**Meta Description:** The summary shown in search results.
+
+Click **Save Cms Page** to publish it.
+
+## Configuration
+
+The **Configure** screen holds the platform-wide settings that control how the platform looks, how subscriptions are paid for, and which emails go out automatically. Go to **Configure** to see them grouped into sections. Use the search box at the top to jump to a setting.
+
+![Configuration](/images/multi-tenant-ecommerce/super-configuration.png)
+
+## General
+
+- **Design** — set the platform logo and favicon.
+- **Super Agent** — set the email address for the super admin.
+- **Content** — set the header and footer information shown on the tenant registration layout.
+- **Insights** — set how long the tenant insights dashboard is cached before it refreshes.
+
+## Sales
+
+- **Shipping Methods** — set the shipping method information.
+- **Payment Methods** — set the payment method information.
+
+These settings apply only when the SaaS Shippings & Payments add-ons are installed.
+
+## Subscription
+
+- **Payment Settings** — set the payment and trial details for subscriptions. This is where you enter your **Stripe** and **PayPal** credentials, choose the **Payment Method** you receive plan payments through, turn the **Trial Plan** on or off and set its length, and manage extension (module) assignment for plans.
+- **Notifications** — manage the automated subscription emails sent to tenants, such as the trial-ending reminder, renewal reminder, overdue-invoice reminder, and expiry notice. These are sent by the daily subscription notification schedule.
+
+## Tenant Management
+
+A **tenant** is a merchant running their own store on the platform. Signing up takes three short steps, after which the tenant's storefront and admin panel are provisioned automatically, so they can start selling without any technical setup.
+
+The **Tenant Admin panel** is a full Bagisto backend. A merchant manages products, categories, attributes, customers, and orders there exactly as in a standard Bagisto store, and also gets a **Billing** menu for their subscription.
+
+## Register a store
+
+Open the platform address and go to the registration page. Registration runs in three steps, shown as **01 Your Sign**, **02 Account**, and **03 You**. The store's address is reserved at the first step.
+
+**Step 1 — Your Sign.** Enter the **Store name** and a **Username**. As you type the username, the subdomain your store will live at is previewed below it (for example, **aishaceramics.rootdomain.com**). Click **Reserve & continue**.
+
+![Registration step 1 — store name and username](/images/multi-tenant-ecommerce/tenant-register-1.png)
+
+**Step 2 — Account.** Enter the **Email**, **Password**, and **Confirm password** the store will sign in with. Click **Continue**.
+
+![Registration step 2 — account details](/images/multi-tenant-ecommerce/tenant-register-2.png)
+
+**Step 3 — You.** Enter the owner's **First name**, **Last name**, and **Phone**. Click **Open your store** to finish.
+
+![Registration step 3 — personal details](/images/multi-tenant-ecommerce/tenant-register-3.png)
+
+### The store is set up for you
+
+Once registration finishes, the storefront and admin panel are created automatically. There is nothing to install — the tenant can sign in and begin adding products right away.
+
+## Sign in to an existing store
+
+A returning merchant goes to the **Sign in** page and enters their **Email**. The platform looks up their store and redirects them to sign in at their own store's address.
+
+![Find your store sign-in](/images/multi-tenant-ecommerce/tenant-sign-in.png)
+
+They can also go straight to their store's admin login at **their-domain/admin/login**.
+
+![Tenant admin login](/images/multi-tenant-ecommerce/tenant-admin-login.png)
+
+## The storefront
+
+After registration the store is live and ready for customers to browse and buy.
+
+![Tenant storefront](/images/multi-tenant-ecommerce/tenant-store.png)
+
+## The admin panel
+
+Signing in opens the Tenant Admin dashboard. A **Store Setup** checklist walks a new merchant through getting ready to sell — add a product, group products into a category, name the store and pick a channel, choose a theme, turn on a payment method and a shipping method, and receive the first order. Below it, the dashboard shows store stats, overall and today's sales, orders, and customers.
+
+![Tenant admin dashboard](/images/multi-tenant-ecommerce/tenant-dashboard.png)
+
+### Running the store
+
+Because the Tenant Admin panel is a standard Bagisto backend, day-to-day store operations work exactly as documented in the rest of this guide:
+
+- **Products** — create and manage products under **Catalog >> Products**. See [Simple Product](../product-types/simple-product).
+- **Categories, attributes, and attribute families** — organize the catalog under **Catalog**. See [Create Category](../category/create-category).
+- **Orders** — handle orders under **Sales >> Orders**. See [Create Order](../orders/create-order), [Create Invoice](../orders/create-invoice), and [Create Shipment](../orders/create-shipment).
+- **Storefront theme** — choose and customize the store's design, depending on what the subscription allows. See [Storefront Themes](./storefront-themes).
+
+## Manage profile details
+
+Under **Settings**, a merchant opens **Edit Company Detail** to update their profile. They can change:
+
+**First Name** and **Last Name**
+**Email**
+**Skype**
+**cName** — the custom domain to point at the store (see [CName Mapping](./cname-mapping))
+**Phone**
+
+![Edit company detail](/images/multi-tenant-ecommerce/tenant-profile.png)
+
+Click **Save Detail** to keep the changes, or **Back** to return.
+
+## Billing
+
+The **Billing** menu is where a merchant reviews their subscription plan, usage, invoices, and billing address, and upgrades or changes plans. This is covered in full in [Subscription Plans & Billing](./subscription).
+
+The **Billing Address** used on subscription invoices is managed under **Billing >> Billing Address** — click **Add Address** to add one.
+
+![Billing address](/images/multi-tenant-ecommerce/tenant-billing-address.png)
+
+## Storefront Themes
+
+A tenant's storefront can wear a different look depending on their subscription. Every store starts on the **Default** theme, and higher plans unlock a set of **premium themes** — distinct, ready-made designs a merchant can switch to without any code.
+
+The premium designs are:
+
+- **Breeze**
+- **Fashion**
+- **Commercia**
+- **Adornments**
+
+## Which themes a tenant can use
+
+Premium themes are a plan allowance, set on each subscription plan as **Premium Themes: Included** or **Not included** (see [Subscription Plans & Billing](./subscription)). A tenant can compare what each plan includes on the **Billing >> Plans** screen, where **Premium Themes** is listed among the features.
+
+- On a plan **without** premium themes, only the **Default** theme is available.
+- On a plan **with** premium themes, all four premium designs become selectable.
+
+## Choose a theme
+
+A merchant sets the storefront theme on the channel. In the Tenant Admin panel, go to **Settings >> Channels**, open the channel, and under **Design** pick the **Theme** from the dropdown.
+
+![Channel theme selection](/images/multi-tenant-ecommerce/tenant-theme-channel.png)
+
+Only the themes the current plan allows appear as choices. Click **Save Channel** to apply the design to the storefront.
+
+## Customize a theme
+
+Once a theme is chosen, its content blocks — sliders, featured collections, static columns, footer links, and more — are managed under **Settings >> Themes**. Each row is a block belonging to a channel and theme, with its type, sort order, and status.
+
+![Theme customization blocks](/images/multi-tenant-ecommerce/tenant-theme-customization.png)
+
+Use **Create Theme** to add a block, the **Edit** icon to change one, and the sort order to control where it appears on the storefront.
+
+## Theme examples
+
+The same store looks completely different depending on the theme applied. For example, the **Commercia** theme suits a grocery or everyday-essentials store:
+
+![Commercia storefront theme](/images/multi-tenant-ecommerce/tenant-store.png)
+
+While the **Fashion** theme gives a clean, editorial look built for apparel:
+
+![Fashion storefront theme](/images/multi-tenant-ecommerce/theme-fashion.png)
+
+## Downgrading removes premium themes
+
+If a tenant moves to a plan that does not include premium themes, any channel still using a premium design is switched back to the **Default** theme automatically, and the merchant is emailed to let them know.
+
+Their theme customizations are not lost — they are kept, and restored the moment the tenant upgrades again to a plan that includes premium themes.
+
+## CName Mapping
 
 **CName Mapping** lets tenants connect their own domain to the subdomain created by the SaaS, which helps with professional branding.
 
@@ -5588,13 +5824,13 @@ For example, to map the domain **myshopdemo.com** with the SaaS server **IP: 206
 
 ### Step 3: Configure CNAME in SaaS
 
-After mapping the domain with the server IP, log in as **Super Admin** in the SaaS. You will see the tenant’s subdomain already created (e.g., **site1.bagisto.com**).
+After mapping the domain with the server IP, log in as **Super Admin** in the SaaS. Go to **Tenants >> Tenants**, where you will see the tenant’s subdomain already created (e.g., **site1.bagisto-saas.com**).
 
-![Super Admin Tenants List](/images/multi-tenant-ecommerce/3-super-tenants.png)
+![Super Admin tenants list](/images/multi-tenant-ecommerce/super-tenants.png)
 
-To map the tenant’s real domain (e.g., **myshopdemo.com**), click the **edit (pencil) icon**, enter the domain in the **CNAME** field, and then click **Save Tenant** to save.
+To map the tenant’s real domain (e.g., **myshopdemo.com**), click the **Edit (pencil) icon**, enter the domain in the **Cname** field under **Settings**, and then click **Save Tenant** to save.
 
-![Edit Tenant CNAME](/images/multi-tenant-ecommerce/4-edit-tenant.png)
+![Edit tenant Cname field](/images/multi-tenant-ecommerce/super-edit-tenant.png)
 
 ---
 
@@ -5602,7 +5838,7 @@ To map the tenant’s real domain (e.g., **myshopdemo.com**), click the **edit (
 
 Open the tenant's website in a browser and see if it loads properly.
 
-![Tenant Store Frontend](/images/multi-tenant-ecommerce/5-tenant-store.png)
+![Tenant store frontend](/images/multi-tenant-ecommerce/tenant-store.png)
 
 If the website loads on the tenant's original domain (like **myshopdemo.com**), it means the connection with the SaaS subdomain worked successfully.
 

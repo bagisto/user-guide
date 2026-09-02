@@ -1,37 +1,37 @@
-# Multi Tenant Ecommerce 
+# Multi Tenant Ecommerce
 
-[Multi-Tenant eCommerce](https://bagisto.com/en/laravel-multi-tenant-saas/) in Bagisto allows businesses to build a SaaS-based marketplace platform where multiple vendors or merchants can create and manage their own individual stores under a single system.
+[Multi-Tenant eCommerce](https://bagisto.com/en/laravel-multi-tenant-saas/) in Bagisto lets you run a SaaS platform where many merchants create and manage their own individual stores under a single system.
 
-Each tenant (merchant) gets a dedicated storefront with complete control over products, categories, orders, and customers, while the platform owner manages the overall infrastructure, subscriptions, and revenue models. This setup reduces operational costs for merchants, as they don’t need to invest in separate eCommerce development or hosting.
+Each tenant (merchant) gets a dedicated storefront and admin panel with complete control over products, categories, orders, and customers, while you — the platform owner — manage the overall infrastructure, subscription plans, and revenue from one place. This setup reduces operational costs for merchants, as they do not need to invest in separate eCommerce development or hosting.
 
-### Super Admin Management 
+The platform is run from two separate panels:
 
-The Super Admin position is the top authority in the SaaS mall, in charge of overseeing tenants, staff, and the entire platform's operations.
+- The **Super Admin panel**, where you oversee every tenant, subscription plan, and platform-wide setting.
+- The **Tenant Admin panel**, a Bagisto-like backend each merchant uses to run their own store.
 
-This role includes managing merchants (tenants), giving roles to staff (agents), and making sure everything works well together in the system.
+<ImagePopup src="/images/multi-tenant-ecommerce/multi-tenant.webp" alt="Multi-tenant SaaS overview" />
 
-Super Admins set up what products are visible, manage channels, and design themes to keep a consistent look and branding for all tenant stores.
+## What you can do
 
-They also take care of CMS pages, send out email broadcasts, and manage global settings to ensure clear communication and proper governance of the platform.
+### Super Admin
 
-### Tenant Management
+The Super Admin is the top authority on the platform. From the Super Admin panel you can:
 
-Tenant Management in the SaaS makes it easy for tenants to sign up and quickly create their online store by filling in their login, personal, and organization information.
+- Register tenants, view their store insights, edit them, and sign in as any tenant.
+- Create subscription plans, watch which tenants have purchased them, and review subscription invoices.
+- Manage platform staff (agents) and their roles, currencies, exchange rates, webhooks, and Super Admin themes.
+- Publish CMS pages and configure platform-wide payment, trial, and notification settings.
 
-After they register, the tenant’s storefront is set up automatically, so they can begin selling immediately without any technical difficulties.
+See [Super Admin Management](./super-admin-management), [Subscription Plans & Billing](./subscription), [Super Admin Settings](./super-admin-settings), [CMS Management](./cms-management), and [Configuration](./configuration).
 
-Using the Tenant Admin Panel, tenants can manage products, categories, attributes, customers, and more through a user-friendly interface similar to Bagisto.
+### Tenant
 
-Tenants can also manage orders by making invoices, setting up shipments, and using other menu options to run their store efficiently.
+A tenant signs up, gets a storefront and admin panel provisioned automatically, and starts selling right away. Using the Tenant Admin panel, a merchant can manage products, categories, attributes, customers, and orders, and can review their own subscription plan, usage, and invoices.
+
+See [Tenant Management](./tenant-management).
 
 ### CName Mapping
 
-CName Mapping lets tenants connect their own domain to the subdomain made by the SaaS, which helps with professional branding.
+Each tenant is reachable at a default subdomain such as **username.rootdomain.com**. With CNAME mapping, a tenant can point their own domain at that subdomain for professional branding, without any extra plugins.
 
-When a tenant signs up, a default subdomain like **username.rootdomain.com** is created. With CNAME, their actual domain can be directed to this subdomain.
-
-This makes it easy for customers to find the store and keeps a reliable, consistent online image.
-
-The mapping is set up through the tenant's DNS provider and the SaaS by the Super Admin, and it doesn't need any extra plugins.
-
-<ImagePopup src="/images/multi-tenant-ecommerce/multi-tenant.webp" alt="Super Admin Login" />
+See [CName Mapping](./cname-mapping).

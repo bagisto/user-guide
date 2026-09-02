@@ -30,13 +30,13 @@ For example, to map the domain **myshopdemo.com** with the SaaS server **IP: 206
 
 ### Step 3: Configure CNAME in SaaS
 
-After mapping the domain with the server IP, log in as **Super Admin** in the SaaS. You will see the tenant’s subdomain already created (e.g., **site1.bagisto.com**).
+After mapping the domain with the server IP, log in as **Super Admin** in the SaaS. Go to **Tenants >> Tenants**, where you will see the tenant’s subdomain already created (e.g., **site1.bagisto-saas.com**).
 
-<ImagePopup src="/images/multi-tenant-ecommerce/3-super-tenants.png" alt="Super Admin Tenants List" />
+<ImagePopup src="/images/multi-tenant-ecommerce/super-tenants.png" alt="Super Admin tenants list" />
 
-To map the tenant’s real domain (e.g., **myshopdemo.com**), click the **edit (pencil) icon**, enter the domain in the **CNAME** field, and then click **Save Tenant** to save.
+To map the tenant’s real domain (e.g., **myshopdemo.com**), click the **Edit (pencil) icon**, enter the domain in the **Cname** field under **Settings**, and then click **Save Tenant** to save.
 
-<ImagePopup src="/images/multi-tenant-ecommerce/4-edit-tenant.png" alt="Edit Tenant CNAME" />
+<ImagePopup src="/images/multi-tenant-ecommerce/super-edit-tenant.png" alt="Edit tenant Cname field" />
 
 ---
 
@@ -44,6 +44,6 @@ To map the tenant’s real domain (e.g., **myshopdemo.com**), click the **edit (
 
 Open the tenant's website in a browser and see if it loads properly.
 
-<ImagePopup src="/images/multi-tenant-ecommerce/5-tenant-store.png" alt="Tenant Store Frontend" />
+<ImagePopup src="/images/multi-tenant-ecommerce/tenant-store.png" alt="Tenant store frontend" />
 
 If the website loads on the tenant's original domain (like **myshopdemo.com**), it means the connection with the SaaS subdomain worked successfully.

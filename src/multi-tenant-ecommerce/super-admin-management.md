@@ -1,113 +1,92 @@
 # Super Admin Management
 
-The **Super Admin** position is the top authority in the SaaS mall, in charge of overseeing tenants, staff, and the entire platform's operations.
+The **Super Admin** is the top authority on the platform, in charge of tenants, staff, and platform-wide operations. From the Super Admin panel you oversee every merchant store, manage subscription plans, and keep the platform running smoothly.
 
-This role includes:
-- Managing merchants (tenants)
-- Assigning roles to staff (agents)
-- Ensuring smooth system operations
+## Sign in to the Super Admin panel
 
-Super Admins set up product visibility, manage channels, and design themes to maintain a consistent look and branding for all tenant stores. They also handle CMS pages, send email broadcasts, and manage global settings to ensure clear communication and proper governance of the platform.
+**Step 1:** Open the platform address and go to **/super/login**. You can also reach it from the **Super Admin Login** link on the registration page.
 
+**Step 2:** Enter your registered **Email Address** and **Password**, then click **Sign In**.
 
-## Access the Super Admin Panel
+<ImagePopup src="/images/multi-tenant-ecommerce/super-login.png" alt="Super Admin Sign In" />
 
-### Steps to Sign In
+## Dashboard
 
-1. Visit the registration page and click the **Super Admin Login** button located in the top right corner.
+After you sign in, the **Dashboard** opens with an overview of the whole platform: total and active tenants, active subscriptions, total revenue, recent tenants, recent invoices, and expiring plans.
 
-2. Enter your registered **Email Address and Password**, then click **Sign In** to access the panel.
+<ImagePopup src="/images/multi-tenant-ecommerce/super-dashboard.png" alt="Super Admin Dashboard" />
 
-<ImagePopup src="/images/multi-tenant-ecommerce/1-super-login.png" alt="Super Admin Login" />
+## Insights
 
-After successfully signing in, the **Super Admin Dashboard** will open, as shown below. The Super Admin can view all the tenants registered on their SaaS panel.
+Go to **Insights** for a performance view across all tenants. The top cards show **Gross Volume**, **Orders**, **Active Tenants**, and **New Signups** for the selected period, which you can switch between **7d**, **30d**, and **90d**.
 
-<ImagePopup src="/images/multi-tenant-ecommerce/2-super-dashboard.png" alt="Super Admin Dashboard" />
+Below the cards, the **Trend** chart plots volume and orders over time, **Needs Attention** flags tenants that require a look, and the **Leaderboard** ranks tenants by gross volume, orders, average order, and customers. Use **Export** to download the leaderboard.
 
-Here, you can browse through the list of tenants and use options to **search, filter, and paginate** for easy access.
+<ImagePopup src="/images/multi-tenant-ecommerce/super-insights.png" alt="Tenant Insights and Leaderboard" />
 
-Additionally, the **Super Admin** can register a new tenant directly from the Super Admin panel by clicking the **Register Tenant** button in the top right-hand corner.
+## Tenants
 
-<ImagePopup src="/images/multi-tenant-ecommerce/3-super-create-tenant.png" alt="Super Admin Create Tenant" />
+Go to **Tenants >> Tenants** to see every tenant on the platform. You can **search**, **filter**, and **paginate** the list to find a store quickly.
 
-### Enter the Following Super Admin Details
+<ImagePopup src="/images/multi-tenant-ecommerce/super-tenants.png" alt="Tenants list" />
 
-- **First Name:** Enter the first name.
+### Register a tenant
 
-- **Last Name:** Enter the last name.
+You can add a tenant directly from the Super Admin panel. Click **Register Tenant** (or **Create**) in the top right and fill in the form.
 
-- **Phone:** Provide the phone number.
+<ImagePopup src="/images/multi-tenant-ecommerce/super-create-tenant.png" alt="Create Tenant form" />
 
-- **User Name:** Enter the username.
+**First Name:** The tenant's first name.
+**Last Name:** The tenant's last name.
+**Email:** The email the tenant signs in with.
+**Phone:** A contact number.
+**Organization Name:** The store's business name.
+**User Name:** Used to build the tenant's default subdomain.
+**Password / Confirm Password:** The tenant's sign-in password.
+**Profile Image:** An optional profile picture, in PNG or JPG at **110 × 110**.
 
-- **Organization Name:** Mention the organization name.
+Click **Save Tenant** to create the store. The tenant's storefront and admin panel are provisioned automatically.
 
-- **Email Address:** Provide the email.
+### View a tenant's insights
 
-- **Password:** Provide the password.
+Click the **View** (eye) icon on a tenant row to open **Tenant Insights**, a read-only summary of that store: its subscription plan, domain information, counts of attributes, attribute families, products, categories, customers, and customer groups, and the tenant's address list.
 
-- **Confirm Password:** Confirm the password.
+<ImagePopup src="/images/multi-tenant-ecommerce/super-tenant-view.png" alt="Tenant Insights" />
 
-- **Profile Image:** Add the profile image.
+From this screen you can also **Cancel Plan**, **Assign** a plan, or **Login As Tenant** (see below).
 
-Finally, click the **Save Tenant** button to save the new tenant.
+### Edit or delete a tenant
 
-## Tenant Insights
+Click the **Edit** (pencil) icon to change a tenant's details, such as name, contact information, organization, or CNAME.
 
-To view all the details about a tenant, navigate to **Tenants → Tenants** and click on the **View** icon.
+<ImagePopup src="/images/multi-tenant-ecommerce/super-edit-tenant.png" alt="Edit Tenant" />
 
-Under the **Tenant Insights**, the Super Admin can see all the information about the tenant's store, as shown in the image below:
+To remove a tenant, click the **Delete** icon on the row and confirm.
 
-<ImagePopup src="/images/multi-tenant-ecommerce/4-super-tenant-insights.png" alt="Super Admin Tenant Insights" />
+### Sign in as a tenant
 
-### Tenant Insights Information
+From a tenant's view page, click **Login As Tenant** to open that merchant's admin panel as them. This is useful for support — you see exactly what the merchant sees.
 
-- **Domain Information:** Details of the tenant.
+### This does not undo a delete
 
-- **Attribute Information:** Number of attributes of the tenant.
+Deleting a tenant removes the store and its data. There is no undo, so confirm you have the right tenant before you delete.
 
-- **Attribute Family Information:** Number of attribute families of the company.
+## Tenants' customers, products, and orders
 
-- **Product Information:** Number of products available from that company.
+The Super Admin can review the data behind every tenant store in read-only lists.
 
-- **Category Information:** Number of categories available to that company.
+- **Customers** — go to **Tenants >> Customers** to see every customer across all tenant stores.
 
-- **Customer Information:** Number of customers available.
+  <ImagePopup src="/images/multi-tenant-ecommerce/super-customers.png" alt="All tenant customers" />
 
-- **Customer Group Information:** Number of customer groups of the tenant.
+- **Products** — go to **Tenants >> Products** to see every product across all tenant stores.
 
-**Note:** The Super Admin can only **view** tenant insights and cannot delete, update, or edit any of the information shown here.
+  <ImagePopup src="/images/multi-tenant-ecommerce/super-products.png" alt="All tenant products" />
 
-## Edit Tenant Details
+- **Orders** — go to **Tenants >> Orders** to see every order across all tenant stores.
 
-The **Super Admin** can edit tenant details such as name, contact info, or organization, as shown below:
+  <ImagePopup src="/images/multi-tenant-ecommerce/super-orders.png" alt="All tenant orders" />
 
-<ImagePopup src="/images/multi-tenant-ecommerce/5-super-edit-tenant.png" alt="Super Admin Edit Tenant" />
+### These lists are view only
 
-However, the **Super Admin** also has the ability to **delete** a tenant if needed by clicking the **Delete** button for that tenant.
-
-<ImagePopup src="/images/multi-tenant-ecommerce/6-super-delete-tenant.png" alt="Super Admin Delete Tenant" />
-
-## Tenant’s Customer
-
-By navigating to **Tenants → Customers**, the Super Admin can view all the customer lists of their tenants, as shown in the image below:
-
-<ImagePopup src="/images/multi-tenant-ecommerce/7-super-customer-list.png" alt="Super Admin Customer List" />
-
-**Note:** The Super Admin can only **view** the customer list and cannot delete, update, or edit any customer details.
-
-## Tenant’s Products
-
-By navigating to **Tenants → Products**, the Super Admin can view all the product lists of their tenants, as shown in the image below:
-
-<ImagePopup src="/images/multi-tenant-ecommerce/8-super-product-list.png" alt="Super Admin Product List" />
-
-**Note:** The Super Admin can only **view** the product list and cannot delete, update, or edit any product details.
-
-## Tenant’s Orders
-
-By navigating to **Tenants → Orders**, the Super Admin can view all the orders of their tenants, as shown in the image below:
-
-<ImagePopup src="/images/multi-tenant-ecommerce/9-super-order-list.png" alt="Super Admin Order List" />
-
-**Note:** The Super Admin can only **view** the orders list and cannot delete, update, or edit any order details.
+On the customers, products, and orders lists you can browse, search, and filter, but you cannot edit or delete a tenant's records. Only the tenant manages their own store data.
