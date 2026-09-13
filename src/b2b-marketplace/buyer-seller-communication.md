@@ -6,7 +6,7 @@ Buyer and Seller communication in a B2B Marketplace ensures smooth and transpare
 
 ### Customer to Supplier Communication
 
-In B2B Marketplace, customers have two simple ways to contact suppliers:
+In B2B Marketplace, customers have two ways to contact suppliers:
 
 **1) From the Product Page:**
 Customers can send a direct message to the supplier right from the product page. This is useful for asking about price, stock, or product details instantly.
@@ -17,10 +17,10 @@ Customers can send a direct message to the supplier right from the product page.
 
 ### How to Send a Message from the Product Page
 
-- **Step 1:** Open the product you are interested in.
-- **Step 2:** Click on the **“Message Supplier”** button.
-- **Step 3:** Type your message clearly in the message box.
-- **Step 4:** Click on the **Submit** button to send your message directly to the supplier.
+1. Open the product you are interested in.
+2. Click the **Message Supplier** button.
+3. Type your message in the message box.
+4. Click the **Submit** button to send your message directly to the supplier.
 
 <ImagePopup src="/images/b2b-marketplace/2-write-msg.png" alt="Write Message to Supplier" />
 
@@ -36,11 +36,11 @@ Customers can navigate to the supplier response page, where they can view replie
 
 ### How to Send a Message from the Supplier Response Page
 
-- **Step 1:** Log in to your buyer account.
-- **Step 2:** Go to **Profile >> My Account >> Supplier Response**.
-- **Step 3:** Open the relevant conversation.
-- **Step 4:** Write your message clearly in the text box.
-- **Step 5:** Click **Send** to deliver the message to the supplier.
+1. Log in to your buyer account.
+2. Go to **Profile >> My Account >> Supplier Response**.
+3. Open the relevant conversation.
+4. Write your message in the text box.
+5. Click **Send** to deliver the message to the supplier.
 
 <ImagePopup src="/images/b2b-marketplace/4-reply-to-supplier.png" alt="Reply to Supplier" />
 
@@ -48,16 +48,16 @@ Customers can navigate to the supplier response page, where they can view replie
 
 ### Supplier to Customer Communication
 
-In the Bagisto B2B Marketplace, suppliers can easily communicate with customers to provide updates or respond to queries.
+In the Bagisto B2B Marketplace, suppliers can communicate with customers to provide updates or respond to queries.
 
 ---
 
 ### How to Send Messages to the Customer
 
-- **Step 1:** Log in to the supplier account.
-- **Step 2:** Go to **Messages**.
-- **Step 3:** Open the conversation you want to reply to.
-- **Step 4:** Type your response clearly in the message box.
-- **Step 5:** Click **Send** to deliver your reply to the customer.
+1. Log in to the supplier account.
+2. Go to **Messages**.
+3. Open the conversation you want to reply to.
+4. Type your response in the message box.
+5. Click **Send** to deliver your reply to the customer.
 
 <ImagePopup src="/images/b2b-marketplace/5-reply-to-customer.png" alt="Reply to Customer" />

@@ -2,49 +2,49 @@
 
 The **Supplier Microsite** in Bagisto B2B Marketplace is like a mini online store for each supplier. It lets suppliers showcase their brand, products, company details, and policies in one place. Buyers can visit the microsite to explore products, request quotes, or place orders directly.
 
-This helps suppliers build trust, promote their business, and reach more customers easily.
+This helps suppliers build trust, promote their business, and reach more customers.
 
 <ImagePopup src="/images/b2b-marketplace/1-supplier-login-button.png" alt="Supplier Login Button" />
 
 ## Create a New Supplier Account
 
-**Step 1:** Go to **Supplier Login** and click on **Sign In**.
+1. Go to **Supplier Login** and click **Sign In**.
 
-**Step 2:** Fill in the required details:
+2. Fill in the required details:
 
-- **First Name** – Enter the first name.
+   - **First Name** – Enter the first name.
 
-- **Last Name** – Enter the last name.
+   - **Last Name** – Enter the last name.
 
-- **Email Address** – Enter the email address.
+   - **Email Address** – Enter the email address.
 
-- **Password** – Enter your password.
+   - **Password** – Enter your password.
 
-- **Confirm Password** – Confirm the password.
+   - **Confirm Password** – Confirm the password.
 
-- **Company URL** – Add your company URL.
+   - **Company URL** – Add your company URL.
 
-**Step 3:** Click the **Register** button to create a supplier account.
+3. Click the **Register** button to create a supplier account.
 
-<ImagePopup src="/images/b2b-marketplace/2-create-supplier.png" alt="Create Supplier Account" />
+   <ImagePopup src="/images/b2b-marketplace/2-create-supplier.png" alt="Create Supplier Account" />
 
 ## Admin: Approve or Disapprove New Supplier
 
 In the admin panel, the administrator has full control to approve or disapprove newly registered suppliers.
 
-**Step 1:** Log in to the **Admin Panel**.
+1. Log in to the **Admin Panel**.
 
-**Step 2:** Go to **B2B Marketplace >> Suppliers**.
+2. Go to **B2B Marketplace >> Suppliers**.
 
-**Step 3:** Select a supplier you want to review.
+3. Select a supplier you want to review.
 
-**Step 5:** Check the supplier details such as company name, email, and URL.
+4. Check the supplier details such as company name, email, and URL.
 
-**Step 6:** Choose from the **“Select Action”** menu to either:
+5. Choose from the **Select Action** menu to either:
 
-- **Approve:** Supplier account becomes active in the marketplace.
+   - **Approve:** Supplier account becomes active in the marketplace.
 
-- **Disapprove:** Supplier request is rejected and access is denied.
+   - **Disapprove:** Supplier request is rejected and access is denied.
 
 <ImagePopup src="/images/b2b-marketplace/3-admin-suppliers-disapproved-state.png" alt="Admin Suppliers Disapproved State" />
 

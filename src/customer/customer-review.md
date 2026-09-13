@@ -10,28 +10,39 @@ Customer reviews are a form of customer feedback on electronic commerce and onli
 
 ---
 
-### To add Reviews in Bagisto follow the below steps:
+### Writing a review on the storefront
 
-**Step 1**: After logging in as a customer, go to the product detail page of the storefront. You will see the **Review** section as shown in the image below.  
+1. Log in as a customer and open the product detail page. The review section is shown as in the image below.
 
-<ImagePopup src="/images/customer/review.png" alt="Review Section" />
+   <ImagePopup src="/images/customer/review.png" alt="Review Section" />
 
-**Step 2**: Click on the **Write Review** button, fill in the **Star Rating**, add the **Title**, write the comment, attach a file (if required), and then click **Submit Review** as shown below.  
+2. Click the **Write a Review** button.
+3. Select the star **Rating**.
+4. Enter the **Title**.
+5. Write the **Comment**.
+6. Attach an image or video, if required.
+7. Click **Submit Review**, as shown below.
 
-<ImagePopup src="/images/customer/rating.png" alt="Write Review" />
+   <ImagePopup src="/images/customer/rating.png" alt="Write Review" />
 
-**Step 3**: After adding the review, open the **Admin Panel** of Bagisto and navigate to **Customers >> Reviews**. The review submitted by the customer will be visible as shown below.  
+### Moderating reviews in the admin panel
 
-<ImagePopup src="/images/customer/admin-review.png" alt="Admin Review" />
+1. Go to **Customers >> Reviews**. The review submitted by the customer is listed, as shown below.
 
-**Step 4**: You can also change the **Status** of the review to **Pending, Approved, or Disapproved** and then click the **Save** button.  
+   <ImagePopup src="/images/customer/admin-review.png" alt="Admin Review" />
 
-<ImagePopup src="/images/customer/review-status.png" alt="Review Status Update" />
+2. Click the **Edit** icon on the review. The **Edit Review** modal opens with the customer, product, rating, **Title**, **Comment** and any attached **Images**.
 
-**Step 5**: After saving, you will be redirected to the Review Grid where you will see the new review record successfully registered.  
+3. Set the **Status** to **Pending**, **Approved** or **Disapproved**.
+
+4. Click **Save**. The modal closes and the grid shows the updated status.
+
+   <ImagePopup src="/images/customer/review-status.png" alt="Review Status Update" />
 
 <ImagePopup src="/images/customer/output.png" alt="Review Grid Output" />
 
+Only approved reviews are shown on the storefront. To moderate several reviews at once, tick them in the grid and use the **Update Status** mass action.
+
 ---
 
-By following the above steps, you can easily manage **Customer Reviews** in Bagisto.
+By following the above steps, you can manage **Customer Reviews** in Bagisto.

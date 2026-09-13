@@ -26,14 +26,12 @@ This section provides a graphical view of sales trends over different time perio
 
 ### 3) Purchase Funnel
 
-The purchase funnel tracks customer behavior from visiting the store to completing a purchase. It helps identify where customers drop off in the buying process.
+The purchase funnel tracks how many carts turn into orders. It helps identify how many customers drop off between adding a product to the cart and completing the purchase.
 
 **Key Stages:**
 
-- **Total Visits –** Number of visitors on the store.
-- **Product Views –** Percentage of visitors who viewed a product.
-- **Added to Cart –** Percentage of visitors who added a product to the cart.
-- **Purchased –** Percentage of visitors who completed a purchase.
+- **Added to Cart –** Number of carts created in the period.
+- **Purchased –** Number of orders placed in the period, and the percentage of carts that became orders.
 
 <ImagePopup src="/images/reporting/purchase-funnel.png" alt="Purchase Funnel" />
 
@@ -45,7 +43,7 @@ This report tracks the revenue lost due to customers adding products to the cart
 
 - **Abandoned Revenue:** Estimated lost revenue from abandoned carts.
 - **Abandoned Carts:** Number of abandoned shopping carts.
-- **Abandonment Rate:** Percentage of abandoned carts compared to initiated checkouts.
+- **Abandoned Rate:** Percentage of abandoned carts compared to initiated checkouts.
 - **Abandoned Products:** Specific products left in abandoned carts.
 
 <ImagePopup src="/images/reporting/abandoned-cart.png" alt="Abandoned Cart" />
@@ -89,7 +87,7 @@ Displays the total amount collected for shipping fees during the selected period
 
 **Key Metrics:**
 
-- **Shipping Revenue:** Total shipping fees collected.
+- **Shipping Collected:** Total shipping fees collected.
 - **Top Shipping Methods:** Most frequently used shipping methods.
 
 <ImagePopup src="/images/reporting/shipping-collected.png" alt="Shipping Collected" />
@@ -100,7 +98,7 @@ This report tracks the amount refunded to customers for returned or canceled ord
 
 **Key Metrics:**
 
-- **Total Refunds:** The total amount refunded.
+- **Refunds:** The total amount refunded.
 - **Refund Trend:** Helps track frequent refund reasons.
 
 <ImagePopup src="/images/reporting/refund.png" alt="Refunds" />
@@ -118,13 +116,13 @@ Shows which payment methods customers use the most.
 
 ### 11) Sales By Coupon
 
-This report tracks sales generated through specific discount coupons. It helps store owners measure the effectiveness of their marketing campaigns and coupon strategies.
+This report tracks the orders placed with each discount coupon. It helps store owners measure the effectiveness of their marketing campaigns and coupon strategies.
 
 **Key Metrics:**
 
-- **Coupon Code:** The specific code used for the discount.
-- **Order ID:** Links to the order details.
-- **Sales Amount:** Total sales associated with the coupon.
-- **View Details:** Drill-down to see all orders that used a specific coupon.
+- **Coupon Code:** The specific code used for the discount. Click it to open the cart rule it belongs to.
+- **Orders:** The number of orders that used the coupon.
+- **Discount:** The total discount given through the coupon.
+- **View Details:** Drill-down to see the full list of coupons and their totals.
 
 <ImagePopup src="/images/reporting/sales-coupon.png" alt="Sales By Coupon" />

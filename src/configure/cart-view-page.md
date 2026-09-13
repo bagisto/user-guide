@@ -1,11 +1,11 @@
 # Cart View Page
 
-Cart view page configuration involves arranging items, details, and options on the shopping cart page, improving user interaction and purchase flow.
+The cart page can suggest cross-sell products beneath the items in the cart. This setting decides how many.
 
-Go to the Admin Panel and click on **Configure >> Catalog >> Products**, then find the **Cart view page configuration** section.
+1. Go to **Configure >> Catalog >> Products** and find the **Cart view page configuration** section.
+2. Enter the **Allowed number of Cross-Sell Products**.
+3. Click **Save Configuration**.
 
-**Allowed number of Cross-Sell Products:** How many cross-sell products are shown on the cart page. They only appear while **Cross sell Products** is on under **Configure >> Sales >> Checkout**.
+<ImagePopup src="/images/configure/cartpage-configuration.png" alt="Cart view page configuration" />
 
-<ImagePopup src="/images/configure/cartpage-configuration.png" alt="Cart Configuration" />
-
-After that, click on the **Save Configuration** button.
+The suggestions only appear while **Cross sell Products** is switched on under **Configure >> Sales >> Checkout**, and a product only contributes the cross-sells chosen on its own edit page.

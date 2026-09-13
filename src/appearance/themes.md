@@ -75,14 +75,15 @@ section is never shown to shoppers before it has been built.
 
 ### Creating a section
 
-**Step 1:** In the editor, click the **+** button beside the section list.
-
-**Step 2:** Choose the section type, give it a name, and save.
+1. In the editor, click the **+** button beside the section list.
+2. Choose the **Type** and enter a **Name**.
+3. Click **Save Section**.
 
 <ImagePopup src="/images/appearance/create-section.png" alt="Create Section" />
 
-**Step 3:** The section is added, switched off, and opened for editing. Fill in
-its fields, then **Publish** when you are ready for it to appear.
+4. The section is added, switched off, and opened for editing. Fill in its
+   fields.
+5. Click **Publish** when you are ready for it to appear.
 
 ## Section types
 

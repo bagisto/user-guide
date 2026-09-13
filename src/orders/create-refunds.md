@@ -4,13 +4,23 @@ Typically, e-commerce stores offer 15- to 30 days in which customers can return 
 
 A customer who bought an item may ask the store for their money back if it didn't fit according to their choice. you may ask them to return your money.
 
-In Bagisto after your order is **Completed** after creating a shipment you go and edit that order and from there you can easily apply for a refund.
+### Creating a refund
 
-<ImagePopup src="/images/orders/refund.png" alt="Refund" />
+In Bagisto, a refund can be created once the order is **Completed**, that is, after a shipment has been created for it.
 
-So now enter the **quantity** which you want to apply a refund for.
+1. Go to **Sales >> Orders** and open the order.
+2. Click the **Refund** button.
 
-**Refund Shipping:-**  In this field, you can enter the amount which you want to refund from the shipping fee. Initially, this field will show the total shipping amount that is available for refund.  
+   <ImagePopup src="/images/orders/refund.png" alt="Refund" />
+
+3. Enter the quantity you want to refund under **Qty To Refund**.
+4. Fill in the **Refund Shipping**, **Adjustment Refund** and **Adjustment Fee** amounts as needed. Each field is explained below.
+5. Click **Update Totals** to recalculate the grand total.
+6. Click **Refund**.
+
+### Refund fields
+
+**Refund Shipping:-** In this field, you can enter the amount which you want to refund from the shipping fee. Initially, this field will show the total shipping amount that is available for refund.  
 The refund shipping fee can be decreased but can’t be increased to the actual shipping (initial shipping amount) fee.
 
 In the below image, we have applied the amount of $10 refund shipping which is the total amount that applies to shipment charge.
@@ -23,7 +33,7 @@ All the amount i.e. $10 refunded as **Shipping & Handling** as shown in the belo
 
 **Adjustment Refund:-** You can enter the amount which will be added to the total refunded amount as an additional refund that does not include any shipping, product price, tax cost.
 
-In the below image we have refunded **$5 of Refund Shipping and $2 of Adjustment Shipping**
+In the below image we have refunded **$5 of Refund Shipping and $2 of Adjustment Refund**
 
 <ImagePopup src="/images/orders/adjust.png" alt="Adjustment Refund" />
 
@@ -41,8 +51,8 @@ Now the **$1 subtracted as the Adjustment Fee** from the subtotal amount and **$
 
 <ImagePopup src="/images/orders/adjustfee-refund.png" alt="Adjustment Fee Refund" /> 
 
-After that it will get redirected to the **Refund Grid** and show the refunded amount in the grid as shown in the below image.
+After the refund is created, you are redirected to the **Refund Grid**, which shows the refunded amount as in the below image.
 
 <ImagePopup src="/images/orders/refund-grid.png" alt="Refund Grid" />
 
-By the above steps, you can easily **Refund** in Bagisto.
+By the above steps, you can **Refund** in Bagisto.

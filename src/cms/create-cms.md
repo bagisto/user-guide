@@ -2,41 +2,36 @@
 
 With the help of CMS (content management system), you can create and edit pages for your Bagisto store. CMS is also helpful for customers while purchasing products to check the refund and return policy and more.
 
-### To create a CMS page from the Admin Panel, follow the below steps:
+### Creating a CMS page
 
-**Add a New Page**
+1. Go to **CMS**. By default, there are already CMS pages listed here.
 
-**Step 1:** On the Admin Sidebar, click on **CMS >> Page**.  
-By default, there are already CMS pages located here. To create a new CMS page, click on the **Create Page** button as shown below.
+2. Click the **Create Page** button, as shown below.
 
-<ImagePopup src="/images/cms/create-page.png" alt="Create Page" />
+   <ImagePopup src="/images/cms/create-page.png" alt="Create Page" />
 
-**Step 2:** Add the page **Title** and add channels under general as shown in the image below.
+3. Under **General**, add the page **Title** and select the **Channels**, as shown in the image below.
 
-<ImagePopup src="/images/cms/general.png" alt="General Settings" />
+   <ImagePopup src="/images/cms/general.png" alt="General Settings" />
 
-**Step 3:** Add the **Content** of the CMS page under **Description**.
+4. Add the **Content** of the CMS page under **Description**.
 
-<ImagePopup src="/images/cms/description.png" alt="CMS Description" />
+   <ImagePopup src="/images/cms/description.png" alt="CMS Description" />
 
-**Step 4:** Add the following fields under **SEO**:
+5. Add the following fields under **SEO**:
 
-1. **Meta Description**  
-   Enter the description so that the **CMS Page** can easily appear in search engine listings.
+   - **Meta Title** – Provide the main title of the CMS page, by which your page will be known.
 
-2. **Meta Title**  
-   Provide the main title of the **CMS Page**, by which your page will be known.
+   - **Meta Keywords** – Provide meta keywords for the page to improve its searchability in search engines.
 
-3. **Meta Keyword**  
-   Provide meta keywords for the page to improve its searchability in search engines.
+   - **Meta Description** – Enter the description so that the CMS page can appear in search engine listings.
 
-4. **URL Key**  
-   The URL key is the part of a static URL that describes the Page, Product, or Category. 
+   - **URL Key** – The URL key is the part of a static URL that describes the Page, Product, or Category.
 
-<ImagePopup src="/images/cms/seo.png" alt="SEO Settings" />
+   <ImagePopup src="/images/cms/seo.png" alt="SEO Settings" />
 
-A new CMS page has been created successfully by the name of **New Page**, as shown in the image below.
+6. Click **Save Page**. A new CMS page is created by the name of **New Page**, as shown in the image below.
 
-<ImagePopup src="/images/cms/output.png" alt="CMS Page Output" />
+   <ImagePopup src="/images/cms/output.png" alt="CMS Page Output" />
 
-By this, you can easily create CMS pages in Bagisto.
+By this, you can create CMS pages in Bagisto.

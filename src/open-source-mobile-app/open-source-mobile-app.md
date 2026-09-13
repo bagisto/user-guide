@@ -55,7 +55,7 @@ To do this, the admin should go to **Settings -> Push Notifications**.
 
 Also, for adding a new notification the admin can click on the Add Notification button.
 
-<ImagePopup src="/images/native-mobile-app/3.png" alt="Push Notifications" />
+<ImagePopup src="/images/native-mobile-app/3.png" alt="Add Notification Form" />
 
 After this add the below details. 
 
@@ -139,7 +139,7 @@ There are two types of categories in the Laravel mobile application.
 
 **2) Child category:** Users can click on the subcategory within the main category to view the subcategory.
 
-<ImagePopup src="/images/native-mobile-app/10.png" alt="Categories" />
+<ImagePopup src="/images/native-mobile-app/10.png" alt="Child Categories" />
 
 Now after clicking on the child category, all products will show added by the admin. Child category will be listed shown in the **Grid** and **List** view.
 
@@ -147,7 +147,7 @@ Now after clicking on the child category, all products will show added by the ad
 
 **2) Grid View:** The user can also select the button grid to view the products.
 
-<ImagePopup src="/images/native-mobile-app/11.png" alt="Categories" />
+<ImagePopup src="/images/native-mobile-app/11.png" alt="Category Products in Grid and List View" />
 
 ### Account Information
 
@@ -188,7 +188,7 @@ The app user can click on any address to edit the details on the address from th
 
 **Wishlist:** The app user can view all the wishlist products from the Wishlist option.
 
-<ImagePopup src="/images/native-mobile-app/15.png" alt="Address" />
+<ImagePopup src="/images/native-mobile-app/15.png" alt="Recent Products, Reviews and Wishlist" />
 
 #### Compare Products
 
@@ -208,13 +208,13 @@ Now, people using the app can go ahead with the product they added to their cart
 
 Here, app users can use a code for their purchases. They also have the choice to keep shopping, update their cart, or empty the shopping cart before clicking to continue.
 
-<ImagePopup src="/images/native-mobile-app/18.png" alt="Product View" />
+<ImagePopup src="/images/native-mobile-app/18.png" alt="Shopping Cart" />
 
 In the next step, users have to choose how they want to pay for their order, which can be either Cash On Delivery or Money Transfer.
 
 Here users can check the price details of the order and can place the order. After that, the order has been placed and will get a confirmation with order ID and email.
 
-<ImagePopup src="/images/native-mobile-app/19.png" alt="Product View" />
+<ImagePopup src="/images/native-mobile-app/19.png" alt="Payment and Order Confirmation" />
 
 ### Dark Theme
 

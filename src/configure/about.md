@@ -8,8 +8,8 @@ Go to **Configure >> About**. It is available on the current version of Bagisto.
 
 The page is grouped into cards:
 
-- **Bagisto** — the Bagisto version, the Laravel and PHP versions and the Composer version.
-- **Environment** — the application name, its URL, whether it is running as **Local**, **Staging**, **Testing** or **Production**, whether **Debug Mode** is on, the timezone and locale, and whether maintenance mode is active.
+- **Bagisto** — the Bagisto version.
+- **Environment** — the application name, the Laravel, PHP and Composer versions, the store URL, whether it is running as **Local**, **Staging**, **Testing** or **Production**, whether **Debug Mode** is on, the timezone and locale, and whether maintenance mode is active.
 - **Database** — the engine in use, MySQL, MariaDB or PostgreSQL.
 - **Drivers** — which services handle the cache, session, queue, log and broadcast.
 - **Mail** — the transport mail leaves through, as set under **Configure >> Email**.

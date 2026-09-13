@@ -12,7 +12,7 @@ To start the buying leads process, the seller needs to log in to their **Seller 
 
 <ImagePopup src="/images/b2b-marketplace/1-seller-dashbord.png" alt="Seller Dashboard" />
 
-Go to the **“Buying Leads”** section in the Seller Dashboard. This section displays all customer RFQs (Request for Quotes).
+Go to the **Buying Leads** section in the Seller Dashboard. This section displays all customer RFQs (Request for Quotes).
 
 ---
 
@@ -29,13 +29,15 @@ Go to the **“Buying Leads”** section in the Seller Dashboard. This section d
 
 The seller can select an RFQ, send a quote with pricing, and message the customer to discuss or negotiate details.
 
-Click the **“Message”** button to open a message box, then write your message and click **“Send”** to share it with the customer and discuss their requirements.
+### Messaging the customer
+
+1. Click the **Message** button to open the message box.
+2. Write your message.
+3. Click **Send** to share it with the customer and discuss their requirements.
 
 <ImagePopup src="/images/b2b-marketplace/3-message-box.png" alt="Message Box" />
 
-Once the message is sent, it will appear in the **“Messages”** section.
-
-To view it, go to **“Messages”** and select the customer you recently messaged.
+Once the message is sent, it appears in the **Messages** section. To view it, go to **Messages** and select the customer you recently messaged.
 
 <ImagePopup src="/images/b2b-marketplace/4-message-communication.png" alt="Message Communication" />
 
@@ -43,14 +45,12 @@ To view it, go to **“Messages”** and select the customer you recently messag
 
 ### Send Quote
 
-Click the **“Send Quote”** button to share your quote with the customer.
-
-**The quote contains details like:**
-- **1) Quote Information:** Quote Quantity and Quote Price Per Quantity.
-- **2) Sample Information:** Details of product samples (if offered).
-- **3) Shipping Information:** Shipping time and customer notes.
-
-Click the **“Send”** button to submit your quote to the customer.
+1. Click the **Send Quote** button.
+2. Fill in the quote details:
+   - **Quote Information:** Quote Quantity and Quote Price Per Quantity.
+   - **Sample Information:** Details of product samples (if offered).
+   - **Shipping Information:** Shipping time and customer notes.
+3. Click the **Send** button to submit your quote to the customer.
 
 <ImagePopup src="/images/b2b-marketplace/5-send-quote.png" alt="Send Quote" />
 
@@ -62,7 +62,7 @@ After the lead is sent to the customer, it automatically shifts to the **RFQ** s
 
 ### Store Frontend
 
-Customers can easily track and manage the responses they receive from sellers.
+Customers can track and manage the responses they receive from sellers.
 
 Go to **Profile >> My Account >> My Requested Quote**
 

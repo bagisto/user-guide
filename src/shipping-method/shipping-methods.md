@@ -1,7 +1,7 @@
 # Shipping Methods
 
 To deliver products, Bagisto provides two types of shipping methods.  
-To configure, go to the Admin Panel and navigate to **Configure >> Shipping Methods**.
+To configure, go to the Admin Panel and navigate to **Configure >> Sales >> Shipping Methods**.
 
 ### 1) Free Shipping
 

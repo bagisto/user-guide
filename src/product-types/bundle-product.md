@@ -7,16 +7,16 @@ Each item in a bundle product can be based on one of the following product types
 - [Simple Product](https://bagisto.com/en/how-to-create-simple-product-in-bagisto/)
 - [Configurable Products](https://bagisto.com/en/how-to-create-configurable-product-in-bagisto/)
 
-### Steps To Create A Bundle Product In Bagisto
+### Creating a bundle product
 
-1. On the Bagisto admin dashboard, go to **Catalog Section >> Products >> select Bundle** under the Product Type.
-2. Select **Attribute Family**.
-3. Enter the **SKU** (Stock Keeping Unit) for the product (unique to every product).
-4. Click the **Save Button**.
+1. Go to **Catalog >> Products**.
+2. Click **Create Product**.
+3. Select **Bundle** under **Type**.
+4. Select the **Family**.
+5. Enter the **SKU** (Stock Keeping Unit) for the product (unique to every product).
+6. Click **Save Product**. You are redirected to the edit product page with several new settings.
 
 <ImagePopup src="/images/bundle-product/bundle.png" alt="Bundle Product" />
-
-After clicking on the Save Product button, you will be redirected to the next page with several new settings.
 
 ### General Settings
 
@@ -62,30 +62,35 @@ Fill in the following fields under description:
 Fill in the following fields under meta description for improved searchability on search engines:
 
 - **Meta Title:** Provide the main title of the product.
-- **Meta Keyword:** Provide meta keywords for specific search engine optimization.
+- **Meta Keywords:** Provide meta keywords for specific search engine optimization.
 - **Meta Description:** Enter a description for better search engine listings.
 
 <ImagePopup src="/images/bundle-product/meta-description.png" alt="Meta Description" />
 
 ### Images
 
-To add product images, click on **Add Images**. You can add multiple images for your product.
+To add product images, click on **Add Image**. You can add multiple images for your product.
 
 <ImagePopup src="/images/bundle-product/image.png" alt="Product Images" />
 
-### Bundle Item
+### Bundle Items
 
-Click on Add Option and:
+Click **Add Option** and fill in the option fields:
 
-- Enter the **Option Title**.
-- Set the **Input Type** (Select, Radio buttons, Checkbox, Multi-Select).
-- Mark the **Required** checkbox if the field is mandatory.
+- **Title:** The name of the option shown to the customer.
+- **Type:** How the customer picks from the option — **Select**, **Radio**, **Checkbox** or **Multiselect**.
+- **Is Required:** Set **Yes** if the customer must choose from this option, or **No** if it is optional.
 
 <ImagePopup src="/images/bundle-product/options.png" alt="Bundle Options" />
 
-In the Search Product section, search for the product to add to the bundle. Once found, add the product to the bundle, specifying the quantity for each item.
+To add products to the option:
 
-At the front end, customers can increase the quantity of the product to add to the cart, but the default quantity included in a bundle item cannot be changed.
+1. Click **Add Product** on the option. The **Select Products** modal opens.
+2. Search for the product and tick it.
+3. Click **Add Selected Product**.
+4. Enter the **Default Qty** for each product in the option.
+
+At the front end, the customer chooses the products of each option and picks the overall quantity of the bundle. For a **Select** or **Radio** option, the customer can also change the quantity of the chosen product; for **Checkbox** and **Multiselect** options, the **Default Qty** you set is used.
 
 <ImagePopup src="/images/bundle-product/bundle-options.png" alt="Bundle Product Options" />
 

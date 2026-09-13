@@ -19,6 +19,7 @@ Under **Clear Cache**, each button removes one kind of cached data so the store 
 - **Clear Event Cache** – cached event discovery data.
 - **Clear Route Cache** – cached route definitions.
 - **Clear View Cache** – compiled page templates.
+- **Clear Page Cache** – the full page cache of the storefront, the same as **Flush Page Cache** below.
 
 Under **Build Cache**, each button pre-builds a cache so the store starts fast after a deployment:
 
@@ -27,9 +28,8 @@ Under **Build Cache**, each button pre-builds a cache so the store starts fast a
 - **Cache Routes** – the routes.
 - **Cache Views** – the page templates.
 
-**Step 1:** Click the button for the action you want.
-
-**Step 2:** Read the result in the **Output Console** below the buttons. A success message and the command's output appear once it has finished.
+1. Click the button for the action you want.
+2. Read the result in the **Output Console** below the buttons. A success message and the command's output appear once it has finished.
 
 ### Important notes
 

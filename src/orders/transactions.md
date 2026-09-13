@@ -4,42 +4,43 @@ Transaction is a digital financial exchange that occurs when you buy goods and s
 
 E-commerce transaction means the transfer of funds electronically in exchange for products or services, conducted via e-commerce websites or mobile applications.
 
-### Steps to Create Transactions in Bagisto 
+### Creating a transaction
 
-**Step-1** Click on **Orders >> Transactions >> Create Transaction** as shown in the below image.
+1. Go to **Sales >> Transactions**.
 
-<ImagePopup src="/images/orders/create-transaction.png" alt="Create Transactions" />
+2. Click **Create Transactions**, as shown in the below image.
 
-**Step-2** Add the below details.
+   <ImagePopup src="/images/orders/create-transaction.png" alt="Create Transactions" />
 
-**A) Invoice ID-** Enter the Invoice ID for which you are creating a transaction.  
+3. Enter the **Invoice ID** for which you are creating a transaction.
 
-**B) Payment Methods-** By default, 3 online payment gateways are presented.  
+4. Select your payment gateway from the **Payment Method** dropdown. By default, 3 online payment gateways are presented:
 
-- Paypal Smart Button  
-- Money Transfer  
-- Paypal Standard  
+   - Paypal Smart Button
+   - Money Transfer
+   - Paypal Standard
 
-Kindly select your payment gateway from the dropdown.  
+5. Enter the **Amount** of your transaction.
 
-**C) Amount-** Enter the amount of your transaction.  
+6. Click **Save Transaction**.
 
-At last, click on the **Save Transaction** button.  
+   <ImagePopup src="/images/orders/save-transaction.png" alt="Save Transaction" />
 
-<ImagePopup src="/images/orders/save-transaction.png" alt="Save Transaction" />
-
-**Step-3** Transaction is created successfully as shown in the image below.
+The transaction is created successfully, as shown in the image below.
 
 <ImagePopup src="/images/orders/transaction-grid.png" alt="Transaction Grid" />
 
-**Note - Additionally, you can also create transactions while creating an Invoice**
+### Creating a transaction while creating an invoice
 
-**1)** Click on **Sales >> Order >> Select Order** and then click on **Invoice button** after that click on the **Create Transaction** checkbox.  
+You can also create a transaction at the same time as an invoice.
 
-At last, click on the **Create Invoice** button as shown in the below image.  
+1. Go to **Sales >> Orders** and open the order.
+2. Click the **Invoice** button.
+3. Tick the **Create Transaction** checkbox.
+4. Click **Create Invoice**, as shown in the below image.
 
-<ImagePopup src="/images/orders/other.png" alt="Transaction During Invoice" />
+   <ImagePopup src="/images/orders/other.png" alt="Transaction During Invoice" />
 
-**2)** Now go to **Sales >> Orders >> Transactions** and a new transaction is created successfully as shown in the image below.
+5. Go to **Sales >> Transactions**. The new transaction is listed, as shown in the image below.
 
-<ImagePopup src="/images/orders/transaction-output.png" alt="Transaction Output" />
+   <ImagePopup src="/images/orders/transaction-output.png" alt="Transaction Output" />

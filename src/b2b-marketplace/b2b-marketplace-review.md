@@ -14,25 +14,24 @@ This feature creates a transparent B2B marketplace where genuine feedback suppor
 
 ### How to Submit a Review
 
-The customer opens the **Supplier Page** to view details about the seller. From this page, they can click on the **“Review”** button.
+1. Open the **Supplier Page** to view details about the seller.
+2. Click the **Review** button.
 
-<ImagePopup src="/images/b2b-marketplace/1-seller-profile-page.png" alt="Seller Profile Page" />
+   <ImagePopup src="/images/b2b-marketplace/1-seller-profile-page.png" alt="Seller Profile Page" />
 
-Once the **Review Page** is open, click on the **“Write a Review”** button to start adding your feedback about the seller.
+3. On the **Review Page**, click the **Write a Review** button.
 
-<ImagePopup src="/images/b2b-marketplace/2-write-a-review.png" alt="Write a Review Button" />
+   <ImagePopup src="/images/b2b-marketplace/2-write-a-review.png" alt="Write a Review Button" />
 
-A popup box will open on your screen.
+4. Fill in the popup:
 
-- **Rating:** Select the rating the customer wants to give the seller. 
+   - **Rating:** Select the rating you want to give the seller.
+   - **Title:** Enter a clear title for the review.
+   - **Comment:** Write detailed comments about the seller’s service.
 
-- **Title:** Enter a clear title for the review.
+5. Click the **Submit** button to post the review.
 
-- **Comment:** Write detailed comments about the seller’s service.
-
-Finally, click on the **“Submit”** button to post the review.
-
-<ImagePopup src="/images/b2b-marketplace/3-review-msg.png" alt="Review Submission Popup" />
+   <ImagePopup src="/images/b2b-marketplace/3-review-msg.png" alt="Review Submission Popup" />
 
 **Note:** Reviews show on the page only after the admin approves.
 
@@ -40,17 +39,14 @@ Finally, click on the **“Submit”** button to post the review.
 
 ### Admin Panel: Approve Reviews
 
-Go to **B2B Marketplace >> Supplier Reviews** to handle and approve supplier reviews.
+1. Go to **B2B Marketplace >> Supplier Reviews**. The supplier reviews page opens, where the admin can see all customer ratings and feedback in one place.
 
-The seller's review page will open, where the admin can see all customer ratings and feedback in one place.
+   <ImagePopup src="/images/b2b-marketplace/4-review-unapproved-state.png" alt="Review Unapproved State" />
 
-<ImagePopup src="/images/b2b-marketplace/4-review-unapproved-state.png" alt="Review Unapproved State" />
+2. Select the review using its checkbox.
+3. Choose **Approve** or **Disapprove** from the **Select Action** dropdown.
 
-To approve or disapprove a review, the admin selects it using the checkbox and chooses the desired action from the **“Select Action”** dropdown.
-
-<ImagePopup src="/images/b2b-marketplace/5-select-action.png" alt="Select Action Dropdown" />
-
-The admin can then either approve or disapprove the review.
+   <ImagePopup src="/images/b2b-marketplace/5-select-action.png" alt="Select Action Dropdown" />
 
 ---
 

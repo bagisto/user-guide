@@ -1,9 +1,11 @@
 # Notifications
 
-A notification is a message or alert that provides information or prompts an action to users, usually within software applications, websites, or devices.
+Each switch on this page controls one email the store sends: to the customer when they register, place an order, or receive an invoice, shipment or refund, and to the admin for the same events.
 
-To configure notifications, go to the Admin Panel and navigate to **Configure >> Email >> Notifications**. Each switch controls one email the store sends: to the customer when they register, place an order, or receive an invoice, shipment or refund, and to the admin for the same events.
+1. Go to **Configure >> Email >> Notifications**.
+2. Switch each email on or off.
+3. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/notifications.png" alt="Notifications" />
+<ImagePopup src="/images/configure/notifications.png" alt="Notification switches" />
 
-After making changes, click the **Save Configuration** button.
+The wording of each email is edited under **Marketing >> Communications >> Email Templates**; see [Email Templates](../marketing/email-templates.md). No email leaves the store until the sender address is set under [Email Settings](./email-settings.md).

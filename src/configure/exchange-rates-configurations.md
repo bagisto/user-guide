@@ -1,85 +1,42 @@
-# Exchange Rates Configuration
+# Exchange Rates
 
-Bagisto Exchange Rates lets you automatically refresh currency exchange rates by using outside API services.
+Bagisto can refresh your currency exchange rates automatically from an external rate service, so the prices shown in each currency stay correct without anyone typing rates in by hand.
 
-In the admin panel, you can quickly input API credentials, choose your favorite service provider, and arrange a timetable for automatic updates.
+Go to **Configure >> General >> Exchange Rates**.
 
-This makes sure your store’s currency rates are correct without needing to do it by hand.
+<ImagePopup src="/images/configure/exchange-rates-configurations.png" alt="Exchange Rates configuration" />
 
-To set up exchange rates, navigate to **Configure >> General >> Exchange Rates**, as illustrated in the image below.
+## Choose a rate service
 
-  <ImagePopup src="/images/configure/exchange-rates-configurations.png" alt="Exchange Rates Configuration" />
+Two services are supported. Sign up with the one you prefer and copy its API key:
 
-### Exchange Rates Configurations
+- **Exchange Rates API** ([exchangerate-api.com](https://www.exchangerate-api.com)) fetches every currency in one call; the free plan allows 1,500 requests a month.
+- **Fixer API** ([fixer.io](https://fixer.io)) fetches rates per currency pair; the free plan allows 100 requests a month.
 
-Below are the detailed steps of the exchange rates configurations.
+## Enter the credentials
 
-**1) General Settings**
+1. In **General Settings**, choose the **Default Service** the store uses.
+2. In the **Exchange Rates API** or **Fixer API** section, paste the **API Key** for that service.
+3. Click **Save Configuration**.
 
-In this part, you can pick the default exchange rate service that Bagisto will use.
+If no key is entered here, the store uses the key whoever manages the server has placed in its environment settings, so a key can be kept out of the admin entirely.
 
-You can choose between Exchange Rates API and Fixer API, based on what you like and what you need.
+## Schedule automatic updates
 
-**2) Fixer API**
+1. In the **Scheduled Import** section, switch **Enabled** on.
+2. Choose the **Frequency**: daily, weekly (every Monday) or monthly (on the first day of the month).
+3. Enter the **Start Time (HH:MM)** the update runs at, in 24-hour format, for example `03:00`.
+4. Click **Save Configuration**.
 
-Here, you have to put in the API key you got from fixer.io.
-
-Fixer gives you both real-time and past exchange rate information. It also has a free plan, but you can only make a limited number of API requests.
-
-**3) Exchange Rates API**
-
-In this section, you need to enter your API key from exchangerate-api.com. This service offers real-time exchange rates for over 160 currencies.
-
-The free plan lets you make up to 1,500 requests each month, which is good for most small to medium-sized stores.
-
-**4) Scheduled Import**
-
-You can turn on scheduled updates to automatically refresh exchange rates at set times.
-
-Once you turn it on, you can pick how often to update — daily, weekly (every Monday), or monthly (on the 1st day of the month).
-
-You can easily add this from the settings as shown below.
-
-<ImagePopup src="/images/configure/schedule.png" alt="Exchange Rates Configurations" />
-
-You have to set the start time using the **24-hour format**, like this: 03:00.
+<ImagePopup src="/images/configure/schedule.png" alt="Scheduled Import settings" />
 
 Scheduled updates run on the server's task scheduler. If the rates do not refresh at the set time, ask whoever manages the server to check that the scheduler is running.
 
-<ImagePopup src="/images/configure/terminial-cron.png" alt="Exchange Rates Configurations" />
+<ImagePopup src="/images/configure/terminial-cron.png" alt="Scheduler output on the server" />
 
-### Keys kept on the server
+## Update the rates by hand
 
-If no key is entered in the admin panel, Bagisto uses the key whoever manages the server has placed in its environment settings, so a key can be kept out of the admin entirely.
+1. Go to **Settings >> Exchange Rates**.
+2. Click **Update Exchange Rate**.
 
-### Manual Update
-
-Besides automatic updates, you can also refresh exchange rates by hand.
-
-To do this, go to the admin panel, then click on **Settings >> Exchange Rates** and hit the **Update Exchange Rate** button.
-
-### Exchange Rates API (exchangerate-api.com):
-
-- Endpoint Example: **v6.exchangerate-api.com/v6/{API_KEY}/latest/{BASE}**
-
-- Fetches all currency rates in a single API call
-
-- Free tier: 1,500 requests/month
-
-- Sign up: [https://www.exchangerate-api.com](https://www.exchangerate-api.com)
-
-### Supported Services
-
-Bagisto Exchange Rates API (exchangerate-api.com)
-
-This tool gets all the currency exchange rates with just one API call. You can make 1,500 free requests every month.
-
-### Fixer API (fixer.io)
-
-- Endpoint: http://data.fixer.io/api/{date}
-
-- Fetches rates per currency pair
-
-- Free tier: 100 requests/month
-
-- Sign up: [https://fixer.io](https://fixer.io)
+The rates are fetched from the default service at once. Rates can also be edited one by one on the same page; see [Exchange Rates](../settings/exchange-rates.md).

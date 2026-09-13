@@ -4,34 +4,30 @@ Search Synonyms are terms that customers use as alternatives for a particular pr
 
 For example, if a customer searches for *shoe*, it can also match with *formal shoes, sports shoes, party wear shoes,* etc.
 
-### Step 1: Create Search Synonym
+### Creating a search synonym
 
-On the Admin panel, go to **Marketing >> Search & SEO >> Search Synonyms** and click on the **Create Search Synonyms** button as shown below.
+1. Go to **Marketing >> Search & SEO >> Search Synonyms**.
 
-<ImagePopup src="/images/marketing/search-synonym.png" alt="Search Synonym" />
+2. Click **Create Search Synonym**, as shown below.
 
-### Step 2: Enter Synonym Details
+   <ImagePopup src="/images/marketing/search-synonym.png" alt="Search Synonym" />
 
-Fill in the following fields:
+3. Fill in the following fields:
 
-- **Name** – Enter the main synonym word.  
+   - **Name** – Enter the main synonym word.  
 
-- **Terms** – Add the related terms that belong to the synonym name.  
+   - **Terms** – Add the related terms that belong to the synonym name.  
 
-<ImagePopup src="/images/marketing/synonym-field.png" alt="Search Synonym Fields" />
+   <ImagePopup src="/images/marketing/synonym-field.png" alt="Search Synonym Fields" />
 
-Click on the **Save Search Synonym** button.
+4. Click **Save Search Synonym**.
 
-### Step 3: Verify Synonym
-
-A new synonym field (for example, **shoe**) is created successfully as shown below.
+The new synonym (for example, **shoe**) is listed, as shown below.
 
 <ImagePopup src="/images/marketing/synonym-grid.png" alt="Synonym Grid" />
 
-### Step 4: Frontend 
+### Frontend
 
-Now test the result by searching your synonym.  
-
-It will display all related categories of the synonym (e.g., shoes) as shown below.
+Test the result by searching for your synonym on the storefront. All products related to the synonym (for example, shoes) are listed, as shown below.
 
 <ImagePopup src="/images/marketing/synonym-output.png" alt="Synonym Output" />

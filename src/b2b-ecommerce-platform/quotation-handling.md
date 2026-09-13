@@ -6,7 +6,7 @@ Users can create, negotiate, and respond to quotations seamlessly directly from 
 
 **Accessing Quotations**
 
-Go to **My Account → Profile → Quotations** from the company storefront.
+Go to **My Account >> Profile >> Quotations** from the company storefront.
 
 ### My Quotations
 
@@ -45,11 +45,11 @@ At the bottom of the quotation details page, users can directly communicate with
 
 **How to Send a Message:**
 
-1) Click the Message button.
+1. Click the **Message** button.
 
-2) Enter your text in the “Enter your message here…” field.
+2. Enter your text in the “Enter your message here…” field.
 
-3) Click Send to deliver your message.
+3. Click **Send** to deliver your message.
 
 All messages are displayed under the conversation thread with details like sender name, message content, and timestamp.
 
@@ -85,9 +85,9 @@ A dialog box appears, allowing you to specify the reason for rejection.
 
 **Steps:**
 
-1) Enter your message or reason for rejection.
+1. Enter your message or reason for rejection.
 
-2) Click Save to confirm.
+2. Click **Save** to confirm.
 
 Once saved, the quotation status updates accordingly to reflect the action taken.
 
@@ -99,7 +99,7 @@ The Quotation Management feature enables both admin and company users to review,
 
 **Accessing Quotations**
 
-Navigate to **B2B → Quotations** from the admin panel.
+Navigate to **B2B >> Quotations** from the admin panel.
 
 This section displays all quotation requests received from company users for review and action.
 
@@ -133,7 +133,7 @@ Click the **View** icon next to the quotation entry to open the detailed quotati
 
 This section provides complete information about the selected quotation, including Quotation Information, company information, Quotation Items, and Quotation Messages. As shown in the image below.
 
-<ImagePopup src="/images/b2b-ecommerce-platform/quatation-7.png" alt="Quotations List" />
+<ImagePopup src="/images/b2b-ecommerce-platform/quatation-7.png" alt="Admin Quotation Details" />
 
 ### Quotation Messages
 
@@ -141,11 +141,11 @@ Admins and company users can exchange messages directly within the quotation usi
 
 **How to Send a Message:**
 
-1) Click the Message button.
+1. Click the **Message** button.
 
-2) Type your text in the “Enter your message here…” field.
+2. Type your text in the “Enter your message here…” field.
 
-3) Click Send to deliver the message.
+3. Click **Send** to deliver the message.
 
 <ImagePopup src="/images/b2b-ecommerce-platform/quatation-8.png" alt="Quotation Messages" />
 
@@ -173,11 +173,11 @@ Once negotiation is complete, admins can finalize the quotation.
 
 **Accept Last Quotation:**
 
-1) Click the Accept Last Quotation button to approve.
+1. Click the **Accept Last Quotation** button to approve.
 
-2) Enter a message and click Save to confirm.
+2. Enter a message and click **Save** to confirm.
 
-3) The quotation status updates to Accepted on the storefront, enabling the company to proceed with the purchase via the Add to Cart button.
+3. The quotation status updates to Accepted on the storefront, enabling the company to proceed with the purchase via the Add to Cart button.
 
 <ImagePopup src="/images/b2b-ecommerce-platform/quatation-10.png" alt="Accept or Reject Quotation" />
 
@@ -185,13 +185,12 @@ Once negotiation is complete, admins can finalize the quotation.
 
 ### Reject Quotation:
 
-1) Click the Reject Quotation button.
+1. Click the **Reject Quotation** button.
 
-2) Enter the reason for rejection in the message field.
+2. Enter the reason for rejection in the message field.
 
-3) Click Save to finalize the action.
+3. Click **Save** to finalize the action.
 
 <ImagePopup src="/images/b2b-ecommerce-platform/quatation-10.png" alt="Reject Quotation" />
 
 **Note: Once a quotation is finalized (Accepted or Rejected), no further modifications to products or pricing are allowed.**
-

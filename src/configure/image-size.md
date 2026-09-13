@@ -1,21 +1,12 @@
 # Image Size
 
-The storefront is the customer-facing interface of an online shop, showcasing products, categories, and navigation for a seamless shopping experience.
+Every product image is resized into three sizes for the storefront: small for lists and the cart, medium for product cards, and large for the product page. Set the pixel sizes here, and a placeholder for products that have no image of their own.
 
-To configure image sizes, go to the Admin Panel and click on **Configure >> Catalog >> Products**. Each size also takes a **Placeholder** image, shown for a product that has no image of its own.
+1. Go to **Configure >> Catalog >> Products**.
+2. In **Small Image**, **Medium Image** and **Large image**, enter the **Width** and **Height** in pixels.
+3. Optionally click **Add Image** under each size to upload the placeholder shown when a product has no image.
+4. Click **Save Configuration**.
 
-### Small Image
+<ImagePopup src="/images/configure/image-size.png" alt="Image size settings" />
 
-Set the **Height** and **Width** for small images.
-
-### Medium Image
-
-Set the **Height** and **Width** for medium images.
-
-### Large Image
-
-Set the **Height** and **Width** for large images.
-
-<ImagePopup src="/images/configure/image-size.png" alt="Image Size Configuration" />
-
-After making the changes, click on the **Save Configuration** button.
+Sizes already generated are refreshed the next time each image is requested, so a change can take a moment to show everywhere.

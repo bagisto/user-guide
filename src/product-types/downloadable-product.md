@@ -2,12 +2,14 @@
 
 This document will guide you on how to create a Downloadable Product in Bagisto. Downloadable products refer to items that can be downloaded, such as eBooks, software applications, music, updates, games, etc. These products are digital and do not involve a shipping method at checkout.
 
-### Steps to Create a Downloadable Product in Bagisto
+### Creating a downloadable product
 
-1. On the Bagisto admin dashboard, go to **Catalog Section >> Products >> select Downloadable** under the Product Type.
-2. Select **Attribute Family**.
-3. Enter **SKU** (Stock Keeping Unit) of the product, unique to every product.
-4. Now **Save the Product**, and you will be redirected to the next page with general settings.
+1. Go to **Catalog >> Products**.
+2. Click **Create Product**.
+3. Select **Downloadable** under **Type**.
+4. Select the **Family**.
+5. Enter the **SKU** (Stock Keeping Unit) of the product, unique to every product.
+6. Click **Save Product**. You are redirected to the edit product page with the general settings.
 
 <ImagePopup src="/images/downloadable-product/downloadable.png" alt="Downloadable Product Creation" />
 
@@ -51,7 +53,7 @@ Fill in the following fields under the description:
 Fill in the following fields under meta description for improved searchability on search engines:
 
 - **Meta Title:** Provide the main title of the product.
-- **Meta Keyword:** Provide meta keywords for specific search engine optimization.
+- **Meta Keywords:** Provide meta keywords for specific search engine optimization.
 - **Meta Description:** Enter a description for better search engine listings.
 
 <ImagePopup src="/images/downloadable-product/meta-description.png" alt="Downloadable Product Meta Description" />
@@ -64,27 +66,27 @@ Insert the price, cost, and special price. Set the special price date for which 
 
 ### Images
 
-To add product images, click on Add Images. You can add multiple images for your product.
+To add product images, click on **Add Image**. You can add multiple images for your product.
 
 <ImagePopup src="/images/downloadable-product/image.png" alt="Upload Images for Downloadable Product" />
 
-### Downloadable Information
+### Downloadable Links
 
-Here, enter the downloadable information about your product:
+In the **Downloadable Links** section, click **Add Link** and fill in the link fields:
 
-- **Name:** Enter the name of your downloadable product.
-- **Price:** Enter the price of the downloadable product.
-- **File:** Attach the file.  
-  - **Upload File:** Upload the file.  
-  - **Insert URL:** Insert the URL.  
-- **Sample:** Insert URL/upload file to give a free sample.  
-- **Download Allow:** Specify the maximum number of downloads. Enter "0" for unlimited downloads.  
+- **Title:** The name of the download shown to the customer.
+- **Price:** The price of this download, added to the product price.
+- **Download Allowed:** The maximum number of downloads. Enter "0" for unlimited downloads.
+- **File Type:** Choose **File** to upload the file, or **URL** to link to it.
+- **File** or **URL:** Upload the file, or enter the URL, depending on the file type.
+- **Sample Type:** Choose **File** or **URL** if you want to offer a free sample of this download.
+- **Sample:** Upload the sample file, or enter its URL.
 
 <ImagePopup src="/images/downloadable-product/downlodable-info.png" alt="Downloadable Product File Information" />
 
-### Samples
+### Downloadable Samples
 
-If you want to provide a free sample of your product, add a new link from the Samples section below the Links section. Enter the title and attach the sample file.
+If you want to provide a free sample of your product independent of any link, click **Add Sample** in the **Downloadable Samples** section below the links. Enter the **Title**, choose the **File Type** and upload the file or enter the URL.
 
 <ImagePopup src="/images/downloadable-product/link.png" alt="Downloadable Product Sample File" />
 

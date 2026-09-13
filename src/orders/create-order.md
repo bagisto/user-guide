@@ -6,27 +6,31 @@ When a customer places an order from the front end, the admin panel generates th
 
 ## How to Manage Orders in Bagisto
 
-### Adding Products in Cart
+### Placing an order from the storefront
 
-**Step 1:** Open the Product Detail page and **Add the product** to the cart.
+1. Open the product detail page and click **Add To Cart**.
 
-<ImagePopup src="/images/orders/cart.png" alt="Cart" />
+   <ImagePopup src="/images/orders/cart.png" alt="Cart" />
 
-**Step 2:** Continue to checkout inside the **Shopping Cart**.
+2. Open the **Shopping Cart** and click **Proceed To Checkout**.
 
-<ImagePopup src="/images/orders/shopping-cart.png" alt="Shopping Cart" />
+   <ImagePopup src="/images/orders/shopping-cart.png" alt="Shopping Cart" />
 
-**Step 3:** You will be redirected to the checkout page. Fill in the necessary information regarding the **Billing Address**.
+3. On the checkout page, fill in the necessary information regarding the **Billing Address** and confirm it.
 
-<ImagePopup src="/images/orders/billing-address.png" alt="Billing Address" />
+   <ImagePopup src="/images/orders/billing-address.png" alt="Billing Address" />
 
-**Step 4:** After confirming, add the **Shipping Method** and **Payment Method**, then click on **Place Order**.
+4. Select a **Shipping Method**.
 
-<ImagePopup src="/images/orders/cart-summary.png" alt="Cart Summary" />
+5. Select a **Payment Method**.
 
-**Step 5:** After clicking on **Place Order**, the next page will display an **Order ID**.
+6. Click **Place Order**.
 
-<ImagePopup src="/images/orders/order-id.png" alt="Order ID" />
+   <ImagePopup src="/images/orders/cart-summary.png" alt="Cart Summary" />
+
+7. The next page displays an **Order ID**.
+
+   <ImagePopup src="/images/orders/order-id.png" alt="Order ID" />
 
 ---
 
@@ -42,8 +46,8 @@ On the Information Page, the admin can check customer details like name, address
 
 <ImagePopup src="/images/orders/order-info.png" alt="Order Info" />
 
-⚠️ **Note:** The cancel button will be visible only when the order status is **Pending**.
+**Note:** The cancel button will be visible only when the order status is **Pending**.
 
 ---
 
-✅ By following these steps, you can easily create an **Order** in Bagisto.
+By following these steps, you can create an **Order** in Bagisto.

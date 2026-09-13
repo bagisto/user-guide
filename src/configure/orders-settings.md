@@ -1,35 +1,35 @@
 # Order Settings
 
-To configure order settings, go to the Admin Panel and navigate to **Configure >> Sales >> Order Settings**.
+Go to **Configure >> Sales >> Order Settings**.
 
-**Order Number Settings:**  
-These settings determine how order numbers are generated, formatted, and managed within the system. They are crucial for organizing and tracking orders efficiently.
+<ImagePopup src="/images/configure/order-settings.png" alt="Order settings" />
 
-**Minimum Order Settings:**  
-Configured criteria specifying the lowest required quantity or value for an order to be processed or qualify for benefits.
+## Order number settings
 
-You can also add new configuration options in the Order section, including **Include Discount Amount**, **Include Tax to Amount**, and **Description** on the cart page.
+Decide how order numbers are built: an **Order Number Prefix**, the **Order Number Length** it is padded to, and an **Order Number Suffix**. Change these before the store takes orders, so the numbering stays consistent.
 
-<ImagePopup src="/images/configure/order-settings.png" alt="Order Settings" />
+## Minimum order settings
 
-**Allow Reorder:**  
-Enable or disable the reordering feature for admin users and for customers on the storefront, with a switch for each.
+1. Switch **Enable** on.
+2. Enter the **Minimum Order Amount** a cart must reach before checkout is allowed.
+3. Choose whether the check counts the discount (**Include Discount Amount**) and the tax (**Include Tax to Amount**).
+4. Enter the **Description** shown in the cart when the amount is not reached.
+5. Click **Save Configuration**.
 
-**Order Creation:**  
+## Allow reorder
+
+Two switches let an order be placed again with the same items: **Admin Reorder** adds a **Reorder** button to the admin order page, and **Shop Reorder** adds one to the customer's order page on the storefront.
+
+<ImagePopup src="/images/configure/allow-reorder.png" alt="Allow Reorder switches" />
+
+To reorder from the admin, go to **Sales >> Orders** and open an order placed by a registered customer. The **Reorder** button appears when every product on the order can still be bought; guest orders cannot be reordered, and booking products are skipped and must be booked again.
+
+<ImagePopup src="/images/configure/admin-reorder.png" alt="Reorder button on an admin order" />
+
+On the storefront, the customer opens **My Account >> Orders**, opens the order, and finds **Reorder** at the top of the order's detail page.
+
+<ImagePopup src="/images/configure/frontreorder.png" alt="Reorder button on a customer's order" />
+
+## Order creation
+
 **Max Retry Attempts** is how many times the store retries creating an order when the attempt fails part-way, for example when two orders are placed at the same instant. Leave the default unless you see failed order placements.
-
-<ImagePopup src="/images/configure/allow-reorder.png" alt="Allow Reorder" />
-
-After making changes, click the **Save Configuration** button.
-
-## Admin Reorder
-
-To check admin reorder functionality, go to **Sales >> Orders** and open an order placed by a registered customer. The **Reorder** option appears when at least one of its products can still be bought; guest orders and booking products cannot be reordered.
-
-<ImagePopup src="/images/configure/admin-reorder.png" alt="Admin Reorder" />
-
-## Frontend Reorder
-
-After completing your order, navigate to **My Account >> Orders** and open the order. The **Reorder** button appears at the top of the order's detail page.
-
-<ImagePopup src="/images/configure/frontreorder.png" alt="Frontend Reorder" />

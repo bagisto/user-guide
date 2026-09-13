@@ -8,25 +8,29 @@ By assigning customers to specific groups, you can control how much each group p
 
 ### Steps to Create a Customer Group Price in Bagisto
 
-**Step 1**: First, create the customer group and assign the group to the customer, or by default use groups like **General, Wholesale, or Guest**.
+Before you start, create the customer group and assign it to the customer, or use one of the default groups **General, Wholesale, or Guest**.
 
-**Step 2**: Login to the admin panel of Bagisto and go to **Catalog >> Products**. 
+1. Go to **Catalog >> Products** and open the product edit page. The **Customer Group Price** section is shown as in the below image.
 
-Create a new product and go to the product edit page. You will be able to see the **Customer Group Price** section as shown in the below image.  
+   <ImagePopup src="/images/customer/customer-price.png" alt="Customer Group Price" />
 
-<ImagePopup src="/images/customer/customer-price.png" alt="Customer Group Price" />
+2. Click **Add New**.
 
-**Step 3**: Now click on **Add New** and add the below fields:  
+3. Fill in the following fields:
 
-- **A) Discounted Price** – Set a percentage discount on the product price.  
+   - **Customer Group** – Select the customer group (Guest, General, Wholesale, or any group you have created).
 
-- **B) Fixed Price** – Set a fixed price on the product after the offer.  
+   - **Minimum Qty** – Minimum quantity required to avail of the offer.
 
-- **C) Quantity** – Minimum quantity required to avail of the offer.  
+   - **Price Type** – Choose **Fixed** to set a fixed price for the product, or **Discount** to set a percentage discount on the product price.
 
-- **D) Customer Group** – Select the customer group (Prime, Guest, Wholesale, General, etc.).  
+   - **Price** – The fixed price or the discount percentage, depending on the price type.
 
-*(Note: You can create groups as per your requirement.)*  
+4. Click the **Save** button, as shown below.
+
+   <ImagePopup src="/images/customer/group-price.png" alt="Save Customer Group Price" />
+
+5. Click **Save Product**.
 
 ---
 
@@ -36,11 +40,7 @@ Here I have set the fixed price of the product in the **Guest Customer group** w
 
 It means if you purchase one piece of this product at $2500, and a Customer Group Price is added at $220, then the cost will be $220 for a quantity of one.
 
-So now click on the **Save** button as shown below.  
-
-<ImagePopup src="/images/customer/group-price.png" alt="Save Customer Group Price" />
-
-Now save the product. You can see the price change according to the group.  
+After saving the product, you can see the price change according to the group.  
 
 As set for the Guest group with the fixed price, it is showing the pricing according to the guest group as shown below.  
 
@@ -67,4 +67,3 @@ These pricing tiers can be added directly in the Customer Group Price section of
 You can check the Storefront view to see how all the tiered customer pricing options appear together for the same product.
 
 <ImagePopup src="/images/customer/price-output1.png" alt="Storefront Multiple Customer Group Pricing" />
-

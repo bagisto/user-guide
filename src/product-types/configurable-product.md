@@ -4,15 +4,21 @@ Configurable products are items or services that offer customers the flexibility
 
 This customization allows for a diverse range of variations without the need for creating unique products. Configurable products are designed to meet individual needs, enhancing customer satisfaction and providing a tailored experience in [Bagisto](https://bagisto.com/en/).
 
-### How to Create a Configurable Product in Bagisto 
+### Creating a configurable product
 
-1. **Add Product:** Click on **Catalog >>** select **Configurable** as Product Type >> select **Family** >> enter **SKU** and then **Save the Product** as shown in the below image.
+1. Go to **Catalog >> Products**.
+2. Click **Create Product**.
+3. Select **Configurable** under **Type**.
+4. Select the **Family**.
+5. Enter the **SKU**.
 
-<ImagePopup src="/images/configurable-product/configurable.png" alt="Configurable" />
+   <ImagePopup src="/images/configurable-product/configurable.png" alt="Configurable" />
 
-After you Save the Product, you get an option to select the **Color & Size**. In case you want some other attribute in your configurable product, you need to create an attribute first and then save the product as shown in the below image.
+6. Click **Save Product**. The **Configurable Attributes** section appears in the same window.
+7. Under **Configurable Attributes**, select the attributes to build the variations from, such as **Color** and **Size**. If you want some other attribute in your configurable product, you need to create that attribute first.
+8. Click **Save Product** again. You are redirected to the edit product page.
 
-<ImagePopup src="/images/configurable-product/configurable-attributes.png" alt="Configurable Attributes" />
+   <ImagePopup src="/images/configurable-product/configurable-attributes.png" alt="Configurable Attributes" />
 
 ### General Attributes
 Below is the list of fields you need to fill under General Attributes.
@@ -42,26 +48,26 @@ Below is the list of the fields you need to fill regarding the product under the
 <ImagePopup src="/images/configurable-product/descriptions.png" alt="Product Descriptions" />
 
 ### Meta Description
-Below is the list of fields that you need to provide under the meta description to make your product easily searchable on search engines.
+Below is the list of fields that you need to provide under the meta description to make your product searchable on search engines.
 
 - **Meta Title:** Provide the main title of the product by which your product will be known.
-- **Meta Keyword:** The meta keyword for the product needs to be provided to improve its searchability on the search engine for specific keywords.
-- **Meta Description:** Enter the description so that the product can easily appear in search engine listing.
+- **Meta Keywords:** The meta keywords for the product need to be provided to improve its searchability on the search engine for specific keywords.
+- **Meta Description:** Enter the description so that the product can appear in search engine listing.
 
 <ImagePopup src="/images/configurable-product/meta-descriptions.png" alt="Meta Descriptions" />
 
 ### Images
-Add the product images, click on **Add Images**. You can add multiple images for your product.
+To add the product images, click on **Add Image**. You can add multiple images for your product.
 
 <ImagePopup src="/images/configurable-product/image.png" alt="Product Images" />
 
 ### Variations
 
-Now you will be able to see the **Variations** right below the video section as shown below. You can simply Edit each product as we have created according to the Color and Size.
+The **Variations** section lists one variant for every combination of the attributes you selected, such as each Color and Size. You can edit each variant individually.
 
 <ImagePopup src="/images/configurable-product/variations.png" alt="Product Variations" />
 
-After all Variations are created, finally, **Save the Product**.
+After all variations are set up, click **Save Product**.
 
 ### Front End
 The product will be visible as given below on the front end.

@@ -32,7 +32,7 @@ These settings are used only when a search mode is set to Elasticsearch.
 
 **Authentication:** How the cluster is reached and signed in to. Only the fields the chosen method needs are shown:
 
-- **No authentication** — just the **Hosts**.
+- **No authentication** — only the **Hosts**.
 - **Username and password** — **Hosts**, **Username** and **Password**.
 - **API key** — **Hosts** and **API Key**.
 - **Elastic Cloud with API key** — **Cloud ID** and **API Key**.

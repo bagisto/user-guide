@@ -1,73 +1,64 @@
 # Google Captcha
 
-Google reCAPTCHA is a security feature provided by Google that helps protect websites from spam, bots, and automated abuse. 
+Google reCAPTCHA protects your storefront's forms from bots and automated abuse by scoring each visitor and rejecting the ones that look automated. Bagisto uses **reCAPTCHA Enterprise**, which is why a Google Cloud project and an API key are needed alongside the site key.
 
-It works by verifying whether an interaction is performed by a real human user or an automated script. By adding reCAPTCHA to forms such as login, registration, contact, and checkout, store owners can prevent fake submissions, brute-force attacks, and malicious activities.
+Go to **Configure >> Customer >> Google Captcha**. The settings are per channel.
 
-Bagisto uses **reCAPTCHA Enterprise**, which is why a Google Cloud project and an API key are needed alongside the site key.
+<ImagePopup src="/images/configure/configure-captcha.png" alt="Google Captcha configuration" />
 
-To add it, go to the Admin Panel and click on **Configure >> Customer >> Google Captcha** as shown below. The settings are per channel.
+## Get the keys from Google Cloud
 
- <ImagePopup src="/images/configure/configure-captcha.png" alt="Google Captcha" />
+### Project ID
 
-As soon as you click on it, a Status toggle button will appear. Once you enable it, you will see options to add **Project ID, API Key, Site Key** and **Score Threshold**.
+1. Open the [Google Cloud Console](https://console.cloud.google.com/).
+2. Create a project, or pick an existing one from the project dropdown.
+3. Copy the **Project ID** from the project dashboard. It is not the same as the project name.
 
-### To Obtain Google Cloud Project ID:
+<ImagePopup src="/images/configure/project-id.png" alt="Project ID in Google Cloud Console" />
 
-- Visit [Google Cloud Console](https://console.cloud.google.com/) 
-- Create a new project or select an existing one from the project dropdown.
-- Note your Project ID from the project dashboard (not the project name).
+### API key
 
- <ImagePopup src="/images/configure/project-id.png" alt="To Obtain Google Cloud Project ID" />
+1. In the console, open **APIs & Services >> Credentials**.
+2. Click **Create Credentials** and choose **API Key**.
+3. Copy the generated key.
 
-### Generate API Key:
+<ImagePopup src="/images/configure/api-1.png" alt="Creating an API key" />
 
-- In Google Cloud Console, navigate to APIs & Services → Credentials.
+### Site key
 
-- Click Create Credentials → API Key.
+1. In the console, open **Security >> reCAPTCHA**.
+2. Click **Create Key**.
+3. Enter a display name.
+4. Choose **Website** as the platform.
+5. Choose **Score-based (reCAPTCHA v3)**.
+6. Add your store's domain, for example `example.com`.
+7. Click **Create** and copy the site key.
 
-- Now copy the generated API key.
+<ImagePopup src="/images/configure/site-key.png" alt="Creating a reCAPTCHA site key" />
 
-<ImagePopup src="/images/configure/api-1.png" alt="Generate API Key" />
+## Enter the keys in Bagisto
 
-### Create reCAPTCHA Site Key:
+1. Switch **Status** on. The remaining fields appear.
+2. Paste the **Project ID**, **API Key** and **Site Key**.
+3. Set the **Score Threshold**. reCAPTCHA scores each visitor from 0 to 1 and anything below the threshold is treated as a bot; `0.5` is a sensible start.
+4. Click **Save Configuration**.
 
-- Navigate to Security → reCAPTCHA in Google Cloud Console.
-- Click Create Key.
-- Enter a display name for your key.
-- Select Website as the platform type.
-- Choose Score-based (reCAPTCHA v3) as the reCAPTCHA type.
-- Add your domain(s) in the Domains section (e.g., example.com).
-- Click Create and copy the generated site key.
+## Where the captcha appears
 
-Now enter the three values in the configuration, set the **Score Threshold** (reCAPTCHA scores each visitor from 0 to 1, and anything below the threshold is treated as a bot; **0.5** is a sensible start), and finally click on the **Save Configuration** button.
+Once saved, reCAPTCHA runs on these storefront forms:
 
- <ImagePopup src="/images/configure/site-key.png" alt="Create reCAPTCHA Site Key" />
+- Customer sign in
+- Customer sign up
+- Contact Us page, and the Contact Us form on product pages when the cart page is switched off
+- Forgot password
+- Checkout sign in
 
-As soon as the configuration is saved, Google reCAPTCHA will be displayed on these forms on the website:
+<ImagePopup src="/images/configure/customer-signin.png" alt="reCAPTCHA on customer sign in" />
 
-- Customer Sign In
-- Customer Sign Up
-- Contact Us Page, and the Contact Us form on product pages when the cart page is switched off
-- Forgot Password
-- Checkout Sign In
+<ImagePopup src="/images/configure/customer-signup.png" alt="reCAPTCHA on customer sign up" />
 
-### Customer Sign In
+<ImagePopup src="/images/configure/contact-us.png" alt="reCAPTCHA on the Contact Us page" />
 
-  <ImagePopup src="/images/configure/customer-signin.png" alt="Customer Sign In" />
+<ImagePopup src="/images/configure/forget-password.png" alt="reCAPTCHA on forgot password" />
 
-### Customer Sign Up
-
- <ImagePopup src="/images/configure/customer-signup.png" alt="Customer Sign Up" />
-
-### Contact Us Page
-
- <ImagePopup src="/images/configure/contact-us.png" alt="Contact Us Page" />
-
-### Recover Password 
-
- <ImagePopup src="/images/configure/forget-password.png" alt="Recover Password" />
-
-### Checkout Sign In 
-
- <ImagePopup src="/images/configure/checkout-signin.png" alt="Checkout Sign In" />
+<ImagePopup src="/images/configure/checkout-signin.png" alt="reCAPTCHA on checkout sign in" />

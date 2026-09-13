@@ -2,28 +2,30 @@
 
 As we all know, everyone wants some customization according to their own taste that's why knowing about changing the email template is also quite helpful for some users.
 
-### Step 1: 
+### Creating an email template
 
-**Add New Email Template**
+1. Go to **Marketing >> Communications >> Email Templates**.
 
-On the Admin panel, go to **Marketing >> Communications >> Email Templates** and click on **Create Template** as shown in the below image.
+2. Click **Create Template**, as shown in the below image.
 
-<ImagePopup src="/images/marketing/template.png" alt="Template" />
+   <ImagePopup src="/images/marketing/template.png" alt="Template" />
 
-### Step 2: 
+3. Enter the **Name** of the email template.
 
-Add **Name** and **Status** as Active, Inactive, or Draft of the Email Template as shown in the below image.
+4. Set the **Status** to **Active**, **Inactive** or **Draft**, as shown in the below image.
 
-<ImagePopup src="/images/marketing/template-name.png" alt="Template Name" />
+   <ImagePopup src="/images/marketing/template-name.png" alt="Template Name" />
 
-### Step 3: 
+5. Add the **Content**. You can paste the content into the editor.
 
-Add the content by simply copying and pasting. You can also apply a link after right-clicking on the content and add the **URL, Text to display, Title, Open Link in** as shown in the below image.
+6. To add a link, right-click the content and choose the link option.
 
-<ImagePopup src="/images/marketing/link.png" alt="Link" />
+7. Fill in the **URL**, **Text to display**, **Title** and **Open link in** fields, as shown in the below image.
 
-Now you will be able to see the new **Email Template** as shown below.
+   <ImagePopup src="/images/marketing/link.png" alt="Link" />
 
-<ImagePopup src="/images/marketing/output.png" alt="Output" />
+8. Click **Save Template**. The new email template is listed, as shown below.
 
-So by this, you can easily create an **Email Template** and use it in emails in Bagisto.
+   <ImagePopup src="/images/marketing/output.png" alt="Output" />
+
+By this, you can create an **Email Template** and use it in emails in Bagisto.

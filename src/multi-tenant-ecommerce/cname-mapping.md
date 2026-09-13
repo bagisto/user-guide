@@ -34,7 +34,11 @@ After mapping the domain with the server IP, log in as **Super Admin** in the Sa
 
 <ImagePopup src="/images/multi-tenant-ecommerce/3-super-tenants.png" alt="Super Admin Tenants List" />
 
-To map the tenant’s real domain (e.g., **myshopdemo.com**), click the **edit (pencil) icon**, enter the domain in the **CNAME** field, and then click **Save Tenant** to save.
+To map the tenant’s real domain (e.g., **myshopdemo.com**):
+
+1. Click the **edit (pencil) icon** on the tenant's row.
+2. Enter the domain in the **CNAME** field.
+3. Click **Save Tenant**.
 
 <ImagePopup src="/images/multi-tenant-ecommerce/4-edit-tenant.png" alt="Edit Tenant CNAME" />
 

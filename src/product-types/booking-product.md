@@ -1,30 +1,36 @@
 # Booking products
 
-With the help of booking products, customers can easily purchase and book everything online, including Appointments, Events, Rentals, and table booking.
+With the help of booking products, customers can purchase and book everything online, including Appointments, Events, Rentals, and table booking.
 
 With this product type, the admin can manage all necessary details of the booking product, such as date available, slot period, stock value, price settings, and much more.
 
 So let’s get started with how to create booking products in Bagisto.
 
-### How to Create Booking Products In Bagisto
+## Creating a booking product
 
-**Step-1** Click on Catalog >> Products >> Select Booking under Product Type as shown in the below image.
+1. Go to **Catalog >> Products**.
+2. Click **Create Product**.
+3. Select **Booking** under **Type**.
 
-<ImagePopup src="/images/booking-product/1.png" alt="Create Booking Products" />
+   <ImagePopup src="/images/booking-product/1.png" alt="Create Booking Products" />
 
-**Step-2** Select **Attribute Family >> enter SKU >>** Click to **Save Product** Now once you click on the Save Product button, you will be redirected to the next page, where you will find several new settings
+4. Select the **Family**.
+5. Enter the **SKU**.
+6. Click **Save Product**. You are redirected to the edit product page, where you find several new settings.
 
-**1) Name:-** Enter the name of the product.
+Fill in the following fields on the edit product page:
 
-**2) URL Key:-** This will be the end of the URL, for example, "products/set-of-men-casual-wear" (set-of-men-casual-wear is a URL key)
+- **Name:** Enter the name of the product.
 
-**3) Tax Category:-** You can select the Tax Category from the drop-down list that you want to apply to the product.
+- **URL Key:** This will be the end of the URL, for example, "products/set-of-men-casual-wear" (set-of-men-casual-wear is a URL key)
 
-**4) Product Number:-** Enter the product number
+- **Tax Category:** You can select the Tax Category from the drop-down list that you want to apply to the product.
 
-**5) Price:-** Insert the price, cost, and special price, and set the special price date for which the special price will be shown on the website.
+- **Product Number:** Enter the product number
 
-<ImagePopup src="/images/booking-product/2.png" alt="Create Booking Products" />
+- **Price:** Insert the price, cost, and special price, and set the special price date for which the special price will be shown on the website.
+
+<ImagePopup src="/images/booking-product/2.png" alt="Booking Product General Fields" />
 
 ### Toggle Button
 
@@ -43,10 +49,6 @@ Enable the toggle button to make the product visible on the front end.
 **Status**
 
 Enable the toggle button to enable the product on your eCommerce store.
-
-**Allow Cancellation**
-
-Enable the toggle button to allow cancellation of the booking product. If disabled, customers cannot cancel their booking from their account. But Admin still allowed to cancel the order.
 
 **Guest Checkout**
 
@@ -68,257 +70,263 @@ Mention your product in detail.
 
 Provide the main title of the product by which your product will be known.
 
-### Meta Keyword
+### Meta Keywords
 
-The meta keyword for the product needs to be provided to improve its searchability on the search engine for specific keywords.
+The meta keywords for the product need to be provided to improve its searchability on the search engine for specific keywords.
 
 ### Meta Description
 
-Enter the description so that products can easily appear in search engine listings.
+Enter the description so that products can appear in search engine listings.
 
 <ImagePopup src="/images/booking-product/5.png" alt="Meta Description" />
 
 ### Images
 
-To add the product images, click on Add Images. You can add multiple images for your product.
+To add the product images, click on **Add Image**. You can add multiple images for your product.
 
 <ImagePopup src="/images/booking-product/6.png" alt="Images" />
 
-### Booking Information
+## Booking information
 
-To create the Booking Product, select the Booking type as per choice. There are 5 below types of booking products. Let’s discuss “How to create Booking Products in Bagisto” one by one.
+The **Booking Type** box holds the settings specific to booking products. Select the booking **Type** as per choice. There are 5 types of booking products. Let’s discuss “How to create Booking Products in Bagisto” one by one.
 
-**1) Default**
+- **Default Booking**
+- **Appointment Booking**
+- **Event Booking**
+- **Rental Booking**
+- **Table Booking**
 
-**2) Appointment Booking**
+**Allow Booking Cancellation:** Inside the **Booking Type** box, set this to **Yes** to allow the customer to cancel the booking from their account, or **No** to prevent it. The admin can still cancel the order either way.
 
-**3) Event Booking**
+### Default booking
 
-**4) Rental Booking**
-
-**5) Table Booking**
-
-### Default Booking Product:-
-
-The admin can create a Default booking product as shown below in the screenshot. In default booking products, there are two types.
+The admin can create a Default booking product as shown below in the screenshot. In default booking products, the **Booking Information** select offers two types.
 
 <ImagePopup src="/images/booking-product/7.png" alt="Default Booking Product" />
 
-**A) One Booking for Many days**
+- **One Booking For Many Days**
+- **Many Bookings For One Days**
 
-**B) Many Booking for One Day**
+#### Many bookings for one day
 
 To create many bookings for one day, configure the below booking detail.
 
-**1) Location:-** Enter the location for booking products.
+- **Location:** Enter the location for booking products.
 
-**2) Quantity:-** Enter the quantity of booking products. This is the global quantity for each slot.
+- **Qty:** Enter the quantity of booking products. This is the global quantity for each slot.
 
-**3) Available From:-** Select the start date for the booking.
+- **Available From:** Select the start date for the booking.
 
-**4) Available To:-** Select the end date for the booking.
+- **Available To:** Select the end date for the booking.
 
-**5) Type:-** Select the type of booking, Many bookings for one day or One booking for many days.
+- **Booking Information:** Select **Many Bookings For One Days**.
 
-**6) Slot Duration(Mins):-** Set slot duration in a minute. By default, it is 45 min.
+- **Slot Duration (Mins):** Set slot duration in a minute. By default, it is 45 min.
 
-**7) Break Time b/w Slots(Mins):-** Set the break time between slots in min. By default, it is 15 min.
+- **Break Time b/w Slots (Mins):** Set the break time between slots in min. By default, it is 15 min.
 
-**8) Allow Slot Overlap:-** Set "Yes" to allow overlapping time slots. Set "No" to prevent overlapping slots.
+<ImagePopup src="/images/booking-product/8.png" alt="Many Bookings For One Day Fields" />
 
-<ImagePopup src="/images/booking-product/8.png" alt="Default Booking Product" />
+#### Adding slots for a day
 
-### Add Slots
+The **Slots Time Duration** box lists the days of the week. Each day has its own **Add** link, which changes to **Edit** once the day has slots.
 
-Click on **Add icon** and add the timing slots and status and then click on **Save** as shown in the below image.
+1. Click **Add** on the day you want to open.
+2. Enter the **From** and **To** time of the slot.
+3. Set the slot **Status**.
+4. Click **Save**.
 
-<ImagePopup src="/images/booking-product/9.png" alt="Add Slots" />
+   <ImagePopup src="/images/booking-product/9.png" alt="Add Slots" />
 
 Slots have been added for Sunday in the below image.
 
-<ImagePopup src="/images/booking-product/10.png" alt="Add Slots" />
+<ImagePopup src="/images/booking-product/10.png" alt="Slots Added For Sunday" />
 
-At last click on the **Save Product** button.
+Once the slots are in place, click **Save Product**.
 
-### Front End:-
+#### What the shopper sees for many bookings for one day
 
-Here, you need to first select the **date** for which you want the booking. After that, you need to select the **required slot**. You can also view the location on Google Maps.
+On the storefront the shopper picks the **date** of the booking, then the **slot** they want. The venue's location is shown as text beneath the calendar, with a **View on Map** link that opens the location in a map.
 
 <ImagePopup src="/images/booking-product/11.png" alt="Front End" />
 
-### One Booking For Many Days
+#### One booking for many days
 
-To create the one bookings for many day, configure the below booking detail.
+To create one booking for many days, set **Booking Information** to **One Booking For Many Days**. This type also shows the **Allow Overlapping Time Slots** select: set it to **Yes** to allow overlapping time slots, or **No** to prevent them.
 
-**1) From Day:-** Select the From day for the booking.
+Click **Add Slots** and configure the below booking detail.
 
-**2) To Day:-** Select the To day for the booking.
+- **From Day:** Select the From day for the booking.
 
-**3) From Time:-** Select the From time of the booking.
+- **To Day:** Select the To day for the booking.
 
-**4) To Time:-** Select the To time of the booking.
+- **From Time:** Select the From time of the booking.
+
+- **To Time:** Select the To time of the booking.
 
 <ImagePopup src="/images/booking-product/12.png" alt="One Booking For Many Days" />
 
 Slot Duration is booked for One booking for many days as shown in the below image.
 
-<ImagePopup src="/images/booking-product/13.png" alt="One Booking For Many Days" />
+<ImagePopup src="/images/booking-product/13.png" alt="One Booking For Many Days Slot Duration" />
 
-### Front End:-
+#### What the shopper sees for one booking for many days
 
-Here, you need to first select the **date** for which you want the booking. After that, you need to select the **required slot**. You can also view the location on google map.
+On the storefront the shopper picks the **date** of the booking, then the **slot** they want. The venue's location is shown as text beneath the calendar, with a **View on Map** link that opens the location in a map.
 
 <ImagePopup src="/images/booking-product/14.png" alt="Front End" />
 
-### Appointment Booking:-
+### Appointment booking
 
-The admin can create an **Appointment** booking product as shown below in the screenshot. Here Admin has to select the Appointment Booking type.
+The admin can create an **Appointment** booking product as shown below in the screenshot. Here Admin has to select the **Appointment Booking** type.
 
 <ImagePopup src="/images/booking-product/15.png" alt="Appointment Booking" />
 
-**1) Location:-** Enter the location for Appointment booking products.
+- **Location:** Enter the location for Appointment booking products.
 
-**2) Quantity:-** Enter the quantity of booking products. This is the global quantity for each slot.
+- **Qty:** Enter the quantity of booking products. This is the global quantity for each slot.
 
-**3) Available Every Week:-** Set “Yes” to configure time slots for all days of the week. If you don’t want to configure the time slots for all the days of the week set “No“. And configure the start date and end date.
+- **Available Every Week:** Set “Yes” to configure time slots for all days of the week. If you don’t want to configure the time slots for all the days of the week set “No“. And configure the start date and end date.
 
-**4) Slot Duration(Mins):-** Set slot duration in a minute. By default, it is 45 min.
+- **Slot Duration (Mins):** Set slot duration in a minute. By default, it is 45 min.
 
-**5) Break Time b/w Slots(Mins):-** Set the break time between slots in min. By default, it is 15 min.
+- **Break Time b/w Slots (Mins):** Set the break time between slots in min. By default, it is 15 min.
 
-**6) Allow Slot Overlap:-** Set "Yes" to allow overlapping time slots. Set "No" to prevent overlapping slots.
+- **Allow Overlapping Time Slots:** Set "Yes" to allow overlapping time slots. Set "No" to prevent overlapping slots.
 
-**7) Same Slot All Days:-** Set “Yes” for the same slot for all the days add from and to timings check the below image for reference.
+- **Same Slot For All days:** Set “Yes” for the same slot for all the days add from and to timings check the below image for reference.
 
-<ImagePopup src="/images/booking-product/16.png" alt="Appointment Booking" />
+<ImagePopup src="/images/booking-product/16.png" alt="Appointment Booking Same Slot All Days" />
 
 Else set **“No”** for the different slots for each day add from and to timings according to the days check the below image for reference.
 
-<ImagePopup src="/images/booking-product/17.png" alt="Appointment Booking" />
+<ImagePopup src="/images/booking-product/17.png" alt="Appointment Booking Different Slots Per Day" />
 
-### Front End:-
+#### What the shopper sees for an appointment
 
 <ImagePopup src="/images/booking-product/18.png" alt="Front End" />
 
-### Event Booking:-
+### Event booking
 
-The Admin can create an Event booking product as shown below in the screenshot. Here Admin has to select the Event Booking type.
+The Admin can create an Event booking product as shown below in the screenshot. Here Admin has to select the **Event Booking** type.
 
-**1) Location:-** Enter the location for Event booking products.
+- **Location:** Enter the location for Event booking products.
 
-**2) Available From:-** Select the start date of the booking.
+- **Available From:** Select the start date of the booking.
 
-**3) Available To:-** Select the end date for the booking.
+- **Available To:** Select the end date for the booking.
 
 <ImagePopup src="/images/booking-product/19.png" alt="Event Booking" />
 
 **Tickets**
 
-Add ticket details by clicking the **Add** button. Each ticket has the following fields:
+Add ticket details by clicking the **Add Tickets** button. Each ticket has the following fields:
 
-**1) Name:-** Enter the name of the ticket (e.g., General, VIP).
+- **Name:** Enter the name of the ticket (e.g., General, VIP).
 
-**2) Quantity:-** Enter the number of tickets available.
+- **Quantity:** Enter the number of tickets available.
 
-**3) Price:-** Set the base price for the ticket type.
+- **Price:** Set the base price for the ticket type.
 
-**4) Special Price:-** Set a discounted price for the ticket (optional).
+- **Special Price:** Set a discounted price for the ticket (optional).
 
-**5) Special Price From / To:-** Define the date range during which the special price is valid (optional).
+- **Valid From** and **Valid Until:** Define the date range during which the special price is valid (optional).
 
-**6) Description:-** Provide a description of the ticket type.
+- **Description:** Provide a description of the ticket type.
 
-<ImagePopup src="/images/booking-product/20.png" alt="Event Booking" />
+<ImagePopup src="/images/booking-product/20.png" alt="Event Booking Tickets" />
 
-### Front End:-
+#### What the shopper sees for an event
 
 On the front end, you have to select the ticket quantity. This base price will be applied to each type of ticket for each quantity.
 
 <ImagePopup src="/images/booking-product/21.png" alt="Front End" />
 
-### Rental Booking:-
+### Rental booking
 
-The Admin can create a **Rental booking** product as shown below in the screenshot. Here Admin has to select the Rental Booking type.
+The Admin can create a **Rental booking** product as shown below in the screenshot. Here Admin has to select the **Rental Booking** type.
 
-**1) Location:-** Enter the location for Rental booking products.
+- **Location:** Enter the location for Rental booking products.
 
-**2) Quantity:-** Enter the quantity of booking products. This is the global quantity for each slot.
+- **Qty:** Enter the quantity of booking products. This is the global quantity for each slot.
 
-**3) Available Every Week:-** Set **“Yes”** to configure time slots for all days of the week.
+- **Available Every Week:** Set **“Yes”** to configure time slots for all days of the week.
 
 If you don’t want to configure the time slots for all the days of the week set **“No“**
 
 <ImagePopup src="/images/booking-product/22.png" alt="Rental Booking" />
 
-**Renting Type:-** There are three Renting Types
+**Renting Type:** There are three Renting Types
 
-**a) Daily Basis:-** If you have selected the “Renting Type” as a Daily Basis. Then set the per day rent then click on save product.
+**a) Daily Basis:** If you have selected the “Renting Type” as a Daily Basis, set the per day rent and then click **Save Product**.
 
-<ImagePopup src="/images/booking-product/23.png" alt="Rental Booking" />
+<ImagePopup src="/images/booking-product/23.png" alt="Rental Booking Daily Basis" />
 
-**b) Hourly Basis:-** If you have selected the “Renting Type” as Hourly Basis. Then configure the below booking detail.
+**b) Hourly Basis:** If you have selected the “Renting Type” as Hourly Basis, configure the below booking detail.
 
-<ImagePopup src="/images/booking-product/24.png" alt="Rental Booking" />
+<ImagePopup src="/images/booking-product/24.png" alt="Rental Booking Hourly Basis" />
 
-**c) Both(Daily and Hourly Basis):-** If you have selected the “Renting Type” as both (Daily and Hourly Basis). Then configure the details as above like daily price, hourly price, and same slot on all days then click on Save Product.
+**c) Both (Daily and Hourly Basis):** If you have selected the “Renting Type” as **Both (Daily and Hourly Basis)**, configure the details as above, such as the daily price, the hourly price and the same slot on all days, and then click **Save Product**.
 
-<ImagePopup src="/images/booking-product/25.png" alt="Rental Booking" />
+<ImagePopup src="/images/booking-product/25.png" alt="Rental Booking Daily and Hourly Basis" />
 
-### Front End:-
+#### What the shopper sees for a rental
 
 Here customer has to select the option to choose the Rent option either Daily Basis or Hourly Basis (if this is already configured in the backend).
 
 <ImagePopup src="/images/booking-product/26.png" alt="Front End" />
 
-### Table Booking:-
+### Table booking
 
-The admin can create a Table booking product as shown below in the screenshot. Here Admin has to select the Table Booking type.
+The admin can create a Table booking product as shown below in the screenshot. Here Admin has to select the **Table Booking** type.
 
 <ImagePopup src="/images/booking-product/27.png" alt="Table Booking" />
 
 **Now configure the below Table booking detail.**
 
-**1) Location:-** Enter the location for Table booking products.
+- **Location:** Enter the location for Table booking products.
 
-**2) Available Every Week:-** Set “Yes” for configure time slots for all days of the week. If you don’t want to configure the time slots for all the days of the week set “No“. And configure the start date and end date.
+- **Available Every Week:** Set “Yes” for configure time slots for all days of the week. If you don’t want to configure the time slots for all the days of the week set “No“. And configure the start date and end date.
 
-**3) Charged Per:-** You can charge a basis like per table or per guest. When you select per table then you have to enter Guest Limit Per Table. So that you can charge per table(2 guests) below screenshot.
+- **Charged Per:** You can charge a basis like per table or per guest. When you select per table then you have to enter Guest Limit Per Table. So that you can charge per table(2 guests) below screenshot.
 
-**4) Guest Capacity:-** Set the maximum number of guests the table can be booked for.
+- **Guest Capacity:** Set the maximum number of guests the table can be booked for.
 
-**5) Slot Duration (Mins):-** Set slot duration in minutes. By default, it is 45 min.
+- **Slot Duration (Mins):** Set slot duration in minutes. By default, it is 45 min.
 
-**6) Break Time b/w Slots(Mins):-** Set the break time between slots in min. By default, it is 15 min.
+- **Break Time b/w Slots (Mins):** Set the break time between slots in min. By default, it is 15 min.
 
-**7) Prevent Scheduling Before:-** the minutes to advance booking means that before the start time of the slot.
+- **Prevent Scheduling Before:** the minutes to advance booking means that before the start time of the slot.
 
-**8) Allow Slot Overlap:-** Set "Yes" to allow overlapping time slots. Set "No" to prevent overlapping slots.
+- **Allow Overlapping Time Slots:** Set "Yes" to allow overlapping time slots. Set "No" to prevent overlapping slots.
 
-**9) Same Slot All Days:-** Set “Yes” for the same slot for all the days.
+- **Same Slot For All days:** Set “Yes” for the same slot for all the days.
 
-<ImagePopup src="/images/booking-product/28.png" alt="Table Booking" />
+<ImagePopup src="/images/booking-product/28.png" alt="Table Booking Same Slot All Days" />
 
 Else set **“No”** for the different slots for each day.
 
-<ImagePopup src="/images/booking-product/29.png" alt="Table Booking" />
+<ImagePopup src="/images/booking-product/29.png" alt="Table Booking Different Slots Per Day" />
 
-### Front End:-
+#### What the shopper sees for a table booking
 
 Here customer has to select the date and time and add a note for admin.
 
 <ImagePopup src="/images/booking-product/30.png" alt="Front End" />
 
-### Admin Panel
+## Managing bookings in the admin
 
-After placing the order login to the admin panel of bagisto
+After an order is placed, you can review the booking from the admin panel.
 
-Click on **Sales >> Bookings** and you will be able to see the ordered product in the booking product datagrid also you can see the calendar view of your booking for this click on **Calendar button** as shown in the below image.
+1. Log in to the admin panel.
+2. Go to **Sales >> Bookings**. The page opens in the calendar view, with the ordered slot marked on the calendar.
+3. To switch to the list view, click the list icon at the top right of the page, as shown in the image below.
 
-<ImagePopup src="/images/booking-product/31.png" alt="Admin Panel" />
+   <ImagePopup src="/images/booking-product/31.png" alt="Admin Panel" />
 
-### Calendar View
+### Calendar view
 
-The ordered slot is booked in the calendar view as shown in the below image.
+The ordered slot is booked in the calendar view as shown in the below image. Click the calendar icon to return to it from the list view.
 
 <ImagePopup src="/images/booking-product/32.png" alt="Calendar View" />
 

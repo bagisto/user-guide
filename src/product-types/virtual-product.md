@@ -6,14 +6,16 @@ Virtual products fall under the category of intangible products, including membe
 
 A virtual product, unlike a downloadable product, is not something that can be downloaded but rather a service offered to customers.
 
-### Steps To Create Virtual Product In Bagisto 
+### Creating a virtual product
 
-1. Go to **Catalog >> Products >> Select Virtual** under Product Type select **Family**.
-2. Enter **SKU** and **Save the Product**, as shown in the image below.
+1. Go to **Catalog >> Products**.
+2. Click **Create Product**.
+3. Select **Virtual** under **Type**.
+4. Select the **Family**.
+5. Enter the **SKU**.
+6. Click **Save Product**. You are redirected to the edit product page with various new settings.
 
-<ImagePopup src="/images/virtual-product/virtual.png" alt="Virtual Product" />
-
-After clicking on the Save Product button, you'll be redirected to the next page with various new settings.
+   <ImagePopup src="/images/virtual-product/virtual.png" alt="Virtual Product" />
 
 ### General Settings
 
@@ -60,18 +62,18 @@ Fill in the following fields under the description:
 Fill in the following fields under meta description for improved searchability on search engines:
 
 - **Meta Title:** Provide the main title of the product.
-- **Meta Keyword:** Provide meta keywords for specific search engine optimization.
+- **Meta Keywords:** Provide meta keywords for specific search engine optimization.
 - **Meta Description:** Enter a description for better search engine listings.
 
 <ImagePopup src="/images/virtual-product/meta-description.png" alt="Meta Description" />
 
 ### Images
 
-Add product images by clicking on **Add Images**. Multiple images can be added.
+Add product images by clicking on **Add Image**. Multiple images can be added.
 
 <ImagePopup src="/images/virtual-product/image.png" alt="Product Images" />
 
-### Inventory
+### Inventories
 
 Insert the quantity of the product available in your inventory. The default is set to 0, indicating out of stock on the frontend.
 
@@ -82,6 +84,8 @@ Insert the quantity of the product available in your inventory. The default is s
 Insert the price, cost, and special price. Set the special price date for displaying the special price on the website.
 
 <ImagePopup src="/images/virtual-product/price.png" alt="Product Price" />
+
+Once every section is filled in, click **Save Product**.
 
 ### Product At Front End
 

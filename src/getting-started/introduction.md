@@ -16,6 +16,7 @@ From a single dashboard, you can manage your catalog, inventory, customers, orde
 * **Multi Currency & Multi Locale** – Sell worldwide with built-in currency and exchange rate handling, translations for 22 locales, and full right-to-left (RTL) support.
 * **Payment & Shipping Methods** – Built-in payment and shipping options that can be extended with your own integrations.
 * **Marketing Tools** – Cart price rules, catalog price rules, coupons, email campaigns, and abandoned cart recovery.
+* **Generative AI** – [Magic AI](../configure/magic-ai.md) writes product and page copy, generates product images, translates reviews, lets shoppers search by photo and personalises the order confirmation, using the AI provider you choose. The storefront also exposes its actions to AI shopping agents in browsers that support them, the first step toward agentic commerce.
 * **CMS Pages** – Create and manage static content pages for your storefront.
 * **Access Control** – Admin users, roles, and granular permissions for your team.
 * **Reporting** – Sales, customer, product, and visitor reports to track how your store is performing.

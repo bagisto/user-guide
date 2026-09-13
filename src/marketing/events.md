@@ -4,22 +4,20 @@ An event parameter is an additional piece of data about a user interaction on a 
 
 For example: Birthdays, Anniversaries, Baby Showers, etc. 
 
-### Step 1: Add Event
+### Creating an event
 
-On the Admin panel, go to **Marketing >> Communications >> Events** and click on **Create Event** as shown in the below image.
+1. Go to **Marketing >> Communications >> Events**.
 
-<ImagePopup src="/images/marketing/event.png" alt="Event" />
+2. Click **Create Event**, as shown in the below image.
 
-### Step 2: Enter Details
+   <ImagePopup src="/images/marketing/event.png" alt="Event" />
 
-Now add the **Event Name, Description, Date** as shown in the below image.
+3. Enter the event **Name**, **Description** and **Date**, as shown in the below image.
 
-<ImagePopup src="/images/marketing/event-name.png" alt="Event Name" />
+   <ImagePopup src="/images/marketing/event-name.png" alt="Event Name" />
 
-### Step 3: 
+4. Click **Save Event**. The new event is listed, as shown below.
 
-Now you will be able to see the new **Event** as shown below.
+   <ImagePopup src="/images/marketing/event-output.png" alt="Event Output" />
 
-<ImagePopup src="/images/marketing/event-output.png" alt="Event Output" />
-
-By this, you can easily create an **Event** in Bagisto.
+By this, you can create an **Event** in Bagisto.

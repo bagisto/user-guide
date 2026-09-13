@@ -4,49 +4,55 @@ In e-commerce, various taxes are applied when purchasing products, and these rat
 
 ## Tax Rate
 
-**Step 1:** In the admin panel, go to **Settings >> Taxes >> Tax Rates >> Create Tax Rate**.
+1. Go to **Settings >> Taxes >> Tax Rates**.
 
-<ImagePopup src="/images/settings/tax-rate.png" alt="Tax Rate" />
+2. Click **Create Tax Rate**.
 
-**Step 2:** Enter the following fields:  
+   <ImagePopup src="/images/settings/tax-rate.png" alt="Tax Rate" />
 
-- **Identifier**  
-- **Country**  
-- **State**  
-- **Zip Code**  
-- **Tax Rate**  
+3. Enter the following fields:
 
-**Note:** You can also set a zip code range so that the tax applies only within that range. Then click **Save Tax Rate**.
+   - **Identifier**
+   - **Country**
+   - **State**
+   - **Zip Code**
+   - **Rate**
 
-<ImagePopup src="/images/settings/save-tax-rate.png" alt="Save Tax Rate" />
+   **Note:** You can also set a zip code range so that the tax applies only within that range.
+
+4. Click **Save Tax Rate**.
+
+   <ImagePopup src="/images/settings/save-tax-rate.png" alt="Save Tax Rate" />
 
 ## Tax Categories
 
-**Step 1:** To create a Tax Category, go to **Tax Categories**.  
+1. Go to **Settings >> Taxes >> Tax Categories**.
 
-### Add the Fields
+2. Fill in the following fields:
 
-1. **Code:** Enter a unique code for the tax category.  
-2. **Name:** Enter the name of the tax category.  
-3. **Description:** Enter a description.  
-4. **Tax Rate:** Assign the tax rate.  
+   - **Code:** Enter a unique code for the tax category.
+   - **Name:** Enter the name of the tax category.
+   - **Description:** Enter a description.
+   - **Tax Rates:** Assign the tax rate.
 
-Click **Save Tax Category**.
+3. Click **Save Tax Category**.
 
-<ImagePopup src="/images/settings/save-category.png" alt="Save Tax Category" />
+   <ImagePopup src="/images/settings/save-category.png" alt="Save Tax Category" />
 
-**Step 2:** Assign the Tax Category when creating a product.
+4. Assign the tax category when creating a product.
 
-<ImagePopup src="/images/settings/product-category.png" alt="Product Tax Category" />
+   <ImagePopup src="/images/settings/product-category.png" alt="Product Tax Category" />
 
 ### Frontend
 
-Enter the billing address or sign in to your account and click **Continue**.  
+1. On the checkout page, enter the billing address or sign in to your account and continue.
 
-Select the **Shipping** and **Payment** methods and click **Continue**.
+2. Select the shipping method and continue.
 
-<ImagePopup src="/images/settings/tax-front.png" alt="Tax Frontend" />
+3. Select the payment method and continue.
+
+   <ImagePopup src="/images/settings/tax-front.png" alt="Tax Frontend" />
 
 The tax will appear on the product price in the frontend. For example, if a 20% tax is set, it will be applied to the product price at checkout.  
 
-This is how you can easily create **Taxes** in Bagisto.
+This is how you can create **Taxes** in Bagisto.

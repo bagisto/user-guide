@@ -2,13 +2,7 @@
 
 The **Content** section allows you to customize frontend behavior, promotional banners, and control advanced features like speculation rules and custom scripts. These settings help optimize user experience and tailor the storefront according to specific business needs.
 
-**Steps to Configure Content Settings**
-
-To update the **Content** configuration in Bagisto:
-
-1. Log in to the **Admin Panel**.
-2. Navigate to **Configure >> General >> Content**.
-3. You will find the following options to configure:
+Go to **Configure >> General >> Content**. The page has four sections, described below in the order they appear. Click **Save Configuration** after changing any of them.
 
 ### Header Offer Title
 
@@ -24,6 +18,18 @@ Display a promotional banner on the storefront header.
   Enter a valid URL (e.g., `/products/sale`)
 
 <ImagePopup src="/images/configure/header.png" alt="Header Offer Title" />
+
+### Copyright Content
+
+The copyright line in the storefront footer tells visitors that the content, design and images on the site are yours, and puts your brand name on every page.
+
+The **Copyright Content** field takes the text shown in the footer. It is set per locale, so switch locale at the top of the page to translate it.
+
+<ImagePopup src="/images/configure/copyright-content.png" alt="Copyright Content Field" />
+
+Click **Save Configuration**, then open the storefront footer to see the line.
+
+ <ImagePopup src="/images/configure/copyright-footer.png" alt="Copyright Line in the Storefront Footer" />
 
 ### Speculation Rules
 
@@ -51,9 +57,9 @@ The three fields below appear only once **Enable Prerender Speculation Rules** i
 
 - **Prerender Eagerness Level**  
   Choose the intensity of prerendering:
-  - `eager`: Max prerendering (more resources)
-  - `moderate`: Default balance
-  - `conservative`: Minimal prerendering
+  - **Eager**: prerenders the most pages (uses the most resources)
+  - **Moderate**: the default balance
+  - **Conservative**: prerenders the least
 
 - **Enable Prefetch Speculation Rules**  
   Enables link prefetching to accelerate navigation. Disabled by default.
@@ -68,23 +74,11 @@ The three fields below appear only once **Enable Prefetch Speculation Rules** is
   Exclude certain URL parameters from prefetch logic.
 
 - **Prefetch Eagerness Level**  
-  Choose the intensity of prefetching, using the same `eager`, `moderate` and `conservative` levels as prerendering.
+  Choose the intensity of prefetching, using the same **Eager**, **Moderate** and **Conservative** levels as prerendering.
 
 The image below shows the section with the toggles enabled and their dependent fields revealed.
 
 <ImagePopup src="/images/configure/contentspec.png" alt="Speculation Rules" />
-
-### Copyright Content
-
-The copyright line in the storefront footer tells visitors that the content, design and images on the site are yours, and puts your brand name on every page.
-
-The **Copyright Content** field takes the text shown in the footer. It is set per locale, so switch locale at the top of the page to translate it.
-
-<ImagePopup src="/images/configure/copyright-content.png" alt="Copyright Content Field" />
-
-Click **Save Configuration**, then open the storefront footer to see the line.
-
- <ImagePopup src="/images/configure/copyright-footer.png" alt="Copyright Line in the Storefront Footer" />
 
 ### Custom Scripts
 

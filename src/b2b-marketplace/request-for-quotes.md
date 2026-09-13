@@ -6,17 +6,20 @@
 
 ### Create Request for Quotes
 
-To begin using the RFQ feature, customers need to sign in to their account. Just click on the profile icon at the top right corner of the page.
+To begin using the RFQ feature, customers need to sign in to their account.
 
-<ImagePopup src="/images/b2b-marketplace/1-guest-sign-in.png" alt="Guest Sign In" />
+1. Click the profile icon at the top right corner of the page.
 
-Enter email and password details, then click on the **Sign In** button.
+   <ImagePopup src="/images/b2b-marketplace/1-guest-sign-in.png" alt="Guest Sign In" />
 
-<ImagePopup src="/images/b2b-marketplace/2-customer-login.png" alt="Customer Login" />
+2. Enter your email and password.
+3. Click the **Sign In** button.
 
-Customers can find the **‘Request for Quote’** option in the website header. Click on **‘Request for Quote’** to open the Request for Quote page.
+   <ImagePopup src="/images/b2b-marketplace/2-customer-login.png" alt="Customer Login" />
 
-<ImagePopup src="/images/b2b-marketplace/3-customer-profile-page.png" alt="Customer Profile Page" />
+4. Click **Request for Quote** in the website header to open the Request for Quote page.
+
+   <ImagePopup src="/images/b2b-marketplace/3-customer-profile-page.png" alt="Customer Profile Page" />
 
 This feature enables customers to submit their requirements and request a personalized price offer. Required details must be filled out before sending the quote.
 
@@ -46,60 +49,60 @@ This feature enables customers to submit their requirements and request a person
 
 ### Product Information
 
-To include product details in a quote, click on the **Add Product** button and fill in the required information.
+1. Click the **Add Product** button.
 
-<ImagePopup src="/images/b2b-marketplace/5-contact-info.png" alt="Product Information" />
- src="/images/b2b-marketplace/6-product-info.png" alt="Product Information" />
+   <ImagePopup src="/images/b2b-marketplace/6-product-info.png" alt="Product Information" />
 
-A pop-up window will appear where the customer can enter product details such as:
+2. In the pop-up window, enter the product details:
 
-- **Product Name:** Specify the product you want to request.
+   - **Product Name:** Specify the product you want to request.
 
-- **Product Description:** Add important details for the product.
+   - **Product Description:** Add important details for the product.
 
-- **Product Quantity:** Enter the total number of units needed.
+   - **Product Quantity:** Enter the total number of units needed.
 
-- **Expected Price Per Quantity:** Mention the price you expect per unit.
+   - **Expected Price Per Quantity:** Mention the price you expect per unit.
 
-- **Is Samples:** Choose if the product needs a sample or not.
+   - **Is Samples:** Choose if the product needs a sample or not.
 
-- **Image:** Enter an image for reference.
+   - **Image:** Enter an image for reference.
 
-After entering all the details, click the **Submit** button to confirm and add your product information.
+3. Click the **Submit** button to confirm and add your product information.
 
-<ImagePopup src="/images/b2b-marketplace/5-contact-info.png" alt="Product Information" />
- src="/images/b2b-marketplace/7-popup-rfq.png" alt="Product Information Popup" />
+   <ImagePopup src="/images/b2b-marketplace/7-popup-rfq.png" alt="Product Information Popup" />
 
-When all requirements are filled, go to the top right corner and click the **‘Request for Quotes’** button.
+4. When all requirements are filled, go to the top right corner and click the **Request for Quotes** button.
 
-Customers are redirected to **‘My Requested Quotes’** after raising a request, where all their earlier requests are listed.
+Customers are redirected to **My Requested Quotes** after raising a request, where all their earlier requests are listed.
 
 <ImagePopup src="/images/b2b-marketplace/8-redirect-page.png" alt="Redirect to My Requested Quotes" />
 
-The customer can now select a specific request they raised and view the supplier’s response. Click the **Action** icon to open the **Quote Request** page.
+### Reviewing the supplier's response
 
-<ImagePopup src="/images/b2b-marketplace/9-supplier-responsenew.png" alt="Supplier Response" />
+1. Select a specific request you raised and click the **Action** icon to open the **Quote Request** page.
 
-Customers can view details such as the **Quote Request** and the **Quote Summary** for quick reference. Customers have the option to either accept or reject a quotation after reviewing the seller’s response.
+   <ImagePopup src="/images/b2b-marketplace/9-supplier-responsenew.png" alt="Supplier Response" />
 
-<ImagePopup src="/images/b2b-marketplace/10-approved-last-quotes-button.png" alt="Approve Last Quote Button" />
+2. Review the **Quote Request** and the **Quote Summary**. You can either accept or reject a quotation after reviewing the seller’s response.
 
-Click on **“Approve Last Quote”** to confirm the quotation. Once approved, the quotation status changes to **Confirmed**. This ensures the agreed terms are locked, preventing further changes.
+   <ImagePopup src="/images/b2b-marketplace/10-approved-last-quotes-button.png" alt="Approve Last Quote Button" />
 
-<ImagePopup src="/images/b2b-marketplace/11-quotes-confirm-by-customer.png" alt="Quotes Confirmed by Customer" />
+3. Click **Approve Last Quote** to confirm the quotation. Once approved, the quotation status changes to **Confirmed**. This ensures the agreed terms are locked, preventing further changes.
+
+   <ImagePopup src="/images/b2b-marketplace/11-quotes-confirm-by-customer.png" alt="Quotes Confirmed by Customer" />
 
 ### Seller Dashboard
 
-In the **Seller Dashboard**, click on **Buying Leads**. The seller will find the details of the RFQs here.
+1. In the **Seller Dashboard**, click **Buying Leads**. The seller finds the details of the RFQs here.
 
-<ImagePopup src="/images/b2b-marketplace/12-buying-leads-seller.png" alt="Buying Leads in Seller Dashboard" />
+   <ImagePopup src="/images/b2b-marketplace/12-buying-leads-seller.png" alt="Buying Leads in Seller Dashboard" />
 
-Click the **‘Send Quotes’** button to send a quote to the customer.
+2. Click the **Send Quotes** button. The **Send Quote Request** page opens.
+3. Enter the required details, including **Quote Quantity**, **RFQ Quote Price per Quantity**, **Sample Information** and **Shipping Information**.
+4. Click the **Send** button.
 
-The **‘Send Quote Request’** page will open. Enter the required details, including **Quote Quantity, RFQ Quote Price per Quantity, Sample Information, and Shipping Information**, then click the **‘Send’** button.
+   <ImagePopup src="/images/b2b-marketplace/13-send-quote-request-to-customer.png" alt="Send Quote Request to Customer" />
 
-<ImagePopup src="/images/b2b-marketplace/13-send-quote-request-to-customer.png" alt="Send Quote Request to Customer" />
-
-After sending a quote, sellers are redirected to the **‘Request For Quote’** page, where sellers can view all details, including new, pending, answered, confirmed, and rejected.
+After sending a quote, sellers are redirected to the **Request For Quote** page, where sellers can view all details, including new, pending, answered, confirmed, and rejected.
 
 <ImagePopup src="/images/b2b-marketplace/14-req-ans-by-seller.png" alt="Request for Quote Answers by Seller" />

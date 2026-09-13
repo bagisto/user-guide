@@ -1,101 +1,101 @@
 # Magic AI
 
-Magic AI adds AI assistance to the admin and the storefront: it writes and translates text, generates product images, understands the photos shoppers search with, and writes a personal message on the order confirmation page. It works with the AI provider of your choice.
+Magic AI is the generative AI built into Bagisto. In the admin it writes and rewrites text and generates product images; on the storefront it understands the photos shoppers search with, translates reviews, and writes a personal message on the order confirmation page. It works with the AI provider of your choice, including models you host yourself.
 
-To configure it, go to **Configure >> Magic AI**. The page has four sections: **General**, **Providers**, **Admin Features** and **Storefront Features**.
+Every generated text and image is a suggestion until you apply it, so you stay in control of what goes live. Magic AI does not act on your store by itself; it helps you do the work faster.
 
-<ImagePopup src="/images/configure/magic.png" alt="Magic AI" />
+To configure it, go to **Configure >> Magic AI**. The group has four pages, listed on the left: **General**, **Providers**, **Admin Features** and **Storefront Features**.
 
-### General
+<ImagePopup src="/images/configure/magic.png" alt="Magic AI configuration" />
 
-**Enabled:** Turns every Magic AI feature on or off for the whole store. Nothing below works until this is on.
+## Turn Magic AI on
 
-Click **Save Configuration**.
+1. Open the **General** page and, in the **Settings** section, switch **Enabled** on. This is the master switch; nothing below works until it is on.
+2. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/general-setting.png" alt="Magic AI General Settings" />
+<ImagePopup src="/images/configure/general-setting.png" alt="Magic AI General settings" />
 
-### Providers
+## Connect a provider
 
-Magic AI ships with eight providers: **OpenAI, Anthropic, Gemini, Groq, xAI, DeepSeek, Mistral** and **Ollama**.
+Magic AI ships with eight providers: **OpenAI, Anthropic, Gemini, Groq, xAI, DeepSeek, Mistral** and **Ollama**. You only need to connect the ones you plan to use.
 
-To use a provider, create an **API Key** in your account on the provider's website and paste it into that provider's row. Only the providers you fill in are offered elsewhere; you do not need a key for all of them. **Ollama** runs models on your own server instead of a paid service, so it also takes the **Base URL** of that server (`http://localhost:11434` when it runs on the same machine).
+1. Create an API key in your account on the provider's website.
+2. Open the **Providers** page and paste it into that provider's **API Key** field.
+3. For **Ollama**, which runs models on your own server, enter the **Base URL** of that server as well, for example `http://localhost:11434`.
+4. Click **Save Configuration**.
 
-Keys are stored as passwords and never shown again once saved. Click **Save Configuration**.
+Keys are stored as passwords and are not shown again once saved.
 
-<ImagePopup src="/images/configure/providers-magicai.png" alt="Magic AI Providers" />
+<ImagePopup src="/images/configure/providers-magicai.png" alt="Magic AI Providers section" />
 
-### Admin Features
+## Choose the admin features
 
-Two features help you while you work in the admin:
+Two features help you while you work in the admin: **Text Generation** and **Image Generation**.
 
-**1) Text Generation**
+1. Open the **Admin Features** page. In the **Text Generation** and **Image Generation** sections, switch **Enabled** on for each feature you want.
+2. In **Providers**, pick the providers whose models admins may use for that feature. Only providers with a saved key are useful here.
+3. Click **Save Configuration**.
 
-**2) Image Generation**
+<ImagePopup src="/images/configure/admin-features-magicai.png" alt="Magic AI Admin Features section" />
 
-Each has an **Enabled** switch and a **Providers** list. Pick the providers whose models admins may use for that feature; the models of those providers are then offered in the editor.
-
-Click **Save Configuration**.
-
-<ImagePopup src="/images/configure/admin-features-magicai.png" alt="Magic AI Admin Features" />
-
-### Text Generation
+### Generate text
 
 Text Generation writes or rewrites text in any rich-text editor in the admin: product descriptions, category descriptions, CMS pages and email templates.
 
-Open the product under **Catalog >> Products** and click the **Magic AI** button in the toolbar of the description editor.
+1. Open the item, for example a product under **Catalog >> Products**.
+2. Click the **Magic AI** button in the toolbar of the description editor.
 
-<ImagePopup src="/images/configure/description-magicai.png" alt="Magic AI Button in the Description Editor" />
+<ImagePopup src="/images/configure/description-magicai.png" alt="Magic AI button in the description editor" />
 
-A form opens. Enter a **Prompt** describing what you want written, choose a **Model** from the list, and click **Generate**. Read the result, and click **Apply** to place it in the editor, or generate again with a different prompt.
+3. Enter a **Prompt** describing what you want written.
+4. Choose a **Model** from the list.
+5. Click **Generate** and read the result.
+6. Click **Apply** to place the text in the editor, or change the prompt and generate again.
 
-<ImagePopup src="/images/configure/textgeneration.png" alt="Text Generation" />
+<ImagePopup src="/images/configure/textgeneration.png" alt="Text generation dialog" />
 
-### Image Generation
+### Generate images
 
-Image Generation creates product images from a description.
+Image Generation creates product images from a written description.
 
-Open the product under **Catalog >> Products** and, in the **Images** section, click **Magic AI** beside **Add Image**.
+1. Open the product under **Catalog >> Products**.
+2. In the **Images** section, click **Magic AI** beside **Add Image**.
+3. Enter a **Prompt** describing the image you want.
+4. Choose the **Number of Images** to generate.
+5. Choose the **Size**: **Square (1:1)**, **Portrait (2:3)** or **Landscape (3:2)**.
+6. Choose the **Quality**: **High**, **Medium** or **Low**.
+7. Choose a **Model** and click **Generate**.
 
-1. Enter the **Prompt** describing the image you want.
-2. Choose the **Number of Images** to generate.
-3. Choose the **Size**: **Square (1:1)**, **Portrait (2:3)** or **Landscape (3:2)**.
-4. Choose the **Quality**: **High**, **Medium** or **Low**.
-5. Choose a **Model** and click **Generate**.
+<ImagePopup src="/images/configure/image-generate.png" alt="Image generation dialog" />
 
-<ImagePopup src="/images/configure/image-generate.png" alt="Image Generation" />
+8. Click the images you want to keep and apply them; they are added to the product like uploaded images. Click **Regenerate** to try again with the same settings.
 
-Click the images you want to keep and apply them; they are added to the product like uploaded images. Click **Regenerate** to try again with the same settings.
+<ImagePopup src="/images/configure/ai-images.png" alt="Generated product images" />
 
-<ImagePopup src="/images/configure/ai-images.png" alt="Generated Product Images" />
+## Choose the storefront features
 
-### Storefront Features
+Three features run on the storefront: **AI Image Search**, **Review Translation** and **Personalized Checkout Message**. Each is set **per channel**, so switch channel at the top of the page to configure each store.
 
-Three features run on the storefront. Each is set **per channel**, with its own **Enabled** switch and a **Model** to run on, so switch channel at the top of the page to configure each store.
+1. Open the **Storefront Features** page. In the **AI Image Search**, **Review Translation** and **Personalized Checkout Message** sections, switch **Enabled** on for each feature you want.
+2. Choose the **Model** it runs on.
+3. Click **Save Configuration**.
 
-**1) AI Image Search**
+<ImagePopup src="/images/configure/storefront-features-magicai.png" alt="Magic AI Storefront Features section" />
 
-**2) Review Translation**
-
-**3) Personalized Checkout Message**
-
-Click **Save Configuration**.
-
-<ImagePopup src="/images/configure/storefront-features-magicai.png" alt="Magic AI Storefront Features" />
-
-### AI Image Search
+### AI image search
 
 Shoppers can search for products by uploading a photo from the search bar. With this feature on, the chosen model describes what is in the photo and the store searches for matching products. With it off, the image search still works but uses a simpler recognition that runs in the shopper's browser, which recognises fewer things.
 
-The image search itself is switched on separately under **Configure >> Catalog >> Products >> Settings**, with the **Image Search Option** switch.
+The image search itself is switched on separately under **Configure >> Catalog >> Products**, with the **Image Search Option** switch in the **Settings** section.
 
-### Review Translation
+### Review translation
 
 A **Translate** link appears under each product review. Clicking it shows the review in the shopper's language, so a review written in another language is still useful.
 
-<ImagePopup src="/images/configure/review-magicai.png" alt="Review Translation" />
+<ImagePopup src="/images/configure/review-magicai.png" alt="Translate link under a review" />
 
-### Personalized Checkout Message
+### Personalized checkout message
 
-After an order is placed, the order confirmation page shows a short message written for that order, mentioning what the shopper bought. It replaces the fixed thank-you text and gives the moment a more personal touch.
+After an order is placed, the order confirmation page shows a short message written for that order, mentioning what the shopper bought. It appears under the thank-you heading in place of the standard line and gives the moment a more personal touch.
 
-<ImagePopup src="/images/configure/personalized-chckout-message.png" alt="Personalized Checkout Message" />
+<ImagePopup src="/images/configure/personalized-chckout-message.png" alt="Personalised message on the order confirmation page" />

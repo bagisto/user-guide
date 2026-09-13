@@ -4,19 +4,23 @@ An Exchange Rate is the worth of one nation’s currency compared to another nat
 
 For example: How many Euros are required to buy 1 Dollar? You require €0.88 to buy $1. This means the exchange rate of the Euro is 0.88 against the Dollar. Here we are going to discuss how to set the exchange rate in Bagisto.
 
-### Set Exchange Rate in Bagisto
+### Creating an exchange rate
 
-**Step 1:** On the Admin panel of Bagisto, go to **Settings >> Exchange Rates >> Create Exchange Rate** as shown in the image below.
+1. Go to **Settings >> Exchange Rates**.
 
-<ImagePopup src="/images/settings/exchange-rate.png" alt="Exchange Rate" />
+2. Click **Create Exchange Rate**, as shown in the image below.
 
-**Step 2:** Now enter **Source Currency, Target Currency, and Rate**, then click on **Save Exchange Rate** as shown below.
+   <ImagePopup src="/images/settings/exchange-rate.png" alt="Exchange Rate" />
 
-<ImagePopup src="/images/settings/exchangerate-configurations.png" alt="Exchange Rate Configuration" />
+3. Enter the **Source Currency**, **Target Currency** and **Rate**.
 
-**Step 3:** Now you will be able to see the new **Exchange Rate** created as shown below.
+4. Click **Save Exchange Rate**, as shown below.
 
-<ImagePopup src="/images/settings/exchangerate-grid.png" alt="Exchange Rate Grid" />
+   <ImagePopup src="/images/settings/exchangerate-configurations.png" alt="Exchange Rate Configuration" />
+
+5. The new **Exchange Rate** is listed, as shown below.
+
+   <ImagePopup src="/images/settings/exchangerate-grid.png" alt="Exchange Rate Grid" />
 
 ### Frontend
 
@@ -24,4 +28,4 @@ The **Exchange Rate** of **0.919** is applied successfully on the product price 
 
 <ImagePopup src="/images/settings/exchange-output.png" alt="Exchange Rate Output" />
 
-So, by following these steps, you can easily create an **Exchange Rate** in Bagisto.
+So, by following these steps, you can create an **Exchange Rate** in Bagisto.

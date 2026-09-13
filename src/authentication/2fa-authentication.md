@@ -4,28 +4,32 @@ To make admin accounts safer, we have added Two-Factor Authentication (2FA) in B
 
 This feature gives an extra level of security by asking admins to confirm their identity with a second step when they log in.
 
-### Steps for Two Factor Authentication (2FA)
+### Enabling two factor authentication
 
-**Step-1** First, you need to log in to the Bagisto admin panel using your credentials (username and password). After logging in, you will be redirected to the dashboard.
+1. Log in to the Bagisto admin panel using your credentials. After logging in, you are redirected to the dashboard.
 
-On the dashboard, you will find your account section in the top-right corner. From there, you can access your account details or log out of the admin panel. Click on it and select **My Account** to proceed.
+2. Open the account menu in the top-right corner and select **My Account**, as shown in the image below.
 
-For your reference, an image is provided below.
+   <ImagePopup src="/images/configure/account-login.png" alt="My Account menu in the admin panel" />
 
-<ImagePopup src="/images/configure/account-login.png" alt="Steps for Two Factor Authentication (2FA)" />
+3. On the account page, switch on the toggle to enable Two-Factor Authentication.
 
-**Step-2** Here, your account details will be displayed, and you will find a toggle option to enable Two-Factor Authentication.
+   <ImagePopup src="/images/configure/enable-2fa.png" alt="Two-Factor Authentication toggle" />
 
-<ImagePopup src="/images/configure/enable-2fa.png" alt="Steps for Two Factor Authentication (2FA)" />
+4. A QR code appears on your screen.
 
-**Step-3** As soon as you enable it, a QR code will appear on your screen to set up Two-Factor Authentication.
+   <ImagePopup src="/images/configure/qr-code.png" alt="Two-Factor Authentication QR code" />
 
- <ImagePopup src="/images/configure/qr-code.png" alt="Steps for Two Factor Authentication (2FA)" />
+5. Install the **Google Authenticator** app on your mobile phone. Android users can download it from the Play Store and iPhone users from the App Store.
 
-**Step-4** Now, you need to install the **Google Authenticator** app on your mobile phone. If you are an Android user, download it from the Play Store, and if you are an iPhone user, download it from the App Store.
+6. Open the app and complete its registration.
 
-Once the app is installed, open it and complete the registration. You will find a **“+”** icon at the bottom right side of the app—tap on it and select the option to scan a QR code.
+7. Tap the **+** icon at the bottom right of the app and choose the option to scan a QR code.
 
-After scanning the QR code, a verification code will be generated in the app. Enter this code in the **Verification Code** field on your screen, and then click on **Verify and Enable** button
+8. Scan the QR code shown on your screen. The app generates a verification code.
 
-Once done, your Two-Factor Authentication will be successfully enabled.
+9. Enter this code in the **Verification Code** field on your screen.
+
+10. Click **Verify & Enable**.
+
+Once done, Two-Factor Authentication is enabled for your account.

@@ -2,34 +2,40 @@
 
 To display your website in a different language, you need to set the Locale in Bagisto. Having more than one language for your website can improve the shopping experience for your customers.
 
-### Set Locales in Bagisto
+### Creating a locale
 
-Here are the steps to set Locales in Bagisto:
+1. Go to **Settings >> Locales**.
 
-**Step 1:** On the Admin panel of Bagisto, go to **Settings >> Locales >> Create Locale** as shown below.
+2. Click **Create Locale**, as shown below.
 
-<ImagePopup src="/images/settings/locales.png" alt="Locales" />
+   <ImagePopup src="/images/settings/locales.png" alt="Locales" />
 
-**Step 2:** Now add the following fields:
+3. Fill in the following fields:
 
-**1. Code** – Every language has its unique code.  
+   - **Code** – Every language has its unique code.
 
-**2. Name** – Name of the language.  
+   - **Name** – Name of the language.
 
-**3. Directions** – Add the direction in which your language works **LTR (Left To Right), RTL (Right To Left)**.  
+   - **Direction** – Add the direction in which your language works: **LTR** (left to right) or **RTL** (right to left).
 
-**4. Logo** – Add the logo of your language.  
+   - **Locale Logo** – Add the logo of your language.
 
-Now click **Save Locale** as shown in the below image.
+4. Click **Save Locale**, as shown in the below image.
 
-<ImagePopup src="/images/settings/new-locale.png" alt="New Locale" />
+   <ImagePopup src="/images/settings/new-locale.png" alt="New Locale" />
 
-**Step 3:** You will now be able to see the new **Locale** as shown below.
+5. The new **Locale** is listed, as shown below.
 
-<ImagePopup src="/images/settings/locale-grid.png" alt="Locale Grid" />
+   <ImagePopup src="/images/settings/locale-grid.png" alt="Locale Grid" />
 
-**Step 4:** On the Admin panel, open **Settings >> Channels**. You will see your new language in the Currencies and Locales section. To enable this, select it and click **Save Channel** as shown in the image below.
+### Enabling the locale on a channel
 
-<ImagePopup src="/images/settings/locale-channel.png" alt="Locale Channel" />
+1. Go to **Settings >> Channels** and open the channel.
 
-So, by following these steps, you can easily create **Locales** in Bagisto and make your website available in your desired language.
+2. Under **Currencies and Locales**, select your new language in the **Locales** field.
+
+3. Click **Save Channel**, as shown in the image below.
+
+   <ImagePopup src="/images/settings/locale-channel.png" alt="Locale Channel" />
+
+So, by following these steps, you can create **Locales** in Bagisto and make your website available in your desired language.

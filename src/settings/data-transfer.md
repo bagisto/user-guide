@@ -1,93 +1,74 @@
-# Data Transfer | Bulk Upload
+# Data Transfer
 
-Bulk import is a feature that allows users to import large quantities of data into a system quickly and efficiently. 
+Data transfer imports products, customers and tax rates in bulk from a spreadsheet, so a large catalog does not have to be typed in one record at a time.
 
-It simplifies the process and saves time by not having to add each piece of information one by one. The feature works differently for each system and has a vast variety of use cases across many industries as well as Bagisto.
+From Bagisto 2.4.9, saving an import runs it through to the end on its own. Validation, image fetching, record creation, linking and indexing follow one another automatically, and a stepper at the top of the page shows the live progress of each phase.
 
-You can easily Bulk Upload **Products, Customers & Tax Rates**.
+## Creating an import
 
-From **Bagisto v2.4.9**, saving an import runs it through to the end on its own. Validation, image fetching, record creation, linking, and indexing follow one another automatically, and a stepper at the top of the page shows the live progress of each phase. You no longer have to click through the phases one at a time.
+1. Go to **Settings >> Data Transfer >> Imports**.
+2. Click **Create Import**.
 
-### Steps to add Bulk Import in Bagisto
+<ImagePopup src="/images/settings/import.png" alt="Imports listing with the Create Import button" />
 
-**Step 1:** Go to the Admin panel of Bagisto click on **Settings >> Data Transfer >> Imports** and click on **Create Import** button.
+3. Choose the **Type** of records to import: products, customers or tax rates.
+4. Click **Download Sample** to get a file in the expected layout, and prepare your own file to match it.
+5. Choose the **File** (CSV, XLS, XLSX or XML).
+6. For products, choose where the **Product Images** named in the file are found; the options are described below.
+7. Choose the **Action**: create or update the records, or delete them.
+8. Set the remaining fields described below.
+9. Click **Import** and confirm the message *The import will start as soon as this is saved. Do you want to continue?*
 
-<ImagePopup src="/images/settings/import.png" alt="Import" />
+<ImagePopup src="/images/settings/create-import.png" alt="Create Import form" />
 
-**Step 2:** Under general configurations select the below fields:
+Simple, configurable, virtual, bundle and grouped products can be imported; downloadable products cannot.
 
-**1) Type –** Kindly select the type i.e. (Products, Customers, Tax rates) which you want to import.
+### The remaining fields
 
-**2) File –** Choose the file in your desired format (CSV, XLS, XLSX, XML) and kindly make sure you have all the required fields in the file.
+**Validation Strategy:** **Skip Errors** imports the valid rows and leaves the faulty ones out; **Stop on Errors** halts the import after validation if any row is invalid.
 
-*Note – While Import the product data Simple, Configurable, Virtual, Bundled & Grouped product types can be imported except Downloadable products.*
+**Allowed Errors:** With **Skip Errors**, the number of faulty rows the import tolerates before it stops anyway.
 
-**3) Download Sample –** You can also download the sample files of types (Products, Customers, Tax Rates). Kindly make sure the file you are uploading is similar to this sample file.
+**Field Separator:** The character that separates columns in a CSV file, usually a comma.
 
-**4) Product Images –** Choose where the images named in your file should be found. This panel is described in detail in the next section, and it appears only for the types that carry images.
+**Process In Queue:** Runs the import in the background. Validation and image downloading are spread across the store's queue workers, so a large file is not processed in one request. Your store needs a queue worker for this; if it is not set up to run jobs in the background, Bagisto asks you to change that before the import can start. With the switch off, the import runs in short browser-driven windows instead, so no single request runs long enough to time out; closing the page pauses the run at the phase it had reached, and reopening the import picks it up from there.
 
-**5) Action –** Kindly select from the settings configuration that you want to Create/Update or Delete the records.
+### Product images
 
-**6) Validation Strategy –** This unique feature allows you to Skip the Errors or to Stop on Errors while Importing the data.
+The images named in a product file can come from three places. Pick the one that matches your file; the choice is checked during validation, and a mismatch is reported as an error rather than importing every product without its images.
 
-**7) Allowed Errors –** This feature allows you how much quantity of errors will get neglected while importing the data.
-
-**8) Field Separator –** This feature allows you to set the fields.
-
-**9) Process in Queue –** This feature allows you to run your import process in a queue. When it is enabled, validation and the image download are dispatched across your queue workers and run in parallel, so a large file is not validated in a single request. Your queue driver has to be set to `database` or `redis` for this, otherwise Bagisto asks you to change it before the import can start. When it is disabled, the import runs in short browser-driven windows instead, so no single request runs long enough to time out. Closing the page pauses such a run at the phase it had reached, and reopening the import picks it up from there rather than starting again.
-
-So now click on the **Import** Button and confirm the message *"The import will start as soon as this is saved. Do you want to continue?"*.
-
-<ImagePopup src="/images/settings/create-import.png" alt="Create Import" />
-
-### Product Images
-
-While importing products, the images named in your file can come from three different places. Pick the one that matches your file, because the choice is checked against the file during validation — a mismatch is reported as an error instead of silently importing every product without its images.
-
-**1) Image links in the file (Recommended) –** Put the full `https://` address of each image in the **images** column. Bagisto fetches every link once, in a phase of its own, before any row is written, so nothing has to be placed on the server first.
-
-**2) Upload a ZIP of images –** Upload a single archive containing every image. The **images** column then names the files inside it. You can download a sample archive that matches the sample sheet using the **Download sample images** link, so the two can be tried together. When you reopen an import that already has an archive, the page shows the archive name and how many images are ready; choosing a new archive replaces them.
-
-**3) Images already on the server –** If you have code-base access, place the images in a folder on the server and name that folder in the **Images Directory Path** field. Use a relative path to `/project-root/storage/app/import`, e.g. `product-images`. In that case the files should be placed into the `/project-root/storage/app/import/product-images` folder.
+- **Image links in the file** (recommended): put the full `https://` address of each image in the **images** column. Every link is fetched once, in a phase of its own, before any row is written, so nothing has to be placed on the server first.
+- **Upload a ZIP of images**: upload a single archive containing every image, and name the files inside it in the **images** column. **Download sample images** gives you an archive that matches the sample sheet. When you reopen an import that already has an archive, the page shows its name and how many images are ready; choosing a new archive replaces them.
+- **Images already on the server**: if someone can place files on the server, put the images in a folder under the store's import directory and enter that folder's name in **Images Directory Path**. The field's hint shows the exact location.
 
 The method you pick is saved on the import, so reopening it restores the choice along with the value that went with it.
 
-<ImagePopup src="/images/settings/import-image-source.png" alt="Product Images Source" />
+<ImagePopup src="/images/settings/import-image-source.png" alt="Product Images source options" />
 
-**Step 3:** The import now runs on its own and the stepper shows which phase it is in.
+## Following the import
 
-- **Validate –** The file is read and checked row by row, with a progress bar showing how many rows have been validated.
-- **Images –** Every image link is fetched before any record is written. This step appears only when you chose **Image links in the file**; an uploaded archive and a server directory are read directly while the rows are written, so they need no separate phase.
-- **Create / Delete –** The records are written, or removed if the action is **Delete**.
-- **Link –** The relationships between the imported rows are resolved: configurable variants, grouped product associations, bundle options, booking data, and the related, cross-sell and up-sell links.
-- **Index –** Price, inventory and Elasticsearch data are rebuilt.
+Once saved, the import runs on its own and the stepper shows which phase it is in:
 
-A delete run has no images to fetch and nothing to link, so those steps are not shown for it.
+- **Validate** – the file is read and checked row by row, with a progress bar.
+- **Images** – every image link is fetched before any record is written. This phase appears only for **Image links in the file**; an archive or a server folder is read while the rows are written.
+- **Create / Delete** – the records are written, or removed when the action is **Delete**.
+- **Link** – relationships between the imported rows are resolved: configurable variants, grouped product associations, bundle options, booking data, and the related, cross-sell and up-sell links.
+- **Index** – price, inventory and search data are rebuilt.
 
-<ImagePopup src="/images/settings/import-stepper.png" alt="Import Stepper" />
+A delete run has no images to fetch and nothing to link, so those phases are not shown for it.
+
+<ImagePopup src="/images/settings/import-stepper.png" alt="Import stepper showing the phases" />
+
+If the file has errors, the run stops after validation and shows the total rows processed, the invalid rows and the error count, with a **Download Full Report** button for the complete list. With **Skip Errors**, the import can still proceed and the faulty rows are left out.
+
+When every phase is complete, the summary confirms the result. If any batch does not complete, the import finishes the batches it can and reports how many did not, so you can check the error report and run the import again for those rows.
+
+<ImagePopup src="/images/settings/import-done.png" alt="Import summary after completion" />
+
+The imported records are listed under the matching menu, for example **Catalog >> Products**.
+
+<ImagePopup src="/images/settings/import-output.png" alt="Imported products in the catalog" />
 
 ### Coming back to a running import
 
-You do not have to sit and watch an import finish. Leave the page, and the row
-in **Settings >> Data Transfer >> Imports** carries a **View Progress** action
-for as long as the run is still going — it opens the same stepper at the phase
-the import has reached. Once the run is finished, that action goes back to
-reading **Import**, so the wording in the listing tells you at a glance whether
-anything is still in flight.
-
-This is the way back into a long product import: start it, get on with something
-else, and use **View Progress** to check where it is.
-
-If the file has errors, the run stops after validation and shows the total rows processed, the invalid rows, and the error count, with a **Download Full Report** button for the complete list. When the validation strategy is **Skip Errors** and only some rows are at fault, the import can still proceed and the faulty rows are skipped.
-
-**Step 4:** Once every phase is complete, the summary confirms the result.
-
-<ImagePopup src="/images/settings/import-done.png" alt="Import Done" />
-
-If any batch does not complete, the import finishes the batches it can and reports how many did not, so you can check the error log and run the import again for those rows.
-
-**Step 5:** Now you will able see to all the products under the **Catalog >> Products** section as shown in the given image.
-
-<ImagePopup src="/images/settings/import-output.png" alt="Import Output" />
-
-By the above steps, you can easily create a **Bulk Import** in Bagisto.
+You do not have to watch an import finish. Leave the page, and the row under **Settings >> Data Transfer >> Imports** carries a **View Progress** action for as long as the run is going; it opens the same stepper at the phase the import has reached. Once the run is finished, the action reads **Import** again, so the listing tells you at a glance whether anything is still in flight.

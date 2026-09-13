@@ -26,7 +26,7 @@ All three are set per channel. After making changes, click **Save Configuration*
 
 Two settings that used to sit in this section are elsewhere on the current version of Bagisto:
 
-- **Search Mode** (Database or Elasticsearch) is now the [Search Engines](./search-engines.md) configuration, under **Configure >> Search Engines**.
+- The **Search Engine** choice (Database or Elasticsearch) is now the **Default Search Engine** setting under **Configure >> Search Engines**; see [Search Engines](./search-engines.md).
 - **Allow customers to directly buy products** (the **Buy Now** button) is now in the [Product View Page](./product-view-page.md) section, further down the same **Products** page.
 
-On Bagisto 2.4 the **Buy Now** switch is still in the **Storefront** section, and the search engine choice is in the **Search** section above it.
+On Bagisto 2.4 the **Buy Now** switch is still in the **Storefront** section, and the **Search Engine** field is in the **Search** section above it.

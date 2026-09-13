@@ -1,53 +1,38 @@
 # Design
 
-**Admin Logo & Favicon Configuration**
+The **Design** page holds the branding of the admin panel and the shape of the storefront's category menu.
 
-The **Admin Logo** is a distinctive image or emblem representing the administration interface of a system or website. It is often customizable to match your brand identity. Similarly, the **Favicon** is the small icon displayed in browser tabs, helping users visually identify your site.
+Go to **Configure >> General >> Design**.
 
-**Steps to Update Admin Logo & Favicon**
+## Admin logo and favicon
 
-To update the **Admin Logo** and **Favicon** in Bagisto:
+The **Logo Image** is shown in the admin panel header and on the login page; the **Favicon** is the small icon browsers show in the tab.
 
-1. Go to the **Admin Panel**.
-2. Navigate to **Configure >> General >> Design**.
-3. Under the **Admin Logo** section, you will find options to upload a new **Logo Image** and **Favicon**.
-4. Click **Add Image** on each tile to select the desired image file from your system.
-5. Once selected, click the **Save Configuration** button to apply the changes.
+1. In the **Admin Logo** section, click **Add Image** on the **Logo Image** tile and pick your logo.
+2. Click **Add Image** on the **Favicon** tile and pick the icon.
+3. Click **Save Configuration**.
 
-**Design Configuration Interface**
+<ImagePopup src="/images/configure/design.png" alt="Admin Logo section" />
 
-<ImagePopup src="/images/configure/design.png" alt="Design Configuration" />
+The new logo and favicon appear in the admin panel straight away.
 
-**Updated Logo & Favicon Output**
+<ImagePopup src="/images/configure/design-output.png" alt="Updated admin logo" />
 
-After saving the configuration, the new **Admin Logo** and **Favicon** will be visible in the admin panel interface.
+<ImagePopup src="/images/configure/design-output2.png" alt="Updated favicon in the browser tab" />
 
-**Logo**
-<ImagePopup src="/images/configure/design-output.png" alt="Updated Admin Logo" />
+## Menu category view
 
-**Favicon**
-<ImagePopup src="/images/configure/design-output2.png" alt="Updated Favicon" />
+Choose how the storefront lists categories in its header:
 
-**Menu Category View**
+- **Default Menu** shows the categories across the top navigation bar.
+- **Sidebar Menu** shows them in a vertical panel, which suits stores with many categories or deep sub-categories.
 
-Bagisto v2.3.x introduced a new option to configure how product categories are displayed in the storefront menu.
+1. In the **Menu Category View** section, pick **Default Menu** or **Sidebar Menu** from the dropdown.
+2. Check the preview shown beside the dropdown.
+3. Click **Save Configuration**.
 
-You can now choose between:
+<ImagePopup src="/images/configure/cat-admin.png" alt="Menu Category View setting" />
 
-- **Default Menu**: Displays categories in the top navigation bar.
-- **Sidebar Menu**: Displays categories in a vertical side panel, ideal for stores with many categories or subcategories.
+The storefront with **Sidebar Menu** selected:
 
-### To update the Menu Category View:
-
-1. Navigate to **Configure >> General >> Design**.
-2. Scroll down to the **Menu Category View** section.
-3. Under **Menu Category View**, select:
-   - `Default Menu` or
-   - `Sidebar Menu` from the dropdown.
-4. Click **Save Configuration**.
-
-<ImagePopup src="/images/configure/cat-admin.png" alt="Menu Category View Setting" />
-
-**Shopfront view**
-
-<ImagePopup src="/images/configure/cat-side.png" alt="Shopfront Menu Category View" />
+<ImagePopup src="/images/configure/cat-side.png" alt="Storefront sidebar category menu" />

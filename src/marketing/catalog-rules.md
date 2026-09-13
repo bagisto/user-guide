@@ -6,45 +6,55 @@ The catalog rule is applied to the product before placed into the shopping cart.
 
 ### Step 1: Add New Catalog Rule
 
-a) On Admin panel, go to **Marketing >> Promotions >> Catalog Rules**
+1. Go to **Marketing >> Promotions >> Catalog Rules**.
 
-b) On the upper right side, click on **Create Catalog Rule** button as shown below
+2. On the upper right side, click the **Create Catalog Rule** button, as shown below.
 
-<ImagePopup src="/images/marketing/catalog-rule.png" alt="Catalog" />
+   <ImagePopup src="/images/marketing/catalog-rule.png" alt="Catalog" />
 
-### Do the following entry in the Rule Information Section
+Fill in the following fields in the **General** section:
 
-**1. Name:-** Enter the name of the new catalog rule. (only for internal reference)
+- **Name:** Enter the name of the new catalog rule (only for internal reference).
 
-**2. Description:-** Enter a description of the rule. (only for internal reference)
+- **Description:** Enter a description of the rule (only for internal reference).
 
-**3. Status:-** Set status of catalog rule is active.
+Then fill in the **Settings** panel in the right sidebar:
 
-**4. Channels:-** Select the channel on which this catalog rule will be applied.
+- **Priority:** Enter the priority of this rule.
 
-**5. Customer Group:-** Select the customer group on which this catalog rule will be applied.
+- **Channels:** Select the channel on which this catalog rule will be applied.
 
-**6. From and To dates:-** Set the range of dates, when the catalog rule will be affected. If you do not set the dates, the rule applies as soon as the rule is saved.
+- **Customer Groups:** Select the customer group on which this catalog rule will be applied.
 
-**7. Priority:-** Enter the priority of this rule.
+- **Status:** Set the status of the catalog rule to active.
+
+Finally, set the **Marketing Time** panel below it:
+
+- **From** and **To** dates: Set the range of dates when the catalog rule will be in effect. If you do not set the dates, the rule applies as soon as the rule is saved.
 
 <ImagePopup src="/images/marketing/catalog-configurations.png" alt="Catalog Configurations" />
 
 ### Step 2: Set Conditions
 
-All condition in the catalog rule is based on the product attribute. If you want to apply the rule on all products don’t set any condition. Set the condition type to all conditions that are true or any condition that is true.
+All conditions in the catalog rule are based on the product attributes. If you want to apply the rule on all products, don’t set any condition.
 
-<ImagePopup src="/images/marketing/condition.png" alt="Condition" />
+1. Set the **Condition Type** to **All Conditions are true** or **Any Conditions are true**.
 
-Then click on the Add condition to set the conditions. Under the list of a product attribute, select the attribute that you want to set for the condition.
+   <ImagePopup src="/images/marketing/condition.png" alt="Condition" />
 
-<ImagePopup src="/images/marketing/catalog-conditions.png" alt="Conditions" />
+2. Click **Add Condition**.
 
-For example, if you have selected Categories then you have to choose contains/does not contain and select the category as in the below image.
+3. Under the list of product attributes, select the attribute that you want to set for the condition.
 
-If you want to delete any condition, then click on the delete icon.
+   <ImagePopup src="/images/marketing/catalog-conditions.png" alt="Conditions" />
 
-<ImagePopup src="/images/marketing/contains.png" alt="Contains" />
+4. Choose the operator. For example, if you have selected **Categories**, choose **Contains** or **Does not contain**.
+
+5. Choose the value. For **Categories**, select the category from the tree, as in the below image.
+
+   <ImagePopup src="/images/marketing/contains.png" alt="Contains" />
+
+If you want to delete any condition, click the delete icon.
 
 ### Step 3: Set the Actions
 
@@ -52,15 +62,15 @@ In the Action section, we have to set actions like how we want to apply the rule
 
 <ImagePopup src="/images/marketing/catalog-action.png" alt="Catalog Action" />
 
-**1. Actions Type:-** You can apply a discount on a percentage basis or a fixed amount basis.
+- **Action Type:** You can apply a discount on a percentage basis (**Percentage of Product Price**) or a fixed amount basis (**Fixed Amount**).
 
-**2. Discount Amount:-** Enter discount amount.
+- **Discount Amount:** Enter the discount amount.
 
-**3. End Other Rules:-** To stop applying other rules after this rule applies set “Yes”. This will work for applying multiple discounts on the same product.
+- **End other rules:** To stop applying other rules after this rule applies, set **Yes**. This will work for applying multiple discounts on the same product.
 
-**Note:- If you want multiple rules to apply to the product then set “NO”. So in that case the rule which has the highest priority will apply first.**
+**Note:** If you want multiple rules to apply to the product, set **No**. In that case the rule which has the highest priority applies first.
 
-Now **Save the Catalog Rule** and you will able to see a new **Catalog Rule** is been created successfully.
+Finally, click **Save Catalog Rule**. The new **Catalog Rule** is listed, as shown below.
 
 <ImagePopup src="/images/marketing/catalog-output.png" alt="Catalog Output" />
 
@@ -70,4 +80,4 @@ You will get a flat 50% OFF on the product after applying a catalog rule as show
 
 <ImagePopup src="/images/marketing/catalog-front.png" alt="Catalog Front" />
 
-By this, you can easily create a **Catalog Rule** in Bagisto.
+By this, you can create a **Catalog Rule** in Bagisto.

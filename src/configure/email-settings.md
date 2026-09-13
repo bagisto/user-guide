@@ -8,9 +8,11 @@ Go to the Admin Panel and click **Configure >> Email >> Email Settings**.
 
 ## Sender details
 
-Set the email sender name, the shop email address, the admin name, and the admin
-email address. These are the names and addresses your customers and staff see on
-the mail Bagisto sends.
+The **Email Settings** section holds the names and addresses on the mail Bagisto sends:
+
+- **Sender Name** and **Sender Email Address** — what customers see as the sender.
+- **Admin Name** and **Admin Email Address** — where admin notifications for the channel are sent.
+- **Contact Name** and **Contact Email Address** — shown in the footer of your emails.
 
 ## How mail is sent
 
@@ -20,7 +22,7 @@ change to match:
 **SMTP** — mail is handed to an SMTP server. Fill in:
 
 - **Host** and **Port** of the mail server
-- **Encryption** — usually `tls`
+- **Encryption** — **TLS**, **SSL** or **None**; usually TLS
 - **Username** and **Password** for the account
 
 **Brevo (API)** — mail is sent over Brevo's HTTP API rather than SMTP, which avoids

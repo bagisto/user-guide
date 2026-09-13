@@ -1,34 +1,35 @@
 # Settings
 
-Configure how customer accounts are created and signed in to.  
-To configure, go to the Admin Panel and navigate to **Configure >> Customer >> Settings**.
+These settings decide how customer accounts are created and signed in to.
 
-### Create New Account Options
+Go to **Configure >> Customer >> Settings**.
+
+<ImagePopup src="/images/configure/settings.png" alt="Customer settings" />
+
+## Create new account options
 
 **Default Group:** The customer group a new account is placed in.
 
 **Allow NewsLetter:** Show the newsletter subscription checkbox on the sign-up form.
 
-### Login Options
+## Email verification
+
+Switch **Allow Email Verification** on to send new customers a confirmation link they must open before they can sign in.
+
+## Login options
 
 **Redirect Customer to the selected page:** Where a customer lands after signing in, the home page or their account.
 
-### Wishlist
+## Social login
 
-Switch the storefront wishlist on or off.
+Let customers sign in with a Facebook, X (Twitter), Google, LinkedIn or GitHub account. For each network, switch it on and enter the **Client ID** and **Client Secret** from the app you registered with that network, and copy the **Redirect URL** shown into that app's settings.
 
-### Newsletter Subscription
+## Wishlist
 
-Newsletter subscription allows users to receive updates, offers, or content regularly via email, keeping them informed and engaged.
+Switch **Allow Wishlist option** on to let shoppers save products to a wishlist.
 
-### Email Verification
+## Newsletter subscription
 
-Email verification confirms the authenticity of an email address by sending a confirmation link, improving account security and communication reliability.
+Switch **Allow Newsletter Subscription** on to show the subscription form in the storefront footer.
 
-### Social Login
-
-Social login lets users access the website using their social media accounts, simplifying registration and login for convenience.
-
-After making changes, click on the **Save Configuration** button.
-
-<ImagePopup src="/images/configure/settings.png" alt="Settings Configuration" />
+Click **Save Configuration** after any change.

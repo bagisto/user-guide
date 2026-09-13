@@ -2,15 +2,16 @@
 
 This document guides you on creating a Grouped Product in Bagisto. A grouped product is a collection of simple products that can be combined in Bagisto. This versatile product type allows you to offer variations of a single product or a group of products as a coordinated set. Each product in a grouped product can be purchased separately or all together as part of the group.
 
-### Steps to Create a Grouped Product in Bagisto 
+### Creating a grouped product
 
-1. On the Bagisto admin dashboard, go to **Catalog Section >> Products >> select Grouped** under the Product Type.
-2. Select **Attribute Family >> enter SKU >>** Click to **Save Product**.
-3. Enter the **SKU** (Stock Keeping Unit) of the product, unique to every product.
+1. Go to **Catalog >> Products**.
+2. Click **Create Product**.
+3. Select **Grouped** under **Type**.
+4. Select the **Family**.
+5. Enter the **SKU** (Stock Keeping Unit) of the product, unique to every product.
+6. Click **Save Product**. You are redirected to the edit product page with several new settings, as shown in the images below.
 
-<ImagePopup src="/images/grouped-product/grouped.png" alt="Grouped Product" />
-
-After clicking on the Save Product button, you will be redirected to the next page with several new settings as shown in the below image.
+   <ImagePopup src="/images/grouped-product/grouped.png" alt="Grouped Product" />
 
 ### General Settings
 
@@ -56,22 +57,25 @@ Fill in the following fields under the description:
 Fill in the following fields under meta description for improved searchability on search engines:
 
 - **Meta Title:** Provide the main title of the product.
-- **Meta Keyword:** Provide meta keywords for specific search engine optimization.
+- **Meta Keywords:** Provide meta keywords for specific search engine optimization.
 - **Meta Description:** Enter a description for better search engine listings.
 
 <ImagePopup src="/images/grouped-product/meta-description.png" alt="Meta Description" />
 
 ### Images
 
-To add product images, click on **Add Images**. You can add multiple images for your product.
+To add product images, click on **Add Image**. You can add multiple images for your product.
 
 <ImagePopup src="/images/grouped-product/image.png" alt="Product Images" />
 
-### Grouped Products
+### Group Products
 
-Search Products under this **Search Product** section. You can simply search the Simple Product to add in the Grouped Product. Once you add all the required products, they will be listed.  
+1. In the **Group Products** section, click **Add Product**. The **Select Products** modal opens.
+2. Search for the simple products to add and tick them.
+3. Click **Add Selected Product**. The products are listed in the section.
+4. Enter the **Default Qty** for each product. This is the quantity pre-filled for the customer on the storefront.
 
-Here you can also enter the default quantity (which will automatically be added to the customer cart) of the product and sort orders accordingly. Products will be listed on the front end as shown in the below image.
+To change the order of the products, drag a row to its new position. Products are listed on the front end in that order, as shown in the image below.
 
 <ImagePopup src="/images/grouped-product/group-products.png" alt="Grouped Products" />
 

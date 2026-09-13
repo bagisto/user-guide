@@ -1,33 +1,27 @@
 # Roles
 
-Roles in Bagisto allow the store owner to create users and assign permissions. This helps manage access levels for different users. Here’s how to create an admin ACL role in Bagisto.
+A role is a named set of permissions. Every admin user is assigned one role, so roles are how you decide which parts of the admin each member of your team can open.
 
-### Create Roles
+## Creating a role
 
-**Step 1:** In the admin panel, go to **Settings >> Roles**. Click on **Create Role**.
+1. Go to **Settings >> Roles**.
+2. Click **Create Role**.
 
-<ImagePopup src="/images/settings/role.png" alt="Role" />
+<ImagePopup src="/images/settings/role.png" alt="Roles listing with the Create Role button" />
 
-**Step 2:** Fill in the required details:  
+3. In **General**, enter the **Name** and **Description** of the role.
 
-**1. Name:** Enter the role name.  
+<ImagePopup src="/images/settings/new-role.png" alt="New role form" />
 
-**2. Description:** Enter the description of the role.  
+4. In **Access Control**, set **Permissions** to **All** to grant everything, or to **Custom** to pick individual permissions.
+5. With **Custom**, tick the permissions the role should have. Use the arrow beside a group to expand or collapse it; ticking a group selects everything under it, and the **Search permissions** box jumps straight to a permission by name.
 
-<ImagePopup src="/images/settings/new-role.png" alt="New Role" />
+<ImagePopup src="/images/settings/access-control.png" alt="Access Control permission tree" />
 
-**Step 3:** Configure the **Access Control** permissions as needed.
+6. Click **Save Role**.
 
-Set **Permissions** to **Custom** to pick individual permissions, or to **All** to grant everything. Use the arrow beside a group to expand or collapse it — ticking a group selects everything under it.
+The new role appears in the list and can be assigned to users under **Settings >> Users**.
 
-**Bagisto v2.4.9** tidies this tree to match the reworked admin menu. It drops the folder and file icons in favour of plain connector guides, adds a **Search permissions** box so you can jump straight to a permission instead of scrolling the whole tree, and lists **Bookings** under **Sales** as its own permission.
+<ImagePopup src="/images/settings/role-grid.png" alt="Roles listing with the new role" />
 
-<ImagePopup src="/images/settings/access-control.png" alt="Access Control" />
-
-Click on **Save Role**.
-
-**Step 4:** Once saved, the new **Role** will appear in the list as shown below.
-
-<ImagePopup src="/images/settings/role-grid.png" alt="Role Grid" />
-
-You have now successfully created a **Role** in Bagisto.
+From Bagisto 2.4.9 the permission tree mirrors the admin menu, uses plain connector guides instead of folder icons, and lists **Bookings** under **Sales** as its own permission.

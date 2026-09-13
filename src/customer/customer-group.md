@@ -16,7 +16,9 @@ Then, you will need to segment your customers, so that only wholesale customers 
 
 ### Guest Group 
 
-The Guest group is the only one that can apply to guests and cannot be edited or deleted. A non-logged-in group also falls under this guest group.
+The Guest group is the one that applies to shoppers who are not logged in.
+
+The three groups Bagisto ships with, **General**, **Guest** and **Wholesale**, can be renamed but not deleted. Groups you create yourself can be edited and deleted.
 
 ### General Group 
 
@@ -24,22 +26,22 @@ The general customer group refers to customers who are not defined as Profession
 
 ---
 
-### To create a new customer group in Bagisto follow the below steps:
+### Creating a customer group
 
-**Step 1**: Login to the admin panel of Bagisto and go to **Customers >> Groups**. By default, there are three customer groups. To create a new group, click on the **Create Group** button as shown below.  
+1. Go to **Customers >> Groups**. By default, there are three customer groups.
 
-<ImagePopup src="/images/customer/create-group.png" alt="Create Group" />
+2. Click the **Create Group** button, as shown below.
 
-**Step 2**: Next, you will get a form to create a new group. Fill in the group **Code** and **Name** and then click the **Save Group** button as shown in the below image.  
+   <ImagePopup src="/images/customer/create-group.png" alt="Create Group" />
 
-<ImagePopup src="/images/customer/new-group.png" alt="New Group" />
+3. Fill in the group **Code** and **Name**.
 
-**Step 3**: Now you will be able to see the new customer group registered successfully.  
+4. Click the **Save Group** button, as shown in the below image.
+
+   <ImagePopup src="/images/customer/new-group.png" alt="New Group" />
+
+The new customer group is listed in the grid.
 
 <ImagePopup src="/images/customer/group-grid.png" alt="Group Grid" />
 
-So by the above steps, you can easily create a new customer group from the admin panel in Bagisto. 
-
----
-
-
+By the above steps, you can create a new customer group from the admin panel in Bagisto.

@@ -150,13 +150,6 @@ export default defineConfig({
         items: [
           { text: "Introduction", link: "/getting-started/introduction" },
           { text: "Command Palette", link: "/getting-started/command-palette" },
-        ],
-      },
-
-      {
-        text: "Account",
-        collapsed: false,
-        items: [
           {
             text: "Two Factor Authentication",
             link: "/authentication/2fa-authentication",
@@ -165,125 +158,17 @@ export default defineConfig({
       },
 
       {
-        text: "Product Types",
+        text: "Store Setup",
         collapsed: false,
         items: [
-          { text: "Simple Product", link: "/product-types/simple-product" },
-          {
-            text: "Configurable Product",
-            link: "/product-types/configurable-product",
-          },
-          { text: "Virtual Product", link: "/product-types/virtual-product" },
-          { text: "Bundle Product", link: "/product-types/bundle-product" },
-          { text: "Grouped Product", link: "/product-types/grouped-product" },
-          {
-            text: "Downloadable Product",
-            link: "/product-types/downloadable-product",
-          },
-          { text: "Booking Product", link: "/product-types/booking-product" },
-        ],
-      },
-
-      {
-        text: "Category",
-        collapsed: false,
-        items: [{ text: "Create Category", link: "/category/create-category" }],
-      },
-
-      {
-        text: "Attributes",
-        collapsed: false,
-        items: [
-          { text: "Attribute Input Types", link: "/attribute/attribute-input" },
-          {
-            text: "Create Product Attributes",
-            link: "/attribute/product-attribute",
-          },
-          { text: "Attribute Family", link: "/attribute/attribute-family" },
-        ],
-      },
-
-      {
-        text: "Orders",
-        collapsed: false,
-        items: [
-          { text: "Create Order", link: "/orders/create-order" },
-          { text: "Create Invoice", link: "/orders/create-invoice" },
-          { text: "Create Shipment", link: "/orders/create-shipment" },
-          { text: "Create Refunds", link: "/orders/create-refunds" },
-          { text: "Transactions", link: "/orders/transactions" },
-          { text: "EU Withdrawal", link: "/orders/eu-withdrawal" },
-          { text: "RMA", link: "/orders/rma" },
-        ],
-      },
-      {
-        text: "Customers",
-        collapsed: false,
-        items: [
-          { text: "Create Customer", link: "/customer/create-customer" },
-          { text: "Customer Group", link: "/customer/customer-group" },
-          {
-            text: "Customer Group Pricing",
-            link: "/customer/customer-group-price",
-          },
-          { text: "Customer Review", link: "/customer/customer-review" },
-        ],
-      },
-
-      {
-        text: "CMS",
-        collapsed: false,
-        items: [{ text: "Create CMS", link: "/cms/create-cms" }],
-      },
-
-      {
-        text: "Marketing",
-        collapsed: false,
-        items: [
-          { text: "Cart Rules", link: "/marketing/cart-rules" },
-          { text: "Catalog Rules", link: "/marketing/catalog-rules" },
-          { text: "Email Templates", link: "/marketing/email-templates" },
-          { text: "Events", link: "/marketing/events" },
-          { text: "Campaigns", link: "/marketing/campaigns" },
-          {
-            text: "Newsletter Subscriptions",
-            link: "/marketing/newsletter-subscription",
-          },
-          { text: "Sitemaps", link: "/marketing/sitemaps" },
-          { text: "URL Rewrite", link: "/marketing/url-rewrite" },
-          { text: "Search Terms", link: "/marketing/search-terms" },
-          { text: "Search Synonyms", link: "/marketing/search-synonyms" },
-        ],
-      },
-
-      {
-        text: "Reporting",
-        collapsed: false,
-        items: [
-          { text: "Sales", link: "/reporting/sales-report" },
-          { text: "Customers", link: "/reporting/customers-report" },
-          { text: "Products", link: "/reporting/product-report" },
-        ],
-      },
-
-      {
-        text: "Appearance",
-        collapsed: false,
-        items: [{ text: "Themes & Sections", link: "/appearance/themes" }],
-      },
-
-      {
-        text: "Settings",
-        collapsed: false,
-        items: [
+          { text: "Channels", link: "/settings/channels" },
           { text: "Locales", link: "/settings/locales" },
           { text: "Currencies", link: "/settings/currencies" },
           { text: "Exchange Rates", link: "/settings/exchange-rates" },
-          { text: "Inventory Source", link: "/settings/inventory-source" },
-          { text: "Channels", link: "/settings/channels" },
+          { text: "Inventory Sources", link: "/settings/inventory-source" },
+          { text: "Taxes", link: "/settings/taxes" },
           { text: "Users", link: "/settings/users" },
           { text: "Roles", link: "/settings/roles" },
-          { text: "Taxes", link: "/settings/taxes" },
           { text: "Data Transfer", link: "/settings/data-transfer" },
         ],
       },
@@ -301,18 +186,17 @@ export default defineConfig({
               { text: "Custom Scripts", link: "/configure/custom-scripts" },
               { text: "Design", link: "/configure/design" },
               {
-                text: "Exchange Rates Configurations",
+                text: "Exchange Rates",
                 link: "/configure/exchange-rates-configurations",
               },
               { text: "GDPR", link: "/configure/gdpr" },
             ],
           },
-          { text: "Magic AI", link: "/configure/magic-ai" },
           {
             text: "Sales",
             collapsed: true,
             items: [
-              { text: "Shipping", link: "/configure/shipping" },
+              { text: "Shipping Settings", link: "/configure/shipping" },
               { text: "Checkout", link: "/configure/checkout" },
               { text: "Guest Checkout", link: "/configure/guest-checkout" },
               { text: "Order Settings", link: "/configure/orders-settings" },
@@ -365,13 +249,119 @@ export default defineConfig({
       },
 
       {
-        text: "Shipping Methods",
-        link: "/shipping-method/shipping-methods",
+        text: "Catalog",
+        collapsed: false,
+        items: [
+          { text: "Categories", link: "/category/create-category" },
+          {
+            text: "Attributes",
+            collapsed: true,
+            items: [
+              { text: "Attribute Input Types", link: "/attribute/attribute-input" },
+              {
+                text: "Create Product Attributes",
+                link: "/attribute/product-attribute",
+              },
+              { text: "Attribute Families", link: "/attribute/attribute-family" },
+            ],
+          },
+          {
+            text: "Products",
+            collapsed: true,
+            items: [
+              { text: "Simple Product", link: "/product-types/simple-product" },
+              {
+                text: "Configurable Product",
+                link: "/product-types/configurable-product",
+              },
+              { text: "Virtual Product", link: "/product-types/virtual-product" },
+              {
+                text: "Downloadable Product",
+                link: "/product-types/downloadable-product",
+              },
+              { text: "Grouped Product", link: "/product-types/grouped-product" },
+              { text: "Bundle Product", link: "/product-types/bundle-product" },
+              { text: "Booking Product", link: "/product-types/booking-product" },
+            ],
+          },
+        ],
       },
 
       {
-        text: "Payment Methods",
-        link: "/payment-method/payment-methods",
+        text: "Customers",
+        collapsed: false,
+        items: [
+          { text: "Create Customer", link: "/customer/create-customer" },
+          { text: "Customer Groups", link: "/customer/customer-group" },
+          {
+            text: "Customer Group Pricing",
+            link: "/customer/customer-group-price",
+          },
+          { text: "Customer Reviews", link: "/customer/customer-review" },
+        ],
+      },
+
+      {
+        text: "Sales",
+        collapsed: false,
+        items: [
+          { text: "Create Order", link: "/orders/create-order" },
+          { text: "Create Invoice", link: "/orders/create-invoice" },
+          { text: "Create Shipment", link: "/orders/create-shipment" },
+          { text: "Create Refund", link: "/orders/create-refunds" },
+          { text: "Transactions", link: "/orders/transactions" },
+          { text: "EU Withdrawal", link: "/orders/eu-withdrawal" },
+          { text: "RMA", link: "/orders/rma" },
+          { text: "Shipping Methods", link: "/shipping-method/shipping-methods" },
+          { text: "Payment Methods", link: "/payment-method/payment-methods" },
+        ],
+      },
+
+      {
+        text: "Marketing",
+        collapsed: false,
+        items: [
+          { text: "Cart Rules", link: "/marketing/cart-rules" },
+          { text: "Catalog Rules", link: "/marketing/catalog-rules" },
+          { text: "Email Templates", link: "/marketing/email-templates" },
+          { text: "Events", link: "/marketing/events" },
+          { text: "Campaigns", link: "/marketing/campaigns" },
+          {
+            text: "Newsletter Subscriptions",
+            link: "/marketing/newsletter-subscription",
+          },
+          { text: "Sitemaps", link: "/marketing/sitemaps" },
+          { text: "URL Rewrites", link: "/marketing/url-rewrite" },
+          { text: "Search Terms", link: "/marketing/search-terms" },
+          { text: "Search Synonyms", link: "/marketing/search-synonyms" },
+        ],
+      },
+
+      {
+        text: "CMS",
+        collapsed: false,
+        items: [{ text: "Pages", link: "/cms/create-cms" }],
+      },
+
+      {
+        text: "Appearance",
+        collapsed: false,
+        items: [{ text: "Themes & Sections", link: "/appearance/themes" }],
+      },
+
+      {
+        text: "Magic AI",
+        link: "/configure/magic-ai",
+      },
+
+      {
+        text: "Reporting",
+        collapsed: false,
+        items: [
+          { text: "Sales", link: "/reporting/sales-report" },
+          { text: "Customers", link: "/reporting/customers-report" },
+          { text: "Products", link: "/reporting/product-report" },
+        ],
       },
 
       {

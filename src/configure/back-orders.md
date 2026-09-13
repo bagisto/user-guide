@@ -1,21 +1,22 @@
 # Back Orders
 
-A backorder is an order for a good or service that cannot be filled immediately because of a lack of available supply. Backorders give insight into a company's inventory management.
+A back order is an order for a product that is out of stock at the time it is placed. Allowing back orders keeps a product buyable while you restock; blocking them shows the product as out of stock instead.
 
-A manageable backorder with a short turnaround is a net positive, but a large backorder with longer wait times can be problematic.
+## Allow back orders
 
-You can manage **Backorders** by going to the Admin Panel and clicking on **Configure >> Catalog >> Inventory**.
+1. Go to **Configure >> Catalog >> Inventory**.
+2. In the **Product Stock Option** section, switch **Allow Back Orders** on.
+3. Set the **Out-of-Stock Threshold**, the quantity at which a product counts as out of stock.
+4. Click **Save Configuration**.
 
-In the **Product Stock Option** section, switch **Allow Back Orders** on or off. The **Out-of-Stock Threshold** beside it is the quantity at which a product counts as out of stock. Click **Save Configuration** as shown below.
+<ImagePopup src="/images/configure/backorder.png" alt="Product Stock Option settings" />
 
-<ImagePopup src="/images/configure/backorder.png" alt="Back Orders" />
+## What the shopper sees
 
-**Note:- If the product is Out of Stock then also the customer is able to Place an Order after Enabling the Backorder Option**
+With back orders allowed, a product with no stock still shows **Add To Cart** and the order goes through; the item's quantity goes negative until you restock.
 
-<ImagePopup src="/images/configure/outofstock.png" alt="Out Of Stock" />
+<ImagePopup src="/images/configure/outofstock.png" alt="Out-of-stock product that can still be bought" />
 
-In the above image these products are **Out of Stock** but you can still able to Add the product to the Cart and **Place an Order**.
+<ImagePopup src="/images/configure/backorder-output.png" alt="Back-ordered product in the cart" />
 
-<ImagePopup src="/images/configure/backorder-output.png" alt="Backorder Output" />
-
-<ImagePopup src="/images/configure/order-id.png" alt="Order ID" />
+<ImagePopup src="/images/configure/order-id.png" alt="Order placed for a back-ordered product" />

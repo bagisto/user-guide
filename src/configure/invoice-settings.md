@@ -1,29 +1,27 @@
 # Invoice Settings
 
-To configure invoice settings, go to the Admin Panel and click on **Configure >> Sales >> Invoice Settings**.
+Go to **Configure >> Sales >> Invoice Settings**. Click **Save Configuration** after changing any section.
 
-### 1. Invoice Number Settings
+## Invoice number settings
 
-Configure rules or parameters for generating and assigning unique identification numbers to invoices for organizational and tracking purposes.
+Decide how invoice numbers are built: an **Invoice Number Prefix**, the **Invoice Number Length** it is padded to, and an **Invoice Number Suffix**.
 
 <ImagePopup src="/images/configure/invoicenumber-settings.png" alt="Invoice Number Settings" />
 
-### 2. Payment Terms
+## Payment terms
 
-Set agreed-upon conditions dictating when and how payment for goods or services should be made by the buyer to the seller.
+Enter the **Due Duration**, the number of days after the invoice date by which payment is due. It is printed on the invoice and drives the reminders below.
 
 <ImagePopup src="/images/configure/payment-terms.png" alt="Payment Terms" />
 
-### 3. PDF Print Outs
+## PDF print outs
 
-Choose what the invoice PDF shows: whether it prints the **Invoice ID** and **Order ID**, the **Logo** at the top, and a **Footer text**.
+Choose what the invoice PDF shows: **Display Invoice ID in Header**, **Display Order ID in Header**, the **Logo** at the top, and a **Footer text**.
 
 <ImagePopup src="/images/configure/invoice-slip.png" alt="PDF Print Outs" />
 
-### 4. Invoice Reminders
+## Invoice reminders
 
-Send automated reminder emails for invoices that are past their due date. Set how many reminders are sent for one invoice and the interval between them.
+Send automated reminder emails for invoices that are past their due date. Set the **Maximum limit of reminders** sent for one invoice and the **Interval between reminders**.
 
-<ImagePopup src="/images/configure/invoice-reminder.png" alt="Invoice Reminder" />
-
-After making changes, click on the **Save Configuration** button.
+<ImagePopup src="/images/configure/invoice-reminder.png" alt="Invoice Reminders" />

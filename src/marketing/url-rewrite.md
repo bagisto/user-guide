@@ -4,36 +4,38 @@ This feature allows the admin to manage errors related to product, category, and
 
 If an admin modifies their URL for any reason, this functionality ensures seamless redirection to the new path URL.
 
-## Step 1: Navigate to URL Rewrite
+## Creating a URL rewrite
 
-On the Admin panel, go to **Marketing > Search & SEO > URL Rewrites** and click on **Create URL Rewrite** as shown below.
+1. Go to **Marketing >> Search & SEO >> URL Rewrites**.
 
-<ImagePopup src="/images/marketing/url-rewrite.png" alt="Step 1: Navigate to URL Rewrite" />
+2. Click **Create URL Rewrite**, as shown below.
 
-## Step 2: Add URL Rewrite Details
+   <ImagePopup src="/images/marketing/url-rewrite.png" alt="Step 1: Navigate to URL Rewrite" />
 
-Fill in the following fields:
+3. Fill in the fields described below.
 
-1. **For** – Select the entity for which you are applying the URL Rewrite (Product, Category, CMS Page).  
+4. Click **Save URL Rewrite**.
 
-2. **Request Path** – Enter the URL key and suffix (if applicable) of the original product request. This is the redirect from the product/category/page identified earlier.  
+   <ImagePopup src="/images/marketing/url-fields.png" alt="Step 2: Add URL Rewrite Details" />
 
-3. **Target Path** – Displays the system version of the path (cannot be changed). 
+## URL rewrite fields
 
-4. **Redirect Type** – Choose one of the following:  
+- **For** – Select the entity for which you are applying the URL Rewrite (Product, Category, CMS Page).
 
-   - **Temporary (302):** Use for temporary changes while retaining SEO value on the old URL.  
-   
-   - **Permanent (301):** Use for permanent changes with SEO value transferred to the new URL.  
+- **Request Path** – Enter the URL key and suffix (if applicable) of the original product request. This is the old URL of the product, category or page that visitors are redirected from.
 
-5. **Locale** – Select the language in which you want the URL to be rewritten.  
+- **Target Path** – Enter the path that visitors are redirected to. This field is required.
 
-Finally, click the **Save URL Rewrite** button.
+- **Redirect Type** – Choose one of the following:
 
-<ImagePopup src="/images/marketing/url-fields.png" alt="Step 2: Add URL Rewrite Details" />
+  - **Temporary (302):** Use for temporary changes while retaining SEO value on the old URL.
 
-## Step 3: URL Redirection
+  - **Permanent (301):** Use for permanent changes with SEO value transferred to the new URL.
 
-The new URL will now redirect as per the **Target Path** permanently.  
+- **Locale** – Select the language in which you want the URL to be rewritten.
+
+## URL redirection
+
+The **Request Path** now redirects to the **Target Path**, using the redirect type you chose — temporary or permanent.
 
 <ImagePopup src="/images/marketing/url-output.png" alt="Step 3: URL Redirection" />

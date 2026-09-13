@@ -1,84 +1,79 @@
-# Storefront (Channel)
+# Channels
 
-Bagisto allows you to set up and manage multiple domains or stores in a single backend. This guide explains how to create multiple websites with different domains in Bagisto.
+A channel is one storefront: its own domain, theme, root category, locales and currencies. One Bagisto installation can run several channels from the same admin, so you can sell the same catalog under different brands or in different markets.
 
-### Creating Storefront in Bagisto
+## Creating a channel
 
-**Step 1:** Go to **Settings >> Channels >> Create Channel**.
+1. Go to **Settings >> Channels**.
+2. Click **Create Channel**.
 
-<ImagePopup src="/images/settings/channels.png" alt="Storefront (Channel)" />
+<ImagePopup src="/images/settings/channels.png" alt="Channels listing with the Create Channel button" />
 
-### General
+3. Fill in the sections described below.
+4. Click **Save Channel**.
 
-**1. Code:** Enter a code for your store.  
-**2. Name:** Provide a name for your store.  
-**3. Description:** Add details about your store, its purpose, and products.  
-**4. Inventory Sources:** Select one or more inventories for this store.  
-**5. Root Category:** Choose a root category from the dropdown.  
-**6. Hostname:** Enter the URL of your website to connect it with Bagisto.
+The new channel appears in the list, and its storefront answers on the hostname you entered.
 
-<ImagePopup src="/images/settings/general.png" alt="General" />
+<ImagePopup src="/images/settings/channel-grid.png" alt="Channels listing with the new channel" />
 
-### Currencies and Locales
+## General
 
-**1. Locales:** Select one or more locales for the store.  
-**2. Default Locale:** Choose the default locale.  
-**3. Currencies:** Select one or more currencies for the store.
+**Code:** A short identifier for the channel, used internally; it cannot be changed later.
 
-<ImagePopup src="/images/settings/currency-local.png" alt="Currency and Locales" />
+**Name:** The channel's name, shown in the admin's channel switcher.
 
-### Design
+**Description:** Notes about the channel for your own team.
 
-Select a theme from the dropdown (if multiple themes are available).
+**Inventory Sources:** The warehouses whose stock this channel sells.
 
-<ImagePopup src="/images/settings/theme.png" alt="Theme" />
+**Root Category:** The category whose children form the storefront's menu.
 
-### Logo
+**Hostname:** The domain the storefront answers on, such as `https://shop.example.com`.
 
-Upload a logo for the frontend and click **Save Channel**.
+<ImagePopup src="/images/settings/general.png" alt="General section of the channel form" />
 
-<ImagePopup src="/images/settings/frontend-logos.png" alt="Frontend Logo" />
+## Currencies and locales
 
-### Logo on Frontend
+**Locales:** The languages the storefront offers.
 
-The updated logo will be visible on the frontend.
+**Default Locale:** The language shown until the shopper picks another.
 
-<ImagePopup src="/images/settings/logo-outputs.png" alt="Frontend Logo Output" />
+**Currencies:** The currencies the storefront offers; the store's base currency is set under [Currencies](./currencies.md).
 
-### Favicon
+<ImagePopup src="/images/settings/currency-local.png" alt="Currencies and Locales section of the channel form" />
 
-Upload a favicon for the frontend and click **Save Channel**.
+## Design
 
-<ImagePopup src="/images/settings/frontend-favicon.png" alt="Frontend Favicon" />
+**Theme:** The storefront theme this channel uses. Themes are activated per channel under **Appearance >> Themes**; see [Themes & Sections](../appearance/themes.md).
 
-### Favicon on Frontend
+<ImagePopup src="/images/settings/theme.png" alt="Design section of the channel form" />
 
-The updated favicon will be visible on the frontend.
+**Logo:** The logo shown in the storefront header.
 
-<ImagePopup src="/images/settings/favicon-output.png" alt="Frontend Favicon Output" />
+<ImagePopup src="/images/settings/frontend-logos.png" alt="Logo upload" />
 
-### Home Page SEO
+<ImagePopup src="/images/settings/logo-outputs.png" alt="Logo shown on the storefront" />
 
-**1. Meta Title:** Enter the main title for SEO.  
-**2. Meta Keywords:** Provide keywords for better search visibility.  
-**3. Meta Description:** Add a description to appear in search results.
+**Favicon:** The icon shown in the browser tab.
 
-<ImagePopup src="/images/settings/seo.png" alt="SEO" />
+<ImagePopup src="/images/settings/frontend-favicon.png" alt="Favicon upload" />
 
-### Maintenance Mode
+<ImagePopup src="/images/settings/favicon-output.png" alt="Favicon shown in the browser tab" />
 
-Maintenance mode allows you to temporarily disable your store while making updates.
+## Home page SEO
 
-**1. Message:** Message shown to customers during maintenance.  
-**2. Allowed IPs:** IPs that can access the store during maintenance.  
-**3. Status:** Enable or disable maintenance mode.
+**Meta Title**, **Meta Keywords** and **Meta Description** describe the home page to search engines.
 
-<ImagePopup src="/images/settings/maintenance-mode.png" alt="Maintenance Mode" />
+<ImagePopup src="/images/settings/seo.png" alt="Home page SEO section of the channel form" />
 
-### Storefront Created
+## Maintenance mode
 
-After saving, your new Storefront will be listed.
+Maintenance mode takes the storefront offline while you make changes, without affecting the admin.
 
-<ImagePopup src="/images/settings/channel-grid.png" alt="Storefront Grid" />
+**Message:** The text shown to visitors while the store is down.
 
-You have now successfully created a new **Storefront** in Bagisto.
+**Allowed IPs:** Addresses that can still reach the storefront, so you can check your changes.
+
+**Status:** Switch maintenance mode on or off.
+
+<ImagePopup src="/images/settings/maintenance-mode.png" alt="Maintenance Mode section of the channel form" />

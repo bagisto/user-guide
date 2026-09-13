@@ -2,7 +2,7 @@
 
 Payment methods refer to the various options available for customers to make payments when purchasing a product or service. Common methods include cash, credit/debit cards, gift cards, and mobile payments.
 
-To configure the default payment methods, go to the Admin Panel and navigate to **Configure >> Payment Method**.
+To configure the default payment methods, go to the Admin Panel and navigate to **Configure >> Sales >> Payment Methods**.
 
 ### Stripe
 
@@ -10,13 +10,13 @@ To configure the default payment methods, go to the Admin Panel and navigate to 
 
 It offers a smooth checkout process for customers and works with many currencies and international transactions.
 
-When store owners use Stripe, they can easily handle online payments, refunds, keep track of transactions, and see financial reports all from one dashboard.
+With Stripe, you handle online payments, refunds, transactions and financial reports from one dashboard.
 
 <ImagePopup src="/images/configure/stripe-admin.png" alt="Stripe" />
 
 ### Razorpay
 
-Razorpay is a top digital payment service that helps businesses easily accept, process, and manage online payments. It started in India in 2014. 
+Razorpay is a digital payment service through which businesses accept, process and manage online payments. It started in India in 2014.
 
 Razorpay has grown to be one of the most reliable payment gateways for startups, small and medium enterprises, and big companies all over India.
 
@@ -70,7 +70,7 @@ Configure the following:
 **2. Public Key ID** and **Private Key ID:** The key identifiers issued to you.
 **3. PayGlocal Public Key** and **Merchant Private Key:** The key pair used to sign
 and verify requests.
-**4. Accepted Currencies:** The currencies this gateway may be used for. A cart in
+**4. Accepted currencies:** The currencies this gateway may be used for. A cart in
 any other currency will not be offered PayGlocal at checkout.
 **5. Sandbox:** Enable while testing, disable to take live payments.
 

@@ -8,38 +8,34 @@ This feature allows you to communicate with your customers in bulk about upcomin
 
 ### Admin Configuration
 
-**Step 1)** Firstly the admin can navigate to **Configure >> Customer >> Settings**
+1. Go to **Configure >> Customer >> Settings**.
 
-<ImagePopup src="/images/marketing/newsletter-settings.png" alt="Newsletter Settings" />
+   <ImagePopup src="/images/marketing/newsletter-settings.png" alt="Newsletter Settings" />
 
-**Step 2)** Now Enable the **Newsletter Subscription** and click on **Save Configuration** button as shown in below image.
+2. Under **Newsletter Subscription**, enable **Allow Newsletter Subscription**.
 
-<ImagePopup src="/images/marketing/enable-newsletter.png" alt="Enable Newsletter" />
+3. Click the **Save Configuration** button, as shown in the below image.
+
+   <ImagePopup src="/images/marketing/enable-newsletter.png" alt="Enable Newsletter" />
 
 ### Newsletter Subscriptions
 
-Here the admin can see all their customers who subscribed to the newsletter subscription.
-
-Also, the admin will navigate to **Marketing >> Communications >> Newsletter Subscriptions** as shown in the below image.
+Go to **Marketing >> Communications >> Newsletter Subscriptions** to see all the customers who subscribed to the newsletter, as shown in the below image.
 
 <ImagePopup src="/images/marketing/newsletter-grid.png" alt="Newsletter Subscriptions" />
 
-**Step 3)** After all the configuration you need to run the command under your project root to send the emails as below :
+### Sending the emails
 
-**php artisan campaign:process**
+Campaign emails are sent by the store's scheduler, which processes the campaigns once a day. Nothing needs to be triggered from the admin panel; the subscribers of the chosen customer group receive the email on the next daily run after the campaign is active.
 
-<ImagePopup src="/images/marketing/command.png" alt="Newsletter Subscriptions" />
-
-**Customer Configuration**
+### Customer Configuration
 
 Now it’s time to see about our store customers from where they can subscribe to the newsletters.
 
-The customers can subscribe to the newsletter during the sign-up and once the customer is done with the sign-up, they can easily see all the kinds of the offer.
+The customers can subscribe to the newsletter during the sign-up and once the customer is done with the sign-up, they can see all the kinds of the offer.
 
 <ImagePopup src="/images/marketing/newsletter.png" alt="Newsletter" />
 
 Also, the customer can subscribe to the newsletter from the Homepage at the footer side as shown in the below image.
 
-<ImagePopup src="/images/marketing/news.png" alt="news" />
-
-
+<ImagePopup src="/images/marketing/news.png" alt="Newsletter Footer Subscription" />

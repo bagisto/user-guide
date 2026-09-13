@@ -1,9 +1,9 @@
 # Attribute
 
-In this option, you can easily add the size of an **Image and File** upload size (in KB) from here to improve the behavior, appearance, or function.
+Attributes of the **image** and **file** types accept uploads on the product form. This setting caps how large those uploads may be.
 
-Go to the Admin Panel and click on **Configure >> Catalog >> Products**, then find the **Attribute** section.
+1. Go to **Configure >> Catalog >> Products** and find the **Attribute** section.
+2. Enter the **Allowed Image Upload Size (in Kb)** and the **Allowed File Upload Size (in Kb)**.
+3. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/attribute.png" alt="Attribute" />
-
-After then click on the **Save Configuration** button.
+<ImagePopup src="/images/configure/attribute.png" alt="Attribute upload size settings" />

@@ -1,8 +1,12 @@
 # Review
 
-This section controls who can write product reviews and how they are shown.
+These settings control who can write product reviews and how reviews are shown on the product page.
 
-To configure, go to the Admin Panel and navigate to **Configure >> Catalog >> Products** and find the **Review** section.
+1. Go to **Configure >> Catalog >> Products** and find the **Review** section.
+2. Set the options below.
+3. Click **Save Configuration**.
+
+<ImagePopup src="/images/configure/image.png" alt="Review settings" />
 
 **Allow Customer Review:** Let logged-in customers write reviews.
 
@@ -12,6 +16,4 @@ To configure, go to the Admin Panel and navigate to **Configure >> Catalog >> Pr
 
 **Summary:** How the review summary at the top of the reviews is laid out.
 
-<ImagePopup src="/images/configure/image.png" alt="Review Configuration" />
-
-After configuring, click the **Save Configuration** button.
+Reviews written by shoppers wait for approval under **Customers >> Reviews**; see [Customer Reviews](../customer/customer-review.md).

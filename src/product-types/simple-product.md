@@ -4,12 +4,16 @@ A **simple product** is a product type in e-commerce that does not require custo
 
 Therefore, any service, such as downloadable items, does not count as a simple product. This is the step-by-step tutorial on how to add a simple product in [Bagisto](https://bagisto.com/en/).
 
-### Create Simple Product in Bagisto 2.0
-1. Click on **Catalog >> Products >>** select **Simple** under **Type**.
+### Creating a simple product
+
+1. Go to **Catalog >> Products**.
+2. Click **Create Product**.
+3. Select **Simple** under **Type**.
+4. Select the **Family**.
+5. Enter the **SKU**.
+6. Click **Save Product**. You are redirected to the edit product page.
 
    <ImagePopup src="/images/simple-product/simple.png" alt="Simple" />
-
-Now **Save the Product**, and you will get redirected to the Edit product page as shown below.
 
 ### General Attributes
 Below is the list of fields you need to fill under General Attributes.
@@ -28,16 +32,16 @@ Mention your product in detail.
    <ImagePopup src="/images/simple-product/description.png" alt="Description" />
 
 ### Meta Description
-Below is the list of fields that you need to provide under the meta description to make your product easily searchable on search engines.
+Below is the list of fields that you need to provide under the meta description to make your product searchable on search engines.
 
 #### Meta Title
 Provide the main title of the product by which your product will be known.
 
-#### Meta Keyword
-The meta keyword for the product needs to be provided to improve its searchability on the search engine for specific keywords.
+#### Meta Keywords
+The meta keywords for the product need to be provided to improve its searchability on the search engine for specific keywords.
 
 #### Meta Description
-Enter the description so that products can easily appear in search engine listings.
+Enter the description so that products can appear in search engine listings.
 
 <ImagePopup src="/images/simple-product/meta-description.png" alt="Meta Description" />
 
@@ -46,9 +50,9 @@ To add the product images, click on **Add Image**. You can add multiple images f
 
 <ImagePopup src="/images/simple-product/image.png" alt="Image" />
 
-Hover over an uploaded image to see its file name and two actions: the bin icon removes it, and the pencil icon opens the **Image SEO** panel where you can set the image's **Alt Text** and **File Name**, or **Replace** the file with another one.
+Hover over an uploaded image to see its file name and two actions: the bin icon removes it, and the pencil icon opens the **Image SEO** panel where you can set the image's **Alt Text** and **File Name**, or click **Choose File** under **Replace Image** to swap the file for another one.
 
-If [Magic AI](../configure/magic-ai.md#image-generation) is enabled for image generation, a **Magic AI** button beside **Add Image** generates product images from a written description.
+If [Magic AI](../configure/magic-ai.md#generate-images) is enabled for image generation, a **Magic AI** button beside **Add Image** generates product images from a written description.
 
 ### New
 Enable the toggle button if you want to feature the product as a new product. The resulting product will be shown under the New Products section.
@@ -82,7 +86,7 @@ Insert the quantity of the product that is there in your inventory. By default, 
 
 <ImagePopup src="/images/simple-product/inventories.png" alt="Inventories" />
 
-At last, **Save the Product**.
+Once every section is filled in, click **Save Product**.
 
 ### Front End
 The product will be visible as given below on the front end.
