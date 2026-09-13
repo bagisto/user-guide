@@ -52,7 +52,7 @@ To add the product images, click on **Add Image**. You can add multiple images f
 
 Hover over an uploaded image to see its file name and two actions: the bin icon removes it, and the pencil icon opens the **Image SEO** panel where you can set the image's **Alt Text** and **File Name**, or click **Choose File** under **Replace Image** to swap the file for another one.
 
-If [Magic AI](../configure/magic-ai.md#generate-images) is enabled for image generation, a **Magic AI** button beside **Add Image** generates product images from a written description.
+If [image generation](../generative-ai/generate-images.md) is enabled under Generative AI (Magic AI), a **Magic AI** button beside **Add Image** generates product images from a written description.
 
 ### New
 Enable the toggle button if you want to feature the product as a new product. The resulting product will be shown under the New Products section.

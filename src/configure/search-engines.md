@@ -2,7 +2,7 @@
 
 Product search on the storefront and in the admin runs on the database by default. For a large catalog you can connect an Elasticsearch cluster and choose where it is used.
 
-Go to **Configure >> Search Engines**. It is available on the current version of Bagisto; on Bagisto 2.4 the same choices are the **Search Engine**, **Admin Search Mode** and **Storefront Search Mode** settings in the **Search** section under **Configure >> Catalog >> Products**.
+Go to **Configure >> Search Engines**. It is available from Bagisto 2.5; on Bagisto 2.4 the same choices are the **Search Engine**, **Admin Search Mode** and **Storefront Search Mode** settings in the **Search** section under **Configure >> Catalog >> Products**.
 
 ## General
 

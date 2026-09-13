@@ -2,7 +2,7 @@
 
 The **About** screen shows what your store runs on and which services it uses. There is nothing to change here; it is the page to open when support asks which version you are on, or when you want to confirm that a setting made elsewhere has taken effect.
 
-Go to **Configure >> About**. It is available on the current version of Bagisto.
+Go to **Configure >> About**. It is available from Bagisto 2.5.
 
 <ImagePopup src="/images/configure/about.png" alt="About" />
 

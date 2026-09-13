@@ -11,7 +11,7 @@ Three storefront features can be switched on or off. They live in two places, so
 
 <ImagePopup src="/images/configure/options.png" alt="Compare and image search options" />
 
-To have an uploaded photo understood by an AI model rather than by the browser alone, see [AI Image Search](./magic-ai.md#ai-image-search).
+To have an uploaded photo understood by an AI model rather than by the browser alone, see [AI image search](../generative-ai/image-search.md).
 
 ## Wishlist
 

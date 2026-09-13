@@ -2,7 +2,7 @@
 
 The command palette is a search box that opens over any admin page. Type a few letters of what you are looking for and it lists the matching menu items, configuration screens, actions and records, so you can reach any part of the admin without clicking through the sidebar.
 
-It is available on the current version of Bagisto. On Bagisto 2.4 the same searches are done through the admin's **Mega Search** box in the header.
+It is available from Bagisto 2.5. On Bagisto 2.4 the same searches are done through the admin's **Mega Search** box in the header.
 
 ## Opening and closing
 

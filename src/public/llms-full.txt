@@ -22,7 +22,7 @@ From a single dashboard, you can manage your catalog, inventory, customers, orde
 * **Multi Currency & Multi Locale** – Sell worldwide with built-in currency and exchange rate handling, translations for 22 locales, and full right-to-left (RTL) support.
 * **Payment & Shipping Methods** – Built-in payment and shipping options that can be extended with your own integrations.
 * **Marketing Tools** – Cart price rules, catalog price rules, coupons, email campaigns, and abandoned cart recovery.
-* **Generative AI** – [Magic AI](../configure/magic-ai.md) writes product and page copy, generates product images, translates reviews, lets shoppers search by photo and personalises the order confirmation, using the AI provider you choose. The storefront also exposes its actions to AI shopping agents in browsers that support them, the first step toward agentic commerce.
+* **Generative AI** – [Generative AI (Magic AI)](../generative-ai/introduction.md) is built in: it writes product and page copy, generates product images, translates reviews, lets shoppers search by photo and personalises the order confirmation, using the AI provider you choose. The storefront also exposes its actions to AI shopping agents in browsers that support them, the first step toward agentic commerce.
 * **CMS Pages** – Create and manage static content pages for your storefront.
 * **Access Control** – Admin users, roles, and granular permissions for your team.
 * **Reporting** – Sales, customer, product, and visitor reports to track how your store is performing.
@@ -47,7 +47,7 @@ Whether you are starting a small store or scaling a large catalog across multipl
 
 The command palette is a search box that opens over any admin page. Type a few letters of what you are looking for and it lists the matching menu items, configuration screens, actions and records, so you can reach any part of the admin without clicking through the sidebar.
 
-It is available on the current version of Bagisto. On Bagisto 2.4 the same searches are done through the admin's **Mega Search** box in the header.
+It is available from Bagisto 2.5. On Bagisto 2.4 the same searches are done through the admin's **Mega Search** box in the header.
 
 ## Opening and closing
 
@@ -840,6 +840,71 @@ The **Manage Your Cookie Preferences** section holds the text shown for each cat
 
 Edit any of the texts and click **Save Configuration**.
 
+# Generative AI Configuration
+
+Bagisto's generative AI features are branded **Magic AI** in the admin, and they are all configured in one place: **Configure >> Magic AI**. The group has four pages, listed on the left: **General**, **Providers**, **Admin Features** and **Storefront Features**.
+
+This page covers the configuration only. What each feature does, and how to use it, is described in the [Generative AI](../generative-ai/introduction.md) section.
+
+<ImagePopup src="/images/configure/magic.png" alt="Magic AI configuration" />
+
+## Turn generative AI on
+
+1. Open the **General** page.
+2. In the **Settings** section, switch **Enabled** on. This is the master switch: the admin features, AI image search and the checkout message do not run until it is on. Review translation is governed by its own switch alone.
+3. Click **Save Configuration**.
+
+<ImagePopup src="/images/configure/general-setting.png" alt="Magic AI General settings" />
+
+## Connect a provider
+
+Bagisto ships with eight providers: **OpenAI, Anthropic, Gemini, Groq, xAI, DeepSeek, Mistral** and **Ollama**. You only need to connect the ones you plan to use.
+
+1. Create an API key in your account on the provider's website.
+2. Open the **Providers** page.
+3. Paste the key into that provider's **API Key** field.
+4. For **Ollama**, which runs models on your own server, enter the **Base URL** of that server as well, for example `http://localhost:11434`.
+5. Click **Save Configuration**.
+
+Keys are stored as passwords and are not shown again once saved.
+
+<ImagePopup src="/images/configure/providers-magicai.png" alt="Magic AI Providers section" />
+
+## Enable the admin features
+
+Two features help you while you work in the admin: **Text Generation**, described under [Generate text content](../generative-ai/generate-content.md), and **Image Generation**, described under [Generate product images](../generative-ai/generate-images.md).
+
+1. Open the **Admin Features** page.
+2. In the **Text Generation** section, switch **Enabled** on.
+3. In **Providers**, pick the providers whose models admins may use for text. Only providers with a saved key are useful here.
+4. Repeat the two steps in the **Image Generation** section. Not every provider offers image models.
+5. Click **Save Configuration**.
+
+<ImagePopup src="/images/configure/admin-features-magicai.png" alt="Magic AI Admin Features section" />
+
+## Enable the storefront features
+
+Three features run on the storefront: **AI Image Search**, **Review Translation** and **Personalized Checkout Message**. Each is set **per channel**, so switch channel at the top of the page to configure each store.
+
+1. Open the **Storefront Features** page.
+2. In the **AI Image Search**, **Review Translation** and **Personalized Checkout Message** sections, switch **Enabled** on for each feature you want.
+3. Choose the **Model** each feature runs on. Only models of providers with a saved key work.
+4. Click **Save Configuration**.
+
+<ImagePopup src="/images/configure/storefront-features-magicai.png" alt="Magic AI Storefront Features section" />
+
+AI image search also needs the storefront's image search switched on under **Configure >> Catalog >> Products**; see [AI image search](../generative-ai/image-search.md).
+
+## Where each setting takes effect
+
+| Setting | What it turns on | Read more |
+|---|---|---|
+| **Admin Features >> Text Generation** | The **Magic AI** button in every rich-text editor in the admin | [Generate text content](../generative-ai/generate-content.md) |
+| **Admin Features >> Image Generation** | The **Magic AI** button beside **Add Image** in the image uploader | [Generate product images](../generative-ai/generate-images.md) |
+| **Storefront Features >> AI Image Search** | AI analysis of the photo a shopper searches with | [AI image search](../generative-ai/image-search.md) |
+| **Storefront Features >> Review Translation** | The **Translate** link under each product review | [Review translation](../generative-ai/review-translation.md) |
+| **Storefront Features >> Personalized Checkout Message** | The message written for each order on the confirmation page | [Personalized checkout message](../generative-ai/checkout-message.md) |
+
 # Shipping Settings
 
 The shipping origin is the place your orders are dispatched from. It is used for tax calculation when taxes are based on the shipping origin, and it is printed on invoices.
@@ -1056,7 +1121,7 @@ Three storefront features can be switched on or off. They live in two places, so
 
 <ImagePopup src="/images/configure/options.png" alt="Compare and image search options" />
 
-To have an uploaded photo understood by an AI model rather than by the browser alone, see [AI Image Search](./magic-ai.md#ai-image-search).
+To have an uploaded photo understood by an AI model rather than by the browser alone, see [AI image search](../generative-ai/image-search.md).
 
 ## Wishlist
 
@@ -1090,7 +1155,7 @@ All three are set per channel. After making changes, click **Save Configuration*
 
 ## Settings that moved
 
-Two settings that used to sit in this section are elsewhere on the current version of Bagisto:
+Two settings that used to sit in this section are elsewhere on Bagisto 2.5:
 
 - The **Search Engine** choice (Database or Elasticsearch) is now the **Default Search Engine** setting under **Configure >> Search Engines**; see [Search Engines](./search-engines.md).
 - **Allow customers to directly buy products** (the **Buy Now** button) is now in the [Product View Page](./product-view-page.md) section, further down the same **Products** page.
@@ -1192,7 +1257,7 @@ Attributes of the **image** and **file** types accept uploads on the product for
 
 The EU Omnibus Directive requires a store that announces a discount to show the lowest price it charged for that product in the 30 days before the discount. Bagisto can record product prices as they change and show that lowest price next to a discounted price on the storefront.
 
-Go to **Configure >> Catalog >> Products** and find the **Omnibus Price Disclosure** section. It is available on the current version of Bagisto.
+Go to **Configure >> Catalog >> Products** and find the **Omnibus Price Disclosure** section. It is available from Bagisto 2.5.
 
 <ImagePopup src="/images/configure/omnibus.png" alt="Omnibus Price Disclosure Setting" />
 
@@ -1427,7 +1492,7 @@ The wording of each email is edited under **Marketing >> Communications >> Email
 
 Product search on the storefront and in the admin runs on the database by default. For a large catalog you can connect an Elasticsearch cluster and choose where it is used.
 
-Go to **Configure >> Search Engines**. It is available on the current version of Bagisto; on Bagisto 2.4 the same choices are the **Search Engine**, **Admin Search Mode** and **Storefront Search Mode** settings in the **Search** section under **Configure >> Catalog >> Products**.
+Go to **Configure >> Search Engines**. It is available from Bagisto 2.5; on Bagisto 2.4 the same choices are the **Search Engine**, **Admin Search Mode** and **Storefront Search Mode** settings in the **Search** section under **Configure >> Catalog >> Products**.
 
 ## General
 
@@ -1481,7 +1546,7 @@ A cluster only returns products that have been indexed. After connecting it for 
 
 Uploaded files, such as product images, category banners and the logos in your settings, are stored on the server by default. If your store runs on more than one server, or you would rather keep files in object storage, you can point Bagisto at Amazon S3 or Cloudflare R2 from the admin.
 
-Go to **Configure >> File Management**. It is available on the current version of Bagisto.
+Go to **Configure >> File Management**. It is available from Bagisto 2.5.
 
 ## General
 
@@ -1599,7 +1664,7 @@ So the lifetime is a backstop rather than the main mechanism. Set it long, and t
 
 The **About** screen shows what your store runs on and which services it uses. There is nothing to change here; it is the page to open when support asks which version you are on, or when you want to confirm that a setting made elsewhere has taken effect.
 
-Go to **Configure >> About**. It is available on the current version of Bagisto.
+Go to **Configure >> About**. It is available from Bagisto 2.5.
 
 <ImagePopup src="/images/configure/about.png" alt="About" />
 
@@ -1815,7 +1880,7 @@ To add the product images, click on **Add Image**. You can add multiple images f
 
 Hover over an uploaded image to see its file name and two actions: the bin icon removes it, and the pencil icon opens the **Image SEO** panel where you can set the image's **Alt Text** and **File Name**, or click **Choose File** under **Replace Image** to swap the file for another one.
 
-If [Magic AI](../configure/magic-ai.md#generate-images) is enabled for image generation, a **Magic AI** button beside **Add Image** generates product images from a written description.
+If [image generation](../generative-ai/generate-images.md) is enabled under Generative AI (Magic AI), a **Magic AI** button beside **Add Image** generates product images from a written description.
 
 ### New
 Enable the toggle button if you want to feature the product as a new product. The resulting product will be shown under the New Products section.
@@ -4498,107 +4563,181 @@ If you used **Settings >> Themes** before, that screen has moved. Theme
 customizations are now sections, and they live under **Appearance**. Existing
 customizations are carried over automatically — you do not need to recreate them.
 
-# Magic AI
+# Generative AI (Magic AI)
 
-Magic AI is the generative AI built into Bagisto. In the admin it writes and rewrites text and generates product images; on the storefront it understands the photos shoppers search with, translates reviews, and writes a personal message on the order confirmation page. It works with the AI provider of your choice, including models you host yourself.
+Bagisto has generative AI built into the platform. Branded **Magic AI** in the admin, it uses the text and image models of the AI provider you choose to write, draw, translate and describe, so the content work behind a store takes minutes rather than hours. It is part of Bagisto itself; there is nothing extra to install.
 
-Every generated text and image is a suggestion until you apply it, so you stay in control of what goes live. Magic AI does not act on your store by itself; it helps you do the work faster.
+## What you can do with it
 
-To configure it, go to **Configure >> Magic AI**. The group has four pages, listed on the left: **General**, **Providers**, **Admin Features** and **Storefront Features**.
+| Feature | Who uses it | What it does |
+|---|---|---|
+| [Generate text content](./generate-content.md) | Admin | Writes or rewrites product and category descriptions, CMS pages and email templates from a prompt, in any rich-text editor. |
+| [Generate product images](./generate-images.md) | Admin | Creates product images from a written description, in the size and quality you pick. |
+| [AI image search](./image-search.md) | Shopper | Understands the photo a shopper uploads in the search bar and finds matching products. |
+| [Review translation](./review-translation.md) | Shopper | Shows a product review in the shopper's language with one click. |
+| [Personalized checkout message](./checkout-message.md) | Shopper | Writes a short thank-you for the order confirmation page that mentions what was bought. |
 
-<ImagePopup src="/images/configure/magic.png" alt="Magic AI configuration" />
+## How it works
 
-## Turn Magic AI on
+- **Your provider, your model.** Bagisto connects to **OpenAI, Anthropic, Gemini, Groq, xAI, DeepSeek, Mistral** and **Ollama**. You add the API key of the providers you use, and you choose the model per feature. Ollama runs open models on your own server, so nothing leaves it.
+- **Admin features suggest, you decide.** Generated text and images are shown in a dialog first and go into the product, page or template only when you click **Apply**.
+- **Storefront features respond to the shopper.** A photo is analysed when the shopper searches with it, a review is translated when they click **Translate**, and the checkout message is written when the order is placed. Each of these is switched on per channel with its own model.
 
-1. Open the **General** page and, in the **Settings** section, switch **Enabled** on. This is the master switch; nothing below works until it is on.
-2. Click **Save Configuration**.
+## Before you start
 
-<ImagePopup src="/images/configure/general-setting.png" alt="Magic AI General settings" />
+Everything is configured under **Configure >> Magic AI**. Follow [Generative AI Configuration](../configure/magic-ai.md) to turn the feature on, connect a provider and enable the features you want, then come back to the feature pages above.
 
-## Connect a provider
+## What it does not do
 
-Magic AI ships with eight providers: **OpenAI, Anthropic, Gemini, Groq, xAI, DeepSeek, Mistral** and **Ollama**. You only need to connect the ones you plan to use.
+Magic AI does not run the store by itself. It does not publish content, change prices, place orders or answer customers. Everything it produces in the admin is reviewed and applied by you, and on the storefront it only reacts to what the shopper does. Text and images from an AI model can be wrong or misleading, which is why the admin dialogs ask you to review the result before applying it.
 
-1. Create an API key in your account on the provider's website.
-2. Open the **Providers** page and paste it into that provider's **API Key** field.
-3. For **Ollama**, which runs models on your own server, enter the **Base URL** of that server as well, for example `http://localhost:11434`.
-4. Click **Save Configuration**.
+# Generate Text Content
 
-Keys are stored as passwords and are not shown again once saved.
+Text generation adds a **Magic AI** button to the toolbar of the rich-text editors in the admin. You describe what you need, pick a model, and the generated text is placed in the editor once you apply it. The button appears wherever the editor does:
 
-<ImagePopup src="/images/configure/providers-magicai.png" alt="Magic AI Providers section" />
+- **Product descriptions** — the **Description** and **Short Description** fields of a product under **Catalog >> Products**, and any other textarea attribute with the editor enabled.
+- **Category descriptions** — the **Description** field under **Catalog >> Categories**.
+- **CMS pages** — the page content under **CMS >> Pages**.
+- **Email templates** — the template content under **Marketing >> Communications >> Email Templates**.
 
-## Choose the admin features
+Before you start, switch **Text Generation** on and choose its providers, as described under [Enable the admin features](../configure/magic-ai.md#enable-the-admin-features).
 
-Two features help you while you work in the admin: **Text Generation** and **Image Generation**.
-
-1. Open the **Admin Features** page. In the **Text Generation** and **Image Generation** sections, switch **Enabled** on for each feature you want.
-2. In **Providers**, pick the providers whose models admins may use for that feature. Only providers with a saved key are useful here.
-3. Click **Save Configuration**.
-
-<ImagePopup src="/images/configure/admin-features-magicai.png" alt="Magic AI Admin Features section" />
-
-### Generate text
-
-Text Generation writes or rewrites text in any rich-text editor in the admin: product descriptions, category descriptions, CMS pages and email templates.
+## Generating text
 
 1. Open the item, for example a product under **Catalog >> Products**.
-2. Click the **Magic AI** button in the toolbar of the description editor.
 
-<ImagePopup src="/images/configure/description-magicai.png" alt="Magic AI button in the description editor" />
+2. Click the **Magic AI** button in the toolbar of the description editor. The **AI Assistance** dialog opens.
 
-3. Enter a **Prompt** describing what you want written.
-4. Choose a **Model** from the list.
-5. Click **Generate** and read the result.
-6. Click **Apply** to place the text in the editor, or change the prompt and generate again.
+   <ImagePopup src="/images/generative-ai/description-magicai.png" alt="Magic AI button in the description editor" />
 
-<ImagePopup src="/images/configure/textgeneration.png" alt="Text generation dialog" />
+3. Enter a **Prompt** describing what you want written, for example "Write a 120-word description of a full-grain leather wallet with an RFID lining, in a warm tone".
 
-### Generate images
+4. Choose a **Model**. The list holds the text models of the providers enabled for text generation.
 
-Image Generation creates product images from a written description.
+5. Click **Generate**. The result appears under **Generated Content**.
+
+6. Read the result. If it is not right, change the prompt and click **Generate** again.
+
+7. Click **Apply** to place the text in the editor.
+
+   <ImagePopup src="/images/generative-ai/textgeneration.png" alt="Text generation dialog" />
+
+8. Edit the text as you would any other and save the item.
+
+## Writing a good prompt
+
+- Say what the text is for and how long it should be: a product description, a category introduction, a 200-word page.
+- Give the facts the model cannot know: material, sizes, what is in the box, the audience.
+- Ask for the tone you want: warm, technical, playful.
+- The dialog notes that AI-generated content may be misleading. Check names, numbers and claims before you apply the text.
+
+Each request is sent to the provider of the chosen model and is billed by that provider, except for models served by your own Ollama server.
+
+# Generate Product Images
+
+Image generation adds a **Magic AI** button beside **Add Image** in the admin's image uploader, so you can create images from a written description instead of uploading a file. It is most useful in the **Images** section of a product, and the same button appears in the other image uploaders of the admin, such as a category's logo and banner.
+
+Before you start, switch **Image Generation** on and choose its providers, as described under [Enable the admin features](../configure/magic-ai.md#enable-the-admin-features). Not every provider offers image models.
+
+## Generating images
 
 1. Open the product under **Catalog >> Products**.
-2. In the **Images** section, click **Magic AI** beside **Add Image**.
-3. Enter a **Prompt** describing the image you want.
+
+2. In the **Images** section, click **Magic AI** beside **Add Image**. The **AI Image Generation** dialog opens.
+
+3. Enter a **Prompt** describing the image you want, for example "A minimalist running shoe on a white background, studio lighting".
+
 4. Choose the **Number of Images** to generate.
+
 5. Choose the **Size**: **Square (1:1)**, **Portrait (2:3)** or **Landscape (3:2)**.
+
 6. Choose the **Quality**: **High**, **Medium** or **Low**.
-7. Choose a **Model** and click **Generate**.
 
-<ImagePopup src="/images/configure/image-generate.png" alt="Image generation dialog" />
+7. Choose a **Model**. The list holds the image models of the providers enabled for image generation.
 
-8. Click the images you want to keep and apply them; they are added to the product like uploaded images. Click **Regenerate** to try again with the same settings.
+8. Click **Generate**.
 
-<ImagePopup src="/images/configure/ai-images.png" alt="Generated product images" />
+   <ImagePopup src="/images/generative-ai/image-generate.png" alt="Image generation dialog" />
 
-## Choose the storefront features
+9. Click the images you want to keep. Click **Regenerate** to try again with the same settings.
 
-Three features run on the storefront: **AI Image Search**, **Review Translation** and **Personalized Checkout Message**. Each is set **per channel**, so switch channel at the top of the page to configure each store.
+10. Click **Apply**. The images are added to the product like uploaded ones, so you can reorder them, set their alt text and file name, or remove them.
 
-1. Open the **Storefront Features** page. In the **AI Image Search**, **Review Translation** and **Personalized Checkout Message** sections, switch **Enabled** on for each feature you want.
-2. Choose the **Model** it runs on.
+    <ImagePopup src="/images/generative-ai/ai-images.png" alt="Generated product images" />
+
+11. Click **Save Product**.
+
+Higher quality and larger counts take longer and cost more at the provider. Generate one image at medium quality while you refine the prompt, then generate the final set.
+
+# AI Image Search
+
+Shoppers can search your catalog with a photo instead of words. A camera icon in the storefront search bar opens the file picker; the shopper picks a photo and the store searches for matching products.
+
+With AI image search on, the model you chose describes what is in the photo, and the store searches for those keywords, so it recognises far more kinds of products. With it off, the photo is still recognised, but by a simpler model that runs in the shopper's browser and knows fewer things.
+
+## Turning it on
+
+Image search has two switches: one that shows the camera icon, and one that hands the photo to the AI model.
+
+1. Go to **Configure >> Catalog >> Products**.
+2. In the **Settings** section, switch **Image Search Option** on.
 3. Click **Save Configuration**.
+4. Go to **Configure >> Magic AI >> Storefront Features** and choose the channel at the top of the page.
+5. In the **AI Image Search** section, switch **Enabled** on.
+6. Choose the **Model**.
+7. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/storefront-features-magicai.png" alt="Magic AI Storefront Features section" />
+The Magic AI master switch and the provider key must be in place first; see [Generative AI Configuration](../configure/magic-ai.md).
 
-### AI image search
+## What the shopper sees
 
-Shoppers can search for products by uploading a photo from the search bar. With this feature on, the chosen model describes what is in the photo and the store searches for matching products. With it off, the image search still works but uses a simpler recognition that runs in the shopper's browser, which recognises fewer things.
+1. The shopper clicks the camera icon in the search bar and chooses a photo. Only image files of up to 2 MB are accepted.
+2. The photo is analysed and the search results page opens with the products that match what was found in it.
 
-The image search itself is switched on separately under **Configure >> Catalog >> Products**, with the **Image Search Option** switch in the **Settings** section.
+The photo is sent to the provider of the chosen model so it can be described. If your privacy policy lists the services that process visitor data, add the provider there.
 
-### Review translation
+# Review Translation
 
-A **Translate** link appears under each product review. Clicking it shows the review in the shopper's language, so a review written in another language is still useful.
+With review translation on, a **Translate** link appears under each product review on the storefront. Clicking it shows the review in the language of the store the shopper is browsing, so a review written in another language is still useful to them. The review itself is not changed; the translation is made when the shopper asks for it.
 
-<ImagePopup src="/images/configure/review-magicai.png" alt="Translate link under a review" />
+## Turning it on
 
-### Personalized checkout message
+1. Go to **Configure >> Magic AI >> Storefront Features** and choose the channel at the top of the page.
+2. In the **Review Translation** section, switch **Enabled** on.
+3. Choose the **Model**.
+4. Click **Save Configuration**.
 
-After an order is placed, the order confirmation page shows a short message written for that order, mentioning what the shopper bought. It appears under the thank-you heading in place of the standard line and gives the moment a more personal touch.
+The API key of the chosen model's provider must be saved first; see [Generative AI Configuration](../configure/magic-ai.md). Unlike the other storefront features, review translation is controlled by this switch alone and keeps working when the general **Enabled** switch is off.
 
-<ImagePopup src="/images/configure/personalized-chckout-message.png" alt="Personalised message on the order confirmation page" />
+## What the shopper sees
+
+1. The shopper opens a product page and scrolls to its reviews.
+2. Under a review, they click **Translate**. The link reads **Translating...** while the model works, and the translated text then replaces the original.
+
+<ImagePopup src="/images/generative-ai/review-magicai.png" alt="Translate link under a review" />
+
+The translation is into the locale the shopper has selected in the storefront, so a store that serves several languages translates each review into whichever one the visitor is using.
+
+# Personalized Checkout Message
+
+After an order is placed, the order confirmation page shows a standard thank-you line. With this feature on, Bagisto asks the model to write a short message for that order, mentioning what the shopper bought, and shows it under the thank-you heading in place of the standard line. It gives the moment a personal touch without any work on your side.
+
+## Turning it on
+
+1. Go to **Configure >> Magic AI >> Storefront Features** and choose the channel at the top of the page.
+2. In the **Personalized Checkout Message** section, switch **Enabled** on.
+3. Choose the **Model**.
+4. Click **Save Configuration**.
+
+The Magic AI master switch and the provider key must be in place first; see [Generative AI Configuration](../configure/magic-ai.md).
+
+## What the shopper sees
+
+The message is written when the confirmation page opens, right after the order is placed. It is not stored with the order, so reloading the page asks the model again and the wording may differ. If the provider cannot be reached, the page shows its standard thank-you line and the order is unaffected.
+
+<ImagePopup src="/images/generative-ai/personalized-chckout-message.png" alt="Personalised message on the order confirmation page" />
+
+Because the text is generated for each order, wording varies from one order to the next. It draws only on the order itself, such as the items bought, and does not use anything the shopper has not shared with the store. Each confirmation page view is one request to the provider.
 
 # Sales Reporting
 

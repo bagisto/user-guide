@@ -192,6 +192,7 @@ export default defineConfig({
               { text: "GDPR", link: "/configure/gdpr" },
             ],
           },
+          { text: "Generative AI (Magic AI)", link: "/configure/magic-ai" },
           {
             text: "Sales",
             collapsed: true,
@@ -350,8 +351,28 @@ export default defineConfig({
       },
 
       {
-        text: "Magic AI",
-        link: "/configure/magic-ai",
+        text: "Generative AI",
+        collapsed: false,
+        items: [
+          { text: "Overview", link: "/generative-ai/introduction" },
+          {
+            text: "Generate Text Content",
+            link: "/generative-ai/generate-content",
+          },
+          {
+            text: "Generate Product Images",
+            link: "/generative-ai/generate-images",
+          },
+          { text: "AI Image Search", link: "/generative-ai/image-search" },
+          {
+            text: "Review Translation",
+            link: "/generative-ai/review-translation",
+          },
+          {
+            text: "Personalized Checkout Message",
+            link: "/generative-ai/checkout-message",
+          },
+        ],
       },
 
       {

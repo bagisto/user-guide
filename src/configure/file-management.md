@@ -2,7 +2,7 @@
 
 Uploaded files, such as product images, category banners and the logos in your settings, are stored on the server by default. If your store runs on more than one server, or you would rather keep files in object storage, you can point Bagisto at Amazon S3 or Cloudflare R2 from the admin.
 
-Go to **Configure >> File Management**. It is available on the current version of Bagisto.
+Go to **Configure >> File Management**. It is available from Bagisto 2.5.
 
 ## General
 

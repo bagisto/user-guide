@@ -32,6 +32,7 @@ A reference for merchants and store administrators working in the Bagisto admin 
 - [Design](/configure/design)
 - [Exchange Rates](/configure/exchange-rates-configurations)
 - [GDPR](/configure/gdpr)
+- [Generative AI (Magic AI)](/configure/magic-ai)
 - [Shipping Settings](/configure/shipping)
 - [Checkout](/configure/checkout)
 - [Guest Checkout](/configure/guest-checkout)
@@ -113,9 +114,14 @@ A reference for merchants and store administrators working in the Bagisto admin 
 
 - [Themes & Sections](/appearance/themes)
 
-### Magic AI
+### Generative AI
 
-- [Magic AI](/configure/magic-ai)
+- [Overview](/generative-ai/introduction)
+- [Generate Text Content](/generative-ai/generate-content)
+- [Generate Product Images](/generative-ai/generate-images)
+- [AI Image Search](/generative-ai/image-search)
+- [Review Translation](/generative-ai/review-translation)
+- [Personalized Checkout Message](/generative-ai/checkout-message)
 
 ### Reporting
 
