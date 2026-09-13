@@ -40,11 +40,13 @@ Under **Build Cache**, each button pre-builds a cache so the store starts fast a
 
 ## Full Page Cache
 
-The full page cache serves rendered storefront pages from a cache instead of building them for every visitor. The home page, category pages, product pages, search results and CMS pages are cached; the cart, checkout and account pages never are.
+Full Page Cache keeps a rendered copy of your storefront pages and serves that copy to the next visitor, instead of building the page again for every one of them. It decides how quickly your storefront responds under load, and it is controlled from the admin rather than by editing the server configuration. The home page, category pages, product pages, search results and CMS pages are cached; the cart, checkout and account pages never are.
+
+Go to **Configure >> Cache Management >> Full Page Cache**.
 
 <ImagePopup src="/images/configure/full-page-cache.png" alt="Full Page Cache Settings" />
 
-**Enable Full Page Cache:** Storefront pages are served from the cache. Turning this off makes every page render again on each visit.
+**Enable Full Page Cache:** Storefront pages are served from the cache. Turning this off makes every page render again on each visit, which is slower for shoppers but useful while you are diagnosing a page that looks stale.
 
 **Cache Lifetime (Minutes):** How long a cached page is kept before it is rendered again. Leave it empty to use the application default.
 
@@ -52,6 +54,10 @@ The full page cache serves rendered storefront pages from a cache instead of bui
 
 Click **Save Configuration** after changing the switch or the lifetime; the flush button acts immediately.
 
-### Pages refresh themselves
+### You do not have to clear it after an edit
 
-You do not normally need to flush by hand. Saving a product, category, review, CMS page, URL rewrite, channel, theme section or configuration clears the affected pages automatically, and so does an order, a refund or a price or catalog-rule reindex. Each currency and locale has its own copy of every page, so switching between them never shows a stale page.
+A cached page is refreshed automatically when the content behind it changes. Saving a product, category, review, CMS page, URL rewrite, channel, theme section or configuration clears the affected pages, and so does an order, a refund or a price or catalog-rule reindex. Editing a product or a category clears your home page and category listings too, across every channel, locale and currency they were cached under. Each currency and locale has its own copy of every page, so switching between them never shows a stale page.
+
+So the lifetime is a backstop rather than the main mechanism. Set it long, and trust the automatic refresh for day-to-day edits.
+
+**Note:** A short lifetime is not a fix for a page that looks out of date. It only shortens how long the wrong page is shown. If a change is not appearing at all, check that it was saved or published, then use **Flush Page Cache**.

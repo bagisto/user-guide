@@ -66,6 +66,18 @@ A delete run has no images to fetch and nothing to link, so those steps are not 
 
 <ImagePopup src="/images/settings/import-stepper.png" alt="Import Stepper" />
 
+### Coming back to a running import
+
+You do not have to sit and watch an import finish. Leave the page, and the row
+in **Settings >> Data Transfer >> Imports** carries a **View Progress** action
+for as long as the run is still going — it opens the same stepper at the phase
+the import has reached. Once the run is finished, that action goes back to
+reading **Import**, so the wording in the listing tells you at a glance whether
+anything is still in flight.
+
+This is the way back into a long product import: start it, get on with something
+else, and use **View Progress** to check where it is.
+
 If the file has errors, the run stops after validation and shows the total rows processed, the invalid rows, and the error count, with a **Download Full Report** button for the complete list. When the validation strategy is **Skip Errors** and only some rows are at fault, the import can still proceed and the faulty rows are skipped.
 
 **Step 4:** Once every phase is complete, the summary confirms the result.
