@@ -10,85 +10,18 @@ A reference for merchants and store administrators working in the Bagisto admin 
 
 - [Introduction](/getting-started/introduction)
 - [Command Palette](/getting-started/command-palette)
-
-### Account
-
 - [Two Factor Authentication](/authentication/2fa-authentication)
 
-### Product Types
+### Store Setup
 
-- [Simple Product](/product-types/simple-product)
-- [Configurable Product](/product-types/configurable-product)
-- [Virtual Product](/product-types/virtual-product)
-- [Bundle Product](/product-types/bundle-product)
-- [Grouped Product](/product-types/grouped-product)
-- [Downloadable Product](/product-types/downloadable-product)
-- [Booking Product](/product-types/booking-product)
-
-### Category
-
-- [Create Category](/category/create-category)
-
-### Attributes
-
-- [Attribute Input Types](/attribute/attribute-input)
-- [Create Product Attributes](/attribute/product-attribute)
-- [Attribute Family](/attribute/attribute-family)
-
-### Orders
-
-- [Create Order](/orders/create-order)
-- [Create Invoice](/orders/create-invoice)
-- [Create Shipment](/orders/create-shipment)
-- [Create Refunds](/orders/create-refunds)
-- [Transactions](/orders/transactions)
-- [EU Withdrawal](/orders/eu-withdrawal)
-- [RMA](/orders/rma)
-
-### Customers
-
-- [Create Customer](/customer/create-customer)
-- [Customer Group](/customer/customer-group)
-- [Customer Group Pricing](/customer/customer-group-price)
-- [Customer Review](/customer/customer-review)
-
-### CMS
-
-- [Create CMS](/cms/create-cms)
-
-### Marketing
-
-- [Cart Rules](/marketing/cart-rules)
-- [Catalog Rules](/marketing/catalog-rules)
-- [Email Templates](/marketing/email-templates)
-- [Events](/marketing/events)
-- [Campaigns](/marketing/campaigns)
-- [Newsletter Subscriptions](/marketing/newsletter-subscription)
-- [Sitemaps](/marketing/sitemaps)
-- [URL Rewrite](/marketing/url-rewrite)
-- [Search Terms](/marketing/search-terms)
-- [Search Synonyms](/marketing/search-synonyms)
-
-### Reporting
-
-- [Sales](/reporting/sales-report)
-- [Customers](/reporting/customers-report)
-- [Products](/reporting/product-report)
-
-### Appearance
-
-- [Themes & Sections](/appearance/themes)
-
-### Settings
-
+- [Channels](/settings/channels)
 - [Locales](/settings/locales)
 - [Currencies](/settings/currencies)
 - [Exchange Rates](/settings/exchange-rates)
-- [Inventory Source](/settings/inventory-source)
-- [Channels](/settings/channels)
+- [Inventory Sources](/settings/inventory-source)
+- [Taxes](/settings/taxes)
 - [Users](/settings/users)
 - [Roles](/settings/roles)
-- [Taxes](/settings/taxes)
 - [Data Transfer](/settings/data-transfer)
 
 ### Configure
@@ -97,10 +30,9 @@ A reference for merchants and store administrators working in the Bagisto admin 
 - [Content](/configure/content)
 - [Custom Scripts](/configure/custom-scripts)
 - [Design](/configure/design)
-- [Exchange Rates Configurations](/configure/exchange-rates-configurations)
+- [Exchange Rates](/configure/exchange-rates-configurations)
 - [GDPR](/configure/gdpr)
-- [Magic AI](/configure/magic-ai)
-- [Shipping](/configure/shipping)
+- [Shipping Settings](/configure/shipping)
 - [Checkout](/configure/checkout)
 - [Guest Checkout](/configure/guest-checkout)
 - [Order Settings](/configure/orders-settings)
@@ -127,10 +59,69 @@ A reference for merchants and store administrators working in the Bagisto admin 
 - [Cache Management](/configure/cache-management)
 - [About](/configure/about)
 
-### Shipping and Payment Methods
+### Catalog
 
+- [Categories](/category/create-category)
+- [Attribute Input Types](/attribute/attribute-input)
+- [Create Product Attributes](/attribute/product-attribute)
+- [Attribute Families](/attribute/attribute-family)
+- [Simple Product](/product-types/simple-product)
+- [Configurable Product](/product-types/configurable-product)
+- [Virtual Product](/product-types/virtual-product)
+- [Downloadable Product](/product-types/downloadable-product)
+- [Grouped Product](/product-types/grouped-product)
+- [Bundle Product](/product-types/bundle-product)
+- [Booking Product](/product-types/booking-product)
+
+### Customers
+
+- [Create Customer](/customer/create-customer)
+- [Customer Groups](/customer/customer-group)
+- [Customer Group Pricing](/customer/customer-group-price)
+- [Customer Reviews](/customer/customer-review)
+
+### Sales
+
+- [Create Order](/orders/create-order)
+- [Create Invoice](/orders/create-invoice)
+- [Create Shipment](/orders/create-shipment)
+- [Create Refund](/orders/create-refunds)
+- [Transactions](/orders/transactions)
+- [EU Withdrawal](/orders/eu-withdrawal)
+- [RMA](/orders/rma)
 - [Shipping Methods](/shipping-method/shipping-methods)
 - [Payment Methods](/payment-method/payment-methods)
+
+### Marketing
+
+- [Cart Rules](/marketing/cart-rules)
+- [Catalog Rules](/marketing/catalog-rules)
+- [Email Templates](/marketing/email-templates)
+- [Events](/marketing/events)
+- [Campaigns](/marketing/campaigns)
+- [Newsletter Subscriptions](/marketing/newsletter-subscription)
+- [Sitemaps](/marketing/sitemaps)
+- [URL Rewrites](/marketing/url-rewrite)
+- [Search Terms](/marketing/search-terms)
+- [Search Synonyms](/marketing/search-synonyms)
+
+### CMS
+
+- [Pages](/cms/create-cms)
+
+### Appearance
+
+- [Themes & Sections](/appearance/themes)
+
+### Magic AI
+
+- [Magic AI](/configure/magic-ai)
+
+### Reporting
+
+- [Sales](/reporting/sales-report)
+- [Customers](/reporting/customers-report)
+- [Products](/reporting/product-report)
 
 ### B2B Marketplace
 
