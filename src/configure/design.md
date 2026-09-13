@@ -9,9 +9,9 @@ The **Admin Logo** is a distinctive image or emblem representing the administrat
 To update the **Admin Logo** and **Favicon** in Bagisto:
 
 1. Go to the **Admin Panel**.
-2. Navigate to **Configure → Design**.
-3. Under the **Design** section, you will find options to upload a new **Admin Logo** and **Favicon**.
-4. Click on the **Choose Files** button to select the desired image files from your system.
+2. Navigate to **Configure >> General >> Design**.
+3. Under the **Admin Logo** section, you will find options to upload a new **Logo Image** and **Favicon**.
+4. Click **Add Image** on each tile to select the desired image file from your system.
 5. Once selected, click the **Save Configuration** button to apply the changes.
 
 **Design Configuration Interface**
@@ -39,9 +39,9 @@ You can now choose between:
 
 ### To update the Menu Category View:
 
-1. Navigate to **Admin Panel → Configure → Design**.
-2. Scroll down to the **Header Settings** section.
-3. Under **Category Menu View**, select:
+1. Navigate to **Configure >> General >> Design**.
+2. Scroll down to the **Menu Category View** section.
+3. Under **Menu Category View**, select:
    - `Default Menu` or
    - `Sidebar Menu` from the dropdown.
 4. Click **Save Configuration**.

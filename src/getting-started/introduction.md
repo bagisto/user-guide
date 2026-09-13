@@ -30,4 +30,8 @@ On a small screen, grids that define their own layout, such as **Catalog >> Prod
 
 While a grid is loading, the placeholders match the grid they stand in for on both desktop and mobile, so the layout no longer shifts once the rows arrive.
 
+## Finding your way around
+
+Press **Ctrl + K** (**⌘ K** on a Mac) on any admin page to open the [command palette](./command-palette.md) and jump to a menu item, a configuration screen, an action or a record by typing part of its name.
+
 Whether you are starting a small store or scaling a large catalog across multiple markets, Bagisto gives you the tools to build and grow your online business.

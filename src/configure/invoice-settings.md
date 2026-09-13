@@ -1,6 +1,6 @@
 # Invoice Settings
 
-To configure invoice settings, go to the Admin Panel and click on **Configure >> Invoice Settings**.
+To configure invoice settings, go to the Admin Panel and click on **Configure >> Sales >> Invoice Settings**.
 
 ### 1. Invoice Number Settings
 
@@ -14,15 +14,15 @@ Set agreed-upon conditions dictating when and how payment for goods or services 
 
 <ImagePopup src="/images/configure/payment-terms.png" alt="Payment Terms" />
 
-### 3. Invoice Slip Design
+### 3. PDF Print Outs
 
-Customize the visual layout and formatting of an invoice slip, including company branding, itemization, pricing, and payment details for professional presentation.
+Choose what the invoice PDF shows: whether it prints the **Invoice ID** and **Order ID**, the **Logo** at the top, and a **Footer text**.
 
-<ImagePopup src="/images/configure/invoice-slip.png" alt="Invoice Slip Design" />
+<ImagePopup src="/images/configure/invoice-slip.png" alt="PDF Print Outs" />
 
 ### 4. Invoice Reminders
 
-Enable automated notifications or communications sent to customers to remind them of upcoming or overdue invoice payments.
+Send automated reminder emails for invoices that are past their due date. Set how many reminders are sent for one invoice and the interval between them.
 
 <ImagePopup src="/images/configure/invoice-reminder.png" alt="Invoice Reminder" />
 

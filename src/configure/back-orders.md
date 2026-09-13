@@ -4,9 +4,9 @@ A backorder is an order for a good or service that cannot be filled immediately 
 
 A manageable backorder with a short turnaround is a net positive, but a large backorder with longer wait times can be problematic.
 
-You can easily manage **Backorders** by going to the Admin Panel and clicking on **Configure >> Inventory**.
+You can manage **Backorders** by going to the Admin Panel and clicking on **Configure >> Catalog >> Inventory**.
 
-There is an option present to **Enable or Disable** a Backorder and then click on **Save Configuration** as shown below.
+In the **Product Stock Option** section, switch **Allow Back Orders** on or off. The **Out-of-Stock Threshold** beside it is the quantity at which a product counts as out of stock. Click **Save Configuration** as shown below.
 
 <ImagePopup src="/images/configure/backorder.png" alt="Back Orders" />
 

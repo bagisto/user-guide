@@ -6,7 +6,7 @@ In the admin panel, you can quickly input API credentials, choose your favorite 
 
 This makes sure your store’s currency rates are correct without needing to do it by hand.
 
-To set up exchange rates, navigate to: Configuration > General > Exchange Rates, as illustrated in the image below.
+To set up exchange rates, navigate to **Configure >> General >> Exchange Rates**, as illustrated in the image below.
 
   <ImagePopup src="/images/configure/exchange-rates-configurations.png" alt="Exchange Rates Configuration" />
 
@@ -44,35 +44,19 @@ You can easily add this from the settings as shown below.
 
 You have to set the start time using the **24-hour format**, like this: 03:00.
 
-To ensure that scheduled updates function correctly, you need to have the Laravel task scheduler running.
-
-You can start it by using this command: 
-
-**php artisan schedule:work**
+Scheduled updates run on the server's task scheduler. If the rates do not refresh at the set time, ask whoever manages the server to check that the scheduler is running.
 
 <ImagePopup src="/images/configure/terminial-cron.png" alt="Exchange Rates Configurations" />
 
-### Environment Variable Backup
+### Keys kept on the server
 
-If you forget to put API keys in the admin panel, Bagisto will automatically grab the API keys from your .env file.
-
-For the Fixer API, you can use **FIXER_API_KEY**.
-
-For the Exchange Rates API, you can use **EXCHANGE_RATES_API_KEY**.
-
-**Example .env configuration:**
-
-FIXER_API_KEY=your_fixer_api_key_here
-
-EXCHANGE_RATES_API_KEY=your_exchange_rates_api_key_here
+If no key is entered in the admin panel, Bagisto uses the key whoever manages the server has placed in its environment settings, so a key can be kept out of the admin entirely.
 
 ### Manual Update
 
-Besides automatic updates, you can also change exchange rates by hand.
+Besides automatic updates, you can also refresh exchange rates by hand.
 
-To do this, go to the admin panel, then click on **Settings > Exchange Rates** and hit the **Update Rates** button.
-
-Alternatively, you can use the command in the CLI: **php artisan exchange-rate:update**
+To do this, go to the admin panel, then click on **Settings >> Exchange Rates** and hit the **Update Exchange Rate** button.
 
 ### Exchange Rates API (exchangerate-api.com):
 

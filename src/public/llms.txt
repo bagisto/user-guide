@@ -6,9 +6,10 @@ A reference for merchants and store administrators working in the Bagisto admin 
 
 ## Table of Contents
 
-### Introduction
+### Getting Started
 
 - [Introduction](/getting-started/introduction)
+- [Command Palette](/getting-started/command-palette)
 
 ### Account
 
@@ -92,40 +93,41 @@ A reference for merchants and store administrators working in the Bagisto admin 
 
 ### Configure
 
-- [Address](/configure/address)
-- [Attribute](/configure/attribute)
-- [Back Orders](/configure/back-orders)
-- [Google Captcha](/configure/google-captcha)
-- [Cart View Page](/configure/cart-view-page)
-- [Checkout](/configure/checkout)
-- [Configurable Choices](/configure/configurable-choices)
+- [Weight Unit](/configure/weight-unit)
 - [Content](/configure/content)
-- [Exchange Rates Configurations](/configure/exchange-rates-configurations)
-- [Copyright Content](/configure/coyright-content)
 - [Custom Scripts](/configure/custom-scripts)
-- [Cache Management](/configure/cache-management)
-- [Magic AI](/configure/magic-ai)
 - [Design](/configure/design)
-- [Email Settings](/configure/email-settings)
-- [Frontend](/configure/frontend)
+- [Exchange Rates Configurations](/configure/exchange-rates-configurations)
 - [GDPR](/configure/gdpr)
-- [Guest Checkout](/configure/guest-checkout)
-- [Image Size](/configure/image-size)
-- [Invoice Settings](/configure/invoice-settings)
 - [Magic AI](/configure/magic-ai)
-- [Notifications](/configure/notifications)
+- [Shipping](/configure/shipping)
+- [Checkout](/configure/checkout)
+- [Guest Checkout](/configure/guest-checkout)
 - [Order Settings](/configure/orders-settings)
-- [Pricing](/configure/pricing)
+- [Invoice Settings](/configure/invoice-settings)
+- [Taxes](/configure/taxes)
+- [Configurable Choices](/configure/configurable-choices)
+- [Storefront](/configure/frontend)
 - [Product View Page](/configure/product-view-page)
+- [Cart View Page](/configure/cart-view-page)
 - [Review](/configure/review)
+- [Social Share](/configure/social-share)
+- [Image Size](/configure/image-size)
+- [Attribute](/configure/attribute)
+- [Omnibus Price Disclosure](/configure/omnibus)
+- [Back Orders](/configure/back-orders)
 - [Rich Snippets](/configure/rich-snippets)
 - [Settings](/configure/settings)
-- [Shipping](/configure/shipping)
-- [Social Share](/configure/social-share)
-- [Taxes](/configure/taxes)
-- [Weight Unit](/configure/weight-unit)
+- [Address](/configure/address)
+- [Google Captcha](/configure/google-captcha)
+- [Email Settings](/configure/email-settings)
+- [Notifications](/configure/notifications)
+- [Search Engines](/configure/search-engines)
+- [File Management](/configure/file-management)
+- [Cache Management](/configure/cache-management)
+- [About](/configure/about)
 
-### Introduction
+### Shipping and Payment Methods
 
 - [Shipping Methods](/shipping-method/shipping-methods)
 - [Payment Methods](/payment-method/payment-methods)
@@ -162,6 +164,6 @@ A reference for merchants and store administrators working in the Bagisto admin 
 - [Quotation Handling](/b2b-ecommerce-platform/quotation-handling)
 - [Purchase Orders](/b2b-ecommerce-platform/purchase-orders)
 
-### Introduction
+### Native Mobile App
 
 - [Native Mobile App](/open-source-mobile-app/open-source-mobile-app)

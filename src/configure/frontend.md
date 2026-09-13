@@ -1,16 +1,12 @@
-# Frontend
+# Storefront
 
 The storefront serves as the customer-facing component of an online store, featuring product displays, category listings, and intuitive navigation to ensure a smooth and enjoyable shopping experience.
 
-To add, go to Admin Panel and click on **Configure >> Products >> Storefront**.
+Go to **Configure >> Catalog >> Products** and find the **Storefront** section.
 
-**1. Search Mode:** Select the search mode by **Database or Elasticsearch** as per your requirements.
+<ImagePopup src="/images/configure/storefront-settings.png" alt="Storefront Settings" />
 
-**A) Elastic Search** – When you have a large number of products on your website, searching can be slow. Elastic Search mode enables fast product search.
-
-**B) Database** – Recommended for websites with a small number of products; use the database option for search mode.
-
-**2. Default List Mode:** Manage how your products are visible on the storefront; select from the dropdown **Grid or List**.
+**Default List Mode:** How products are shown on category and search pages, **Grid** or **List**. Shoppers can switch between the two on the page; this is the view they see first.
 
 ### List Mode
 
@@ -20,14 +16,17 @@ To add, go to Admin Panel and click on **Configure >> Products >> Storefront**.
 
 <ImagePopup src="/images/configure/gridmode.png" alt="Grid Mode" />
 
-**3. Products Per Page:** Enter the number of products visible per page on the storefront.
+**Products Per Page:** The page sizes the shopper can pick from on a listing, as a comma-separated list such as `12,24,36`. The first value is used until the shopper chooses another.
 
-**4. Sort By:** Select a sort-by option from the dropdown according to your requirements.
+**Sort By:** The order products are listed in until the shopper picks another.
 
-**5. Buy Now Products:** Select from the **Enable/Disable** option as required. Once enabled, it will be visible on the product detail page.
+All three are set per channel. After making changes, click **Save Configuration**.
 
-<ImagePopup src="/images/configure/storefront.png" alt="Storefront Settings" />
+## Settings that moved
 
-<ImagePopup src="/images/configure/buy-now.png" alt="Buy Now Products" />
+Two settings that used to sit in this section are elsewhere on the current version of Bagisto:
 
-After that, click on the **Save Configuration** button.
+- **Search Mode** (Database or Elasticsearch) is now the [Search Engines](./search-engines.md) configuration, under **Configure >> Search Engines**.
+- **Allow customers to directly buy products** (the **Buy Now** button) is now in the [Product View Page](./product-view-page.md) section, further down the same **Products** page.
+
+On Bagisto 2.4 the **Buy Now** switch is still in the **Storefront** section, and the search engine choice is in the **Search** section above it.

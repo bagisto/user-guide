@@ -1,51 +1,43 @@
 # Checkout
 
-Checkout configurations are listed below.
+Go to **Configure >> Sales >> Checkout**. The page has two sections.
 
 ### Shopping Cart
 
-Enable guest checkout, cart page, cross-sell products, and estimated shipping to enhance user convenience and streamline the shopping process for increased sales.
+<ImagePopup src="/images/configure/checkout.png" alt="Shopping Cart Settings" />
 
-<ImagePopup src="/images/configure/checkout.png" alt="Checkout" />
+**Cart Page:** Turns buying on or off for the whole storefront. When it is off, the store becomes a catalog: product pages show a **Contact Us** button in place of **Add To Cart**, the **Buy Now** button and the mini cart disappear, and the cart and checkout pages are no longer reachable.
 
-### My Cart
+**Allow guest checkout:** Let shoppers place an order without creating an account. A product can still be excluded with its own **Guest Checkout** switch.
 
-Enable settings for My Cart to show a summary of item quantities and display the total number of items in the cart for easy tracking.
+**Cross sell Products:** Show cross-sell products on the cart page.
 
-In this, we provide two options:
-
-**A) Display numbers of items in cart** - Select **Display number of items in cart** option and then click on **Save Configuration** button.
-
-<ImagePopup src="/images/configure/items.png" alt="My Cart" />
-
-After clicking the Add to Cart button, this option shows you the total number of quantities. For example, we add 5 products inside the cart. 5 products will be visible on the front end as shown below.
-
-<ImagePopup src="/images/configure/number-items.png" alt="My Cart" />
-
-**B) Display Items Quantities** - Select Display items quantities option and then click on **Save Configuration** button.
-
-<ImagePopup src="/images/configure/item-quantity.png" alt="My Cart" />
-
-After clicking the Add to Cart button, for example, 7 products you have added inside the cart, only 1 quantity will be visible on the frontend.
-
-<ImagePopup src="/images/configure/1mycart.png" alt="My Cart" />
-
-To check the total number of items, you have to go inside the mini-cart.
-
-<ImagePopup src="/images/configure/7mycart.png" alt="My Cart" />
+**Estimated Shipping:** Show the shipping estimate box on the cart page.
 
 ### Mini Cart
 
-Mini Cart is the option where you can see the information after adding the product to the cart.
+<ImagePopup src="/images/configure/mini-cart-summary.png" alt="Mini Cart Settings" />
 
-To enable mini cart settings, go to **Configure >> Checkout >> Mini Cart**. You can also add a mini cart offer information message as shown in the image below.
+**Display Mini Cart:** Show the cart drawer when a shopper clicks the cart icon or adds a product. When it is off, the cart icon takes the shopper straight to the checkout.
 
-<ImagePopup src="/images/configure/mini-cart.png" alt="Mini Cart" />
+<ImagePopup src="/images/configure/disablemini-cart.png" alt="Cart Icon With the Mini Cart Disabled" />
 
-The mini cart is able to open with an offer message as shown in the image below.
+**Summary:** What the badge on the cart icon counts:
 
-<ImagePopup src="/images/configure/mini-cart1.png" alt="Mini Cart" />
+- **Display number of items in cart** — the number of different products. Five products in the cart show **5**, whatever their quantities.
 
-Now, if we disable this Mini-Cart, the user is not able to open the mini-cart and is directly redirected to the checkout page.
+<ImagePopup src="/images/configure/number-items.png" alt="Badge Counting Items" />
 
-<ImagePopup src="/images/configure/disablemini-cart.png" alt="Disable Mini Cart" />
+- **Display item quantities** — the total quantity. One product with a quantity of seven shows **7**.
+
+<ImagePopup src="/images/configure/7mycart.png" alt="Badge Counting Quantities" />
+
+**Mini Cart Offer Information:** A line of text shown at the top of the mini cart, for a shipping offer or a promotion.
+
+<ImagePopup src="/images/configure/mini-cart1.png" alt="Mini Cart With an Offer Message" />
+
+After making changes, click **Save Configuration**.
+
+### On Bagisto 2.4
+
+The **Summary** choice sits in its own **My Cart** section between **Shopping Cart** and **Mini Cart**; the options are the same.

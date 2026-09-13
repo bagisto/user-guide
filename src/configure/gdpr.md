@@ -4,10 +4,10 @@ Bagisto provides essential GDPR (General Data Protection Regulation) compliance 
 
 ## Enable GDPR Compliance Settings
 
-To add, go to Admin Panel and click on **Configure >> GDPR >> Enable GDPR**.  
+Go to the Admin Panel and click on **Configure >> General >> GDPR**, then switch on **Enable GDPR** in the **GDPR Compliance Settings** section. Every GDPR setting is per channel and per locale, so switch both at the top of the page to cover each store.  
 This section empowers store owners to configure GDPR-related policies and efficiently manage customer data requests. Key features include:
 
-- **GDPR Request** button appears on the customer's profile page in the store frontend.
+- A **GDPR Requests** entry appears in the customer's account menu on the storefront, with a **Create Request** button.
 - Handling customer requests for data deletion or updation.
 
 <ImagePopup src="/images/configure/gdpr-agreement.png" alt="Enable GDPR Compliance Settings" />
@@ -16,7 +16,7 @@ After that, click on the **Save Configuration** button.
 
 ## GDPR Agreement
 
-To add, go to Admin Panel and click on **Configure >> GDPR >> Enable Customer Agreement**.  
+In the **GDPR Agreement** section, switch on **Enable Customer Agreement**.  
 The GDPR Agreement button is used to obtain explicit consent from customers before they proceed with account registration, checkout, or other data-related actions. It ensures:
 
 - Users acknowledge and accept the store's privacy policy.
@@ -33,7 +33,7 @@ After that, click on the **Save Configuration** button.
 
 ## Cookie Notice Settings
 
-To add, go to Admin Panel and click on **Configure >> GDPR >> Enable Cookie Notice**.  
+In the **Cookie Notice Settings** section, switch on **Enable Cookie Notice**.  
 This section allows store owners to configure how the cookie notice appears to users. Key settings include:
 
 - **Cookie Block Display Position** – Determines where the cookie notice will appear on the page. Available options:  
@@ -54,7 +54,7 @@ After that, click on the **Save Configuration** button.
 
 This section enables users to personalize their cookie settings based on their preferences. The available categories include:
 
-- **Strictly Necessary** – Essential cookies required for the website to function properly, such as session management and security features. Cannot be disabled.  
+- **Strictly Necessary** – Essential cookies required for the website to function properly, such as session management and security features.  
 
 - **Basic Interactions & Functionalities** – Support user interactions, such as chat features, form submissions, and navigation improvements.  
 

@@ -4,7 +4,9 @@ Google reCAPTCHA is a security feature provided by Google that helps protect web
 
 It works by verifying whether an interaction is performed by a real human user or an automated script. By adding reCAPTCHA to forms such as login, registration, contact, and checkout, store owners can prevent fake submissions, brute-force attacks, and malicious activities.
 
-To add, go to the Admin Panel and click on **Configure >> Google Captcha** as shown below.
+Bagisto uses **reCAPTCHA Enterprise**, which is why a Google Cloud project and an API key are needed alongside the site key.
+
+To add it, go to the Admin Panel and click on **Configure >> Customer >> Google Captcha** as shown below. The settings are per channel.
 
  <ImagePopup src="/images/configure/configure-captcha.png" alt="Google Captcha" />
 
@@ -38,15 +40,15 @@ As soon as you click on it, a Status toggle button will appear. Once you enable 
 - Add your domain(s) in the Domains section (e.g., example.com).
 - Click Create and copy the generated site key.
 
-Now you need to add all the IDs in the configuration, set the **Stock Threshold** to 0.5, and finally click on the **Save Configuration** button.
+Now enter the three values in the configuration, set the **Score Threshold** (reCAPTCHA scores each visitor from 0 to 1, and anything below the threshold is treated as a bot; **0.5** is a sensible start), and finally click on the **Save Configuration** button.
 
  <ImagePopup src="/images/configure/site-key.png" alt="Create reCAPTCHA Site Key" />
 
-As soon as the configuration is saved, Google reCAPTCHA will be displayed in five places on the website:
+As soon as the configuration is saved, Google reCAPTCHA will be displayed on these forms on the website:
 
 - Customer Sign In
 - Customer Sign Up
-- Contact Us Page
+- Contact Us Page, and the Contact Us form on product pages when the cart page is switched off
 - Forgot Password
 - Checkout Sign In
 

@@ -124,6 +124,15 @@ similar. Each entry takes a title, a description, and an icon.
 Because this section and the footer are drawn on every page rather than just the
 home page, publishing a change to either refreshes the whole storefront cache.
 
+### Types added by a theme
+
+The six types above are the ones every theme offers. A theme you install from
+the marketplace or have built for you can add types of its own, such as a
+testimonial slider or a brand strip. They appear in the same **+** list when
+that theme is being customised, with their own fields, and are edited and
+published exactly like the built-in types. If a type you expect is missing from
+the list, check that the theme it belongs to is the one you are customising.
+
 ## Upgrading from an earlier version
 
 If you used **Settings >> Themes** before, that screen has moved. Theme

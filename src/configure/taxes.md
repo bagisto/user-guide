@@ -1,9 +1,9 @@
 # Taxes
 
-**A) Tax Categories**  
-Tax categories are classifications for different types of taxes, such as sales tax, value-added tax, or excise tax, used to categorize and apply tax rates to products or services.
+To configure, go to the Admin Panel and click on **Configure >> Sales >> Taxes**. The tax categories and rates themselves are created under **Settings >> Taxes**; this page decides how they are applied and displayed.
 
-To configure, go to the Admin Panel and click on **Configure >> Taxes**.
+**A) Tax Categories**  
+Choose the default tax category for **Shipping** and for **Products**, used when a product has no category of its own.
 
 **B) Calculation Settings**  
 Calculation settings define how product pricing and taxes are applied.
@@ -36,13 +36,13 @@ Taxes are already included in the product price.
 
 <ImagePopup src="/images/configure/include-tax.png" alt="Product Pricing" />
 
-**C) Default Destination Calculation**  
-Select **Country, State & Pin Code** to automatically determine the shipping/delivery address.  
+### Default Destination Calculation
+Set the **Default Country**, **Default State** and **Default Post Code** used to calculate tax before a shopper has entered an address.  
 
 <ImagePopup src="/images/configure/destination.png" alt="Destination Calculation" />
 
 ### Shopping Cart Display Settings
-Controls how taxes are displayed in the shopping cart.
+Controls how taxes are displayed in the shopping cart. A separate **Orders, Invoices, Refunds Display Settings** section below it makes the same choice for the documents an order produces.
 
 **A) Excluding Tax**  
 Taxes shown separately.  

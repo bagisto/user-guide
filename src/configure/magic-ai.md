@@ -1,119 +1,101 @@
 # Magic AI
 
-To configure Magic AI, go to the Admin Panel and navigate to **Configure -> Magic AI**.
+Magic AI adds AI assistance to the admin and the storefront: it writes and translates text, generates product images, understands the photos shoppers search with, and writes a personal message on the order confirmation page. It works with the AI provider of your choice.
 
-Here you will able to see the seprate section to configure Magic AI **Settings, Providers, Admin Features and Storefront Features** as shown in the image below.
+To configure it, go to **Configure >> Magic AI**. The page has four sections: **General**, **Providers**, **Admin Features** and **Storefront Features**.
 
- <ImagePopup src="/images/configure/magic.png" alt="Magic AI" />
+<ImagePopup src="/images/configure/magic.png" alt="Magic AI" />
 
 ### General
 
-In the General section, a toggle button is available to enable or disable the Magic AI feature across the entire application.
+**Enabled:** Turns every Magic AI feature on or off for the whole store. Nothing below works until this is on.
 
-To use the Magic AI feature, you need to enable this option and then click on **Save Configuration** button.
+Click **Save Configuration**.
 
- <ImagePopup src="/images/configure/general-setting.png" alt="General" />
+<ImagePopup src="/images/configure/general-setting.png" alt="Magic AI General Settings" />
 
 ### Providers
 
-By default, we provide multiple Magic AI providers such as **OpenAI, Anthropic, Gemini, Groq, xAI, DeepSeek, Mistral, and Ollama**.
+Magic AI ships with eight providers: **OpenAI, Anthropic, Gemini, Groq, xAI, DeepSeek, Mistral** and **Ollama**.
 
-To start using any of these providers, you need to generate the **API key** from their respective official websites and add it under the Magic AI Providers configuration section. For the **Ollama** provider, you also need to specify the **Base URL** of your Ollama server.
+To use a provider, create an **API Key** in your account on the provider's website and paste it into that provider's row. Only the providers you fill in are offered elsewhere; you do not need a key for all of them. **Ollama** runs models on your own server instead of a paid service, so it also takes the **Base URL** of that server (`http://localhost:11434` when it runs on the same machine).
 
-After adding the API key and other required details, make sure to click on the **Save Configuration** button to apply the changes successfully.
+Keys are stored as passwords and never shown again once saved. Click **Save Configuration**.
 
- <ImagePopup src="/images/configure/providers-magicai.png" alt="Providers" />
+<ImagePopup src="/images/configure/providers-magicai.png" alt="Magic AI Providers" />
 
 ### Admin Features
 
-In the Admin AI Features section, there are two main features available:
+Two features help you while you work in the admin:
 
 **1) Text Generation**
 
 **2) Image Generation**
 
-Each feature includes a toggle button to enable or disable it. Along with this, multiple AI providers are available, and the admin can select as many providers as required.
+Each has an **Enabled** switch and a **Providers** list. Pick the providers whose models admins may use for that feature; the models of those providers are then offered in the editor.
 
-The selected providers will be visible under the Text Generation and Image Generation sections, allowing the admin to easily choose which model or provider to use while proceeding.
+Click **Save Configuration**.
 
-At last click on **Save Configurations** button.
-
- <ImagePopup src="/images/configure/admin-features-magicai.png" alt="Admin Features" />
+<ImagePopup src="/images/configure/admin-features-magicai.png" alt="Magic AI Admin Features" />
 
 ### Text Generation
 
-The Text Generation feature in Magic AI helps you create product short descriptions and long descriptions easily.
+Text Generation writes or rewrites text in any rich-text editor in the admin: product descriptions, category descriptions, CMS pages and email templates.
 
-To use Text Generation with Magic AI, go to **Catalog → Products**, and click on the **Magic AI** button available in the description section.
+Open the product under **Catalog >> Products** and click the **Magic AI** button in the toolbar of the description editor.
 
-This will allow you to generate AI-assisted content for product descriptions.
+<ImagePopup src="/images/configure/description-magicai.png" alt="Magic AI Button in the Description Editor" />
 
-  <ImagePopup src="/images/configure/description-magicai.png" alt="Text Generation" />
+A form opens. Enter a **Prompt** describing what you want written, choose a **Model** from the list, and click **Generate**. Read the result, and click **Apply** to place it in the editor, or generate again with a different prompt.
 
-After clicking on the Magic AI button, a popup form will open where you need to enter the prompt related to the description you want to generate.
-
-Then, you need to select a model from the Model List, and finally click on the **Generate** button.
-
-Once done, your AI-generated content will be created automatically. Then click on **Apply** button to add the changes.
-
- <ImagePopup src="/images/configure/textgeneration.png" alt="Text Generation" />
+<ImagePopup src="/images/configure/textgeneration.png" alt="Text Generation" />
 
 ### Image Generation
 
-To use Image Generation, you can easily generate product images with the help of Magic AI.
+Image Generation creates product images from a description.
 
-To use this feature, go to **Catalog → Products**, and in the Images section, click on **Magic AI Generate Images**.
+Open the product under **Catalog >> Products** and, in the **Images** section, click **Magic AI** beside **Add Image**.
 
-1. Enter the prompt based on the type of image you want to create.
+1. Enter the **Prompt** describing the image you want.
+2. Choose the **Number of Images** to generate.
+3. Choose the **Size**: **Square (1:1)**, **Portrait (2:3)** or **Landscape (3:2)**.
+4. Choose the **Quality**: **High**, **Medium** or **Low**.
+5. Choose a **Model** and click **Generate**.
 
-2. Specify the number of images (quantity) you want to generate.
+<ImagePopup src="/images/configure/image-generate.png" alt="Image Generation" />
 
-3. Choose the image size. By default, we provide three options: Square, Portrait, and Landscape.
+Click the images you want to keep and apply them; they are added to the product like uploaded images. Click **Regenerate** to try again with the same settings.
 
-4. Select the image quality — High, Medium, or Low.
-
-5. Finally, choose your preferred model from the Model List and click on the “Generate” button to create the images.
-
-  <ImagePopup src="/images/configure/image-generate.png" alt="Image Generation" />
-
-Once the images are generated, you need to click on the desired images to apply them. After selecting and applying them, your AI-generated product images will be successfully added.
-
-If you are not satisfied with the generated images, you can simply click on the **Regenerate** button to create new images again.
-
-<ImagePopup src="/images/configure/ai-images.png" alt="Image Generation" />
+<ImagePopup src="/images/configure/ai-images.png" alt="Generated Product Images" />
 
 ### Storefront Features
 
-In the Storefront Features section, there are three main features available:
+Three features run on the storefront. Each is set **per channel**, with its own **Enabled** switch and a **Model** to run on, so switch channel at the top of the page to configure each store.
 
 **1) AI Image Search**
 
-**2) Review Translations**
+**2) Review Translation**
 
 **3) Personalized Checkout Message**
 
-Each feature includes a toggle button to enable or disable it. Along with this, multiple AI Models are available, and the admin can select a desired model as per their requirement.
+Click **Save Configuration**.
 
-At last, click on the **Save Configuration** button to apply the changes.
-
- <ImagePopup src="/images/configure/storefront-features-magicai.png" alt="Storefront Features" />
+<ImagePopup src="/images/configure/storefront-features-magicai.png" alt="Magic AI Storefront Features" />
 
 ### AI Image Search
 
-AI Image Search allows customers to search for products by uploading an image. Bagisto uses the Laravel AI SDK (MagicAI) to analyze the image and find matching products. You can configure the preferred AI model or use TensorFlow.js as a default fallback.
+Shoppers can search for products by uploading a photo from the search bar. With this feature on, the chosen model describes what is in the photo and the store searches for matching products. With it off, the image search still works but uses a simpler recognition that runs in the shopper's browser, which recognises fewer things.
 
-### Review Translations
+The image search itself is switched on separately under **Configure >> Catalog >> Products >> Settings**, with the **Image Search Option** switch.
 
-If someone just wants to understand what is written, this feature can simply translate the content for them into their preferred language.
+### Review Translation
 
- <ImagePopup src="/images/configure/review-magicai.png" alt="Review Translations" />
+A **Translate** link appears under each product review. Clicking it shows the review in the shopper's language, so a review written in another language is still useful.
+
+<ImagePopup src="/images/configure/review-magicai.png" alt="Review Translation" />
 
 ### Personalized Checkout Message
 
-With the help of the Personalized Checkout Message feature in Bagisto, once you enable this option, customers will start seeing automatically generated messages after the checkout process and order gets completed.
+After an order is placed, the order confirmation page shows a short message written for that order, mentioning what the shopper bought. It replaces the fixed thank-you text and gives the moment a more personal touch.
 
-It helps store owners create a more personalized and engaging shopping experience by displaying dynamic and AI-generated messages to customers at the time of checkout.
-
-These messages can improve customer interaction, build trust, and encourage successful order completion, ultimately enhancing the overall shopping experience.
-
-  <ImagePopup src="/images/configure/personalized-chckout-message.png" alt="Personalized Checkout Message" />
+<ImagePopup src="/images/configure/personalized-chckout-message.png" alt="Personalized Checkout Message" />

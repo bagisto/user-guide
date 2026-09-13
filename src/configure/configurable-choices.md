@@ -2,13 +2,13 @@
 
 Settings refer to configurable choices that control how a system, application, or device behaves, tailored to user preferences and requirements.
 
-**1)** To add configurable choices, go to the Admin panel and navigate to **Configure >> Content**. Next, you will see the options below:
+Three storefront features can be switched on or off:
 
-**Compare Options** - Allows you to easily compare your products.
+**Compare options** - Lets shoppers add products to a comparison page. Found under **Configure >> Catalog >> Products**, in the **Settings** section.
 
-**Wishlist Option** - Adds the functionality of a Wishlist.
+**Image Search Option** - Adds a camera icon to the storefront search bar so shoppers can search by uploading a photo. Also under **Configure >> Catalog >> Products >> Settings**. To have the photo understood by an AI model rather than by the browser alone, see [Magic AI](./magic-ai.md#ai-image-search).
 
-**Image Search Option** - Helps to search your images.
+**Allow Wishlist option** - Lets shoppers save products to a wishlist. Found under **Configure >> Customer >> Settings**, in the **Wishlist** section.
 
 <ImagePopup src="/images/configure/options.png" alt="Configurable Choices Options" />
 

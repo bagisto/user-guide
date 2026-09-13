@@ -7,7 +7,7 @@ The **Content** section allows you to customize frontend behavior, promotional b
 To update the **Content** configuration in Bagisto:
 
 1. Log in to the **Admin Panel**.
-2. Navigate to **Configure → Content**.
+2. Navigate to **Configure >> General >> Content**.
 3. You will find the following options to configure:
 
 ### Header Offer Title
@@ -74,29 +74,17 @@ The image below shows the section with the toggles enabled and their dependent f
 
 <ImagePopup src="/images/configure/contentspec.png" alt="Speculation Rules" />
 
-### Coyright Content
+### Copyright Content
 
-Setting up the copyright information in your website's footer is a key step in safeguarding your intellectual property and showing clear ownership of your online content. 
+The copyright line in the storefront footer tells visitors that the content, design and images on the site are yours, and puts your brand name on every page.
 
-By having a well-formatted copyright notice, you let visitors know that the content, design, images, and other materials on your site are legally protected. 
+The **Copyright Content** field takes the text shown in the footer. It is set per locale, so switch locale at the top of the page to translate it.
 
-This not only helps prevent unauthorized use or copying but also shows professionalism and builds trust with your audience.
+<ImagePopup src="/images/configure/copyright-content.png" alt="Copyright Content Field" />
 
-By including your brand name, the current year, and a brief rights statement in the footer, you ensure that your brand is visible on every page of your website. 
+Click **Save Configuration**, then open the storefront footer to see the line.
 
-### Steps to Add Coyright Content
-
-To add **Coyright Content**, go to the Admin panel: **Configure >> Content**. 
-
-You will see the textbox to add the Copyright Content as shown in the image below.
-
-<ImagePopup src="/images/configure/copyright-content.png" alt="Add Coyright Content" />
-
-At last click on **Save Configuration** button.
-
-After this, you can go to the storefront footer of your Bagisto website and check that your copyright content has been successfully added.
-
- <ImagePopup src="/images/configure/copyright-footer.png" alt="Add Coyright Content" />
+ <ImagePopup src="/images/configure/copyright-footer.png" alt="Copyright Line in the Storefront Footer" />
 
 ### Custom Scripts
 
@@ -105,7 +93,7 @@ Add your own scripts to enhance or integrate custom features.
 - **Custom CSS**  
   Add global CSS to style your storefront.
 
-- **Custom JavaScript**  
+- **Custom Javascript**  
   Insert scripts for chat widgets, analytics, or any custom interaction.
 
 <ImagePopup src="/images/configure/custom.png" alt="Custom Scripts" />

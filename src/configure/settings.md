@@ -1,7 +1,21 @@
 # Settings
 
-Configure newsletter subscriptions, email verifications, and social login options.  
-To configure, go to the Admin Panel and navigate to **Configure >> Settings**.
+Configure how customer accounts are created and signed in to.  
+To configure, go to the Admin Panel and navigate to **Configure >> Customer >> Settings**.
+
+### Create New Account Options
+
+**Default Group:** The customer group a new account is placed in.
+
+**Allow NewsLetter:** Show the newsletter subscription checkbox on the sign-up form.
+
+### Login Options
+
+**Redirect Customer to the selected page:** Where a customer lands after signing in, the home page or their account.
+
+### Wishlist
+
+Switch the storefront wishlist on or off.
 
 ### Newsletter Subscription
 

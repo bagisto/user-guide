@@ -1,50 +1,57 @@
 # Cache Management
 
-Cache Management allows the Admin to clear and rebuild various system caches to ensure that both the storefront and admin panel display the most up-to-date information while maintaining optimal performance.
+Cache Management lets you clear and rebuild the caches the store keeps, so the storefront and the admin show up-to-date information without losing performance, and lets you switch the storefront's full page cache on or off.
 
-To manage cache settings, go to the Admin Panel and navigate to **Configure > General > Cache Management**.
+Go to **Configure >> Cache Management**. It has two sections, **General** and **Full Page Cache**.
 
-## Cache Actions
+## General
 
-The Cache Management section provides options to clear and rebuild different types of caches.
-
-### Clear Cache Options
-
-Use these actions to remove cached data and force the application to regenerate it on the next request.
-
-- **Clear All Cache** – Clears all available caches.
-- **Clear Config Cache** – Removes cached configuration data.
-- **Clear Application Cache** – Clears the application cache.
-- **Clear Compiled Cache** – Removes compiled classes and files.
-- **Clear Event Cache** – Clears cached event discovery data.
-- **Clear Route Cache** – Removes cached route definitions.
-- **Clear View Cache** – Clears compiled Blade view files.
-
-### Build Cache Options
-
-Use these actions to pre-build caches and improve application performance.
-
-- **Rebuild All Cache** – Rebuilds all supported caches.
-- **Cache Config** – Generates configuration cache.
-- **Cache Routes** – Generates route cache.
-- **Cache Views** – Compiles and caches view files.
-
-## How to Execute Cache Actions
-
-**Step 1:** Navigate to **Configure > General > Cache Management**.
-
-**Step 2:** Click the desired cache action button under either **Clear Cache** or **Build Cache**.
-
-**Step 3:** Review the execution results in the **Output Console** section.
-
-**Step 4:** A success message and console output will be displayed once the operation is completed successfully.
+### Cache Actions
 
 <ImagePopup src="/images/configure/cache-manage.png" alt="Cache Management" />
 
-## Important Notes
+Under **Clear Cache**, each button removes one kind of cached data so the store regenerates it on the next request:
 
-- Route caching will fail if any route file uses closures instead of controller references.
-- Configuration caching will fail if any configuration file returns closures.
-- File permission issues may prevent cache generation or cache clearing operations.
+- **Clear All Cache** – every cache below at once.
+- **Clear Config Cache** – the cached configuration.
+- **Clear Application Cache** – the application cache.
+- **Clear Compiled Cache** – compiled classes and files.
+- **Clear Event Cache** – cached event discovery data.
+- **Clear Route Cache** – cached route definitions.
+- **Clear View Cache** – compiled page templates.
 
-⚠️ **Note:** After clearing cache, the first few page loads may take slightly longer because the application needs to regenerate cached data. Rebuilding caches after deployment is recommended for better performance.
+Under **Build Cache**, each button pre-builds a cache so the store starts fast after a deployment:
+
+- **Rebuild All Cache** – every cache below at once.
+- **Cache Config** – the configuration.
+- **Cache Routes** – the routes.
+- **Cache Views** – the page templates.
+
+**Step 1:** Click the button for the action you want.
+
+**Step 2:** Read the result in the **Output Console** below the buttons. A success message and the command's output appear once it has finished.
+
+### Important notes
+
+- Route caching fails when a route is defined as a closure rather than a controller; the console output names the offending route.
+- Configuration caching fails when a configuration file contains a closure.
+- A file permission problem on the server stops both clearing and building.
+- After clearing a cache, the first few page loads take slightly longer while the store rebuilds it. Rebuilding the caches after a deployment avoids that.
+
+## Full Page Cache
+
+The full page cache serves rendered storefront pages from a cache instead of building them for every visitor. The home page, category pages, product pages, search results and CMS pages are cached; the cart, checkout and account pages never are.
+
+<ImagePopup src="/images/configure/full-page-cache.png" alt="Full Page Cache Settings" />
+
+**Enable Full Page Cache:** Storefront pages are served from the cache. Turning this off makes every page render again on each visit.
+
+**Cache Lifetime (Minutes):** How long a cached page is kept before it is rendered again. Leave it empty to use the application default.
+
+**Flush Page Cache:** Empty the page cache so every storefront page is rendered again on its next visit. Use it after a change that the store does not refresh on its own, such as editing a template on the server.
+
+Click **Save Configuration** after changing the switch or the lifetime; the flush button acts immediately.
+
+### Pages refresh themselves
+
+You do not normally need to flush by hand. Saving a product, category, review, CMS page, URL rewrite, channel, theme section or configuration clears the affected pages automatically, and so does an order, a refund or a price or catalog-rule reindex. Each currency and locale has its own copy of every page, so switching between them never shows a stale page.

@@ -2,7 +2,7 @@
 
 The storefront is the customer-facing interface of an online shop, showcasing products, categories, and navigation for a seamless shopping experience.
 
-To configure image sizes, go to Admin Panel and click on **Configure >> Products**.
+To configure image sizes, go to the Admin Panel and click on **Configure >> Catalog >> Products**. Each size also takes a **Placeholder** image, shown for a product that has no image of its own.
 
 ### Small Image
 

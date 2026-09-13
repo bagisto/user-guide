@@ -64,6 +64,8 @@ const MOVED_PAGES: Record<string, string> = {
   "configure/captcha": "/configure/google-captcha",
   "configure/payment-methods": "/payment-method/payment-methods",
   "configure/shipping-methods": "/shipping-method/shipping-methods",
+  "configure/coyright-content": "/configure/content.html#copyright-content",
+  "configure/pricing": "/configure/taxes",
 };
 
 /**
@@ -157,7 +159,7 @@ const LEGACY_PATHS: Record<string, string> = {
   "configure/payment-methods.html": "/payment-method/payment-methods",
   "configure/orders-settings.html": "/configure/orders-settings",
   "configure/invoice-settings.html": "/configure/invoice-settings",
-  "configure/pricing.html": "/configure/pricing",
+  "configure/pricing.html": "/configure/taxes",
 
   // Shipping Methods
   "shipping-method/shipping-method.html": "/shipping-method/shipping-methods",

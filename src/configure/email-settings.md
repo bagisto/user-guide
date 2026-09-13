@@ -2,7 +2,7 @@
 
 Set the addresses your store sends from, and choose how mail leaves the store.
 
-Go to the Admin Panel and click **Configure >> Email Settings**.
+Go to the Admin Panel and click **Configure >> Email >> Email Settings**.
 
 <ImagePopup src="/images/configure/email-setting.png" alt="Email Settings" />
 
@@ -23,7 +23,7 @@ change to match:
 - **Encryption** — usually `tls`
 - **Username** and **Password** for the account
 
-**Brevo API** — mail is sent over Brevo's HTTP API rather than SMTP, which avoids
+**Brevo (API)** — mail is sent over Brevo's HTTP API rather than SMTP, which avoids
 opening an SMTP port. Fill in:
 
 - **Brevo API Key** — generated in your Brevo account

@@ -5,7 +5,7 @@ A **simple product** is a product type in e-commerce that does not require custo
 Therefore, any service, such as downloadable items, does not count as a simple product. This is the step-by-step tutorial on how to add a simple product in [Bagisto](https://bagisto.com/en/).
 
 ### Create Simple Product in Bagisto 2.0
-1. Click on **Catalog >> Products >>** select **Simple** under Product Type.
+1. Click on **Catalog >> Products >>** select **Simple** under **Type**.
 
    <ImagePopup src="/images/simple-product/simple.png" alt="Simple" />
 
@@ -42,9 +42,13 @@ Enter the description so that products can easily appear in search engine listin
 <ImagePopup src="/images/simple-product/meta-description.png" alt="Meta Description" />
 
 ### Images
-To add the product images, click on **Add Images**. You can add multiple images for your product.
+To add the product images, click on **Add Image**. You can add multiple images for your product; the empty tiles are labelled **Front**, **Next**, **Zoom**, **Use Cases** and **Size** so you know which view each one is meant for.
 
 <ImagePopup src="/images/simple-product/image.png" alt="Image" />
+
+Hover over an uploaded image to see its file name and two actions: the bin icon removes it, and the pencil icon opens the **Image SEO** panel where you can set the image's **Alt Text** and **File Name**, or **Replace** the file with another one.
+
+If [Magic AI](../configure/magic-ai.md#image-generation) is enabled for image generation, a **Magic AI** button beside **Add Image** generates product images from a written description.
 
 ### New
 Enable the toggle button if you want to feature the product as a new product. The resulting product will be shown under the New Products section.
@@ -69,7 +73,7 @@ Insert the price, cost, and special price, and set the special price date for wh
 <ImagePopup src="/images/simple-product/price.png" alt="Price" />
 
 ### Shipping
-Set the Width, Height, Depth, and Weight of the product.
+Set the Length, Width, Height, and Weight of the product.
 
 <ImagePopup src="/images/simple-product/shipping.png" alt="Shipping" />
 

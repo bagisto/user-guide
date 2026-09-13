@@ -2,11 +2,11 @@
 
 Custom scripts are personalized pieces of code created to add specific functions or features to the software, enhancing its capabilities uniquely.
 
-Here, in this specified section, Admin can write CSS and JS code. At the end, it will automatically append the code to the master file.
+Here the admin can write CSS and JavaScript that is added to every storefront page of the channel being configured.
 
 **Steps to Add Custom Scripts**
 
-To add **Custom Scripts**, go to the Admin panel: **Configure >> Content**. You will see the following options:
+To add **Custom Scripts**, go to the Admin panel: **Configure >> General >> Content**, and find the **Custom Scripts** section. The two fields are per channel. You will see the following options:
 
 ### Custom CSS
 
