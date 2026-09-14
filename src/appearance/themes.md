@@ -1,11 +1,41 @@
-# Appearance
+# Themes & Sections
+
+<div class="feature-hero feature--theme">
+  <span class="feature-hero__eyebrow">Storefront design</span>
+  <p class="feature-hero__lead">Choose the theme each channel uses, then build its storefront from sections such as carousels, banners, content blocks and footer links, with a live preview beside you. Nothing reaches shoppers until you publish.</p>
+  <div class="feature-hero__actions">
+    <a class="feature-hero__btn feature-hero__btn--primary" href="#themes">Browse themes</a>
+    <a class="feature-hero__btn feature-hero__btn--ghost" href="#sections">Customize sections</a>
+  </div>
+</div>
+
+<div class="feature-cards feature--theme">
+  <a class="feature-card" href="#themes">
+    <span class="feature-card__icon feature-card__icon--layout" aria-hidden="true"></span>
+    <span class="feature-card__title">Themes</span>
+    <span class="feature-card__desc">See the themes installed on your store, activate one for each channel and find more in the theme marketplace.</span>
+    <span class="feature-card__tag">Appearance &gt;&gt; Themes</span>
+  </a>
+  <a class="feature-card" href="#the-editor">
+    <span class="feature-card__icon feature-card__icon--eye" aria-hidden="true"></span>
+    <span class="feature-card__title">Live section editor</span>
+    <span class="feature-card__desc">Reorder, switch on or off, duplicate and edit sections while a live preview shows the result on desktop, tablet or mobile.</span>
+    <span class="feature-card__tag">Customize</span>
+  </a>
+  <a class="feature-card" href="#section-types">
+    <span class="feature-card__icon feature-card__icon--blocks" aria-hidden="true"></span>
+    <span class="feature-card__title">Section types</span>
+    <span class="feature-card__desc">Product and category carousels, image sliders, static content, footer links and service promises.</span>
+    <span class="feature-card__tag">Six built-in types</span>
+  </a>
+</div>
 
 The appearance of your storefront defines its look and feel, and is a key factor
 in the first impression it makes on a visitor.
 
-Appearance has its own area in the admin, separate from Settings. It holds two
-things: the **themes** available to your store, and the **sections** a theme's
-storefront is built from.
+Themes and sections have their own area in the admin panel, **Appearance**,
+separate from **Settings**. It holds two things: the **themes** available to
+your store, and the **sections** a theme's storefront is built from.
 
 ## Themes
 
@@ -29,7 +59,7 @@ From an installed theme you can:
 
 A section is one block of the storefront — a product carousel, a banner slider, a
 footer, and so on. Sections belong to a **theme** and a **channel**, so the same
-theme customised on two channels keeps two independent sets.
+theme customized on two channels keeps two independent sets.
 
 Open **Appearance >> Themes**, then **Customize** on the theme you want to edit.
 
@@ -190,9 +220,9 @@ home page, publishing a change to either refreshes the whole storefront cache.
 The six types above are the ones every theme offers. A theme you install from
 the marketplace or have built for you can add types of its own, such as a
 testimonial slider or a brand strip. They appear in the same **+** list when
-that theme is being customised, with their own fields, and are edited and
+that theme is being customized, with their own fields, and are edited and
 published exactly like the built-in types. If a type you expect is missing from
-the list, check that the theme it belongs to is the one you are customising.
+the list, check that the theme it belongs to is the one you are customizing.
 
 ## Upgrading from an earlier version
 

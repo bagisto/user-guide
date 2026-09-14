@@ -1,38 +1,42 @@
 # Introduction
 
-[Bagisto](https://bagisto.com/en/) is a free and open-source eCommerce platform that lets businesses launch and run modern online stores with ease. Released under the MIT license, it is fully customizable, so every part of the storefront and the admin experience can be adapted to the needs of your business.
+[Bagisto](https://bagisto.com/en/) is a free, open-source eCommerce platform for building and running online stores. It is released under the MIT license and built on the [Laravel](https://laravel.com/) framework, with [Vue.js](https://vuejs.org/) and [Tailwind CSS](https://tailwindcss.com/) powering a fast, responsive admin panel and storefront.
 
-The platform is built on top of the reliable [Laravel](https://laravel.com/) framework and uses [Vue.js](https://vuejs.org/) and [Tailwind CSS](https://tailwindcss.com/) on the front end. Together they provide a clean, responsive admin interface and a smooth shopping experience for your customers.
+This guide is for merchants and store administrators. It shows you how to set up and run a Bagisto store from the admin panel, with no coding required. If you are building extensions, integrations or themes, see the [developer documentation](https://devdocs.bagisto.com/) instead.
 
-From a single dashboard, you can manage your catalog, inventory, customers, orders, shipments, and marketing campaigns, while keeping full control over how your store looks and behaves.
+## What you can do with Bagisto
 
-## Key Features
+- **Sell any kind of product** – simple, configurable, virtual, downloadable, grouped, bundle and booking products, organized with categories, attributes and attribute families.
+- **Run several storefronts from one admin panel** – each channel has its own domain, theme, root category, languages and currencies.
+- **Sell internationally** – 22 languages with right-to-left support, multiple currencies and exchange rates.
+- **Manage stock across locations** – track inventory across warehouses and stores.
+- **Handle every order** – invoices, shipments, refunds, returns (RMA) and EU withdrawal requests.
+- **Promote your store** – catalog and cart rules, coupons, email campaigns, sitemaps and search optimization.
+- **Create content with Generative AI (Magic AI)** – draft product descriptions, generate product images, translate reviews and more.
+- **Design your storefront** – choose a theme for each channel and build its pages from sections with a live preview.
+- **Keep your team secure** – admin users, roles with granular permissions and two-factor authentication.
+- **Measure performance** – sales, customer and product reports.
 
-* **Product Catalog** – Simple, configurable, virtual, grouped, downloadable, bundle, and booking products, organized with categories, attributes, and attribute families.
-* **Inventory Management** – Multiple inventory sources with stock tracking across warehouses and store locations.
-* **Order Management** – End-to-end order processing, including invoices, shipments, refunds, and cancellations.
-* **Customer Management** – Customer accounts, groups, addresses, and product reviews.
-* **Multi Channel & Multi Store** – Run several stores or brands from one installation, each with its own theme, catalog, and settings.
-* **Multi Currency & Multi Locale** – Sell worldwide with built-in currency and exchange rate handling, translations for 22 locales, and full right-to-left (RTL) support.
-* **Payment & Shipping Methods** – Built-in payment and shipping options that can be extended with your own integrations.
-* **Marketing Tools** – Cart price rules, catalog price rules, coupons, email campaigns, and abandoned cart recovery.
-* **Generative AI** – [Generative AI (Magic AI)](../generative-ai/introduction.md) is built in: it writes product and page copy, generates product images, translates reviews, lets shoppers search by photo and personalises the order confirmation, using the AI provider you choose. The storefront also exposes its actions to AI shopping agents in browsers that support them, the first step toward agentic commerce.
-* **CMS Pages** – Create and manage static content pages for your storefront.
-* **Access Control** – Admin users, roles, and granular permissions for your team.
-* **Reporting** – Sales, customer, product, and visitor reports to track how your store is performing.
+## How this guide is organized
 
-## Working with the Listing Grids
+| Section | What it covers |
+|---|---|
+| **Getting Started** | This introduction, the [command palette](./command-palette.md) and [two-factor authentication](../authentication/2fa-authentication.md). |
+| [Generative AI](../generative-ai/introduction.md) | The AI features built into Bagisto and how to use each one. |
+| [Theme](../appearance/themes.md) | Choosing a theme and customizing your storefront with sections. |
+| [Store Setup](../settings/channels.md) | Channels, languages, currencies, inventory, taxes, team access and data imports. |
+| [Configure](../configure/weight-unit.md) | Store-wide settings, from checkout and email to search engines and caching. |
+| [Catalog](../category/create-category.md) | Categories, attributes and every product type. |
+| [Customers](../customer/create-customer.md) | Customer accounts, groups, group pricing and reviews. |
+| [Sales](../orders/create-order.md) | Orders, invoices, shipments, refunds, returns, and shipping and payment methods. |
+| [Marketing](../marketing/cart-rules.md) | Promotions, email communications and search engine optimization. |
+| [CMS](../cms/create-cms.md) | Content pages such as About Us or your returns policy. |
+| [Reporting](../reporting/sales-report.md) | Sales, customer and product reports. |
 
-Most admin screens are listing grids — products, orders, customers, imports, and so on. They all share the same header, search box, **Filter** control, and pagination.
+The extensions — [B2B Marketplace](../b2b-marketplace/introduction.md), [Multi Tenant Ecommerce](../multi-tenant-ecommerce/introduction.md), the [B2B eCommerce Platform](../b2b-ecommerce-platform/introduction.md) and the [Native Mobile App](../open-source-mobile-app/open-source-mobile-app.md) — are covered at the end of the guide.
 
-On a small screen, grids that define their own layout, such as **Catalog >> Products**, are shown as cards instead of a wide table. The column header is dropped there, because **Filter** and **Sort By** are reachable from the bar fixed to the foot of the screen. Grids that use the default layout keep the table and scroll sideways.
+## Before you begin
 
-<ImagePopup src="/images/getting-started/mobile-datagrid.png" alt="Admin Listing Grid on Mobile" />
+You manage your store from the admin panel. On a standard installation it is at `/admin` on your store's domain, for example `https://your-store.com/admin`; whoever installed the store can move it to a different path.
 
-While a grid is loading, the placeholders match the grid they stand in for on both desktop and mobile, so the layout no longer shifts once the rows arrive.
-
-## Finding your way around
-
-Press **Ctrl + K** (**⌘ K** on a Mac) on any admin page to open the [command palette](./command-palette.md) and jump to a menu item, a configuration screen, an action or a record by typing part of its name.
-
-Whether you are starting a small store or scaling a large catalog across multiple markets, Bagisto gives you the tools to build and grow your online business.
+Press **Ctrl + K** (**⌘ K** on a Mac) on any admin page to open the [command palette](./command-palette.md) and jump straight to a menu item, a configuration screen, an action or a record.

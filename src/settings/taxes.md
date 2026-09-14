@@ -1,58 +1,57 @@
 # Taxes
 
-In e-commerce, various taxes are applied when purchasing products, and these rates can differ by country. Bagisto allows you to create and manage taxes efficiently.  
+Bagisto adds tax to an order using two things you set up under **Settings >> Taxes**:
 
-## Tax Rate
+- **Tax rates** – the percentage charged in a location, such as 8.875% in New York.
+- **Tax categories** – groups of tax rates that you assign to products.
+
+Create your tax rates first, then a tax category that includes them, and then assign the category to your products. At checkout, Bagisto applies the rates in the product's tax category that match the customer's address.
+
+How tax is calculated and displayed, such as which address is used and whether prices include tax, is set under [Configure >> Sales >> Taxes](../configure/taxes.md).
+
+## Create a tax rate
 
 1. Go to **Settings >> Taxes >> Tax Rates**.
-
 2. Click **Create Tax Rate**.
+3. Enter an **Identifier**, such as `US-NY`.
+4. Choose the **Country**.
+5. Choose the **State**, or leave it empty to use the rate in the whole country.
+6. Enter the **Rate** as a percentage, such as `8.875`.
+7. Optionally, in **Settings**, limit the rate to certain postcodes. See the table below.
+8. Click **Save Tax Rate**.
 
-   <ImagePopup src="/images/settings/tax-rate.png" alt="Tax Rate" />
+   <ImagePopup src="/images/settings/create-tax-rate.png" alt="Create Tax Rate page for a New York rate of 8.875%" />
 
-3. Enter the following fields:
+You return to **Tax Rates**, where the message *Tax rate created successfully.* appears and the new rate is listed.
 
-   - **Identifier**
-   - **Country**
-   - **State**
-   - **Zip Code**
-   - **Rate**
+| Field | What it does |
+|---|---|
+| **Identifier** | A unique name for the rate. Pick one that tells you the location, such as `US-NY`. |
+| **Country** | The country the rate applies to. |
+| **State** | The state the rate applies to. Leave it empty to apply the rate in every state of the country. |
+| **Rate** | The tax percentage, from 0 to 100. |
+| **Zip Code** | A single postcode the rate applies to. Leave it empty to apply the rate to every postcode. |
+| **Enable Zip Range** | Turn on to enter a **Zip From** and **Zip To** instead, and apply the rate to every postcode in that range. |
 
-   **Note:** You can also set a zip code range so that the tax applies only within that range.
-
-4. Click **Save Tax Rate**.
-
-   <ImagePopup src="/images/settings/save-tax-rate.png" alt="Save Tax Rate" />
-
-## Tax Categories
+## Create a tax category
 
 1. Go to **Settings >> Taxes >> Tax Categories**.
+2. Click **Create Tax Category**. The **Create Tax Category** form opens.
+3. Enter a **Code**, such as `standard_rate`. The code must be unique.
+4. Enter the **Name** and a **Description**.
+5. In **Tax Rates**, select the rates this category uses. To select more than one, hold **Ctrl** (**⌘** on a Mac) while you click.
+6. Click **Save Tax Category**.
 
-2. Fill in the following fields:
+   <ImagePopup src="/images/settings/create-tax-category.png" alt="Create Tax Category form with the US-NY tax rate selected" />
 
-   - **Code:** Enter a unique code for the tax category.
-   - **Name:** Enter the name of the tax category.
-   - **Description:** Enter a description.
-   - **Tax Rates:** Assign the tax rate.
+The message *Tax category created successfully.* appears and the new category is listed.
 
-3. Click **Save Tax Category**.
+## Assign the tax category to products
 
-   <ImagePopup src="/images/settings/save-category.png" alt="Save Tax Category" />
+1. Go to **Catalog >> Products** and open the product.
+2. In **General**, choose the **Tax Category**.
+3. Click **Save Product**.
 
-4. Assign the tax category when creating a product.
+   <ImagePopup src="/images/settings/product-tax-category.png" alt="Tax Category field in the General section of a product" />
 
-   <ImagePopup src="/images/settings/product-category.png" alt="Product Tax Category" />
-
-### Frontend
-
-1. On the checkout page, enter the billing address or sign in to your account and continue.
-
-2. Select the shipping method and continue.
-
-3. Select the payment method and continue.
-
-   <ImagePopup src="/images/settings/tax-front.png" alt="Tax Frontend" />
-
-The tax will appear on the product price in the frontend. For example, if a 20% tax is set, it will be applied to the product price at checkout.  
-
-This is how you can create **Taxes** in Bagisto.
+New products start with the **Product Default Tax Category** chosen under [Configure >> Sales >> Taxes](../configure/taxes.md), so set it to the category most of your products use.

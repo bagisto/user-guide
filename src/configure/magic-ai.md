@@ -42,7 +42,7 @@ Two features help you while you work in the admin: **Text Generation**, describe
 
 ## Enable the storefront features
 
-Three features run on the storefront: **AI Image Search**, **Review Translation** and **Personalized Checkout Message**. Each is set **per channel**, so switch channel at the top of the page to configure each store.
+Three features run on the storefront: **AI Image Search**, **Review Translation** and **Personalized Checkout Message**. Each is set **per channel**; when your store has more than one channel, choose the channel at the top of the page first.
 
 1. Open the **Storefront Features** page.
 2. In the **AI Image Search**, **Review Translation** and **Personalized Checkout Message** sections, switch **Enabled** on for each feature you want.

@@ -1,27 +1,32 @@
 # Roles
 
-A role is a named set of permissions. Every admin user is assigned one role, so roles are how you decide which parts of the admin each member of your team can open.
+A role is a set of permissions. Every admin user has one role, so roles control which parts of the admin panel each person can open and what they can do there.
 
-## Creating a role
+Bagisto comes with the **Administrator** role, which has every permission. Create other roles for team members who need less access, such as someone who only handles orders.
+
+## Create a role
 
 1. Go to **Settings >> Roles**.
 2. Click **Create Role**.
-
-<ImagePopup src="/images/settings/role.png" alt="Roles listing with the Create Role button" />
-
-3. In **General**, enter the **Name** and **Description** of the role.
-
-<ImagePopup src="/images/settings/new-role.png" alt="New role form" />
-
-4. In **Access Control**, set **Permissions** to **All** to grant everything, or to **Custom** to pick individual permissions.
-5. With **Custom**, tick the permissions the role should have. Use the arrow beside a group to expand or collapse it; ticking a group selects everything under it, and the **Search permissions** box jumps straight to a permission by name.
-
-<ImagePopup src="/images/settings/access-control.png" alt="Access Control permission tree" />
-
+3. In **General**, enter the **Name** and **Description**.
+4. In **Access Control**, choose the **Permissions**: **All** gives the role every permission, and **Custom** lets you choose them.
+5. If you chose **Custom**, select each permission the role needs. Selecting a permission also selects the group it belongs to.
 6. Click **Save Role**.
 
-The new role appears in the list and can be assigned to users under **Settings >> Users**.
+   <ImagePopup src="/images/settings/create-role.png" alt="Create Role page for an Order Manager role with order, invoice and shipment permissions selected" />
 
-<ImagePopup src="/images/settings/role-grid.png" alt="Roles listing with the new role" />
+The message *Roles Created Successfully* appears and the role is listed. You can now choose it when you [create a user](./users.md).
 
-From Bagisto 2.4.9 the permission tree mirrors the admin menu, uses plain connector guides instead of folder icons, and lists **Bookings** under **Sales** as its own permission.
+## Find the right permissions
+
+- The permission tree follows the admin menu. Each group matches a menu item, such as **Sales** or **Catalog**, and holds the actions inside it, such as **Create**, **View** or **Edit**.
+- Click the arrow beside a group to expand or collapse it.
+- Type in **Search permissions** to find a permission by name.
+
+## Edit or delete a role
+
+On **Settings >> Roles**, click the edit icon of a role to change it, or the delete icon to remove it.
+
+- A role that is assigned to a user can't be deleted. Give those users another role first.
+- The last role can't be deleted.
+- If only one user has full access, a role can't be changed from **All** to **Custom**.

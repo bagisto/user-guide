@@ -158,6 +158,37 @@ export default defineConfig({
       },
 
       {
+        text: '<span class="sb-feature feature--ai"><span class="sb-feature__icon" aria-hidden="true"></span><span class="sb-feature__label">Generative AI</span></span>',
+        collapsed: false,
+        items: [
+          { text: "Overview", link: "/generative-ai/introduction" },
+          {
+            text: "Generate Text Content",
+            link: "/generative-ai/generate-content",
+          },
+          {
+            text: "Generate Product Images",
+            link: "/generative-ai/generate-images",
+          },
+          { text: "AI Image Search", link: "/generative-ai/image-search" },
+          {
+            text: "Review Translation",
+            link: "/generative-ai/review-translation",
+          },
+          {
+            text: "Personalized Checkout Message",
+            link: "/generative-ai/checkout-message",
+          },
+        ],
+      },
+
+      {
+        text: '<span class="sb-feature feature--theme"><span class="sb-feature__icon" aria-hidden="true"></span><span class="sb-feature__label">Theme</span></span>',
+        collapsed: false,
+        items: [{ text: "Themes & Sections", link: "/appearance/themes" }],
+      },
+
+      {
         text: "Store Setup",
         collapsed: false,
         items: [
@@ -342,37 +373,6 @@ export default defineConfig({
         text: "CMS",
         collapsed: false,
         items: [{ text: "Pages", link: "/cms/create-cms" }],
-      },
-
-      {
-        text: "Appearance",
-        collapsed: false,
-        items: [{ text: "Themes & Sections", link: "/appearance/themes" }],
-      },
-
-      {
-        text: "Generative AI",
-        collapsed: false,
-        items: [
-          { text: "Overview", link: "/generative-ai/introduction" },
-          {
-            text: "Generate Text Content",
-            link: "/generative-ai/generate-content",
-          },
-          {
-            text: "Generate Product Images",
-            link: "/generative-ai/generate-images",
-          },
-          { text: "AI Image Search", link: "/generative-ai/image-search" },
-          {
-            text: "Review Translation",
-            link: "/generative-ai/review-translation",
-          },
-          {
-            text: "Personalized Checkout Message",
-            link: "/generative-ai/checkout-message",
-          },
-        ],
       },
 
       {

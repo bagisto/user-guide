@@ -1,5 +1,7 @@
 # Generate Text Content
 
+<div class="feature-meta feature--ai"><span class="feature-meta__primary">Generative AI</span><span>Admin panel</span></div>
+
 Text generation adds a **Magic AI** button to the toolbar of the rich-text editors in the admin. You describe what you need, pick a model, and the generated text is placed in the editor once you apply it. The button appears wherever the editor does:
 
 - **Product descriptions** — the **Description** and **Short Description** fields of a product under **Catalog >> Products**, and any other textarea attribute with the editor enabled.

@@ -1,5 +1,7 @@
 # Generate Product Images
 
+<div class="feature-meta feature--ai"><span class="feature-meta__primary">Generative AI</span><span>Admin panel</span></div>
+
 Image generation adds a **Magic AI** button beside **Add Image** in the admin's image uploader, so you can create images from a written description instead of uploading a file. It is most useful in the **Images** section of a product, and the same button appears in the other image uploaders of the admin, such as a category's logo and banner.
 
 Before you start, switch **Image Generation** on and choose its providers, as described under [Enable the admin features](../configure/magic-ai.md#enable-the-admin-features). Not every provider offers image models.

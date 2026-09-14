@@ -18,6 +18,14 @@ hero:
     alt: Bagisto
 
 features:
+  - title: Generative AI (Magic AI)
+    details: Draft product content, generate product images, translate reviews and let shoppers search by photo, with the AI provider you choose.
+    icon: ✨
+    link: /generative-ai/introduction.html
+  - title: Themes & Sections
+    details: Choose a theme for each channel and build your storefront from sections, with a live preview and nothing going live until you publish.
+    icon: 🎨
+    link: /appearance/themes.html
   - title: Open Source
     details: Leverage open-source technology to customize, extend, and contribute to the platform freely.
     icon: '<img src="/icons/opensource.png" alt="Open Source" style="width:40px;height:40px;" />'

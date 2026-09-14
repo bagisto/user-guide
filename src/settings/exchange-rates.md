@@ -1,31 +1,33 @@
 # Exchange Rates
 
-An Exchange Rate is the worth of one nation’s currency compared to another nation’s currency.  
+Product prices are entered in your store's base currency. An exchange rate converts those prices into another [currency](./currencies.md), so shoppers who switch currency see correct prices.
 
-For example: How many Euros are required to buy 1 Dollar? You require €0.88 to buy $1. This means the exchange rate of the Euro is 0.88 against the Dollar. Here we are going to discuss how to set the exchange rate in Bagisto.
+For example, if your base currency is the US Dollar and the exchange rate for the Euro is `0.92`, a $100.00 product is shown as €92.00. Without an exchange rate, the price isn't converted, so the same product would be shown as €100.00.
 
-### Creating an exchange rate
+## Create an exchange rate
 
 1. Go to **Settings >> Exchange Rates**.
+2. Click **Create Exchange Rate**.
 
-2. Click **Create Exchange Rate**, as shown in the image below.
+   <ImagePopup src="/images/settings/exchange-rates.png" alt="Exchange Rates page with the Update Exchange Rate and Create Exchange Rate buttons" />
 
-   <ImagePopup src="/images/settings/exchange-rate.png" alt="Exchange Rate" />
+3. Check the **Source Currency**. It shows your base currency and can't be changed.
+4. Choose the **Target Currency**.
+5. Enter the **Rate**: what one unit of the base currency is worth in the target currency.
+6. Click **Save Exchange Rate**.
 
-3. Enter the **Source Currency**, **Target Currency** and **Rate**.
+   <ImagePopup src="/images/settings/create-exchange-rate.png" alt="Create Exchange Rate form converting US Dollars to Euros at a rate of 0.92" />
 
-4. Click **Save Exchange Rate**, as shown below.
+The message *Exchange Rate Created Successfully* appears and the rate is listed. Each currency can have one exchange rate, and the base currency doesn't need one.
 
-   <ImagePopup src="/images/settings/exchangerate-configurations.png" alt="Exchange Rate Configuration" />
+## Update rates automatically
 
-5. The new **Exchange Rate** is listed, as shown below.
+Instead of entering rates by hand, you can fetch the latest rates from an exchange rate service.
 
-   <ImagePopup src="/images/settings/exchangerate-grid.png" alt="Exchange Rate Grid" />
+1. Choose the service and enter its API key under [Configure >> General >> Exchange Rates](../configure/exchange-rates-configurations.md).
+2. Go to **Settings >> Exchange Rates**.
+3. Click **Update Exchange Rate**.
 
-### Frontend
+Bagisto fetches the latest rate for each of your currencies and creates or updates its exchange rate. If the service can't be reached or the API key is wrong, an error message explains the problem.
 
-The **Exchange Rate** of **0.919** is applied successfully on the product price of **$499**. After applying this exchange rate, the new price is **$458.58** as shown below.
-
-<ImagePopup src="/images/settings/exchange-output.png" alt="Exchange Rate Output" />
-
-So, by following these steps, you can create an **Exchange Rate** in Bagisto.
+To update the rates on a schedule instead, see [Schedule automatic updates](../configure/exchange-rates-configurations.md#schedule-automatic-updates).

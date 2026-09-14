@@ -16,7 +16,7 @@ Bagisto comes with a default root category, i.e., Root, but you can also create 
 
 3. Under **General**, enter the **Name**, **Position** and **Description**, and add the category images.
 
-4. Pick where the category sits under **Parent Category**. From **Bagisto v2.4.9** this tree is drawn with plain connector guides instead of folder and file icons, matching the permission tree on the role page.
+4. Pick where the category sits under **Parent Category**.
 
 5. Choose the **Display Mode**. Display mode is about which content detail is visible on the category page. There are three options:
 

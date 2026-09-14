@@ -35,7 +35,7 @@ Click **Save Configuration**, then open the storefront footer to see the line.
 
 These rules improve perceived performance by prefetching or prerendering pages intelligently.
 
-From **Bagisto v2.4.9**, speculation rules are **turned off by default**. They have the browser fetch pages nobody has opened yet, which costs bandwidth and shows up as traffic on pages that were never visited, so a store now opts in instead of opting out.
+Speculation rules are **turned off by default**. They have the browser fetch pages nobody has opened yet, which costs bandwidth and shows up as traffic on pages that were never visited, so a store now opts in instead of opting out.
 
 <ImagePopup src="/images/configure/contentspec-default.png" alt="Speculation Rules Disabled By Default" />
 

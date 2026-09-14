@@ -1,41 +1,39 @@
 # Locales
 
-To display your website in a different language, you need to set the Locale in Bagisto. Having more than one language for your website can improve the shopping experience for your customers.
+A locale is a language your storefront can be shown in. Create the locale here, then turn it on for the channels that should offer it. Shoppers can then switch the storefront to that language.
 
-### Creating a locale
+## Create a locale
 
 1. Go to **Settings >> Locales**.
+2. Click **Create Locale**. The **Create Locale** form opens.
+3. Enter the **Code**, such as `ko` for Korean.
+4. Enter the **Name**, such as **Korean**.
+5. Choose the **Direction**: **LTR** for languages written left to right, or **RTL** for languages written right to left, such as Arabic.
+6. Optionally, upload a **Locale Logo**, such as the flag of the language.
+7. Click **Save Locale**.
 
-2. Click **Create Locale**, as shown below.
+   <ImagePopup src="/images/settings/create-locale.png" alt="Create Locale form for Korean" />
 
-   <ImagePopup src="/images/settings/locales.png" alt="Locales" />
+The message *Locale created successfully.* appears and the locale is added to the list.
 
-3. Fill in the following fields:
+| Field | What to enter |
+|---|---|
+| **Code** | A unique code for the language, such as `ko` or `pt_BR`. Start with a letter and use only letters, numbers and underscores. You can't change the code later. |
+| **Name** | The name of the language. |
+| **Direction** | The direction the language is written in: **LTR** (left to right) or **RTL** (right to left). |
+| **Locale Logo** | An optional image for the language, such as a flag, shown beside the language in the storefront header's language menu. Use a PNG, JPEG or JPG image of 24 × 16 px. |
 
-   - **Code** – Every language has its unique code.
+## Offer the locale on a channel
 
-   - **Name** – Name of the language.
+1. Go to **Settings >> Channels** and click the edit icon of the channel.
+2. In **Currencies and Locales**, select the locale under **Locales**.
+3. To make it the language the storefront opens in, choose it as the **Default Locale**.
+4. Click **Save Channel**.
 
-   - **Direction** – Add the direction in which your language works: **LTR** (left to right) or **RTL** (right to left).
+Shoppers can now choose the language on that channel's storefront. See [Channels](./channels.md) for the other channel settings.
 
-   - **Locale Logo** – Add the logo of your language.
+Adding a locale doesn't translate your content. Open your products, categories and CMS pages, switch to the new locale in the admin panel, and enter the translated text.
 
-4. Click **Save Locale**, as shown in the below image.
+## Edit or delete a locale
 
-   <ImagePopup src="/images/settings/new-locale.png" alt="New Locale" />
-
-5. The new **Locale** is listed, as shown below.
-
-   <ImagePopup src="/images/settings/locale-grid.png" alt="Locale Grid" />
-
-### Enabling the locale on a channel
-
-1. Go to **Settings >> Channels** and open the channel.
-
-2. Under **Currencies and Locales**, select your new language in the **Locales** field.
-
-3. Click **Save Channel**, as shown in the image below.
-
-   <ImagePopup src="/images/settings/locale-channel.png" alt="Locale Channel" />
-
-So, by following these steps, you can create **Locales** in Bagisto and make your website available in your desired language.
+On **Settings >> Locales**, click the edit icon of a locale to change it, or the delete icon to remove it. A store must keep at least one locale.
