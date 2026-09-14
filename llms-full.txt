@@ -6,42 +6,46 @@ A reference for merchants and store administrators working in the Bagisto admin 
 
 # Introduction
 
-[Bagisto](https://bagisto.com/en/) is a free and open-source eCommerce platform that lets businesses launch and run modern online stores with ease. Released under the MIT license, it is fully customizable, so every part of the storefront and the admin experience can be adapted to the needs of your business.
+[Bagisto](https://bagisto.com/en/) is a free, open-source eCommerce platform for building and running online stores. It is released under the MIT license and built on the [Laravel](https://laravel.com/) framework, with [Vue.js](https://vuejs.org/) and [Tailwind CSS](https://tailwindcss.com/) powering a fast, responsive admin panel and storefront.
 
-The platform is built on top of the reliable [Laravel](https://laravel.com/) framework and uses [Vue.js](https://vuejs.org/) and [Tailwind CSS](https://tailwindcss.com/) on the front end. Together they provide a clean, responsive admin interface and a smooth shopping experience for your customers.
+This guide is for merchants and store administrators. It shows you how to set up and run a Bagisto store from the admin panel, with no coding required. If you are building extensions, integrations or themes, see the [developer documentation](https://devdocs.bagisto.com/) instead.
 
-From a single dashboard, you can manage your catalog, inventory, customers, orders, shipments, and marketing campaigns, while keeping full control over how your store looks and behaves.
+## What you can do with Bagisto
 
-## Key Features
+- **Sell any kind of product** – simple, configurable, virtual, downloadable, grouped, bundle and booking products, organized with categories, attributes and attribute families.
+- **Run several storefronts from one admin panel** – each channel has its own domain, theme, root category, languages and currencies.
+- **Sell internationally** – 22 languages with right-to-left support, multiple currencies and exchange rates.
+- **Manage stock across locations** – track inventory across warehouses and stores.
+- **Handle every order** – invoices, shipments, refunds, returns (RMA) and EU withdrawal requests.
+- **Promote your store** – catalog and cart rules, coupons, email campaigns, sitemaps and search optimization.
+- **Create content with Generative AI (Magic AI)** – draft product descriptions, generate product images, translate reviews and more.
+- **Design your storefront** – choose a theme for each channel and build its pages from sections with a live preview.
+- **Keep your team secure** – admin users, roles with granular permissions and two-factor authentication.
+- **Measure performance** – sales, customer and product reports.
 
-* **Product Catalog** – Simple, configurable, virtual, grouped, downloadable, bundle, and booking products, organized with categories, attributes, and attribute families.
-* **Inventory Management** – Multiple inventory sources with stock tracking across warehouses and store locations.
-* **Order Management** – End-to-end order processing, including invoices, shipments, refunds, and cancellations.
-* **Customer Management** – Customer accounts, groups, addresses, and product reviews.
-* **Multi Channel & Multi Store** – Run several stores or brands from one installation, each with its own theme, catalog, and settings.
-* **Multi Currency & Multi Locale** – Sell worldwide with built-in currency and exchange rate handling, translations for 22 locales, and full right-to-left (RTL) support.
-* **Payment & Shipping Methods** – Built-in payment and shipping options that can be extended with your own integrations.
-* **Marketing Tools** – Cart price rules, catalog price rules, coupons, email campaigns, and abandoned cart recovery.
-* **Generative AI** – [Generative AI (Magic AI)](../generative-ai/introduction.md) is built in: it writes product and page copy, generates product images, translates reviews, lets shoppers search by photo and personalises the order confirmation, using the AI provider you choose. The storefront also exposes its actions to AI shopping agents in browsers that support them, the first step toward agentic commerce.
-* **CMS Pages** – Create and manage static content pages for your storefront.
-* **Access Control** – Admin users, roles, and granular permissions for your team.
-* **Reporting** – Sales, customer, product, and visitor reports to track how your store is performing.
+## How this guide is organized
 
-## Working with the Listing Grids
+| Section | What it covers |
+|---|---|
+| **Getting Started** | This introduction, the [command palette](./command-palette.md) and [two-factor authentication](../authentication/2fa-authentication.md). |
+| [Generative AI](../generative-ai/introduction.md) | The AI features built into Bagisto and how to use each one. |
+| [Theme](../appearance/themes.md) | Choosing a theme and customizing your storefront with sections. |
+| [Store Setup](../settings/channels.md) | Channels, languages, currencies, inventory, taxes, team access and data imports. |
+| [Configure](../configure/weight-unit.md) | Store-wide settings, from checkout and email to search engines and caching. |
+| [Catalog](../category/create-category.md) | Categories, attributes and every product type. |
+| [Customers](../customer/create-customer.md) | Customer accounts, groups, group pricing and reviews. |
+| [Sales](../orders/create-order.md) | Orders, invoices, shipments, refunds, returns, and shipping and payment methods. |
+| [Marketing](../marketing/cart-rules.md) | Promotions, email communications and search engine optimization. |
+| [CMS](../cms/create-cms.md) | Content pages such as About Us or your returns policy. |
+| [Reporting](../reporting/sales-report.md) | Sales, customer and product reports. |
 
-Most admin screens are listing grids — products, orders, customers, imports, and so on. They all share the same header, search box, **Filter** control, and pagination.
+The extensions — [B2B Marketplace](../b2b-marketplace/introduction.md), [Multi Tenant Ecommerce](../multi-tenant-ecommerce/introduction.md), the [B2B eCommerce Platform](../b2b-ecommerce-platform/introduction.md) and the [Native Mobile App](../open-source-mobile-app/open-source-mobile-app.md) — are covered at the end of the guide.
 
-On a small screen, grids that define their own layout, such as **Catalog >> Products**, are shown as cards instead of a wide table. The column header is dropped there, because **Filter** and **Sort By** are reachable from the bar fixed to the foot of the screen. Grids that use the default layout keep the table and scroll sideways.
+## Before you begin
 
-<ImagePopup src="/images/getting-started/mobile-datagrid.png" alt="Admin Listing Grid on Mobile" />
+You manage your store from the admin panel. On a standard installation it is at `/admin` on your store's domain, for example `https://your-store.com/admin`; whoever installed the store can move it to a different path.
 
-While a grid is loading, the placeholders match the grid they stand in for on both desktop and mobile, so the layout no longer shifts once the rows arrive.
-
-## Finding your way around
-
-Press **Ctrl + K** (**⌘ K** on a Mac) on any admin page to open the [command palette](./command-palette.md) and jump to a menu item, a configuration screen, an action or a record by typing part of its name.
-
-Whether you are starting a small store or scaling a large catalog across multiple markets, Bagisto gives you the tools to build and grow your online business.
+Press **Ctrl + K** (**⌘ K** on a Mac) on any admin page to open the [command palette](./command-palette.md) and jump straight to a menu item, a configuration screen, an action or a record.
 
 # Command Palette
 
@@ -114,466 +118,946 @@ This feature gives an extra level of security by asking admins to confirm their 
 
 Once done, Two-Factor Authentication is enabled for your account.
 
+# Generative AI (Magic AI)
+
+<div class="feature-hero feature--ai">
+  <span class="feature-hero__eyebrow">Built into Bagisto</span>
+  <p class="feature-hero__lead">Write product content, create product images, translate reviews and personalize order confirmations with the AI provider you choose. Branded <strong>Magic AI</strong> in the admin panel, it is part of Bagisto itself, with nothing extra to install.</p>
+  <div class="feature-hero__actions">
+    <a class="feature-hero__btn feature-hero__btn--primary" href="/configure/magic-ai.html">Set up Generative AI</a>
+    <a class="feature-hero__btn feature-hero__btn--ghost" href="#what-you-can-do">Explore the features</a>
+  </div>
+  <ul class="feature-hero__chips" aria-label="Supported AI providers">
+    <li>OpenAI</li>
+    <li>Anthropic</li>
+    <li>Gemini</li>
+    <li>Groq</li>
+    <li>xAI</li>
+    <li>DeepSeek</li>
+    <li>Mistral</li>
+    <li>Ollama</li>
+  </ul>
+</div>
+
+## What you can do
+
+<div class="feature-cards feature--ai">
+  <a class="feature-card" href="/generative-ai/generate-content.html">
+    <span class="feature-card__icon feature-card__icon--text" aria-hidden="true"></span>
+    <span class="feature-card__title">Generate text content</span>
+    <span class="feature-card__desc">Draft product and category descriptions, CMS pages and email templates from a prompt, right in the editor.</span>
+    <span class="feature-card__tag">Admin panel</span>
+  </a>
+  <a class="feature-card" href="/generative-ai/generate-images.html">
+    <span class="feature-card__icon feature-card__icon--image" aria-hidden="true"></span>
+    <span class="feature-card__title">Generate product images</span>
+    <span class="feature-card__desc">Create images from a written description, in the size and quality you choose, and keep the ones you like.</span>
+    <span class="feature-card__tag">Admin panel</span>
+  </a>
+  <a class="feature-card" href="/generative-ai/image-search.html">
+    <span class="feature-card__icon feature-card__icon--camera" aria-hidden="true"></span>
+    <span class="feature-card__title">AI image search</span>
+    <span class="feature-card__desc">Shoppers search with a photo. The model describes what is in it, and the store finds matching products.</span>
+    <span class="feature-card__tag">Storefront</span>
+  </a>
+  <a class="feature-card" href="/generative-ai/review-translation.html">
+    <span class="feature-card__icon feature-card__icon--translate" aria-hidden="true"></span>
+    <span class="feature-card__title">Review translation</span>
+    <span class="feature-card__desc">Shoppers read any product review in their own language with one click on <strong>Translate</strong>.</span>
+    <span class="feature-card__tag">Storefront</span>
+  </a>
+  <a class="feature-card" href="/generative-ai/checkout-message.html">
+    <span class="feature-card__icon feature-card__icon--message" aria-hidden="true"></span>
+    <span class="feature-card__title">Personalized checkout message</span>
+    <span class="feature-card__desc">Thank each customer on the order confirmation page with a short message about what they bought.</span>
+    <span class="feature-card__tag">Storefront</span>
+  </a>
+  <a class="feature-card" href="/configure/magic-ai.html">
+    <span class="feature-card__icon feature-card__icon--settings" aria-hidden="true"></span>
+    <span class="feature-card__title">Configuration</span>
+    <span class="feature-card__desc">Switch Generative AI on, connect your providers and choose the model each feature uses.</span>
+    <span class="feature-card__tag">Configure &gt;&gt; Magic AI</span>
+  </a>
+</div>
+
+## How it works
+
+<ol class="feature-steps feature--ai">
+  <li><span class="feature-steps__title">Connect a provider</span>Add an API key for OpenAI, Anthropic, Gemini, Groq, xAI, DeepSeek or Mistral, or the address of your own Ollama server.</li>
+  <li><span class="feature-steps__title">Switch on the features</span>Choose the features you want, the providers admins can pick from, and the model each storefront feature runs on.</li>
+  <li><span class="feature-steps__title">Review, then apply</span>Admin features show their result in a dialog first. Nothing is added to your store until you click <strong>Apply</strong>.</li>
+</ol>
+
+- **Your provider, your model.** In the admin panel you pick a model each time you generate. Each storefront feature uses the model you set for it on each channel. Ollama runs open models on your own server, so requests to it stay on your own infrastructure.
+- **Admin features suggest, you decide.** Generated text and images go into the product, page or template only when you click **Apply**.
+- **Storefront features respond to the shopper.** A photo is analyzed when the shopper searches with it, a review is translated when they click **Translate**, and the checkout message is written when the order confirmation page opens.
+
+## Before you start
+
+All settings live under **Configure >> Magic AI**. Follow [Generative AI Configuration](../configure/magic-ai.md) to switch the features on, connect a provider and choose models, then open the page for the feature you want to use.
+
+## What it does not do
+
+Magic AI does not run the store by itself. It does not publish content, change prices, place orders or answer customers. Everything it produces in the admin panel is reviewed and applied by you, and on the storefront it only reacts to what the shopper does. Text and images from an AI model can be wrong or misleading, which is why the admin dialogs ask you to review the result before applying it.
+
+# Generate Text Content
+
+<div class="feature-meta feature--ai"><span class="feature-meta__primary">Generative AI</span><span>Admin panel</span></div>
+
+Text generation adds a **Magic AI** button to the toolbar of the rich-text editors in the admin. You describe what you need, pick a model, and the generated text is placed in the editor once you apply it. The button appears wherever the editor does:
+
+- **Product descriptions** — the **Description** and **Short Description** fields of a product under **Catalog >> Products**, and any other textarea attribute with the editor enabled.
+- **Category descriptions** — the **Description** field under **Catalog >> Categories**.
+- **CMS pages** — the page content under **CMS >> Pages**.
+- **Email templates** — the template content under **Marketing >> Communications >> Email Templates**.
+
+Before you start, switch **Text Generation** on and choose its providers, as described under [Enable the admin features](../configure/magic-ai.md#enable-the-admin-features).
+
+## Generating text
+
+1. Open the item, for example a product under **Catalog >> Products**.
+
+2. Click the **Magic AI** button in the toolbar of the description editor. The **AI Assistance** dialog opens.
+
+   <ImagePopup src="/images/generative-ai/description-magicai.png" alt="Magic AI button in the description editor" />
+
+3. Enter a **Prompt** describing what you want written, for example "Write a 120-word description of a full-grain leather wallet with an RFID lining, in a warm tone".
+
+4. Choose a **Model**. The list holds the text models of the providers enabled for text generation.
+
+5. Click **Generate**. The result appears under **Generated Content**.
+
+6. Read the result. If it is not right, change the prompt and click **Generate** again.
+
+7. Click **Apply** to place the text in the editor.
+
+   <ImagePopup src="/images/generative-ai/textgeneration.png" alt="Text generation dialog" />
+
+8. Edit the text as you would any other and save the item.
+
+## Writing a good prompt
+
+- Say what the text is for and how long it should be: a product description, a category introduction, a 200-word page.
+- Give the facts the model cannot know: material, sizes, what is in the box, the audience.
+- Ask for the tone you want: warm, technical, playful.
+- The dialog notes that AI-generated content may be misleading. Check names, numbers and claims before you apply the text.
+
+Each request is sent to the provider of the chosen model and is billed by that provider, except for models served by your own Ollama server.
+
+# Generate Product Images
+
+<div class="feature-meta feature--ai"><span class="feature-meta__primary">Generative AI</span><span>Admin panel</span></div>
+
+Image generation adds a **Magic AI** button beside **Add Image** in the admin's image uploader, so you can create images from a written description instead of uploading a file. It is most useful in the **Images** section of a product, and the same button appears in the other image uploaders of the admin, such as a category's logo and banner.
+
+Before you start, switch **Image Generation** on and choose its providers, as described under [Enable the admin features](../configure/magic-ai.md#enable-the-admin-features). Not every provider offers image models.
+
+## Generating images
+
+1. Open the product under **Catalog >> Products**.
+
+2. In the **Images** section, click **Magic AI** beside **Add Image**. The **AI Image Generation** dialog opens.
+
+3. Enter a **Prompt** describing the image you want, for example "A minimalist running shoe on a white background, studio lighting".
+
+4. Choose the **Number of Images** to generate.
+
+5. Choose the **Size**: **Square (1:1)**, **Portrait (2:3)** or **Landscape (3:2)**.
+
+6. Choose the **Quality**: **High**, **Medium** or **Low**.
+
+7. Choose a **Model**. The list holds the image models of the providers enabled for image generation.
+
+8. Click **Generate**.
+
+   <ImagePopup src="/images/generative-ai/image-generate.png" alt="Image generation dialog" />
+
+9. Click the images you want to keep. Click **Regenerate** to try again with the same settings.
+
+10. Click **Apply**. The images are added to the product like uploaded ones, so you can reorder them, set their alt text and file name, or remove them.
+
+    <ImagePopup src="/images/generative-ai/ai-images.png" alt="Generated product images" />
+
+11. Click **Save Product**.
+
+Higher quality and larger counts take longer and cost more at the provider. Generate one image at medium quality while you refine the prompt, then generate the final set.
+
+# AI Image Search
+
+<div class="feature-meta feature--ai"><span class="feature-meta__primary">Generative AI</span><span>Storefront</span></div>
+
+Shoppers can search your catalog with a photo instead of words. A camera icon in the storefront search bar opens the file picker; the shopper picks a photo and the store searches for matching products.
+
+With AI image search on, the model you chose describes what is in the photo, and the store searches for those keywords, so it recognizes far more kinds of products. With it off, the photo is still recognized, but by a simpler model that runs in the shopper's browser and knows fewer things.
+
+## Turning it on
+
+Image search has two switches: one that shows the camera icon, and one that hands the photo to the AI model.
+
+1. Go to **Configure >> Catalog >> Products**.
+2. In the **Settings** section, switch **Image Search Option** on.
+3. Click **Save Configuration**.
+4. Go to **Configure >> Magic AI >> Storefront Features**. If your store has more than one channel, choose the channel at the top of the page.
+5. In the **AI Image Search** section, switch **Enabled** on.
+6. Choose the **Model**.
+7. Click **Save Configuration**.
+
+The Magic AI master switch and the provider key must be in place first; see [Generative AI Configuration](../configure/magic-ai.md).
+
+## What the shopper sees
+
+1. The shopper clicks the camera icon in the search bar and chooses a photo. Only image files of up to 2 MB are accepted.
+2. The photo is analyzed and the search results page opens with the products that match what was found in it.
+
+The photo is sent to the provider of the chosen model so it can be described. If your privacy policy lists the services that process visitor data, add the provider there.
+
+# Review Translation
+
+<div class="feature-meta feature--ai"><span class="feature-meta__primary">Generative AI</span><span>Storefront</span></div>
+
+With review translation on, a **Translate** link appears under each product review on the storefront. Clicking it shows the review in the language of the store the shopper is browsing, so a review written in another language is still useful to them. The review itself is not changed; the translation is made when the shopper asks for it.
+
+## Turning it on
+
+1. Go to **Configure >> Magic AI >> Storefront Features**. If your store has more than one channel, choose the channel at the top of the page.
+2. In the **Review Translation** section, switch **Enabled** on.
+3. Choose the **Model**.
+4. Click **Save Configuration**.
+
+The API key of the chosen model's provider must be saved first; see [Generative AI Configuration](../configure/magic-ai.md). Unlike the other storefront features, review translation is controlled by this switch alone and keeps working when the general **Enabled** switch is off.
+
+## What the shopper sees
+
+1. The shopper opens a product page and scrolls to its reviews.
+2. Under a review, they click **Translate**. The link reads **Translating...** while the model works, and the translated text then replaces the original.
+
+<ImagePopup src="/images/generative-ai/review-magicai.png" alt="Translate link under a review" />
+
+The translation is into the locale the shopper has selected in the storefront, so a store that serves several languages translates each review into whichever one the visitor is using.
+
+# Personalized Checkout Message
+
+<div class="feature-meta feature--ai"><span class="feature-meta__primary">Generative AI</span><span>Storefront</span></div>
+
+After an order is placed, the order confirmation page shows a standard thank-you line. With this feature on, Bagisto asks the model to write a short message for that order, mentioning what the shopper bought, and shows it under the thank-you heading in place of the standard line. It gives the moment a personal touch without any work on your side.
+
+## Turning it on
+
+1. Go to **Configure >> Magic AI >> Storefront Features**. If your store has more than one channel, choose the channel at the top of the page.
+2. In the **Personalized Checkout Message** section, switch **Enabled** on.
+3. Choose the **Model**.
+4. Click **Save Configuration**.
+
+The Magic AI master switch and the provider key must be in place first; see [Generative AI Configuration](../configure/magic-ai.md).
+
+## What the shopper sees
+
+The message is written when the confirmation page opens, right after the order is placed. It is not stored with the order, so reloading the page asks the model again and the wording may differ. If the provider cannot be reached, the page shows its standard thank-you line and the order is unaffected.
+
+<ImagePopup src="/images/generative-ai/personalized-chckout-message.png" alt="Personalized message on the order confirmation page" />
+
+Because the text is generated for each order, wording varies from one order to the next. It draws only on the order itself, such as the items bought, and does not use anything the shopper has not shared with the store. Each confirmation page view is one request to the provider.
+
+# Themes & Sections
+
+<div class="feature-hero feature--theme">
+  <span class="feature-hero__eyebrow">Storefront design</span>
+  <p class="feature-hero__lead">Choose the theme each channel uses, then build its storefront from sections such as carousels, banners, content blocks and footer links, with a live preview beside you. Nothing reaches shoppers until you publish.</p>
+  <div class="feature-hero__actions">
+    <a class="feature-hero__btn feature-hero__btn--primary" href="#themes">Browse themes</a>
+    <a class="feature-hero__btn feature-hero__btn--ghost" href="#sections">Customize sections</a>
+  </div>
+</div>
+
+<div class="feature-cards feature--theme">
+  <a class="feature-card" href="#themes">
+    <span class="feature-card__icon feature-card__icon--layout" aria-hidden="true"></span>
+    <span class="feature-card__title">Themes</span>
+    <span class="feature-card__desc">See the themes installed on your store, activate one for each channel and find more in the theme marketplace.</span>
+    <span class="feature-card__tag">Appearance &gt;&gt; Themes</span>
+  </a>
+  <a class="feature-card" href="#the-editor">
+    <span class="feature-card__icon feature-card__icon--eye" aria-hidden="true"></span>
+    <span class="feature-card__title">Live section editor</span>
+    <span class="feature-card__desc">Reorder, switch on or off, duplicate and edit sections while a live preview shows the result on desktop, tablet or mobile.</span>
+    <span class="feature-card__tag">Customize</span>
+  </a>
+  <a class="feature-card" href="#section-types">
+    <span class="feature-card__icon feature-card__icon--blocks" aria-hidden="true"></span>
+    <span class="feature-card__title">Section types</span>
+    <span class="feature-card__desc">Product and category carousels, image sliders, static content, footer links and service promises.</span>
+    <span class="feature-card__tag">Six built-in types</span>
+  </a>
+</div>
+
+The appearance of your storefront defines its look and feel, and is a key factor
+in the first impression it makes on a visitor.
+
+Themes and sections have their own area in the admin panel, **Appearance**,
+separate from **Settings**. It holds two things: the **themes** available to
+your store, and the **sections** a theme's storefront is built from.
+
+## Themes
+
+Go to **Appearance >> Themes** to see every theme, grouped so you can tell at a
+glance which are ready to use:
+
+- **My Themes** — themes installed on your store. Each shows whether it is
+  active, and on which channels.
+- **Buy Themes** — themes available from the marketplace, with links to preview
+  or purchase them.
+
+<ImagePopup src="/images/appearance/themes.png" alt="Themes" />
+
+From an installed theme you can:
+
+- **Customize** — open the section editor for that theme.
+- **Activate** — apply the theme to one or more channels. Before it is applied,
+  you are shown what the change affects.
+
+## Sections
+
+A section is one block of the storefront — a product carousel, a banner slider, a
+footer, and so on. Sections belong to a **theme** and a **channel**, so the same
+theme customized on two channels keeps two independent sets.
+
+Open **Appearance >> Themes**, then **Customize** on the theme you want to edit.
+
+### The editor
+
+The editor shows the list of sections on the left and a live storefront preview
+on the right. Selecting a section opens its fields; the preview updates as you
+edit, so you can see the result before anyone else does.
+
+- **Reorder** — drag a section by its handle to change where it appears.
+- **Switch on or off** — use the toggle on the row.
+- **Duplicate** or **Delete** — from the row's menu. Duplicating copies the
+  section with everything configured in it, which is the quickest way to build a
+  second carousel that differs in one filter. The copy is placed just below the
+  original, named with **Copy** at the end, and starts switched off and unsaved
+  until you publish it. Deleting asks you to confirm and
+  cannot be undone — to take a section off the storefront and keep it, switch it
+  off instead.
+- **Change locale or channel** — from the selectors at the top, when your store
+  has more than one. Each combination is edited separately.
+- **Change device** — preview the storefront at desktop, tablet or mobile width.
+
+<ImagePopup src="/images/appearance/section-editor.png" alt="Section Editor" />
+
+The footer links section is pinned to the bottom of the page, so it has no drag
+handle and cannot be duplicated. Everything else can be moved freely.
+
+<ImagePopup src="/images/appearance/section-actions.png" alt="Duplicate and Delete on a section row" />
+
+### Nothing goes live until you publish
+
+Every change is held as an **unsaved change** until you publish it. This applies
+to everything: editing content, switching a section on or off, and reordering.
+
+The header shows how many sections are holding unsaved changes, and each affected
+row is marked. From there you can:
+
+- **Publish** — send the changes to the storefront.
+- **Discard** — throw them away and return to what is currently live.
+
+A newly created section is switched off and counts as unsaved, so an empty
+section is never shown to shoppers before it has been built.
+
+### Creating a section
+
+1. In the editor, click the **+** button beside the section list.
+2. Choose the **Type** and enter a **Name**.
+3. Click **Save Section**.
+
+<ImagePopup src="/images/appearance/create-section.png" alt="Create Section" />
+
+4. The section is added, switched off, and opened for editing. Fill in its
+   fields.
+5. Click **Publish** when you are ready for it to appear.
+
+## Section types
+
+### Product Carousel
+
+A scrollable strip of products, used for the collections on your home page.
+
+**Title:** The heading shown above the carousel.
+
+**Filters:** Which products appear, and in what order. Click **Add Filter**, then
+choose the filter and its value:
+
+- **Sort** — the order products are shown in, using the same sort options your
+  storefront listing offers.
+- **Limit** — how many products the strip holds.
+- **Category ID** — restrict the strip to one category. Categories are listed by
+  their full path, so two categories sharing a name can be told apart.
+- **Featured** — set to **Yes** to show only featured products.
+- **New** — set to **Yes** to show only products marked as new.
+
+Once every available filter has been added, the editor says so rather than
+offering an empty row. To drop a filter, use the bin beside it.
+
+<ImagePopup src="/images/appearance/product-carousel.png" alt="Product Carousel section fields" />
+
+### Category Carousel
+
+A scrollable strip of categories, so shoppers can jump straight into a
+department.
+
+**Filters:** Which categories appear, and in what order:
+
+- **Sort** — **Asc** or **Desc**.
+- **Limit** — how many categories the strip holds.
+- **Parent ID** — show the children of one or more chosen categories. Pick
+  **Root** to show your top-level departments.
+
+<ImagePopup src="/images/appearance/category-carousel.png" alt="Category Carousel section fields" />
+
+### Image Carousel
+
+The banner slideshow at the top of your storefront. Click **Add Slider** to add a
+slide at a time, each with:
+
+**Slider Image:** The image itself. A resolution of **1920 × 700** is
+recommended, and JPEG, JPG, PNG and WEBP files are accepted.
+
+**Image Title:** The heading shown over the slide.
+
+**Link:** Where a shopper who clicks the slide is taken.
+
+Slides play in the order they are listed, and you can drag them to change it.
+
+<ImagePopup src="/images/appearance/image-carousel.png" alt="Image Carousel section fields" />
+
+### Static Content
+
+A free-form block of your own markup, for an announcement strip or a promotional
+band between two carousels.
+
+**HTML:** The content itself. Use **Add Media** to upload an image and drop it
+into the markup.
+
+**CSS:** Styles for the block. They are added to the whole page, not just this
+block, so give your markup its own class and start every rule with it, for
+example `.home-offer h1 { ... }`, or the styles will change other parts of the
+storefront too.
+
+The HTML is cleaned before it is saved, so scripts, frames and forms are
+stripped — a block that relies on them will not behave as written.
+
+<ImagePopup src="/images/appearance/static-content.png" alt="Static Content section fields" />
+
+### Footer Links
+
+The link columns in your storefront footer. Click **Add Column** to add a
+column, then **Add Link** inside it, and give each link a **Title** — the
+wording a shopper reads — and a **URL**. Columns and the links inside them can
+be dragged into a different order. The default theme lays out as many columns as
+you add; a theme you install may limit the number.
+
+A channel shows **one footer links section**, so once a channel has one, the type
+is no longer offered when you create a section.
+
+### Services Content
+
+The service promises shown across the storefront — free delivery, easy returns,
+and similar. Click **Add Services** to add an entry, each with:
+
+**Service Icon:** The name of the icon shown beside the promise, typed as text,
+such as `icon-truck` for delivery or `icon-support` for help.
+
+**Title:** The promise itself, kept to a few words.
+
+**Description:** A single line of supporting detail.
+
+<ImagePopup src="/images/appearance/services-content.png" alt="Services Content section fields" />
+
+Because this section and the footer are drawn on every page rather than just the
+home page, publishing a change to either refreshes the whole storefront cache.
+
+### Types added by a theme
+
+The six types above are the ones every theme offers. A theme you install from
+the marketplace or have built for you can add types of its own, such as a
+testimonial slider or a brand strip. They appear in the same **+** list when
+that theme is being customized, with their own fields, and are edited and
+published exactly like the built-in types. If a type you expect is missing from
+the list, check that the theme it belongs to is the one you are customizing.
+
+## Upgrading from an earlier version
+
+If you used **Settings >> Themes** before, that screen has moved. Theme
+customizations are now sections, and they live under **Appearance**. Existing
+customizations are carried over automatically — you do not need to recreate them.
+
 # Channels
 
-A channel is one storefront: its own domain, theme, root category, locales and currencies. One Bagisto installation can run several channels from the same admin, so you can sell the same catalog under different brands or in different markets.
+A channel is a storefront. Each channel has its own web address, theme, root category, languages, currencies, logo and home page SEO, and you manage every channel from the same admin panel. Use channels to run separate stores for different brands, regions or markets on one Bagisto installation.
 
-## Creating a channel
+Every store starts with one channel, **Default**. You can edit it and add more channels.
+
+## Before you start
+
+A channel uses records that you create elsewhere, so set these up first:
+
+- The [locales](./locales.md) and [currencies](./currencies.md) the channel offers.
+- The [inventory sources](./inventory-source.md) the channel sells stock from.
+- The root category whose subcategories form the storefront menu. See [Categories](../category/create-category.md).
+
+## Create a channel
 
 1. Go to **Settings >> Channels**.
 2. Click **Create Channel**.
 
-<ImagePopup src="/images/settings/channels.png" alt="Channels listing with the Create Channel button" />
+   <ImagePopup src="/images/settings/channels.png" alt="Channels page under Settings with the Create Channel button" />
 
-3. Fill in the sections described below.
-4. Click **Save Channel**.
+3. In **General**, enter the **Code**, **Name** and **Description**.
+4. Select the **Inventory Sources**, choose the **Root Category** and enter the **Hostname**.
 
-The new channel appears in the list, and its storefront answers on the hostname you entered.
+   <ImagePopup src="/images/settings/create-channel.png" alt="Create Channel page with the General section filled in for an Outlet Store channel" />
 
-<ImagePopup src="/images/settings/channel-grid.png" alt="Channels listing with the new channel" />
+5. In **Currencies and Locales**, select the **Locales** and choose the **Default Locale**.
+6. Select the **Currencies** and choose the **Default Currency**.
+7. In **Design**, choose the **Theme**, and upload a **Logo** and a **Favicon**.
 
-## General
+   <ImagePopup src="/images/settings/create-channel-design.png" alt="Design section with the Theme, Logo and Favicon fields" />
 
-**Code:** A short identifier for the channel, used internally; it cannot be changed later.
+8. In **Home page SEO**, enter the **Meta title**, **Meta keywords** and **Meta description**.
 
-**Name:** The channel's name, shown in the admin's channel switcher.
+   <ImagePopup src="/images/settings/create-channel-seo.png" alt="Home page SEO section with a search result preview" />
 
-**Description:** Notes about the channel for your own team.
+9. Optionally, set up [maintenance mode](#maintenance-mode) in the **Settings** section.
+10. Click **Save Channel**.
 
-**Inventory Sources:** The warehouses whose stock this channel sells.
+You return to **Channels**, where the message *Channel created successfully.* appears and the new channel is listed.
 
-**Root Category:** The category whose children form the storefront's menu.
+<ImagePopup src="/images/settings/channel-grid.png" alt="Channels page listing the new Outlet Store channel" />
 
-**Hostname:** The domain the storefront answers on, such as `https://shop.example.com`.
+## After you save
 
-<ImagePopup src="/images/settings/general.png" alt="General section of the channel form" />
+- When a visitor opens the channel's **Hostname**, Bagisto shows that channel's storefront. If an address doesn't match any channel, the first channel is shown.
+- A product appears on the channel's storefront only when the channel is selected in the product's **Channels** section.
+- Many settings under **Configure** can differ per channel. When your store has more than one channel, choose the channel at the top of the configuration page.
 
-## Currencies and locales
+## Channel fields
 
-**Locales:** The languages the storefront offers.
+### General
 
-**Default Locale:** The language shown until the shopper picks another.
+| Field | What to enter |
+|---|---|
+| **Code** | A unique code for the channel, such as `outlet`. Start with a letter and use only letters, numbers and underscores. You can't change the code later. |
+| **Name** | The channel name shown in the admin panel. |
+| **Description** | Optional notes about the channel. |
+| **Inventory Sources** | The inventory sources this channel sells stock from. Select at least one. |
+| **Root Category** | The category whose subcategories form the storefront menu. |
+| **Hostname** | The address of the storefront, such as `https://outlet.example.com`, with no slash at the end. Each channel needs its own hostname, and the domain must point to your Bagisto server. |
 
-**Currencies:** The currencies the storefront offers; the store's base currency is set under [Currencies](./currencies.md).
+### Currencies and Locales
 
-<ImagePopup src="/images/settings/currency-local.png" alt="Currencies and Locales section of the channel form" />
+| Field | What to enter |
+|---|---|
+| **Locales** | The languages shoppers can choose. Select at least one. |
+| **Default Locale** | The language the storefront opens in. Choose one of the selected locales. |
+| **Currencies** | The currencies shoppers can choose. Select at least one. |
+| **Default Currency** | The currency prices are shown in until the shopper chooses another. Choose one of the selected currencies. |
 
-## Design
+### Design
 
-**Theme:** The storefront theme this channel uses. Themes are activated per channel under **Appearance >> Themes**; see [Themes & Sections](../appearance/themes.md).
+| Field | What to enter |
+|---|---|
+| **Theme** | The storefront theme. You choose it here only when you create the channel. After that, the edit page shows the current theme with a link to **Appearance >> Themes**, where you change it. See [Themes & Sections](../appearance/themes.md). |
+| **Logo** | The logo shown in the storefront header. Recommended size: 192 × 50 px. |
+| **Favicon** | The small icon shown in the browser tab. Recommended size: 16 × 16 px. |
 
-<ImagePopup src="/images/settings/theme.png" alt="Design section of the channel form" />
+### Home page SEO
 
-**Logo:** The logo shown in the storefront header.
+The preview at the top of the section shows how the home page may appear in search results.
 
-<ImagePopup src="/images/settings/frontend-logos.png" alt="Logo upload" />
-
-<ImagePopup src="/images/settings/logo-outputs.png" alt="Logo shown on the storefront" />
-
-**Favicon:** The icon shown in the browser tab.
-
-<ImagePopup src="/images/settings/frontend-favicon.png" alt="Favicon upload" />
-
-<ImagePopup src="/images/settings/favicon-output.png" alt="Favicon shown in the browser tab" />
-
-## Home page SEO
-
-**Meta Title**, **Meta Keywords** and **Meta Description** describe the home page to search engines.
-
-<ImagePopup src="/images/settings/seo.png" alt="Home page SEO section of the channel form" />
+| Field | What to enter |
+|---|---|
+| **Meta title** | The title of the home page in search results. |
+| **Meta keywords** | Keywords for the home page, separated by commas. |
+| **Meta description** | The short summary shown under the title in search results. |
 
 ## Maintenance mode
 
-Maintenance mode takes the storefront offline while you make changes, without affecting the admin.
+Maintenance mode shows visitors a message instead of the channel's storefront while you work on it. The admin panel keeps working.
 
-**Message:** The text shown to visitors while the store is down.
+1. Go to **Settings >> Channels** and click the edit icon of the channel.
+2. In **Maintenance Mode**, enter the **Message** visitors should see.
+3. Optionally, in **Allowed IPs**, enter the IP addresses that can still browse the storefront, such as your office's, so you can check your changes. Separate several addresses with commas.
+4. Turn on **Status**.
+5. Click **Save Channel**.
 
-**Allowed IPs:** Addresses that can still reach the storefront, so you can check your changes.
+   <ImagePopup src="/images/settings/channel-maintenance-mode.png" alt="Maintenance Mode section with a message, an allowed IP address and Status turned on" />
 
-**Status:** Switch maintenance mode on or off.
+To bring the storefront back, turn **Status** off and save the channel. When you create a channel, the same fields are in the **Settings** section.
 
-<ImagePopup src="/images/settings/maintenance-mode.png" alt="Maintenance Mode section of the channel form" />
+## Edit or delete a channel
+
+On **Settings >> Channels**, click the edit icon of a channel to change it, or the delete icon to remove it. The store's default channel can't be deleted.
 
 # Locales
 
-To display your website in a different language, you need to set the Locale in Bagisto. Having more than one language for your website can improve the shopping experience for your customers.
+A locale is a language your storefront can be shown in. Create the locale here, then turn it on for the channels that should offer it. Shoppers can then switch the storefront to that language.
 
-### Creating a locale
+## Create a locale
 
 1. Go to **Settings >> Locales**.
+2. Click **Create Locale**. The **Create Locale** form opens.
+3. Enter the **Code**, such as `ko` for Korean.
+4. Enter the **Name**, such as **Korean**.
+5. Choose the **Direction**: **LTR** for languages written left to right, or **RTL** for languages written right to left, such as Arabic.
+6. Optionally, upload a **Locale Logo**, such as the flag of the language.
+7. Click **Save Locale**.
 
-2. Click **Create Locale**, as shown below.
+   <ImagePopup src="/images/settings/create-locale.png" alt="Create Locale form for Korean" />
 
-   <ImagePopup src="/images/settings/locales.png" alt="Locales" />
+The message *Locale created successfully.* appears and the locale is added to the list.
 
-3. Fill in the following fields:
+| Field | What to enter |
+|---|---|
+| **Code** | A unique code for the language, such as `ko` or `pt_BR`. Start with a letter and use only letters, numbers and underscores. You can't change the code later. |
+| **Name** | The name of the language. |
+| **Direction** | The direction the language is written in: **LTR** (left to right) or **RTL** (right to left). |
+| **Locale Logo** | An optional image for the language, such as a flag, shown beside the language in the storefront header's language menu. Use a PNG, JPEG or JPG image of 24 × 16 px. |
 
-   - **Code** – Every language has its unique code.
+## Offer the locale on a channel
 
-   - **Name** – Name of the language.
+1. Go to **Settings >> Channels** and click the edit icon of the channel.
+2. In **Currencies and Locales**, select the locale under **Locales**.
+3. To make it the language the storefront opens in, choose it as the **Default Locale**.
+4. Click **Save Channel**.
 
-   - **Direction** – Add the direction in which your language works: **LTR** (left to right) or **RTL** (right to left).
+Shoppers can now choose the language on that channel's storefront. See [Channels](./channels.md) for the other channel settings.
 
-   - **Locale Logo** – Add the logo of your language.
+Adding a locale doesn't translate your content. Open your products, categories and CMS pages, switch to the new locale in the admin panel, and enter the translated text.
 
-4. Click **Save Locale**, as shown in the below image.
+## Edit or delete a locale
 
-   <ImagePopup src="/images/settings/new-locale.png" alt="New Locale" />
-
-5. The new **Locale** is listed, as shown below.
-
-   <ImagePopup src="/images/settings/locale-grid.png" alt="Locale Grid" />
-
-### Enabling the locale on a channel
-
-1. Go to **Settings >> Channels** and open the channel.
-
-2. Under **Currencies and Locales**, select your new language in the **Locales** field.
-
-3. Click **Save Channel**, as shown in the image below.
-
-   <ImagePopup src="/images/settings/locale-channel.png" alt="Locale Channel" />
-
-So, by following these steps, you can create **Locales** in Bagisto and make your website available in your desired language.
+On **Settings >> Locales**, click the edit icon of a locale to change it, or the delete icon to remove it. A store must keep at least one locale.
 
 # Currencies
 
-Before launching your eCommerce website, you need to set up the currency in which you will be doing your business. The currency symbol will be visible in product prices, orders, invoices, transactions, etc. Here are the steps to add currency in Bagisto.
+Add each currency you want to show prices in, then turn it on for the channels that should offer it. A currency's settings control how its prices look, for example `$1,234.50` or `1.234,50 €`.
 
-### Creating a currency
+Product prices are entered in your store's base currency, which is chosen when Bagisto is installed. To show correct prices in another currency, also add an [exchange rate](./exchange-rates.md) for it.
+
+## Create a currency
 
 1. Go to **Settings >> Currencies**.
+2. Click **Create Currency**. The **Create New Currency** form opens.
+3. Enter the **Code** and **Name**, such as `KES` and **Kenyan Shilling**.
+4. Enter the **Symbol**, such as `KSh`.
+5. Enter the **Decimal**, **Group Separator** and **Decimal Separator**.
+6. Choose the **Currency Position**.
+7. Click **Save Currency**.
 
-2. Click **Create Currency**, as shown in the image below.
+   <ImagePopup src="/images/settings/create-currency.png" alt="Create New Currency form for the Kenyan Shilling" />
 
-   <ImagePopup src="/images/settings/create-currency.png" alt="Currency" />
+The message *Currency created successfully.* appears and the currency is added to the list.
 
-3. Enter the following details:
+| Field | What to enter |
+|---|---|
+| **Code** | The three-letter currency code, such as `USD`, `EUR` or `KES`. Each code can be used only once, and you can't change it later. |
+| **Name** | The name of the currency. |
+| **Symbol** | The symbol shown with prices, such as `$` or `KSh`. |
+| **Decimal** | How many digits to show after the decimal separator, such as `2`. |
+| **Group Separator** | The character between groups of thousands, such as the comma in `1,000`. Use a comma, dot, apostrophe or space. |
+| **Decimal Separator** | The character before the decimals, such as the dot in `10.50`. Use a comma or dot. |
+| **Currency Position** | Where the symbol appears: **Left** (`$10`), **Left With Space** (`$ 10`), **Right** (`10$`) or **Right With Space** (`10 $`). |
 
-   - **Code** – Code of the currency.
+## Offer the currency on a channel
 
-   - **Name** – Name of the currency.
+1. Go to **Settings >> Channels** and click the edit icon of the channel.
+2. In **Currencies and Locales**, select the currency under **Currencies**.
+3. To show prices in it by default, choose it as the **Default Currency**.
+4. Click **Save Channel**.
 
-   - **Symbol** – Symbol of the currency.
+Shoppers can now choose the currency on that channel's storefront.
 
-   - **Decimal** – Decimal value of the currency.
+## Edit or delete a currency
 
-   - **Group Separator** – It helps to separate the currency by ",". For example: 2,50,000.
-
-   - **Decimal Separator** – It helps to separate decimal values. For example, if you enter 3 decimal values, then the currency will be 200.000.
-
-   - **Currency Position** – It helps to position the currency (left, right, etc.).
-
-4. Click **Save Currency**.
-
-   <ImagePopup src="/images/settings/save-currency.png" alt="Save Currency" />
-
-5. The new **Currency** by the name of **Dirham** is listed, as shown below.
-
-   <ImagePopup src="/images/settings/new-currency.png" alt="New Currency" />
-
-### Enabling the currency on a channel
-
-1. Go to **Settings >> Channels** and open the channel.
-
-2. Under **Currencies and Locales**, select your new currency in the **Currencies** field.
-
-3. Click **Save Channel**, as shown in the image below.
-
-   <ImagePopup src="/images/settings/currency-channel.png" alt="Currency Channel" />
-
-So, by following these steps, you can create a **Currency** in Bagisto.
+On **Settings >> Currencies**, click the edit icon of a currency to change it, or the delete icon to remove it. A store must keep at least one currency.
 
 # Exchange Rates
 
-An Exchange Rate is the worth of one nation’s currency compared to another nation’s currency.  
+Product prices are entered in your store's base currency. An exchange rate converts those prices into another [currency](./currencies.md), so shoppers who switch currency see correct prices.
 
-For example: How many Euros are required to buy 1 Dollar? You require €0.88 to buy $1. This means the exchange rate of the Euro is 0.88 against the Dollar. Here we are going to discuss how to set the exchange rate in Bagisto.
+For example, if your base currency is the US Dollar and the exchange rate for the Euro is `0.92`, a $100.00 product is shown as €92.00. Without an exchange rate, the price isn't converted, so the same product would be shown as €100.00.
 
-### Creating an exchange rate
+## Create an exchange rate
 
 1. Go to **Settings >> Exchange Rates**.
+2. Click **Create Exchange Rate**.
 
-2. Click **Create Exchange Rate**, as shown in the image below.
+   <ImagePopup src="/images/settings/exchange-rates.png" alt="Exchange Rates page with the Update Exchange Rate and Create Exchange Rate buttons" />
 
-   <ImagePopup src="/images/settings/exchange-rate.png" alt="Exchange Rate" />
+3. Check the **Source Currency**. It shows your base currency and can't be changed.
+4. Choose the **Target Currency**.
+5. Enter the **Rate**: what one unit of the base currency is worth in the target currency.
+6. Click **Save Exchange Rate**.
 
-3. Enter the **Source Currency**, **Target Currency** and **Rate**.
+   <ImagePopup src="/images/settings/create-exchange-rate.png" alt="Create Exchange Rate form converting US Dollars to Euros at a rate of 0.92" />
 
-4. Click **Save Exchange Rate**, as shown below.
+The message *Exchange Rate Created Successfully* appears and the rate is listed. Each currency can have one exchange rate, and the base currency doesn't need one.
 
-   <ImagePopup src="/images/settings/exchangerate-configurations.png" alt="Exchange Rate Configuration" />
+## Update rates automatically
 
-5. The new **Exchange Rate** is listed, as shown below.
+Instead of entering rates by hand, you can fetch the latest rates from an exchange rate service.
 
-   <ImagePopup src="/images/settings/exchangerate-grid.png" alt="Exchange Rate Grid" />
+1. Choose the service and enter its API key under [Configure >> General >> Exchange Rates](../configure/exchange-rates-configurations.md).
+2. Go to **Settings >> Exchange Rates**.
+3. Click **Update Exchange Rate**.
 
-### Frontend
+Bagisto fetches the latest rate for each of your currencies and creates or updates its exchange rate. If the service can't be reached or the API key is wrong, an error message explains the problem.
 
-The **Exchange Rate** of **0.919** is applied successfully on the product price of **$499**. After applying this exchange rate, the new price is **$458.58** as shown below.
+To update the rates on a schedule instead, see [Schedule automatic updates](../configure/exchange-rates-configurations.md#schedule-automatic-updates).
 
-<ImagePopup src="/images/settings/exchange-output.png" alt="Exchange Rate Output" />
+# Inventory Sources
 
-So, by following these steps, you can create an **Exchange Rate** in Bagisto.
+An inventory source is a place where you keep stock, such as a warehouse or a shop. Bagisto tracks each product's quantity per source, so you can sell stock from several locations and choose where each shipment comes from.
 
-# Inventory Source
+Every store starts with one inventory source, **Default**.
 
-Multi-Warehouse Inventory is one of the unique features of Bagisto. Here we will explain how you can manage multi-warehouse inventory in Laravel eCommerce and provide reliable service to your customers.  
-
-Having a single inventory source can pose some restrictions for your eCommerce store.  
-
-For instance, suppose you have only one inventory in Delhi. A customer from Chennai places an order. Delivering that product from Delhi may result in delays, higher transportation costs, etc. However, if you have an inventory in Chennai, the product will reach the customer faster, cutting down time and shipping cost.  
-
-By using Multi-Warehouse Inventory, you can manage all inventory sources. In Bagisto, you can create as many inventory sources as needed and manage them seamlessly.
-
-### Creating an inventory source
+## Create an inventory source
 
 1. Go to **Settings >> Inventory Sources**.
+2. Click **Create Inventory Source**. The **Add Inventory Source** page opens.
+3. In **General**, enter the **Code**, **Name** and **Description**.
+4. In **Contact Information**, enter the **Name**, **Email**, **Contact Number** and **Fax** of the person responsible for the source.
+5. In **Source Address**, enter the **Country**, **State**, **City**, **Street** and **Postcode**.
+6. In **Settings**, enter the **Latitude**, **Longitude** and **Priority**.
+7. Turn on **Status**.
+8. Click **Save Inventory Sources**.
 
-2. Click **Create Inventory Source**, as shown below.
+   <ImagePopup src="/images/settings/create-inventory-source.png" alt="Add Inventory Source page filled in for a New York warehouse" />
 
-   <ImagePopup src="/images/settings/inventory-source.png" alt="Inventory Source" />
+The message *Inventory Source Created Successfully* appears and the new source is listed.
 
-3. Under **General**, enter the **Code**, **Name**, **Description**, **Latitude**, **Longitude** and **Priority**, and set the **Status** as active.
+| Field | What to enter |
+|---|---|
+| **Code** | A unique code for the source, such as `new_york`. Start with a letter and use only letters, numbers and underscores. |
+| **Name** | The name of the source, such as **New York Warehouse**. |
+| **Description** | Optional notes about the source. |
+| **Contact Information** | The contact person's **Name**, **Email** and **Contact Number**. **Fax** is optional. |
+| **Source Address** | The full address of the source. Every address field is required. |
+| **Latitude** and **Longitude** | Optional map coordinates of the source, such as `40.7484` and `-73.9857`. |
+| **Priority** | An optional number for ranking the source. If you leave it empty, `0` is saved. |
+| **Status** | Turn on to use the source. Only active sources appear on the product page. |
 
-   <ImagePopup src="/images/settings/inventory-configuration.png" alt="Inventory Configuration" />
+## Sell a source's stock on a channel
 
-4. Under **Contact Information**, enter the **Name**, **Email**, **Fax** and **Contact Number**.
-
-   <ImagePopup src="/images/settings/contact-info.png" alt="Contact Information" />
-
-5. Under **Source Address**, enter the address details such as country, street, state and city.
-
-   <ImagePopup src="/images/settings/source-address.png" alt="Source Address" />
-
-6. Click **Save Inventory Sources**. The newly created inventory source is listed, as shown below.
-
-   <ImagePopup src="/images/settings/inventory-output.png" alt="Inventory Output" />
-
-### Assigning the inventory source to a channel
-
-1. Go to **Settings >> Channels** and open the channel.
-
-2. In the **Inventory Sources** field, select the inventory sources for the channel. This is a multi-select field, so you can select several.
-
+1. Go to **Settings >> Channels** and click the edit icon of the channel.
+2. In **General**, select the source under **Inventory Sources**. You can select several sources.
 3. Click **Save Channel**.
 
-### Inventory Setting on the Product Page
+## Set a product's stock per source
 
 1. Go to **Catalog >> Products** and open the product.
-
-2. Under **Inventories**, enter the quantity for each inventory source.
-
+2. In **Inventories**, enter the quantity held at each source.
 3. Click **Save Product**.
 
-**Note:** If you do not enter any quantity, by default 0 is saved, and an inventory with 0 quantity will not be visible in the shipment page inventory options.  
+   <ImagePopup src="/images/settings/product-inventory.png" alt="Inventories section of a product with a quantity for the Default source" />
 
-<ImagePopup src="/images/settings/product-inventory.png" alt="Product Inventory" />
+**Pending Ordered Qty** is the quantity that has been ordered but not shipped yet. It is taken from the source's stock when the order is shipped, and becomes available for sale again if the order is canceled.
 
-### Inventory Setting on the Shipment Page
+## Ship from a source
 
-1. Go to **Sales >> Orders** and open the order.
+When you [create a shipment](../orders/create-shipment.md), choose the **Source** the items ship from. The shipment form shows the **Qty. Available** at that source, and you enter the **Qty. To Ship**.
 
-2. Click **Invoice** and create the invoice.
+## Edit or delete an inventory source
 
-3. Click **Ship**.
-
-4. For each ordered product, choose the inventory it should be delivered from in the **Source** field.
-
-   <ImagePopup src="/images/settings/inventory-setting.png" alt="Inventory Setting" />
-
-5. Enter the quantity to ship.
-
-6. Click **Create Shipment**.
-
-**Note:** You can enable only one inventory at a time. When one inventory is selected, the others are automatically disabled. For example, if you select **Noida Warehouse**, other inventories will be disabled.
-
-So, by following these steps, you can create and manage **Inventory Sources** in Bagisto.
+On **Settings >> Inventory Sources**, click the edit icon of a source to change it, or the delete icon to remove it. A store must keep at least one inventory source.
 
 # Taxes
 
-In e-commerce, various taxes are applied when purchasing products, and these rates can differ by country. Bagisto allows you to create and manage taxes efficiently.  
+Bagisto adds tax to an order using two things you set up under **Settings >> Taxes**:
 
-## Tax Rate
+- **Tax rates** – the percentage charged in a location, such as 8.875% in New York.
+- **Tax categories** – groups of tax rates that you assign to products.
+
+Create your tax rates first, then a tax category that includes them, and then assign the category to your products. At checkout, Bagisto applies the rates in the product's tax category that match the customer's address.
+
+How tax is calculated and displayed, such as which address is used and whether prices include tax, is set under [Configure >> Sales >> Taxes](../configure/taxes.md).
+
+## Create a tax rate
 
 1. Go to **Settings >> Taxes >> Tax Rates**.
-
 2. Click **Create Tax Rate**.
+3. Enter an **Identifier**, such as `US-NY`.
+4. Choose the **Country**.
+5. Choose the **State**, or leave it empty to use the rate in the whole country.
+6. Enter the **Rate** as a percentage, such as `8.875`.
+7. Optionally, in **Settings**, limit the rate to certain postcodes. See the table below.
+8. Click **Save Tax Rate**.
 
-   <ImagePopup src="/images/settings/tax-rate.png" alt="Tax Rate" />
+   <ImagePopup src="/images/settings/create-tax-rate.png" alt="Create Tax Rate page for a New York rate of 8.875%" />
 
-3. Enter the following fields:
+You return to **Tax Rates**, where the message *Tax rate created successfully.* appears and the new rate is listed.
 
-   - **Identifier**
-   - **Country**
-   - **State**
-   - **Zip Code**
-   - **Rate**
+| Field | What it does |
+|---|---|
+| **Identifier** | A unique name for the rate. Pick one that tells you the location, such as `US-NY`. |
+| **Country** | The country the rate applies to. |
+| **State** | The state the rate applies to. Leave it empty to apply the rate in every state of the country. |
+| **Rate** | The tax percentage, from 0 to 100. |
+| **Zip Code** | A single postcode the rate applies to. Leave it empty to apply the rate to every postcode. |
+| **Enable Zip Range** | Turn on to enter a **Zip From** and **Zip To** instead, and apply the rate to every postcode in that range. |
 
-   **Note:** You can also set a zip code range so that the tax applies only within that range.
-
-4. Click **Save Tax Rate**.
-
-   <ImagePopup src="/images/settings/save-tax-rate.png" alt="Save Tax Rate" />
-
-## Tax Categories
+## Create a tax category
 
 1. Go to **Settings >> Taxes >> Tax Categories**.
+2. Click **Create Tax Category**. The **Create Tax Category** form opens.
+3. Enter a **Code**, such as `standard_rate`. The code must be unique.
+4. Enter the **Name** and a **Description**.
+5. In **Tax Rates**, select the rates this category uses. To select more than one, hold **Ctrl** (**⌘** on a Mac) while you click.
+6. Click **Save Tax Category**.
 
-2. Fill in the following fields:
+   <ImagePopup src="/images/settings/create-tax-category.png" alt="Create Tax Category form with the US-NY tax rate selected" />
 
-   - **Code:** Enter a unique code for the tax category.
-   - **Name:** Enter the name of the tax category.
-   - **Description:** Enter a description.
-   - **Tax Rates:** Assign the tax rate.
+The message *Tax category created successfully.* appears and the new category is listed.
 
-3. Click **Save Tax Category**.
+## Assign the tax category to products
 
-   <ImagePopup src="/images/settings/save-category.png" alt="Save Tax Category" />
+1. Go to **Catalog >> Products** and open the product.
+2. In **General**, choose the **Tax Category**.
+3. Click **Save Product**.
 
-4. Assign the tax category when creating a product.
+   <ImagePopup src="/images/settings/product-tax-category.png" alt="Tax Category field in the General section of a product" />
 
-   <ImagePopup src="/images/settings/product-category.png" alt="Product Tax Category" />
-
-### Frontend
-
-1. On the checkout page, enter the billing address or sign in to your account and continue.
-
-2. Select the shipping method and continue.
-
-3. Select the payment method and continue.
-
-   <ImagePopup src="/images/settings/tax-front.png" alt="Tax Frontend" />
-
-The tax will appear on the product price in the frontend. For example, if a 20% tax is set, it will be applied to the product price at checkout.  
-
-This is how you can create **Taxes** in Bagisto.
+New products start with the **Product Default Tax Category** chosen under [Configure >> Sales >> Taxes](../configure/taxes.md), so set it to the category most of your products use.
 
 # Users
 
-Admin users are the people who sign in to the admin panel. Each user has one role, which decides what they can see and do; create the role first under [Roles](./roles.md).
+Users are the people who can sign in to the admin panel. Each user has one [role](./roles.md), which decides what they can see and do, so create the role before you add the user.
 
-## Creating a user
+## Create a user
 
 1. Go to **Settings >> Users**.
-2. Click **Create User**.
-
-<ImagePopup src="/images/settings/user.png" alt="Users listing with the Create User button" />
-
-3. Enter the user's **Name** and **Email**.
-4. Enter the **Password** and confirm it.
+2. Click **Create User**. The **Create User** form opens.
+3. Enter the user's **Name** and **Email**. The user signs in with this email address.
+4. Enter a **Password** of at least 6 characters, and enter it again in **Confirm Password**.
 5. Choose the **Role**.
-6. Optionally upload an **Image** for the user's avatar.
-7. Click **Save User**.
+6. Turn on **Status** so the user can sign in.
+7. Optionally, upload a profile image of 110 × 110 px in PNG or JPG format.
+8. Click **Save User**.
 
-<ImagePopup src="/images/settings/create-user.png" alt="Create user form" />
+   <ImagePopup src="/images/settings/create-user.png" alt="Create User form with the Administrator role and Status turned on" />
 
-The new user appears in the list and can sign in straight away with the email and password you set.
+The message *User created successfully.* appears and the user is listed. Share the email address and password with the user so they can sign in to the admin panel.
 
-<ImagePopup src="/images/settings/user-output.png" alt="Users listing with the new user" />
+If **Status** is off, the user can't sign in and sees the message *Your account is yet to be activated, please contact administrator.* Turn **Status** off to block a user's access without deleting the account.
+
+## Edit or delete a user
+
+On **Settings >> Users**, click the edit icon of a user to change their details, role or status, or the delete icon to remove them. You can't delete your own account or the last user.
 
 # Roles
 
-A role is a named set of permissions. Every admin user is assigned one role, so roles are how you decide which parts of the admin each member of your team can open.
+A role is a set of permissions. Every admin user has one role, so roles control which parts of the admin panel each person can open and what they can do there.
 
-## Creating a role
+Bagisto comes with the **Administrator** role, which has every permission. Create other roles for team members who need less access, such as someone who only handles orders.
+
+## Create a role
 
 1. Go to **Settings >> Roles**.
 2. Click **Create Role**.
-
-<ImagePopup src="/images/settings/role.png" alt="Roles listing with the Create Role button" />
-
-3. In **General**, enter the **Name** and **Description** of the role.
-
-<ImagePopup src="/images/settings/new-role.png" alt="New role form" />
-
-4. In **Access Control**, set **Permissions** to **All** to grant everything, or to **Custom** to pick individual permissions.
-5. With **Custom**, tick the permissions the role should have. Use the arrow beside a group to expand or collapse it; ticking a group selects everything under it, and the **Search permissions** box jumps straight to a permission by name.
-
-<ImagePopup src="/images/settings/access-control.png" alt="Access Control permission tree" />
-
+3. In **General**, enter the **Name** and **Description**.
+4. In **Access Control**, choose the **Permissions**: **All** gives the role every permission, and **Custom** lets you choose them.
+5. If you chose **Custom**, select each permission the role needs. Selecting a permission also selects the group it belongs to.
 6. Click **Save Role**.
 
-The new role appears in the list and can be assigned to users under **Settings >> Users**.
+   <ImagePopup src="/images/settings/create-role.png" alt="Create Role page for an Order Manager role with order, invoice and shipment permissions selected" />
 
-<ImagePopup src="/images/settings/role-grid.png" alt="Roles listing with the new role" />
+The message *Roles Created Successfully* appears and the role is listed. You can now choose it when you [create a user](./users.md).
 
-From Bagisto 2.4.9 the permission tree mirrors the admin menu, uses plain connector guides instead of folder icons, and lists **Bookings** under **Sales** as its own permission.
+## Find the right permissions
+
+- The permission tree follows the admin menu. Each group matches a menu item, such as **Sales** or **Catalog**, and holds the actions inside it, such as **Create**, **View** or **Edit**.
+- Click the arrow beside a group to expand or collapse it.
+- Type in **Search permissions** to find a permission by name.
+
+## Edit or delete a role
+
+On **Settings >> Roles**, click the edit icon of a role to change it, or the delete icon to remove it.
+
+- A role that is assigned to a user can't be deleted. Give those users another role first.
+- The last role can't be deleted.
+- If only one user has full access, a role can't be changed from **All** to **Custom**.
 
 # Data Transfer
 
-Data transfer imports products, customers and tax rates in bulk from a spreadsheet, so a large catalog does not have to be typed in one record at a time.
+Data transfer imports products, customers and tax rates in bulk from a file, so you don't have to enter a large catalog one record at a time. Once you start an import, Bagisto runs every step on its own, and a progress bar at the top of the page shows the step it has reached.
 
-From Bagisto 2.4.9, saving an import runs it through to the end on its own. Validation, image fetching, record creation, linking and indexing follow one another automatically, and a stepper at the top of the page shows the live progress of each phase.
+Every product type can be imported except downloadable products.
 
-## Creating an import
+## Create an import
 
 1. Go to **Settings >> Data Transfer >> Imports**.
 2. Click **Create Import**.
+3. Choose the **Type** of records to import: **Products**, **Customers** or **Tax Rates**.
+4. Click **Download Sample** and choose a format to get a file with the expected columns. Prepare your file in the same layout.
+5. Choose the **File**. CSV, XLS, XLSX and XML files are accepted.
+6. For products, choose where the **Product Images** named in your file are found. See [Product images](#product-images).
+7. In **Settings**, choose the **Action**, **Validation Strategy**, **Allowed Errors**, **Field Separator** and **Process In Queue**. See [Import settings](#import-settings).
 
-<ImagePopup src="/images/settings/import.png" alt="Imports listing with the Create Import button" />
+   <ImagePopup src="/images/settings/create-import.png" alt="Create Import page for a product import" />
 
-3. Choose the **Type** of records to import: products, customers or tax rates.
-4. Click **Download Sample** to get a file in the expected layout, and prepare your own file to match it.
-5. Choose the **File** (CSV, XLS, XLSX or XML).
-6. For products, choose where the **Product Images** named in the file are found; the options are described below.
-7. Choose the **Action**: create or update the records, or delete them.
-8. Set the remaining fields described below.
-9. Click **Import** and confirm the message *The import will start as soon as this is saved. Do you want to continue?*
+8. Click **Import**.
+9. In the message *The import will start as soon as this is saved. Do you want to continue?*, click **Agree**.
 
-<ImagePopup src="/images/settings/create-import.png" alt="Create Import form" />
+The import page opens and the import starts.
 
-Simple, configurable, virtual, bundle and grouped products can be imported; downloadable products cannot.
+## Import settings
 
-### The remaining fields
+| Field | What it does |
+|---|---|
+| **Action** | **Create/Update** adds new records and updates the ones that already exist. **Delete** removes the records listed in the file. |
+| **Validation Strategy** | **Stop on Errors** stops the import after validation if any row is invalid. **Skip Errors** imports the valid rows and leaves out the invalid ones. |
+| **Allowed Errors** | With **Skip Errors**, the number of invalid rows allowed before the import stops anyway. |
+| **Field Separator** | The character between columns in a CSV file, usually a comma. |
+| **Process In Queue** | Runs the import in the background with your store's queue workers, which suits large files. Your store must use the `database` or `redis` queue driver; otherwise, Bagisto asks you to change it. With this switch off, your browser runs the import in short steps. If you close the page, the import pauses, and it continues from the same step when you open the import again. |
 
-**Validation Strategy:** **Skip Errors** imports the valid rows and leaves the faulty ones out; **Stop on Errors** halts the import after validation if any row is invalid.
+## Product images
 
-**Allowed Errors:** With **Skip Errors**, the number of faulty rows the import tolerates before it stops anyway.
+A product file names each product's images in its **images** column. Choose where Bagisto finds them. Your choice is checked during validation, and a mismatch is reported as an error, so products aren't imported without their images.
 
-**Field Separator:** The character that separates columns in a CSV file, usually a comma.
+- **Image links in the file** (recommended): put the full `https://` address of each image in the **images** column. The images are downloaded before any record is written, so nothing has to be placed on the server first.
+- **Upload a ZIP of images**: upload one archive that contains every image, and put the file names in the **images** column. **Download sample images** gives you an archive that matches the sample file. If the import already has an archive, the page shows its name and how many images are ready; choosing a new archive replaces them.
+- **Images already on the server**: if you can place files on the server, put the images in a folder under the store's import directory and enter the folder name in **Images Directory Path**. The hint below the field shows the exact location.
 
-**Process In Queue:** Runs the import in the background. Validation and image downloading are spread across the store's queue workers, so a large file is not processed in one request. Your store needs a queue worker for this; if it is not set up to run jobs in the background, Bagisto asks you to change that before the import can start. With the switch off, the import runs in short browser-driven windows instead, so no single request runs long enough to time out; closing the page pauses the run at the phase it had reached, and reopening the import picks it up from there.
+Your choice is saved with the import, so it's restored when you edit the import.
 
-### Product images
+<ImagePopup src="/images/settings/import-image-source.png" alt="Product Images options on the Create Import page" />
 
-The images named in a product file can come from three places. Pick the one that matches your file; the choice is checked during validation, and a mismatch is reported as an error rather than importing every product without its images.
+## Follow the import
 
-- **Image links in the file** (recommended): put the full `https://` address of each image in the **images** column. Every link is fetched once, in a phase of its own, before any row is written, so nothing has to be placed on the server first.
-- **Upload a ZIP of images**: upload a single archive containing every image, and name the files inside it in the **images** column. **Download sample images** gives you an archive that matches the sample sheet. When you reopen an import that already has an archive, the page shows its name and how many images are ready; choosing a new archive replaces them.
-- **Images already on the server**: if someone can place files on the server, put the images in a folder under the store's import directory and enter that folder's name in **Images Directory Path**. The field's hint shows the exact location.
+The progress bar on the import page shows these steps:
 
-The method you pick is saved on the import, so reopening it restores the choice along with the value that went with it.
-
-<ImagePopup src="/images/settings/import-image-source.png" alt="Product Images source options" />
-
-## Following the import
-
-Once saved, the import runs on its own and the stepper shows which phase it is in:
-
-- **Validate** – the file is read and checked row by row, with a progress bar.
-- **Images** – every image link is fetched before any record is written. This phase appears only for **Image links in the file**; an archive or a server folder is read while the rows are written.
-- **Create / Delete** – the records are written, or removed when the action is **Delete**.
-- **Link** – relationships between the imported rows are resolved: configurable variants, grouped product associations, bundle options, booking data, and the related, cross-sell and up-sell links.
+- **Validate** – the file is read and each row is checked.
+- **Images** – the image links in the file are downloaded before any record is written. This step appears only when **Image links in the file** is selected.
+- **Create** or **Delete** – the records are written, or removed when the action is **Delete**.
+- **Link** – imported records are connected, such as configurable variants, grouped and bundle products, booking details, and related, cross-sell and up-sell products.
 - **Index** – price, inventory and search data are rebuilt.
 
-A delete run has no images to fetch and nothing to link, so those phases are not shown for it.
+Steps that don't apply are left out. For example, a delete import has no **Images** step.
 
-<ImagePopup src="/images/settings/import-stepper.png" alt="Import stepper showing the phases" />
+When every step is done, the message *Congratulations! Your import was successful.* appears with the number of records created, updated and deleted.
 
-If the file has errors, the run stops after validation and shows the total rows processed, the invalid rows and the error count, with a **Download Full Report** button for the complete list. With **Skip Errors**, the import can still proceed and the faulty rows are left out.
+<ImagePopup src="/images/settings/import-done.png" alt="Import page after a successful product import, with every step complete" />
 
-When every phase is complete, the summary confirms the result. If any batch does not complete, the import finishes the batches it can and reports how many did not, so you can check the error report and run the import again for those rows.
+The imported records appear under the matching menu, such as **Catalog >> Products**.
 
-<ImagePopup src="/images/settings/import-done.png" alt="Import summary after completion" />
+### If the file has errors
 
-The imported records are listed under the matching menu, for example **Catalog >> Products**.
+If validation finds errors, the page shows the **Total Rows Processed**, **Total Invalid Rows** and **Total Errors**. Click **Download Full Report** to see every error, then fix your file and import it again. With **Skip Errors**, the import can continue without the invalid rows.
 
-<ImagePopup src="/images/settings/import-output.png" alt="Imported products in the catalog" />
+If some batches don't finish, the import completes the others and tells you how many didn't, so you can check the error report and import those rows again.
 
-### Coming back to a running import
+### Come back to a running import
 
-You do not have to watch an import finish. Leave the page, and the row under **Settings >> Data Transfer >> Imports** carries a **View Progress** action for as long as the run is going; it opens the same stepper at the phase the import has reached. Once the run is finished, the action reads **Import** again, so the listing tells you at a glance whether anything is still in flight.
+You don't have to wait on the page. While an import is running, its row under **Settings >> Data Transfer >> Imports** has a **View Progress** action that opens the progress page. When the import is finished, the action changes back to **Import**.
 
 # Weight Unit
 
@@ -626,7 +1110,7 @@ Click **Save Configuration**, then open the storefront footer to see the line.
 
 These rules improve perceived performance by prefetching or prerendering pages intelligently.
 
-From **Bagisto v2.4.9**, speculation rules are **turned off by default**. They have the browser fetch pages nobody has opened yet, which costs bandwidth and shows up as traffic on pages that were never visited, so a store now opts in instead of opting out.
+Speculation rules are **turned off by default**. They have the browser fetch pages nobody has opened yet, which costs bandwidth and shows up as traffic on pages that were never visited, so a store now opts in instead of opting out.
 
 <ImagePopup src="/images/configure/contentspec-default.png" alt="Speculation Rules Disabled By Default" />
 
@@ -884,7 +1368,7 @@ Two features help you while you work in the admin: **Text Generation**, describe
 
 ## Enable the storefront features
 
-Three features run on the storefront: **AI Image Search**, **Review Translation** and **Personalized Checkout Message**. Each is set **per channel**, so switch channel at the top of the page to configure each store.
+Three features run on the storefront: **AI Image Search**, **Review Translation** and **Personalized Checkout Message**. Each is set **per channel**; when your store has more than one channel, choose the channel at the top of the page first.
 
 1. Open the **Storefront Features** page.
 2. In the **AI Image Search**, **Review Translation** and **Personalized Checkout Message** sections, switch **Enabled** on for each feature you want.
@@ -1699,7 +2183,7 @@ Bagisto comes with a default root category, i.e., Root, but you can also create 
 
 3. Under **General**, enter the **Name**, **Position** and **Description**, and add the category images.
 
-4. Pick where the category sits under **Parent Category**. From **Bagisto v2.4.9** this tree is drawn with plain connector guides instead of folder and file icons, matching the permission tree on the role page.
+4. Pick where the category sits under **Parent Category**.
 
 5. Choose the **Display Mode**. Display mode is about which content detail is visible on the category page. There are three options:
 
@@ -4360,384 +4844,6 @@ With the help of CMS (content management system), you can create and edit pages 
    <ImagePopup src="/images/cms/output.png" alt="CMS Page Output" />
 
 By this, you can create CMS pages in Bagisto.
-
-# Appearance
-
-The appearance of your storefront defines its look and feel, and is a key factor
-in the first impression it makes on a visitor.
-
-Appearance has its own area in the admin, separate from Settings. It holds two
-things: the **themes** available to your store, and the **sections** a theme's
-storefront is built from.
-
-## Themes
-
-Go to **Appearance >> Themes** to see every theme, grouped so you can tell at a
-glance which are ready to use:
-
-- **My Themes** — themes installed on your store. Each shows whether it is
-  active, and on which channels.
-- **Buy Themes** — themes available from the marketplace, with links to preview
-  or purchase them.
-
-<ImagePopup src="/images/appearance/themes.png" alt="Themes" />
-
-From an installed theme you can:
-
-- **Customize** — open the section editor for that theme.
-- **Activate** — apply the theme to one or more channels. Before it is applied,
-  you are shown what the change affects.
-
-## Sections
-
-A section is one block of the storefront — a product carousel, a banner slider, a
-footer, and so on. Sections belong to a **theme** and a **channel**, so the same
-theme customised on two channels keeps two independent sets.
-
-Open **Appearance >> Themes**, then **Customize** on the theme you want to edit.
-
-### The editor
-
-The editor shows the list of sections on the left and a live storefront preview
-on the right. Selecting a section opens its fields; the preview updates as you
-edit, so you can see the result before anyone else does.
-
-- **Reorder** — drag a section by its handle to change where it appears.
-- **Switch on or off** — use the toggle on the row.
-- **Duplicate** or **Delete** — from the row's menu. Duplicating copies the
-  section with everything configured in it, which is the quickest way to build a
-  second carousel that differs in one filter. The copy is placed just below the
-  original, named with **Copy** at the end, and starts switched off and unsaved
-  until you publish it. Deleting asks you to confirm and
-  cannot be undone — to take a section off the storefront and keep it, switch it
-  off instead.
-- **Change locale or channel** — from the selectors at the top, when your store
-  has more than one. Each combination is edited separately.
-- **Change device** — preview the storefront at desktop, tablet or mobile width.
-
-<ImagePopup src="/images/appearance/section-editor.png" alt="Section Editor" />
-
-The footer links section is pinned to the bottom of the page, so it has no drag
-handle and cannot be duplicated. Everything else can be moved freely.
-
-<ImagePopup src="/images/appearance/section-actions.png" alt="Duplicate and Delete on a section row" />
-
-### Nothing goes live until you publish
-
-Every change is held as an **unsaved change** until you publish it. This applies
-to everything: editing content, switching a section on or off, and reordering.
-
-The header shows how many sections are holding unsaved changes, and each affected
-row is marked. From there you can:
-
-- **Publish** — send the changes to the storefront.
-- **Discard** — throw them away and return to what is currently live.
-
-A newly created section is switched off and counts as unsaved, so an empty
-section is never shown to shoppers before it has been built.
-
-### Creating a section
-
-1. In the editor, click the **+** button beside the section list.
-2. Choose the **Type** and enter a **Name**.
-3. Click **Save Section**.
-
-<ImagePopup src="/images/appearance/create-section.png" alt="Create Section" />
-
-4. The section is added, switched off, and opened for editing. Fill in its
-   fields.
-5. Click **Publish** when you are ready for it to appear.
-
-## Section types
-
-### Product Carousel
-
-A scrollable strip of products, used for the collections on your home page.
-
-**Title:** The heading shown above the carousel.
-
-**Filters:** Which products appear, and in what order. Click **Add Filter**, then
-choose the filter and its value:
-
-- **Sort** — the order products are shown in, using the same sort options your
-  storefront listing offers.
-- **Limit** — how many products the strip holds.
-- **Category ID** — restrict the strip to one category. Categories are listed by
-  their full path, so two categories sharing a name can be told apart.
-- **Featured** — set to **Yes** to show only featured products.
-- **New** — set to **Yes** to show only products marked as new.
-
-Once every available filter has been added, the editor says so rather than
-offering an empty row. To drop a filter, use the bin beside it.
-
-<ImagePopup src="/images/appearance/product-carousel.png" alt="Product Carousel section fields" />
-
-### Category Carousel
-
-A scrollable strip of categories, so shoppers can jump straight into a
-department.
-
-**Filters:** Which categories appear, and in what order:
-
-- **Sort** — **Asc** or **Desc**.
-- **Limit** — how many categories the strip holds.
-- **Parent ID** — show the children of one or more chosen categories. Pick
-  **Root** to show your top-level departments.
-
-<ImagePopup src="/images/appearance/category-carousel.png" alt="Category Carousel section fields" />
-
-### Image Carousel
-
-The banner slideshow at the top of your storefront. Click **Add Slider** to add a
-slide at a time, each with:
-
-**Slider Image:** The image itself. A resolution of **1920 × 700** is
-recommended, and JPEG, JPG, PNG and WEBP files are accepted.
-
-**Image Title:** The heading shown over the slide.
-
-**Link:** Where a shopper who clicks the slide is taken.
-
-Slides play in the order they are listed, and you can drag them to change it.
-
-<ImagePopup src="/images/appearance/image-carousel.png" alt="Image Carousel section fields" />
-
-### Static Content
-
-A free-form block of your own markup, for an announcement strip or a promotional
-band between two carousels.
-
-**HTML:** The content itself. Use **Add Media** to upload an image and drop it
-into the markup.
-
-**CSS:** Styles for the block. They are added to the whole page, not just this
-block, so give your markup its own class and start every rule with it, for
-example `.home-offer h1 { ... }`, or the styles will change other parts of the
-storefront too.
-
-The HTML is cleaned before it is saved, so scripts, frames and forms are
-stripped — a block that relies on them will not behave as written.
-
-<ImagePopup src="/images/appearance/static-content.png" alt="Static Content section fields" />
-
-### Footer Links
-
-The link columns in your storefront footer. Click **Add Column** to add a
-column, then **Add Link** inside it, and give each link a **Title** — the
-wording a shopper reads — and a **URL**. Columns and the links inside them can
-be dragged into a different order. The default theme lays out as many columns as
-you add; a theme you install may limit the number.
-
-A channel shows **one footer links section**, so once a channel has one, the type
-is no longer offered when you create a section.
-
-### Services Content
-
-The service promises shown across the storefront — free delivery, easy returns,
-and similar. Click **Add Services** to add an entry, each with:
-
-**Service Icon:** The name of the icon shown beside the promise, typed as text,
-such as `icon-truck` for delivery or `icon-support` for help.
-
-**Title:** The promise itself, kept to a few words.
-
-**Description:** A single line of supporting detail.
-
-<ImagePopup src="/images/appearance/services-content.png" alt="Services Content section fields" />
-
-Because this section and the footer are drawn on every page rather than just the
-home page, publishing a change to either refreshes the whole storefront cache.
-
-### Types added by a theme
-
-The six types above are the ones every theme offers. A theme you install from
-the marketplace or have built for you can add types of its own, such as a
-testimonial slider or a brand strip. They appear in the same **+** list when
-that theme is being customised, with their own fields, and are edited and
-published exactly like the built-in types. If a type you expect is missing from
-the list, check that the theme it belongs to is the one you are customising.
-
-## Upgrading from an earlier version
-
-If you used **Settings >> Themes** before, that screen has moved. Theme
-customizations are now sections, and they live under **Appearance**. Existing
-customizations are carried over automatically — you do not need to recreate them.
-
-# Generative AI (Magic AI)
-
-Bagisto has generative AI built into the platform. Branded **Magic AI** in the admin, it uses the text and image models of the AI provider you choose to write, draw, translate and describe, so the content work behind a store takes minutes rather than hours. It is part of Bagisto itself; there is nothing extra to install.
-
-## What you can do with it
-
-| Feature | Who uses it | What it does |
-|---|---|---|
-| [Generate text content](./generate-content.md) | Admin | Writes or rewrites product and category descriptions, CMS pages and email templates from a prompt, in any rich-text editor. |
-| [Generate product images](./generate-images.md) | Admin | Creates product images from a written description, in the size and quality you pick. |
-| [AI image search](./image-search.md) | Shopper | Understands the photo a shopper uploads in the search bar and finds matching products. |
-| [Review translation](./review-translation.md) | Shopper | Shows a product review in the shopper's language with one click. |
-| [Personalized checkout message](./checkout-message.md) | Shopper | Writes a short thank-you for the order confirmation page that mentions what was bought. |
-
-## How it works
-
-- **Your provider, your model.** Bagisto connects to **OpenAI, Anthropic, Gemini, Groq, xAI, DeepSeek, Mistral** and **Ollama**. You add the API key of the providers you use, and you choose the model per feature. Ollama runs open models on your own server, so nothing leaves it.
-- **Admin features suggest, you decide.** Generated text and images are shown in a dialog first and go into the product, page or template only when you click **Apply**.
-- **Storefront features respond to the shopper.** A photo is analysed when the shopper searches with it, a review is translated when they click **Translate**, and the checkout message is written when the order is placed. Each of these is switched on per channel with its own model.
-
-## Before you start
-
-Everything is configured under **Configure >> Magic AI**. Follow [Generative AI Configuration](../configure/magic-ai.md) to turn the feature on, connect a provider and enable the features you want, then come back to the feature pages above.
-
-## What it does not do
-
-Magic AI does not run the store by itself. It does not publish content, change prices, place orders or answer customers. Everything it produces in the admin is reviewed and applied by you, and on the storefront it only reacts to what the shopper does. Text and images from an AI model can be wrong or misleading, which is why the admin dialogs ask you to review the result before applying it.
-
-# Generate Text Content
-
-Text generation adds a **Magic AI** button to the toolbar of the rich-text editors in the admin. You describe what you need, pick a model, and the generated text is placed in the editor once you apply it. The button appears wherever the editor does:
-
-- **Product descriptions** — the **Description** and **Short Description** fields of a product under **Catalog >> Products**, and any other textarea attribute with the editor enabled.
-- **Category descriptions** — the **Description** field under **Catalog >> Categories**.
-- **CMS pages** — the page content under **CMS >> Pages**.
-- **Email templates** — the template content under **Marketing >> Communications >> Email Templates**.
-
-Before you start, switch **Text Generation** on and choose its providers, as described under [Enable the admin features](../configure/magic-ai.md#enable-the-admin-features).
-
-## Generating text
-
-1. Open the item, for example a product under **Catalog >> Products**.
-
-2. Click the **Magic AI** button in the toolbar of the description editor. The **AI Assistance** dialog opens.
-
-   <ImagePopup src="/images/generative-ai/description-magicai.png" alt="Magic AI button in the description editor" />
-
-3. Enter a **Prompt** describing what you want written, for example "Write a 120-word description of a full-grain leather wallet with an RFID lining, in a warm tone".
-
-4. Choose a **Model**. The list holds the text models of the providers enabled for text generation.
-
-5. Click **Generate**. The result appears under **Generated Content**.
-
-6. Read the result. If it is not right, change the prompt and click **Generate** again.
-
-7. Click **Apply** to place the text in the editor.
-
-   <ImagePopup src="/images/generative-ai/textgeneration.png" alt="Text generation dialog" />
-
-8. Edit the text as you would any other and save the item.
-
-## Writing a good prompt
-
-- Say what the text is for and how long it should be: a product description, a category introduction, a 200-word page.
-- Give the facts the model cannot know: material, sizes, what is in the box, the audience.
-- Ask for the tone you want: warm, technical, playful.
-- The dialog notes that AI-generated content may be misleading. Check names, numbers and claims before you apply the text.
-
-Each request is sent to the provider of the chosen model and is billed by that provider, except for models served by your own Ollama server.
-
-# Generate Product Images
-
-Image generation adds a **Magic AI** button beside **Add Image** in the admin's image uploader, so you can create images from a written description instead of uploading a file. It is most useful in the **Images** section of a product, and the same button appears in the other image uploaders of the admin, such as a category's logo and banner.
-
-Before you start, switch **Image Generation** on and choose its providers, as described under [Enable the admin features](../configure/magic-ai.md#enable-the-admin-features). Not every provider offers image models.
-
-## Generating images
-
-1. Open the product under **Catalog >> Products**.
-
-2. In the **Images** section, click **Magic AI** beside **Add Image**. The **AI Image Generation** dialog opens.
-
-3. Enter a **Prompt** describing the image you want, for example "A minimalist running shoe on a white background, studio lighting".
-
-4. Choose the **Number of Images** to generate.
-
-5. Choose the **Size**: **Square (1:1)**, **Portrait (2:3)** or **Landscape (3:2)**.
-
-6. Choose the **Quality**: **High**, **Medium** or **Low**.
-
-7. Choose a **Model**. The list holds the image models of the providers enabled for image generation.
-
-8. Click **Generate**.
-
-   <ImagePopup src="/images/generative-ai/image-generate.png" alt="Image generation dialog" />
-
-9. Click the images you want to keep. Click **Regenerate** to try again with the same settings.
-
-10. Click **Apply**. The images are added to the product like uploaded ones, so you can reorder them, set their alt text and file name, or remove them.
-
-    <ImagePopup src="/images/generative-ai/ai-images.png" alt="Generated product images" />
-
-11. Click **Save Product**.
-
-Higher quality and larger counts take longer and cost more at the provider. Generate one image at medium quality while you refine the prompt, then generate the final set.
-
-# AI Image Search
-
-Shoppers can search your catalog with a photo instead of words. A camera icon in the storefront search bar opens the file picker; the shopper picks a photo and the store searches for matching products.
-
-With AI image search on, the model you chose describes what is in the photo, and the store searches for those keywords, so it recognises far more kinds of products. With it off, the photo is still recognised, but by a simpler model that runs in the shopper's browser and knows fewer things.
-
-## Turning it on
-
-Image search has two switches: one that shows the camera icon, and one that hands the photo to the AI model.
-
-1. Go to **Configure >> Catalog >> Products**.
-2. In the **Settings** section, switch **Image Search Option** on.
-3. Click **Save Configuration**.
-4. Go to **Configure >> Magic AI >> Storefront Features** and choose the channel at the top of the page.
-5. In the **AI Image Search** section, switch **Enabled** on.
-6. Choose the **Model**.
-7. Click **Save Configuration**.
-
-The Magic AI master switch and the provider key must be in place first; see [Generative AI Configuration](../configure/magic-ai.md).
-
-## What the shopper sees
-
-1. The shopper clicks the camera icon in the search bar and chooses a photo. Only image files of up to 2 MB are accepted.
-2. The photo is analysed and the search results page opens with the products that match what was found in it.
-
-The photo is sent to the provider of the chosen model so it can be described. If your privacy policy lists the services that process visitor data, add the provider there.
-
-# Review Translation
-
-With review translation on, a **Translate** link appears under each product review on the storefront. Clicking it shows the review in the language of the store the shopper is browsing, so a review written in another language is still useful to them. The review itself is not changed; the translation is made when the shopper asks for it.
-
-## Turning it on
-
-1. Go to **Configure >> Magic AI >> Storefront Features** and choose the channel at the top of the page.
-2. In the **Review Translation** section, switch **Enabled** on.
-3. Choose the **Model**.
-4. Click **Save Configuration**.
-
-The API key of the chosen model's provider must be saved first; see [Generative AI Configuration](../configure/magic-ai.md). Unlike the other storefront features, review translation is controlled by this switch alone and keeps working when the general **Enabled** switch is off.
-
-## What the shopper sees
-
-1. The shopper opens a product page and scrolls to its reviews.
-2. Under a review, they click **Translate**. The link reads **Translating...** while the model works, and the translated text then replaces the original.
-
-<ImagePopup src="/images/generative-ai/review-magicai.png" alt="Translate link under a review" />
-
-The translation is into the locale the shopper has selected in the storefront, so a store that serves several languages translates each review into whichever one the visitor is using.
-
-# Personalized Checkout Message
-
-After an order is placed, the order confirmation page shows a standard thank-you line. With this feature on, Bagisto asks the model to write a short message for that order, mentioning what the shopper bought, and shows it under the thank-you heading in place of the standard line. It gives the moment a personal touch without any work on your side.
-
-## Turning it on
-
-1. Go to **Configure >> Magic AI >> Storefront Features** and choose the channel at the top of the page.
-2. In the **Personalized Checkout Message** section, switch **Enabled** on.
-3. Choose the **Model**.
-4. Click **Save Configuration**.
-
-The Magic AI master switch and the provider key must be in place first; see [Generative AI Configuration](../configure/magic-ai.md).
-
-## What the shopper sees
-
-The message is written when the confirmation page opens, right after the order is placed. It is not stored with the order, so reloading the page asks the model again and the wording may differ. If the provider cannot be reached, the page shows its standard thank-you line and the order is unaffected.
-
-<ImagePopup src="/images/generative-ai/personalized-chckout-message.png" alt="Personalised message on the order confirmation page" />
-
-Because the text is generated for each order, wording varies from one order to the next. It draws only on the order itself, such as the items bought, and does not use anything the shopper has not shared with the store. Each confirmation page view is one request to the provider.
 
 # Sales Reporting
 

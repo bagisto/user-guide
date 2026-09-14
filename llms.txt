@@ -12,6 +12,19 @@ A reference for merchants and store administrators working in the Bagisto admin 
 - [Command Palette](/getting-started/command-palette)
 - [Two Factor Authentication](/authentication/2fa-authentication)
 
+### Generative AI
+
+- [Overview](/generative-ai/introduction)
+- [Generate Text Content](/generative-ai/generate-content)
+- [Generate Product Images](/generative-ai/generate-images)
+- [AI Image Search](/generative-ai/image-search)
+- [Review Translation](/generative-ai/review-translation)
+- [Personalized Checkout Message](/generative-ai/checkout-message)
+
+### Theme
+
+- [Themes & Sections](/appearance/themes)
+
 ### Store Setup
 
 - [Channels](/settings/channels)
@@ -109,19 +122,6 @@ A reference for merchants and store administrators working in the Bagisto admin 
 ### CMS
 
 - [Pages](/cms/create-cms)
-
-### Appearance
-
-- [Themes & Sections](/appearance/themes)
-
-### Generative AI
-
-- [Overview](/generative-ai/introduction)
-- [Generate Text Content](/generative-ai/generate-content)
-- [Generate Product Images](/generative-ai/generate-images)
-- [AI Image Search](/generative-ai/image-search)
-- [Review Translation](/generative-ai/review-translation)
-- [Personalized Checkout Message](/generative-ai/checkout-message)
 
 ### Reporting
 
