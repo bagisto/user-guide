@@ -79,6 +79,17 @@ function sitemapPlugin() {
   };
 }
 
+// Sidebar group headings. Every top-level group gets an icon, and the two
+// headline groups (Generative AI and Theme) also get their gradient treatment.
+// The styles live in theme/custom.css.
+function groupLabel(label, icon) {
+  return `<span class="sb-group sb-icon--${icon}"><span class="sb-group__icon" aria-hidden="true"></span><span class="sb-group__label">${label}</span></span>`;
+}
+
+function featureLabel(label, feature) {
+  return `<span class="sb-feature feature--${feature}"><span class="sb-feature__icon" aria-hidden="true"></span><span class="sb-feature__label">${label}</span></span>`;
+}
+
 export default defineConfig({
   lang: "en-US",
   title: "Bagisto User Documentation",
@@ -145,7 +156,7 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: "Getting Started",
+        text: groupLabel("Getting Started", "rocket"),
         collapsed: false,
         items: [
           { text: "Introduction", link: "/getting-started/introduction" },
@@ -158,7 +169,7 @@ export default defineConfig({
       },
 
       {
-        text: '<span class="sb-feature feature--ai"><span class="sb-feature__icon" aria-hidden="true"></span><span class="sb-feature__label">Generative AI</span></span>',
+        text: featureLabel("Generative AI", "ai"),
         collapsed: false,
         items: [
           { text: "Overview", link: "/generative-ai/introduction" },
@@ -183,13 +194,13 @@ export default defineConfig({
       },
 
       {
-        text: '<span class="sb-feature feature--theme"><span class="sb-feature__icon" aria-hidden="true"></span><span class="sb-feature__label">Theme</span></span>',
+        text: featureLabel("Theme", "theme"),
         collapsed: false,
         items: [{ text: "Themes & Sections", link: "/appearance/themes" }],
       },
 
       {
-        text: "Store Setup",
+        text: groupLabel("Store Setup", "settings"),
         collapsed: false,
         items: [
           { text: "Channels", link: "/settings/channels" },
@@ -205,7 +216,7 @@ export default defineConfig({
       },
 
       {
-        text: "Configure",
+        text: groupLabel("Configure", "wrench"),
         collapsed: false,
         items: [
           {
@@ -281,7 +292,7 @@ export default defineConfig({
       },
 
       {
-        text: "Catalog",
+        text: groupLabel("Catalog", "package"),
         collapsed: false,
         items: [
           { text: "Categories", link: "/category/create-category" },
@@ -320,7 +331,7 @@ export default defineConfig({
       },
 
       {
-        text: "Customers",
+        text: groupLabel("Customers", "users"),
         collapsed: false,
         items: [
           { text: "Create Customer", link: "/customer/create-customer" },
@@ -334,7 +345,7 @@ export default defineConfig({
       },
 
       {
-        text: "Sales",
+        text: groupLabel("Sales", "cart"),
         collapsed: false,
         items: [
           { text: "Create Order", link: "/orders/create-order" },
@@ -350,7 +361,7 @@ export default defineConfig({
       },
 
       {
-        text: "Marketing",
+        text: groupLabel("Marketing", "megaphone"),
         collapsed: false,
         items: [
           { text: "Cart Rules", link: "/marketing/cart-rules" },
@@ -370,13 +381,13 @@ export default defineConfig({
       },
 
       {
-        text: "CMS",
+        text: groupLabel("CMS", "file"),
         collapsed: false,
         items: [{ text: "Pages", link: "/cms/create-cms" }],
       },
 
       {
-        text: "Reporting",
+        text: groupLabel("Reporting", "chart"),
         collapsed: false,
         items: [
           { text: "Sales", link: "/reporting/sales-report" },
@@ -386,7 +397,7 @@ export default defineConfig({
       },
 
       {
-        text: "B2B Marketplace",
+        text: groupLabel("B2B Marketplace", "store"),
         collapsed: false,
         items: [
           { text: "Introduction", link: "/b2b-marketplace/introduction" },
@@ -411,7 +422,7 @@ export default defineConfig({
       },
 
       {
-        text: "Multi Tenant Ecommerce",
+        text: groupLabel("Multi Tenant Ecommerce", "cloud"),
         collapsed: false,
         items: [
           {
@@ -434,7 +445,7 @@ export default defineConfig({
       },
 
       {
-        text: "B2B eCommerce Platform",
+        text: groupLabel("B2B eCommerce Platform", "briefcase"),
         collapsed: false,
         items: [
           {
@@ -490,7 +501,7 @@ export default defineConfig({
       },
 
       {
-        text: "Native Mobile App",
+        text: groupLabel("Native Mobile App", "phone"),
         link: "/open-source-mobile-app/open-source-mobile-app",
       },
     ],
