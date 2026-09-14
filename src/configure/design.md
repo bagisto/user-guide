@@ -1,38 +1,28 @@
 # Design
 
-The **Design** page holds the branding of the admin panel and the shape of the storefront's category menu.
+The **Design** screen holds the logo and favicon of the admin panel, and how the storefront's header menu shows your categories.
 
 Go to **Configure >> General >> Design**.
 
 ## Admin logo and favicon
 
-The **Logo Image** is shown in the admin panel header and on the login page; the **Favicon** is the small icon browsers show in the tab.
+The **Logo Image** replaces the Bagisto logo in the admin panel header, on the admin sign-in and password pages, and in emails sent to admins. The **Favicon** is the small icon browsers show in the tab of the admin panel.
 
-1. In the **Admin Logo** section, click **Add Image** on the **Logo Image** tile and pick your logo.
-2. Click **Add Image** on the **Favicon** tile and pick the icon.
+1. In **Admin Logo**, click **Add Image** under **Logo Image** and choose your logo.
+2. Click **Add Image** under **Favicon** and choose the icon.
 3. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/design.png" alt="Admin Logo section" />
+<ImagePopup src="/images/configure/design-settings.png" alt="Design screen with the Admin Logo and Menu Category View sections" />
 
-The new logo and favicon appear in the admin panel straight away.
-
-<ImagePopup src="/images/configure/design-output.png" alt="Updated admin logo" />
-
-<ImagePopup src="/images/configure/design-output2.png" alt="Updated favicon in the browser tab" />
+The logo can be a BMP, JPEG, JPG, PNG, WEBP or SVG file, and the favicon can also be an ICO file. The storefront's logo and favicon are set for each channel under [Channels](../settings/channels.md).
 
 ## Menu category view
 
-Choose how the storefront lists categories in its header:
+**Menu Category View** decides how the storefront header shows your categories:
 
-- **Default Menu** shows the categories across the top navigation bar.
-- **Sidebar Menu** shows them in a vertical panel, which suits stores with many categories or deep sub-categories.
+- **Default Menu** shows the categories in the header menu. This is the default.
+- **Sidebar Menu** shows all categories, including nested ones, in a sidebar menu, which suits a store with many categories.
 
-1. In the **Menu Category View** section, pick **Default Menu** or **Sidebar Menu** from the dropdown.
-2. Check the preview shown beside the dropdown.
+1. In **Menu Category View**, choose **Default Menu** or **Sidebar Menu**.
+2. To see what each style looks like, click **Preview Default Menu** or **Preview Sidebar Menu** below the field.
 3. Click **Save Configuration**.
-
-<ImagePopup src="/images/configure/cat-admin.png" alt="Menu Category View setting" />
-
-The storefront with **Sidebar Menu** selected:
-
-<ImagePopup src="/images/configure/cat-side.png" alt="Storefront sidebar category menu" />

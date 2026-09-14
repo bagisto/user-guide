@@ -1,17 +1,13 @@
 # Social Share
 
-Social Share adds share buttons to product pages for Facebook, X (Twitter), Pinterest, WhatsApp, LinkedIn and email.
+Social share adds share buttons to product pages, so shoppers can share a product on Facebook, X (Twitter), Pinterest, WhatsApp or LinkedIn, or by email.
 
-## Turn on share buttons
-
-1. Go to **Configure >> Catalog >> Products** and find the **Social Share** section.
-2. Switch **Enable Social Share?** on.
-3. Switch on each network you want to offer. The WhatsApp button appears on mobile devices only.
-4. Enter the **Share Message** that accompanies the shared link.
+1. Go to **Configure >> Catalog >> Products**.
+2. In **Social Share**, switch **Enable Social Share?** on.
+3. Switch on each network you want to offer: **Enable Share in Facebook?**, **Enable Share on X (Twitter)?**, **Enable Share in Pinterest?**, **Enable Share on WhatsApp?**, **Enable Share in Linkedin?** and **Enable Share in Email?**.
+4. Enter the **Share Message** that goes with the shared link.
 5. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/social-share.png" alt="Social Share settings" />
+<ImagePopup src="/images/configure/products-social-share.png" alt="Social Share section of the Products screen with share buttons turned on" />
 
-The enabled buttons appear on every product page:
-
-<ImagePopup src="/images/configure/social-output.png" alt="Share buttons on a product page" />
+The share buttons appear on every product page. The WhatsApp button appears only on mobile devices.

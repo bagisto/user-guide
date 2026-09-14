@@ -25,7 +25,7 @@ This guide is for merchants and store administrators. It shows you how to set up
 | [Generative AI](../generative-ai/introduction.md) | The AI features built into Bagisto and how to use each one. |
 | [Theme](../appearance/themes.md) | Choosing a theme and customizing your storefront with sections. |
 | [Store Setup](../settings/channels.md) | Channels, languages, currencies, inventory, taxes, team access and data imports. |
-| [Configure](../configure/weight-unit.md) | Store-wide settings, from checkout and email to search engines and caching. |
+| [Configure](../configure/introduction.md) | Store-wide settings, from shipping, payment and checkout to email, search engines and caching. |
 | [Catalog](../category/create-category.md) | Categories, attributes and every product type. |
 | [Customers](../customer/create-customer.md) | Customer accounts, groups, group pricing and reviews. |
 | [Sales](../orders/create-order.md) | Orders, invoices, shipments, refunds, returns, and shipping and payment methods. |

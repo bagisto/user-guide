@@ -1,20 +1,16 @@
 # About
 
-The **About** screen shows what your store runs on and which services it uses. There is nothing to change here; it is the page to open when support asks which version you are on, or when you want to confirm that a setting made elsewhere has taken effect.
+The **About** screen shows what your store runs on and which services it uses. There is nothing to change here. Open it when support asks which version you are on, or to confirm that a setting made elsewhere has taken effect. The **About** group is available in Bagisto 2.5.
 
-Go to **Configure >> About**. It is available from Bagisto 2.5.
+Go to **Configure >> About >> General**. The screen is grouped into cards:
 
-<ImagePopup src="/images/configure/about.png" alt="About" />
+- **Bagisto** – the Bagisto version.
+- **Environment** – the application name, the Laravel, PHP and Composer versions, the store URL, the environment (**Local**, **Staging**, **Testing** or **Production**), whether **Debug Mode** is on, the timezone, the locale, and whether maintenance mode is on.
+- **Database** – the database engine and its version.
+- **Drivers** – the services that handle the cache, sessions, the queue and logging.
+- **Mail** – the transport email is sent through, as set under [Email Settings](./email-settings.md).
+- **Search** – the search engine in use, as set under [Search Engines](./search-engines.md).
+- **Storage** – the storage in use and whether its public link exists, as set under [File Management](./file-management.md).
+- **Cached** – whether the configuration, routes, events and views are cached. Clear or build them under [Cache Management](./cache-management.md).
 
-The page is grouped into cards:
-
-- **Bagisto** — the Bagisto version.
-- **Environment** — the application name, the Laravel, PHP and Composer versions, the store URL, whether it is running as **Local**, **Staging**, **Testing** or **Production**, whether **Debug Mode** is on, the timezone and locale, and whether maintenance mode is active.
-- **Database** — the engine in use, MySQL, MariaDB or PostgreSQL.
-- **Drivers** — which services handle the cache, session, queue, log and broadcast.
-- **Mail** — the transport mail leaves through, as set under **Configure >> Email**.
-- **Search** — the search engine in use and its status, as set under **Configure >> Search Engines**.
-- **Storage** — the default disk and its public link, as set under **Configure >> File Management**.
-- **Cached** — whether the configuration, routes, events and views are currently cached. Rebuild or clear them from **Configure >> Cache Management**.
-
-Debug mode on a production store exposes details to visitors when something goes wrong, so if this page shows **Debug Mode** on and the environment as **Production**, ask whoever manages the server to turn it off.
+If this screen shows **Debug Mode** on while the environment is **Production**, ask whoever manages the server to turn debug mode off, because it can show technical details to visitors when something goes wrong.

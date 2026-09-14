@@ -31,7 +31,7 @@ This guide is for merchants and store administrators. It shows you how to set up
 | [Generative AI](../generative-ai/introduction.md) | The AI features built into Bagisto and how to use each one. |
 | [Theme](../appearance/themes.md) | Choosing a theme and customizing your storefront with sections. |
 | [Store Setup](../settings/channels.md) | Channels, languages, currencies, inventory, taxes, team access and data imports. |
-| [Configure](../configure/weight-unit.md) | Store-wide settings, from checkout and email to search engines and caching. |
+| [Configure](../configure/introduction.md) | Store-wide settings, from shipping, payment and checkout to email, search engines and caching. |
 | [Catalog](../category/create-category.md) | Categories, attributes and every product type. |
 | [Customers](../customer/create-customer.md) | Customer accounts, groups, group pricing and reviews. |
 | [Sales](../orders/create-order.md) | Orders, invoices, shipments, refunds, returns, and shipping and payment methods. |
@@ -926,7 +926,7 @@ The message *Tax category created successfully.* appears and the new category is
 
    <ImagePopup src="/images/settings/product-tax-category.png" alt="Tax Category field in the General section of a product" />
 
-New products start with the **Product Default Tax Category** chosen under [Configure >> Sales >> Taxes](../configure/taxes.md), so set it to the category most of your products use.
+Products that don't have a tax category of their own use the **Product Default Tax Category** chosen under [Configure >> Sales >> Taxes](../configure/taxes.md), so set it to the category most of your products use.
 
 # Users
 
@@ -1059,274 +1059,282 @@ If some batches don't finish, the import completes the others and tells you how 
 
 You don't have to wait on the page. While an import is running, its row under **Settings >> Data Transfer >> Imports** has a **View Progress** action that opens the progress page. When the import is finished, the action changes back to **Import**.
 
-# Weight Unit
+# Configuration
 
-The weight unit is the unit every product weight is entered in and every shipping carrier reads. Set it once, before you add products, because changing it later does not convert the weights already saved.
+**Configure** holds the settings that decide how your store behaves: units and storefront content, generative AI, shipping and payment, checkout, orders and taxes, the catalog, customer accounts, email, search, file storage and caching. You set most of them once while setting up the store, and come back when something changes.
+
+## Open a configuration screen
+
+1. In the admin panel, click **Configure** in the left menu.
+2. Find the group you need, such as **Sales**.
+3. Click one of its tiles, such as **Checkout**.
+4. Change the settings.
+5. Click **Save Configuration**.
+
+<ImagePopup src="/images/configure/configuration-index.png" alt="Configuration page with the General, Magic AI and Sales groups of tiles" />
+
+To find a setting without browsing, type at least two letters of its name in the **Search** box at the top of the **Configuration** page, and choose it from the results.
+
+## Settings per channel and per language
+
+Some settings can differ from one channel or language to another. The badge beside a field's label tells you which:
+
+- A field with the channel badge, such as **Default**, is saved for the channel you are editing.
+- A field with the language badge, such as **English**, is saved for the language you are editing.
+- A field without a badge applies to the whole store.
+
+<ImagePopup src="/images/configure/configuration-scope.png" alt="GDPR screen with the language selector and fields marked with the Default and English badges" />
+
+To change another channel or language, choose it in the selectors above the settings before you edit anything. The channel selector appears only when your store has more than one channel, and the language selector only when the channel offers more than one language.
+
+## What each group covers
+
+| Group | Screens | What you set there |
+|---|---|---|
+| **General** | [General](./general.md), [Content](./content.md), [Design](./design.md), [Exchange Rates](./exchange-rates-configurations.md), [Sitemap](./sitemap.md), [GDPR](./gdpr.md) | The weight unit and breadcrumbs, the header offer, footer text and custom scripts, the admin logo and category menu, automatic exchange rates, sitemap limits and privacy consent. |
+| **Magic AI** | [Generative AI (Magic AI)](./magic-ai.md) | Switching generative AI on, provider API keys, and the AI features of the admin panel and the storefront. |
+| **Sales** | [Shipping Settings](./shipping.md), [Shipping Methods](../shipping-method/shipping-methods.md), [Payment Methods](../payment-method/payment-methods.md), [Checkout](./checkout.md), [Order Settings](./orders-settings.md), [Invoice Settings](./invoice-settings.md), [Taxes](./taxes.md), [RMA](./rma.md), [EU Withdrawals](./eu-withdrawals.md) | Where you ship from, the shipping and payment methods, the cart and checkout, order and invoice numbers, tax calculation, returns and EU withdrawals. |
+| **Catalog** | [Products](./configurable-choices.md), [Inventory](./back-orders.md), [Rich Snippets](./rich-snippets.md) | Product listings and pages, reviews, sharing, image sizes, upload limits, price disclosure, back orders and structured data for search engines. |
+| **Customer** | [Customer Settings](./settings.md), [Address](./address.md), [Google Captcha](./google-captcha.md) | New accounts, sign-in, social login, the wishlist and newsletter, address forms and bot protection. |
+| **Email** | [Email Settings](./email-settings.md), [Notifications](./notifications.md) | How email is sent, the sender addresses and which emails go out. |
+| **Search Engines** | [Search Engines](./search-engines.md) | Whether product search runs on the database or on Elasticsearch. |
+| **File Management** | [File Management](./file-management.md) | Where uploaded files are stored: on the server, in Amazon S3 or in Cloudflare R2. |
+| **Cache Management** | [Cache Management](./cache-management.md) | Clearing and rebuilding caches, and the storefront's full page cache. |
+| **About** | [About](./about.md) | The versions and services your store runs on. |
+
+## Differences in Bagisto 2.4
+
+This guide describes the Configuration screens of Bagisto 2.5. Most of them are the same in Bagisto 2.4, except for these:
+
+- **Search Engines**, **File Management** and **About** are new in Bagisto 2.5, and so is the **Omnibus Price Disclosure** section under **Catalog >> Products**.
+- In Bagisto 2.4, the search engine and the query length limits are set in the **Search** section under **Configure >> Catalog >> Products**. See [Search Engines](./search-engines.md).
+- In Bagisto 2.4, **Allow customers to directly buy products** is in the **Storefront** section under **Configure >> Catalog >> Products**. In Bagisto 2.5 it is in **Product view page configuration**.
+- In Bagisto 2.4, the cart icon's **Summary** has its own **My Cart** section under **Configure >> Sales >> Checkout**. In Bagisto 2.5 it is in **Mini Cart**.
+
+# General
+
+The **General** screen holds two store-wide basics: the unit product weights are entered in, and whether storefront pages show breadcrumbs.
+
+Go to **Configure >> General >> General**.
 
 ## Set the weight unit
 
-1. Go to **Configure >> General >> General**.
-2. In the **Unit Options** section, choose **lbs** or **kgs** from the **Weight Unit** dropdown.
+1. In **Unit Options**, choose the **Weight Unit**: **lbs** or **kgs**.
+2. Click **Save Configuration**.
+
+<ImagePopup src="/images/configure/general-settings.png" alt="General screen with the Unit Options and Breadcrumbs sections" />
+
+The weight unit is set per channel, and the default is **kgs**. Choose it before you add products: changing it later only changes the unit, not the weights you already entered.
+
+## Show or hide breadcrumbs
+
+Breadcrumbs are the trail of links, such as **Home > Cart**, at the top of storefront pages. They appear on the product page, the cart, the checkout, the compare page and the customer account pages.
+
+1. In **Breadcrumbs**, switch **Shop Breadcrumbs** on or off. It is on by default.
+2. Click **Save Configuration**.
+
+<ImagePopup src="/images/configure/general-breadcrumbs-storefront.png" alt="Breadcrumbs above a product on the storefront" />
+
+# Content
+
+The **Content** screen holds the promotional line at the top of the storefront, the copyright line in its footer, the speculation rules that make pages open faster, and your own CSS and JavaScript.
+
+Go to **Configure >> General >> Content**.
+
+## Header offer title
+
+The header offer is a short promotional line with a link, shown in the bar at the top of every storefront page.
+
+1. In **Header Offer Title**, enter the **Offer Title**, such as `Get UPTO 40% OFF on your 1st order`. It can be up to 100 characters.
+2. Enter the **Redirection Title**, the link text shown after the offer, such as `SHOP NOW`. It can be up to 25 characters.
+3. Enter the **Redirection Link**, the page the link opens, such as `/womens`. If you leave it empty, the link opens the home page.
+4. Click **Save Configuration**.
+
+<ImagePopup src="/images/configure/content-header-offer.png" alt="Header Offer Title and Copyright Content sections of the Content screen" />
+
+<ImagePopup src="/images/configure/content-header-offer-storefront.png" alt="Header offer line in the top bar of the storefront" />
+
+## Copyright content
+
+The copyright line is shown at the bottom of the storefront footer.
+
+1. In **Copyright Content**, enter the text, such as `© 2026 Example Store. All rights reserved.`
+2. Click **Save Configuration**.
+
+The copyright line is set per language, so choose the language at the top of the screen to translate it. If you leave it empty, the storefront shows its default copyright line.
+
+<ImagePopup src="/images/configure/content-copyright-storefront.png" alt="Copyright line at the bottom of the storefront footer" />
+
+## Speculation rules
+
+Speculation rules let a shopper's browser load a page before the shopper opens it, such as a link they are about to click, so the page appears almost instantly. They are off by default, because loading pages in advance uses bandwidth and shows up as visits to pages that were never opened.
+
+1. In **Speculation Rules**, switch **Enable Speculation Rules** on.
+2. Switch on **Enable Prerender Speculation Rules**, **Enable Prefetch Speculation Rules**, or both. The settings for each appear below its switch.
+3. Adjust the settings described below.
+4. Click **Save Configuration**.
+
+<ImagePopup src="/images/configure/content-speculation-rules.png" alt="Speculation Rules section with prerender and prefetch turned on" />
+
+**Enable Prerender Speculation Rules:** Prerendering loads and displays the whole page in the background, so it appears instantly. It uses the most resources.
+
+**Enable Prefetch Speculation Rules:** Prefetching downloads the page in advance without displaying it. It uses fewer resources than prerendering.
+
+**Ignore Prerender URLs** and **Ignore Prefetch URLs:** Pages that are never loaded in advance, separated by a pipe (`|`). The default, `/customer/account/*|/checkout/*`, leaves out the customer account and checkout pages.
+
+**Ignore Prerender URL Parameters** and **Ignore Prefetch URL Parameters:** URL parameters to ignore, separated by a pipe (`|`), such as `ref|utm_source`.
+
+**Prerender Eagerness Level** and **Prefetch Eagerness Level:** How eagerly pages are loaded in advance. **Eager** loads the most, **Moderate** is the default, and **Conservative** loads the least.
+
+## Custom scripts
+
+Custom scripts add your own CSS and JavaScript to every storefront page of a channel without changing the theme, for example a color change, a chat widget or an analytics snippet.
+
+1. In **Custom Scripts**, enter your styles in **Custom CSS**. Don't include `<style>` tags; the store adds them.
+2. Enter your script in **Custom Javascript**. Don't include `<script>` tags; the store adds them.
 3. Click **Save Configuration**.
+4. Reload the storefront to check the result.
 
-<ImagePopup src="/images/configure/weight.png" alt="Weight Unit setting" />
+<ImagePopup src="/images/configure/content-custom-scripts.png" alt="Custom Scripts section with sample CSS and JavaScript" />
 
-The setting is per channel, so switch channel at the top of the page if your channels ship in different units.
-
-# Content Configuration
-
-The **Content** section allows you to customize frontend behavior, promotional banners, and control advanced features like speculation rules and custom scripts. These settings help optimize user experience and tailor the storefront according to specific business needs.
-
-Go to **Configure >> General >> Content**. The page has four sections, described below in the order they appear. Click **Save Configuration** after changing any of them.
-
-### Header Offer Title
-
-Display a promotional banner on the storefront header.
-
-- **Offer Title**  
-  Example: `Get UPTO 40% OFF on your 1st order`
-
-- **Redirection Title**  
-  Example: `SHOP NOW`
-
-- **Redirection Link**  
-  Enter a valid URL (e.g., `/products/sale`)
-
-<ImagePopup src="/images/configure/header.png" alt="Header Offer Title" />
-
-### Copyright Content
-
-The copyright line in the storefront footer tells visitors that the content, design and images on the site are yours, and puts your brand name on every page.
-
-The **Copyright Content** field takes the text shown in the footer. It is set per locale, so switch locale at the top of the page to translate it.
-
-<ImagePopup src="/images/configure/copyright-content.png" alt="Copyright Content Field" />
-
-Click **Save Configuration**, then open the storefront footer to see the line.
-
- <ImagePopup src="/images/configure/copyright-footer.png" alt="Copyright Line in the Storefront Footer" />
-
-### Speculation Rules
-
-These rules improve perceived performance by prefetching or prerendering pages intelligently.
-
-Speculation rules are **turned off by default**. They have the browser fetch pages nobody has opened yet, which costs bandwidth and shows up as traffic on pages that were never visited, so a store now opts in instead of opting out.
-
-<ImagePopup src="/images/configure/contentspec-default.png" alt="Speculation Rules Disabled By Default" />
-
-- **Enable Speculation Rules**  
-  Toggle to enable the overall speculation logic. Disabled by default.
-
-- **Enable Prerender Speculation Rules**  
-  Enables prerendering based on user behavior predictions. Disabled by default.
-
-The three fields below appear only once **Enable Prerender Speculation Rules** is turned on.
-
-- **Ignore Prerender URLs**  
-  Exclude specific routes from prerendering using pipe `|` as a separator.  
-  Default: `/customer/account/*|/checkout/*`
-
-- **Ignore Prerender URL Parameters**  
-  Exclude certain URL parameters from prerender logic.  
-  Example: `ref|token`
-
-- **Prerender Eagerness Level**  
-  Choose the intensity of prerendering:
-  - **Eager**: prerenders the most pages (uses the most resources)
-  - **Moderate**: the default balance
-  - **Conservative**: prerenders the least
-
-- **Enable Prefetch Speculation Rules**  
-  Enables link prefetching to accelerate navigation. Disabled by default.
-
-The three fields below appear only once **Enable Prefetch Speculation Rules** is turned on.
-
-- **Ignore Prefetch URLs**  
-  Exclude specific routes from prefetching using pipe `|` as a separator.  
-  Default: `/customer/account/*|/checkout/*`
-
-- **Ignore Prefetch URL Parameters**  
-  Exclude certain URL parameters from prefetch logic.
-
-- **Prefetch Eagerness Level**  
-  Choose the intensity of prefetching, using the same **Eager**, **Moderate** and **Conservative** levels as prerendering.
-
-The image below shows the section with the toggles enabled and their dependent fields revealed.
-
-<ImagePopup src="/images/configure/contentspec.png" alt="Speculation Rules" />
-
-### Custom Scripts
-
-Add your own scripts to enhance or integrate custom features.
-
-- **Custom CSS**  
-  Add global CSS to style your storefront.
-
-- **Custom Javascript**  
-  Insert scripts for chat widgets, analytics, or any custom interaction.
-
-<ImagePopup src="/images/configure/custom.png" alt="Custom Scripts" />
-
-# Custom Scripts
-
-Custom scripts let you add your own CSS and JavaScript to every storefront page of a channel without touching the theme. Use them for a colour tweak, a chat widget or an analytics snippet.
-
-Go to **Configure >> General >> Content** and find the **Custom Scripts** section. Both fields are per channel, so switch channel at the top of the page to target another store.
-
-## Add custom CSS
-
-1. Enter your styles in **Custom CSS**.
-2. Click **Save Configuration**.
-3. Reload the storefront to see the change.
-
-In the example below the background colour has been set to light blue:
-
-<ImagePopup src="/images/configure/css.png" alt="Custom CSS field" />
-
-<ImagePopup src="/images/configure/css-output.png" alt="Storefront with the custom background colour" />
-
-## Add custom JavaScript
-
-1. Enter your script in **Custom Javascript**. Do not include `<script>` tags; the store adds them.
-2. Click **Save Configuration**.
-
-<ImagePopup src="/images/configure/js.png" alt="Custom Javascript field" />
-
-A script that breaks will break every storefront page, so test it on a staging channel first if you have one.
+Both fields are set per channel. A script with an error can break every storefront page, so test it on a staging store first if you have one.
 
 # Design
 
-The **Design** page holds the branding of the admin panel and the shape of the storefront's category menu.
+The **Design** screen holds the logo and favicon of the admin panel, and how the storefront's header menu shows your categories.
 
 Go to **Configure >> General >> Design**.
 
 ## Admin logo and favicon
 
-The **Logo Image** is shown in the admin panel header and on the login page; the **Favicon** is the small icon browsers show in the tab.
+The **Logo Image** replaces the Bagisto logo in the admin panel header, on the admin sign-in and password pages, and in emails sent to admins. The **Favicon** is the small icon browsers show in the tab of the admin panel.
 
-1. In the **Admin Logo** section, click **Add Image** on the **Logo Image** tile and pick your logo.
-2. Click **Add Image** on the **Favicon** tile and pick the icon.
+1. In **Admin Logo**, click **Add Image** under **Logo Image** and choose your logo.
+2. Click **Add Image** under **Favicon** and choose the icon.
 3. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/design.png" alt="Admin Logo section" />
+<ImagePopup src="/images/configure/design-settings.png" alt="Design screen with the Admin Logo and Menu Category View sections" />
 
-The new logo and favicon appear in the admin panel straight away.
-
-<ImagePopup src="/images/configure/design-output.png" alt="Updated admin logo" />
-
-<ImagePopup src="/images/configure/design-output2.png" alt="Updated favicon in the browser tab" />
+The logo can be a BMP, JPEG, JPG, PNG, WEBP or SVG file, and the favicon can also be an ICO file. The storefront's logo and favicon are set for each channel under [Channels](../settings/channels.md).
 
 ## Menu category view
 
-Choose how the storefront lists categories in its header:
+**Menu Category View** decides how the storefront header shows your categories:
 
-- **Default Menu** shows the categories across the top navigation bar.
-- **Sidebar Menu** shows them in a vertical panel, which suits stores with many categories or deep sub-categories.
+- **Default Menu** shows the categories in the header menu. This is the default.
+- **Sidebar Menu** shows all categories, including nested ones, in a sidebar menu, which suits a store with many categories.
 
-1. In the **Menu Category View** section, pick **Default Menu** or **Sidebar Menu** from the dropdown.
-2. Check the preview shown beside the dropdown.
+1. In **Menu Category View**, choose **Default Menu** or **Sidebar Menu**.
+2. To see what each style looks like, click **Preview Default Menu** or **Preview Sidebar Menu** below the field.
 3. Click **Save Configuration**.
-
-<ImagePopup src="/images/configure/cat-admin.png" alt="Menu Category View setting" />
-
-The storefront with **Sidebar Menu** selected:
-
-<ImagePopup src="/images/configure/cat-side.png" alt="Storefront sidebar category menu" />
 
 # Exchange Rates
 
-Bagisto can refresh your currency exchange rates automatically from an external rate service, so the prices shown in each currency stay correct without anyone typing rates in by hand.
+Bagisto can fetch current exchange rates from an exchange rate service, so prices shown in your other currencies stay correct without entering rates by hand. You can update the rates on demand or on a schedule.
 
 Go to **Configure >> General >> Exchange Rates**.
 
-<ImagePopup src="/images/configure/exchange-rates-configurations.png" alt="Exchange Rates configuration" />
+## Connect an exchange rate service
 
-## Choose a rate service
+Two services are supported. Sign up with one of them and copy your API key:
 
-Two services are supported. Sign up with the one you prefer and copy its API key:
+- **Exchange Rates API** ([exchangerate-api.com](https://www.exchangerate-api.com)) returns the rates for every currency in one request.
+- **Fixer API** ([fixer.io](https://fixer.io)) is asked for one currency at a time.
 
-- **Exchange Rates API** ([exchangerate-api.com](https://www.exchangerate-api.com)) fetches every currency in one call; the free plan allows 1,500 requests a month.
-- **Fixer API** ([fixer.io](https://fixer.io)) fetches rates per currency pair; the free plan allows 100 requests a month.
-
-## Enter the credentials
-
-1. In **General Settings**, choose the **Default Service** the store uses.
-2. In the **Exchange Rates API** or **Fixer API** section, paste the **API Key** for that service.
+1. In **General Settings**, choose the **Default Service**.
+2. In the **Exchange Rates API** or **Fixer API** section, enter the **API Key** of that service.
 3. Click **Save Configuration**.
 
-If no key is entered here, the store uses the key whoever manages the server has placed in its environment settings, so a key can be kept out of the admin entirely.
+<ImagePopup src="/images/configure/exchange-rates-settings.png" alt="Exchange Rates screen with the General Settings, Exchange Rates API and Fixer API sections" />
 
-## Schedule automatic updates
+If the API key is left empty, the store uses the key set in the server's environment file, if there is one.
 
-1. In the **Scheduled Import** section, switch **Enabled** on.
-2. Choose the **Frequency**: daily, weekly (every Monday) or monthly (on the first day of the month).
-3. Enter the **Start Time (HH:MM)** the update runs at, in 24-hour format, for example `03:00`.
+## Update the rates on a schedule
+
+1. In **Scheduled Import**, switch **Enabled** on.
+2. Choose the **Frequency**: **Daily**, **Weekly** (every Monday) or **Monthly** (on the first day of the month).
+3. Enter the **Start Time (HH:MM)** in 24-hour format, such as `03:00`.
 4. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/schedule.png" alt="Scheduled Import settings" />
+<ImagePopup src="/images/configure/exchange-rates-schedule.png" alt="Scheduled Import section set to update the rates daily at 03:00" />
 
-Scheduled updates run on the server's task scheduler. If the rates do not refresh at the set time, ask whoever manages the server to check that the scheduler is running.
+Scheduled updates run on the server's task scheduler. If the rates don't update at the set time, ask whoever manages your server to check that the scheduler is running.
 
-<ImagePopup src="/images/configure/terminial-cron.png" alt="Scheduler output on the server" />
-
-## Update the rates by hand
+## Update the rates now
 
 1. Go to **Settings >> Exchange Rates**.
 2. Click **Update Exchange Rate**.
 
-The rates are fetched from the default service at once. Rates can also be edited one by one on the same page; see [Exchange Rates](../settings/exchange-rates.md).
+The rates are fetched from the default service straight away. You can also enter a rate by hand on the same page; see [Exchange Rates](../settings/exchange-rates.md).
+
+# Sitemap
+
+A sitemap lists your storefront's pages so search engines can find and index them. The **Sitemap** screen decides whether sitemaps are generated for a channel and how many links each sitemap file holds. The sitemaps themselves are created under **Marketing >> Search & SEO >> Sitemaps**; see [Sitemaps](../marketing/sitemaps.md).
+
+## Set up sitemap generation
+
+1. Go to **Configure >> General >> Sitemap**.
+2. In **Settings**, check that **Enabled** is switched on. It is on by default.
+3. In **File Limits**, enter the **Maximum no. of URLs per file**. The default is `50000`.
+4. Click **Save Configuration**.
+
+<ImagePopup src="/images/configure/sitemap-settings.png" alt="Sitemap screen with the Settings and File Limits sections" />
+
+Both settings are set per channel.
+
+**Enabled:** When it is off, no sitemap files are generated for the channel, even for the sitemaps listed under **Marketing >> Search & SEO >> Sitemaps**.
+
+**Maximum no. of URLs per file:** The largest number of links written to one sitemap file. When a channel has more pages than that, the links are split across several files. Search engines accept up to 50,000 links in one file, so don't set it higher.
 
 # GDPR
 
-Bagisto's GDPR (General Data Protection Regulation) features let customers see and control the personal data you hold, and let you record their consent. Every setting on this page is per channel and per locale, so switch both at the top of the page to cover each store and language.
+Bagisto's GDPR (General Data Protection Regulation) features let customers request the personal data you hold about them, record their consent when they create an account, and show a cookie notice on the storefront. Every setting on this screen is set per channel and per language, so choose both at the top of the screen before you change anything.
 
 Go to **Configure >> General >> GDPR**.
 
 ## Turn GDPR on
 
-1. In the **GDPR Compliance Settings** section, switch **Enable GDPR** on.
+1. In **GDPR Compliance Settings**, switch **Enable GDPR** on.
 2. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/gdpr-agreement.png" alt="GDPR Compliance Settings" />
+<ImagePopup src="/images/configure/gdpr-settings.png" alt="GDPR Compliance Settings and GDPR Agreement sections with both switches turned on" />
 
-Once on, a **GDPR Requests** entry appears in the customer's account menu on the storefront with a **Create Request** button. Customers use it to ask for their data to be updated or deleted, and you handle those requests under **Customers >> GDPR Data Requests**.
+When GDPR is on, customers find **GDPR Data Requests** in their account on the storefront, where they click **Create Request** to ask for their data to be updated or deleted. You handle the requests under **Customers >> GDPR Data Requests**.
 
-## Ask for consent at sign up
+## Ask for consent when customers sign up
 
-The agreement adds a checkbox the customer must tick before registering.
+The customer agreement adds a checkbox that customers must tick to create an account.
 
-1. In the **GDPR Agreement** section, switch **Enable Customer Agreement** on.
-2. Enter the **Agreement Checkbox Label**, the sentence shown beside the checkbox, for example *I agree to the terms and conditions and the privacy policy*.
-3. Enter the **Agreement Content**, the full text shown when the shopper opens **Click Here** beside the checkbox.
+1. In **GDPR Agreement**, switch **Enable Customer Agreement** on.
+2. Enter the **Agreement Checkbox Label**, the sentence shown beside the checkbox. The default is *I agree with the terms and conditions.*
+3. Enter the **Agreement Content**, the full text of the agreement that customers can open from the checkbox.
 4. Click **Save Configuration**.
-
-<ImagePopup src="/images/configure/gdpr-agreement2.png" alt="GDPR Agreement settings" />
 
 ## Show a cookie notice
 
-1. In the **Cookie Notice Settings** section, switch **Enable Cookie Notice** on.
-2. Choose the **Cookie Block Display Position**: bottom left, bottom right, top left, top right or center.
-3. Optionally enter a **Static Block Identifier** to show one of your CMS blocks inside the notice.
-4. Enter the **Description** shoppers read in the notice.
+1. In **Cookie Notice Settings**, switch **Enable Cookie Notice** on.
+2. Choose the **Cookie Block Display Position**: **Bottom Left** (the default), **Bottom Right**, **Top Left**, **Top Right** or **Center**.
+3. Enter the **Static Block Identifier**, the heading shown at the top of the notice. The default is **Cookie Block**.
+4. Enter the **Description**, the message shoppers read in the notice, in up to 500 characters. A link to your privacy policy page is added after it.
 5. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/cookies-position.png" alt="Cookie Notice Settings" />
+<ImagePopup src="/images/configure/gdpr-cookie-notice.png" alt="Cookie Notice Settings section with the cookie notice turned on" />
 
 ## Describe the cookie categories
 
-The **Manage Your Cookie Preferences** section holds the text shown for each category a shopper can accept or refuse:
+**Manage Your Cookie Preferences** holds the text shown for each type of cookie a shopper can allow. Each comes with default text that you can edit:
 
-- **Strictly Necessary** – cookies the site needs to work, such as the session.
-- **Basic Interactions & Functionalities** – cookies behind features such as chat or forms.
-- **Experience Enhancements** – cookies that remember preferences such as language.
-- **Measurements** – analytics cookies that measure traffic and behaviour.
-- **Targeting & Advertising** – cookies used for personalised marketing.
+- **Strictly Necessary** – cookies the storefront needs in order to work.
+- **Basic Interactions & Functionalities** – trackers behind basic interactions and features.
+- **Experience Enhancements** – trackers that personalize the shopper's experience.
+- **Measurements** – trackers that measure traffic and behavior.
+- **Targeting & Advertising** – trackers used for personalized marketing and ads.
 
-Edit any of the texts and click **Save Configuration**.
+Click **Save Configuration** after changing any of them.
 
 # Generative AI Configuration
 
-Bagisto's generative AI features are branded **Magic AI** in the admin, and they are all configured in one place: **Configure >> Magic AI**. The group has four pages, listed on the left: **General**, **Providers**, **Admin Features** and **Storefront Features**.
+Bagisto's generative AI features are branded **Magic AI** in the admin, and they are all configured in one place: **Configure >> Magic AI**. The group has four screens: **General**, **Providers**, **Admin Features** and **Storefront Features**.
 
 This page covers the configuration only. What each feature does, and how to use it, is described in the [Generative AI](../generative-ai/introduction.md) section.
 
@@ -1334,7 +1342,7 @@ This page covers the configuration only. What each feature does, and how to use 
 
 ## Turn generative AI on
 
-1. Open the **General** page.
+1. Go to **Configure >> Magic AI >> General**.
 2. In the **Settings** section, switch **Enabled** on. This is the master switch: the admin features, AI image search and the checkout message do not run until it is on. Review translation is governed by its own switch alone.
 3. Click **Save Configuration**.
 
@@ -1345,7 +1353,7 @@ This page covers the configuration only. What each feature does, and how to use 
 Bagisto ships with eight providers: **OpenAI, Anthropic, Gemini, Groq, xAI, DeepSeek, Mistral** and **Ollama**. You only need to connect the ones you plan to use.
 
 1. Create an API key in your account on the provider's website.
-2. Open the **Providers** page.
+2. Go to **Configure >> Magic AI >> Providers**.
 3. Paste the key into that provider's **API Key** field.
 4. For **Ollama**, which runs models on your own server, enter the **Base URL** of that server as well, for example `http://localhost:11434`.
 5. Click **Save Configuration**.
@@ -1358,7 +1366,7 @@ Keys are stored as passwords and are not shown again once saved.
 
 Two features help you while you work in the admin: **Text Generation**, described under [Generate text content](../generative-ai/generate-content.md), and **Image Generation**, described under [Generate product images](../generative-ai/generate-images.md).
 
-1. Open the **Admin Features** page.
+1. Go to **Configure >> Magic AI >> Admin Features**.
 2. In the **Text Generation** section, switch **Enabled** on.
 3. In **Providers**, pick the providers whose models admins may use for text. Only providers with a saved key are useful here.
 4. Repeat the two steps in the **Image Generation** section. Not every provider offers image models.
@@ -1370,7 +1378,7 @@ Two features help you while you work in the admin: **Text Generation**, describe
 
 Three features run on the storefront: **AI Image Search**, **Review Translation** and **Personalized Checkout Message**. Each is set **per channel**; when your store has more than one channel, choose the channel at the top of the page first.
 
-1. Open the **Storefront Features** page.
+1. Go to **Configure >> Magic AI >> Storefront Features**.
 2. In the **AI Image Search**, **Review Translation** and **Personalized Checkout Message** sections, switch **Enabled** on for each feature you want.
 3. Choose the **Model** each feature runs on. Only models of providers with a saved key work.
 4. Click **Save Configuration**.
@@ -1391,363 +1399,573 @@ AI image search also needs the storefront's image search switched on under **Con
 
 # Shipping Settings
 
-The shipping origin is the place your orders are dispatched from. It is used for tax calculation when taxes are based on the shipping origin, and it is printed on invoices.
+The shipping origin is the address your orders are shipped from. It is used to calculate tax when **Calculation Based On** is set to **Shipping Origin** under [Taxes](./taxes.md), and your store details from this screen are printed on invoice PDFs.
+
+## Set the shipping origin
 
 1. Go to **Configure >> Sales >> Shipping Settings**.
-2. In the **Origin** section, enter the **Country**, **State**, **City**, **Street Address**, **Zip** and **Store Name** of the place you ship from.
-3. Optionally add the **Vat Number**, **Contact Number** and **Bank Details** to print on invoices.
+2. In **Origin**, enter the **Country**, **State**, **City**, **Street Address** and **Zip** of the place you ship from. All five are required.
+3. Optionally, enter the **Store Name**, **Vat Number**, **Contact Number** and **Bank Details** to print on invoices.
 4. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/shipping.png" alt="Shipping origin settings" />
+<ImagePopup src="/images/configure/shipping-origin.png" alt="Origin section filled in with a New York address" />
 
-The origin is per channel and per locale, so switch channel at the top of the page for a store that ships from somewhere else, and switch locale to translate the address and store name. The shipping methods themselves are configured under **Configure >> Sales >> Shipping Methods**; see [Shipping Methods](../shipping-method/shipping-methods.md).
+The origin is set per channel, and the address, store name and bank details are also set per language. The shipping methods shoppers choose from are set under [Shipping Methods](../shipping-method/shipping-methods.md).
+
+# Shipping Methods
+
+Bagisto comes with two shipping methods, **Free Shipping** and **Flat Rate Shipping**. At checkout, shoppers choose from the methods you turn on.
+
+## Offer a shipping method
+
+1. Go to **Configure >> Sales >> Shipping Methods**.
+2. In the section of the method you want to offer, switch **Status** on.
+3. Enter the **Title** shoppers see at checkout.
+4. Optionally, enter a **Description**.
+5. For **Flat Rate Shipping**, enter the **Rate** and choose the **Type**.
+6. Click **Save Configuration**.
+
+<ImagePopup src="/images/configure/shipping-methods-settings.png" alt="Shipping Methods screen with Free Shipping and Flat Rate Shipping turned on" />
+
+To stop offering a method, switch its **Status** off and save. All settings are set per channel, and the title and description are also set per language.
+
+## Free shipping
+
+A shipping method with no charge.
+
+| Setting | What it does |
+|---|---|
+| **Title** | The name of the method at checkout, such as `Free Shipping`. Required while **Status** is on. |
+| **Description** | A short line shown with the method at checkout. |
+| **Status** | Offers the method at checkout. |
+
+## Flat rate shipping
+
+A shipping method that charges a fixed rate.
+
+| Setting | What it does |
+|---|---|
+| **Title** | The name of the method at checkout, such as `Flat Rate`. Required while **Status** is on. |
+| **Description** | A short line shown with the method at checkout. |
+| **Rate** | The amount charged, in your store's base currency. Required while **Status** is on. |
+| **Type** | **Per Unit** charges the rate for every unit of each physical product in the cart, so three units cost three times the rate. **Per Order** charges the rate once for the whole order. |
+| **Status** | Offers the method at checkout. |
+
+The address orders are shipped from is set under [Shipping Settings](../configure/shipping.md).
+
+# Payment Methods
+
+Payment methods are the ways shoppers can pay at checkout. Bagisto comes with nine, listed here in the order they appear on the configuration screen: **Stripe**, **Razorpay**, **PayU**, **PhonePe**, **PayPal**, **PayPal Standard**, **PayGlocal**, **Cash On Delivery** and **Money Transfer**.
+
+## Offer a payment method
+
+1. Go to **Configure >> Sales >> Payment Methods**.
+2. In the section of the method you want to offer, switch **Status** on. The method's other settings appear.
+3. Enter the **Title** shoppers see at checkout.
+4. Optionally, enter a **Description** and add a **Logo**.
+5. Enter the settings of that method, described below.
+6. Enter the **Sort Order**.
+7. Click **Save Configuration**.
+
+To stop offering a method, switch its **Status** off and save. All settings are set per channel, and the title and description are also set per language.
+
+## Settings every method has
+
+| Setting | What it does |
+|---|---|
+| **Status** | Offers the method at checkout. The method's other settings appear only while it is on. |
+| **Title** | The name of the method at checkout. Required while **Status** is on. |
+| **Description** | A short line shown with the method at checkout. |
+| **Logo** | The image shown with the method at checkout. A size of 55 × 45 px is recommended. |
+| **Sort Order** | The position of the method at checkout. Methods with a lower number come first. Required while **Status** is on. |
+
+The online payment gateways also have a **Sandbox** switch. While it is on, payments go to the gateway's test environment and no real money is taken. Switch it off when you are ready to take real payments.
+
+## Stripe
+
+Stripe takes card payments.
+
+<ImagePopup src="/images/configure/payment-stripe.png" alt="Stripe section with Status turned on" />
+
+| Setting | What it does |
+|---|---|
+| **API Key** and **API Publishable Key** | The live secret key and publishable key from your Stripe account, used while **Sandbox** is off. |
+| **Sandbox** | Uses your test keys, so no real payments are taken. |
+| **API Test Secret Key** and **API Test Publishable Key** | The test keys from your Stripe account, used while **Sandbox** is on. |
+
+## Razorpay
+
+Razorpay is an Indian payment gateway that takes payments in Indian rupees (INR).
+
+<ImagePopup src="/images/configure/payment-razorpay.png" alt="Razorpay section with Status turned on" />
+
+| Setting | What it does |
+|---|---|
+| **Merchant Name** and **Merchant Description** | Your business name and a short description, in up to 200 characters each. |
+| **Client ID** and **Client Secret** | Your live API keys from Razorpay, used while **Sandbox** is off. |
+| **Sandbox** | Uses your test keys, so no real payments are taken. |
+| **Test Mode Client ID** and **Test Mode Client Secret** | Your test API keys from Razorpay, used while **Sandbox** is on. |
+
+## PayU
+
+PayU is a payment gateway that takes payments in Indian rupees (INR).
+
+<ImagePopup src="/images/configure/payment-payu.png" alt="PayU section with Status turned on" />
+
+| Setting | What it does |
+|---|---|
+| **Merchant Key** and **Merchant Salt** | The merchant key and salt from your PayU dashboard. |
+| **Sandbox** | Sends payments to PayU's test environment. |
+
+## PhonePe
+
+PhonePe is an Indian payments platform that takes payments in Indian rupees (INR). Customers are taken to PhonePe to pay, and return to the store once the payment is confirmed.
+
+<ImagePopup src="/images/configure/payment-phonepe.png" alt="PhonePe section with Status turned on" />
+
+| Setting | What it does |
+|---|---|
+| **Client ID**, **Client Secret** and **Merchant ID** | The credentials from your PhonePe dashboard. All three are required while **Status** is on. |
+| **Sandbox** | Sends payments to PhonePe's test environment. |
+
+## PayPal
+
+PayPal shows PayPal's own buttons at checkout, so customers can pay with their PayPal account or a card without leaving the store.
+
+<ImagePopup src="/images/configure/payment-paypal.png" alt="PayPal section with Status turned on" />
+
+| Setting | What it does |
+|---|---|
+| **Client ID** and **Client Secret** | The client ID and secret of your PayPal app. While **Sandbox** is on, use the client ID of your sandbox app. |
+| **Accepted currencies** | The currency codes your PayPal account accepts, separated by commas, such as `USD,EUR`. If the shopper's currency isn't in the list, the payment is made in the first currency listed. |
+| **Sandbox** | Sends payments to PayPal's sandbox, so no real payments are taken. |
+
+## PayPal Standard
+
+PayPal Standard sends customers to PayPal to pay with their PayPal account or a card, and returns them to the store afterwards.
+
+<ImagePopup src="/images/configure/payment-paypal-standard.png" alt="PayPal Standard section with Status turned on" />
+
+| Setting | What it does |
+|---|---|
+| **Business Account** | The email address of your PayPal business account. Required while **Status** is on. |
+| **Sandbox** | Sends payments to PayPal's sandbox, so no real payments are taken. |
+
+## PayGlocal
+
+PayGlocal takes cross-border payments. Customers pay on PayGlocal's checkout page and return to the store once the payment is confirmed. The link in the section's description takes you to PayGlocal to sign up and get your credentials.
+
+<ImagePopup src="/images/configure/payment-payglocal.png" alt="PayGlocal section with Status turned on" />
+
+| Setting | What it does |
+|---|---|
+| **Merchant ID** | Your merchant ID, found under **My Account** in the PayGlocal dashboard. |
+| **Public Key ID** and **Private Key ID** | The IDs of the PayGlocal public key and of your private key, shown in the PayGlocal dashboard. |
+| **PayGlocal Public Key** | The contents of the PayGlocal public key file. |
+| **Merchant Private Key** | The contents of the private key file you generated in the PayGlocal dashboard. |
+| **Accepted currencies** | The currency codes your PayGlocal account accepts, separated by commas, such as `USD,INR`. PayGlocal is used only for these currencies. Required while **Status** is on. |
+| **Sandbox** | Sends payments to PayGlocal's test environment. |
+
+## Cash On Delivery
+
+Cash On Delivery lets customers pay in cash when the order is delivered.
+
+<ImagePopup src="/images/configure/payment-cash-on-delivery.png" alt="Cash On Delivery section with Status turned on" />
+
+| Setting | What it does |
+|---|---|
+| **Instructions** | Instructions for the customer, such as having the exact amount ready. They are included in the order emails and on the invoice PDF. |
+| **Automatically generate the invoice after placing an order** | Creates the invoice as soon as the order is placed. |
+| **Set the invoice status after creating the invoice to** | **Pending** or **Paid**. Used only when the invoice is generated automatically. |
+| **Set the order status after creating the invoice to** | **Pending**, **Pending Payment** or **Processing**. Used only when the invoice is generated automatically. |
+
+## Money Transfer
+
+Money Transfer lets customers pay by bank transfer or cheque.
+
+<ImagePopup src="/images/configure/payment-money-transfer.png" alt="Money Transfer section with Status turned on" />
+
+| Setting | What it does |
+|---|---|
+| **Automatically generate the invoice after placing an order** | Creates the invoice as soon as the order is placed. |
+| **Set the invoice status after creating the invoice to** | **Pending** or **Paid**. Used only when the invoice is generated automatically. |
+| **Set the order status after creating the invoice to** | **Pending**, **Pending Payment** or **Processing**. Used only when the invoice is generated automatically. |
+| **Send Check to** | The name and address customers send their payment to. It is included in the order emails and on the invoice PDF. |
 
 # Checkout
 
-Go to **Configure >> Sales >> Checkout**. The page has two sections.
+The **Checkout** screen decides whether shoppers can buy at all, whether guests can check out, what the cart page offers, and how the mini cart behaves.
 
-### Shopping Cart
+Go to **Configure >> Sales >> Checkout**.
 
-<ImagePopup src="/images/configure/checkout.png" alt="Shopping Cart Settings" />
+## Shopping cart
 
-**Cart Page:** Turns buying on or off for the whole storefront. When it is off, the store becomes a catalog: product pages show a **Contact Us** button in place of **Add To Cart**, the **Buy Now** button and the mini cart disappear, and the cart and checkout pages are no longer reachable.
+1. In **Shopping Cart**, switch the options described below on or off.
+2. Click **Save Configuration**.
 
-**Allow guest checkout:** Let shoppers place an order without creating an account. A product can still be excluded with its own **Guest Checkout** switch.
+<ImagePopup src="/images/configure/checkout-settings.png" alt="Shopping Cart and Mini Cart sections of the Checkout screen" />
 
-**Cross sell Products:** Show cross-sell products on the cart page.
+All four options are on by default.
 
-**Estimated Shipping:** Show the shipping estimate box on the cart page.
+| Setting | What it does |
+|---|---|
+| **Cart Page** | Turns buying on or off for the whole storefront. When it is off, the store works as a catalog: the **Add To Cart** and **Buy Now** buttons and the mini cart are hidden, product pages show a **Contact Us** button that opens a contact form, and the cart and checkout pages can't be opened. |
+| **Allow guest checkout** | Lets shoppers place an order without signing in. When it is off, shoppers are asked to sign in before checkout. |
+| **Cross sell Products** | Shows cross-sell products on the cart page. How many are shown is set under [Cart View Page](./cart-view-page.md). |
+| **Estimated Shipping** | Shows a box on the cart page where shoppers enter their destination to get a shipping and tax estimate before checkout. |
 
-### Mini Cart
+## Guest checkout
 
-<ImagePopup src="/images/configure/mini-cart-summary.png" alt="Mini Cart Settings" />
-
-**Display Mini Cart:** Show the cart drawer when a shopper clicks the cart icon or adds a product. When it is off, the cart icon takes the shopper straight to the checkout.
-
-<ImagePopup src="/images/configure/disablemini-cart.png" alt="Cart Icon With the Mini Cart Disabled" />
-
-**Summary:** What the badge on the cart icon counts:
-
-- **Display number of items in cart** — the number of different products. Five products in the cart show **5**, whatever their quantities.
-
-<ImagePopup src="/images/configure/number-items.png" alt="Badge Counting Items" />
-
-- **Display item quantities** — the total quantity. One product with a quantity of seven shows **7**.
-
-<ImagePopup src="/images/configure/7mycart.png" alt="Badge Counting Quantities" />
-
-**Mini Cart Offer Information:** A line of text shown at the top of the mini cart, for a shipping offer or a promotion.
-
-<ImagePopup src="/images/configure/mini-cart1.png" alt="Mini Cart With an Offer Message" />
-
-After making changes, click **Save Configuration**.
-
-### On Bagisto 2.4
-
-The **Summary** choice sits in its own **My Cart** section between **Shopping Cart** and **Mini Cart**; the options are the same.
-
-# Guest Checkout
-
-Guest checkout lets shoppers place an order without creating an account, which shortens the purchase for first-time buyers.
-
-## Allow or block guest checkout
-
-1. Go to **Configure >> Sales >> Checkout**.
-2. In the **Shopping Cart** section, switch **Allow guest checkout** on or off.
-3. Click **Save Configuration**.
-
-<ImagePopup src="/images/configure/guest-checkout.png" alt="Allow guest checkout switch" />
-
-## Keep one product out of guest orders
-
-A product can be excluded on its own, whatever the store-wide setting says:
+While **Allow guest checkout** is on, you can still require an account for particular products:
 
 1. Go to **Catalog >> Products** and open the product.
-2. Switch **Guest Checkout** off in the product's settings.
+2. Switch **Guest Checkout** off.
 3. Click **Save Product**.
 
-A cart that contains such a product asks the shopper to sign in before checkout.
+When the cart holds such a product, shoppers must sign in before they can check out.
+
+## Mini cart
+
+The mini cart is the drawer that opens from the cart icon in the storefront header.
+
+1. In **Mini Cart**, set the options described below.
+2. Click **Save Configuration**.
+
+| Setting | What it does |
+|---|---|
+| **Display Mini Cart** | Opens the mini cart when shoppers click the cart icon. When it is off, the cart icon takes shoppers straight to the checkout. It is on by default. |
+| **Summary** | What the number on the cart icon counts. **Display number of items in cart** (the default) counts the different products in the cart. **Display item quantities** counts the total quantity. |
+| **Mini Cart Offer Information** | A line of text at the top of the mini cart, such as a promotion, in up to 200 characters. |
+
+<ImagePopup src="/images/configure/checkout-mini-cart-storefront.png" alt="Mini cart on the storefront with the offer text at the top" />
+
+In Bagisto 2.4, **Summary** has its own **My Cart** section on this screen.
 
 # Order Settings
 
+These settings decide how order numbers are built, the smallest order total a customer can check out with, whether an order can be placed again, and how often the store retries creating an order.
+
 Go to **Configure >> Sales >> Order Settings**.
 
-<ImagePopup src="/images/configure/order-settings.png" alt="Order settings" />
+## Order numbers
 
-## Order number settings
+1. In **Order Number Settings**, enter the **Order Number Prefix**, such as `ORD-`.
+2. Enter the **Order Number Length**, a number from `1` to `10`.
+3. Optionally, enter an **Order Number Suffix**.
+4. Click **Save Configuration**.
 
-Decide how order numbers are built: an **Order Number Prefix**, the **Order Number Length** it is padded to, and an **Order Number Suffix**. Change these before the store takes orders, so the numbering stays consistent.
+<ImagePopup src="/images/configure/order-settings-numbers.png" alt="Order Number Settings and Minimum Order Settings sections of the Order Settings screen" />
 
-## Minimum order settings
+The number is padded with zeros to the length you set, so a prefix of `ORD-` and a length of `6` give order numbers such as `ORD-000042`. Leave **Order Number Generator** empty unless a developer has built a custom number generator for your store. These settings are set per channel, so set them before the channel takes its first order.
 
-1. Switch **Enable** on.
-2. Enter the **Minimum Order Amount** a cart must reach before checkout is allowed.
-3. Choose whether the check counts the discount (**Include Discount Amount**) and the tax (**Include Tax to Amount**).
-4. Enter the **Description** shown in the cart when the amount is not reached.
-5. Click **Save Configuration**.
+## Minimum order amount
+
+1. In **Minimum Order Settings**, switch **Enable** on. The other settings appear.
+2. Enter the **Minimum Order Amount**.
+3. Switch **Include Discount Amount** on to check the cart total after discounts.
+4. Switch **Include Tax to Amount** on to count tax in the cart total.
+5. Enter the **Description**, the message shoppers see when their cart is below the minimum.
+6. Click **Save Configuration**.
+
+If **Description** is empty, shoppers see *Minimum order amount is* followed by the amount. The amount and the description are set per channel.
 
 ## Allow reorder
 
-Two switches let an order be placed again with the same items: **Admin Reorder** adds a **Reorder** button to the admin order page, and **Shop Reorder** adds one to the customer's order page on the storefront.
+**Admin Reorder** adds a **Reorder** button to orders in the admin panel, and **Shop Reorder** adds one to a customer's orders on the storefront. Both are on by default.
 
-<ImagePopup src="/images/configure/allow-reorder.png" alt="Allow Reorder switches" />
+1. In **Allow Reorder**, switch **Admin Reorder** on or off.
+2. Switch **Shop Reorder** on or off.
+3. Click **Save Configuration**.
 
-To reorder from the admin, go to **Sales >> Orders** and open an order placed by a registered customer. The **Reorder** button appears when every product on the order can still be bought; guest orders cannot be reordered, and booking products are skipped and must be booked again.
+<ImagePopup src="/images/configure/order-settings-reorder.png" alt="Allow Reorder and Order Creation sections of the Order Settings screen" />
 
-<ImagePopup src="/images/configure/admin-reorder.png" alt="Reorder button on an admin order" />
-
-On the storefront, the customer opens **My Account >> Orders**, opens the order, and finds **Reorder** at the top of the order's detail page.
-
-<ImagePopup src="/images/configure/frontreorder.png" alt="Reorder button on a customer's order" />
+The **Reorder** button appears only on orders placed by a registered customer, and only while the ordered products can still be bought. Booking products are left out and have to be booked again. In the admin panel, only users allowed to create orders see the button.
 
 ## Order creation
 
-**Max Retry Attempts** is how many times the store retries creating an order when the attempt fails part-way, for example when two orders are placed at the same instant. Leave the default unless you see failed order placements.
+**Max Retry Attempts** is how many times the store tries to create an order when an attempt fails during checkout. The default is `3`, and it is set per channel.
 
 # Invoice Settings
 
-Go to **Configure >> Sales >> Invoice Settings**. Click **Save Configuration** after changing any section.
+These settings decide how invoice numbers are built, when invoices are due, what the invoice PDF shows, and whether reminders are sent for unpaid invoices.
 
-## Invoice number settings
+Go to **Configure >> Sales >> Invoice Settings**.
 
-Decide how invoice numbers are built: an **Invoice Number Prefix**, the **Invoice Number Length** it is padded to, and an **Invoice Number Suffix**.
+## Invoice numbers
 
-<ImagePopup src="/images/configure/invoicenumber-settings.png" alt="Invoice Number Settings" />
+1. In **Invoice Number Settings**, enter the **Invoice Number Prefix**, such as `INV-`.
+2. Enter the **Invoice Number Length**, a number from `0` to `10`.
+3. Optionally, enter an **Invoice Number Suffix**.
+4. Click **Save Configuration**.
+
+<ImagePopup src="/images/configure/invoice-settings-numbers.png" alt="Invoice Number Settings and Payment Terms sections of the Invoice Settings screen" />
+
+The number is padded with zeros to the length you set, so a prefix of `INV-` and a length of `6` give invoice numbers such as `INV-000042`. Leave **Invoice Number Generator** empty unless a developer has built a custom number generator for your store. The invoice number settings are set per channel and per language, so set them before the channel issues its first invoice.
 
 ## Payment terms
 
-Enter the **Due Duration**, the number of days after the invoice date by which payment is due. It is printed on the invoice and drives the reminders below.
+1. In **Payment Terms**, enter the **Due Duration**, the number of days after the invoice date within which the invoice must be paid.
+2. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/payment-terms.png" alt="Payment Terms" />
+The due duration is set per channel.
 
 ## PDF print outs
 
-Choose what the invoice PDF shows: **Display Invoice ID in Header**, **Display Order ID in Header**, the **Logo** at the top, and a **Footer text**.
+1. In **PDF Print Outs**, switch **Display Invoice ID in Header** on or off.
+2. Switch **Display Order ID in Header** on or off. Both are on by default.
+3. Under **Logo**, click **Add Image** and choose the logo to print on the invoice. A size of 131 × 30 px is recommended.
+4. Enter the **Footer text** printed at the bottom of the PDF.
+5. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/invoice-slip.png" alt="PDF Print Outs" />
+<ImagePopup src="/images/configure/invoice-settings-pdf.png" alt="PDF Print Outs and Invoice Reminders sections of the Invoice Settings screen" />
+
+The logo is set per channel, and the footer text per channel and language.
 
 ## Invoice reminders
 
-Send automated reminder emails for invoices that are past their due date. Set the **Maximum limit of reminders** sent for one invoice and the **Interval between reminders**.
+Invoice reminders are emails sent to customers about invoices that are past their due date.
 
-<ImagePopup src="/images/configure/invoice-reminder.png" alt="Invoice Reminders" />
+1. In **Invoice Reminders**, enter the **Maximum limit of reminders** sent for one invoice.
+2. Choose the **Interval between reminders**, from **1 day** to **4 weeks**.
+3. Click **Save Configuration**.
+
+Reminders are sent once a day by the server's task scheduler. If they aren't sent, ask whoever manages your server to check that the scheduler is running.
 
 # Taxes
 
-This page decides how the tax categories and rates you created under **Settings >> Taxes** are applied to prices and shown to shoppers. The categories and rates themselves are managed on the [Taxes](../settings/taxes.md) settings page.
+This screen decides how tax is calculated and how it is shown to shoppers. The tax rates and tax categories themselves are created under **Settings >> Taxes**; see [Taxes](../settings/taxes.md).
 
 Go to **Configure >> Sales >> Taxes**.
 
-## Tax categories
+## Choose the tax categories
 
-Choose the **Shipping Tax Category** and the **Product Default Tax Category**. The product default is used when a product has no tax category of its own.
+1. In **Tax Categories**, choose the **Shipping Tax Category**.
+2. Choose the **Product Default Tax Category**.
+3. Click **Save Configuration**.
 
-## Calculation settings
+<ImagePopup src="/images/configure/taxes-calculation.png" alt="Tax Categories and Calculation Settings sections of the Taxes screen" />
 
-**Calculation Based On:** Which address decides the tax rate:
+**Shipping Tax Category:** The tax category used to calculate tax on shipping. If none is chosen, shipping is not taxed.
 
-- **Shipping Address** – the address the order is delivered to.
-- **Billing Address** – the address linked to the payment.
-- **Shipping Origin** – the location you ship from, set under **Configure >> Sales >> Shipping Settings**.
+**Product Default Tax Category:** The tax category used for products that don't have a tax category of their own.
 
-<ImagePopup src="/images/configure/shipping.png" alt="Calculation Based On setting" />
+## Decide how tax is calculated
 
-**Product Prices:** Whether the prices you enter on products already include tax:
+1. In **Calculation Settings**, choose the options described below.
+2. Click **Save Configuration**.
 
-- **Excluding Tax** – tax is added on top of the entered price.
+| Setting | Options |
+|---|---|
+| **Calculation Based On** | The address that decides which tax rates apply: **Shipping Address** (the default), **Billing Address**, or **Shipping Origin**, the address set under [Shipping Settings](./shipping.md). |
+| **Product Prices** | **Excluding Tax** (the default) when the prices you enter don't include tax, so tax is added on top. **Including Tax** when they already include it. |
+| **Shipping Prices** | The same choice for shipping rates. |
+| **Apply Tax On** | **After Discount** (the default) calculates tax on the price after cart rule discounts. **Before Discount** calculates it on the original price. This applies only to prices that exclude tax. |
 
-<ImagePopup src="/images/configure/exclude-tax.png" alt="Product prices excluding tax" />
+## Set a default destination
 
-- **Including Tax** – the entered price already contains the tax.
+Until a shopper enters an address, tax is calculated for the default destination.
 
-<ImagePopup src="/images/configure/include-tax.png" alt="Product prices including tax" />
-
-**Shipping Prices:** The same choice for shipping rates.
-
-**Apply Tax On:** Whether tax is calculated on the original price or the discounted price.
-
-## Default destination calculation
-
-Set the **Default Country**, **Default State** and **Default Post Code** used to calculate tax before a shopper has entered an address, for example on category pages and in the cart.
-
-<ImagePopup src="/images/configure/destination.png" alt="Default Destination Calculation settings" />
-
-## Display settings
-
-**Shopping Cart Display Settings** control how prices, the subtotal and the shipping amount are shown in the cart. **Orders, Invoices, Refunds Display Settings** make the same choice for the documents an order produces. Each field takes one of:
-
-- **Excluding Tax** – tax is shown as a separate line.
-
-<ImagePopup src="/images/configure/exclude-tax.png" alt="Cart showing prices excluding tax" />
-
-- **Including Tax** – tax is folded into the amount.
-
-<ImagePopup src="/images/configure/include-tax.png" alt="Cart showing prices including tax" />
-
-- **Excluding and Including Both** – both amounts are shown.
-
-<ImagePopup src="/images/configure/includeexclude-both.png" alt="Cart showing both amounts" />
-
-The cart section also has a **Show Tax Breakdown** switch that lists each tax rate applied.
-
-Click **Save Configuration** after any change.
-
-# Configurable Choices
-
-Three storefront features can be switched on or off. They live in two places, so this page points you to each.
-
-## Compare and image search
-
-1. Go to **Configure >> Catalog >> Products** and find the **Settings** section.
-2. Switch **Compare options** on to let shoppers add products to a comparison page.
-3. Switch **Image Search Option** on to add a camera icon to the storefront search bar, so shoppers can search by uploading a photo.
+1. In **Default Destination Calculation**, choose the **Default Country**.
+2. Choose the **Default State**.
+3. Enter the **Default Post Code**.
 4. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/options.png" alt="Compare and image search options" />
+<ImagePopup src="/images/configure/taxes-display.png" alt="Default Destination Calculation and tax display sections of the Taxes screen" />
 
-To have an uploaded photo understood by an AI model rather than by the browser alone, see [AI image search](../generative-ai/image-search.md).
+## Choose how tax is displayed
 
-## Wishlist
+**Shopping Cart Display Settings** decide how tax is shown in the cart and at checkout. **Orders, Invoices, Refunds Display Settings** decide the same for orders, invoices and refunds. Both sections have **Display Prices**, **Display Subtotal** and **Display Shipping Amount**, each with these options:
 
-1. Go to **Configure >> Customer >> Settings** and find the **Wishlist** section.
-2. Switch **Allow Wishlist option** on.
+- **Excluding Tax** – the amount without tax. This is the default.
+- **Including Tax** – the amount with tax.
+- **Excluding and Including Both** – both amounts.
+
+**Show Tax Breakdown**, in the cart section, lists the tax for each product and tax rate in the cart and checkout summary. It is meant for checking your tax setup, and is off by default.
+
+# RMA
+
+These settings control return requests (RMA, return merchandise authorization): how long customers have to request a return, which product types can be returned, the return policy customers read, the files that can be attached, and whether a closed return can be reopened. How returns are requested and handled is described in [Return Merchandise Authorization (RMA)](../orders/rma.md).
+
+## Set up returns
+
+1. Go to **Configure >> Sales >> RMA**.
+2. Set the options described below.
 3. Click **Save Configuration**.
+
+<ImagePopup src="/images/configure/rma-settings.png" alt="RMA screen with the return window, return policy and allowed options" />
+
+All settings are set per channel, and the return policy is also set per language.
+
+| Setting | What it does |
+|---|---|
+| **Default allowed days** | The number of days after an order is placed within which the customer can request a return, used when no RMA rule sets a different window. The default is `7`. |
+| **Return Policy** | The return policy customers read on the storefront before they submit a return request. |
+| **Allowed File Extension** | The file types customers and admins can attach to a return request, such as product photos: **JPG / JPEG**, **PNG** and **WEBP**. |
+| **Allow Reopening Cancelled Returns** | **Yes** lets a customer resubmit a return that was cancelled, and it moves back to **Pending Review**. **No** makes a cancelled return final. |
+| **Allow Reopening Declined Returns** | **Yes** lets a customer resubmit a return that you declined, and it moves back to **Pending Review**. **No** makes a declined return final. |
+| **Allow Product Type For RMA** | The product types that can be returned: **Simple**, **Configurable**, **Bundle** and **Grouped**. The return window is set when an order is placed, so a change here applies to new orders only. |
+
+# EU Withdrawals
+
+EU withdrawals let customers withdraw from a purchase online, as the EU requires for consumers under Directive (EU) 2023/2673 (Article 11a of the Consumer Rights Directive). The feature is turned on for each channel. How customers withdraw and how you handle withdrawals is described in [EU Withdrawal](../orders/eu-withdrawal.md).
+
+## Turn on EU withdrawals for a channel
+
+1. Go to **Configure >> Sales >> EU Withdrawals**.
+2. If your store has more than one channel, choose the channel at the top of the screen.
+3. In **General**, switch **Enable** on.
+4. Click **Save Configuration**.
+
+<ImagePopup src="/images/configure/eu-withdrawals-settings.png" alt="EU Withdrawals screen with the Enable switch" />
+
+When it is on, customers of that channel see a **Withdraw from contract** button on their order pages, and guests can use the public withdrawal lookup form. Turn it on only for channels that sell to consumers in the EU. While it is off, the withdrawal pages of the channel, including the guest lookup form, show a "not found" page.
+
+# Product Settings
+
+The **Settings** section of the **Products** screen turns two storefront features on or off: product comparison and search by image.
+
+1. Go to **Configure >> Catalog >> Products**.
+2. In **Settings**, switch **Compare options** on or off.
+3. Switch **Image Search Option** on or off.
+4. Click **Save Configuration**.
+
+<ImagePopup src="/images/configure/products-settings.png" alt="Settings section of the Products screen with Compare options and Image Search Option" />
+
+**Compare options:** Shows the compare icon in the storefront header and a **Compare** button on products, so shoppers can compare products side by side. It is on by default.
+
+**Image Search Option:** Shows a camera icon in the storefront search bar, so shoppers can search by uploading a photo. It is on by default. To have the photo understood by an AI model, also turn on [AI image search](../generative-ai/image-search.md).
+
+The **Products** screen also holds the [Storefront](./frontend.md), [Product View Page](./product-view-page.md), [Review](./review.md), [Social Share](./social-share.md), [Cart View Page](./cart-view-page.md), [Image Size](./image-size.md), [Attribute](./attribute.md) and [Omnibus Price Disclosure](./omnibus.md) sections. The wishlist is turned on or off under [Customer Settings](./settings.md#wishlist-and-newsletter).
 
 # Storefront
 
-The storefront serves as the customer-facing component of an online store, featuring product displays, category listings, and intuitive navigation to ensure a smooth and enjoyable shopping experience.
+The **Storefront** section decides how products are listed on category and search pages when a shopper first opens them.
 
-Go to **Configure >> Catalog >> Products** and find the **Storefront** section.
+1. Go to **Configure >> Catalog >> Products**.
+2. In **Storefront**, choose the **Default List Mode**.
+3. Enter the **Products Per Page**.
+4. Choose the **Sort By** order.
+5. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/storefront-settings.png" alt="Storefront Settings" />
+<ImagePopup src="/images/configure/products-storefront.png" alt="Storefront section of the Products screen" />
 
-**Default List Mode:** How products are shown on category and search pages, **Grid** or **List**. Shoppers can switch between the two on the page; this is the view they see first.
+All three settings are set per channel.
 
-### List Mode
+| Setting | What it does |
+|---|---|
+| **Default List Mode** | Whether products are shown as a **Grid** of cards or a **List** of rows. Shoppers can switch between the two on the page; this is the view they see first. |
+| **Products Per Page** | The page sizes shoppers can choose from, separated by commas, such as `12,24,36`. The first value is used until a shopper chooses another. |
+| **Sort By** | The order products are listed in until a shopper chooses another: **From A-Z**, **From Z-A**, **Newest First**, **Oldest First**, **Cheapest First** or **Expensive First**. |
 
-<ImagePopup src="/images/configure/listmode.png" alt="List Mode" />
+<ImagePopup src="/images/configure/products-storefront-listing.png" alt="Category page on the storefront with the sort order, page size and the list and grid buttons" />
 
-### Grid Mode
+## Differences in Bagisto 2.4
 
-<ImagePopup src="/images/configure/gridmode.png" alt="Grid Mode" />
-
-**Products Per Page:** The page sizes the shopper can pick from on a listing, as a comma-separated list such as `12,24,36`. The first value is used until the shopper chooses another.
-
-**Sort By:** The order products are listed in until the shopper picks another.
-
-All three are set per channel. After making changes, click **Save Configuration**.
-
-## Settings that moved
-
-Two settings that used to sit in this section are elsewhere on Bagisto 2.5:
-
-- The **Search Engine** choice (Database or Elasticsearch) is now the **Default Search Engine** setting under **Configure >> Search Engines**; see [Search Engines](./search-engines.md).
-- **Allow customers to directly buy products** (the **Buy Now** button) is now in the [Product View Page](./product-view-page.md) section, further down the same **Products** page.
-
-On Bagisto 2.4 the **Buy Now** switch is still in the **Storefront** section, and the **Search Engine** field is in the **Search** section above it.
+In Bagisto 2.4, this section also holds **Allow customers to directly buy products**, which is in [Product View Page](./product-view-page.md) in Bagisto 2.5. The search settings of the Bagisto 2.4 **Search** section are under [Search Engines](./search-engines.md) in Bagisto 2.5.
 
 # Product View Page
 
-A Product View Page is a dedicated page within an online store that displays detailed information about a specific product. This page helps customers make informed purchasing decisions.
+The **Product view page configuration** section decides how many related and up-sell products the product page shows, and whether shoppers can buy a product straight from its page.
 
-Go to **Configure >> Catalog >> Products** and find the **Product view page configuration** section.
+1. Go to **Configure >> Catalog >> Products**.
+2. In **Product view page configuration**, enter the **Allowed number of Related Products**.
+3. Enter the **Allowed number of Up-Sell Products**.
+4. Switch **Allow customers to directly buy products** on or off.
+5. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/product-view-page-buy-now.png" alt="Product View Page Configuration" />
+<ImagePopup src="/images/configure/products-product-view-page.png" alt="Product view page configuration section of the Products screen" />
 
-**Allowed number of Related Products:** How many of the product's related products are shown below it.
+**Allowed number of Related Products** and **Allowed number of Up-Sell Products:** How many of the related and up-sell products chosen on a product are shown on its page.
 
-**Allowed number of Up-Sell Products:** How many of its up-sell products are shown.
+**Allow customers to directly buy products:** Shows a **Buy Now** button beside **Add To Cart** on the product page. Shoppers who click it go straight to the checkout with that product. It is off by default, and the button is not shown while **Cart Page** is turned off under [Checkout](./checkout.md).
 
-**Allow customers to directly buy products:** Shows a **Buy Now** button beside **Add To Cart** on the product page. A shopper who clicks it is taken straight to the checkout with that product, skipping the cart. On Bagisto 2.4 this switch is in the **Storefront** section instead.
-
-<ImagePopup src="/images/configure/buy-now.png" alt="Buy Now Button on the Product Page" />
-
-After configuring, click the **Save Configuration** button.
-
-# Cart View Page
-
-The cart page can suggest cross-sell products beneath the items in the cart. This setting decides how many.
-
-1. Go to **Configure >> Catalog >> Products** and find the **Cart view page configuration** section.
-2. Enter the **Allowed number of Cross-Sell Products**.
-3. Click **Save Configuration**.
-
-<ImagePopup src="/images/configure/cartpage-configuration.png" alt="Cart view page configuration" />
-
-The suggestions only appear while **Cross sell Products** is switched on under **Configure >> Sales >> Checkout**, and a product only contributes the cross-sells chosen on its own edit page.
+In Bagisto 2.4, **Allow customers to directly buy products** is in the [Storefront](./frontend.md) section instead.
 
 # Review
 
-These settings control who can write product reviews and how reviews are shown on the product page.
+The **Review** section decides who can review products and how reviews are summarized on the product page.
 
-1. Go to **Configure >> Catalog >> Products** and find the **Review** section.
-2. Set the options below.
+1. Go to **Configure >> Catalog >> Products**.
+2. In **Review**, set the options described below.
 3. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/image.png" alt="Review settings" />
+<ImagePopup src="/images/configure/products-review.png" alt="Review section of the Products screen" />
 
-**Allow Customer Review:** Let logged-in customers write reviews.
+| Setting | What it does |
+|---|---|
+| **Allow Customer Review** | Lets signed-in customers write reviews. It is on by default. |
+| **Allow Guest Review** | Lets shoppers who aren't signed in write reviews too. It is off by default. |
+| **Censoring Reviewer Name** | Partly masks reviewer names on the storefront, such as **J*** D****. It is on by default. |
+| **Summary** | What the rating summary counts: **Display the review count for ratings.** (the default) or **Display the star count in ratings.** |
 
-**Allow Guest Review:** Let visitors who are not logged in write reviews as well.
-
-**Censoring Reviewer Name:** Show reviewer names partly masked on the storefront.
-
-**Summary:** How the review summary at the top of the reviews is laid out.
-
-Reviews written by shoppers wait for approval under **Customers >> Reviews**; see [Customer Reviews](../customer/customer-review.md).
+New reviews wait for your approval under **Customers >> Reviews** before they appear on the storefront; see [Customer Reviews](../customer/customer-review.md).
 
 # Social Share
 
-Social Share adds share buttons to product pages for Facebook, X (Twitter), Pinterest, WhatsApp, LinkedIn and email.
+Social share adds share buttons to product pages, so shoppers can share a product on Facebook, X (Twitter), Pinterest, WhatsApp or LinkedIn, or by email.
 
-## Turn on share buttons
-
-1. Go to **Configure >> Catalog >> Products** and find the **Social Share** section.
-2. Switch **Enable Social Share?** on.
-3. Switch on each network you want to offer. The WhatsApp button appears on mobile devices only.
-4. Enter the **Share Message** that accompanies the shared link.
+1. Go to **Configure >> Catalog >> Products**.
+2. In **Social Share**, switch **Enable Social Share?** on.
+3. Switch on each network you want to offer: **Enable Share in Facebook?**, **Enable Share on X (Twitter)?**, **Enable Share in Pinterest?**, **Enable Share on WhatsApp?**, **Enable Share in Linkedin?** and **Enable Share in Email?**.
+4. Enter the **Share Message** that goes with the shared link.
 5. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/social-share.png" alt="Social Share settings" />
+<ImagePopup src="/images/configure/products-social-share.png" alt="Social Share section of the Products screen with share buttons turned on" />
 
-The enabled buttons appear on every product page:
+The share buttons appear on every product page. The WhatsApp button appears only on mobile devices.
 
-<ImagePopup src="/images/configure/social-output.png" alt="Share buttons on a product page" />
+# Cart View Page
+
+The cart page can suggest cross-sell products below the items in the cart. The **Cart view page configuration** section decides how many.
+
+1. Go to **Configure >> Catalog >> Products**.
+2. In **Cart view page configuration**, enter the **Allowed number of Cross-Sell Products**.
+3. Click **Save Configuration**.
+
+<ImagePopup src="/images/configure/products-cart-view-page.png" alt="Cart view page configuration section of the Products screen" />
+
+The suggestions appear only while **Cross sell Products** is switched on under [Checkout](./checkout.md), and they come from the cross-sell products chosen on the products in the cart.
 
 # Image Size
 
-Every product image is resized into three sizes for the storefront: small for lists and the cart, medium for product cards, and large for the product page. Set the pixel sizes here, and a placeholder for products that have no image of their own.
+The storefront shows product images in three sizes: small for thumbnails, medium for product cards, and large for the image gallery on the product page. The **Small Image**, **Medium Image** and **Large image** sections set the size of each, and the placeholder shown for products that have no image of their own.
 
 1. Go to **Configure >> Catalog >> Products**.
 2. In **Small Image**, **Medium Image** and **Large image**, enter the **Width** and **Height** in pixels.
-3. Optionally click **Add Image** under each size to upload the placeholder shown when a product has no image.
+3. Optionally, click **Add Image** under **Small Image Placeholder**, **Medium Image Placeholder** and **Large Image Placeholder**, and choose the image shown when a product has no image.
 4. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/image-size.png" alt="Image size settings" />
+<ImagePopup src="/images/configure/products-image-size.png" alt="Small Image, Medium Image and Large image sections of the Products screen" />
 
-Sizes already generated are refreshed the next time each image is requested, so a change can take a moment to show everywhere.
+A placeholder can be a BMP, JPEG, JPG, PNG, WEBP or SVG file.
 
 # Attribute
 
-Attributes of the **image** and **file** types accept uploads on the product form. This setting caps how large those uploads may be.
+Product attributes of the **Image** and **File** types let you upload files on the product form. The **Attribute** section sets the largest size those uploads can have.
 
-1. Go to **Configure >> Catalog >> Products** and find the **Attribute** section.
-2. Enter the **Allowed Image Upload Size (in Kb)** and the **Allowed File Upload Size (in Kb)**.
-3. Click **Save Configuration**.
+1. Go to **Configure >> Catalog >> Products**.
+2. In **Attribute**, enter the **Allowed Image Upload Size (in Kb)**.
+3. Enter the **Allowed File Upload Size (in Kb)**.
+4. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/attribute.png" alt="Attribute upload size settings" />
+<ImagePopup src="/images/configure/products-attribute.png" alt="Attribute section of the Products screen with the upload size limits" />
+
+Enter the sizes in kilobytes, so `2048` allows files of up to 2 MB. The attribute types are described in [Attribute Input Types](../attribute/attribute-input.md).
 
 # Omnibus Price Disclosure
 
-The EU Omnibus Directive requires a store that announces a discount to show the lowest price it charged for that product in the 30 days before the discount. Bagisto can record product prices as they change and show that lowest price next to a discounted price on the storefront.
+The EU Omnibus Directive requires a store that announces a discount to show the lowest price it charged for that product in the 30 days before the discount. Bagisto can record product prices as they change and show that lowest price next to a discounted price on the storefront. This section is available in Bagisto 2.5.
 
-Go to **Configure >> Catalog >> Products** and find the **Omnibus Price Disclosure** section. It is available from Bagisto 2.5.
+## Turn on price disclosure
 
-<ImagePopup src="/images/configure/omnibus.png" alt="Omnibus Price Disclosure Setting" />
+1. Go to **Configure >> Catalog >> Products**.
+2. If your store has more than one channel, choose the channel at the top of the screen.
+3. In **Omnibus Price Disclosure**, switch **Enable Omnibus Disclosure** on.
+4. Click **Save Configuration**.
 
-**Enable Omnibus Disclosure:** Turn on for the channel you are configuring. The setting is per channel, so switch channel at the top of the page to enable it on each store that sells in the EU.
+<ImagePopup src="/images/configure/products-omnibus.png" alt="Omnibus Price Disclosure section of the Products screen" />
 
-Click **Save Configuration**.
+The setting is per channel, so turn it on for each channel that sells to consumers in the EU.
 
 ## What the customer sees
 
@@ -1763,254 +1981,262 @@ Once the setting is on, the store records every product's price whenever it chan
 
 A newly enabled store has no history yet. The first prices are recorded on the next scheduled run, and the lowest price shown grows more meaningful as the days accumulate.
 
-# Back Orders
+# Inventory
 
-A back order is an order for a product that is out of stock at the time it is placed. Allowing back orders keeps a product buyable while you restock; blocking them shows the product as out of stock instead.
+The **Inventory** screen decides whether shoppers can order more of a product than you have in stock, and the stock level at which the admin dashboard marks a product as low.
+
+Go to **Configure >> Catalog >> Inventory**.
 
 ## Allow back orders
 
-1. Go to **Configure >> Catalog >> Inventory**.
-2. In the **Product Stock Option** section, switch **Allow Back Orders** on.
-3. Set the **Out-of-Stock Threshold**, the quantity at which a product counts as out of stock.
-4. Click **Save Configuration**.
+A back order is an order for more units than you have in stock. Allowing back orders keeps products buyable while you restock.
 
-<ImagePopup src="/images/configure/backorder.png" alt="Product Stock Option settings" />
+1. In **Product Stock Option**, switch **Allow Back Orders** on.
+2. Click **Save Configuration**.
 
-## What the shopper sees
+<ImagePopup src="/images/configure/inventory-settings.png" alt="Product Stock Option section of the Inventory screen" />
 
-With back orders allowed, a product with no stock still shows **Add To Cart** and the order goes through; the item's quantity goes negative until you restock.
+While it is off, shoppers can't add more units of a product to the cart than you have in stock.
 
-<ImagePopup src="/images/configure/outofstock.png" alt="Out-of-stock product that can still be bought" />
+## Set the out-of-stock threshold
 
-<ImagePopup src="/images/configure/backorder-output.png" alt="Back-ordered product in the cart" />
+1. In **Product Stock Option**, enter the **Out-of-Stock Threshold**. The default is `0`.
+2. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/order-id.png" alt="Order placed for a back-ordered product" />
+The **Stock Threshold** card on the admin dashboard shows the stock of each product it lists in red when the stock is at or below this threshold, so you can see what needs restocking.
 
 # Rich Snippets
 
-Rich snippets are structured data added to your storefront pages so search engines can show extra detail, such as a price, rating or availability, directly in their results.
+Rich snippets are structured data added to storefront pages, so search engines can show extra details, such as a price, rating or availability, directly in their results.
 
 Go to **Configure >> Catalog >> Rich Snippets**.
 
 ## Products
 
-1. In the **Products** section, switch **Enable** on.
-2. Switch on each detail to include: SKU, weight, categories, images, reviews, ratings and offers.
+1. In **Products**, switch **Enable** on.
+2. Switch on each detail to include: **Show SKU**, **Show Weight**, **Show Categories**, **Show Images**, **Show Reviews**, **Show Ratings** and **Show Offers**.
 3. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/products.png" alt="Product rich snippet settings" />
+<ImagePopup src="/images/configure/rich-snippets-settings.png" alt="Products and Categories sections of the Rich Snippets screen" />
 
 ## Categories
 
-1. In the **Categories** section, switch **Enable** on.
-2. Choose whether the storefront search box is described to search engines, which lets them offer a search field in the result.
+1. In **Categories**, switch **Enable** on.
+2. Switch **Show Search Input Field** on to describe your storefront search to search engines, so they can offer a search box for your store in their results.
 3. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/categories.png" alt="Category rich snippet settings" />
+# Customer Settings
 
-# Settings
-
-These settings decide how customer accounts are created and signed in to.
+The **Settings** screen of the **Customer** group decides how customer accounts are created and signed in to, and whether the wishlist and the newsletter are offered.
 
 Go to **Configure >> Customer >> Settings**.
 
-<ImagePopup src="/images/configure/settings.png" alt="Customer settings" />
+## New accounts
 
-## Create new account options
+1. In **Create New Account Options**, choose the **Default Group** new customers are placed in. The default is **General**.
+2. Switch **Allow NewsLetter** on to show a newsletter subscription checkbox on the sign-up form. It is on by default.
+3. Click **Save Configuration**.
 
-**Default Group:** The customer group a new account is placed in.
+<ImagePopup src="/images/configure/customer-settings.png" alt="Create New Account Options, Email Verification and Login Options sections of the Customer Settings screen" />
 
-**Allow NewsLetter:** Show the newsletter subscription checkbox on the sign-up form.
+Customer groups are described in [Customer Groups](../customer/customer-group.md).
 
 ## Email verification
 
-Switch **Allow Email Verification** on to send new customers a confirmation link they must open before they can sign in.
+While **Allow Email Verification** is on, new customers receive an email with a verification link, and they can sign in only after they have opened it. It is off by default.
 
-## Login options
+1. In **Email Verification**, switch **Allow Email Verification** on or off.
+2. Click **Save Configuration**.
 
-**Redirect Customer to the selected page:** Where a customer lands after signing in, the home page or their account.
+## Sign-in redirect
+
+1. In **Login Options**, set **Redirect Customer to the selected page** to where customers land after signing in: **Home** (the default) or **Account**, their account profile.
+2. Click **Save Configuration**.
 
 ## Social login
 
-Let customers sign in with a Facebook, X (Twitter), Google, LinkedIn or GitHub account. For each network, switch it on and enter the **Client ID** and **Client Secret** from the app you registered with that network, and copy the **Redirect URL** shown into that app's settings.
+Social login lets customers sign in with their Facebook, X (Twitter), Google, LinkedIn or GitHub account. The buttons of the providers you turn on appear on the storefront sign-in page. Before you start, create an app in the developer console of each provider to get its client ID and client secret.
 
-## Wishlist
+1. In **Social Login**, switch on the provider: **Enable Facebook**, **Enable X (Twitter)**, **Enable Google**, **Enable LinkedIn** or **Enable GitHub**. Its fields appear.
+2. Enter the **Client ID** and **Client Secret** of your app.
+3. Check the **Redirect URL**. Keep the path shown and change only the domain to your store's, such as `https://www.example.com/customer/social-login/google/callback`.
+4. Add the same **Redirect URL** to your app's settings in the provider's developer console.
+5. Click **Save Configuration**.
 
-Switch **Allow Wishlist option** on to let shoppers save products to a wishlist.
+<ImagePopup src="/images/configure/customer-social-login.png" alt="Social Login section with Google turned on and its client ID, client secret and redirect URL fields" />
 
-## Newsletter subscription
+Each provider's switch is set per channel, while its client ID, client secret and redirect URL apply to the whole store.
 
-Switch **Allow Newsletter Subscription** on to show the subscription form in the storefront footer.
+## Wishlist and newsletter
 
-Click **Save Configuration** after any change.
+1. In **Wishlist**, switch **Allow Wishlist option** on or off.
+2. In **Newsletter Subscription**, switch **Allow Newsletter Subscription** on or off.
+3. Click **Save Configuration**.
+
+**Allow Wishlist option** lets shoppers save products to a wishlist. **Allow Newsletter Subscription** shows the subscription form in the storefront footer. Both are on by default.
 
 # Address
 
-These settings decide what a customer must fill in on an address form, at sign up, in the account and at checkout.
+The **Address** screen decides which fields customers must fill in on address forms, and how many street address lines the forms show. It applies to the address forms in the customer account and at checkout on the storefront, and to the address forms in the admin panel.
 
-Go to **Configure >> Customer >> Address**.
+1. Go to **Configure >> Customer >> Address**.
+2. In **Requirements**, switch **Country**, **State** and **Zip** on to make them required, or off to make them optional.
+3. In **Information**, enter the number of **Lines in a Street Address**, from `1` to `4`.
+4. Click **Save Configuration**.
 
-**Requirements:** Whether **Country**, **State** and **Zip** are compulsory. Turn a field off for markets where it does not apply.
+<ImagePopup src="/images/configure/customer-address.png" alt="Requirements and Information sections of the Address screen" />
 
-**Information:** The number of **Lines in a Street Address** the form offers.
-
-Click **Save Configuration** after any change. The settings are per channel.
-
-<ImagePopup src="/images/configure/address.png" alt="Address settings" />
+All settings are set per channel. By default, the country, state and zip are required, and the street address has one line.
 
 # Google Captcha
 
-Google reCAPTCHA protects your storefront's forms from bots and automated abuse by scoring each visitor and rejecting the ones that look automated. Bagisto uses **reCAPTCHA Enterprise**, which is why a Google Cloud project and an API key are needed alongside the site key.
-
-Go to **Configure >> Customer >> Google Captcha**. The settings are per channel.
-
-<ImagePopup src="/images/configure/configure-captcha.png" alt="Google Captcha configuration" />
+Google reCAPTCHA protects your storefront's forms from bots. It gives every visitor a score, and rejects requests whose score is below the threshold you set. Bagisto uses **reCAPTCHA Enterprise**, which needs a Google Cloud project, an API key and a site key.
 
 ## Get the keys from Google Cloud
 
 ### Project ID
 
-1. Open the [Google Cloud Console](https://console.cloud.google.com/).
-2. Create a project, or pick an existing one from the project dropdown.
-3. Copy the **Project ID** from the project dashboard. It is not the same as the project name.
-
-<ImagePopup src="/images/configure/project-id.png" alt="Project ID in Google Cloud Console" />
+1. Open the [Google Cloud console](https://console.cloud.google.com/).
+2. Create a project, or choose an existing one.
+3. Copy the project ID from the project dashboard. It is not the same as the project name.
 
 ### API key
 
-1. In the console, open **APIs & Services >> Credentials**.
-2. Click **Create Credentials** and choose **API Key**.
-3. Copy the generated key.
-
-<ImagePopup src="/images/configure/api-1.png" alt="Creating an API key" />
+1. In the Google Cloud console, open the **Credentials** page of the **APIs & Services** menu.
+2. Create an API key.
+3. Copy the new key.
 
 ### Site key
 
-1. In the console, open **Security >> reCAPTCHA**.
-2. Click **Create Key**.
-3. Enter a display name.
-4. Choose **Website** as the platform.
-5. Choose **Score-based (reCAPTCHA v3)**.
-6. Add your store's domain, for example `example.com`.
-7. Click **Create** and copy the site key.
-
-<ImagePopup src="/images/configure/site-key.png" alt="Creating a reCAPTCHA site key" />
+1. In the Google Cloud console, search for the **reCAPTCHA** service.
+2. Create a key for a website, using score-based (reCAPTCHA v3) verification.
+3. Add your store's domain, such as `example.com`.
+4. Copy the site key.
 
 ## Enter the keys in Bagisto
 
-1. Switch **Status** on. The remaining fields appear.
-2. Paste the **Project ID**, **API Key** and **Site Key**.
-3. Set the **Score Threshold**. reCAPTCHA scores each visitor from 0 to 1 and anything below the threshold is treated as a bot; `0.5` is a sensible start.
+1. Go to **Configure >> Customer >> Google Captcha**.
+2. In **Credentials**, switch **Status** on. The other fields appear.
+3. Enter the **Project ID**, **API Key** and **Site Key**.
+4. Enter the **Score Threshold**, from `0.0` to `1.0`. The default is `0.5`.
+5. Click **Save Configuration**.
+
+<ImagePopup src="/images/configure/google-captcha-settings.png" alt="Credentials section of the Google Captcha screen with Status turned on" />
+
+All settings are set per channel. reCAPTCHA scores a visitor from 0.0, most likely a bot, to 1.0, most likely a person, so a higher threshold rejects more requests.
+
+## Where the captcha is used
+
+Once it is on, reCAPTCHA checks these storefront forms:
+
+- Customer sign in and sign up
+- Forgot password
+- The **Contact Us** page, and the contact form on product pages while the cart page is turned off
+- Sign in during checkout
+
+# Email Settings
+
+The **Email Settings** screen decides how your store sends email, and the names and addresses emails are sent from.
+
+Go to **Configure >> Email >> Email Settings**.
+
+## Choose how email is sent
+
+1. In **Mail Driver**, choose the **Driver**: **SMTP** or **Brevo (API)**. Only the fields of that driver are shown.
+2. For **SMTP**, enter the **Host**, **Port**, **Encryption**, **Username** and **Password** of your mail server.
+3. For **Brevo (API)**, enter your **Brevo API Key**.
 4. Click **Save Configuration**.
 
-## Where the captcha appears
+<ImagePopup src="/images/configure/email-mail-driver.png" alt="Mail Driver section of the Email Settings screen with the SMTP fields" />
 
-Once saved, reCAPTCHA runs on these storefront forms:
+**SMTP** sends email through a mail server, such as the one your email provider gives you. **Encryption** can be **TLS** (the default), **SSL** or **None**; use the one your provider tells you to.
 
-- Customer sign in
-- Customer sign up
-- Contact Us page, and the Contact Us form on product pages when the cart page is switched off
-- Forgot password
-- Checkout sign in
+**Brevo (API)** sends email through Brevo's web service instead of a mail server. Create a v3 API key in your Brevo account under **SMTP & API**.
 
-<ImagePopup src="/images/configure/customer-signin.png" alt="reCAPTCHA on customer sign in" />
+If the section shows *These settings are currently inactive.*, your server is set to send email another way and changes here have no effect. Ask whoever manages your server to set the store's mailer to `bagisto-dynamic-smtp` in its environment file.
 
-<ImagePopup src="/images/configure/customer-signup.png" alt="reCAPTCHA on customer sign up" />
+## Set the sender details
 
-<ImagePopup src="/images/configure/contact-us.png" alt="reCAPTCHA on the Contact Us page" />
+1. In **Email Settings**, enter the **Sender Name** and **Sender Email Address** that customers see emails come from.
+2. Enter the **Admin Name** and **Admin Email Address** that admin notifications for the channel are sent to.
+3. Enter the **Contact Name** and **Contact Email Address** shown in the footer of your emails.
+4. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/forget-password.png" alt="reCAPTCHA on forgot password" />
+<ImagePopup src="/images/configure/email-sender-details.png" alt="Email Settings section with the sender, admin and contact details" />
 
-<ImagePopup src="/images/configure/checkout-signin.png" alt="reCAPTCHA on checkout sign in" />
-
-# E-mail Settings
-
-Set the addresses your store sends from, and choose how mail leaves the store.
-
-Go to the Admin Panel and click **Configure >> Email >> Email Settings**.
-
-<ImagePopup src="/images/configure/email-setting.png" alt="Email Settings" />
-
-## Sender details
-
-The **Email Settings** section holds the names and addresses on the mail Bagisto sends:
-
-- **Sender Name** and **Sender Email Address** — what customers see as the sender.
-- **Admin Name** and **Admin Email Address** — where admin notifications for the channel are sent.
-- **Contact Name** and **Contact Email Address** — shown in the footer of your emails.
-
-## How mail is sent
-
-The **Driver** setting decides how mail leaves the store, and the fields below it
-change to match:
-
-**SMTP** — mail is handed to an SMTP server. Fill in:
-
-- **Host** and **Port** of the mail server
-- **Encryption** — **TLS**, **SSL** or **None**; usually TLS
-- **Username** and **Password** for the account
-
-**Brevo (API)** — mail is sent over Brevo's HTTP API rather than SMTP, which avoids
-opening an SMTP port. Fill in:
-
-- **Brevo API Key** — generated in your Brevo account
-
-Only the fields for the driver you choose are shown, so an SMTP host and a Brevo
-key are never asked for at the same time.
-
-After making your changes, click **Save Configuration**.
+All six fields are required and set per channel, and each name can be up to 50 characters. Which emails are sent is set under [Notifications](./notifications.md).
 
 # Notifications
 
-Each switch on this page controls one email the store sends: to the customer when they register, place an order, or receive an invoice, shipment or refund, and to the admin for the same events.
+The **Notifications** screen decides which emails your store sends to customers, to admins and to inventory sources.
 
 1. Go to **Configure >> Email >> Notifications**.
 2. Switch each email on or off.
 3. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/notifications.png" alt="Notification switches" />
+<ImagePopup src="/images/configure/email-notifications.png" alt="Notifications screen with a switch for each email" />
 
-The wording of each email is edited under **Marketing >> Communications >> Email Templates**; see [Email Templates](../marketing/email-templates.md). No email leaves the store until the sender address is set under [Email Settings](./email-settings.md).
+| Switch | Sent to |
+|---|---|
+| **Send a confirmation e-mail after customer registration** | The customer, after they create an account. |
+| **Send a confirmation e-mail to admin after customer registration** | The admin, after a customer creates an account. |
+| **Send the customer account credentials after registration** | The customer, with their sign-in details, when you create their account in the admin panel. |
+| **Send a confirmation e-mail to the customer after placing a new order** | The customer, after they place an order. |
+| **Send a confirmation e-mail to the admin after placing a new order** | The admin, after an order is placed. |
+| **Send a notification e-mail to the customer after creating a new invoice** | The customer, when an invoice is created. |
+| **Send a notification e-mail to the admin after creating a new invoice** | The admin, when an invoice is created. |
+| **Send a notification e-mail to the customer after creating a refund** | The customer, when a refund is created. |
+| **Send a notification e-mail to the admin after creating a new refund** | The admin, when a refund is created. |
+| **Send a notification e-mail to the customer after creating a shipment** | The customer, when a shipment is created. |
+| **Send a notification e-mail to the admin after creating a new shipment** | The admin, when a shipment is created. |
+| **Send a notification e-mail to the inventory source after creating a shipment** | The contact of the inventory source the shipment is sent from. |
+| **Send a notification to customer after canceling an order** | The customer, when an order is canceled. |
+| **Send a notification e-mail to admin after canceling an order** | The admin, when an order is canceled. |
+
+Emails are sent from the addresses set under [Email Settings](./email-settings.md), and admin emails go to the **Admin Email Address** set there.
 
 # Search Engines
 
-Product search on the storefront and in the admin runs on the database by default. For a large catalog you can connect an Elasticsearch cluster and choose where it is used.
+Product search on the storefront and in the admin panel runs on the database by default. For a large catalog, you can connect an Elasticsearch cluster and choose where it is used. The **Search Engines** group is available in Bagisto 2.5.
 
-Go to **Configure >> Search Engines**. It is available from Bagisto 2.5; on Bagisto 2.4 the same choices are the **Search Engine**, **Admin Search Mode** and **Storefront Search Mode** settings in the **Search** section under **Configure >> Catalog >> Products**.
+## Choose the search engine
 
-## General
+1. Go to **Configure >> Search Engines >> General**.
+2. In **Settings**, switch **Enable External Search Engine** on. **Default Search Engine** appears.
+3. Choose the **Default Search Engine**: **Database** or **Elasticsearch**.
+4. In **Products**, choose the **Admin Search Mode**.
+5. Choose the **Storefront Search Mode**.
+6. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/search-engines-general.png" alt="Search Engines General Settings" />
+<ImagePopup src="/images/configure/search-engines-general.png" alt="General screen of the Search Engines group with the external search engine turned on" />
 
-### Settings
+**Enable External Search Engine:** While it is off, every search runs on the database, whatever the other settings say. It is off by default.
 
-**Enable External Search Engine:** Turn this on to use the engine chosen below. While it is off, every search runs on the database whatever the other settings say.
+**Default Search Engine:** The engine used wherever a search mode is left on **Use Default**.
 
-**Default Search Engine:** **Database** or **Elasticsearch**. This is the engine used wherever a search mode below is left on **Use Default**.
-
-### Products
-
-**Admin Search Mode:** The engine behind the header search, the listing grids and the other searches in the admin panel.
+**Admin Search Mode:** The engine behind the header search, the data grids and the other searches in the admin panel.
 
 **Storefront Search Mode:** The engine behind category pages, the search page and the other searches on the storefront.
 
-Each can be **Use Default**, **Database** or **Elasticsearch**, so you can, for example, keep the admin on the database while the storefront searches Elasticsearch.
+Each search mode can be **Use Default**, **Database** or **Elasticsearch**, so you can, for example, keep the admin panel on the database while the storefront uses Elasticsearch.
 
-Click **Save Configuration**.
+## Connect Elasticsearch
 
-## Elasticsearch
+1. Go to **Configure >> Search Engines >> Elasticsearch**.
+2. In **Settings**, choose the **Authentication**. Only the fields that method needs are shown.
+3. Enter the connection details described below.
+4. Click **Save Configuration**.
+5. Click **Test Connection** to check that the store can reach the cluster.
 
-<ImagePopup src="/images/configure/search-engines-elastic.png" alt="Elasticsearch Settings" />
+<ImagePopup src="/images/configure/search-engines-elasticsearch.png" alt="Elasticsearch screen with username and password authentication" />
 
-These settings are used only when a search mode is set to Elasticsearch.
+**Authentication:** How the store connects to the cluster, and the fields each method needs:
 
-**Authentication:** How the cluster is reached and signed in to. Only the fields the chosen method needs are shown:
-
-- **No authentication** — only the **Hosts**.
-- **Username and password** — **Hosts**, **Username** and **Password**.
-- **API key** — **Hosts** and **API Key**.
-- **Elastic Cloud with API key** — **Cloud ID** and **API Key**.
-- **Elastic Cloud with username and password** — **Cloud ID**, **Username** and **Password**.
+- **No authentication** – **Hosts**.
+- **Username and password** – **Hosts**, **Username** and **Password**.
+- **API key** – **Hosts** and **API Key**.
+- **Elastic Cloud with API key** – **Cloud ID** and **API Key**.
+- **Elastic Cloud with username and password** – **Cloud ID**, **Username** and **Password**.
 
 **Hosts:** Where the cluster is reached, such as `http://localhost:9200`. Separate several hosts with a comma. Leave it empty to use the value from the server's environment file.
 
@@ -2018,41 +2244,45 @@ These settings are used only when a search mode is set to Elasticsearch.
 
 **Minimum Query Length** and **Maximum Query Length:** The shortest and longest search term the storefront search box accepts.
 
-### Testing the connection
+The result of **Test Connection** tells you whether Elasticsearch **is available**, **did not answer**, **rejected the credentials**, answered but **is not a supported Elasticsearch server**, or **is not configured**.
 
-The **Connection** row has a **Test Connection** button. Click it after saving to check the cluster from the server's side. The result tells you whether the engine **is available**, **did not answer**, **rejected the credentials**, answered but **is not a supported Elasticsearch server**, or **is not configured**.
+### Build the index
 
-### Building the index
+A cluster only returns products that have been indexed. After connecting it for the first time, ask whoever manages the server to run the product indexer for the search engine. It also runs whenever a product is saved, so the index keeps itself up to date afterwards.
 
-A cluster only returns products that have been indexed. After connecting it for the first time, ask whoever manages the server to run the product indexer for the search engine; it also runs on the queue whenever a product is saved, so the index keeps itself current afterwards.
+## Differences in Bagisto 2.4
+
+Bagisto 2.4 has no **Search Engines** group. Its **Search Engine**, **Admin Search Mode** and **Storefront Search Mode** settings, and its **Minimum query length** and **Maximum query length**, are in the **Search** section under **Configure >> Catalog >> Products**. The engines to choose from there are **Database** and **Elastic Search**, and the Elasticsearch connection is set in the server's environment file.
 
 # File Management
 
-Uploaded files, such as product images, category banners and the logos in your settings, are stored on the server by default. If your store runs on more than one server, or you would rather keep files in object storage, you can point Bagisto at Amazon S3 or Cloudflare R2 from the admin.
+Uploaded files, such as product images, category banners and the logos in your settings, are stored on the server by default. If your store runs on more than one server, or you would rather keep files in object storage, you can store them in Amazon S3 or Cloudflare R2 instead. The **File Management** group is available in Bagisto 2.5.
 
-Go to **Configure >> File Management**. It is available from Bagisto 2.5.
+## Choose where files are stored
 
-## General
+1. Go to **Configure >> File Management >> General**.
+2. In **Settings**, choose the **Default Storage Driver**.
+3. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/file-management-general.png" alt="File Management General Settings" />
+<ImagePopup src="/images/configure/file-management-general.png" alt="General screen of the File Management group with the Default Storage Driver field" />
 
 **Default Storage Driver:** Where files uploaded from now on are saved and served from:
 
-- **File (Local Storage)** — the server's own disk.
-- **Amazon S3** — an S3 bucket, or any service that speaks the S3 API.
-- **Cloudflare R2** — an R2 bucket.
-
-Click **Save Configuration**.
+- **File (Local Storage)** – the server's own disk. This is the default.
+- **Amazon S3** – an Amazon S3 bucket, or a bucket in any service that works with the S3 API. Set it up under **Amazon S3**, described below.
+- **Cloudflare R2** – a Cloudflare R2 bucket. Set it up under **Cloudflare R2**, described below.
 
 ### Files already uploaded do not move
 
-Switching the driver changes where **new** uploads go. Files already uploaded stay on the storage they were saved to, and the store looks for them on the new one, so copy them across before switching or they will not be found on the storefront.
+Switching the driver changes where **new** uploads go. Files uploaded earlier stay where they were saved, but the store looks for them on the new storage, so copy them across before you switch, or they won't be found on the storefront.
 
 ## Amazon S3
 
-<ImagePopup src="/images/configure/file-management-s3.png" alt="Amazon S3 Settings" />
+1. Go to **Configure >> File Management >> Amazon S3**.
+2. In **Settings**, enter the details described below.
+3. Click **Save Configuration**.
 
-Used when the default storage driver is Amazon S3.
+<ImagePopup src="/images/configure/file-management-s3.png" alt="Amazon S3 screen of the File Management group" />
 
 **Access Key ID** and **Secret Access Key:** The credentials of the account the bucket belongs to.
 
@@ -2064,106 +2294,106 @@ Used when the default storage driver is Amazon S3.
 
 **Endpoint:** Only needed for a service other than Amazon S3, such as a self-hosted one. Leave it empty for Amazon S3.
 
-**Use Path Style Endpoint:** Turn on for a self-hosted service that addresses buckets as a path rather than a subdomain.
+**Use Path Style Endpoint:** Turn it on for a self-hosted service that addresses buckets as a path rather than a subdomain.
 
 ## Cloudflare R2
 
-<ImagePopup src="/images/configure/file-management-r2.png" alt="Cloudflare R2 Settings" />
+1. Go to **Configure >> File Management >> Cloudflare R2**.
+2. In **Settings**, enter the details described below.
+3. Click **Save Configuration**.
 
-Used when the default storage driver is Cloudflare R2.
+<ImagePopup src="/images/configure/file-management-r2.png" alt="Cloudflare R2 screen of the File Management group" />
 
-**Account ID:** The Cloudflare account the bucket belongs to. The address R2 is reached at is built from it, so no endpoint is needed.
+**Account ID:** The Cloudflare account the bucket belongs to. The address of R2 is built from it, so no endpoint is needed.
 
 **Access Key ID** and **Secret Access Key:** The credentials of an R2 API token.
 
 **Bucket:** The name of the R2 bucket files are stored in.
 
-**Public URL:** The address files are served from, either the bucket's public address or a custom domain. An R2 bucket is private until one is set, so files will not be reachable without it.
+**Public URL:** The address files are served from, either the bucket's public address or a custom domain. An R2 bucket is private until one is set, so files can't be reached without it.
 
 # Cache Management
 
-Cache Management lets you clear and rebuild the caches the store keeps, so the storefront and the admin show up-to-date information without losing performance, and lets you switch the storefront's full page cache on or off.
+Cache Management lets you clear and rebuild the caches your store keeps, and switch the storefront's full page cache on or off. It has two screens, **General** and **Full Page Cache**.
 
-Go to **Configure >> Cache Management**. It has two sections, **General** and **Full Page Cache**.
+## Clear or build caches
 
-## General
+1. Go to **Configure >> Cache Management >> General**.
+2. In **Cache Actions**, click the button for the action you want.
+3. Read the result in the **Output Console** below the buttons.
 
-### Cache Actions
+<ImagePopup src="/images/configure/cache-management-actions.png" alt="Cache Actions section with the Clear Cache and Build Cache buttons and the Output Console" />
 
-<ImagePopup src="/images/configure/cache-manage.png" alt="Cache Management" />
+The buttons act straight away; there is nothing to save.
 
-Under **Clear Cache**, each button removes one kind of cached data so the store regenerates it on the next request:
+Under **Clear Cache**, each button removes one kind of cached data, so the store builds it again on the next request:
 
 - **Clear All Cache** – every cache below at once.
 - **Clear Config Cache** – the cached configuration.
 - **Clear Application Cache** – the application cache.
 - **Clear Compiled Cache** – compiled classes and files.
-- **Clear Event Cache** – cached event discovery data.
-- **Clear Route Cache** – cached route definitions.
+- **Clear Event Cache** – cached event data.
+- **Clear Route Cache** – cached routes.
 - **Clear View Cache** – compiled page templates.
-- **Clear Page Cache** – the full page cache of the storefront, the same as **Flush Page Cache** below.
+- **Clear Page Cache** – the storefront's full page cache, the same as **Flush Page Cache** below.
 
-Under **Build Cache**, each button pre-builds a cache so the store starts fast after a deployment:
+Under **Build Cache**, each button builds a cache in advance, so the store starts fast after an update:
 
 - **Rebuild All Cache** – every cache below at once.
 - **Cache Config** – the configuration.
 - **Cache Routes** – the routes.
 - **Cache Views** – the page templates.
 
-1. Click the button for the action you want.
-2. Read the result in the **Output Console** below the buttons. A success message and the command's output appear once it has finished.
-
 ### Important notes
 
-- Route caching fails when a route is defined as a closure rather than a controller; the console output names the offending route.
-- Configuration caching fails when a configuration file contains a closure.
+- Caching routes fails when a route is written as a closure rather than pointing to a controller. The output names the route.
+- Caching the configuration fails when a configuration file contains a closure.
 - A file permission problem on the server stops both clearing and building.
-- After clearing a cache, the first few page loads take slightly longer while the store rebuilds it. Rebuilding the caches after a deployment avoids that.
+- After you clear a cache, the first few pages load a little more slowly while the store builds it again. Building the caches after an update avoids that.
 
-## Full Page Cache
+## Full page cache
 
-Full Page Cache keeps a rendered copy of your storefront pages and serves that copy to the next visitor, instead of building the page again for every one of them. It decides how quickly your storefront responds under load, and it is controlled from the admin rather than by editing the server configuration. The home page, category pages, product pages, search results and CMS pages are cached; the cart, checkout and account pages never are.
+The full page cache keeps a rendered copy of your storefront pages and serves it to the next visitor, instead of building the page again for each one. It decides how quickly your storefront responds under load. The home page, category pages, product pages, search results and CMS pages are cached; the cart, checkout and account pages never are.
 
-Go to **Configure >> Cache Management >> Full Page Cache**.
+1. Go to **Configure >> Cache Management >> Full Page Cache**.
+2. In **Settings**, switch **Enable Full Page Cache** on or off. It is on by default.
+3. Enter the **Cache Lifetime (Minutes)**.
+4. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/full-page-cache.png" alt="Full Page Cache Settings" />
+<ImagePopup src="/images/configure/full-page-cache.png" alt="Full Page Cache screen with the page cache turned on" />
 
-**Enable Full Page Cache:** Storefront pages are served from the cache. Turning this off makes every page render again on each visit, which is slower for shoppers but useful while you are diagnosing a page that looks stale.
+**Enable Full Page Cache:** Serves storefront pages from the cache. Turning it off renders every page again on each visit, which is slower for shoppers but useful while you check a page that looks out of date.
 
-**Cache Lifetime (Minutes):** How long a cached page is kept before it is rendered again. Leave it empty to use the application default.
+**Cache Lifetime (Minutes):** How long a cached page is kept before it is rendered again. The default is `10080`, one week. Leave it empty to use the application default.
 
-**Flush Page Cache:** Empty the page cache so every storefront page is rendered again on its next visit. Use it after a change that the store does not refresh on its own, such as editing a template on the server.
+**Flush Page Cache:** Empties the page cache, so every storefront page is rendered again on its next visit. The button acts straight away. Use it after a change the store doesn't pick up on its own, such as a template edited on the server.
 
-Click **Save Configuration** after changing the switch or the lifetime; the flush button acts immediately.
+### You don't have to clear the cache after an edit
 
-### You do not have to clear it after an edit
+A cached page is refreshed automatically when the content behind it changes. Saving a product, category, review, CMS page, URL rewrite, channel, theme section or configuration clears the affected pages, and so do orders, refunds and price or catalog rule reindexing. Editing a product or a category also clears your home page and category listings, in every channel, language and currency. Each currency and language has its own copy of every page, so switching between them never shows an out-of-date page.
 
-A cached page is refreshed automatically when the content behind it changes. Saving a product, category, review, CMS page, URL rewrite, channel, theme section or configuration clears the affected pages, and so does an order, a refund or a price or catalog-rule reindex. Editing a product or a category clears your home page and category listings too, across every channel, locale and currency they were cached under. Each currency and locale has its own copy of every page, so switching between them never shows a stale page.
+The lifetime is a backstop rather than the main mechanism, so set it long and let the automatic refresh handle day-to-day edits. A short lifetime doesn't fix a page that looks out of date, it only shortens how long the wrong page is shown. If a change doesn't appear at all, check that it was saved or published, then click **Flush Page Cache**.
 
-So the lifetime is a backstop rather than the main mechanism. Set it long, and trust the automatic refresh for day-to-day edits.
+## Differences in Bagisto 2.4
 
-**Note:** A short lifetime is not a fix for a page that looks out of date. It only shortens how long the wrong page is shown. If a change is not appearing at all, check that it was saved or published, then use **Flush Page Cache**.
+In Bagisto 2.4, **Cache Lifetime (Minutes)** has no preset value, so the application default is used until you enter one.
 
 # About
 
-The **About** screen shows what your store runs on and which services it uses. There is nothing to change here; it is the page to open when support asks which version you are on, or when you want to confirm that a setting made elsewhere has taken effect.
+The **About** screen shows what your store runs on and which services it uses. There is nothing to change here. Open it when support asks which version you are on, or to confirm that a setting made elsewhere has taken effect. The **About** group is available in Bagisto 2.5.
 
-Go to **Configure >> About**. It is available from Bagisto 2.5.
+Go to **Configure >> About >> General**. The screen is grouped into cards:
 
-<ImagePopup src="/images/configure/about.png" alt="About" />
+- **Bagisto** – the Bagisto version.
+- **Environment** – the application name, the Laravel, PHP and Composer versions, the store URL, the environment (**Local**, **Staging**, **Testing** or **Production**), whether **Debug Mode** is on, the timezone, the locale, and whether maintenance mode is on.
+- **Database** – the database engine and its version.
+- **Drivers** – the services that handle the cache, sessions, the queue and logging.
+- **Mail** – the transport email is sent through, as set under [Email Settings](./email-settings.md).
+- **Search** – the search engine in use, as set under [Search Engines](./search-engines.md).
+- **Storage** – the storage in use and whether its public link exists, as set under [File Management](./file-management.md).
+- **Cached** – whether the configuration, routes, events and views are cached. Clear or build them under [Cache Management](./cache-management.md).
 
-The page is grouped into cards:
-
-- **Bagisto** — the Bagisto version.
-- **Environment** — the application name, the Laravel, PHP and Composer versions, the store URL, whether it is running as **Local**, **Staging**, **Testing** or **Production**, whether **Debug Mode** is on, the timezone and locale, and whether maintenance mode is active.
-- **Database** — the engine in use, MySQL, MariaDB or PostgreSQL.
-- **Drivers** — which services handle the cache, session, queue, log and broadcast.
-- **Mail** — the transport mail leaves through, as set under **Configure >> Email**.
-- **Search** — the search engine in use and its status, as set under **Configure >> Search Engines**.
-- **Storage** — the default disk and its public link, as set under **Configure >> File Management**.
-- **Cached** — whether the configuration, routes, events and views are currently cached. Rebuild or clear them from **Configure >> Cache Management**.
-
-Debug mode on a production store exposes details to visitors when something goes wrong, so if this page shows **Debug Mode** on and the environment as **Production**, ask whoever manages the server to turn it off.
+If this screen shows **Debug Mode** on while the environment is **Production**, ask whoever manages the server to turn debug mode off, because it can show technical details to visitors when something goes wrong.
 
 # How to Create Categories in Bagisto
 
@@ -3620,15 +3850,9 @@ The **EU Withdrawal** feature in Bagisto helps store owners comply with **Direct
 
 ### Enable EU Withdrawal
 
-1. Go to **Configure >> Sales >> EU Withdrawals**.
-
-2. Switch **Enabled** on for the channel you are configuring. The setting is per channel, so switch channel at the top of the page to enable it on each store.
-
-3. Click **Save Configuration**.
+The feature is turned on for each channel under **Configure >> Sales >> EU Withdrawals**. See [EU Withdrawals configuration](../configure/eu-withdrawals.md).
 
 > **Important:** Only enable the feature on channels selling to EU consumers. When it is disabled for a channel, every withdrawal page, including the public guest lookup, returns a "not found" page, so the feature is invisible to shoppers.
-
-<ImagePopup src="/images/orders/eu-withdrawal.png" alt="EU Withdrawal configuration" />
 
 ## Admin — Managing Withdrawals
 
@@ -3802,24 +4026,9 @@ The **Return Merchandise Authorization (RMA)** feature in Bagisto allows custome
 
 ## Admin Configuration
 
-Before using RMA, the admin must configure the feature from the Admin panel.
-
 ### Configure RMA Settings
 
-1. Go to **Configure >> Sales >> RMA**.
-
-2. Fill in the settings described below.
-
-3. Click **Save Configuration**.
-
-<ImagePopup src="/images/orders/rma-config.png" alt="RMA configuration" />
-
-- **Default allowed days** — The number of days within which a customer can request an RMA after placing an order. This is the fallback return window when no rule applies.
-- **Return Policy** — The return policy shown to customers on the storefront before they submit a return request. This field is per locale.
-- **Allowed File Extension** — The file types that customers and admins may attach to a return request, for example product photos or supporting documents. The available options are **JPG / JPEG**, **PNG** and **WEBP**.
-- **Allow Reopening Cancelled Returns** — When enabled, a customer can resubmit a return that was cancelled; it moves back to **Pending Review** for a fresh look. When disabled, a cancelled return is final.
-- **Allow Reopening Declined Returns** — When enabled, a customer can resubmit a return that the admin declined; it moves back to **Pending Review** for a fresh look. When disabled, a declined return is final.
-- **Allow Product Type For RMA** — Only the selected product types (**Simple**, **Configurable**, **Bundle**, **Grouped**) are eligible for RMA. The return window is fixed when the order is placed, so changes here apply to future orders only.
+Before customers can request returns, set the return window, the product types that can be returned, the return policy and the allowed attachments under **Configure >> Sales >> RMA**. See [RMA configuration](../configure/rma.md).
 
 ### RMA Reasons
 
@@ -4143,131 +4352,6 @@ The RMA system sends email notifications for the following events:
 | Customer sends a message | Admin     | The message content                        |
 | Status Update            | Customer  | New status and any relevant notes          |
 | RMA Re-opened            | Customer  | Notification that the request was reopened |
-
-# Shipping Methods
-
-To deliver products, Bagisto provides two types of shipping methods.  
-To configure, go to the Admin Panel and navigate to **Configure >> Sales >> Shipping Methods**.
-
-### 1) Free Shipping
-
-Free shipping is a method where the cost of shipping is waived, and the seller covers the shipping expenses for delivering goods to the buyer.
-
-### 2) Flat Rate Shipping
-
-Flat rate shipping is a method where a fixed fee is charged for shipping, regardless of weight, size, or distance of the package. This simplifies shipping costs and benefits both buyers and sellers.
-
-<ImagePopup src="/images/configure/shipping-methods.png" alt="Shipping Methods Configuration" />
-
-After making changes, click on the **Save Configuration** button.
-
-### Shipping Method Frontend
-
-<ImagePopup src="/images/configure/shipping-output.png" alt="Shipping Methods Frontend View" />
-
-# Payment Methods
-
-Payment methods refer to the various options available for customers to make payments when purchasing a product or service. Common methods include cash, credit/debit cards, gift cards, and mobile payments.
-
-To configure the default payment methods, go to the Admin Panel and navigate to **Configure >> Sales >> Payment Methods**.
-
-### Stripe
-
-**Stripe:** It is a safe and popular online payment system that helps businesses take payments using credit cards, debit cards, digital wallets, and other ways to pay.
-
-It offers a smooth checkout process for customers and works with many currencies and international transactions.
-
-With Stripe, you handle online payments, refunds, transactions and financial reports from one dashboard.
-
-<ImagePopup src="/images/configure/stripe-admin.png" alt="Stripe" />
-
-### Razorpay
-
-Razorpay is a digital payment service through which businesses accept, process and manage online payments. It started in India in 2014.
-
-Razorpay has grown to be one of the most reliable payment gateways for startups, small and medium enterprises, and big companies all over India.
-
-The platform allows merchants to take payments in various ways like UPI, credit cards, debit cards, net banking, wallets, and EMI options, giving customers a quick and safe checkout experience.
-
-<ImagePopup src="/images/configure/razorpay-admin.png" alt="Razorpay" />
-
-### PayU
-
-PayU allows businesses to handle transactions using various payment options like credit cards, debit cards, UPI, net banking, digital wallets, and EMI choices, making sure customers have a smooth and trustworthy checkout experience.
-
-With simple integration, real-time tracking of transactions, strong fraud protection, and adaptable settlement cycles, PayU assists companies in effectively managing their online payments. 
-
-Merchants can set up the gateway with their Merchant Key and Salt, check payment statuses from the admin panel, and start refunds when necessary.
-
-<ImagePopup src="/images/configure/payu-admin.png" alt="PayU" />
-
-### Paypal
-
-**PayPal Smart Button:** Simplifies online payments with customizable buttons for secure, multi-method transactions on websites and apps.
-
-<ImagePopup src="/images/configure/paypal.png" alt="Paypal" />
-
-### PhonePe
-
-PhonePe is an Indian digital payments platform supporting UPI, cards, wallets and
-net banking. Customers are taken to PhonePe to pay and returned to the store once
-the payment is confirmed.
-
-Configure the following:
-
-**1. Client ID** and **Client Secret:** Issued by PhonePe for your merchant account.
-**2. Merchant ID:** Your PhonePe merchant identifier.
-**3. Sandbox:** Enable while testing, disable to take live payments.
-
-PhonePe settles only in **Indian Rupees**, so it is offered at checkout only when
-the cart is in INR.
-
-<ImagePopup src="/images/configure/phonepe-admin.png" alt="PhonePe" />
-
-### PayGlocal
-
-PayGlocal is a cross-border payment gateway. Customers pay on PayGlocal's hosted
-checkout and return through a signed token; the outcome is confirmed with
-PayGlocal before the order is placed, and a webhook settles the payment if the
-customer never comes back.
-
-Configure the following:
-
-**1. Merchant ID:** Your PayGlocal merchant identifier.
-**2. Public Key ID** and **Private Key ID:** The key identifiers issued to you.
-**3. PayGlocal Public Key** and **Merchant Private Key:** The key pair used to sign
-and verify requests.
-**4. Accepted currencies:** The currencies this gateway may be used for. A cart in
-any other currency will not be offered PayGlocal at checkout.
-**5. Sandbox:** Enable while testing, disable to take live payments.
-
-<ImagePopup src="/images/configure/payglocal-admin.png" alt="PayGlocal" />
-
-### Cash On Delivery
-
-A payment method where customers pay in cash upon receiving goods or services at their doorstep.
-
-<ImagePopup src="/images/configure/cod.png" alt="Cash On Delivery" />
-
-### Money Transfer
-
-Transfer of funds from one person or account to another, often electronically, for transactions or remittances.
-
-<ImagePopup src="/images/configure/money-transfer.png" alt="Money Transfer" />
-
-### PayPal Standard
-
-A basic PayPal payment option for online businesses, allowing customers to pay using PayPal accounts or credit/debit cards.
-
-<ImagePopup src="/images/configure/paypal-standard.png" alt="Paypal Standard" />
-
-After configuring, click the **Save Configuration** button.
-
-### Payment Methods Frontend
-
-This is how the payment methods will appear on the storefront during checkout.
-
-<ImagePopup src="/images/configure/payment-method.png" alt="Payment Methods Frontend" />
 
 # Cart Rules
 
@@ -4674,6 +4758,8 @@ Also, the customer can subscribe to the newsletter from the Homepage at the foot
 Sitemaps inform search engines which pages on a website should be crawled, and may help search engines discover and index those pages. 
 
 While sitemaps can be a simple text file listing the URLs of all the pages you'd like to have indexed, they can also be an XML document carrying more information.
+
+Sitemap files are generated only while sitemaps are enabled for the channel under **Configure >> General >> Sitemap**, which also sets how many links each file holds; see [Sitemap](../configure/sitemap.md).
 
 ## Creating a sitemap
 

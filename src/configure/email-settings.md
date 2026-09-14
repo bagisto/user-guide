@@ -1,36 +1,31 @@
-# E-mail Settings
+# Email Settings
 
-Set the addresses your store sends from, and choose how mail leaves the store.
+The **Email Settings** screen decides how your store sends email, and the names and addresses emails are sent from.
 
-Go to the Admin Panel and click **Configure >> Email >> Email Settings**.
+Go to **Configure >> Email >> Email Settings**.
 
-<ImagePopup src="/images/configure/email-setting.png" alt="Email Settings" />
+## Choose how email is sent
 
-## Sender details
+1. In **Mail Driver**, choose the **Driver**: **SMTP** or **Brevo (API)**. Only the fields of that driver are shown.
+2. For **SMTP**, enter the **Host**, **Port**, **Encryption**, **Username** and **Password** of your mail server.
+3. For **Brevo (API)**, enter your **Brevo API Key**.
+4. Click **Save Configuration**.
 
-The **Email Settings** section holds the names and addresses on the mail Bagisto sends:
+<ImagePopup src="/images/configure/email-mail-driver.png" alt="Mail Driver section of the Email Settings screen with the SMTP fields" />
 
-- **Sender Name** and **Sender Email Address** — what customers see as the sender.
-- **Admin Name** and **Admin Email Address** — where admin notifications for the channel are sent.
-- **Contact Name** and **Contact Email Address** — shown in the footer of your emails.
+**SMTP** sends email through a mail server, such as the one your email provider gives you. **Encryption** can be **TLS** (the default), **SSL** or **None**; use the one your provider tells you to.
 
-## How mail is sent
+**Brevo (API)** sends email through Brevo's web service instead of a mail server. Create a v3 API key in your Brevo account under **SMTP & API**.
 
-The **Driver** setting decides how mail leaves the store, and the fields below it
-change to match:
+If the section shows *These settings are currently inactive.*, your server is set to send email another way and changes here have no effect. Ask whoever manages your server to set the store's mailer to `bagisto-dynamic-smtp` in its environment file.
 
-**SMTP** — mail is handed to an SMTP server. Fill in:
+## Set the sender details
 
-- **Host** and **Port** of the mail server
-- **Encryption** — **TLS**, **SSL** or **None**; usually TLS
-- **Username** and **Password** for the account
+1. In **Email Settings**, enter the **Sender Name** and **Sender Email Address** that customers see emails come from.
+2. Enter the **Admin Name** and **Admin Email Address** that admin notifications for the channel are sent to.
+3. Enter the **Contact Name** and **Contact Email Address** shown in the footer of your emails.
+4. Click **Save Configuration**.
 
-**Brevo (API)** — mail is sent over Brevo's HTTP API rather than SMTP, which avoids
-opening an SMTP port. Fill in:
+<ImagePopup src="/images/configure/email-sender-details.png" alt="Email Settings section with the sender, admin and contact details" />
 
-- **Brevo API Key** — generated in your Brevo account
-
-Only the fields for the driver you choose are shown, so an SMTP host and a Brevo
-key are never asked for at the same time.
-
-After making your changes, click **Save Configuration**.
+All six fields are required and set per channel, and each name can be up to 50 characters. Which emails are sent is set under [Notifications](./notifications.md).

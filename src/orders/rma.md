@@ -4,24 +4,9 @@ The **Return Merchandise Authorization (RMA)** feature in Bagisto allows custome
 
 ## Admin Configuration
 
-Before using RMA, the admin must configure the feature from the Admin panel.
-
 ### Configure RMA Settings
 
-1. Go to **Configure >> Sales >> RMA**.
-
-2. Fill in the settings described below.
-
-3. Click **Save Configuration**.
-
-<ImagePopup src="/images/orders/rma-config.png" alt="RMA configuration" />
-
-- **Default allowed days** — The number of days within which a customer can request an RMA after placing an order. This is the fallback return window when no rule applies.
-- **Return Policy** — The return policy shown to customers on the storefront before they submit a return request. This field is per locale.
-- **Allowed File Extension** — The file types that customers and admins may attach to a return request, for example product photos or supporting documents. The available options are **JPG / JPEG**, **PNG** and **WEBP**.
-- **Allow Reopening Cancelled Returns** — When enabled, a customer can resubmit a return that was cancelled; it moves back to **Pending Review** for a fresh look. When disabled, a cancelled return is final.
-- **Allow Reopening Declined Returns** — When enabled, a customer can resubmit a return that the admin declined; it moves back to **Pending Review** for a fresh look. When disabled, a declined return is final.
-- **Allow Product Type For RMA** — Only the selected product types (**Simple**, **Configurable**, **Bundle**, **Grouped**) are eligible for RMA. The return window is fixed when the order is placed, so changes here apply to future orders only.
+Before customers can request returns, set the return window, the product types that can be returned, the return policy and the allowed attachments under **Configure >> Sales >> RMA**. See [RMA configuration](../configure/rma.md).
 
 ### RMA Reasons
 

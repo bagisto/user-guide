@@ -72,6 +72,20 @@ color-scheme:initial!important;
   font-weight: 500;
 }
 
+/* Indent each level under the one above it. First-level items line up with
+   the group label, after its 15px icon and 8px gap. Deeper levels keep the
+   theme's guide line, moved in slightly so it sits under the parent's label
+   rather than on its first letter. */
+.VPSidebar .VPSidebarItem.level-0 > .items {
+  padding-inline-start: 23px;
+}
+
+.VPSidebar .VPSidebarItem.level-1 > .items,
+.VPSidebar .VPSidebarItem.level-2 > .items,
+.VPSidebar .VPSidebarItem.level-3 > .items {
+  margin-inline-start: 4px;
+}
+
 :root {
   --uc-scrollbar-thumb: var(--vp-c-gray-1);
   --uc-scrollbar-thumb-hover: var(--vp-c-text-3);

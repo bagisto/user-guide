@@ -57,7 +57,9 @@ const MARKETPLACE_PAGES: Record<string, string> = {
 /**
  * Pages that moved inside the current guide. Themes moved to the new Appearance
  * area; captcha and the payment and shipping method pages were consolidated
- * onto the pages that already documented them.
+ * onto the pages that already documented them; the weight unit, custom scripts
+ * and guest checkout pages were merged into the configuration screen pages that
+ * hold those settings.
  */
 const MOVED_PAGES: Record<string, string> = {
   "settings/themes": "/appearance/themes",
@@ -66,6 +68,9 @@ const MOVED_PAGES: Record<string, string> = {
   "configure/shipping-methods": "/shipping-method/shipping-methods",
   "configure/coyright-content": "/configure/content.html#copyright-content",
   "configure/pricing": "/configure/taxes",
+  "configure/weight-unit": "/configure/general",
+  "configure/custom-scripts": "/configure/content.html#custom-scripts",
+  "configure/guest-checkout": "/configure/checkout.html#guest-checkout",
 };
 
 /**
@@ -137,13 +142,13 @@ const LEGACY_PATHS: Record<string, string> = {
   "settings/data-transfer.html": "/settings/data-transfer",
 
   // Configure
-  "configure/": "/configure/weight-unit",
-  "configure/weight-unit.html": "/configure/weight-unit",
+  "configure/": "/configure/introduction",
+  "configure/weight-unit.html": "/configure/general",
   "configure/configurable-choices.html": "/configure/configurable-choices",
-  "configure/custom-scripts.html": "/configure/custom-scripts",
+  "configure/custom-scripts.html": "/configure/content.html#custom-scripts",
   "configure/design.html": "/configure/design",
   "configure/back-orders.html": "/configure/back-orders",
-  "configure/guest-checkout.html": "/configure/guest-checkout",
+  "configure/guest-checkout.html": "/configure/checkout.html#guest-checkout",
   "configure/product-view-page.html": "/configure/product-view-page",
   "configure/cart-view-page.html": "/configure/cart-view-page",
   "configure/frontend.html": "/configure/frontend",

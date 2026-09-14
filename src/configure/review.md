@@ -1,19 +1,18 @@
 # Review
 
-These settings control who can write product reviews and how reviews are shown on the product page.
+The **Review** section decides who can review products and how reviews are summarized on the product page.
 
-1. Go to **Configure >> Catalog >> Products** and find the **Review** section.
-2. Set the options below.
+1. Go to **Configure >> Catalog >> Products**.
+2. In **Review**, set the options described below.
 3. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/image.png" alt="Review settings" />
+<ImagePopup src="/images/configure/products-review.png" alt="Review section of the Products screen" />
 
-**Allow Customer Review:** Let logged-in customers write reviews.
+| Setting | What it does |
+|---|---|
+| **Allow Customer Review** | Lets signed-in customers write reviews. It is on by default. |
+| **Allow Guest Review** | Lets shoppers who aren't signed in write reviews too. It is off by default. |
+| **Censoring Reviewer Name** | Partly masks reviewer names on the storefront, such as **J*** D****. It is on by default. |
+| **Summary** | What the rating summary counts: **Display the review count for ratings.** (the default) or **Display the star count in ratings.** |
 
-**Allow Guest Review:** Let visitors who are not logged in write reviews as well.
-
-**Censoring Reviewer Name:** Show reviewer names partly masked on the storefront.
-
-**Summary:** How the review summary at the top of the reviews is laid out.
-
-Reviews written by shoppers wait for approval under **Customers >> Reviews**; see [Customer Reviews](../customer/customer-review.md).
+New reviews wait for your approval under **Customers >> Reviews** before they appear on the storefront; see [Customer Reviews](../customer/customer-review.md).

@@ -1,47 +1,45 @@
 # GDPR
 
-Bagisto's GDPR (General Data Protection Regulation) features let customers see and control the personal data you hold, and let you record their consent. Every setting on this page is per channel and per locale, so switch both at the top of the page to cover each store and language.
+Bagisto's GDPR (General Data Protection Regulation) features let customers request the personal data you hold about them, record their consent when they create an account, and show a cookie notice on the storefront. Every setting on this screen is set per channel and per language, so choose both at the top of the screen before you change anything.
 
 Go to **Configure >> General >> GDPR**.
 
 ## Turn GDPR on
 
-1. In the **GDPR Compliance Settings** section, switch **Enable GDPR** on.
+1. In **GDPR Compliance Settings**, switch **Enable GDPR** on.
 2. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/gdpr-agreement.png" alt="GDPR Compliance Settings" />
+<ImagePopup src="/images/configure/gdpr-settings.png" alt="GDPR Compliance Settings and GDPR Agreement sections with both switches turned on" />
 
-Once on, a **GDPR Requests** entry appears in the customer's account menu on the storefront with a **Create Request** button. Customers use it to ask for their data to be updated or deleted, and you handle those requests under **Customers >> GDPR Data Requests**.
+When GDPR is on, customers find **GDPR Data Requests** in their account on the storefront, where they click **Create Request** to ask for their data to be updated or deleted. You handle the requests under **Customers >> GDPR Data Requests**.
 
-## Ask for consent at sign up
+## Ask for consent when customers sign up
 
-The agreement adds a checkbox the customer must tick before registering.
+The customer agreement adds a checkbox that customers must tick to create an account.
 
-1. In the **GDPR Agreement** section, switch **Enable Customer Agreement** on.
-2. Enter the **Agreement Checkbox Label**, the sentence shown beside the checkbox, for example *I agree to the terms and conditions and the privacy policy*.
-3. Enter the **Agreement Content**, the full text shown when the shopper opens **Click Here** beside the checkbox.
+1. In **GDPR Agreement**, switch **Enable Customer Agreement** on.
+2. Enter the **Agreement Checkbox Label**, the sentence shown beside the checkbox. The default is *I agree with the terms and conditions.*
+3. Enter the **Agreement Content**, the full text of the agreement that customers can open from the checkbox.
 4. Click **Save Configuration**.
-
-<ImagePopup src="/images/configure/gdpr-agreement2.png" alt="GDPR Agreement settings" />
 
 ## Show a cookie notice
 
-1. In the **Cookie Notice Settings** section, switch **Enable Cookie Notice** on.
-2. Choose the **Cookie Block Display Position**: bottom left, bottom right, top left, top right or center.
-3. Optionally enter a **Static Block Identifier** to show one of your CMS blocks inside the notice.
-4. Enter the **Description** shoppers read in the notice.
+1. In **Cookie Notice Settings**, switch **Enable Cookie Notice** on.
+2. Choose the **Cookie Block Display Position**: **Bottom Left** (the default), **Bottom Right**, **Top Left**, **Top Right** or **Center**.
+3. Enter the **Static Block Identifier**, the heading shown at the top of the notice. The default is **Cookie Block**.
+4. Enter the **Description**, the message shoppers read in the notice, in up to 500 characters. A link to your privacy policy page is added after it.
 5. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/cookies-position.png" alt="Cookie Notice Settings" />
+<ImagePopup src="/images/configure/gdpr-cookie-notice.png" alt="Cookie Notice Settings section with the cookie notice turned on" />
 
 ## Describe the cookie categories
 
-The **Manage Your Cookie Preferences** section holds the text shown for each category a shopper can accept or refuse:
+**Manage Your Cookie Preferences** holds the text shown for each type of cookie a shopper can allow. Each comes with default text that you can edit:
 
-- **Strictly Necessary** – cookies the site needs to work, such as the session.
-- **Basic Interactions & Functionalities** – cookies behind features such as chat or forms.
-- **Experience Enhancements** – cookies that remember preferences such as language.
-- **Measurements** – analytics cookies that measure traffic and behaviour.
-- **Targeting & Advertising** – cookies used for personalised marketing.
+- **Strictly Necessary** – cookies the storefront needs in order to work.
+- **Basic Interactions & Functionalities** – trackers behind basic interactions and features.
+- **Experience Enhancements** – trackers that personalize the shopper's experience.
+- **Measurements** – trackers that measure traffic and behavior.
+- **Targeting & Advertising** – trackers used for personalized marketing and ads.
 
-Edit any of the texts and click **Save Configuration**.
+Click **Save Configuration** after changing any of them.

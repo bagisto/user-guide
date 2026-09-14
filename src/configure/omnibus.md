@@ -1,14 +1,17 @@
 # Omnibus Price Disclosure
 
-The EU Omnibus Directive requires a store that announces a discount to show the lowest price it charged for that product in the 30 days before the discount. Bagisto can record product prices as they change and show that lowest price next to a discounted price on the storefront.
+The EU Omnibus Directive requires a store that announces a discount to show the lowest price it charged for that product in the 30 days before the discount. Bagisto can record product prices as they change and show that lowest price next to a discounted price on the storefront. This section is available in Bagisto 2.5.
 
-Go to **Configure >> Catalog >> Products** and find the **Omnibus Price Disclosure** section. It is available from Bagisto 2.5.
+## Turn on price disclosure
 
-<ImagePopup src="/images/configure/omnibus.png" alt="Omnibus Price Disclosure Setting" />
+1. Go to **Configure >> Catalog >> Products**.
+2. If your store has more than one channel, choose the channel at the top of the screen.
+3. In **Omnibus Price Disclosure**, switch **Enable Omnibus Disclosure** on.
+4. Click **Save Configuration**.
 
-**Enable Omnibus Disclosure:** Turn on for the channel you are configuring. The setting is per channel, so switch channel at the top of the page to enable it on each store that sells in the EU.
+<ImagePopup src="/images/configure/products-omnibus.png" alt="Omnibus Price Disclosure section of the Products screen" />
 
-Click **Save Configuration**.
+The setting is per channel, so turn it on for each channel that sells to consumers in the EU.
 
 ## What the customer sees
 

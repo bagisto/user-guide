@@ -1,93 +1,63 @@
-# Content Configuration
+# Content
 
-The **Content** section allows you to customize frontend behavior, promotional banners, and control advanced features like speculation rules and custom scripts. These settings help optimize user experience and tailor the storefront according to specific business needs.
+The **Content** screen holds the promotional line at the top of the storefront, the copyright line in its footer, the speculation rules that make pages open faster, and your own CSS and JavaScript.
 
-Go to **Configure >> General >> Content**. The page has four sections, described below in the order they appear. Click **Save Configuration** after changing any of them.
+Go to **Configure >> General >> Content**.
 
-### Header Offer Title
+## Header offer title
 
-Display a promotional banner on the storefront header.
+The header offer is a short promotional line with a link, shown in the bar at the top of every storefront page.
 
-- **Offer Title**  
-  Example: `Get UPTO 40% OFF on your 1st order`
+1. In **Header Offer Title**, enter the **Offer Title**, such as `Get UPTO 40% OFF on your 1st order`. It can be up to 100 characters.
+2. Enter the **Redirection Title**, the link text shown after the offer, such as `SHOP NOW`. It can be up to 25 characters.
+3. Enter the **Redirection Link**, the page the link opens, such as `/womens`. If you leave it empty, the link opens the home page.
+4. Click **Save Configuration**.
 
-- **Redirection Title**  
-  Example: `SHOP NOW`
+<ImagePopup src="/images/configure/content-header-offer.png" alt="Header Offer Title and Copyright Content sections of the Content screen" />
 
-- **Redirection Link**  
-  Enter a valid URL (e.g., `/products/sale`)
+<ImagePopup src="/images/configure/content-header-offer-storefront.png" alt="Header offer line in the top bar of the storefront" />
 
-<ImagePopup src="/images/configure/header.png" alt="Header Offer Title" />
+## Copyright content
 
-### Copyright Content
+The copyright line is shown at the bottom of the storefront footer.
 
-The copyright line in the storefront footer tells visitors that the content, design and images on the site are yours, and puts your brand name on every page.
+1. In **Copyright Content**, enter the text, such as `© 2026 Example Store. All rights reserved.`
+2. Click **Save Configuration**.
 
-The **Copyright Content** field takes the text shown in the footer. It is set per locale, so switch locale at the top of the page to translate it.
+The copyright line is set per language, so choose the language at the top of the screen to translate it. If you leave it empty, the storefront shows its default copyright line.
 
-<ImagePopup src="/images/configure/copyright-content.png" alt="Copyright Content Field" />
+<ImagePopup src="/images/configure/content-copyright-storefront.png" alt="Copyright line at the bottom of the storefront footer" />
 
-Click **Save Configuration**, then open the storefront footer to see the line.
+## Speculation rules
 
- <ImagePopup src="/images/configure/copyright-footer.png" alt="Copyright Line in the Storefront Footer" />
+Speculation rules let a shopper's browser load a page before the shopper opens it, such as a link they are about to click, so the page appears almost instantly. They are off by default, because loading pages in advance uses bandwidth and shows up as visits to pages that were never opened.
 
-### Speculation Rules
+1. In **Speculation Rules**, switch **Enable Speculation Rules** on.
+2. Switch on **Enable Prerender Speculation Rules**, **Enable Prefetch Speculation Rules**, or both. The settings for each appear below its switch.
+3. Adjust the settings described below.
+4. Click **Save Configuration**.
 
-These rules improve perceived performance by prefetching or prerendering pages intelligently.
+<ImagePopup src="/images/configure/content-speculation-rules.png" alt="Speculation Rules section with prerender and prefetch turned on" />
 
-Speculation rules are **turned off by default**. They have the browser fetch pages nobody has opened yet, which costs bandwidth and shows up as traffic on pages that were never visited, so a store now opts in instead of opting out.
+**Enable Prerender Speculation Rules:** Prerendering loads and displays the whole page in the background, so it appears instantly. It uses the most resources.
 
-<ImagePopup src="/images/configure/contentspec-default.png" alt="Speculation Rules Disabled By Default" />
+**Enable Prefetch Speculation Rules:** Prefetching downloads the page in advance without displaying it. It uses fewer resources than prerendering.
 
-- **Enable Speculation Rules**  
-  Toggle to enable the overall speculation logic. Disabled by default.
+**Ignore Prerender URLs** and **Ignore Prefetch URLs:** Pages that are never loaded in advance, separated by a pipe (`|`). The default, `/customer/account/*|/checkout/*`, leaves out the customer account and checkout pages.
 
-- **Enable Prerender Speculation Rules**  
-  Enables prerendering based on user behavior predictions. Disabled by default.
+**Ignore Prerender URL Parameters** and **Ignore Prefetch URL Parameters:** URL parameters to ignore, separated by a pipe (`|`), such as `ref|utm_source`.
 
-The three fields below appear only once **Enable Prerender Speculation Rules** is turned on.
+**Prerender Eagerness Level** and **Prefetch Eagerness Level:** How eagerly pages are loaded in advance. **Eager** loads the most, **Moderate** is the default, and **Conservative** loads the least.
 
-- **Ignore Prerender URLs**  
-  Exclude specific routes from prerendering using pipe `|` as a separator.  
-  Default: `/customer/account/*|/checkout/*`
+## Custom scripts
 
-- **Ignore Prerender URL Parameters**  
-  Exclude certain URL parameters from prerender logic.  
-  Example: `ref|token`
+Custom scripts add your own CSS and JavaScript to every storefront page of a channel without changing the theme, for example a color change, a chat widget or an analytics snippet.
 
-- **Prerender Eagerness Level**  
-  Choose the intensity of prerendering:
-  - **Eager**: prerenders the most pages (uses the most resources)
-  - **Moderate**: the default balance
-  - **Conservative**: prerenders the least
+1. In **Custom Scripts**, enter your styles in **Custom CSS**. Don't include `<style>` tags; the store adds them.
+2. Enter your script in **Custom Javascript**. Don't include `<script>` tags; the store adds them.
+3. Click **Save Configuration**.
+4. Reload the storefront to check the result.
 
-- **Enable Prefetch Speculation Rules**  
-  Enables link prefetching to accelerate navigation. Disabled by default.
+<ImagePopup src="/images/configure/content-custom-scripts.png" alt="Custom Scripts section with sample CSS and JavaScript" />
 
-The three fields below appear only once **Enable Prefetch Speculation Rules** is turned on.
-
-- **Ignore Prefetch URLs**  
-  Exclude specific routes from prefetching using pipe `|` as a separator.  
-  Default: `/customer/account/*|/checkout/*`
-
-- **Ignore Prefetch URL Parameters**  
-  Exclude certain URL parameters from prefetch logic.
-
-- **Prefetch Eagerness Level**  
-  Choose the intensity of prefetching, using the same **Eager**, **Moderate** and **Conservative** levels as prerendering.
-
-The image below shows the section with the toggles enabled and their dependent fields revealed.
-
-<ImagePopup src="/images/configure/contentspec.png" alt="Speculation Rules" />
-
-### Custom Scripts
-
-Add your own scripts to enhance or integrate custom features.
-
-- **Custom CSS**  
-  Add global CSS to style your storefront.
-
-- **Custom Javascript**  
-  Insert scripts for chat widgets, analytics, or any custom interaction.
-
-<ImagePopup src="/images/configure/custom.png" alt="Custom Scripts" />
+Both fields are set per channel. A script with an error can break every storefront page, so test it on a staging store first if you have one.

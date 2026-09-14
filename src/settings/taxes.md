@@ -54,4 +54,4 @@ The message *Tax category created successfully.* appears and the new category is
 
    <ImagePopup src="/images/settings/product-tax-category.png" alt="Tax Category field in the General section of a product" />
 
-New products start with the **Product Default Tax Category** chosen under [Configure >> Sales >> Taxes](../configure/taxes.md), so set it to the category most of your products use.
+Products that don't have a tax category of their own use the **Product Default Tax Category** chosen under [Configure >> Sales >> Taxes](../configure/taxes.md), so set it to the category most of your products use.

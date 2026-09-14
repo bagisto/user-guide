@@ -1,59 +1,50 @@
 # Taxes
 
-This page decides how the tax categories and rates you created under **Settings >> Taxes** are applied to prices and shown to shoppers. The categories and rates themselves are managed on the [Taxes](../settings/taxes.md) settings page.
+This screen decides how tax is calculated and how it is shown to shoppers. The tax rates and tax categories themselves are created under **Settings >> Taxes**; see [Taxes](../settings/taxes.md).
 
 Go to **Configure >> Sales >> Taxes**.
 
-## Tax categories
+## Choose the tax categories
 
-Choose the **Shipping Tax Category** and the **Product Default Tax Category**. The product default is used when a product has no tax category of its own.
+1. In **Tax Categories**, choose the **Shipping Tax Category**.
+2. Choose the **Product Default Tax Category**.
+3. Click **Save Configuration**.
 
-## Calculation settings
+<ImagePopup src="/images/configure/taxes-calculation.png" alt="Tax Categories and Calculation Settings sections of the Taxes screen" />
 
-**Calculation Based On:** Which address decides the tax rate:
+**Shipping Tax Category:** The tax category used to calculate tax on shipping. If none is chosen, shipping is not taxed.
 
-- **Shipping Address** – the address the order is delivered to.
-- **Billing Address** – the address linked to the payment.
-- **Shipping Origin** – the location you ship from, set under **Configure >> Sales >> Shipping Settings**.
+**Product Default Tax Category:** The tax category used for products that don't have a tax category of their own.
 
-<ImagePopup src="/images/configure/shipping.png" alt="Calculation Based On setting" />
+## Decide how tax is calculated
 
-**Product Prices:** Whether the prices you enter on products already include tax:
+1. In **Calculation Settings**, choose the options described below.
+2. Click **Save Configuration**.
 
-- **Excluding Tax** – tax is added on top of the entered price.
+| Setting | Options |
+|---|---|
+| **Calculation Based On** | The address that decides which tax rates apply: **Shipping Address** (the default), **Billing Address**, or **Shipping Origin**, the address set under [Shipping Settings](./shipping.md). |
+| **Product Prices** | **Excluding Tax** (the default) when the prices you enter don't include tax, so tax is added on top. **Including Tax** when they already include it. |
+| **Shipping Prices** | The same choice for shipping rates. |
+| **Apply Tax On** | **After Discount** (the default) calculates tax on the price after cart rule discounts. **Before Discount** calculates it on the original price. This applies only to prices that exclude tax. |
 
-<ImagePopup src="/images/configure/exclude-tax.png" alt="Product prices excluding tax" />
+## Set a default destination
 
-- **Including Tax** – the entered price already contains the tax.
+Until a shopper enters an address, tax is calculated for the default destination.
 
-<ImagePopup src="/images/configure/include-tax.png" alt="Product prices including tax" />
+1. In **Default Destination Calculation**, choose the **Default Country**.
+2. Choose the **Default State**.
+3. Enter the **Default Post Code**.
+4. Click **Save Configuration**.
 
-**Shipping Prices:** The same choice for shipping rates.
+<ImagePopup src="/images/configure/taxes-display.png" alt="Default Destination Calculation and tax display sections of the Taxes screen" />
 
-**Apply Tax On:** Whether tax is calculated on the original price or the discounted price.
+## Choose how tax is displayed
 
-## Default destination calculation
+**Shopping Cart Display Settings** decide how tax is shown in the cart and at checkout. **Orders, Invoices, Refunds Display Settings** decide the same for orders, invoices and refunds. Both sections have **Display Prices**, **Display Subtotal** and **Display Shipping Amount**, each with these options:
 
-Set the **Default Country**, **Default State** and **Default Post Code** used to calculate tax before a shopper has entered an address, for example on category pages and in the cart.
+- **Excluding Tax** – the amount without tax. This is the default.
+- **Including Tax** – the amount with tax.
+- **Excluding and Including Both** – both amounts.
 
-<ImagePopup src="/images/configure/destination.png" alt="Default Destination Calculation settings" />
-
-## Display settings
-
-**Shopping Cart Display Settings** control how prices, the subtotal and the shipping amount are shown in the cart. **Orders, Invoices, Refunds Display Settings** make the same choice for the documents an order produces. Each field takes one of:
-
-- **Excluding Tax** – tax is shown as a separate line.
-
-<ImagePopup src="/images/configure/exclude-tax.png" alt="Cart showing prices excluding tax" />
-
-- **Including Tax** – tax is folded into the amount.
-
-<ImagePopup src="/images/configure/include-tax.png" alt="Cart showing prices including tax" />
-
-- **Excluding and Including Both** – both amounts are shown.
-
-<ImagePopup src="/images/configure/includeexclude-both.png" alt="Cart showing both amounts" />
-
-The cart section also has a **Show Tax Breakdown** switch that lists each tax rate applied.
-
-Click **Save Configuration** after any change.
+**Show Tax Breakdown**, in the cart section, lists the tax for each product and tax rate in the cart and checkout summary. It is meant for checking your tax setup, and is off by default.

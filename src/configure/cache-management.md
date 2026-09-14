@@ -1,63 +1,65 @@
 # Cache Management
 
-Cache Management lets you clear and rebuild the caches the store keeps, so the storefront and the admin show up-to-date information without losing performance, and lets you switch the storefront's full page cache on or off.
+Cache Management lets you clear and rebuild the caches your store keeps, and switch the storefront's full page cache on or off. It has two screens, **General** and **Full Page Cache**.
 
-Go to **Configure >> Cache Management**. It has two sections, **General** and **Full Page Cache**.
+## Clear or build caches
 
-## General
+1. Go to **Configure >> Cache Management >> General**.
+2. In **Cache Actions**, click the button for the action you want.
+3. Read the result in the **Output Console** below the buttons.
 
-### Cache Actions
+<ImagePopup src="/images/configure/cache-management-actions.png" alt="Cache Actions section with the Clear Cache and Build Cache buttons and the Output Console" />
 
-<ImagePopup src="/images/configure/cache-manage.png" alt="Cache Management" />
+The buttons act straight away; there is nothing to save.
 
-Under **Clear Cache**, each button removes one kind of cached data so the store regenerates it on the next request:
+Under **Clear Cache**, each button removes one kind of cached data, so the store builds it again on the next request:
 
 - **Clear All Cache** – every cache below at once.
 - **Clear Config Cache** – the cached configuration.
 - **Clear Application Cache** – the application cache.
 - **Clear Compiled Cache** – compiled classes and files.
-- **Clear Event Cache** – cached event discovery data.
-- **Clear Route Cache** – cached route definitions.
+- **Clear Event Cache** – cached event data.
+- **Clear Route Cache** – cached routes.
 - **Clear View Cache** – compiled page templates.
-- **Clear Page Cache** – the full page cache of the storefront, the same as **Flush Page Cache** below.
+- **Clear Page Cache** – the storefront's full page cache, the same as **Flush Page Cache** below.
 
-Under **Build Cache**, each button pre-builds a cache so the store starts fast after a deployment:
+Under **Build Cache**, each button builds a cache in advance, so the store starts fast after an update:
 
 - **Rebuild All Cache** – every cache below at once.
 - **Cache Config** – the configuration.
 - **Cache Routes** – the routes.
 - **Cache Views** – the page templates.
 
-1. Click the button for the action you want.
-2. Read the result in the **Output Console** below the buttons. A success message and the command's output appear once it has finished.
-
 ### Important notes
 
-- Route caching fails when a route is defined as a closure rather than a controller; the console output names the offending route.
-- Configuration caching fails when a configuration file contains a closure.
+- Caching routes fails when a route is written as a closure rather than pointing to a controller. The output names the route.
+- Caching the configuration fails when a configuration file contains a closure.
 - A file permission problem on the server stops both clearing and building.
-- After clearing a cache, the first few page loads take slightly longer while the store rebuilds it. Rebuilding the caches after a deployment avoids that.
+- After you clear a cache, the first few pages load a little more slowly while the store builds it again. Building the caches after an update avoids that.
 
-## Full Page Cache
+## Full page cache
 
-Full Page Cache keeps a rendered copy of your storefront pages and serves that copy to the next visitor, instead of building the page again for every one of them. It decides how quickly your storefront responds under load, and it is controlled from the admin rather than by editing the server configuration. The home page, category pages, product pages, search results and CMS pages are cached; the cart, checkout and account pages never are.
+The full page cache keeps a rendered copy of your storefront pages and serves it to the next visitor, instead of building the page again for each one. It decides how quickly your storefront responds under load. The home page, category pages, product pages, search results and CMS pages are cached; the cart, checkout and account pages never are.
 
-Go to **Configure >> Cache Management >> Full Page Cache**.
+1. Go to **Configure >> Cache Management >> Full Page Cache**.
+2. In **Settings**, switch **Enable Full Page Cache** on or off. It is on by default.
+3. Enter the **Cache Lifetime (Minutes)**.
+4. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/full-page-cache.png" alt="Full Page Cache Settings" />
+<ImagePopup src="/images/configure/full-page-cache.png" alt="Full Page Cache screen with the page cache turned on" />
 
-**Enable Full Page Cache:** Storefront pages are served from the cache. Turning this off makes every page render again on each visit, which is slower for shoppers but useful while you are diagnosing a page that looks stale.
+**Enable Full Page Cache:** Serves storefront pages from the cache. Turning it off renders every page again on each visit, which is slower for shoppers but useful while you check a page that looks out of date.
 
-**Cache Lifetime (Minutes):** How long a cached page is kept before it is rendered again. Leave it empty to use the application default.
+**Cache Lifetime (Minutes):** How long a cached page is kept before it is rendered again. The default is `10080`, one week. Leave it empty to use the application default.
 
-**Flush Page Cache:** Empty the page cache so every storefront page is rendered again on its next visit. Use it after a change that the store does not refresh on its own, such as editing a template on the server.
+**Flush Page Cache:** Empties the page cache, so every storefront page is rendered again on its next visit. The button acts straight away. Use it after a change the store doesn't pick up on its own, such as a template edited on the server.
 
-Click **Save Configuration** after changing the switch or the lifetime; the flush button acts immediately.
+### You don't have to clear the cache after an edit
 
-### You do not have to clear it after an edit
+A cached page is refreshed automatically when the content behind it changes. Saving a product, category, review, CMS page, URL rewrite, channel, theme section or configuration clears the affected pages, and so do orders, refunds and price or catalog rule reindexing. Editing a product or a category also clears your home page and category listings, in every channel, language and currency. Each currency and language has its own copy of every page, so switching between them never shows an out-of-date page.
 
-A cached page is refreshed automatically when the content behind it changes. Saving a product, category, review, CMS page, URL rewrite, channel, theme section or configuration clears the affected pages, and so does an order, a refund or a price or catalog-rule reindex. Editing a product or a category clears your home page and category listings too, across every channel, locale and currency they were cached under. Each currency and locale has its own copy of every page, so switching between them never shows a stale page.
+The lifetime is a backstop rather than the main mechanism, so set it long and let the automatic refresh handle day-to-day edits. A short lifetime doesn't fix a page that looks out of date, it only shortens how long the wrong page is shown. If a change doesn't appear at all, check that it was saved or published, then click **Flush Page Cache**.
 
-So the lifetime is a backstop rather than the main mechanism. Set it long, and trust the automatic refresh for day-to-day edits.
+## Differences in Bagisto 2.4
 
-**Note:** A short lifetime is not a fix for a page that looks out of date. It only shortens how long the wrong page is shown. If a change is not appearing at all, check that it was saved or published, then use **Flush Page Cache**.
+In Bagisto 2.4, **Cache Lifetime (Minutes)** has no preset value, so the application default is used until you enter one.

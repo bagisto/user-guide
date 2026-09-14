@@ -1,22 +1,23 @@
-# Back Orders
+# Inventory
 
-A back order is an order for a product that is out of stock at the time it is placed. Allowing back orders keeps a product buyable while you restock; blocking them shows the product as out of stock instead.
+The **Inventory** screen decides whether shoppers can order more of a product than you have in stock, and the stock level at which the admin dashboard marks a product as low.
+
+Go to **Configure >> Catalog >> Inventory**.
 
 ## Allow back orders
 
-1. Go to **Configure >> Catalog >> Inventory**.
-2. In the **Product Stock Option** section, switch **Allow Back Orders** on.
-3. Set the **Out-of-Stock Threshold**, the quantity at which a product counts as out of stock.
-4. Click **Save Configuration**.
+A back order is an order for more units than you have in stock. Allowing back orders keeps products buyable while you restock.
 
-<ImagePopup src="/images/configure/backorder.png" alt="Product Stock Option settings" />
+1. In **Product Stock Option**, switch **Allow Back Orders** on.
+2. Click **Save Configuration**.
 
-## What the shopper sees
+<ImagePopup src="/images/configure/inventory-settings.png" alt="Product Stock Option section of the Inventory screen" />
 
-With back orders allowed, a product with no stock still shows **Add To Cart** and the order goes through; the item's quantity goes negative until you restock.
+While it is off, shoppers can't add more units of a product to the cart than you have in stock.
 
-<ImagePopup src="/images/configure/outofstock.png" alt="Out-of-stock product that can still be bought" />
+## Set the out-of-stock threshold
 
-<ImagePopup src="/images/configure/backorder-output.png" alt="Back-ordered product in the cart" />
+1. In **Product Stock Option**, enter the **Out-of-Stock Threshold**. The default is `0`.
+2. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/order-id.png" alt="Order placed for a back-ordered product" />
+The **Stock Threshold** card on the admin dashboard shows the stock of each product it lists in red when the stock is at or below this threshold, so you can see what needs restocking.

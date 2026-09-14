@@ -1,21 +1,19 @@
 # Rich Snippets
 
-Rich snippets are structured data added to your storefront pages so search engines can show extra detail, such as a price, rating or availability, directly in their results.
+Rich snippets are structured data added to storefront pages, so search engines can show extra details, such as a price, rating or availability, directly in their results.
 
 Go to **Configure >> Catalog >> Rich Snippets**.
 
 ## Products
 
-1. In the **Products** section, switch **Enable** on.
-2. Switch on each detail to include: SKU, weight, categories, images, reviews, ratings and offers.
+1. In **Products**, switch **Enable** on.
+2. Switch on each detail to include: **Show SKU**, **Show Weight**, **Show Categories**, **Show Images**, **Show Reviews**, **Show Ratings** and **Show Offers**.
 3. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/products.png" alt="Product rich snippet settings" />
+<ImagePopup src="/images/configure/rich-snippets-settings.png" alt="Products and Categories sections of the Rich Snippets screen" />
 
 ## Categories
 
-1. In the **Categories** section, switch **Enable** on.
-2. Choose whether the storefront search box is described to search engines, which lets them offer a search field in the result.
+1. In **Categories**, switch **Enable** on.
+2. Switch **Show Search Input Field** on to describe your storefront search to search engines, so they can offer a search box for your store in their results.
 3. Click **Save Configuration**.
-
-<ImagePopup src="/images/configure/categories.png" alt="Category rich snippet settings" />

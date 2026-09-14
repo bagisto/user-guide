@@ -1,13 +1,12 @@
 # Address
 
-These settings decide what a customer must fill in on an address form, at sign up, in the account and at checkout.
+The **Address** screen decides which fields customers must fill in on address forms, and how many street address lines the forms show. It applies to the address forms in the customer account and at checkout on the storefront, and to the address forms in the admin panel.
 
-Go to **Configure >> Customer >> Address**.
+1. Go to **Configure >> Customer >> Address**.
+2. In **Requirements**, switch **Country**, **State** and **Zip** on to make them required, or off to make them optional.
+3. In **Information**, enter the number of **Lines in a Street Address**, from `1` to `4`.
+4. Click **Save Configuration**.
 
-**Requirements:** Whether **Country**, **State** and **Zip** are compulsory. Turn a field off for markets where it does not apply.
+<ImagePopup src="/images/configure/customer-address.png" alt="Requirements and Information sections of the Address screen" />
 
-**Information:** The number of **Lines in a Street Address** the form offers.
-
-Click **Save Configuration** after any change. The settings are per channel.
-
-<ImagePopup src="/images/configure/address.png" alt="Address settings" />
+All settings are set per channel. By default, the country, state and zip are required, and the street address has one line.

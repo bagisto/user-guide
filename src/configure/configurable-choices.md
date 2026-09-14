@@ -1,20 +1,16 @@
-# Configurable Choices
+# Product Settings
 
-Three storefront features can be switched on or off. They live in two places, so this page points you to each.
+The **Settings** section of the **Products** screen turns two storefront features on or off: product comparison and search by image.
 
-## Compare and image search
-
-1. Go to **Configure >> Catalog >> Products** and find the **Settings** section.
-2. Switch **Compare options** on to let shoppers add products to a comparison page.
-3. Switch **Image Search Option** on to add a camera icon to the storefront search bar, so shoppers can search by uploading a photo.
+1. Go to **Configure >> Catalog >> Products**.
+2. In **Settings**, switch **Compare options** on or off.
+3. Switch **Image Search Option** on or off.
 4. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/options.png" alt="Compare and image search options" />
+<ImagePopup src="/images/configure/products-settings.png" alt="Settings section of the Products screen with Compare options and Image Search Option" />
 
-To have an uploaded photo understood by an AI model rather than by the browser alone, see [AI image search](../generative-ai/image-search.md).
+**Compare options:** Shows the compare icon in the storefront header and a **Compare** button on products, so shoppers can compare products side by side. It is on by default.
 
-## Wishlist
+**Image Search Option:** Shows a camera icon in the storefront search bar, so shoppers can search by uploading a photo. It is on by default. To have the photo understood by an AI model, also turn on [AI image search](../generative-ai/image-search.md).
 
-1. Go to **Configure >> Customer >> Settings** and find the **Wishlist** section.
-2. Switch **Allow Wishlist option** on.
-3. Click **Save Configuration**.
+The **Products** screen also holds the [Storefront](./frontend.md), [Product View Page](./product-view-page.md), [Review](./review.md), [Social Share](./social-share.md), [Cart View Page](./cart-view-page.md), [Image Size](./image-size.md), [Attribute](./attribute.md) and [Omnibus Price Disclosure](./omnibus.md) sections. The wishlist is turned on or off under [Customer Settings](./settings.md#wishlist-and-newsletter).

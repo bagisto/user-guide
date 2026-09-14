@@ -4,6 +4,8 @@ Sitemaps inform search engines which pages on a website should be crawled, and m
 
 While sitemaps can be a simple text file listing the URLs of all the pages you'd like to have indexed, they can also be an XML document carrying more information.
 
+Sitemap files are generated only while sitemaps are enabled for the channel under **Configure >> General >> Sitemap**, which also sets how many links each file holds; see [Sitemap](../configure/sitemap.md).
+
 ## Creating a sitemap
 
 1. Go to **Marketing >> Search & SEO >> Sitemaps**.

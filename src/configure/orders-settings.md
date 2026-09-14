@@ -1,35 +1,43 @@
 # Order Settings
 
+These settings decide how order numbers are built, the smallest order total a customer can check out with, whether an order can be placed again, and how often the store retries creating an order.
+
 Go to **Configure >> Sales >> Order Settings**.
 
-<ImagePopup src="/images/configure/order-settings.png" alt="Order settings" />
+## Order numbers
 
-## Order number settings
+1. In **Order Number Settings**, enter the **Order Number Prefix**, such as `ORD-`.
+2. Enter the **Order Number Length**, a number from `1` to `10`.
+3. Optionally, enter an **Order Number Suffix**.
+4. Click **Save Configuration**.
 
-Decide how order numbers are built: an **Order Number Prefix**, the **Order Number Length** it is padded to, and an **Order Number Suffix**. Change these before the store takes orders, so the numbering stays consistent.
+<ImagePopup src="/images/configure/order-settings-numbers.png" alt="Order Number Settings and Minimum Order Settings sections of the Order Settings screen" />
 
-## Minimum order settings
+The number is padded with zeros to the length you set, so a prefix of `ORD-` and a length of `6` give order numbers such as `ORD-000042`. Leave **Order Number Generator** empty unless a developer has built a custom number generator for your store. These settings are set per channel, so set them before the channel takes its first order.
 
-1. Switch **Enable** on.
-2. Enter the **Minimum Order Amount** a cart must reach before checkout is allowed.
-3. Choose whether the check counts the discount (**Include Discount Amount**) and the tax (**Include Tax to Amount**).
-4. Enter the **Description** shown in the cart when the amount is not reached.
-5. Click **Save Configuration**.
+## Minimum order amount
+
+1. In **Minimum Order Settings**, switch **Enable** on. The other settings appear.
+2. Enter the **Minimum Order Amount**.
+3. Switch **Include Discount Amount** on to check the cart total after discounts.
+4. Switch **Include Tax to Amount** on to count tax in the cart total.
+5. Enter the **Description**, the message shoppers see when their cart is below the minimum.
+6. Click **Save Configuration**.
+
+If **Description** is empty, shoppers see *Minimum order amount is* followed by the amount. The amount and the description are set per channel.
 
 ## Allow reorder
 
-Two switches let an order be placed again with the same items: **Admin Reorder** adds a **Reorder** button to the admin order page, and **Shop Reorder** adds one to the customer's order page on the storefront.
+**Admin Reorder** adds a **Reorder** button to orders in the admin panel, and **Shop Reorder** adds one to a customer's orders on the storefront. Both are on by default.
 
-<ImagePopup src="/images/configure/allow-reorder.png" alt="Allow Reorder switches" />
+1. In **Allow Reorder**, switch **Admin Reorder** on or off.
+2. Switch **Shop Reorder** on or off.
+3. Click **Save Configuration**.
 
-To reorder from the admin, go to **Sales >> Orders** and open an order placed by a registered customer. The **Reorder** button appears when every product on the order can still be bought; guest orders cannot be reordered, and booking products are skipped and must be booked again.
+<ImagePopup src="/images/configure/order-settings-reorder.png" alt="Allow Reorder and Order Creation sections of the Order Settings screen" />
 
-<ImagePopup src="/images/configure/admin-reorder.png" alt="Reorder button on an admin order" />
-
-On the storefront, the customer opens **My Account >> Orders**, opens the order, and finds **Reorder** at the top of the order's detail page.
-
-<ImagePopup src="/images/configure/frontreorder.png" alt="Reorder button on a customer's order" />
+The **Reorder** button appears only on orders placed by a registered customer, and only while the ordered products can still be bought. Booking products are left out and have to be booked again. In the admin panel, only users allowed to create orders see the button.
 
 ## Order creation
 
-**Max Retry Attempts** is how many times the store retries creating an order when the attempt fails part-way, for example when two orders are placed at the same instant. Leave the default unless you see failed order placements.
+**Max Retry Attempts** is how many times the store tries to create an order when an attempt fails during checkout. The default is `3`, and it is set per channel.

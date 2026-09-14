@@ -16,15 +16,9 @@ The **EU Withdrawal** feature in Bagisto helps store owners comply with **Direct
 
 ### Enable EU Withdrawal
 
-1. Go to **Configure >> Sales >> EU Withdrawals**.
-
-2. Switch **Enabled** on for the channel you are configuring. The setting is per channel, so switch channel at the top of the page to enable it on each store.
-
-3. Click **Save Configuration**.
+The feature is turned on for each channel under **Configure >> Sales >> EU Withdrawals**. See [EU Withdrawals configuration](../configure/eu-withdrawals.md).
 
 > **Important:** Only enable the feature on channels selling to EU consumers. When it is disabled for a channel, every withdrawal page, including the public guest lookup, returns a "not found" page, so the feature is invisible to shoppers.
-
-<ImagePopup src="/images/orders/eu-withdrawal.png" alt="EU Withdrawal configuration" />
 
 ## Admin — Managing Withdrawals
 

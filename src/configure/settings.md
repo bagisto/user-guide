@@ -1,35 +1,49 @@
-# Settings
+# Customer Settings
 
-These settings decide how customer accounts are created and signed in to.
+The **Settings** screen of the **Customer** group decides how customer accounts are created and signed in to, and whether the wishlist and the newsletter are offered.
 
 Go to **Configure >> Customer >> Settings**.
 
-<ImagePopup src="/images/configure/settings.png" alt="Customer settings" />
+## New accounts
 
-## Create new account options
+1. In **Create New Account Options**, choose the **Default Group** new customers are placed in. The default is **General**.
+2. Switch **Allow NewsLetter** on to show a newsletter subscription checkbox on the sign-up form. It is on by default.
+3. Click **Save Configuration**.
 
-**Default Group:** The customer group a new account is placed in.
+<ImagePopup src="/images/configure/customer-settings.png" alt="Create New Account Options, Email Verification and Login Options sections of the Customer Settings screen" />
 
-**Allow NewsLetter:** Show the newsletter subscription checkbox on the sign-up form.
+Customer groups are described in [Customer Groups](../customer/customer-group.md).
 
 ## Email verification
 
-Switch **Allow Email Verification** on to send new customers a confirmation link they must open before they can sign in.
+While **Allow Email Verification** is on, new customers receive an email with a verification link, and they can sign in only after they have opened it. It is off by default.
 
-## Login options
+1. In **Email Verification**, switch **Allow Email Verification** on or off.
+2. Click **Save Configuration**.
 
-**Redirect Customer to the selected page:** Where a customer lands after signing in, the home page or their account.
+## Sign-in redirect
+
+1. In **Login Options**, set **Redirect Customer to the selected page** to where customers land after signing in: **Home** (the default) or **Account**, their account profile.
+2. Click **Save Configuration**.
 
 ## Social login
 
-Let customers sign in with a Facebook, X (Twitter), Google, LinkedIn or GitHub account. For each network, switch it on and enter the **Client ID** and **Client Secret** from the app you registered with that network, and copy the **Redirect URL** shown into that app's settings.
+Social login lets customers sign in with their Facebook, X (Twitter), Google, LinkedIn or GitHub account. The buttons of the providers you turn on appear on the storefront sign-in page. Before you start, create an app in the developer console of each provider to get its client ID and client secret.
 
-## Wishlist
+1. In **Social Login**, switch on the provider: **Enable Facebook**, **Enable X (Twitter)**, **Enable Google**, **Enable LinkedIn** or **Enable GitHub**. Its fields appear.
+2. Enter the **Client ID** and **Client Secret** of your app.
+3. Check the **Redirect URL**. Keep the path shown and change only the domain to your store's, such as `https://www.example.com/customer/social-login/google/callback`.
+4. Add the same **Redirect URL** to your app's settings in the provider's developer console.
+5. Click **Save Configuration**.
 
-Switch **Allow Wishlist option** on to let shoppers save products to a wishlist.
+<ImagePopup src="/images/configure/customer-social-login.png" alt="Social Login section with Google turned on and its client ID, client secret and redirect URL fields" />
 
-## Newsletter subscription
+Each provider's switch is set per channel, while its client ID, client secret and redirect URL apply to the whole store.
 
-Switch **Allow Newsletter Subscription** on to show the subscription form in the storefront footer.
+## Wishlist and newsletter
 
-Click **Save Configuration** after any change.
+1. In **Wishlist**, switch **Allow Wishlist option** on or off.
+2. In **Newsletter Subscription**, switch **Allow Newsletter Subscription** on or off.
+3. Click **Save Configuration**.
+
+**Allow Wishlist option** lets shoppers save products to a wishlist. **Allow Newsletter Subscription** shows the subscription form in the storefront footer. Both are on by default.

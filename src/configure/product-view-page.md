@@ -1,17 +1,17 @@
 # Product View Page
 
-A Product View Page is a dedicated page within an online store that displays detailed information about a specific product. This page helps customers make informed purchasing decisions.
+The **Product view page configuration** section decides how many related and up-sell products the product page shows, and whether shoppers can buy a product straight from its page.
 
-Go to **Configure >> Catalog >> Products** and find the **Product view page configuration** section.
+1. Go to **Configure >> Catalog >> Products**.
+2. In **Product view page configuration**, enter the **Allowed number of Related Products**.
+3. Enter the **Allowed number of Up-Sell Products**.
+4. Switch **Allow customers to directly buy products** on or off.
+5. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/product-view-page-buy-now.png" alt="Product View Page Configuration" />
+<ImagePopup src="/images/configure/products-product-view-page.png" alt="Product view page configuration section of the Products screen" />
 
-**Allowed number of Related Products:** How many of the product's related products are shown below it.
+**Allowed number of Related Products** and **Allowed number of Up-Sell Products:** How many of the related and up-sell products chosen on a product are shown on its page.
 
-**Allowed number of Up-Sell Products:** How many of its up-sell products are shown.
+**Allow customers to directly buy products:** Shows a **Buy Now** button beside **Add To Cart** on the product page. Shoppers who click it go straight to the checkout with that product. It is off by default, and the button is not shown while **Cart Page** is turned off under [Checkout](./checkout.md).
 
-**Allow customers to directly buy products:** Shows a **Buy Now** button beside **Add To Cart** on the product page. A shopper who clicks it is taken straight to the checkout with that product, skipping the cart. On Bagisto 2.4 this switch is in the **Storefront** section instead.
-
-<ImagePopup src="/images/configure/buy-now.png" alt="Buy Now Button on the Product Page" />
-
-After configuring, click the **Save Configuration** button.
+In Bagisto 2.4, **Allow customers to directly buy products** is in the [Storefront](./frontend.md) section instead.

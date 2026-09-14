@@ -219,66 +219,85 @@ export default defineConfig({
         text: groupLabel("Configure", "wrench"),
         collapsed: false,
         items: [
+          { text: "Overview", link: "/configure/introduction" },
           {
             text: "General",
-            collapsed: true,
+            collapsed: false,
             items: [
-              { text: "Weight Unit", link: "/configure/weight-unit" },
+              { text: "General", link: "/configure/general" },
               { text: "Content", link: "/configure/content" },
-              { text: "Custom Scripts", link: "/configure/custom-scripts" },
               { text: "Design", link: "/configure/design" },
               {
                 text: "Exchange Rates",
                 link: "/configure/exchange-rates-configurations",
               },
+              { text: "Sitemap", link: "/configure/sitemap" },
               { text: "GDPR", link: "/configure/gdpr" },
             ],
           },
           { text: "Generative AI (Magic AI)", link: "/configure/magic-ai" },
           {
             text: "Sales",
-            collapsed: true,
+            collapsed: false,
             items: [
               { text: "Shipping Settings", link: "/configure/shipping" },
+              {
+                text: "Shipping Methods",
+                link: "/shipping-method/shipping-methods",
+              },
+              { text: "Payment Methods", link: "/payment-method/payment-methods" },
               { text: "Checkout", link: "/configure/checkout" },
-              { text: "Guest Checkout", link: "/configure/guest-checkout" },
               { text: "Order Settings", link: "/configure/orders-settings" },
               { text: "Invoice Settings", link: "/configure/invoice-settings" },
               { text: "Taxes", link: "/configure/taxes" },
+              { text: "RMA", link: "/configure/rma" },
+              { text: "EU Withdrawals", link: "/configure/eu-withdrawals" },
             ],
           },
           {
             text: "Catalog",
-            collapsed: true,
+            collapsed: false,
             items: [
               {
-                text: "Configurable Choices",
-                link: "/configure/configurable-choices",
+                text: "Products",
+                collapsed: false,
+                items: [
+                  {
+                    text: "Product Settings",
+                    link: "/configure/configurable-choices",
+                  },
+                  { text: "Storefront", link: "/configure/frontend" },
+                  {
+                    text: "Product View Page",
+                    link: "/configure/product-view-page",
+                  },
+                  { text: "Review", link: "/configure/review" },
+                  { text: "Social Share", link: "/configure/social-share" },
+                  { text: "Cart View Page", link: "/configure/cart-view-page" },
+                  { text: "Image Size", link: "/configure/image-size" },
+                  { text: "Attribute", link: "/configure/attribute" },
+                  {
+                    text: "Omnibus Price Disclosure",
+                    link: "/configure/omnibus",
+                  },
+                ],
               },
-              { text: "Storefront", link: "/configure/frontend" },
-              { text: "Product View Page", link: "/configure/product-view-page" },
-              { text: "Cart View Page", link: "/configure/cart-view-page" },
-              { text: "Review", link: "/configure/review" },
-              { text: "Social Share", link: "/configure/social-share" },
-              { text: "Image Size", link: "/configure/image-size" },
-              { text: "Attribute", link: "/configure/attribute" },
-              { text: "Omnibus Price Disclosure", link: "/configure/omnibus" },
-              { text: "Back Orders", link: "/configure/back-orders" },
+              { text: "Inventory", link: "/configure/back-orders" },
               { text: "Rich Snippets", link: "/configure/rich-snippets" },
             ],
           },
           {
             text: "Customer",
-            collapsed: true,
+            collapsed: false,
             items: [
-              { text: "Settings", link: "/configure/settings" },
+              { text: "Customer Settings", link: "/configure/settings" },
               { text: "Address", link: "/configure/address" },
               { text: "Google Captcha", link: "/configure/google-captcha" },
             ],
           },
           {
             text: "Email",
-            collapsed: true,
+            collapsed: false,
             items: [
               { text: "Email Settings", link: "/configure/email-settings" },
               { text: "Notifications", link: "/configure/notifications" },
@@ -298,7 +317,7 @@ export default defineConfig({
           { text: "Categories", link: "/category/create-category" },
           {
             text: "Attributes",
-            collapsed: true,
+            collapsed: false,
             items: [
               { text: "Attribute Input Types", link: "/attribute/attribute-input" },
               {
@@ -310,7 +329,7 @@ export default defineConfig({
           },
           {
             text: "Products",
-            collapsed: true,
+            collapsed: false,
             items: [
               { text: "Simple Product", link: "/product-types/simple-product" },
               {
@@ -355,8 +374,6 @@ export default defineConfig({
           { text: "Transactions", link: "/orders/transactions" },
           { text: "EU Withdrawal", link: "/orders/eu-withdrawal" },
           { text: "RMA", link: "/orders/rma" },
-          { text: "Shipping Methods", link: "/shipping-method/shipping-methods" },
-          { text: "Payment Methods", link: "/payment-method/payment-methods" },
         ],
       },
 
