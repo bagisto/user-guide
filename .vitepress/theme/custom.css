@@ -861,7 +861,7 @@ html::-webkit-scrollbar-corner,
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin: 0 0 24px;
+  margin: 14px 0 24px;
 }
 
 .vp-doc .feature-meta > span {

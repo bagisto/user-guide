@@ -62,7 +62,7 @@
         </p>
 
         <p class="mp-text">
-          Sellers turn a short description into product content with AI.
+          Sellers describe a product, and AI drafts the listing for them to review.
         </p>
 
         <ul class="mp-list">
@@ -114,9 +114,9 @@ const STORE_URL = 'https://store.webkul.com/laravel-multi-vendor-marketplace.htm
 const DEMO_URL = 'https://demo.bagisto.com/marketplace/'
 
 const HIGHLIGHTS = [
-  'Seller dashboard & bulk upload',
-  'Commissions & approvals',
-  'One cart across all sellers'
+  'Writes descriptions & SEO meta',
+  'Suggests attributes & categories',
+  'Reads product photos you attach'
 ]
 
 // The card's size depends on the page outline, which is only measured in the
@@ -343,6 +343,7 @@ onUnmounted(() => observer?.disconnect())
   font-weight: 500;
   line-height: 18px;
   color: var(--vp-c-text-1);
+  text-wrap: balance;
 }
 
 .mp-list svg {

@@ -15,8 +15,8 @@ const MARKETPLACE_PAGES: Record<string, string> = {
   // Sellers
   "vendor-management": "sellers/seller-management",
   "seller-attributes": "sellers/seller-attributes",
-  "seller-user-role-management": "sellers/seller-user-role-management",
-  "featured-sellers": "sellers/featured-sellers",
+  "seller-user-role-management": "seller-panel/users-and-roles",
+  "featured-sellers": "storefront/featured-sellers",
 
   // Catalog
   "product-management": "catalog/product-management",
@@ -36,7 +36,7 @@ const MARKETPLACE_PAGES: Record<string, string> = {
   // Payments & commission
   "payment-management": "payments/payment-management",
   "commission-management": "payments/commission-management",
-  "mass-payout-management": "payments/mass-payout-management",
+  "mass-payout-management": "payments/payment-management#pay-several-sellers-at-once",
 
   // Moderation
   "rating-management": "moderation/rating-management",
