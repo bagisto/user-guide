@@ -1,83 +1,77 @@
 # Catalog Rules
 
-The catalog rule is a special rule that allows the customer to purchase the product at discounted prices that are set by the admin from the backend. Here will discuss how to set catalog rules in Bagisto.
+A catalog rule lowers the price of products before they're added to the cart, so shoppers see the discounted price while they browse. Use it for a sale on a category, or for lower prices for your wholesale customers.
 
-The catalog rule is applied to the product before placed into the shopping cart. Follow the below step “How to set catalog rules in Bagisto”.
+To give a discount in the cart or with a coupon code, use [cart rules](cart-rules.md) instead.
 
-### Step 1: Add New Catalog Rule
+## Create a catalog rule
 
 1. Go to **Marketing >> Promotions >> Catalog Rules**.
+2. Click **Create Catalog Rule**.
+3. Fill in the sections described below.
 
-2. On the upper right side, click the **Create Catalog Rule** button, as shown below.
+   <ImagePopup src="/images/marketing/catalog-rule-create.png" alt="The Create Catalog Rule page with a Categories condition for Mens, a 15 percent discount and the Settings panel" />
 
-   <ImagePopup src="/images/marketing/catalog-rule.png" alt="Catalog" />
+4. In the **Settings** panel, switch **Status** on. A new rule starts switched off.
+5. Click **Save Catalog Rule**.
 
-Fill in the following fields in the **General** section:
+You see "Catalog rule created successfully".
 
-- **Name:** Enter the name of the new catalog rule (only for internal reference).
+### General, Settings and Marketing Time
 
-- **Description:** Enter a description of the rule (only for internal reference).
+| Setting | What it does |
+|---|---|
+| **Name** | Identifies the rule in the admin panel |
+| **Description** | Your own notes about the rule |
+| **Priority** | The order rules are applied in, starting from the lowest number |
+| **Channels** | The channels the rule works on |
+| **Customer Groups** | The customer groups who see the lower price |
+| **Status** | Switches the rule on or off. Off by default, and a rule that's off doesn't apply. |
+| **From** and **To** | Dates, not times. A rule starts at the beginning of the **From** date and ends at the end of the **To** date. Leave them empty for no start or end date. |
 
-Then fill in the **Settings** panel in the right sidebar:
+### Conditions
 
-- **Priority:** Enter the priority of this rule.
+Conditions decide which products get the lower price. Leave them empty to apply the rule to every product.
 
-- **Channels:** Select the channel on which this catalog rule will be applied.
-
-- **Customer Groups:** Select the customer group on which this catalog rule will be applied.
-
-- **Status:** Set the status of the catalog rule to active.
-
-Finally, set the **Marketing Time** panel below it:
-
-- **From** and **To** dates: Set the range of dates when the catalog rule will be in effect. If you do not set the dates, the rule applies as soon as the rule is saved.
-
-<ImagePopup src="/images/marketing/catalog-configurations.png" alt="Catalog Configurations" />
-
-### Step 2: Set Conditions
-
-All conditions in the catalog rule are based on the product attributes. If you want to apply the rule on all products, don’t set any condition.
-
-1. Set the **Condition Type** to **All Conditions are true** or **Any Conditions are true**.
-
-   <ImagePopup src="/images/marketing/condition.png" alt="Condition" />
-
+1. Choose **All Conditions are true** or **Any Conditions are true**.
 2. Click **Add Condition**.
+3. Choose the product attribute, the operator and the value.
 
-3. Under the list of product attributes, select the attribute that you want to set for the condition.
+You can check **Categories**, **Attribute Family** and your product attributes, listed by name. For **Categories**, tick the categories in the tree. Remove a condition with the bin icon beside it.
 
-   <ImagePopup src="/images/marketing/catalog-conditions.png" alt="Conditions" />
+The operators depend on the attribute, as on the [cart rules](cart-rules.md#conditions) page: numbers and dates offer comparisons such as **Equals or greater than**, text offers **Contain** and **Does not contain**, and categories offer **Contains** and **Does not contain**.
 
-4. Choose the operator. For example, if you have selected **Categories**, choose **Contains** or **Does not contain**.
+Conditions are checked on each simple product and on each variant of a configurable product. Configurable, bundle and grouped products aren't checked themselves; their prices follow the products they're made of.
 
-5. Choose the value. For **Categories**, select the category from the tree, as in the below image.
+### Actions
 
-   <ImagePopup src="/images/marketing/contains.png" alt="Contains" />
+| Setting | What it does |
+|---|---|
+| **Action Type** | **Percentage of Product Price** takes a percentage off. **Fixed Amount** takes a set amount off. |
+| **Discount Amount** | A percentage from 0 to 100, or an amount. The price never goes below 0. |
+| **End other rules** | **Yes** stops rules with a higher **Priority** number from changing the price of the products this rule covers |
 
-If you want to delete any condition, click the delete icon.
+When several rules cover the same product, they're applied in **Priority** order until a rule with **End other rules** set to **Yes**.
 
-### Step 3: Set the Actions
+## When prices change
 
-In the Action section, we have to set actions like how we want to apply the rule to the product.
+The form shows a note that saving a rule updates the price of every product it applies to.
 
-<ImagePopup src="/images/marketing/catalog-action.png" alt="Catalog Action" />
+- **When you save a rule**, Bagisto recalculates the prices of the products it covers. On many stores this runs in the background, so prices change a little after you save.
+- **When you delete a rule**, its discount is removed. Where other rules cover the same products, their prices are fully corrected by the nightly update.
+- **When you save a product**, its catalog rule prices are recalculated.
+- **Every night at 00:01**, Bagisto recalculates all catalog rule prices, so rules start and stop on their dates.
 
-- **Action Type:** You can apply a discount on a percentage basis (**Percentage of Product Price**) or a fixed amount basis (**Fixed Amount**).
+::: warning Catalog rules need scheduled tasks
+Catalog rule prices are calculated for a few days at a time, and the nightly update keeps them current. It runs through the scheduled tasks your developer or host sets up for Bagisto. Without them, every catalog rule, dated or not, stops lowering prices within about two days of the last save. See [Scheduled Tasks](../getting-started/scheduled-tasks.md).
+:::
 
-- **Discount Amount:** Enter the discount amount.
+## Manage catalog rules
 
-- **End other rules:** To stop applying other rules after this rule applies, set **Yes**. This will work for applying multiple discounts on the same product.
+The **Catalog Rules** list shows each rule's **ID**, **Name**, **Start**, **End**, **Status** and **Priority**, with icons to edit and delete it.
 
-**Note:** If you want multiple rules to apply to the product, set **No**. In that case the rule which has the highest priority applies first.
+<ImagePopup src="/images/marketing/catalog-rules.png" alt="The Catalog Rules list with the Weekend Apparel Sale rule" />
 
-Finally, click **Save Catalog Rule**. The new **Catalog Rule** is listed, as shown below.
+## What shoppers see
 
-<ImagePopup src="/images/marketing/catalog-output.png" alt="Catalog Output" />
-
-### Front End:-
-
-You will get a flat 50% OFF on the product after applying a catalog rule as shown below.
-
-<ImagePopup src="/images/marketing/catalog-front.png" alt="Catalog Front" />
-
-By this, you can create a **Catalog Rule** in Bagisto.
+Shoppers in the rule's customer groups see the lower price on product listings and product pages, on the rule's channels. They see the lowest of the catalog rule price, the product's special price and its customer group price. [Cart rules](cart-rules.md) can then discount the cart further.

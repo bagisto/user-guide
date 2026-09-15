@@ -1,94 +1,72 @@
 # Simple Product
 
-A **simple product** is a product type in e-commerce that does not require customers to choose additional attributes (such as size or color) to add to the cart. It should be a physical item and can be shipped to customers.
+A simple product is one physical item with no choices to make, such as a desk lamp or a
+book. It has its own price, weight and stock, and it's shipped to the shopper. Simple
+products are also the building blocks of configurable, grouped and bundle products.
 
-Therefore, any service, such as downloadable items, does not count as a simple product. This is the step-by-step tutorial on how to add a simple product in [Bagisto](https://bagisto.com/en/).
+This page covers what's specific to simple products. For the sections every product shares,
+see [Products](./products.md).
 
-### Creating a simple product
+## Create a simple product
 
-1. Go to **Catalog >> Products**.
-2. Click **Create Product**.
-3. Select **Simple** under **Type**.
-4. Select the **Family**.
-5. Enter the **SKU**.
-6. Click **Save Product**. You are redirected to the edit product page.
+Create the product as described in [Create a product](./products.md#create-a-product),
+choosing **Simple** as the **Type**. A simple product uses every section described in
+[The edit screen](./products.md#the-edit-screen), including **Price**, **Shipping** and
+**Inventories**.
 
-   <ImagePopup src="/images/simple-product/simple.png" alt="Simple" />
+## Customizable options
 
-### General Attributes
-Below is the list of fields you need to fill under General Attributes.
+The **Customizable Item** section adds choices shoppers make on the product page, such as
+engraving text, gift wrapping or a file to print, each with an optional extra price.
 
-   <ImagePopup src="/images/simple-product/edit-product.png" alt="Edit Product" />
+<ImagePopup src="/images/simple-product/customizable-item.png" alt="Customizable Item section with a Gift Message text option" />
 
-### Description
-Below is the list of the fields you need to fill in regarding the product under description.
+### Add an option
 
-#### Short Description
-Enter a short description of the feature of the product.
+1. In **Customizable Item**, click **Add Option**. The **Option** dialog opens.
+2. Enter the **Title** shoppers see, such as **Engraving Text**.
+3. Choose the **Type**.
+4. Choose whether the option **Is Required**.
+5. Fill in the fields for the type:
+   - **Text** or **Textarea**: shoppers type text. Enter the **Max Characters** and the
+     **Price**.
+   - **File**: shoppers upload a file. Enter the **Supported File Extensions** and the
+     **Price**.
+   - **Date**, **Datetime** or **Time**: shoppers pick a date or time. Enter the **Price**.
+   - **Checkbox**, **Radio**, **Select** or **Multiselect**: shoppers choose from a list.
+     You add the list's choices after saving the option.
+6. Click **Save**.
+7. Click **Save Product**.
 
-#### Description
-Mention your product in detail.
+<ImagePopup src="/images/simple-product/customizable-option.png" alt="Option dialog for a Text option with Max Characters and Price" />
 
-   <ImagePopup src="/images/simple-product/description.png" alt="Description" />
+### Add choices to a list option
 
-### Meta Description
-Below is the list of fields that you need to provide under the meta description to make your product searchable on search engines.
+For a **Checkbox**, **Radio**, **Select** or **Multiselect** option:
 
-#### Meta Title
-Provide the main title of the product by which your product will be known.
+1. Click **Add Option** inside the option.
+2. Enter the choice's **Label**, such as **Gift Box**.
+3. Enter the **Price** added when a shopper picks it.
+4. Click **Save**.
+5. Repeat for each choice.
+6. Click **Save Product**.
 
-#### Meta Keywords
-The meta keywords for the product need to be provided to improve its searchability on the search engine for specific keywords.
+Drag options and choices by their handles to reorder them. Use **Edit** and **Delete** to
+change or remove them.
 
-#### Meta Description
-Enter the description so that products can appear in search engine listings.
+### What shoppers see
 
-<ImagePopup src="/images/simple-product/meta-description.png" alt="Meta Description" />
+The options appear on the product page. The prices of the options a shopper picks are added
+to the product price, and a **Total Amount** shows the result.
 
-### Images
-To add the product images, click on **Add Image**. You can add multiple images for your product; the empty tiles are labelled **Front**, **Next**, **Zoom**, **Use Cases** and **Size** so you know which view each one is meant for.
+<ImagePopup src="/images/simple-product/customizable-option-storefront.png" alt="Gift Message field on the product page, above the Total Amount" />
 
-<ImagePopup src="/images/simple-product/image.png" alt="Image" />
+::: info Where customizable options can't be used
+A simple product that's a variant of a configurable product, or part of a grouped or bundle
+product, can't have customizable options. Products with customizable options can't be added
+to grouped or bundle products.
+:::
 
-Hover over an uploaded image to see its file name and two actions: the bin icon removes it, and the pencil icon opens the **Image SEO** panel where you can set the image's **Alt Text** and **File Name**, or click **Choose File** under **Replace Image** to swap the file for another one.
+## On the storefront
 
-If [image generation](../generative-ai/generate-images.md) is enabled under Generative AI (Magic AI), a **Magic AI** button beside **Add Image** generates product images from a written description.
-
-### New
-Enable the toggle button if you want to feature the product as a new product. The resulting product will be shown under the New Products section.
-
-### Featured
-Enable the toggle button if you want to show the product under the Featured Products section.
-
-### Visible Individually
-Enable the toggle button so that the product will be visible on the front end.
-
-### Status
-Enable the toggle button to enable the product on your eCommerce store.
-
-### Guest Checkout
-Enable the toggle button to allow the product to be ordered by guest customers.
-
-<ImagePopup src="/images/simple-product/toggle-buttons.png" alt="Toggle Buttons" />
-
-### Price
-Insert the price, cost, and special price, and set the special price date for which the special price will be shown on the website.
-
-<ImagePopup src="/images/simple-product/price.png" alt="Price" />
-
-### Shipping
-Set the Length, Width, Height, and Weight of the product.
-
-<ImagePopup src="/images/simple-product/shipping.png" alt="Shipping" />
-
-### Inventories
-Insert the quantity of the product that is there in your inventory. By default, it is set to 0 so it shows on the front end as out of stock.
-
-<ImagePopup src="/images/simple-product/inventories.png" alt="Inventories" />
-
-Once every section is filled in, click **Save Product**.
-
-### Front End
-The product will be visible as given below on the front end.
-
-<ImagePopup src="/images/simple-product/product.png" alt="Product" />
+<ImagePopup src="/images/simple-product/product.png" alt="Simple product page for an Android tablet" />

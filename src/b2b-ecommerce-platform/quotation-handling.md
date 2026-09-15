@@ -55,7 +55,7 @@ All messages are displayed under the conversation thread with details like sende
 
 > **Note:** The negotiation on the seller side is handled by the company's assigned **Sales Representative**, whose name and email are shown on the quotation. The entire **Quotation Messages** block is hidden for company users who do not have the **Messages** permission. See the [Role Based Permissions](./role-based-permissions) and [Sales Representatives](./sales-representative) guides.
 
-<ImagePopup src="/images/b2b-ecommerce-platform/quatation-3.png" alt="Quotation Messages" />
+<ImagePopup src="/images/b2b-ecommerce-platform/quatation-3.png" alt="Quotation Messages block on a quotation" />
 
 ### Quote Again
 
@@ -91,7 +91,7 @@ A dialog box appears, allowing you to specify the reason for rejection.
 
 Once saved, the quotation status updates accordingly to reflect the action taken.
 
-<ImagePopup src="/images/b2b-ecommerce-platform/quatation-5.png" alt="Reject Quotation" />
+<ImagePopup src="/images/b2b-ecommerce-platform/quatation-5.png" alt="Quotation status updated after the action is saved" />
 
 ### Quotation Management (Admin End)
 
@@ -147,7 +147,7 @@ Admins and company users can exchange messages directly within the quotation usi
 
 3. Click **Send** to deliver the message.
 
-<ImagePopup src="/images/b2b-ecommerce-platform/quatation-8.png" alt="Quotation Messages" />
+<ImagePopup src="/images/b2b-ecommerce-platform/quatation-8.png" alt="New message sent in the Quotation Messages block" />
 
 ### Send Quotation
 
@@ -191,6 +191,6 @@ Once negotiation is complete, admins can finalize the quotation.
 
 3. Click **Save** to finalize the action.
 
-<ImagePopup src="/images/b2b-ecommerce-platform/quatation-10.png" alt="Reject Quotation" />
+<ImagePopup src="/images/b2b-ecommerce-platform/quatation-10.png" alt="Reject Quotation form before saving" />
 
 **Note: Once a quotation is finalized (Accepted or Rejected), no further modifications to products or pricing are allowed.**

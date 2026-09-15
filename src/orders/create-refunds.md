@@ -1,58 +1,76 @@
-# Refunds
+# Create Refund
 
-Typically, e-commerce stores offer 15- to 30 days in which customers can return a product and ask for a refund. Some businesses extend that period up to 90 days. Regardless of the time frame you choose, ensuring that you have a time frame is essential.
+A refund gives a customer money back for invoiced products, for shipping, or as an extra amount. You can refund an order a part at a time. Each refund is listed on the order and under **Sales >> Refunds**.
 
-A customer who bought an item may ask the store for their money back if it didn't fit according to their choice. you may ask them to return your money.
+You can only refund what's been invoiced. The **Refund** button appears once an order has an invoice with something left to refund; the order doesn't need to be shipped.
 
-### Creating a refund
+## Create a refund
 
-In Bagisto, a refund can be created once the order is **Completed**, that is, after a shipment has been created for it.
+1. Go to **Sales >> Orders**.
+2. Open the order.
+3. Click **Refund**. The **Create Refund** panel opens with each invoiced product that can still be refunded.
+4. For each product, enter the **Qty To Refund**. It starts at the quantity invoiced and not refunded yet. Enter 0 to leave a product out.
+5. Enter the **Refund Shipping** amount.
+6. Enter an **Adjustment Refund**, if you're giving back an extra amount.
+7. Enter an **Adjustment Fee**, if you're keeping back an amount.
+8. Click **Update Totals**. The summary is worked out again.
 
-1. Go to **Sales >> Orders** and open the order.
-2. Click the **Refund** button.
+   <ImagePopup src="/images/orders/refund.png" alt="Create Refund panel with quantities, refund amounts and the summary" />
 
-   <ImagePopup src="/images/orders/refund.png" alt="Refund" />
+9. Click **Refund**.
 
-3. Enter the quantity you want to refund under **Qty To Refund**.
-4. Fill in the **Refund Shipping**, **Adjustment Refund** and **Adjustment Fee** amounts as needed. Each field is explained below.
-5. Click **Update Totals** to recalculate the grand total.
-6. Click **Refund**.
+You'll see **Refund created successfully**, and the refund is listed in the order's **Refund** card.
 
-### Refund fields
+## The refund amounts
 
-**Refund Shipping:-** In this field, you can enter the amount which you want to refund from the shipping fee. Initially, this field will show the total shipping amount that is available for refund.  
-The refund shipping fee can be decreased but can’t be increased to the actual shipping (initial shipping amount) fee.
+| Field | What it does |
+|---|---|
+| **Qty To Refund** | How many units of the product to refund. Their price, tax and discount are included in the refund. It can't be more than was invoiced and not refunded yet. |
+| **Refund Shipping** | The shipping charge to give back. It starts at the shipping invoiced and not refunded yet, less any shipping discount, and can't be more than the shipping invoiced and not refunded yet. |
+| **Adjustment Refund** | An extra amount added to the refund, such as a goodwill payment. |
+| **Adjustment Fee** | An amount taken off the refund, such as a restocking fee. |
 
-In the below image, we have applied the amount of $10 refund shipping which is the total amount that applies to shipment charge.
+The summary shows the **Subtotal**, **Discount Amount**, **Tax Amount** and **Grand Total**. The **Grand Total** is the subtotal plus tax, refund shipping and adjustment refund, minus the discount and adjustment fee. The tax includes the tax on the shipping you refund.
 
-<ImagePopup src="/images/orders/refund-shipping.png" alt="Refund Shipping" />
+Every amount must be 0 or more. You'll see a message instead of a refund when:
 
-All the amount i.e. $10 refunded as **Shipping & Handling** as shown in the below image.
+- the grand total of the refund is 0: **Refund amount should be non zero.**
+- a quantity is more than can be refunded: **We found an invalid quantity to invoice items.**
+- the refund doesn't pass the store's refund limit: **Refund Amount** with an amount and **can not proceed.** If you see this after entering an **Adjustment Refund**, create the refund without it and pay the extra amount through your payment provider.
 
-<ImagePopup src="/images/orders/refund-shipped.png" alt="Refund Shipped" />
+## What a refund changes
 
-**Adjustment Refund:-** You can enter the amount which will be added to the total refunded amount as an additional refund that does not include any shipping, product price, tax cost.
+- The order's **Total Refund** goes up by the refund's grand total.
+- Refunded quantities are added back to stock, for products that manage stock.
+- The order's status is worked out again. When everything in the order is refunded, or refunded and canceled, it becomes **Closed**. See [Order statuses](orders.md#order-statuses).
+- Links for downloadable products expire once all of that product is refunded or canceled.
+- A refund can't be edited, deleted or reversed.
 
-In the below image we have refunded **$5 of Refund Shipping and $2 of Adjustment Refund**
+For an order paid with PayPal Smart Button, the refund amount is also paid back to the customer through PayPal. For other payment methods, the refund is recorded in Bagisto only, so pay the customer back through the payment method they used.
 
-<ImagePopup src="/images/orders/adjust.png" alt="Adjustment Refund" />
+When the notifications are on, the customer and the admin are emailed about the refund. See [Notifications](../configure/notifications.md).
 
-All the amount refunded **$7 as Shipping & Handling and Adjustment Refund** as shown in the below image. 
+::: info Return requests
+A product with an open return request is refunded from the request with **Refund Item**. See [RMA](rma.md).
+:::
 
-<ImagePopup src="/images/orders/adjust-refund.png" alt="Adjustment Refund Applied" />
+## The Refunds screen
 
-**Adjustment Fee:-** Enter the amount that will be subtracted from the sub-total amount.
+Go to **Sales >> Refunds** to see every refund with its **ID**, **Order ID**, **Refunded Amount**, **Billed To** and **Refund Date**.
 
-In the below image **Refund Shipping is $3 and Adjustment Fee is $1**
+<ImagePopup src="/images/orders/refund-grid.png" alt="Refunds screen listing refunds with their order and amount" />
 
-<ImagePopup src="/images/orders/adjust-fee.png" alt="Adjustment Fee" /> 
+- **Search** and **Filter**: find refunds by order ID, amount, the billing name or refund date.
+- **Export**: downloads the refunds as a **CSV**, **XLS** or **XLSX** file.
+- **View**: opens the refund.
 
-Now the **$1 subtracted as the Adjustment Fee** from the subtotal amount and **$3 Shipping and Handling added** in the **grand total amount** that needs to be refunded.
+## The refund page
 
-<ImagePopup src="/images/orders/adjustfee-refund.png" alt="Adjustment Fee Refund" /> 
+Open a refund from the **Refunds** screen, or with **View** in the order's **Refund** card. The title shows the refund number, such as **Refund #2**.
 
-After the refund is created, you are redirected to the **Refund Grid**, which shows the refunded amount as in the below image.
+<ImagePopup src="/images/orders/refund-view.png" alt="Refund page with the refunded product, totals, account, order and payment information" />
 
-<ImagePopup src="/images/orders/refund-grid.png" alt="Refund Grid" />
-
-By the above steps, you can **Refund** in Bagisto.
+- **Products Ordered** lists the refunded products with their price, tax, discount and subtotal. Below them are the **Sub Total**, **Shipping & Handling** and **Tax** when there are any, the discount, the **Adjustment Refund** and **Adjustment Fee**, and the **Grand Total**.
+- **Account Information** shows the customer's name and email, and the billing and shipping addresses.
+- **Order Information** shows the **Order Id**, which links to the order, and the **Order Date**, **Order status** and **Order Channel**.
+- **Payment Information** shows the **Payment Method**, **Shipping Method**, **Currency** and **Shipping Price**.

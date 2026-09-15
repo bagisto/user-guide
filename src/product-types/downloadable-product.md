@@ -1,97 +1,72 @@
-# Downloadable Product 
+# Downloadable Product
 
-This document will guide you on how to create a Downloadable Product in Bagisto. Downloadable products refer to items that can be downloaded, such as eBooks, software applications, music, updates, games, etc. These products are digital and do not involve a shipping method at checkout.
+A downloadable product is a digital file shoppers download after buying it, such as an
+e-book, a video course, music or software. You add the files as **links**, each with its
+own price and download limit, and you can offer free **samples** so shoppers can try before
+they buy.
 
-### Creating a downloadable product
+This page covers what's specific to downloadable products. For the sections every product
+shares, see [Products](./products.md).
 
-1. Go to **Catalog >> Products**.
-2. Click **Create Product**.
-3. Select **Downloadable** under **Type**.
-4. Select the **Family**.
-5. Enter the **SKU** (Stock Keeping Unit) of the product, unique to every product.
-6. Click **Save Product**. You are redirected to the edit product page with the general settings.
+## Create a downloadable product
 
-<ImagePopup src="/images/downloadable-product/downloadable.png" alt="Downloadable Product Creation" />
+Create the product as described in [Create a product](./products.md#create-a-product),
+choosing **Downloadable** as the **Type**.
 
-### General Settings
+## How it differs from other products
 
-- **Name:** Enter the name of the product.
-- **URL Key:** This will be the end of the URL, e.g., /products/bagisto-e-book (bagisto-e-book is the URL key).
-- **Tax Category:** Select the Tax Category from the drop-down list.
+- **No Shipping, Inventories or RMA section:** there's nothing to ship, count or return.
+- **No Guest Checkout switch:** shoppers must sign in to check out when their cart holds a
+  downloadable product, so their files can be kept in their account.
+- **Price:** shoppers pay the product's **Price** plus the price of each link they choose.
 
-<ImagePopup src="/images/downloadable-product/edit-product.png" alt="General Settings for Downloadable Product" />
+## Add download links
 
-#### New
+The **Downloadable Links** section lists the files shoppers can buy.
 
-- Enable the toggle button to feature the product as a new product, shown under the New Products section.
+1. In **Downloadable Links**, click **Add Link**. The **Link** panel opens.
+2. Enter the **Title** shoppers see.
+3. Enter the **Price** added to the product price when a shopper chooses this link. Enter
+   `0` for no extra charge.
+4. Enter **Download Allowed**, the number of times a shopper can download the file for
+   each one they buy.
+5. Choose the **File Type**: **File** to upload the file, or **URL** to link to a file
+   stored elsewhere.
+6. Upload the **File**, or enter the **URL**.
+7. To offer a free preview of this link, choose the **Sample Type**.
+8. Upload the **Sample**, or enter its **URL**.
+9. Click **Save**.
+10. Click **Save Product**.
 
-#### Featured
+<ImagePopup src="/images/downloadable-product/link-form.png" alt="Link panel with Title, Price, Download Allowed, File Type and sample fields" />
 
-- Enable the toggle button to show the product under the Featured Products section.
+Link titles are saved for the language selected at the top of the edit screen. Drag a link
+by its handle to reorder it, or use **Edit** and **Delete** on its row.
 
-#### Visible Individually
+## Add samples
 
-- Enable the toggle button to make the product visible on the frontend.
+Samples in the **Downloadable Samples** section are free files anyone can download from the
+product page, such as a first chapter.
 
-#### Status
+1. In **Downloadable Samples**, click **Add Sample**. A panel titled **Link** opens.
+2. Enter the **Title**.
+3. Choose the **File Type**: **File** or **URL**.
+4. Upload the **File**, or enter the **URL**.
+5. Click **Save**.
+6. Click **Save Product**.
 
-- Enable the toggle button to enable the product on your eCommerce store.
+<ImagePopup src="/images/downloadable-product/sample-form.png" alt="Panel for adding a sample, titled Link, with Title, File Type and file fields" />
 
-<ImagePopup src="/images/downloadable-product/toggle-buttons.png" alt="Downloadable Product Toggle Options" />
+<ImagePopup src="/images/downloadable-product/downloadable-links-samples.png" alt="Downloadable Links and Downloadable Samples sections with two links and two samples" />
 
-### Description
+## What shoppers see
 
-Fill in the following fields under the description:
+The product page lists the **Samples** anyone can download, and the **Links** to buy, each
+with its price and, when it has one, a **Sample**. Shoppers must tick at least one link before they can
+add the product to the cart.
 
-- **Short Description:** Enter a brief description of the product feature.
-- **Description:** Mention your product in detail.
+<ImagePopup src="/images/downloadable-product/output.png" alt="Downloadable product page with Samples and Links" />
 
-<ImagePopup src="/images/downloadable-product/description.png" alt="Downloadable Product Description" />
-
-### Meta Description
-
-Fill in the following fields under meta description for improved searchability on search engines:
-
-- **Meta Title:** Provide the main title of the product.
-- **Meta Keywords:** Provide meta keywords for specific search engine optimization.
-- **Meta Description:** Enter a description for better search engine listings.
-
-<ImagePopup src="/images/downloadable-product/meta-description.png" alt="Downloadable Product Meta Description" />
-
-### Price
-
-Insert the price, cost, and special price. Set the special price date for which the special price will be shown on the website.
-
-<ImagePopup src="/images/downloadable-product/price.png" alt="Downloadable Product Price Settings" />
-
-### Images
-
-To add product images, click on **Add Image**. You can add multiple images for your product.
-
-<ImagePopup src="/images/downloadable-product/image.png" alt="Upload Images for Downloadable Product" />
-
-### Downloadable Links
-
-In the **Downloadable Links** section, click **Add Link** and fill in the link fields:
-
-- **Title:** The name of the download shown to the customer.
-- **Price:** The price of this download, added to the product price.
-- **Download Allowed:** The maximum number of downloads. Enter "0" for unlimited downloads.
-- **File Type:** Choose **File** to upload the file, or **URL** to link to it.
-- **File** or **URL:** Upload the file, or enter the URL, depending on the file type.
-- **Sample Type:** Choose **File** or **URL** if you want to offer a free sample of this download.
-- **Sample:** Upload the sample file, or enter its URL.
-
-<ImagePopup src="/images/downloadable-product/downlodable-info.png" alt="Downloadable Product File Information" />
-
-### Downloadable Samples
-
-If you want to provide a free sample of your product independent of any link, click **Add Sample** in the **Downloadable Samples** section below the links. Enter the **Title**, choose the **File Type** and upload the file or enter the URL.
-
-<ImagePopup src="/images/downloadable-product/link.png" alt="Downloadable Product Sample File" />
-
-### Product At Front End
-
-The downloadable product will be visible at the front end.
-
-<ImagePopup src="/images/downloadable-product/output.png" alt="Downloadable Product Frontend View" />
+After the order is invoiced, shoppers download their files from **Downloadable Products** in
+their account, which also shows how many downloads they have left. See
+[Customer Account](../customer/customer-account.md).

@@ -1,35 +1,33 @@
 # Search Terms
 
-Search Terms are the keywords that customers use on your storefront to search for products.
+Search terms show what shoppers search for on your storefront, how often, and how many products each search finds. You can also send a search straight to a page, for example send "returns" to your return policy page.
 
-### Creating a search term
+## How search terms are recorded
+
+Storefront searches add their term to the list, or update it:
+
+- **Uses** counts how many times the term was searched.
+- **Results** holds the number of products the latest search found.
+
+<ImagePopup src="/images/marketing/search-terms.png" alt="The Search Terms list with storefront searches and their results and uses" />
+
+Terms are recorded separately for each channel and language. Only the first page of a plain search is recorded, so a search combined with filters, such as a price range, isn't counted. When your store uses Elasticsearch, the recorded term can be the corrected spelling of what the shopper typed. Terms with many **Uses** and few **Results** show what shoppers want but can't find.
+
+## Send a search to a page
 
 1. Go to **Marketing >> Search & SEO >> Search Terms**.
+2. Click **Create Search Term**. To use a term that's already in the list, click its edit icon instead.
+3. Enter the **Search Query**, exactly as shoppers type it.
+4. Enter the **Redirect Url**, the full address of the page to open, starting with `https://` or `http://`.
+5. Choose the **Channel**.
+6. Choose the **Locale**.
 
-2. Click **Create Search Term**, as shown in the below image.
+   <ImagePopup src="/images/marketing/search-term-create.png" alt="The Create Search Term dialog sending the search returns to the Return Policy page" />
 
-   <ImagePopup src="/images/marketing/search-term.png" alt="Search Term" />
+7. Click **Save Search Term**.
 
-3. Fill in the following fields:
+When a shopper on that channel and in that language searches for exactly that query, the storefront opens the **Redirect Url** instead of the search results. **Redirect Url** is optional, so a term without one keeps showing the search results. When you edit a term, the dialog also shows its **Results** and **Uses**, which you can change.
 
-   - **Search Query** – Enter the product name or keyword that a customer will search from the storefront.
+## Manage search terms
 
-   - **Redirect Url** – Add the URL that the search term will redirect to.  
-
-   - **Channel** – Select the channel where the Search Term will be visible. 
- 
-   - **Locale** – Select the language in which you want the Search Term.  
-
-4. Click **Save Search Term**.
-
-   <ImagePopup src="/images/marketing/search-field.png" alt="Search Field" />
-
-The new search term (for example, **Adorable**) is listed, as shown below.
-
-<ImagePopup src="/images/marketing/search-grids.png" alt="Search Grid" />
-
-### Frontend
-
-Test the result by searching for your search term on the storefront.
-
-<ImagePopup src="/images/marketing/frontend-output.png" alt="Frontend Output" />
+The **Search Terms** list shows each term's **ID**, **Search Query**, **Results**, **Uses**, **Redirect Url**, **Channel** and **Locale**, with icons to edit and delete it. Select several terms to delete them together.

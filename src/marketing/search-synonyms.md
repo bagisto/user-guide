@@ -1,33 +1,27 @@
 # Search Synonyms
 
-Search Synonyms are terms that customers use as alternatives for a particular product.  
+Search synonyms let different words find the same products. Put **hoodie**, **sweatshirt** and **pullover** in one group, and a shopper who searches for "sweatshirt" also sees products named "hoodie" or "pullover".
 
-For example, if a customer searches for *shoe*, it can also match with *formal shoes, sports shoes, party wear shoes,* etc.
-
-### Creating a search synonym
+## Create a synonym group
 
 1. Go to **Marketing >> Search & SEO >> Search Synonyms**.
+2. Click **Create Search Synonym**.
+3. Enter a **Name** for the group, for example **Hoodies**.
+4. In **Terms**, enter the words as a comma-separated list, for example `hoodie,sweatshirt,pullover`.
 
-2. Click **Create Search Synonym**, as shown below.
+   <ImagePopup src="/images/marketing/search-synonym-create.png" alt="The Create Search Synonym dialog with the name Hoodies and three terms" />
 
-   <ImagePopup src="/images/marketing/search-synonym.png" alt="Search Synonym" />
+5. Click **Save Search Synonym**.
 
-3. Fill in the following fields:
+### How synonyms are matched
 
-   - **Name** – Enter the main synonym word.  
+- **The whole search must match one of the terms.** A search for "sweatshirt" uses the group above, but a search for "blue sweatshirt" doesn't.
+- **The Name is only a label.** Put every word that should use the group in **Terms**, including the main one.
+- **Don't put a space after a comma.** A term can have more than one word, such as `running shoes`.
+- **Synonyms work with both of Bagisto's search engines**, the database search and Elasticsearch. See [Search Engines](../configure/search-engines.md).
 
-   - **Terms** – Add the related terms that belong to the synonym name.  
+## Manage search synonyms
 
-   <ImagePopup src="/images/marketing/synonym-field.png" alt="Search Synonym Fields" />
+The **Search Synonyms** list shows each group's **ID**, **Name** and **Terms**, with icons to edit and delete it. Select several groups to delete them together.
 
-4. Click **Save Search Synonym**.
-
-The new synonym (for example, **shoe**) is listed, as shown below.
-
-<ImagePopup src="/images/marketing/synonym-grid.png" alt="Synonym Grid" />
-
-### Frontend
-
-Test the result by searching for your synonym on the storefront. All products related to the synonym (for example, shoes) are listed, as shown below.
-
-<ImagePopup src="/images/marketing/synonym-output.png" alt="Synonym Output" />
+<ImagePopup src="/images/marketing/search-synonyms.png" alt="The Search Synonyms list with a synonym group and its terms" />

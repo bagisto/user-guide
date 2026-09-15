@@ -1,75 +1,110 @@
 # Configurable Product
 
-Configurable products are items or services that offer customers the flexibility to personalize certain attributes according to their preferences. Whether in manufacturing, e-commerce, or software, these products enable users to choose from predefined options, such as features, specifications, colors, or sizes.
+A configurable product is one product page for an item that comes in variants, such as a
+T-shirt in several colors and sizes. Each variant is a simple product with its own SKU,
+price, weight, stock and images. Shoppers pick the values they want on the product page,
+and the matching variant is what they buy.
 
-This customization allows for a diverse range of variations without the need for creating unique products. Configurable products are designed to meet individual needs, enhancing customer satisfaction and providing a tailored experience in [Bagisto](https://bagisto.com/en/).
+This page covers what's specific to configurable products. For the sections every product
+shares, see [Products](./products.md).
 
-### Creating a configurable product
+## Before you start
+
+- The attributes the variants differ by, such as **Color** and **Size**, must be
+  **Select** attributes with **Use To Create Configurable Product** switched on. See
+  [Product Attributes](../attribute/product-attribute.md).
+- Those attributes must be in the attribute family you choose. See
+  [Attribute Families](../attribute/attribute-family.md).
+
+## Create a configurable product
 
 1. Go to **Catalog >> Products**.
 2. Click **Create Product**.
-3. Select **Configurable** under **Type**.
-4. Select the **Family**.
+3. Choose **Configurable** as the **Type**.
+4. Choose the **Family**.
 5. Enter the **SKU**.
 
-   <ImagePopup src="/images/configurable-product/configurable.png" alt="Configurable" />
+   <ImagePopup src="/images/configurable-product/configurable.png" alt="Create New Product dialog with the Configurable type" />
 
-6. Click **Save Product**. The **Configurable Attributes** section appears in the same window.
-7. Under **Configurable Attributes**, select the attributes to build the variations from, such as **Color** and **Size**. If you want some other attribute in your configurable product, you need to create that attribute first.
-8. Click **Save Product** again. You are redirected to the edit product page.
+6. Click **Save Product**. The **Configurable Attributes** step lists every value of the
+   family's configurable attributes.
+7. Click the **×** on each value you don't sell. Removing all of an attribute's values
+   leaves that attribute out.
 
-   <ImagePopup src="/images/configurable-product/configurable-attributes.png" alt="Configurable Attributes" />
+   <ImagePopup src="/images/configurable-product/configurable-attributes.png" alt="Configurable Attributes step with the Color, Size and Sleeve values" />
 
-### General Attributes
-Below is the list of fields you need to fill under General Attributes.
+8. Click **Save Product**. The product is created with one variant for every combination
+   of the remaining values, and its edit screen opens.
 
-- **SKU:** Provide SKU (Stock Keeping Unit) of the product which is unique to every product.
-- **URL Key:** This will be the end of the URL, for example, /products/philips-speaker (Speaker is a URL key)
-- **Tax Category:** You can select the Tax Category from the drop-down list that you want to be applied to the product.
+To go back to the type, family and SKU, click **Back** instead of saving.
 
-<ImagePopup src="/images/configurable-product/edit-products.png" alt="Edit Products" />
+::: tip Fewer values, fewer variants
+Three colors and four sizes make twelve variants. Remove the values you don't stock before
+you save, so you don't have to delete extra variants afterwards.
+:::
 
-Also, make sure to enable the Settings.
+## What the configurable product holds
 
-- **New:** Enable the toggle button if you want to feature the product as a new product. The resulting product will be shown under the New Products section.
-- **Visible Individually:** Enable the toggle button so that the product will be visible on the front end.
-- **Featured:** Enable the toggle button if you want to show the product under the Featured Products section.
-- **Status:** Enable the toggle button to make the product enabled on your eCommerce store.
-- **Guest Checkout:** Enable the toggle button to allow the product to be ordered by the guest customer.
+The configurable product itself has no **Price**, **Shipping** or **Inventories** section,
+because each variant has its own. Its other sections, such as **Description**, **Images**
+and **Categories**, describe the product page shoppers see. See
+[The edit screen](./products.md#the-edit-screen).
 
-<ImagePopup src="/images/configurable-product/toggle-buttons.png" alt="Toggle Buttons" />
+The **Variations** section lists the variants, each with its image, name, SKU, values,
+price and quantity.
 
-### Description
-Below is the list of the fields you need to fill regarding the product under the description.
+<ImagePopup src="/images/configurable-product/variations.png" alt="Variations section listing the variants of a T-shirt" />
 
-- **Short Description:** Enter a short description of the feature of the product.
-- **Description:** Here you can mention your product in detail.
+## Set up the variants
 
-<ImagePopup src="/images/configurable-product/descriptions.png" alt="Product Descriptions" />
+New variants are named **Variant** followed by numbers, and their SKUs are made from the
+product's SKU, such as `linen-summer-shirt-variant-1-6`. They start with a price and weight
+of 0 and no stock, so rename them and set their prices before you sell the product. The
+quickest way is to change several variants at once.
 
-### Meta Description
-Below is the list of fields that you need to provide under the meta description to make your product searchable on search engines.
+1. In **Variations**, tick the variants to change. To tick every variant with a value, such
+   as every **Black** variant, use **Select Variants**.
+2. Open **Select Action** and choose what to change: **Edit Names**, **Edit SKU**,
+   **Edit Prices**, **Edit Inventories**, **Edit Weight**, **Edit Status**,
+   **Add Images**, **Remove Images** or **Remove Variants**.
 
-- **Meta Title:** Provide the main title of the product by which your product will be known.
-- **Meta Keywords:** The meta keywords for the product need to be provided to improve its searchability on the search engine for specific keywords.
-- **Meta Description:** Enter the description so that the product can appear in search engine listing.
+   <ImagePopup src="/images/configurable-product/variant-mass-edit.png" alt="Select Action menu for the ticked variants" />
 
-<ImagePopup src="/images/configurable-product/meta-descriptions.png" alt="Meta Descriptions" />
+3. In the panel that opens, enter a value for each variant. To give every variant the same
+   value, enter it once at the top and click **Apply to All**.
+4. Click **Save**.
+5. Click **Save Product**.
 
-### Images
-To add the product images, click on **Add Image**. You can add multiple images for your product.
+### Edit one variant
 
-<ImagePopup src="/images/configurable-product/image.png" alt="Product Images" />
+1. Click **Edit** on the variant. The **Product** panel opens.
+2. Change the **Name**, **SKU**, **Price**, **Status** or **Weight**, the **Quantities** for
+   each inventory source, or the **Images**.
+3. Click **Save**.
+4. Click **Save Product**.
 
-### Variations
+<ImagePopup src="/images/configurable-product/variant-edit.png" alt="Product panel for editing one variant" />
 
-The **Variations** section lists one variant for every combination of the attributes you selected, such as each Color and Size. You can edit each variant individually.
+To change anything else about a saved variant, such as its description, click
+**Product Details Page** at the bottom of the panel. The variant's edit screen opens in a
+new tab.
 
-<ImagePopup src="/images/configurable-product/variations.png" alt="Product Variations" />
+### Add or remove a variant
 
-After all variations are set up, click **Save Product**.
+- **Add Variant** opens a dialog with a list for each configurable attribute. Choose the
+  values and click **Add**. A combination that already exists isn't added twice.
+- **Delete** on a variant's row removes the variant.
 
-### Front End
-The product will be visible as given below on the front end.
+Click **Save Product** to keep the change.
 
-<ImagePopup src="/images/configurable-product/output.png" alt="Front End Output" />
+<ImagePopup src="/images/configurable-product/add-variant.png" alt="Add Variant dialog with a list for each configurable attribute" />
+
+## What shoppers see
+
+The product page shows the lowest variant price, labelled **As low as**, and a choice for
+each configurable attribute. The values shoppers pick decide which variant goes into the
+cart. When an attribute's **Input Options** is a color, image or text
+swatch, shoppers pick from swatches instead of a list. See
+[Product Attributes](../attribute/product-attribute.md).
+
+<ImagePopup src="/images/configurable-product/output.png" alt="Configurable product page with Color and Size choices" />

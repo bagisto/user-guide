@@ -1,69 +1,108 @@
-# Customer Group Price | Tier Pricing
+# Customer Group Pricing
 
-Customer Group Pricing in Bagisto allows store owners to offer different product prices to different customer groups — such as **General, Wholesale, or Guest**.
+Customer group pricing gives a product lower prices for a customer group, for larger quantities,
+or for both. Use it for trade prices, such as a lower price for your **Wholesale** group, and for
+tier prices that reward shoppers who buy more. You set group prices on the product, in the
+**Customer Group Price** block of its **Price** section.
 
-This feature helps businesses create personalized pricing strategies, reward loyal buyers, and encourage bulk purchases. 
+## Before you start
 
-By assigning customers to specific groups, you can control how much each group pays for the same product, making your pricing model more flexible and customer-focused.
+- Create the customer group and move the customers into it, or use one of the default groups.
+  See [Customer Groups](./customer-group.md).
+- The product needs a **Price** section. Simple, virtual, downloadable and booking products have
+  one. Configurable, grouped and bundle products don't, because their price comes from the
+  products they contain. See [Products](../product-types/products.md#price).
 
-### Steps to Create a Customer Group Price in Bagisto
+## Add a group price
 
-Before you start, create the customer group and assign it to the customer, or use one of the default groups **General, Wholesale, or Guest**.
+1. Go to **Catalog >> Products**.
+2. Click **Edit** (the arrow) on the product's row.
+3. Scroll to the **Customer Group Price** block in the **Price** section.
 
-1. Go to **Catalog >> Products** and open the product edit page. The **Customer Group Price** section is shown as in the below image.
+   <ImagePopup src="/images/customer/customer-price.png" alt="Customer Group Price block of a product with a Wholesale group price and the Add New link" />
 
-   <ImagePopup src="/images/customer/customer-price.png" alt="Customer Group Price" />
+4. Click **Add New**. The **Create Customer Group Price** dialog opens.
+5. Choose the **Customer Group**, or **All Groups** for every shopper, guests included.
+6. Enter the **Minimum Qty**, the quantity the price starts at. Enter **1** for a price that
+   applies to any quantity.
+7. Choose the **Price Type**: **Fixed** for a set price per item, or **Discount** for a percentage
+   off the product's **Price**.
+8. Enter the **Price**: the price per item for **Fixed**, or the percentage from 0 to 100 for
+   **Discount**.
 
-2. Click **Add New**.
+   <ImagePopup src="/images/customer/group-price.png" alt="Create Customer Group Price dialog with the Wholesale group, a minimum quantity of 10 and a 15 percent discount" />
 
-3. Fill in the following fields:
+9. Click **Save**. The group price is listed in the block with a summary, such as
+   **For 10 Qty at discount of 15**.
+10. Click **Save Product**.
 
-   - **Customer Group** – Select the customer group (Guest, General, Wholesale, or any group you have created).
+### Nothing is saved until you save the product
 
-   - **Minimum Qty** – Minimum quantity required to avail of the offer.
+**Save** in the dialog only adds the group price to the block. The product's group prices are
+saved when you click **Save Product**. If you leave the edit screen without saving the product,
+your changes are lost.
 
-   - **Price Type** – Choose **Fixed** to set a fixed price for the product, or **Discount** to set a percentage discount on the product price.
+## Change or remove a group price
 
-   - **Price** – The fixed price or the discount percentage, depending on the price type.
+To change a group price:
 
-4. Click the **Save** button, as shown below.
+1. Click **Edit** on its row in the **Customer Group Price** block. The **Update Customer Group
+   Price** dialog opens.
+2. Change the fields.
+3. Click **Save**.
+4. Click **Save Product**.
 
-   <ImagePopup src="/images/customer/group-price.png" alt="Save Customer Group Price" />
+To remove a group price:
 
-5. Click **Save Product**.
+1. Click **Edit** on its row.
+2. Click **Delete** in the dialog.
+3. Click **Agree** to confirm.
+4. Click **Save Product**.
 
----
+## Which price a shopper pays
 
-**Fixed Price Example**  
+Bagisto works out a shopper's price from the group prices that apply to them:
 
-Here I have set the fixed price of the product in the **Guest Customer group** with a minimum quantity of 1.  
+- Only the group prices for the shopper's group and for **All Groups** count. Shoppers who aren't
+  signed in belong to the **Guest** group.
+- Of those, the group price with the highest **Minimum Qty** that the quantity reaches is used.
+- A **Discount** is taken off the product's regular **Price**. A **Fixed** price is used only when
+  it's lower than the price the group prices below it give.
+- The shopper then pays the lowest of that price, the product's **Special Price** while it runs,
+  and the price from any [catalog rule](../marketing/catalog-rules.md).
 
-It means if you purchase one piece of this product at $2500, and a Customer Group Price is added at $220, then the cost will be $220 for a quantity of one.
+The product page shows the price of one item. In the cart, the price follows the quantity in the
+cart.
 
-After saving the product, you can see the price change according to the group.  
+## What shoppers see
 
-As set for the Guest group with the fixed price, it is showing the pricing according to the guest group as shown below.  
+On the product page, under the price, shoppers see one line for each group price with a **Minimum
+Qty** above 1 that applies to them, such as *Buy 10 for $102.00 each and save 15.00%*. The saving
+is worked out from the product's regular price. Group prices with a **Minimum Qty** of 1 aren't
+listed: they change the price shown instead.
 
-<ImagePopup src="/images/customer/price-output.png" alt="Group Price Output" />
+## Example: trade and bulk prices
 
-### Adding Multiple Customer Group Pricing
+A product has a **Price** of $120.00 and these group prices:
 
-You can also add multiple Customer Group Pricing options for different quantities or groups to encourage bulk purchases and offer better deals.
+| Customer Group | Minimum Qty | Price Type | Price |
+|---|---|---|---|
+| **All Groups** | 5 | **Discount** | 10 |
+| **Wholesale** | 10 | **Discount** | 15 |
+| **Wholesale** | 20 | **Fixed** | 90 |
 
-For example, you can configure the following tier pricing structure:
+The price of one item then depends on the shopper and the quantity:
 
-**Buy 2 for $400.00 each and save 55.56%**
+| Quantity | Guest or General customer | Wholesale customer |
+|---|---|---|
+| 1 to 4 | $120.00 | $120.00 |
+| 5 to 9 | $108.00 | $108.00 |
+| 10 to 19 | $108.00 | $102.00 |
+| 20 or more | $108.00 | $90.00 |
 
-**Buy 3 for $350.00 each and save 61.11%**
+On the product page, a guest or a General customer sees *Buy 5 for $108.00 each and save 10.00%*.
+A Wholesale customer sees three lines:
 
-**Buy 4 for $200.00 each and save 77.78%**
-
-**Buy 5 for $150.00 each and save 83.33%**
-
-These pricing tiers can be added directly in the Customer Group Price section of the Admin Panel, as shown below:
-
-<ImagePopup src="/images/customer/all-group-price.png" alt="Multiple Customer Group Pricing" />
-
-You can check the Storefront view to see how all the tiered customer pricing options appear together for the same product.
-
-<ImagePopup src="/images/customer/price-output1.png" alt="Storefront Multiple Customer Group Pricing" />
+- *Buy 5 for $108.00 each and save 10.00%*
+- *Buy 10 for $102.00 each and save 15.00%*
+- *Buy 20 for $90.00 each and save 25.00%*

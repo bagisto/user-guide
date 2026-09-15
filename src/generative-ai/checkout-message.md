@@ -2,21 +2,39 @@
 
 <div class="feature-meta feature--ai"><span class="feature-meta__primary">Generative AI</span><span>Storefront</span></div>
 
-After an order is placed, the order confirmation page shows a standard thank-you line. With this feature on, Bagisto asks the model to write a short message for that order, mentioning what the shopper bought, and shows it under the thank-you heading in place of the standard line. It gives the moment a personal touch without any work on your side.
+After an order is placed, the order confirmation page shows **Thank you for your order!** and a standard line: "We will email you, your order details and tracking information". With the personalized checkout message on, Magic AI writes a short thank-you message for that order and shows it in place of the standard line. It gives the moment a personal touch, with no work on your side.
 
-## Turning it on
+## Where it appears
 
-1. Go to **Configure >> Magic AI >> Storefront Features**. If your store has more than one channel, choose the channel at the top of the page.
-2. In the **Personalized Checkout Message** section, switch **Enabled** on.
-3. Choose the **Model**.
-4. Click **Save Configuration**.
+On the order confirmation page, under **Thank you for your order!**, straight after checkout.
 
-The Magic AI master switch and the provider key must be in place first; see [Generative AI Configuration](../configure/magic-ai.md).
+## How the message is written
 
-## What the shopper sees
+1. A shopper places an order.
+2. When the confirmation page opens, Bagisto sends the model the order's details: each item's name, quantity and total, the customer's name, the storefront language and your store's name.
+3. The model's message is shown as plain text in place of the standard line.
 
-The message is written when the confirmation page opens, right after the order is placed. It is not stored with the order, so reloading the page asks the model again and the wording may differ. If the provider cannot be reached, the page shows its standard thank-you line and the order is unaffected.
+If the provider can't be reached, the page shows the standard line and the order isn't affected.
 
-<ImagePopup src="/images/generative-ai/personalized-chckout-message.png" alt="Personalized message on the order confirmation page" />
+::: tip Try it before shoppers see it
+The message isn't checked before the shopper sees it. Place a few test orders after you switch the feature on, and read the messages they get.
+:::
 
-Because the text is generated for each order, wording varies from one order to the next. It draws only on the order itself, such as the items bought, and does not use anything the shopper has not shared with the store. Each confirmation page view is one request to the provider.
+### The message is written once and not stored
+
+- **The confirmation page waits for the model's reply before it opens**, so choose a fast model.
+- **The message isn't saved with the order** and isn't included in order emails.
+- **The confirmation page is shown only once.** If the shopper reloads it, they're taken to the cart.
+- **Only the order's own details are used**, nothing the shopper hasn't shared with your store.
+
+## What you control
+
+| Setting | What it does |
+|---|---|
+| **Enabled** under **Configure >> Magic AI >> General** | Switches every Magic AI feature on or off |
+| **Enabled** in the **Personalized Checkout Message** section of **Configure >> Magic AI >> Storefront Features** | Turns the message on, per channel |
+| **Model** in the **Personalized Checkout Message** section | The model that writes the message, per channel |
+
+To set everything up, see [Enable the storefront features](../configure/magic-ai.md#enable-the-storefront-features).
+
+Each order confirmation is one request to the provider, billed by that provider.

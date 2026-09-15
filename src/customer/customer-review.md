@@ -1,48 +1,96 @@
 # Customer Reviews
 
-Customer reviews are an important aspect of an eCommerce business. And as an eCommerce business owner, it should be an integral part of your online marketing strategy.
+Reviews let shoppers rate a product and tell other shoppers what they think of it. Reviews build
+trust in your products, so they help sell them. Every new review waits for your approval, and
+nothing appears on the storefront until you've approved it under **Customers >> Reviews**.
 
-Reviews create credibility for your products, and increased credibility means increased sales.
+## How shoppers write a review
 
-It helps other customers with the selection of the product. A customer review is an evaluation of a product or service made by someone who has purchased and used or had experience with a product or service.
+1. Open the product's page on the storefront.
+2. Open the **Reviews** tab.
 
-Customer reviews are a form of customer feedback on electronic commerce and online shopping sites. 
+   <ImagePopup src="/images/customer/review.png" alt="Reviews tab of a product page with the Write a Review button" />
 
----
+3. Click **Write a Review**.
+4. Add photos or videos with **Add Image/Video**, if they like.
+5. Choose the **Rating**, from one to five stars.
+6. Enter the **Title**.
+7. Write the **Comment**.
+8. Click **Submit Review**.
 
-### Writing a review on the storefront
+   <ImagePopup src="/images/customer/rating.png" alt="Review form with the rating, title and comment filled in" />
 
-1. Log in as a customer and open the product detail page. The review section is shown as in the image below.
+The shopper sees *Review submitted successfully.*, and the review is held as **Pending**.
 
-   <ImagePopup src="/images/customer/review.png" alt="Review Section" />
+Signed-in customers can write reviews while **Allow Customer Review** is on. While **Allow Guest
+Review** is also on, shoppers who aren't signed in can write them too, and they enter their
+**Name** with the review. Both settings are described in [Review](../configure/review.md).
 
-2. Click the **Write a Review** button.
-3. Select the star **Rating**.
-4. Enter the **Title**.
-5. Write the **Comment**.
-6. Attach an image or video, if required.
-7. Click **Submit Review**, as shown below.
+### What shoppers see
 
-   <ImagePopup src="/images/customer/rating.png" alt="Write Review" />
+The **Reviews** tab shows approved reviews only, with the product's rating summary and the photos
+and videos attached to each review. When [Review Translation](../generative-ai/review-translation.md)
+is on, a **Translate** button under each review shows it in the shopper's language.
 
-### Moderating reviews in the admin panel
+Customers see every review they've written, whatever its status, under **Reviews** in their
+account. See [Customer Account](./customer-account.md#reviews).
 
-1. Go to **Customers >> Reviews**. The review submitted by the customer is listed, as shown below.
+## The reviews list
 
-   <ImagePopup src="/images/customer/admin-review.png" alt="Admin Review" />
+Go to **Customers >> Reviews**.
 
-2. Click the **Edit** icon on the review. The **Edit Review** modal opens with the customer, product, rating, **Title**, **Comment** and any attached **Images**.
+<ImagePopup src="/images/customer/admin-review.png" alt="The reviews list under Customers >> Reviews with approved and pending reviews" />
 
-3. Set the **Status** to **Pending**, **Approved** or **Disapproved**.
+Each row shows three columns:
 
-4. Click **Save**. The modal closes and the grid shows the updated status.
+- **Name / Product / Status**: the reviewer's name, the product and the review's status.
+- **Rating / Date / Id**: the stars given, when the review was written and its ID.
+- **Title / Comment**: what the reviewer wrote.
 
-   <ImagePopup src="/images/customer/review-status.png" alt="Review Status Update" />
+### Find reviews
 
-<ImagePopup src="/images/customer/output.png" alt="Review Grid Output" />
+- **Search:** type in the search box to find reviews by product, title or rating.
+- **Filter:** click **Filter** and filter by **Status**, **Rating**, **Id**, **Title** or **Date**.
+- **Sort:** click **Name**, **Product**, **Status**, **Rating**, **Date**, **Id** or **Title** in
+  the header row.
 
-Only approved reviews are shown on the storefront. To moderate several reviews at once, tick them in the grid and use the **Update Status** mass action.
+### Row actions
 
----
+- **Delete** (the bin) deletes the review after you confirm.
+- **Edit** (the arrow) opens the **Edit Review** panel.
 
-By following the above steps, you can manage **Customer Reviews** in Bagisto.
+## Approve or disapprove a review
+
+1. Go to **Customers >> Reviews**.
+2. Click the arrow on the review's row. The **Edit Review** panel opens.
+3. Choose the **Status**: **Approved**, **Disapproved** or **Pending**.
+4. Click **Save**.
+
+<ImagePopup src="/images/customer/review-status.png" alt="Edit Review panel with the review details and the Status list" />
+
+The panel shows the **Customer**, **Product**, **ID** and **Date**, the **Rating**, **Title** and
+**Comment**, and any **Images** the reviewer attached. Only the status can be changed: the review
+stays as the reviewer wrote it.
+
+### What each status does
+
+| Status | On the storefront |
+|---|---|
+| **Pending** | Not shown. Every new review starts here. |
+| **Approved** | Shown on the product page and counted in the product's rating. |
+| **Disapproved** | Not shown. |
+
+## Change several reviews at once
+
+1. Go to **Customers >> Reviews**.
+2. Tick the reviews.
+3. Open **Select Action**.
+4. Choose **Delete**, or point to **Update Status** and choose **Pending**, **Approved** or
+   **Disapproved**.
+
+Deleting a review can't be undone.
+
+## Related settings
+
+Who can write reviews, whether reviewer names are masked on the storefront and what the rating
+summary counts are set in [Review](../configure/review.md).

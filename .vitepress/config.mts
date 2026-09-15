@@ -160,9 +160,16 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: "Introduction", link: "/getting-started/introduction" },
+          { text: "Admin Panel", link: "/getting-started/admin-panel" },
+          { text: "Dashboard", link: "/getting-started/dashboard" },
+          {
+            text: "Store Setup Checklist",
+            link: "/getting-started/store-setup-checklist",
+          },
+          { text: "Scheduled Tasks", link: "/getting-started/scheduled-tasks" },
           { text: "Command Palette", link: "/getting-started/command-palette" },
           {
-            text: "Two Factor Authentication",
+            text: "Two-Factor Authentication",
             link: "/authentication/2fa-authentication",
           },
         ],
@@ -196,7 +203,10 @@ export default defineConfig({
       {
         text: featureLabel("Theme", "theme"),
         collapsed: false,
-        items: [{ text: "Themes & Sections", link: "/appearance/themes" }],
+        items: [
+          { text: "Themes & Sections", link: "/appearance/themes" },
+          { text: "Section Types", link: "/appearance/section-types" },
+        ],
       },
 
       {
@@ -321,7 +331,7 @@ export default defineConfig({
             items: [
               { text: "Attribute Input Types", link: "/attribute/attribute-input" },
               {
-                text: "Create Product Attributes",
+                text: "Product Attributes",
                 link: "/attribute/product-attribute",
               },
               { text: "Attribute Families", link: "/attribute/attribute-family" },
@@ -331,6 +341,7 @@ export default defineConfig({
             text: "Products",
             collapsed: false,
             items: [
+              { text: "Products", link: "/product-types/products" },
               { text: "Simple Product", link: "/product-types/simple-product" },
               {
                 text: "Configurable Product",
@@ -353,13 +364,18 @@ export default defineConfig({
         text: groupLabel("Customers", "users"),
         collapsed: false,
         items: [
-          { text: "Create Customer", link: "/customer/create-customer" },
+          { text: "Customers", link: "/customer/create-customer" },
           { text: "Customer Groups", link: "/customer/customer-group" },
           {
             text: "Customer Group Pricing",
             link: "/customer/customer-group-price",
           },
           { text: "Customer Reviews", link: "/customer/customer-review" },
+          {
+            text: "GDPR Data Requests",
+            link: "/customer/gdpr-data-requests",
+          },
+          { text: "Customer Account", link: "/customer/customer-account" },
         ],
       },
 
@@ -367,13 +383,15 @@ export default defineConfig({
         text: groupLabel("Sales", "cart"),
         collapsed: false,
         items: [
+          { text: "Orders", link: "/orders/orders" },
           { text: "Create Order", link: "/orders/create-order" },
           { text: "Create Invoice", link: "/orders/create-invoice" },
           { text: "Create Shipment", link: "/orders/create-shipment" },
           { text: "Create Refund", link: "/orders/create-refunds" },
           { text: "Transactions", link: "/orders/transactions" },
-          { text: "EU Withdrawal", link: "/orders/eu-withdrawal" },
+          { text: "Bookings", link: "/orders/bookings" },
           { text: "RMA", link: "/orders/rma" },
+          { text: "EU Withdrawal", link: "/orders/eu-withdrawal" },
         ],
       },
 
@@ -381,8 +399,8 @@ export default defineConfig({
         text: groupLabel("Marketing", "megaphone"),
         collapsed: false,
         items: [
-          { text: "Cart Rules", link: "/marketing/cart-rules" },
           { text: "Catalog Rules", link: "/marketing/catalog-rules" },
+          { text: "Cart Rules", link: "/marketing/cart-rules" },
           { text: "Email Templates", link: "/marketing/email-templates" },
           { text: "Events", link: "/marketing/events" },
           { text: "Campaigns", link: "/marketing/campaigns" },
@@ -390,10 +408,10 @@ export default defineConfig({
             text: "Newsletter Subscriptions",
             link: "/marketing/newsletter-subscription",
           },
-          { text: "Sitemaps", link: "/marketing/sitemaps" },
           { text: "URL Rewrites", link: "/marketing/url-rewrite" },
           { text: "Search Terms", link: "/marketing/search-terms" },
           { text: "Search Synonyms", link: "/marketing/search-synonyms" },
+          { text: "Sitemaps", link: "/marketing/sitemaps" },
         ],
       },
 

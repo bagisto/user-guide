@@ -1,41 +1,43 @@
-# URL Rewrite
+# URL Rewrites
 
-This feature allows the admin to manage errors related to product, category, and CMS URLs.
+A URL rewrite sends visitors from one address on your storefront to another. Use it when a product, category or CMS page moves, so old links and bookmarks keep working and search engines find the new address.
 
-If an admin modifies their URL for any reason, this functionality ensures seamless redirection to the new path URL.
+## Rewrites Bagisto adds for you
 
-## Creating a URL rewrite
+When you change the URL key of a product, category or CMS page, Bagisto adds a **Permanent (301)** rewrite from the old URL key to the new one, for the language you edited. It appears in the list, and you can edit or delete it like any other rewrite.
+
+- **Only the most recent old address keeps redirecting.** Each change removes the rewrites that pointed at the previous URL key.
+- **For a CMS page, check the rewrite that's added.** Open it and make sure its **Target Path** starts with `page/`.
+
+## Create a URL rewrite
 
 1. Go to **Marketing >> Search & SEO >> URL Rewrites**.
+2. Click **Create URL Rewrite**.
+3. In **For**, choose **Product**, **Category** or **CMS Page**.
+4. Enter the **Request Path**, the old address without your store's domain, for example `blue-zipper-hoodie`.
+5. Enter the **Target Path**, where visitors should go, for example `coastal-breeze-mens-blue-zipper-hoodie-s`.
+6. Choose the **Redirect Type**. It starts on **Temporary (302)**.
+7. Choose the **Locale**, the storefront language the rewrite applies to.
 
-2. Click **Create URL Rewrite**, as shown below.
+   <ImagePopup src="/images/marketing/url-rewrite-create.png" alt="The Create URL Rewrite dialog sending blue-zipper-hoodie to a product's URL key with a permanent redirect" />
 
-   <ImagePopup src="/images/marketing/url-rewrite.png" alt="Step 1: Navigate to URL Rewrite" />
+8. Click **Save URL Rewrite**.
 
-3. Fill in the fields described below.
+### Choose the redirect type
 
-4. Click **Save URL Rewrite**.
+| Redirect Type | Use it when |
+|---|---|
+| **Permanent (301)** | The old address is gone for good. Search engines move the old page's ranking to the new address. |
+| **Temporary (302)** | The change is short-term, such as a seasonal page that will come back. Search engines keep the old address. |
 
-   <ImagePopup src="/images/marketing/url-fields.png" alt="Step 2: Add URL Rewrite Details" />
+### How rewrites are matched
 
-## URL rewrite fields
+- **The Request Path matches the whole address** after your store's domain, without the leading `/`.
+- **For a CMS page, choose CMS Page in For** and enter the part after `page/` in **Request Path**, for example `shipping-info` for `/page/shipping-info`.
+- **The Target Path is a path on your store or a full web address.** To send visitors to a CMS page, include `page/`, for example `page/shipping-policy`.
 
-- **For** – Select the entity for which you are applying the URL Rewrite (Product, Category, CMS Page).
+## Manage URL rewrites
 
-- **Request Path** – Enter the URL key and suffix (if applicable) of the original product request. This is the old URL of the product, category or page that visitors are redirected from.
+The **URL Rewrites** list shows each rewrite's **ID**, **For**, **Request Path**, **Target Path**, **Redirect Type** and **Locale**, with icons to edit and delete it. Select several rewrites to delete them together.
 
-- **Target Path** – Enter the path that visitors are redirected to. This field is required.
-
-- **Redirect Type** – Choose one of the following:
-
-  - **Temporary (302):** Use for temporary changes while retaining SEO value on the old URL.
-
-  - **Permanent (301):** Use for permanent changes with SEO value transferred to the new URL.
-
-- **Locale** – Select the language in which you want the URL to be rewritten.
-
-## URL redirection
-
-The **Request Path** now redirects to the **Target Path**, using the redirect type you chose — temporary or permanent.
-
-<ImagePopup src="/images/marketing/url-output.png" alt="Step 3: URL Redirection" />
+<ImagePopup src="/images/marketing/url-rewrites.png" alt="The URL Rewrites list with a rewrite and its request path, target path and redirect type" />

@@ -1,161 +1,146 @@
 # Cart Rules
 
-It is human nature that everyone is attracted to offers, sales, and discounts while shopping. A Cart Rule is applied to the product in the shopping cart. Here we will discuss how to set cart rules in Bagisto.
+A cart rule gives shoppers a discount in the cart. It can apply on its own, or only when the shopper enters a coupon code. Use cart rules for offers such as 20% off orders of $50 or more, free shipping for wholesale customers, or buy two and get one free.
 
-By using it, you can set one or multiple discounts on the same product. Follow the below steps to learn **how to set cart rules in Bagisto**.
+To lower product prices before anything reaches the cart, use [catalog rules](catalog-rules.md) instead.
 
-### Step 1: Add New Cart Rule
+## Create a cart rule
 
-1. In the Admin Panel, go to **Marketing >> Promotions >> Cart Rules**.
+1. Go to **Marketing >> Promotions >> Cart Rules**.
+2. Click **Create Cart Rule**.
+3. Fill in the **General**, **Conditions** and **Actions** sections, and the **Settings** and **Marketing Time** panels, as described below.
 
-2. Click on **Create Cart Rule** as shown in the image below.
+   <ImagePopup src="/images/marketing/cart-rule-create.png" alt="The Create Cart Rule page with the General section and the Settings and Marketing Time panels" />
 
-<ImagePopup src="/images/marketing/create-cartrule.png" alt="Create Cart Rule" />
+4. In the **Settings** panel, switch **Status** on. A new rule starts switched off.
+5. Click **Save Cart Rule**.
 
-From the Cart Rules listing page, you can also **Copy** an existing rule by clicking the Copy icon in the action column. This creates a duplicate with "Inactive" status, allowing you to modify and enable it later.
+You see "Cart rule created successfully".
 
-### General Section
+### General
 
-- **Name:** Enter the name of the new cart rule (only for internal reference).
+| Setting | What it does |
+|---|---|
+| **Name** | Identifies the rule in the admin panel |
+| **Description** | Your own notes about the rule |
+| **Coupon Type** | **No Coupon** applies the discount to every cart that matches the rule. **Specific Coupon** applies it only when the shopper enters a code. |
+| **Auto Generate Coupon** | Appears for **Specific Coupon**. **No** lets you type one code. **Yes** lets you generate many unique codes after you save the rule. |
+| **Coupon Code** | Appears when **Auto Generate Coupon** is **No**. The code shoppers enter. Every code must be unique in your store. |
+| **Uses Per Coupon** | Appears for **Specific Coupon**. How many times each code can be used in total, including each generated code. Leave it at 0 for no limit. |
+| **Uses Per Customer** | How many times one signed-in customer can use the rule and each of its codes. Guests aren't limited. Leave it at 0 for no limit. |
 
-- **Description:** Enter a description of the rule (only for internal reference).
+### Conditions
 
-### Settings (Right Sidebar)
+Conditions decide which carts and items get the discount. Leave them empty to apply the rule to every cart.
 
-The Settings panel is located in the right sidebar and contains:
+1. Choose the **Condition Type**: **All Conditions Are True** or **Any Conditions Are True**.
+2. Click **Add Condition**.
+3. Choose what to check, the operator and the value.
 
-<ImagePopup src="/images/marketing/cart-rule-right.png" alt="Create Cart Rule Right Sidebar Settings" />
+<ImagePopup src="/images/marketing/cart-rule-conditions.png" alt="The Conditions section with a Subtotal, Equals or greater than, 50 condition" />
 
-- **Priority:** Enter the priority of this rule. Lower numbers have higher priority. When multiple rules match, the rule with the lowest priority number is applied first.
+Remove a condition with the bin icon beside it. You can check:
 
-- **Channels:** Select one or more channels by checking the checkboxes. The cart rule will only apply to the selected channels.
+- **Cart attribute**: **Subtotal**, **Total items-qty**, **Payment method**, **Shipping method**, **Shipping postcode**, **Shipping state** and **Shipping country**.
+- **Cart item attribute**: **Price in cart**, **Quantity in cart**, **Total Weight**, **Subtotal** and **Additional**.
+- **Product attribute**: **Categories**, **Categories(Children Only)**, **Categories(Parent Only)**, **Attribute Family** and your product attributes.
 
-- **Customer Groups:** Select one or more customer groups by checking the checkboxes. The cart rule will only apply to the selected customer groups.
+For categories, tick them in the tree. Each product attribute is also offered with (Children Only) and (Parent Only) after its name. Text area, image and file attributes aren't offered.
 
-- **Status:** Toggle the switch to enable or disable the cart rule.
+The operators depend on what you check:
 
-**Note:** Priority is important when products meet the condition set for more than one cart rule. The highest priority is 0. So when multiple conditions are met, the rule with the highest priority will be applied first.
+- **Numbers and dates** offer **Is equal to**, **Is not equal to**, **Equals or greater than**, **Equals or less than**, **Greater than** and **Less than**.
+- **Text** offers **Is equal to**, **Is not equal to**, **Contain** and **Does not contain**.
+- **Single choices**, such as **Payment method**, **Shipping country** and **Attribute Family**, and Yes/No attributes offer **Is equal to** and **Is not equal to**.
+- **Categories and multiple-choice attributes** offer **Contains** and **Does not contain**.
 
-### Marketing Time (Right Sidebar)
+### Actions
 
-The Marketing Time panel is located below Settings in the right sidebar:
+1. Choose the **Action Type**.
+2. Fill in the fields that appear for it.
 
-- **From:** Set the start date and time from which the cart rule becomes active. Leave blank to apply immediately.
+| Action Type | What it gives | Fields |
+|---|---|---|
+| **Percentage Product Price** | A percentage off each matching item | **Discount Percent (%)**, from 0 to 100, and **Maximum Discounted Quantity** |
+| **Fixed Amount** | A fixed amount off each matching item | **Discount Amount** and **Maximum Discounted Quantity** |
+| **Fixed Amount Whole Cart** | A fixed amount off the whole cart, shared across the matching items by price | **Discount Amount** |
+| **Buy X Get Y Free** | Free units when the shopper buys a set quantity of an item | **Free Quantity (Y)**, **Buy X Quantity** and **Maximum Eligible Quantity** |
 
-- **To:** Set the end date and time after which the cart rule expires. Leave blank for no expiry.
+**Maximum Discounted Quantity** caps how many units of each matching item get the discount. Enter 0 for no cap. An empty box counts as 1.
 
-### Coupon Section
+<ImagePopup src="/images/marketing/cart-rule-actions.png" alt="The Actions section with Percentage Product Price and a 20 percent discount" />
 
-**Coupon Type:** Select coupon type with or without a coupon. If you want the cart rule to apply to all carts without requiring a coupon code, set it to **No Coupon**. Select **Specific Coupon** to require a coupon code.
+**Apply to Shipping**, **Free Shipping** and **End Of Other Rules** appear for every action type:
 
-**If you select Specific Coupon, configure the following fields:**
+| Setting | What it does |
+|---|---|
+| **Apply to Shipping** | **Yes** also takes the discount off the shipping cost. It works only with **Percentage Product Price** and **Fixed Amount**. |
+| **Free Shipping** | **Yes** makes shipping free when the rule applies |
+| **End Of Other Rules** | **Yes** stops rules with a higher **Priority** number from applying after this one |
 
-<ImagePopup src="/images/marketing/cart-rule-generate-coupon.png" alt="Create Cart Rule Coupon" />
+An item's discount never goes above the item's price. Before you launch a **Fixed Amount Whole Cart** rule, test it with a cart that holds several units of one product, and check the discount.
 
-- **Auto Generate Coupon:** Set Yes to have the system generate coupon codes automatically. Set No to enter a coupon code manually.
+#### Buy X Get Y Free
 
-- **Coupon Code:** If Auto Generate Coupon is set to No, enter the coupon code that customers will use during checkout.
+With **Buy X Quantity** set to 2 and **Free Quantity (Y)** set to 1, every third unit of a matching item is free. A shopper with 3 units gets 1 free, and with 6 units gets 2 free. The free units come out of the quantity in the cart, so the shopper adds them. **Maximum Eligible Quantity** caps how many units of the item count towards the deal. Enter 0 for no cap. An empty box counts as 1.
 
-- **Uses Per Coupon:** Define how many times the coupon code can be used in total. Leave blank for unlimited uses.
+There's no discount when **Free Quantity (Y)** is more than **Buy X Quantity**, or when **Buy X Quantity** is 0, its starting value.
 
-- **Uses Per Customer:** Define how many times the same customer can use this cart rule. Leave blank for unlimited.
+<ImagePopup src="/images/marketing/cart-rule-buy-x-get-y.png" alt="The Actions section with Buy X Get Y Free, Free Quantity 1, Buy X Quantity 2 and Maximum Eligible Quantity 6" />
 
-**If Auto Generate Coupon is set to Yes, you can generate bulk coupons after saving the rule. On the edit page, a Generated Coupons section appears where you can click Generate Coupons and configure:**
+### Settings and Marketing Time
 
-<ImagePopup src="/images/marketing/cart-rule-generate-now.png" alt="Cart Rule Coupon Generate" />
+| Setting | What it does |
+|---|---|
+| **Priority** | The order rules are applied in, starting from the lowest number |
+| **Channels** | The channels the rule works on |
+| **Customer Groups** | The customer groups who get the discount, such as **Guest**, **General** and **Wholesale** |
+| **Status** | Switches the rule on or off. Off by default, and a rule that's off doesn't apply. |
+| **From** | The date and time the rule starts. Leave it empty to start straight away. |
+| **To** | The date and time the rule ends. It must be the same as or later than **From**. Leave it empty for no end. Generated coupons show it as their expiration date. |
 
-- **Coupon Quantity:** Number of unique coupon codes to generate.
-- **Coupon Length:** Length of each coupon code (minimum 10).
-- **Code Format:** Format of the generated codes — **Alphanumeric** (A-Z, 0-9), **Alphabetical** (A-Z only), or **Numeric** (0-9 only).
-- **Code Prefix:** Optional prefix added to every generated coupon code.
-- **Code Suffix:** Optional suffix added to every generated coupon code.
+### How rules work together
 
-**How Auto-Generated Coupons Work on the Frontend:**
+- **Every active rule that matches applies**, in **Priority** order, until a rule with **End Of Other Rules** set to **Yes**. Give rules different priorities when the order matters.
+- **A cart holds one coupon code at a time.**
+- **Uses are counted when an order with a discount is placed.** Once a code reaches **Uses Per Coupon**, or a signed-in customer reaches **Uses Per Customer**, it stops applying.
+- **Changing To, Uses Per Coupon or Uses Per Customer later updates every generated code too.**
 
-Each auto-generated coupon code is a unique code that customers can use at checkout. These codes work the same way as a manually entered coupon — the customer enters the code in the **Apply Coupon** field on the checkout page.
+## Generate coupon codes
 
-Auto-generated coupons are useful for marketing campaigns where you need to distribute many unique codes (e.g., email campaigns, loyalty programs). Each generated code has its own usage tracking based on the **Uses Per Coupon** and **Uses Per Customer** limits configured in the rule.
+Generate many unique codes for one rule, for example to send a different code to each subscriber.
 
-<ImagePopup src="/images/marketing/configurations.png" alt="Coupon Section" />
+1. Create a rule with **Coupon Type** set to **Specific Coupon** and **Auto Generate Coupon** set to **Yes**, and save it.
 
-You can also set **No Coupon** if you want the discount to apply automatically to all eligible carts without requiring any code entry.
+   <ImagePopup src="/images/marketing/cart-rule-auto-generate.png" alt="The General section with Specific Coupon, Auto Generate Coupon set to Yes and the note about generating codes after saving" />
 
-<ImagePopup src="/images/marketing/configurations.png" alt="Coupon Section" />
+2. In **Marketing >> Promotions >> Cart Rules**, click the edit icon of the rule.
+3. In the **Generated Coupons** section, click **Generate Coupons**.
+4. Enter the **Coupon Quantity**, 1 or more.
+5. Enter the **Coupon Length**. It's 12 by default and must be at least 10, not counting the prefix and suffix.
+6. Choose the **Code Format**: **Alphanumeric**, **Alphabetical** or **Numeric**.
+7. Enter a **Code Prefix** and a **Code Suffix**, if you like.
 
-### Step 2: Set Conditions
+   <ImagePopup src="/images/marketing/cart-rule-generate-coupons.png" alt="The Generate Coupons dialog with a quantity of 5, a length of 12, the Alphanumeric format and a VIP- prefix" />
 
-Conditions define when the cart rule should be applied. They are based on three groups of attributes, named as they appear in the attribute dropdown:
+8. Click **Generate**.
 
-- **Cart attribute:** **Subtotal**, **Total items-qty**, **Payment method**, **Shipping method**, **Shipping postcode**, **Shipping state**, **Shipping country**.
-- **Cart item attribute:** **Price in cart**, **Quantity in cart**, **Total Weight**, **Subtotal**, **Additional**.
-- **Product attribute:** **Categories**, **Attribute Family**, plus all product attributes (excluding textarea, image, and file types).
+The codes are listed under **Generated Coupons** with their **ID**, **Coupon Code**, **Times Used**, **Created Date** and **Expiration Date**. Delete a code with its delete icon, or select several codes and delete them together. Click **Export** to download the list.
 
-If you want to apply the rule to all products without any restriction, leave the conditions section empty.
+<ImagePopup src="/images/marketing/cart-rule-generated-coupons.png" alt="The Generated Coupons section of a cart rule with the list of generated codes" />
 
-**Condition Type:**
+On the rule's edit page, **Generate now** under **Auto-generation enabled** in the **General** section opens the same dialog.
 
-- **All Conditions Are True:** Every condition must be satisfied for the rule to apply.
-- **Any Conditions Are True:** At least one condition must be satisfied for the rule to apply.
+## Copy a cart rule
 
-<ImagePopup src="/images/marketing/condition.png" alt="Set Cart Rule Conditions" />
+In **Marketing >> Promotions >> Cart Rules**, click the copy icon of a rule. A copy is saved straight away, switched off, and opens for editing. It has the same name as the original, so rename it. Coupon codes aren't copied, so enter a new code or generate new ones.
 
-Click on **Add Condition** to add a new condition row. For each condition, configure:
+## Manage cart rules
 
-- **Attribute:** Select the attribute from the dropdown (grouped by Cart attribute, Cart item attribute, and Product attribute).
-- **Operator:** Depending on the attribute type, the operators offered are **Is equal to**, **Is not equal to**, **Greater than**, **Less than**, **Equals or greater than**, **Equals or less than**, **Contains** and **Does not contain**.
-- **Value:** Enter or select the value to compare against. For category attributes, a tree selector is available.
+The **Cart Rules** list shows each rule's **ID**, **Name**, **Coupon Code**, **Start**, **End**, **Status** and **Priority**, with icons to edit, copy and delete it.
 
-For example, if you select **Categories**, choose the operator **Contains** and then select the desired category from the tree.
+<ImagePopup src="/images/marketing/cart-rules.png" alt="The Cart Rules list with four rules, one of them using the coupon code WELCOME15" />
 
-To delete a condition, click the **Delete icon** on the right side of the condition row.
+## What shoppers see
 
-### Step 3: Set the Actions
-
-In the Actions section, define how the discount will be applied. Select one of the four action types:
-
-  <ImagePopup src="/images/marketing/cart-rule-buy-condition.png" alt="Attribute Condition" />
-  
-
-- **Action Type:** Choose how the discount is calculated.
-
-   **a) Percentage Product Price —** Discount is applied as a percentage (%) of the product price. The discount amount is capped at 100. Apply to Shipping is available.
-
-   **b) Fixed Amount —** A fixed discount amount is subtracted from each matching item's price. Apply to Shipping is available.
-
-   **c) Fixed Amount Whole Cart —** The discount amount is split proportionally across all matching cart items based on their price. Apply to Shipping is disabled for this type.
-
-   **d) Buy X Get Y Free —** Customers get free products when they buy a certain quantity. Configure **Free Quantity (Y)** (the number of free items) and **Buy X Quantity** (the number of items the customer must purchase to qualify). Apply to Shipping is disabled for this type.
-
-- **Discount Amount / Free Quantity (Y):** Enter the discount value. For **Percentage** this is the percentage off. For **Buy X Get Y** the field is labelled **Free Quantity (Y)** and holds the number of free items. For other types this is the fixed discount amount.
-
-- **Buy X Quantity:** (Only for Buy X Get Y) Enter the quantity the customer must purchase to qualify for the free items.
-
-- **Maximum Discounted Quantity:** Enter the maximum number of items that can receive the discount. (Not shown for Fixed Amount Whole Cart or Buy X Get Y Free.)
-
-- **Maximum Eligible Quantity:** (Only for Buy X Get Y) Enter the maximum number of items eligible for the free discount.
-
-- **Apply to Shipping:** Set Yes to also apply the discount to the shipping cost. Disabled for Fixed Amount Whole Cart and Buy X Get Y.
-
-- **Free Shipping:** Set Yes to make shipping free when this rule is applied.
-
-- **End Of Other Rules:** Set Yes to stop processing further cart rules after this one is applied. Useful when you have multiple overlapping discounts.
-
-After configuring all sections, click the **Save Cart Rule** button.
-
-Now copy the **Coupon Code** as shown below.
-
-<ImagePopup src="/images/marketing/coupon-code.png" alt="Coupon Code Example" />
-
-### Frontend
-
-On the **Checkout Page**, while placing an order, click on **Apply Coupon** as shown below.
-
-<ImagePopup src="/images/marketing/checkout-page.png" alt="Checkout Page Coupon" />
-
-After entering the coupon code, click on the **Apply** button.
-
-<ImagePopup src="/images/marketing/apply-coupon.png" alt="Apply Coupon" />
-
-Now the **Coupon** is applied successfully.
-
-<ImagePopup src="/images/marketing/coupon-applied.png" alt="Coupon Applied Successfully" />
+A rule without a coupon applies on its own as soon as the cart matches. For a rule with a coupon, shoppers click **Apply Coupon** in the cart and enter the code.

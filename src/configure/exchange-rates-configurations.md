@@ -1,34 +1,46 @@
 # Exchange Rates
 
-Bagisto can fetch current exchange rates from an exchange rate service, so prices shown in your other currencies stay correct without entering rates by hand. You can update the rates on demand or on a schedule.
+Bagisto can fetch current exchange rates from an exchange rate service, so prices shown in your other currencies stay correct without entering rates by hand. You can update the rates on demand or on a schedule. Every setting on this screen applies to the whole store.
 
-Go to **Configure >> General >> Exchange Rates**.
+## General settings
 
-## Connect an exchange rate service
-
-Two services are supported. Sign up with one of them and copy your API key:
-
-- **Exchange Rates API** ([exchangerate-api.com](https://www.exchangerate-api.com)) returns the rates for every currency in one request.
-- **Fixer API** ([fixer.io](https://fixer.io)) is asked for one currency at a time.
-
-1. In **General Settings**, choose the **Default Service**.
-2. In the **Exchange Rates API** or **Fixer API** section, enter the **API Key** of that service.
+1. Go to **Configure >> General >> Exchange Rates**.
+2. In **General Settings**, choose the **Default Service**: **Exchange Rates API** (the default) or **Fixer API**.
 3. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/exchange-rates-settings.png" alt="Exchange Rates screen with the General Settings, Exchange Rates API and Fixer API sections" />
+The default service is the one used by scheduled updates and by the **Update Exchange Rate** button. Enter the API key of that service in its own section.
 
-If the API key is left empty, the store uses the key set in the server's environment file, if there is one.
+## Exchange Rates API
 
-## Update the rates on a schedule
+[ExchangeRate-API](https://www.exchangerate-api.com) returns the rates for all your currencies in one request. You need an API key from your ExchangeRate-API account.
 
-1. In **Scheduled Import**, switch **Enabled** on.
-2. Choose the **Frequency**: **Daily**, **Weekly** (every Monday) or **Monthly** (on the first day of the month).
-3. Enter the **Start Time (HH:MM)** in 24-hour format, such as `03:00`.
-4. Click **Save Configuration**.
+1. Go to **Configure >> General >> Exchange Rates**.
+2. In **Exchange Rates API**, enter the **API Key**.
+3. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/exchange-rates-schedule.png" alt="Scheduled Import section set to update the rates daily at 03:00" />
+## Fixer API
 
-Scheduled updates run on the server's task scheduler. If the rates don't update at the set time, ask whoever manages your server to check that the scheduler is running.
+[Fixer](https://fixer.io) is asked for the rate of one currency at a time. You need an API key from your Fixer account.
+
+1. Go to **Configure >> General >> Exchange Rates**.
+2. In **Fixer API**, enter the **API Key**.
+3. Click **Save Configuration**.
+
+<ImagePopup src="/images/configure/exchange-rates-settings.png" alt="General Settings, Exchange Rates API and Fixer API sections with placeholder API keys" />
+
+If an **API Key** is left empty, the store uses the key set for that service in the server's environment file, if there is one.
+
+## Scheduled import
+
+1. Go to **Configure >> General >> Exchange Rates**.
+2. In **Scheduled Import**, switch **Enabled** on. **Frequency** and **Start Time (HH:MM)** appear.
+3. Choose the **Frequency**: **Daily** (the default), **Weekly**, which runs on Mondays, or **Monthly**, which runs on the first day of the month.
+4. Enter the **Start Time (HH:MM)** in 24-hour format, such as `03:00`. The default is `00:00`.
+5. Click **Save Configuration**.
+
+<ImagePopup src="/images/configure/exchange-rates-schedule.png" alt="Scheduled Import section switched on, updating the rates daily at 03:00" />
+
+Scheduled updates run on the server's task scheduler. If the rates don't update at the set time, ask whoever manages your server to check that the scheduler is running. See [Scheduled Tasks](../getting-started/scheduled-tasks.md).
 
 ## Update the rates now
 

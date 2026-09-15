@@ -212,7 +212,7 @@ Here, app users can use a code for their purchases. They also have the choice to
 
 In the next step, users have to choose how they want to pay for their order, which can be either Cash On Delivery or Money Transfer.
 
-Here users can check the price details of the order and can place the order. After that, the order has been placed and will get a confirmation with order ID and email.
+Here, users review the price details and place the order. The app shows a confirmation with the order ID, and a confirmation email is sent.
 
 <ImagePopup src="/images/native-mobile-app/19.png" alt="Payment and Order Confirmation" />
 

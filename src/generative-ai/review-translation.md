@@ -2,22 +2,34 @@
 
 <div class="feature-meta feature--ai"><span class="feature-meta__primary">Generative AI</span><span>Storefront</span></div>
 
-With review translation on, a **Translate** link appears under each product review on the storefront. Clicking it shows the review in the language of the store the shopper is browsing, so a review written in another language is still useful to them. The review itself is not changed; the translation is made when the shopper asks for it.
+Review translation lets shoppers read a product review in their own language. A **Translate** button appears under each review on the product page. When a shopper clicks it, the model translates the review into the language they're browsing your store in. A review written in another language is still useful to them, and the review itself isn't changed.
 
-## Turning it on
+## Where it appears
 
-1. Go to **Configure >> Magic AI >> Storefront Features**. If your store has more than one channel, choose the channel at the top of the page.
-2. In the **Review Translation** section, switch **Enabled** on.
-3. Choose the **Model**.
-4. Click **Save Configuration**.
+The **Translate** button sits under the text of each approved review on a product page.
 
-The API key of the chosen model's provider must be saved first; see [Generative AI Configuration](../configure/magic-ai.md). Unlike the other storefront features, review translation is controlled by this switch alone and keeps working when the general **Enabled** switch is off.
+## Translate a review
 
-## What the shopper sees
+This is what a shopper does on the storefront:
 
-1. The shopper opens a product page and scrolls to its reviews.
-2. Under a review, they click **Translate**. The link reads **Translating...** while the model works, and the translated text then replaces the original.
+1. Open a product page and scroll to its reviews.
+2. Under a review, click **Translate**. The button reads **Translating...** while the model works.
 
-<ImagePopup src="/images/generative-ai/review-magicai.png" alt="Translate link under a review" />
+The review's text is replaced on the shopper's screen by the translation, in the language currently selected in the storefront. The review title stays as it was written. When the shopper reloads the page, the original text is shown again. If the translation fails, the shopper sees an error message and the review stays as written.
 
-The translation is into the locale the shopper has selected in the storefront, so a store that serves several languages translates each review into whichever one the visitor is using.
+### What to expect
+
+- **Translations go straight to the shopper, without your review.** Try the feature on a few reviews before you switch it on for a channel.
+- **Each click is a new translation.** Translations aren't stored. Every click on **Translate** sends the review to the provider again, and each one is a separate request that the provider bills.
+
+## What you control
+
+| Setting | What it does |
+|---|---|
+| **Enabled** under **Configure >> Magic AI >> General** | Switches Magic AI on for your store |
+| **Enabled** in the **Review Translation** section of **Configure >> Magic AI >> Storefront Features** | Shows the **Translate** button, per channel |
+| **Model** in the **Review Translation** section | The model that translates reviews, per channel |
+
+Save the API key of the chosen model's provider under **Configure >> Magic AI >> Providers** first. To set everything up, see [Enable the storefront features](../configure/magic-ai.md#enable-the-storefront-features).
+
+Only reviews you've approved appear on the storefront, so only approved reviews can be translated. See [Approve or disapprove a review](../customer/customer-review.md#approve-or-disapprove-a-review).

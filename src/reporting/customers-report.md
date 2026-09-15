@@ -1,77 +1,72 @@
 # Customers Reporting
 
-Bagisto provides detailed customer analytics to help store owners understand their customer base, purchasing habits, and engagement levels. Below is an explanation of the customer-related reports.
+**Reporting >> Customers** shows who your customers are and how they buy: new customers, the customers who spend and order the most, the groups new customers join, and who writes reviews.
 
-### A) Total Customers 
+## Choose the channel and dates
 
-This report shows the total number of customers registered in the store within the selected date range.
+1. Go to **Reporting >> Customers**.
+2. If your store has more than one channel, choose a channel, or leave **All Channels**.
+3. Click the date range at the top right.
+4. Choose a preset, or pick a start and an end date on the calendar.
 
-**Key Metrics:**
+Every card reloads for the channel and dates you chose. The report opens on the last 30 days. The presets are listed in [Choose the channel and dates](sales-report.md#choose-the-channel-and-dates), and how figures are compared with the period before in [Reading the cards](sales-report.md#reading-the-cards).
 
-**1) Total Customers:** The number of new customers who signed up.
+## Total Customers
 
-**2) Percentage Change:** Comparison with the previous period.
+The number of customer accounts created in the range, with the percentage change and a **Customers Over Time** chart.
 
-**3) View Details:** Click to see a list of new customers.
+<ImagePopup src="/images/reporting/total-customers.png" alt="Total Customers card with the Customers Over Time chart" />
 
-### B) Customers Over Time
+## Customers With Most Sales
 
-This section provides a timeline of new customer registrations over a specific period.
+The five customers with the highest sales on orders placed in the range: the amount invoiced, minus refunds. Guests who ordered are included.
 
-**How to Use:**
+<ImagePopup src="/images/reporting/total-sale-customers.png" alt="Customers With Most Sales card" />
 
-1) Compare customer growth over different date ranges.
+## Customers With Most Orders
 
-2) Identify periods of high or low customer sign-ups.
+The five customers who placed the most orders in the range, whatever the orders' status. Guests who ordered are included.
 
-3) Adjust marketing strategies to boost customer registrations.
+<ImagePopup src="/images/reporting/customer-most-order.png" alt="Customers With Most Orders card" />
 
-<ImagePopup src="/images/reporting/total-customers.png" alt="Customers Over Time" />
+## Top Customer Groups
 
-### C) Customers With Most Sales
+The five customer groups with the most customers who registered in the range, counted by the group each customer is in now, with how many are in each. If nobody registered in the range, the card says **No Data Available**.
 
-Lists customers who have made the highest total purchases in terms of revenue.
+<ImagePopup src="/images/reporting/customer-group.png" alt="Top Customer Groups card" />
 
-**Key Metrics:**
+## Customers With Most Reviews
 
-**1) Customer Name:** The customer who generated the most revenue.
+The five customers with the most approved reviews written in the range. Reviews written by guests aren't counted.
 
-**2) Total Sales Amount:** The total value of their purchases.
+<ImagePopup src="/images/reporting/customer-most-review.png" alt="Customers With Most Reviews card" />
 
-<ImagePopup src="/images/reporting/total-sale-customers.png" alt="Customers With Most Sales" />
+## View details and export
 
-### D) Customers With Most Orders
+Every card has **View Details**, which opens the figures as a table.
 
-Shows which customers have placed the highest number of orders.
+1. Click **View Details** on a card.
+2. If your store has more than one channel, choose the channel.
+3. For **Total Customers**, choose **Day**, **Month** or **Year**. For totals that cover every date you chose, use **Day**.
+4. Choose the dates.
 
-**Key Metrics:**
+The details page opens on **All Channels** and the last 30 days. Click a column heading to sort the table on screen. **Back** returns to the report.
 
-**1) Customer Name:** The customer who placed the most orders.
+| Card | Table columns |
+|---|---|
+| **Total Customers** | **Interval**, **Customers** |
+| **Customers With Most Sales** | **Name**, **Email**, **Total** |
+| **Customers With Most Orders** | **Name**, **Email**, **Orders** |
+| **Top Customer Groups** | **Name**, **Customers** |
+| **Customers With Most Reviews** | **Name**, **Email**, **Reviews** |
 
-**2) Total Orders:** The number of orders they completed.
+### Export the table
 
-<ImagePopup src="/images/reporting/customer-most-order.png" alt="Customers With Most Orders" />
+1. Click **Export**.
+2. Choose **Export CSV** or **Export XLS**.
 
-### E) Top Customer Groups
+The file covers the channel, period and dates chosen on the details page. The exported file keeps the original order, not the order you sorted on screen.
 
-Lists the most active customer groups (e.g., wholesale, retail, VIP).
+## Permissions
 
-**Why It Matters?**
-
-1) Helps segment customers based on buying behavior.
-
-2) No data may indicate that customer groups need to be configured.
-
-<ImagePopup src="/images/reporting/customer-group.png" alt="Top Customer Groups" />
-
-### F) Customers With Most Reviews
-
-Lists customers who have left the most product reviews.
-
-**Why It Matters?**
-
-1) Helps identify engaged customers.
-
-2) Encouraging reviews can improve product credibility and boost conversions.
-
-<ImagePopup src="/images/reporting/customer-most-review.png" alt="Customers With Most Reviews" />
+A role needs **Customers** under **Reporting** to open this report, its details and its export.

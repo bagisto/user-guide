@@ -8,4 +8,6 @@ The cart page can suggest cross-sell products below the items in the cart. The *
 
 <ImagePopup src="/images/configure/products-cart-view-page.png" alt="Cart view page configuration section of the Products screen" />
 
-The suggestions appear only while **Cross sell Products** is switched on under [Checkout](./checkout.md), and they come from the cross-sell products chosen on the products in the cart.
+Leave it empty to show all of them, or enter `0` to show none.
+
+The suggestions come from the cross-sell products chosen on the products in the cart, leaving out products that are already in the cart. Cross-sell products are chosen on each product; see [Products](../product-types/products.md#related-up-sell-and-cross-sell-products). They appear only while **Cross sell Products** is switched on under [Checkout](./checkout.md). The setting applies to the whole store.

@@ -1,31 +1,34 @@
 # Email Templates
 
-As we all know, everyone wants some customization according to their own taste that's why knowing about changing the email template is also quite helpful for some users.
+An email template holds the content of a marketing email. [Campaigns](campaigns.md) send it to your customers. Your store's order, invoice and account emails don't use these templates.
 
-### Creating an email template
+## Create an email template
 
 1. Go to **Marketing >> Communications >> Email Templates**.
+2. Click **Create Template**.
+3. In **Content**, write the email in the editor. Add headings, images, links and tables from the toolbar.
+4. Under **General**, enter the **Name**.
+5. Choose the **Status**: **Active**, **Inactive** or **Draft**.
 
-2. Click **Create Template**, as shown in the below image.
+   <ImagePopup src="/images/marketing/email-template-create.png" alt="The Create Template page with the email content in the editor and the name and status under General" />
 
-   <ImagePopup src="/images/marketing/template.png" alt="Template" />
+6. Click **Save Template**.
 
-3. Enter the **Name** of the email template.
+You see "Email template created successfully."
 
-4. Set the **Status** to **Active**, **Inactive** or **Draft**, as shown in the below image.
+To get a first draft of the content, use the **Magic AI** button in the editor, once Magic AI and text generation are switched on under **Configure >> Magic AI**. See [Generate text content](../generative-ai/generate-content.md).
 
-   <ImagePopup src="/images/marketing/template-name.png" alt="Template Name" />
+### Only active templates are sent
 
-5. Add the **Content**. You can paste the content into the editor.
+A campaign sends its email only while its template's **Status** is **Active**. Use **Draft** while you're still writing, and **Inactive** to stop a template from being sent without deleting it.
 
-6. To add a link, right-click the content and choose the link option.
+- **Setting a template that a campaign uses to Inactive or Draft stops that campaign**, without a warning. The campaign's edit form then no longer lists the template, so choose another one before you save the campaign.
+- **You can't delete a template that a campaign uses.** You see "This template is used in one or more campaigns."
 
-7. Fill in the **URL**, **Text to display**, **Title** and **Open link in** fields, as shown in the below image.
+## Manage email templates
 
-   <ImagePopup src="/images/marketing/link.png" alt="Link" />
+The **Email Templates** list shows each template's **ID**, **Name** and **Status**, with icons to edit and delete it.
 
-8. Click **Save Template**. The new email template is listed, as shown below.
+<ImagePopup src="/images/marketing/email-templates.png" alt="The Email Templates list with an active Autumn Newsletter template" />
 
-   <ImagePopup src="/images/marketing/output.png" alt="Output" />
-
-By this, you can create an **Email Template** and use it in emails in Bagisto.
+The email's subject line isn't part of the template. You set it on the [campaign](campaigns.md). The sender name and address come from [Email Settings](../configure/email-settings.md).

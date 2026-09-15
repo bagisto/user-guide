@@ -1,23 +1,32 @@
 # Events
 
-An event parameter is an additional piece of data about a user interaction on a website and/or app, offering valuable context and details about the interaction. 
+An event is the date a campaign is sent on, such as Black Friday or your store's anniversary. [Campaigns](campaigns.md) use events to decide when to send. Bagisto also includes a **Birthday** event, which sends a campaign to each customer on their birthday.
 
-For example: Birthdays, Anniversaries, Baby Showers, etc. 
-
-### Creating an event
+## Create an event
 
 1. Go to **Marketing >> Communications >> Events**.
+2. Click **Create Event**. The **Create Events** dialog opens.
+3. Enter the **Name**.
+4. Enter a **Description**.
+5. Choose the **Date**.
 
-2. Click **Create Event**, as shown in the below image.
+   <ImagePopup src="/images/marketing/event-create.png" alt="The Create Events dialog with the name Black Friday, a description and a date" />
 
-   <ImagePopup src="/images/marketing/event.png" alt="Event" />
+6. Click **Save Event**.
 
-3. Enter the event **Name**, **Description** and **Date**, as shown in the below image.
+The **Events** list shows each event's **ID**, **Name** and **Date**, with icons to edit and delete it.
 
-   <ImagePopup src="/images/marketing/event-name.png" alt="Event Name" />
+<ImagePopup src="/images/marketing/events.png" alt="The Events list with the built-in Birthday event and an Autumn Sale event" />
 
-4. Click **Save Event**. The new event is listed, as shown below.
+A campaign that uses an event is sent on the event's date. The date includes the year, so for next year's sale, change the date or create a new event. You can't delete an event that a campaign uses; you see "This event is used in one or more campaigns."
 
-   <ImagePopup src="/images/marketing/event-output.png" alt="Event Output" />
+## The Birthday event
 
-By this, you can create an **Event** in Bagisto.
+Every store comes with a **Birthday** event that has no date. A campaign that uses it is checked every day. It's sent to the customers of the campaign's customer group who:
+
+- have a date of birth that falls on today, and
+- have the newsletter option switched on in their account.
+
+::: warning Keep the Birthday event
+You can't edit the Birthday event. Don't delete it: every new event needs a date, so the Birthday event can't be created again.
+:::

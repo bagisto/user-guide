@@ -1,6 +1,6 @@
 # Google Captcha
 
-Google reCAPTCHA protects your storefront's forms from bots. It gives every visitor a score, and rejects requests whose score is below the threshold you set. Bagisto uses **reCAPTCHA Enterprise**, which needs a Google Cloud project, an API key and a site key.
+Google reCAPTCHA protects your storefront's forms from bots. It gives every request a score, and rejects requests whose score is below the threshold you set. Bagisto uses **reCAPTCHA Enterprise**, which needs a Google Cloud project, an API key and a site key.
 
 ## Get the keys from Google Cloud
 
@@ -23,17 +23,25 @@ Google reCAPTCHA protects your storefront's forms from bots. It gives every visi
 3. Add your store's domain, such as `example.com`.
 4. Copy the site key.
 
-## Enter the keys in Bagisto
+## Credentials
+
+All settings are saved per channel, so choose the channel at the top of the screen first when your store has more than one.
 
 1. Go to **Configure >> Customer >> Google Captcha**.
-2. In **Credentials**, switch **Status** on. The other fields appear.
-3. Enter the **Project ID**, **API Key** and **Site Key**.
-4. Enter the **Score Threshold**, from `0.0` to `1.0`. The default is `0.5`.
-5. Click **Save Configuration**.
+2. In **Credentials**, switch **Status** on. **Project ID**, **API Key**, **Site Key** and **Score Threshold** appear.
+3. Enter the **Project ID**.
+4. Enter the **API Key**.
+5. Enter the **Site Key**.
+6. Enter the **Score Threshold**, a number from `0.0` to `1.0` with one decimal place. The default is `0.5`.
+7. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/google-captcha-settings.png" alt="Credentials section of the Google Captcha screen with Status turned on" />
+<ImagePopup src="/images/configure/google-captcha-settings.png" alt="Credentials section of the Google Captcha screen with Status turned on and placeholder keys" />
 
-All settings are set per channel. reCAPTCHA scores a visitor from 0.0, most likely a bot, to 1.0, most likely a person, so a higher threshold rejects more requests.
+The **Project ID**, **API Key** and **Site Key** are required while **Status** is on. reCAPTCHA scores each request from 0.0, most likely a bot, to 1.0, most likely a person. A request is accepted when its score reaches the threshold, so a higher threshold rejects more requests.
+
+::: warning
+While **Status** is on, the protected forms reject every request if a key is missing or wrong, or Google can't be reached. After saving, sign in to the storefront once to check that the captcha accepts you.
+:::
 
 ## Where the captcha is used
 
@@ -41,5 +49,8 @@ Once it is on, reCAPTCHA checks these storefront forms:
 
 - Customer sign in and sign up
 - Forgot password
-- The **Contact Us** page, and the contact form on product pages while the cart page is turned off
+- The **Contact Us** page
+- The contact form on product pages, which replaces the cart buttons while the cart page is turned off under [Checkout](./checkout.md)
 - Sign in during checkout
+
+The sign-up and sign-in forms are described in [Customer Account](../customer/customer-account.md).

@@ -2,10 +2,10 @@
 
 <div class="feature-hero feature--theme">
   <span class="feature-hero__eyebrow">Storefront design</span>
-  <p class="feature-hero__lead">Choose the theme each channel uses, then build its storefront from sections such as carousels, banners, content blocks and footer links, with a live preview beside you. Nothing reaches shoppers until you publish.</p>
+  <p class="feature-hero__lead">Choose the theme each channel uses, then build its storefront from sections such as banners, product carousels, content blocks and footer links, with a live preview beside you. Most changes wait until you publish.</p>
   <div class="feature-hero__actions">
     <a class="feature-hero__btn feature-hero__btn--primary" href="#themes">Browse themes</a>
-    <a class="feature-hero__btn feature-hero__btn--ghost" href="#sections">Customize sections</a>
+    <a class="feature-hero__btn feature-hero__btn--ghost" href="#the-section-editor">Customize sections</a>
   </div>
 </div>
 
@@ -13,219 +13,144 @@
   <a class="feature-card" href="#themes">
     <span class="feature-card__icon feature-card__icon--layout" aria-hidden="true"></span>
     <span class="feature-card__title">Themes</span>
-    <span class="feature-card__desc">See the themes installed on your store, activate one for each channel and find more in the theme marketplace.</span>
+    <span class="feature-card__desc">See the themes installed on your store, activate one for each channel and find more in the theme store.</span>
     <span class="feature-card__tag">Appearance &gt;&gt; Themes</span>
   </a>
-  <a class="feature-card" href="#the-editor">
+  <a class="feature-card" href="#the-section-editor">
     <span class="feature-card__icon feature-card__icon--eye" aria-hidden="true"></span>
     <span class="feature-card__title">Live section editor</span>
-    <span class="feature-card__desc">Reorder, switch on or off, duplicate and edit sections while a live preview shows the result on desktop, tablet or mobile.</span>
+    <span class="feature-card__desc">Reorder, switch on or off, duplicate and edit sections while the preview shows the result on desktop, tablet or mobile.</span>
     <span class="feature-card__tag">Customize</span>
   </a>
-  <a class="feature-card" href="#section-types">
+  <a class="feature-card" href="/appearance/section-types.html">
     <span class="feature-card__icon feature-card__icon--blocks" aria-hidden="true"></span>
     <span class="feature-card__title">Section types</span>
-    <span class="feature-card__desc">Product and category carousels, image sliders, static content, footer links and service promises.</span>
-    <span class="feature-card__tag">Six built-in types</span>
+    <span class="feature-card__desc">Image, product and category carousels, static content, service promises and footer links.</span>
+    <span class="feature-card__tag">Built-in types</span>
   </a>
 </div>
 
-The appearance of your storefront defines its look and feel, and is a key factor
-in the first impression it makes on a visitor.
-
-Themes and sections have their own area in the admin panel, **Appearance**,
-separate from **Settings**. It holds two things: the **themes** available to
-your store, and the **sections** a theme's storefront is built from.
+The appearance of your storefront defines its look and feel, and it shapes the first impression a visitor gets. It has its own area in the admin panel, **Appearance**. A theme decides how the whole storefront looks. Sections are the blocks a theme's pages are built from, and you manage them for each channel.
 
 ## Themes
 
-Go to **Appearance >> Themes** to see every theme, grouped so you can tell at a
-glance which are ready to use:
+Go to **Appearance >> Themes** to see the themes for your storefront, in two groups:
 
-- **My Themes** — themes installed on your store. Each shows whether it is
-  active, and on which channels.
-- **Buy Themes** — themes available from the marketplace, with links to preview
-  or purchase them.
+- **My Themes**: themes installed on your store.
+- **Buy Themes**: themes from the Bagisto theme store that aren't installed yet. **View & Buy** appears when a theme has a store page, and **Preview** opens its demo. Both open in a new tab.
 
-<ImagePopup src="/images/appearance/themes.png" alt="Themes" />
+Each card shows a picture, the theme's name and a short description, plus the author and version when they're known. An installed theme also shows where it's used: **Active on every channel**, **Active on:** followed by the channel names, or **Not in use**. A theme in use carries an **Active** badge.
 
-From an installed theme you can:
+<ImagePopup src="/images/appearance/themes.png" alt="Appearance >> Themes with the active Default theme under My Themes and themes on offer under Buy Themes" />
 
-- **Customize** — open the section editor for that theme.
-- **Activate** — apply the theme to one or more channels. Before it is applied,
-  you are shown what the change affects.
+An installed theme has these buttons:
 
-## Sections
+- **Customize**: opens the section editor. Shown on a theme that's active on at least one channel.
+- **Activate**: applies the theme to more channels. Shown until the theme is active on every channel.
 
-A section is one block of the storefront — a product carousel, a banner slider, a
-footer, and so on. Sections belong to a **theme** and a **channel**, so the same
-theme customized on two channels keeps two independent sets.
+A theme under **Buy Themes** has to be installed on your store before you can activate it. Your developer or hosting partner installs it. Buttons your role has no permission for are hidden. Each channel uses one theme at a time; to set up channels, see [Channels](../settings/channels.md).
 
-Open **Appearance >> Themes**, then **Customize** on the theme you want to edit.
+### Activate a theme
 
-### The editor
+1. Go to **Appearance >> Themes**.
+2. On a theme under **My Themes**, click **Activate**. The **Activate Theme** dialog opens.
+3. In **Channels**, choose the channels that should use the theme. Hold Ctrl (Cmd on Mac) to pick more than one.
+4. Read the warning, if one appears.
+5. Click **Activate**.
 
-The editor shows the list of sections on the left and a live storefront preview
-on the right. Selecting a section opens its fields; the preview updates as you
-edit, so you can see the result before anyone else does.
+The **Channels** list shows only the channels that don't use the theme yet, and when only one is left, it's already selected. The theme goes live on the chosen channels straight away, and you see a message such as "Default is now active on Default."
 
-- **Reorder** — drag a section by its handle to change where it appears.
-- **Switch on or off** — use the toggle on the row.
-- **Duplicate** or **Delete** — from the row's menu. Duplicating copies the
-  section with everything configured in it, which is the quickest way to build a
-  second carousel that differs in one filter. The copy is placed just below the
-  original, named with **Copy** at the end, and starts switched off and unsaved
-  until you publish it. Deleting asks you to confirm and
-  cannot be undone — to take a section off the storefront and keep it, switch it
-  off instead.
-- **Change locale or channel** — from the selectors at the top, when your store
-  has more than one. Each combination is edited separately.
-- **Change device** — preview the storefront at desktop, tablet or mobile width.
+### Sections stay with their theme
 
-<ImagePopup src="/images/appearance/section-editor.png" alt="Section Editor" />
+A channel's sections belong to the theme they were built for. When you switch a channel to another theme, the dialog warns that the channel has customizations built for its current theme: "They stay saved, but will not appear while the new theme is active." Switch the channel back to show them again.
 
-The footer links section is pinned to the bottom of the page, so it has no drag
-handle and cannot be duplicated. Everything else can be moved freely.
+## The section editor
 
-<ImagePopup src="/images/appearance/section-actions.png" alt="Duplicate and Delete on a section row" />
+1. Go to **Appearance >> Themes**.
+2. On an active theme, click **Customize**. The **Sections** page opens.
 
-### Nothing goes live until you publish
+<ImagePopup src="/images/appearance/section-editor.png" alt="The section editor with the Sections list on the left and a live storefront preview on the right" />
 
-Every change is held as an **unsaved change** until you publish it. This applies
-to everything: editing content, switching a section on or off, and reordering.
+The line under the title says what you're editing, for example "Showing sections for the Default theme on the Default channel." The page has two parts:
 
-The header shows how many sections are holding unsaved changes, and each affected
-row is marked. From there you can:
+- **The Sections list** on the left shows the theme's sections in the order the storefront shows them, each with its name and type.
+- **The Preview** on the right shows the channel's home page with your unpublished changes. Switch between **Desktop**, **Tablet** and **Mobile**, or click the reload icon to refresh it.
 
-- **Publish** — send the changes to the storefront.
-- **Discard** — throw them away and return to what is currently live.
+When the channel has more than one language, choose the language at the top right. When your store has more than one channel, a channel selector appears beside it.
 
-A newly created section is switched off and counts as unsaved, so an empty
-section is never shown to shoppers before it has been built.
+### What you can do in the list
 
-### Creating a section
+- **Edit**: click a section's name. See [Edit a section](#edit-a-section).
+- **Reorder**: drag a section by its handle.
+- **Switch on or off**: use the switch on the row. The name of a section that's off is struck through.
+- **Duplicate**: open the **⋯** menu and click **Duplicate**. The copy is placed below the original, with **Copy** added to its name. It shows switched on with an unsaved change, so it goes live when you publish.
+- **Delete**: open the **⋯** menu, click **Delete** and confirm.
 
-1. In the editor, click the **+** button beside the section list.
-2. Choose the **Type** and enter a **Name**.
-3. Click **Save Section**.
+<ImagePopup src="/images/appearance/section-actions.png" alt="The ⋯ menu of a section row open, with Duplicate and Delete" />
 
-<ImagePopup src="/images/appearance/create-section.png" alt="Create Section" />
+**Footer Links** is pinned to the bottom of the page, so it has no drag handle and can't be duplicated.
 
-4. The section is added, switched off, and opened for editing. Fill in its
-   fields.
-5. Click **Publish** when you are ready for it to appear.
+::: warning Deleting can't be undone
+A deleted section disappears from the storefront straight away. Deleting isn't held for publishing. To take a section off the storefront and keep it, switch it off instead.
+:::
+
+### Edit a section
+
+1. In the **Sections** list, click the section's name. A panel opens with the section's fields, and the preview moves beside it and highlights the section.
+2. Change the fields. Each type's fields are described in [Section types](section-types.md).
+3. Check the preview. Your changes are saved as a draft while you type, and the preview reloads to show them.
+
+   <ImagePopup src="/images/appearance/section-edit.png" alt="A Product Carousel section open for editing, with the section highlighted in the preview" />
+
+4. Close the panel.
+5. Click **Publish** when you're ready for shoppers to see the changes.
+
+### Most changes wait until you publish
+
+These changes are held as unsaved changes until you publish them:
+
+- Changes to a section's fields, in any language.
+- Switching a section on or off.
+- A new order of sections.
+
+While changes are waiting, the **Sections** list shows how many there are, such as "2 Unsaved changes", and each changed row is marked with a dot. **Discard** and **Publish** appear at the top of the page, with the count on **Publish**:
+
+- **Publish**: sends every unsaved change for this theme and channel, in every language, to the storefront.
+- **Discard**: throws away every unsaved change, without asking you to confirm. The list and the preview go back to what's live.
+
+::: info With more than one channel
+After you publish or discard, check the storefront of the channel you edited.
+:::
+
+Published changes show on the storefront straight away: on most pages for **Footer Links** and **Services Content**, and on the home page for the other types.
+
+### New and duplicated sections
+
+Creating or duplicating a section saves it straight away, still hidden from shoppers. In the list it shows switched on with an unsaved change, so **Publish** puts it live. To keep it hidden, switch it off before you publish. **Discard** doesn't delete a new section; it leaves it switched off.
+
+### Languages and channels
+
+- **Each language has its own content.** Choose the language at the top before you edit a section's fields. Switching a section on or off, and the order of sections, apply to every language.
+- **Each channel has its own sections.** Choose another channel at the top to edit its sections, which belong to the theme that channel uses.
+
+### Create a section
+
+1. In the section editor, click **+** beside **Sections**. The **Create Section** panel opens.
+2. Under **Type**, click the type of section.
+3. Enter a **Name**. It's shown in the **Sections** list, not to shoppers.
+
+   <ImagePopup src="/images/appearance/create-section.png" alt="The Create Section panel with Product Carousel chosen and the name Summer Picks" />
+
+4. Click **Save Section**. The section is added at the bottom of the list, above **Footer Links**, shown switched on with an unsaved change, and its fields open.
+5. Fill in the fields.
+6. Click **Publish**.
+
+A channel can have only one **Footer Links** section, so that type isn't offered once the channel has one.
 
 ## Section types
 
-### Product Carousel
-
-A scrollable strip of products, used for the collections on your home page.
-
-**Title:** The heading shown above the carousel.
-
-**Filters:** Which products appear, and in what order. Click **Add Filter**, then
-choose the filter and its value:
-
-- **Sort** — the order products are shown in, using the same sort options your
-  storefront listing offers.
-- **Limit** — how many products the strip holds.
-- **Category ID** — restrict the strip to one category. Categories are listed by
-  their full path, so two categories sharing a name can be told apart.
-- **Featured** — set to **Yes** to show only featured products.
-- **New** — set to **Yes** to show only products marked as new.
-
-Once every available filter has been added, the editor says so rather than
-offering an empty row. To drop a filter, use the bin beside it.
-
-<ImagePopup src="/images/appearance/product-carousel.png" alt="Product Carousel section fields" />
-
-### Category Carousel
-
-A scrollable strip of categories, so shoppers can jump straight into a
-department.
-
-**Filters:** Which categories appear, and in what order:
-
-- **Sort** — **Asc** or **Desc**.
-- **Limit** — how many categories the strip holds.
-- **Parent ID** — show the children of one or more chosen categories. Pick
-  **Root** to show your top-level departments.
-
-<ImagePopup src="/images/appearance/category-carousel.png" alt="Category Carousel section fields" />
-
-### Image Carousel
-
-The banner slideshow at the top of your storefront. Click **Add Slider** to add a
-slide at a time, each with:
-
-**Slider Image:** The image itself. A resolution of **1920 × 700** is
-recommended, and JPEG, JPG, PNG and WEBP files are accepted.
-
-**Image Title:** The heading shown over the slide.
-
-**Link:** Where a shopper who clicks the slide is taken.
-
-Slides play in the order they are listed, and you can drag them to change it.
-
-<ImagePopup src="/images/appearance/image-carousel.png" alt="Image Carousel section fields" />
-
-### Static Content
-
-A free-form block of your own markup, for an announcement strip or a promotional
-band between two carousels.
-
-**HTML:** The content itself. Use **Add Media** to upload an image and drop it
-into the markup.
-
-**CSS:** Styles for the block. They are added to the whole page, not just this
-block, so give your markup its own class and start every rule with it, for
-example `.home-offer h1 { ... }`, or the styles will change other parts of the
-storefront too.
-
-The HTML is cleaned before it is saved, so scripts, frames and forms are
-stripped — a block that relies on them will not behave as written.
-
-<ImagePopup src="/images/appearance/static-content.png" alt="Static Content section fields" />
-
-### Footer Links
-
-The link columns in your storefront footer. Click **Add Column** to add a
-column, then **Add Link** inside it, and give each link a **Title** — the
-wording a shopper reads — and a **URL**. Columns and the links inside them can
-be dragged into a different order. The default theme lays out as many columns as
-you add; a theme you install may limit the number.
-
-A channel shows **one footer links section**, so once a channel has one, the type
-is no longer offered when you create a section.
-
-### Services Content
-
-The service promises shown across the storefront — free delivery, easy returns,
-and similar. Click **Add Services** to add an entry, each with:
-
-**Service Icon:** The name of the icon shown beside the promise, typed as text,
-such as `icon-truck` for delivery or `icon-support` for help.
-
-**Title:** The promise itself, kept to a few words.
-
-**Description:** A single line of supporting detail.
-
-<ImagePopup src="/images/appearance/services-content.png" alt="Services Content section fields" />
-
-Because this section and the footer are drawn on every page rather than just the
-home page, publishing a change to either refreshes the whole storefront cache.
-
-### Types added by a theme
-
-The six types above are the ones every theme offers. A theme you install from
-the marketplace or have built for you can add types of its own, such as a
-testimonial slider or a brand strip. They appear in the same **+** list when
-that theme is being customized, with their own fields, and are edited and
-published exactly like the built-in types. If a type you expect is missing from
-the list, check that the theme it belongs to is the one you are customizing.
+The default theme offers six built-in types: **Image Carousel**, **Product Carousel**, **Category Carousel**, **Static Content**, **Services Content** and **Footer Links**. A theme you install can add types of its own, or offer only some of them. The fields of each type are described in [Section types](section-types.md).
 
 ## Upgrading from an earlier version
 
-If you used **Settings >> Themes** before, that screen has moved. Theme
-customizations are now sections, and they live under **Appearance**. Existing
-customizations are carried over automatically — you do not need to recreate them.
+If you used **Settings >> Themes** before, that screen has moved. Theme customizations are now sections, and they live under **Appearance**. Existing customizations are carried over, so you don't need to recreate them.

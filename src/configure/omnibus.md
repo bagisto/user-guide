@@ -1,6 +1,6 @@
 # Omnibus Price Disclosure
 
-The EU Omnibus Directive requires a store that announces a discount to show the lowest price it charged for that product in the 30 days before the discount. Bagisto can record product prices as they change and show that lowest price next to a discounted price on the storefront. This section is available in Bagisto 2.5.
+The EU Omnibus Directive requires a store that announces a price reduction to show the lowest price it charged for that product in the 30 days before the reduction. Bagisto can record product prices over time and show that lowest price with a discounted price on the product page.
 
 ## Turn on price disclosure
 
@@ -9,20 +9,24 @@ The EU Omnibus Directive requires a store that announces a discount to show the 
 3. In **Omnibus Price Disclosure**, switch **Enable Omnibus Disclosure** on.
 4. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/products-omnibus.png" alt="Omnibus Price Disclosure section of the Products screen" />
+<ImagePopup src="/images/configure/products-omnibus.png" alt="Omnibus Price Disclosure section of the Products screen with Enable Omnibus Disclosure switched on" />
 
 The setting is per channel, so turn it on for each channel that sells to consumers in the EU.
 
-## What the customer sees
+## What shoppers see
 
-When a product is sold below its regular price, through a special price, a catalog rule or a customer group price, the product page and listings show a line under the price:
+When a product is sold below its regular price, for example through a special price, a catalog rule or a customer group price, the product page shows a line under the price:
 
 **Lowest price 30 days prior to the discount:** followed by that price.
 
-The line only appears when there is a discount and when there are recorded prices to compare against.
+The line appears only when the product has a discount and prices have been recorded for it. The lowest price is taken from the prices recorded in the last 30 days. When a special price has a start date, prices recorded on or after the start date are left out.
 
 ## Where the prices come from
 
-Once the setting is on, the store records every product's price whenever it changes, checking every fifteen minutes, and keeps 35 days of history, so the 30-day comparison is always complete. Both the recording and the daily clean-up run on the server's scheduler, so if the line never appears on a store that has been enabled for more than a day, ask whoever manages the server to check that the scheduler is running.
+While the setting is on for a channel, the store records each product's price in every currency of that channel whenever the price changes. It checks every fifteen minutes, and also when a product is saved. Prices are kept for 35 days, so the 30-day comparison is always complete.
 
-A newly enabled store has no history yet. The first prices are recorded on the next scheduled run, and the lowest price shown grows more meaningful as the days accumulate.
+The recording and the daily clean-up run on the server's scheduler. If the line never appears on a channel that has been enabled for more than a day, ask whoever manages your server to check that the scheduler is running. A newly enabled channel has no history yet, and its first prices are recorded on the next scheduled run. See [Scheduled Tasks](../getting-started/scheduled-tasks.md).
+
+## Differences in Bagisto 2.4
+
+Bagisto 2.4 doesn't have Omnibus price disclosure.

@@ -1,187 +1,159 @@
 # EU Withdrawal
 
-The **EU Withdrawal** feature in Bagisto helps store owners comply with **Directive (EU) 2023/2673 (Article 11a CRD)**, the EU Consumer Rights Directive. It gives EU consumers an online way to exercise their statutory 14-day right to withdraw from a distance or off-premises contract.
+Consumers in the EU have the right to withdraw from an online purchase. EU Withdrawal gives them an online way to do it, as Directive (EU) 2023/2673 requires. Customers and guests send a withdrawal declaration from the storefront and receive a confirmation by email. You then record the outcome, refunded or declined, in the admin panel.
 
-## Key Features
+## Before you start
 
-- **Online Withdrawal Form** — A dedicated page for both logged-in customers and guests to submit a withdrawal declaration.
-- **Admin Dashboard** — A list of all withdrawals and a detail page with an evidence timeline.
-- **Durable Medium Confirmation** — A confirmation email sent immediately on submission, which serves as the legally required durable-medium record.
-- **Guest Withdrawal via Email Link** — Guests withdraw through a temporary signed link sent to their email address.
-- **Rate Limiting** — Guest lookups and submissions are throttled per IP address to prevent abuse.
-- **Append-Only Evidence** — A withdrawal record cannot be edited or deleted after it is created.
-- **One Withdrawal Per Order** — Each order can have at most one withdrawal.
+- Turn the feature on for each channel that sells to EU consumers, in [EU Withdrawals](../configure/eu-withdrawals.md). It's off by default. While it's off, the storefront button and link are hidden and the withdrawal forms can't be opened.
+- The emails are sent from the sender name and address in [Email Settings](../configure/email-settings.md).
+- The email with a guest's withdrawal link is sent as a background job. If guests don't receive it, ask whoever manages your server to check the queue. See [Scheduled Tasks](../getting-started/scheduled-tasks.md).
 
-## Admin Configuration
+## Which orders can be withdrawn
 
-### Enable EU Withdrawal
+- A withdrawal covers the whole order. Customers can't choose products.
+- Each order can have one withdrawal. It can't be submitted again, even after you decline it.
+- Bagisto accepts a withdrawal for any order on a channel where the feature is on. It doesn't check how old the order is, its status or whether it was delivered. Check that the customer is within the withdrawal period before you refund, and decline the withdrawal if not.
 
-The feature is turned on for each channel under **Configure >> Sales >> EU Withdrawals**. See [EU Withdrawals configuration](../configure/eu-withdrawals.md).
+## Customers: withdraw from an order
 
-> **Important:** Only enable the feature on channels selling to EU consumers. When it is disabled for a channel, every withdrawal page, including the public guest lookup, returns a "not found" page, so the feature is invisible to shoppers.
+1. Sign in to the storefront account and open **Orders**.
+2. Open the order.
+3. Click **Withdraw from Contract**. The **Confirm Withdrawal from Contract** page opens.
+4. Check the order under **Order**: its number, date, **Total** and **Items** (the total quantity).
+5. Enter a **Reason**, if the customer wants to give one. It's optional, up to 5,000 characters.
+6. Click **Submit withdrawal**.
 
-## Admin — Managing Withdrawals
+The notice **This is a legally binding declaration** explains that the withdrawal takes effect as soon as it's submitted. **Cancel and go back** returns to the order without submitting.
 
-### Viewing All Withdrawals
+Once a withdrawal exists, the button on the order reads **View your withdrawal** and opens the receipt.
 
-Go to **Sales >> EU Withdrawals**. The grid shows:
+## Guests: withdraw from an order
 
-| Column                   | Description                                                                 |
-| ------------------------ | --------------------------------------------------------------------------- |
-| **Received At**          | Date and time the withdrawal was submitted (sortable, filterable)           |
-| **Order ID**             | The order number (searchable, linked to the order)                          |
-| **Customer Email**       | Email used at checkout (searchable)                                         |
-| **Status**               | Colour-coded: **Received** (yellow), **Refunded** (green), **Declined** (red) |
-| **Channel**              | The store channel (filterable)                                              |
-| **Confirmation Sent At** | When the durable-medium confirmation email was sent                         |
-| **Reference**            | The public reference number of the withdrawal (searchable)                  |
+1. On the storefront, open the profile menu in the header.
+2. Click **Withdraw from a Contract**. The **Withdraw from Your Contract** page opens.
+3. Enter the **Order number** and the **Email address** used at checkout.
+4. Click **Send me the withdrawal link**.
+5. Open the email **Your withdrawal link** and click **Open the withdrawal form**.
+6. Enter a **Reason**, if wanted, up to 5,000 characters.
+7. Click **Submit withdrawal**.
 
-<ImagePopup src="/images/orders/eu-grid.png" alt="EU Withdrawal grid" />
+- The page shows the same notice whether or not an order matches, so it can't be used to find out order numbers.
+- Only guest orders placed on the same channel match. Customers with an account sign in and withdraw from their order page.
+- The link works for 24 hours. Once it expires, it opens a **403 Forbidden** page; request a new link. The link to the receipt also works for 24 hours. If the withdrawal was already submitted, a new link opens its receipt.
+- On the guest form, **Cancel and go back** returns to the home page.
+- The **Withdraw from a Contract** link is in the desktop header for visitors who aren't signed in. On phones the header has no link; guests can open **/withdraw** on your store's address, so consider linking to it from a CMS page.
+- The page can be used only a few times a minute from the same connection, to prevent abuse. If a guest tries too often, an error page shows; they can wait a minute and try again.
 
-### Viewing Withdrawal Details
+## The receipt
 
-Click **View** on any record to open the detail page. It has two columns.
+After submitting, the customer sees the receipt. Its heading follows the status: **Your withdrawal has been received**, **Your refund has been issued** or **Your withdrawal was declined**.
 
-<ImagePopup src="/images/orders/eu-view.png" alt="EU Withdrawal detail view" />
+<ImagePopup src="/images/orders/eu-receipt.png" alt="Withdrawal receipt with the reference, order and next steps" />
 
-**Evidence card:**
+The receipt shows:
 
-- **Received At** — The legally effective timestamp (UTC).
-- **Reference** — The public unique identifier, with a **Copy reference** button.
-- **Order** — Linked to the order detail page.
-- **Customer Email** — The email used at checkout.
-- **Channel** — The store channel.
-- **Locale** — The language used when submitting.
-- **Customer's reason** — The customer's reason text, if provided.
+- **Received at**, in UTC;
+- **Reference**, with a button to copy it;
+- **Order**, which links to the order for signed-in customers;
+- **Email**, **Status** and **Reason**;
+- **What happens next**, which lists the declaration, the confirmation email and the refund or decline, with your reason when you decline.
 
-**Timeline card:**
+**Print** prints the receipt. The customer can save or print it as their record.
 
-1. **Declaration Received** — Always marked as done, with the timestamp.
-2. **Initial Confirmation Email** — Shows the sent timestamp (green), pending (grey), or a warning with the error message (red).
-3. **Resolution** — Shows **Withdrawal Declined** (with the reason and the admin who declined it), **Refund Issued** (with the note and the admin who recorded it), or that the withdrawal is awaiting your decision.
-4. **Final Confirmation Email** — Shown only once the withdrawal has been refunded or declined.
+## The confirmation email
 
-### Admin Actions
+When a withdrawal is submitted, the customer is emailed straight away, in the language they used on the storefront. The subject is **Confirmation of your withdrawal — Order** and the order number. The email lists the reference, the time it was received in UTC, the order and the email, and the reason when one was given. This email is the confirmation on a durable medium that the directive requires.
 
-Three actions are available on the withdrawal detail page. Each one is controlled by an ACL permission, so a user only sees the actions their role allows.
+You aren't emailed about new withdrawals. Check **Sales >> EU Withdrawals** regularly.
 
-<ImagePopup src="/images/orders/eu-actions.png" alt="EU Withdrawal Actions" />
+## Manage withdrawals
 
-> **Note:** The refund itself is processed through the usual order, refund or RMA tools. These actions only record the outcome on the withdrawal evidence.
+### The EU Withdrawals screen
 
-#### Resending the confirmation email
+Go to **Sales >> EU Withdrawals**. The newest withdrawals are listed first.
 
-Use this when the initial email failed to send, or the customer reports not receiving it.
+<ImagePopup src="/images/orders/eu-grid.png" alt="EU Withdrawals screen listing withdrawals with their status" />
 
-1. On the withdrawal detail page, click **Resend Confirmation Email**.
-2. Confirm the action.
+| Column | What it shows |
+|---|---|
+| **Received At** | When the customer submitted the withdrawal. |
+| **Order** | The order number, which opens the order. |
+| **Customer Email** | The email used at checkout. |
+| **Status** | **Received** in yellow, **Refunded** in green or **Declined** in red. |
+| **Channel** | The code of the channel the order was placed on. |
+| **Confirmation Sent** | When the first confirmation email was sent. Empty if it hasn't been sent. |
+| **Reference** | The withdrawal's reference, the one the customer sees. |
 
-If the withdrawal has already been refunded or declined, the email reflects that final status. If sending fails, the error is stored on the timeline.
+- **Search**: find withdrawals by order, customer email or reference.
+- **Filter**: narrow the list by any column, with date ranges for **Received At** and **Confirmation Sent**.
+- **Export**: downloads the withdrawals as a **CSV**, **XLS** or **XLSX** file.
+- **View**: opens the withdrawal.
 
-#### Marking a withdrawal as refunded
+### The withdrawal page
 
-1. Process the refund through the order as usual.
-2. On the withdrawal detail page, click **Mark Refunded**.
-3. Optionally enter a note for the evidence record.
-4. Confirm the action. The status changes to **Refunded**, and the date and the admin user who recorded it are stored.
+The title shows **Withdrawal** and its ID, with the status and **Guest** for a guest order. **Back to list** returns to the screen.
 
-#### Declining a withdrawal
+<ImagePopup src="/images/orders/eu-view.png" alt="Withdrawal page with the evidence, timeline and actions" />
 
-Decline a withdrawal when you contest the customer's entitlement to withdraw.
+- **Evidence** holds what was recorded when the customer submitted, and can't be changed: **Received At**, **Reference**, **Order**, **Customer Email**, **Channel**, **Locale** and, if the customer gave one, **Customer’s reason**. **Reference** has a button to copy it. Times on the **EU Withdrawals** screen and this page use your store's time zone (**Timezone** in [About](../configure/about.md)); the storefront and emails use UTC.
+- **Timeline** shows **Declaration Received**, then **Initial Confirmation Email** (sent, failed with the error, or not sent yet), then the outcome (**Withdrawal Declined** with your reason, **Refund Issued** with your note, or **Resolution Pending**), and, once there's an outcome, **Final Confirmation Email**.
+- **Actions** holds the buttons below. Each one needs its permission.
 
-1. On the withdrawal detail page, click **Decline**.
-2. Enter the **Reason for declining**. This is required and may be up to 500 characters.
-3. Confirm the action. The status changes to **Declined**, and the date and the admin user who declined it are stored. Any earlier refund record on the withdrawal is cleared.
+Recording an outcome doesn't refund the customer or change the order. Refund the order with [Create Refund](create-refunds.md) or through a return request in [RMA](rma.md), then record it here.
 
-> **Important:** Because an order can only have one withdrawal and a declined withdrawal cannot be resubmitted, use this action with care.
+<ImagePopup src="/images/orders/eu-actions.png" alt="Actions card with the refund reference, decline reason and email buttons" />
 
-## Customer — Withdrawing from a Contract (Logged In)
+### Record a refund
 
-### Submitting the declaration from the account
+1. Refund the order.
+2. Go to **Sales >> EU Withdrawals**.
+3. Open the withdrawal.
+4. In **Refund reference (optional)**, enter a note such as the refund number. Up to 500 characters.
+5. Click **Mark as Refunded**.
+6. Click **Agree**.
 
-1. Log in to the customer account and open **Orders**.
+The status becomes **Refunded**, and the time, your name and the reference are recorded. The customer's receipt shows the new status straight away. No email is sent. To tell the customer, [send the final confirmation email](#tell-the-customer-the-outcome). If you click **Mark as Refunded** again, the time, your name and the reference are replaced, so enter the reference again.
 
-2. Click **View** on the order you wish to withdraw from.
+### Decline a withdrawal
 
-3. On the order detail page, click **Withdraw from Contract**. If a withdrawal already exists for this order, the button reads **View your withdrawal** and opens the receipt instead.
+Decline a withdrawal when you contest the customer's right to withdraw.
 
-4. Review the withdrawal form.
+1. Go to **Sales >> EU Withdrawals**.
+2. Open the withdrawal.
+3. In **Reason for declining**, explain why. It's required, up to 500 characters, and the customer can see it.
+4. Click **Decline Withdrawal**.
+5. Click **Agree**.
 
-   <ImagePopup src="/images/orders/eu-form.png" alt="EU Withdrawal Form" />
+The status becomes **Declined**, and the time, reason and your name are recorded. The customer's receipt shows the new status straight away. No email is sent.
 
-   - **This is a legally binding declaration** — An amber notice explaining that the declaration takes effect the moment the form is submitted.
-   - **Order** — The order number, date, total and item count.
-   - **Reason (optional)** — A text box in which the customer may explain the reason for withdrawing.
+### Tell the customer the outcome
 
-5. Click **Submit withdrawal**.
+1. Go to **Sales >> EU Withdrawals**.
+2. Open the withdrawal.
+3. Click **Send Final Confirmation Email**.
+4. Click **Agree**.
 
-### The receipt page
+The customer receives the confirmation email again, titled **Refund issued** or **Withdrawal declined**. While a withdrawal is still **Received**, the button reads **Resend Confirmation Email** and sends the first confirmation again, for example when it failed or didn't arrive. If sending fails, you see **Could not send the confirmation email. See the timeline for details.** Check [Email Settings](../configure/email-settings.md) and try again.
 
-After submitting, the customer is redirected to the **Withdrawal Receipt** page, which shows:
-
-<ImagePopup src="/images/orders/eu-receipt.png" alt="EU Withdrawal Receipt" />
-
-- **Status** — **Received** in yellow, or **Refunded** or **Declined** once the merchant has acted.
-- **Received at** — The legally effective timestamp.
-- **Reference** — With a **Copy reference** button.
-- **Order** — With a link back to the order.
-- **Email** — The email on file.
-- **Reason** — The reason text, if provided.
-- **What happens next** — A timeline: declaration received, confirmation email sent, refund issued within 14 days.
-- A notice that the page and the confirmation email both serve as confirmation on a durable medium.
-- **Print** — Opens a print-friendly view.
-
-## Guest Withdrawal
-
-Guests can exercise their right of withdrawal without an account, through a public lookup.
-
-### Requesting the withdrawal link
-
-1. On the storefront, open the profile menu in the header and click **Withdraw from a Contract**.
-
-2. Enter the **Order number** and the **Email address** used at checkout.
-
-   <ImagePopup src="/images/orders/eu-guest.png" alt="EU Withdrawal guest lookup form" />
-
-3. Click **Send me the withdrawal link**.
-
-The same notice is shown whether or not a matching order exists, so nobody can use the form to discover order numbers. If a matching guest order is found, an email with a temporary signed link, valid for **24 hours**, is queued for sending. If no order matches, no email is sent.
-
-### Completing the withdrawal
-
-1. Open the email and click the withdrawal link.
-
-2. Review the withdrawal form and optionally enter a **Reason**.
-
-3. Click **Submit withdrawal**.
-
-The confirmation email is sent immediately, and the guest is redirected to the receipt page described above.
-
-## Legal Compliance
-
-### Durable Medium Requirement (Article 11a)
-
-The confirmation email sent on submission is the **durable medium** required by Article 11a(3) of Directive 2011/83/EU.
-
-- **Immediate sending** — The email is sent within the same request, not queued, so a queue failure cannot leave a withdrawal without its legally required confirmation.
-- **Confirmation timestamp** — The time the confirmation was sent is stored on the withdrawal and shown as **Confirmation Sent At**.
-- **Final confirmation** — When an admin refunds or declines the withdrawal, the time of that final confirmation email is stored separately, so the original delivery evidence is preserved.
-- **Email footer** — Each confirmation carries the notice that it is the confirmation on a durable medium required by Article 11a of Directive 2011/83/EU.
+::: warning Record the outcome once
+Both **Mark as Refunded** and **Decline Withdrawal** stay available after you record an outcome, and recording the other one replaces the first. If you change the outcome, send the final confirmation email again so the customer gets the new outcome.
+:::
 
 ## Statuses
 
-| Status       | Description                                                       | Final |
-| ------------ | ----------------------------------------------------------------- | ----- |
-| **Received** | The withdrawal has been submitted and is awaiting the admin's decision | No    |
-| **Refunded** | The admin has recorded that the refund was issued                 | Yes   |
-| **Declined** | The merchant has contested the entitlement to withdraw            | Yes   |
+| Status | What it means |
+|---|---|
+| **Received** | The customer submitted the withdrawal, and it's waiting for your decision. |
+| **Refunded** | You recorded that the order was refunded. |
+| **Declined** | You contested the withdrawal and gave a reason. |
 
-## Email Notifications
+The withdrawal's status doesn't change the order's status.
 
-| Email                        | Sent when                                        | Delivery                | Content                                                                |
-| ---------------------------- | ------------------------------------------------ | ----------------------- | ---------------------------------------------------------------------- |
-| **Guest withdrawal link**    | A guest lookup matches an order                  | Queued                  | A temporary signed link valid for 24 hours                             |
-| **Withdrawal confirmation**  | A withdrawal is submitted                        | Immediate, not queued   | Reference, received time, order, email, status and durable-medium notice |
-| **Final confirmation**       | The admin refunds or declines, or resends the email | Immediate            | The same details, updated for the final status                         |
+## Permissions
 
-The **Withdrawal confirmation** email is the legal durable-medium record. Its subject names the order, for example "Confirmation of your withdrawal -- Order 123", and changes wording once the withdrawal has been refunded or declined.
+A role needs **EU Withdrawals** under **Sales** to see the screen, with:
+
+- **View** to open a withdrawal;
+- **Decline** for **Decline Withdrawal**;
+- **Mark Refunded** for **Mark as Refunded**;
+- **Resend Confirmation** for **Resend Confirmation Email** and **Send Final Confirmation Email**.

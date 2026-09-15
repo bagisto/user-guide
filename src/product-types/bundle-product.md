@@ -1,101 +1,63 @@
 # Bundle Product
 
-Today's document will guide you on how to create bundle products in Bagisto. Bundle products and Grouped products are similar, where a bundle product includes customizable items that the store owner can configure to create a unique product in [Bagisto](https://bagisto.com/en/).
+A bundle product is a kit that shoppers put together from options, such as an outfit where
+they choose the jeans, the jacket, the T-shirt and the shoes. Each option offers a few
+simple products, and the bundle's price is the total of the products the shopper chooses.
 
-Each item in a bundle product can be based on one of the following product types:
+This page covers what's specific to bundle products. For the sections every product shares,
+see [Products](./products.md).
 
-- [Simple Product](https://bagisto.com/en/how-to-create-simple-product-in-bagisto/)
-- [Configurable Products](https://bagisto.com/en/how-to-create-configurable-product-in-bagisto/)
+## Create a bundle product
 
-### Creating a bundle product
+Create the product as described in [Create a product](./products.md#create-a-product),
+choosing **Bundle** as the **Type**.
 
-1. Go to **Catalog >> Products**.
-2. Click **Create Product**.
-3. Select **Bundle** under **Type**.
-4. Select the **Family**.
-5. Enter the **SKU** (Stock Keeping Unit) for the product (unique to every product).
-6. Click **Save Product**. You are redirected to the edit product page with several new settings.
+A bundle product has no **Price**, **Shipping** or **Inventories** section. Prices, weights
+and stock come from the products in its options.
 
-<ImagePopup src="/images/bundle-product/bundle.png" alt="Bundle Product" />
+## Add an option
 
-### General Settings
+The **Bundle Items** section holds the bundle's options, such as **Select Jeans**.
 
-- **Name:** Enter the name of the product.
-- **URL Key:** This will be the end of the URL, e.g., products/assembled-core-i3-4-gb-ddr3500-gbwindows-10-pro151-inch-screen-black.
-- **Tax Category:** Select the Tax Category from the dropdown list.
+1. In **Bundle Items**, click **Add Option**. The **Option** dialog opens.
+2. Enter the **Title** shoppers see for the option.
+3. Choose the **Type**, which decides how shoppers choose:
+   - **Select**: a drop-down list, one product.
+   - **Radio**: radio buttons, one product.
+   - **Checkbox**: tick boxes, any number of products.
+   - **Multiselect**: a list where shoppers can pick several products.
+4. Choose whether the option **Is Required**. When it's **Yes**, shoppers must choose from
+   the option.
+5. Click **Save**.
 
-<ImagePopup src="/images/bundle-product/edit-product.png" alt="Edit Product" />
+<ImagePopup src="/images/bundle-product/bundle-option.png" alt="Option dialog with Title, Type and Is Required" />
 
-#### New
+To change an option, click **Edit** on it. **Delete** removes the option and its products.
 
-- Enable the toggle button to feature the product as a new product, shown under the New Products section.
+## Add products to an option
 
-#### Featured
+1. Click **Add Product** on the option. The **Select Products** panel opens.
+2. Search for the products by name. Only simple products without customizable options are
+   listed.
+3. Tick the products.
+4. Click **Add Selected Product**.
+5. Enter the **Default Qty** for each product.
+6. Mark the product chosen by default: the radio button for **Select** and **Radio**
+   options, or the tick boxes for **Checkbox** and **Multiselect** options.
+7. Click **Save Product**.
 
-- Enable the toggle button to show the product under the Featured Products section.
+<ImagePopup src="/images/bundle-product/bundle-items.png" alt="Bundle Items section with the Select Jeans option and its products" />
 
-#### Visible Individually
+Drag a product by its handle to reorder it, or click **Delete** on its row to remove it.
 
-- Enable the toggle button to make the product visible on the frontend.
+## What shoppers see
 
-#### Status
+The product page lists each option with its products and their prices, with the default
+products already chosen, and a **Total Amount** that updates as shoppers choose.
 
-- Enable the toggle button to enable the product on your eCommerce store.
+- For **Select** and **Radio** options, shoppers can change the quantity of the product
+  they choose.
+- For **Checkbox** and **Multiselect** options, each product's **Default Qty** is used.
+- A **Select**, **Radio** or **Multiselect** option that isn't required also offers **None**.
 
-#### Guest Checkout
-
-- Enable the toggle button to allow guest customers to order the product.
-
-<ImagePopup src="/images/bundle-product/toggle-buttons.png" alt="Toggle Buttons" />
-
-### Description
-
-Fill in the following fields under description:
-
-- **Short Description:** Enter a short description of the product feature.
-- **Description:** Mention your product in detail.
-
-<ImagePopup src="/images/bundle-product/description.png" alt="Product Description" />
-
-### Meta Description
-
-Fill in the following fields under meta description for improved searchability on search engines:
-
-- **Meta Title:** Provide the main title of the product.
-- **Meta Keywords:** Provide meta keywords for specific search engine optimization.
-- **Meta Description:** Enter a description for better search engine listings.
-
-<ImagePopup src="/images/bundle-product/meta-description.png" alt="Meta Description" />
-
-### Images
-
-To add product images, click on **Add Image**. You can add multiple images for your product.
-
-<ImagePopup src="/images/bundle-product/image.png" alt="Product Images" />
-
-### Bundle Items
-
-Click **Add Option** and fill in the option fields:
-
-- **Title:** The name of the option shown to the customer.
-- **Type:** How the customer picks from the option — **Select**, **Radio**, **Checkbox** or **Multiselect**.
-- **Is Required:** Set **Yes** if the customer must choose from this option, or **No** if it is optional.
-
-<ImagePopup src="/images/bundle-product/options.png" alt="Bundle Options" />
-
-To add products to the option:
-
-1. Click **Add Product** on the option. The **Select Products** modal opens.
-2. Search for the product and tick it.
-3. Click **Add Selected Product**.
-4. Enter the **Default Qty** for each product in the option.
-
-At the front end, the customer chooses the products of each option and picks the overall quantity of the bundle. For a **Select** or **Radio** option, the customer can also change the quantity of the chosen product; for **Checkbox** and **Multiselect** options, the **Default Qty** you set is used.
-
-<ImagePopup src="/images/bundle-product/bundle-options.png" alt="Bundle Product Options" />
-
-### Product At Front End
-
-The bundle product will be visible at the front end.
-
-<ImagePopup src="/images/bundle-product/output.png" alt="Front End Output" />
+<ImagePopup src="/images/bundle-product/output.png" alt="Bundle product page with the Select Jeans and Select Jacket options" />

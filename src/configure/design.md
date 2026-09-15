@@ -1,28 +1,36 @@
 # Design
 
-The **Design** screen holds the logo and favicon of the admin panel, and how the storefront's header menu shows your categories.
+The **Design** screen holds the logo and favicon of the admin panel, and how the storefront header shows your categories. Both sections apply to the whole store.
 
-Go to **Configure >> General >> Design**.
+## Admin logo
 
-## Admin logo and favicon
+The **Logo Image** replaces the Bagisto logo in the admin panel header, on the admin sign-in and password pages, and in the emails sent to the admin and to inventory sources. The **Favicon** is the small icon browsers show in the admin panel's tab.
 
-The **Logo Image** replaces the Bagisto logo in the admin panel header, on the admin sign-in and password pages, and in emails sent to admins. The **Favicon** is the small icon browsers show in the tab of the admin panel.
-
-1. In **Admin Logo**, click **Add Image** under **Logo Image** and choose your logo.
-2. Click **Add Image** under **Favicon** and choose the icon.
-3. Click **Save Configuration**.
+1. Go to **Configure >> General >> Design**.
+2. In **Admin Logo**, under **Logo Image**, click **Add Image**.
+3. Choose your logo file.
+4. Under **Favicon**, click **Add Image**.
+5. Choose the icon file.
+6. Click **Save Configuration**.
 
 <ImagePopup src="/images/configure/design-settings.png" alt="Design screen with the Admin Logo and Menu Category View sections" />
 
-The logo can be a BMP, JPEG, JPG, PNG, WEBP or SVG file, and the favicon can also be an ICO file. The storefront's logo and favicon are set for each channel under [Channels](../settings/channels.md).
+The file types each field accepts are listed under its **Add Image** button: BMP, JPEG, JPG, PNG, WEBP or SVG for the logo, and ICO as well for the favicon. To change or remove an image later, point to it and use its **Replace** or **Delete** icon; the change applies when you save. The storefront's own logo and favicon are set per channel under [Channels](../settings/channels.md).
 
 ## Menu category view
 
-**Menu Category View** decides how the storefront header shows your categories:
+**Menu Category View** decides how the storefront header shows your categories on desktop screens:
 
-- **Default Menu** shows the categories in the header menu. This is the default.
-- **Sidebar Menu** shows all categories, including nested ones, in a sidebar menu, which suits a store with many categories.
+- **Default Menu** lists every top-level category across the header. Pointing at a category opens a panel with its subcategories.
+- **Sidebar Menu** adds an **All** button that opens a **Categories** side panel with every category and its subcategories, and lists only the first four top-level categories across the header. It suits a store with many categories.
 
-1. In **Menu Category View**, choose **Default Menu** or **Sidebar Menu**.
-2. To see what each style looks like, click **Preview Default Menu** or **Preview Sidebar Menu** below the field.
-3. Click **Save Configuration**.
+If the setting has never been saved, **Default Menu** is used, but a new installation is set to **Sidebar Menu**. The mobile header keeps its own menu whichever you choose.
+
+1. Go to **Configure >> General >> Design**.
+2. In **Menu Category View**, choose **Default Menu** or **Sidebar Menu**.
+3. To see what a style looks like, click **Preview Default Menu** or **Preview Sidebar Menu** below the field.
+4. Click **Save Configuration**.
+
+<ImagePopup src="/images/configure/design-menu-preview.png" alt="Sidebar Menu preview with the Categories side panel open over the storefront" />
+
+Which categories the menu lists, and in what order, is set by each channel's root category and the categories' positions. See [Categories](../category/create-category.md#root-categories-and-the-storefront-menu).

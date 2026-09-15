@@ -1,64 +1,83 @@
-# Generative AI Configuration
+# Generative AI (Magic AI)
 
-Bagisto's generative AI features are branded **Magic AI** in the admin, and they are all configured in one place: **Configure >> Magic AI**. The group has four screens: **General**, **Providers**, **Admin Features** and **Storefront Features**.
+Generative AI helps you write content and create images in the admin panel, and helps shoppers search with a photo, read reviews in their own language and get a thank-you message after an order. In the admin panel these features are called **Magic AI**, and they are all set up in one place: **Configure >> Magic AI**. The group has four screens: **General**, **Providers**, **Admin Features** and **Storefront Features**.
 
-This page covers the configuration only. What each feature does, and how to use it, is described in the [Generative AI](../generative-ai/introduction.md) section.
+This page covers the setup only. What each feature does, and how to use it, is described in the [Generative AI](../generative-ai/introduction.md) section.
 
-<ImagePopup src="/images/configure/magic.png" alt="Magic AI configuration" />
+<ImagePopup src="/images/configure/magic-ai-screens.png" alt="The Magic AI group on the Configure page with its four screens" />
 
-## Turn generative AI on
+## Turn on Generative AI (Magic AI)
+
+**Enabled** is the master switch for Magic AI. Switch it on before you turn on any feature.
 
 1. Go to **Configure >> Magic AI >> General**.
-2. In the **Settings** section, switch **Enabled** on. This is the master switch: the admin features, AI image search and the checkout message do not run until it is on. Review translation is governed by its own switch alone.
+2. In **Settings**, switch **Enabled** on.
 3. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/general-setting.png" alt="Magic AI General settings" />
+<ImagePopup src="/images/configure/magic-ai-general.png" alt="Settings section of the Magic AI General screen with Enabled switched on" />
+
+The switch applies to the whole store, not to one channel.
 
 ## Connect a provider
 
-Bagisto ships with eight providers: **OpenAI, Anthropic, Gemini, Groq, xAI, DeepSeek, Mistral** and **Ollama**. You only need to connect the ones you plan to use.
+Magic AI sends each request to the provider of the model it uses. Bagisto supports eight providers, and you only need to connect the ones whose models you plan to use.
 
-1. Create an API key in your account on the provider's website.
-2. Go to **Configure >> Magic AI >> Providers**.
-3. Paste the key into that provider's **API Key** field.
-4. For **Ollama**, which runs models on your own server, enter the **Base URL** of that server as well, for example `http://localhost:11434`.
-5. Click **Save Configuration**.
+| Provider | What to enter |
+|---|---|
+| **Anthropic**, **DeepSeek**, **Gemini**, **Groq**, **Mistral**, **OpenAI** and **xAI** | The **API Key** you create in your account on the provider's website. |
+| **Ollama** | The **Base URL** of the server that runs your Ollama models, `http://localhost:11434` by default. Enter an **API Key** only if that server asks for one. |
 
-Keys are stored as passwords and are not shown again once saved.
+Before you start, create an API key in your account on the provider's website.
 
-<ImagePopup src="/images/configure/providers-magicai.png" alt="Magic AI Providers section" />
+1. Go to **Configure >> Magic AI >> Providers**.
+2. In the provider's section, enter the **API Key**.
+3. For **Ollama**, enter the **Base URL** of your Ollama server.
+4. Click **Save Configuration**.
+
+<ImagePopup src="/images/configure/magic-ai-providers.png" alt="Providers screen with a section for each of the eight providers" />
+
+Keys are masked on the screen. Provider settings apply to the whole store.
 
 ## Enable the admin features
 
-Two features help you while you work in the admin: **Text Generation**, described under [Generate text content](../generative-ai/generate-content.md), and **Image Generation**, described under [Generate product images](../generative-ai/generate-images.md).
+The admin features help you write and illustrate content while you work in the admin panel. Nothing they produce is added until you click **Apply**.
+
+| Section | What it does |
+|---|---|
+| **Text Generation** | Makes the **Magic AI** button in the toolbar of the rich-text editors clickable, in editors such as product and category descriptions and CMS pages. While the feature is off, the button is greyed out. You describe what you need, choose a model and generate the text. See [Generate text content](../generative-ai/generate-content.md). |
+| **Image Generation** | Adds a **Magic AI** tile beside **Add Image** in the image fields of the admin panel, such as product and category images. You describe the image, choose a model and generate it. See [Generate product images](../generative-ai/generate-images.md). |
 
 1. Go to **Configure >> Magic AI >> Admin Features**.
-2. In the **Text Generation** section, switch **Enabled** on.
-3. In **Providers**, pick the providers whose models admins may use for text. Only providers with a saved key are useful here.
-4. Repeat the two steps in the **Image Generation** section. Not every provider offers image models.
-5. Click **Save Configuration**.
+2. In **Text Generation**, switch **Enabled** on.
+3. In **Providers**, choose the providers whose text models admins can pick from.
+4. In **Image Generation**, switch **Enabled** on.
+5. In **Providers**, choose the providers whose image models admins can pick from: **Gemini**, **OpenAI** or **xAI**.
+6. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/admin-features-magicai.png" alt="Magic AI Admin Features section" />
+<ImagePopup src="/images/configure/magic-ai-admin-features.png" alt="Admin Features screen with Text Generation and Image Generation switched on and providers chosen" />
+
+The model list in each dialog shows only the models of the providers you choose here, so choose at least one provider whose key you have saved. The admin features apply to the whole store.
+
+Roles don't limit these features. While they're on, every admin user who can open a rich-text editor or an image field can use the **Magic AI** button and tile, and each request is charged to your provider account.
 
 ## Enable the storefront features
 
-Three features run on the storefront: **AI Image Search**, **Review Translation** and **Personalized Checkout Message**. Each is set **per channel**; when your store has more than one channel, choose the channel at the top of the page first.
+The storefront features respond to what a shopper does: searching with a photo, reading a review or placing an order. Each is set per channel.
+
+| Section | What it does |
+|---|---|
+| **AI Image Search** | When a shopper searches with a photo, a model identifies the product in it, and the store searches the catalog for the first keyword the model suggests. The camera icon in the search bar comes from **Image Search Option** under [Product Settings](./configurable-choices.md), which must also be on. Without AI image search, photo search still works, using basic image recognition in the shopper's browser. See [AI image search](../generative-ai/image-search.md). |
+| **Review Translation** | Adds a **Translate** button to each review on the product page. It translates the review into the language the shopper is browsing in. See [Review translation](../generative-ai/review-translation.md). |
+| **Personalized Checkout Message** | Shows a thank-you message written for each order on the order confirmation page, based on the products ordered, the customer's name and the store's name. If the model can't be reached, the page shows its standard thank-you text instead. See [Personalized checkout message](../generative-ai/checkout-message.md). |
 
 1. Go to **Configure >> Magic AI >> Storefront Features**.
-2. In the **AI Image Search**, **Review Translation** and **Personalized Checkout Message** sections, switch **Enabled** on for each feature you want.
-3. Choose the **Model** each feature runs on. Only models of providers with a saved key work.
-4. Click **Save Configuration**.
+2. If your store has more than one channel, choose the channel at the top of the screen.
+3. In the section of each feature you want, switch **Enabled** on.
+4. Choose the **Model** the feature uses.
+5. Click **Save Configuration**.
 
-<ImagePopup src="/images/configure/storefront-features-magicai.png" alt="Magic AI Storefront Features section" />
+<ImagePopup src="/images/configure/magic-ai-storefront-features.png" alt="Storefront Features screen with AI Image Search, Review Translation and Personalized Checkout Message switched on and a model chosen" />
 
-AI image search also needs the storefront's image search switched on under **Configure >> Catalog >> Products**; see [AI image search](../generative-ai/image-search.md).
+Choose a model from a provider whose key you have saved. Until a **Model** is saved, the feature uses a default OpenAI model, which needs an OpenAI key.
 
-## Where each setting takes effect
-
-| Setting | What it turns on | Read more |
-|---|---|---|
-| **Admin Features >> Text Generation** | The **Magic AI** button in every rich-text editor in the admin | [Generate text content](../generative-ai/generate-content.md) |
-| **Admin Features >> Image Generation** | The **Magic AI** button beside **Add Image** in the image uploader | [Generate product images](../generative-ai/generate-images.md) |
-| **Storefront Features >> AI Image Search** | AI analysis of the photo a shopper searches with | [AI image search](../generative-ai/image-search.md) |
-| **Storefront Features >> Review Translation** | The **Translate** link under each product review | [Review translation](../generative-ai/review-translation.md) |
-| **Storefront Features >> Personalized Checkout Message** | The message written for each order on the confirmation page | [Personalized checkout message](../generative-ai/checkout-message.md) |
+**AI Image Search** and **Personalized Checkout Message** work only while **Enabled** is also on under **General**. To stop review translation, switch **Review Translation** off: switching off **Enabled** under **General** doesn't hide the **Translate** button.

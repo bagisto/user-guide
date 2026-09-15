@@ -1,86 +1,44 @@
 # Grouped Product
 
-This document guides you on creating a Grouped Product in Bagisto. A grouped product is a collection of simple products that can be combined in Bagisto. This versatile product type allows you to offer variations of a single product or a group of products as a coordinated set. Each product in a grouped product can be purchased separately or all together as part of the group.
+A grouped product shows several simple products together on one page, such as a home office
+set with a desk, a chair and a lamp. Shoppers set a quantity for each product, and each
+product is added to the cart as its own item, at its own price.
 
-### Creating a grouped product
+This page covers what's specific to grouped products. For the sections every product
+shares, see [Products](./products.md).
 
-1. Go to **Catalog >> Products**.
-2. Click **Create Product**.
-3. Select **Grouped** under **Type**.
-4. Select the **Family**.
-5. Enter the **SKU** (Stock Keeping Unit) of the product, unique to every product.
-6. Click **Save Product**. You are redirected to the edit product page with several new settings, as shown in the images below.
+## Create a grouped product
 
-   <ImagePopup src="/images/grouped-product/grouped.png" alt="Grouped Product" />
+Create the product as described in [Create a product](./products.md#create-a-product),
+choosing **Grouped** as the **Type**.
 
-### General Settings
+A grouped product has no **Price**, **Shipping** or **Inventories** section. Prices,
+weights and stock come from the products in the group.
 
-- **Name:** Enter the name of the product.
-- **URL Key:** This will be the end of the URL, e.g., /products/set-of-men-casual-wear (set-of-men-casual-wear is a URL key).
-- **Tax Category:** Select the Tax Category from the dropdown list.
+## Add products to the group
 
-<ImagePopup src="/images/grouped-product/edit-product.png" alt="Edit Product" />
+The **Group Products** section lists the products in the group.
 
-#### New
+1. In **Group Products**, click **Add Product**. The **Select Products** panel opens.
+2. Search for the products by name. Only simple products without customizable options are
+   listed.
+3. Tick the products.
+4. Click **Add Selected Product**. The products appear in the section.
+5. Enter the **Default Qty** for each product: the quantity already filled in for shoppers.
+   It must be at least 1.
 
-- Enable the toggle button to feature the product as a new product, shown under the New Products section.
+   <ImagePopup src="/images/grouped-product/group-products.png" alt="Group Products section with three products and their Default Qty" />
 
-#### Featured
+6. Click **Save Product**.
 
-- Enable the toggle button to show the product under the Featured Products section.
+To change the order of the products, drag a product by its handle. To take a product out of
+the group, click **Delete** on its row.
 
-#### Visible Individually
+## What shoppers see
 
-- Enable the toggle button to make the product visible on the frontend.
+The product page lists each product in the group that can be bought, with its name, its price and a quantity
+box set to its **Default Qty**. The group's price is shown as **Starting at**. Shoppers
+adjust the quantities and click **Add To Cart**, and each product is added to the cart as a
+separate item. Shoppers can remove the items they don't want from the cart.
 
-#### Status
-
-- Enable the toggle button to enable the product on your eCommerce store.
-
-#### Guest Checkout
-
-- Enable the toggle button to allow the product to be ordered by guest customers.
-
-<ImagePopup src="/images/grouped-product/toggle-buttons.png" alt="Toggle Buttons" />
-
-### Description
-
-Fill in the following fields under the description:
-
-- **Short Description:** Enter a short description of the product feature.
-- **Description:** Mention your product in detail.
-
-<ImagePopup src="/images/grouped-product/description.png" alt="Product Description" />
-
-### Meta Description
-
-Fill in the following fields under meta description for improved searchability on search engines:
-
-- **Meta Title:** Provide the main title of the product.
-- **Meta Keywords:** Provide meta keywords for specific search engine optimization.
-- **Meta Description:** Enter a description for better search engine listings.
-
-<ImagePopup src="/images/grouped-product/meta-description.png" alt="Meta Description" />
-
-### Images
-
-To add product images, click on **Add Image**. You can add multiple images for your product.
-
-<ImagePopup src="/images/grouped-product/image.png" alt="Product Images" />
-
-### Group Products
-
-1. In the **Group Products** section, click **Add Product**. The **Select Products** modal opens.
-2. Search for the simple products to add and tick them.
-3. Click **Add Selected Product**. The products are listed in the section.
-4. Enter the **Default Qty** for each product. This is the quantity pre-filled for the customer on the storefront.
-
-To change the order of the products, drag a row to its new position. Products are listed on the front end in that order, as shown in the image below.
-
-<ImagePopup src="/images/grouped-product/group-products.png" alt="Grouped Products" />
-
-### Product at Front End
-
-The grouped product will be visible at the front end, as shown in the image below:
-
-<ImagePopup src="/images/grouped-product/output.png" alt="Front End Output" />
+<ImagePopup src="/images/grouped-product/output.png" alt="Grouped product page listing three products with quantity boxes and Add To Cart" />
