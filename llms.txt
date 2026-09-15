@@ -9,8 +9,12 @@ A reference for merchants and store administrators working in the Bagisto admin 
 ### Getting Started
 
 - [Introduction](/getting-started/introduction)
+- [Admin Panel](/getting-started/admin-panel)
+- [Dashboard](/getting-started/dashboard)
+- [Store Setup Checklist](/getting-started/store-setup-checklist)
+- [Scheduled Tasks](/getting-started/scheduled-tasks)
 - [Command Palette](/getting-started/command-palette)
-- [Two Factor Authentication](/authentication/2fa-authentication)
+- [Two-Factor Authentication](/authentication/2fa-authentication)
 
 ### Generative AI
 
@@ -24,6 +28,7 @@ A reference for merchants and store administrators working in the Bagisto admin 
 ### Theme
 
 - [Themes & Sections](/appearance/themes)
+- [Section Types](/appearance/section-types)
 
 ### Store Setup
 
@@ -81,8 +86,9 @@ A reference for merchants and store administrators working in the Bagisto admin 
 
 - [Categories](/category/create-category)
 - [Attribute Input Types](/attribute/attribute-input)
-- [Create Product Attributes](/attribute/product-attribute)
+- [Product Attributes](/attribute/product-attribute)
 - [Attribute Families](/attribute/attribute-family)
+- [Products](/product-types/products)
 - [Simple Product](/product-types/simple-product)
 - [Configurable Product](/product-types/configurable-product)
 - [Virtual Product](/product-types/virtual-product)
@@ -93,33 +99,37 @@ A reference for merchants and store administrators working in the Bagisto admin 
 
 ### Customers
 
-- [Create Customer](/customer/create-customer)
+- [Customers](/customer/create-customer)
 - [Customer Groups](/customer/customer-group)
 - [Customer Group Pricing](/customer/customer-group-price)
 - [Customer Reviews](/customer/customer-review)
+- [GDPR Data Requests](/customer/gdpr-data-requests)
+- [Customer Account](/customer/customer-account)
 
 ### Sales
 
+- [Orders](/orders/orders)
 - [Create Order](/orders/create-order)
 - [Create Invoice](/orders/create-invoice)
 - [Create Shipment](/orders/create-shipment)
 - [Create Refund](/orders/create-refunds)
 - [Transactions](/orders/transactions)
-- [EU Withdrawal](/orders/eu-withdrawal)
+- [Bookings](/orders/bookings)
 - [RMA](/orders/rma)
+- [EU Withdrawal](/orders/eu-withdrawal)
 
 ### Marketing
 
-- [Cart Rules](/marketing/cart-rules)
 - [Catalog Rules](/marketing/catalog-rules)
+- [Cart Rules](/marketing/cart-rules)
 - [Email Templates](/marketing/email-templates)
 - [Events](/marketing/events)
 - [Campaigns](/marketing/campaigns)
 - [Newsletter Subscriptions](/marketing/newsletter-subscription)
-- [Sitemaps](/marketing/sitemaps)
 - [URL Rewrites](/marketing/url-rewrite)
 - [Search Terms](/marketing/search-terms)
 - [Search Synonyms](/marketing/search-synonyms)
+- [Sitemaps](/marketing/sitemaps)
 
 ### CMS
 
