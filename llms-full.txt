@@ -144,6 +144,8 @@ The sidebar lists the parts of the admin panel. Click an item to open it; its pa
 
 A notification is added when an order is placed, and updated when the order's status changes.
 
+The bell is refreshed when you open or reload a page. If your developer has set up real-time notifications, it also updates on its own as orders come in or change.
+
 1. Click the bell in the header. Up to five unread notifications are listed, each with the order's status.
 2. Click a notification to open the order. The notification is marked as read.
 
@@ -357,6 +359,8 @@ You don't set these up in the admin panel. Ask your developer or hosting provide
 
 - **The scheduler.** The server runs Bagisto's scheduler every minute, and the scheduler starts each task below at its time.
 - **A queue worker, if the store uses a queue.** A store can hand slow work, such as sending emails, to a background queue so pages stay fast. When it does, a queue worker must keep running to process that work. When the store doesn't use a queue, this work happens straight away and no worker is needed.
+
+Real-time admin notifications are optional. They need a real-time messaging service set up by your developer and, when the store uses a queue, a queue worker for the notifications. With them, the bell in the admin header updates on its own as orders come in. Without them, it updates when you open or reload a page. See [Notifications](./admin-panel.md#notifications).
 
 ## Tasks that run on a timetable
 
@@ -658,7 +662,7 @@ The button is greyed out until Magic AI and text generation are both switched on
 1. Open the item you're editing, for example a product under **Catalog >> Products**.
 2. In the editor's toolbar, click **Magic AI**. The **AI Assistance** dialog opens.
 3. In **Prompt**, describe what to write. For example: "Write a 120-word product description for a men's blue zipper hoodie made of soft cotton fleece, with a relaxed fit and two front pockets. Use a warm, friendly tone."
-4. Choose the **Model**, for example **OpenAI: GPT-5.2**. The list holds the text models of the providers allowed for text generation.
+4. Choose the **Model**. Each option names the provider and then the model, for example **OpenAI: GPT-5.6 Terra**. The list holds the text models of the providers allowed for text generation, and changes as providers release and retire models.
 5. Click **Generate**. The button reads **Generating...** while the model works. The draft then appears in **Generated Content**.
 
    <ImagePopup src="/images/generative-ai/textgeneration.png" alt="The AI Assistance dialog with a prompt, the Model list, the Generate button and an empty Generated Content box" />
@@ -667,7 +671,7 @@ The button is greyed out until Magic AI and text generation are both switched on
 7. Click **Apply**. The draft goes into the editor and the dialog closes.
 8. Check the text in the editor, then save the item, for example with **Save Product**.
 
-If the provider returns an error, for example because its API key is missing, the error message appears at the top of the screen and **Generated Content** stays empty.
+If the provider returns an error, for example because its API key is missing or wrong, the provider's own error message appears at the top of the screen and **Generated Content** stays empty.
 
 ### Apply replaces what's in the editor
 
@@ -718,7 +722,7 @@ The tile appears only when Magic AI and image generation are both switched on. I
 4. Enter the **Number of Images**, from 1 to 10.
 5. Choose the **Size**: **Square (1:1)**, **Portrait (2:3)** or **Landscape (3:2)**.
 6. Choose the **Quality**: **High**, **Medium** or **Low**.
-7. Choose the **Model**, for example **OpenAI: GPT Image 1.5**. The list holds the image models of the providers allowed for image generation.
+7. Choose the **Model**. Each option names the provider and then the model, for example **OpenAI: GPT Image 2.5 Flare**. The list holds the image models of the providers allowed for image generation, and changes as providers release and retire models.
 8. Click **Generate**. The button reads **Generating...** while the images are created.
 
    <ImagePopup src="/images/generative-ai/image-generate.png" alt="The AI Image Generation dialog with Prompt, Number of Images, Size, Quality and Model filled in" />
@@ -831,9 +835,11 @@ The review's text is replaced on the shopper's screen by the translation, in the
 
 | Setting | What it does |
 |---|---|
-| **Enabled** under **Configure >> Magic AI >> General** | Switches Magic AI on for your store |
+| **Enabled** under **Configure >> Magic AI >> General** | Switches every Magic AI feature on or off. Reviews are translated only while it's on |
 | **Enabled** in the **Review Translation** section of **Configure >> Magic AI >> Storefront Features** | Shows the **Translate** button, per channel |
 | **Model** in the **Review Translation** section | The model that translates reviews, per channel |
+
+Switching **Enabled** off under **General** doesn't hide the **Translate** button. Shoppers still see it, and get an error when they click it. To remove the button, switch **Enabled** off in the **Review Translation** section.
 
 Save the API key of the chosen model's provider under **Configure >> Magic AI >> Providers** first. To set everything up, see [Enable the storefront features](../configure/magic-ai.md#enable-the-storefront-features).
 
@@ -843,7 +849,7 @@ Only reviews you've approved appear on the storefront, so only approved reviews 
 
 <div class="feature-meta feature--ai"><span class="feature-meta__primary">Generative AI</span><span>Storefront</span></div>
 
-After an order is placed, the order confirmation page shows **Thank you for your order!** and a standard line: "We will email you, your order details and tracking information". With the personalized checkout message on, Magic AI writes a short thank-you message for that order and shows it in place of the standard line. It gives the moment a personal touch, with no work on your side.
+After an order is placed, the order confirmation page shows **Thank you for your order!** and a standard line: "We will email you your order details and tracking information". With the personalized checkout message on, Magic AI writes a short thank-you message for that order and shows it in place of the standard line. It gives the moment a personal touch, with no work on your side.
 
 ## Where it appears
 
@@ -970,7 +976,7 @@ When the channel has more than one language, choose the language at the top righ
 
 <ImagePopup src="/images/appearance/section-actions.png" alt="The ⋯ menu of a section row open, with Duplicate and Delete" />
 
-**Footer Links** is pinned to the bottom of the page, so it has no drag handle and can't be duplicated.
+**Services Content** and **Footer Links** are pinned to the bottom of the page, so they have no drag handle and can't be duplicated.
 
 ::: warning Deleting can't be undone
 A deleted section disappears from the storefront straight away. Deleting isn't held for publishing. To take a section off the storefront and keep it, switch it off instead.
@@ -1023,11 +1029,11 @@ Creating or duplicating a section saves it straight away, still hidden from shop
 
    <ImagePopup src="/images/appearance/create-section.png" alt="The Create Section panel with Product Carousel chosen and the name Summer Picks" />
 
-4. Click **Save Section**. The section is added at the bottom of the list, above **Footer Links**, shown switched on with an unsaved change, and its fields open.
+4. Click **Save Section**. The section is added at the bottom of the list, above the pinned **Services Content** and **Footer Links**, shown switched on with an unsaved change, and its fields open.
 5. Fill in the fields.
 6. Click **Publish**.
 
-A channel can have only one **Footer Links** section, so that type isn't offered once the channel has one.
+A channel can have only one **Services Content** and one **Footer Links** section, so those types aren't offered once the channel has one.
 
 ## Section types
 
@@ -1105,6 +1111,8 @@ A block of your own content, such as an offer banner or a promotional band betwe
 
 **HTML:** The block's markup. Click **Add Media** to upload an image, or an MP4, WebM or OGG video, of up to 50 MB. It's added to the markup where your cursor is. Images are saved in WebP format.
 
+The markup refers to the file with an address that starts with `__media__/`. Leave it as it is: the storefront turns it into the file's real address, and it keeps working if your store's domain or folder changes.
+
 **CSS:** The styles for the block.
 
 <ImagePopup src="/images/appearance/static-content.png" alt="Static Content fields with the HTML editor, the Add Media button and the CSS editor" />
@@ -1117,7 +1125,9 @@ Scripts, frames and forms are removed from the HTML when it's saved, so a block 
 
 ## Services Content
 
-The service promises shown on most storefront pages, such as free shipping or easy returns. Click **Add Services** to add a promise. Each one has these fields:
+The service promises shown on most storefront pages, such as free shipping or easy returns. A channel has one **Services Content** section. It's pinned to the bottom of the page, above **Footer Links**, so it can't be moved or duplicated.
+
+Click **Add Services** to add a promise. Each one has these fields:
 
 **Service Icon:** The name of the icon shown beside the promise, typed as text, such as `icon-truck` for delivery.
 
@@ -1383,7 +1393,7 @@ The message *Currency created successfully.* appears and the currency is added t
 |---|---|
 | **Code** | The three-letter currency code, such as `USD`, `EUR` or `KES`. Each code can be used only once, and you can't change it later. |
 | **Name** | The name of the currency. |
-| **Symbol** | The symbol shown with prices, such as `$` or `KSh`. If you leave it empty, the usual symbol for the code is used, or the code itself when a **Currency Position** is chosen. |
+| **Symbol** | The symbol shown with prices, such as `$` or `KSh`. If you leave it empty, the usual symbol for the code is used, or the code itself when a **Currency Position** is chosen. It can't contain `<`, `>`, `"`, `'`, a backtick or `&`. |
 | **Decimal** | How many digits to show after the decimal separator, from 0 to 9, such as `2`. |
 | **Group Separator** | The character between groups of thousands, such as the comma in `1,000`. Use a comma, dot, apostrophe or space. |
 | **Decimal Separator** | The character before the decimals, such as the dot in `10.50`. Use a comma or dot. |
@@ -1480,7 +1490,7 @@ Instead of entering rates by hand, you can fetch the latest rates from an exchan
 2. Go to **Settings >> Exchange Rates**.
 3. Click **Update Exchange Rate**.
 
-Bagisto fetches the latest rate for each of your currencies and creates or updates its exchange rate. The message *Exchange Rate Updated Successfully* appears. A currency the service doesn't return a rate for keeps its current rate. If the service can't be reached or the API key is wrong, the error the service returns is shown.
+Bagisto fetches the latest rate for each of your currencies and creates or updates its exchange rate. The message *Exchange Rate Updated Successfully* appears. A currency the service doesn't return a rate for keeps its current rate. If the service can't be reached, or its API key is missing or wrong, the message *Exchange rates could not be updated. Either the exchange rate service is unavailable, or its API key has not been configured.* appears. Check the key under **Configure >> General >> Exchange Rates**. Your developer can find the exact error in the store's log.
 
 Updating rates needs the **Edit** permission for exchange rates in your [role](./roles.md).
 
@@ -1734,7 +1744,7 @@ Go to **Settings >> Users** to see every user with their **ID**, **Name**, **Sta
 2. Click **Create User**. The **Create User** form opens.
 3. Enter the user's **Name** and **Email**. The user signs in with this email address.
 4. Enter a **Password** of at least 6 characters, and enter it again in **Confirm Password**.
-5. Choose the **Role**.
+5. Choose the **Role**. If your own role doesn't have every permission, only roles whose permissions your role also has are listed.
 6. Switch **Status** on so the user can sign in.
 7. Optionally, upload a profile image. A 110 × 110 px image in PNG or JPG format is recommended.
 8. Click **Save User**.
@@ -1815,6 +1825,7 @@ A role with **Custom** permissions needs at least one permission. If a role ends
 - Menu items and buttons for things the role can't do are hidden.
 - If the user opens a page the role doesn't allow, for example from a bookmark, a **401 Unauthorized** page is shown.
 - If the role doesn't include **Dashboard**, the user goes straight to the first page the role allows when they sign in.
+- If the role lets the user manage roles or users, they can give out only the permissions their own role has. **All** isn't offered under **Permissions**, the permission tree lists only their own permissions, and roles and users with more access than theirs have no edit or delete icon.
 
 ## Edit or delete a role
 
@@ -2038,7 +2049,7 @@ The groups appear on the **Configuration** page in this order.
 | **General** | [General](./general.md), [Content](./content.md), [Design](./design.md), [Exchange Rates](./exchange-rates-configurations.md), [Sitemap](./sitemap.md), [GDPR](./gdpr.md) | The weight unit and breadcrumbs, the header offer, footer text, speculation rules and custom scripts, the admin logo and category menu, automatic exchange rates, sitemap limits and privacy consent. |
 | **Magic AI** | [Generative AI (Magic AI)](./magic-ai.md) | Switching generative AI on, provider API keys, and the AI features of the admin panel and the storefront. |
 | **Sales** | [Shipping Settings](./shipping.md), [Shipping Methods](../shipping-method/shipping-methods.md), [Payment Methods](../payment-method/payment-methods.md), [Checkout](./checkout.md), [Order Settings](./orders-settings.md), [Invoice Settings](./invoice-settings.md), [Taxes](./taxes.md), [RMA](./rma.md), [EU Withdrawals](./eu-withdrawals.md) | Where you ship from, the shipping and payment methods, the cart and checkout, order and invoice numbers, tax calculation, returns and EU withdrawals. |
-| **Catalog** | [Products](./configurable-choices.md), [Inventory](./back-orders.md), [Rich Snippets](./rich-snippets.md) | Product listings and pages, reviews, sharing, image sizes, upload limits, price disclosure, back orders and structured data for search engines. |
+| **Catalog** | [Products](./configurable-choices.md), [Inventory](./back-orders.md), [Rich Snippets](./rich-snippets.md) | Product listings and pages, reviews, sharing, upload limits, price disclosure, back orders and structured data for search engines. |
 | **Customer** | [Customer Settings](./settings.md), [Address](./address.md), [Google Captcha](./google-captcha.md) | New accounts, email verification, sign-in, social login, the wishlist and newsletter, address forms and bot protection. |
 | **Email** | [Email Settings](./email-settings.md), [Notifications](./notifications.md) | How email is sent, the sender addresses and which emails go out. |
 | **Search Engines** | [Search Engines](./search-engines.md) | Whether product search runs on the database or on Elasticsearch, and the Elasticsearch connection. |
@@ -2054,6 +2065,7 @@ This guide describes the Configuration screens of Bagisto 2.5. Most of them are 
 - In Bagisto 2.4, the search engine and the query length limits are set in the **Search** section under **Configure >> Catalog >> Products**. See [Search Engines](./search-engines.md).
 - In Bagisto 2.4, **Allow customers to directly buy products** is in the **Storefront** section under **Configure >> Catalog >> Products**. In Bagisto 2.5 it is in **Product view page configuration**.
 - In Bagisto 2.4, the cart icon's **Summary** has its own **My Cart** section under **Configure >> Sales >> Checkout**. In Bagisto 2.5 it is in **Mini Cart**.
+- In Bagisto 2.4, the **Small Image**, **Medium Image** and **Large image** sections under **Configure >> Catalog >> Products** set product image sizes and placeholders. Bagisto 2.5 doesn't have them. See [Product Settings](./configurable-choices.md).
 - The **Full Page Cache** screen under **Cache Management**, the **PayGlocal** payment method and the **Driver** setting under **Email Settings >> Mail Driver** arrived in Bagisto 2.4.10, so releases before 2.4.10 don't have them. See [Cache Management](./cache-management.md) and [Email Settings](./email-settings.md).
 
 # General
@@ -2108,7 +2120,7 @@ The copyright line is shown at the bottom of the storefront footer. It is saved 
 2. In **Copyright Content**, enter the text, such as `© 2026 Example Store. All rights reserved.`
 3. Click **Save Configuration**.
 
-While the field is empty, the footer shows Bagisto's default line, which names Webkul Software, so enter your own line for every language. The text can include HTML, such as a link to your terms page.
+While the field is empty, the footer shows Bagisto's default line, which names Webkul Software, so enter your own line for every language. The text can include HTML, such as a link to your terms page. Scripts are removed.
 
 <ImagePopup src="/images/configure/content-copyright-storefront.png" alt="Default copyright line in the storefront footer" />
 
@@ -2410,7 +2422,9 @@ The storefront features respond to what a shopper does: searching with a photo, 
 
 Choose a model from a provider whose key you have saved. Until a **Model** is saved, the feature uses a default OpenAI model, which needs an OpenAI key.
 
-**AI Image Search** and **Personalized Checkout Message** work only while **Enabled** is also on under **General**. To stop review translation, switch **Review Translation** off: switching off **Enabled** under **General** doesn't hide the **Translate** button.
+All three storefront features work only while **Enabled** is also on under **General**. Switching it off there stops review translation too, but doesn't hide the **Translate** button: shoppers still see it, and get an error when they click it. To remove the button, switch **Enabled** off in the **Review Translation** section.
+
+Providers retire models over time. When you upgrade Bagisto, a feature whose saved model has been retired moves to the replacement that provider recommends, and **Model** shows the new one. Check the three features after an upgrade, because a different model can cost more or answer differently.
 
 # Shipping Settings
 
@@ -2552,11 +2566,15 @@ Stripe takes card payments. After clicking **Place Order**, shoppers pay on Stri
 |---|---|
 | **API Key** | The live secret key from your Stripe account, used while **Sandbox** is off. |
 | **API Publishable Key** | The live publishable key from your Stripe account, used while **Sandbox** is off. |
+| **Webhook Signing Secret** | The signing secret of the webhook you add in your Stripe dashboard, used while **Sandbox** is off. The help text under the field lists the address and the events to set up in Stripe. |
 | **Sandbox** | Uses the test keys below, so no real payments are taken. |
 | **API Test Secret Key** | The test secret key from your Stripe account, used while **Sandbox** is on. |
 | **API Test Publishable Key** | The test publishable key from your Stripe account, used while **Sandbox** is on. |
+| **Webhook Test Signing Secret** | The signing secret of the webhook you add in Stripe's test mode, used while **Sandbox** is on. |
 
 Stripe appears at checkout only while both keys for the current mode have a value.
+
+The webhook lets Stripe tell your store about payments, refunds and disputes. With it, an order is placed even when a shopper pays and doesn't return to the store, and a refund you make in Stripe, or a shopper's dispute, is recorded on the order. Without the signing secret for the current mode, the store refuses these messages.
 
 ## Razorpay
 
@@ -2841,7 +2859,7 @@ The due date of an invoice is its invoice date plus the due duration. The invoic
 |---|---|
 | **Display Invoice ID in Header** | Prints the invoice ID at the top of the PDF. It's on in a new store. |
 | **Display Order ID in Header** | Prints the order ID at the top of the PDF. It's on in a new store. |
-| **Logo** | The logo printed on the PDF. A size of 131 × 30 pixels is recommended. |
+| **Logo** | The logo printed on the PDF: a BMP, JPEG, JPG, PNG or WEBP image of up to 2 MB (2048 KB). A size of 131 × 30 pixels is recommended. |
 | **Footer text** | Saved with these settings, but not printed on the invoice PDF. |
 
 The same PDF is used when you [print an invoice](../orders/create-invoice.md#print-an-invoice) in the admin panel, when customers download it from their account, and when it's attached to the invoice email. The two switches apply to the whole store. The logo is per channel, and the footer text is per channel and per language.
@@ -3011,7 +3029,11 @@ The **Settings** section of the **Products** screen turns two storefront feature
 
 **Image Search Option:** Shows a camera icon in the storefront search bar, so shoppers can search by uploading a photo. The photo is recognized in the shopper's browser, or by an AI model when [AI image search](../generative-ai/image-search.md) is switched on under [Generative AI (Magic AI)](./magic-ai.md#enable-the-storefront-features).
 
-The **Products** screen also holds the [Storefront](./frontend.md), [Product View Page](./product-view-page.md), [Review](./review.md), [Social Share](./social-share.md), [Cart View Page](./cart-view-page.md), [Image Size](./image-size.md), [Attribute](./attribute.md) and [Omnibus Price Disclosure](./omnibus.md) sections. The wishlist is turned on or off under [Customer Settings](./settings.md#wishlist).
+The **Products** screen also holds the [Storefront](./frontend.md), [Product View Page](./product-view-page.md), [Review](./review.md), [Social Share](./social-share.md), [Cart View Page](./cart-view-page.md), [Attribute](./attribute.md) and [Omnibus Price Disclosure](./omnibus.md) sections. The wishlist is turned on or off under [Customer Settings](./settings.md#wishlist).
+
+## Differences in Bagisto 2.4
+
+In Bagisto 2.4, the **Products** screen also has **Small Image**, **Medium Image** and **Large image** sections, which set the width and height of product images and the placeholder shown when a product has no image. Bagisto 2.5 doesn't have these settings: image sizes and the placeholder come from your storefront theme.
 
 # Storefront
 
@@ -3083,6 +3105,13 @@ The **Review** section decides who can review products and how reviews are summa
 
 New reviews are held as pending, and appear on the storefront only after you approve them under **Customers >> Reviews**; see [Customer Reviews](../customer/customer-review.md).
 
+## What shoppers can submit
+
+- **Title**: up to 255 characters.
+- **Comment**: up to 5000 characters.
+- **Add Image/Video**: up to 5 photos or videos per review, each up to 10 MB.
+- Up to 10 reviews or translations a minute from one shopper. After that, the store refuses more until the minute is up.
+
 # Social Share
 
 Social share adds share buttons to product pages, so shoppers can share a product on Facebook, X (Twitter), Pinterest, WhatsApp or LinkedIn, or by email.
@@ -3118,27 +3147,6 @@ The cart page can suggest cross-sell products below the items in the cart. The *
 Leave it empty to show all of them, or enter `0` to show none.
 
 The suggestions come from the cross-sell products chosen on the products in the cart, leaving out products that are already in the cart. Cross-sell products are chosen on each product; see [Products](../product-types/products.md#related-up-sell-and-cross-sell-products). They appear only while **Cross sell Products** is switched on under [Checkout](./checkout.md). The setting applies to the whole store.
-
-# Image Size
-
-The storefront shows product images in three sizes. The **Small Image**, **Medium Image** and **Large image** sections set the size of each, and the placeholder shown for products that have no image of their own.
-
-1. Go to **Configure >> Catalog >> Products**.
-2. In **Small Image**, enter the **Width** in pixels.
-3. Enter the **Height** in pixels.
-4. Optionally, click **Add Image** under **Small Image Placeholder** and choose the image shown when a product has no image.
-5. Repeat these steps in **Medium Image** and **Large image**.
-6. Click **Save Configuration**.
-
-<ImagePopup src="/images/configure/products-image-size.png" alt="Small Image, Medium Image and Large image sections of the Products screen" />
-
-| Size | Where it's used | Size when left empty |
-|---|---|---|
-| **Small Image** | The thumbnails in the product page gallery, and product cards on small screens | 100 × 100 pixels |
-| **Medium Image** | Product cards in category pages, search results and carousels | 350 × 360 pixels |
-| **Large image** | The main image in the product page gallery | 560 × 610 pixels |
-
-Product images are cropped to fill the size you set. A placeholder can be a BMP, JPEG, JPG, PNG, WEBP or SVG file; without one, Bagisto's own placeholder image is shown. These settings apply to the whole store.
 
 # Attribute
 
@@ -3281,7 +3289,9 @@ A customer who was asked to sign in on the way to another page returns to that p
 
 ## Social login
 
-Social login lets customers sign in with their Facebook, X (Twitter), Google, LinkedIn or GitHub account. The button of each provider you switch on appears under the storefront's sign-in and sign-up forms. The first time a customer signs in with a provider, the store creates their account, or links it to an existing account with the same email address. It then opens their account profile, or the page they were on when they were asked to sign in.
+Social login lets customers sign in with their Facebook, X (Twitter), Google, LinkedIn or GitHub account. The button of each provider you switch on appears under the storefront's sign-in and sign-up forms. The first time a customer signs in with a provider, the store creates an account for them. It then opens their account profile, or the page they were on when they were asked to sign in.
+
+The store doesn't link a provider to an account that already exists. A customer whose email address already has an account sees *An account with this email already exists. Please sign in with your email and password.*, and must sign in with their password instead. A customer whose account is inactive can't sign in with a provider either.
 
 Before you start, create an app in the developer console of each provider you want to offer, and copy its client ID and client secret.
 
@@ -3399,7 +3409,7 @@ All settings are saved per channel, so choose the channel at the top of the scre
 3. Enter the **Project ID**.
 4. Enter the **API Key**.
 5. Enter the **Site Key**.
-6. Enter the **Score Threshold**, a number from `0.0` to `1.0` with one decimal place. The default is `0.5`.
+6. Enter the **Score Threshold**, any number from `0` to `1`, such as `0.5`, which is the default.
 7. Click **Save Configuration**.
 
 <ImagePopup src="/images/configure/google-captcha-settings.png" alt="Credentials section of the Google Captcha screen with Status turned on and placeholder keys" />
@@ -3561,8 +3571,8 @@ Each search mode can be **Use Default** (the default), **Database** or **Elastic
 | **Password** | Appears with **Username**. The password paired with it. |
 | **API Key** | Appears for the two API key methods. |
 | **Index Prefix** | Added to the front of every index name, so several stores can share one cluster. |
-| **Minimum Query Length** | The shortest search term the storefront search box accepts. The default is `0`. |
-| **Maximum Query Length** | The longest search term the storefront search box accepts. The default is `1000`. |
+| **Minimum Query Length** | The shortest search term the storefront search box accepts, from `0` to `255`. The default is `0`. |
+| **Maximum Query Length** | The longest search term the storefront search box accepts, from `1` to `1000`, and at least the **Minimum Query Length**. The default is `1000`. |
 
 The two query lengths apply to the storefront search box whichever engine it uses.
 
@@ -3969,8 +3979,13 @@ The **Attribute Type** list offers these types, in this order:
 | **Multiselect** | A list of options. You pick one or more. | Several values at once, such as the seasons a jacket suits. |
 | **Date** | A date picker. | Dates, such as a release date. |
 | **Datetime** | A date and time picker. | Moments, such as the start of a live event. |
-| **Image** | An image upload in BMP, JPEG, JPG, PNG or WEBP format. | A picture, such as a size chart. |
-| **File** | A file upload. | A document, such as a user manual. |
+| **Image** | An **Add Image** tile that takes a BMP, JPEG, JPG, PNG or WEBP file. | A picture, such as a size chart. |
+| **File** | An **Add File** tile that takes a file. | A document, such as a user manual. |
+
+After you upload a file, the **Image** tile shows a preview, and the **File** tile shows the
+file's name. Point at the tile to show its icons: **Replace** picks another file, **Download**
+downloads the saved file, and **Delete** removes it. **Delete** isn't offered while the
+attribute's **Is Required** is on. Changes are kept when you save the product.
 
 ## Settings each type supports
 
@@ -4084,7 +4099,7 @@ options of a configurable product: **Dropdown**, **Color Swatch**, **Image Swatc
 To add an option:
 
 1. In **Options**, click **Add Row**. The **Add Option** dialog opens.
-2. For a **Color Swatch**, pick the **Color**. For an **Image Swatch**, upload the **Image**.
+2. For a **Color Swatch**, pick the **Color**. For an **Image Swatch**, upload the **Image** in BMP, JPEG, JPG, PNG or WEBP format.
 3. Enter the **Admin** name.
 4. Enter the option's name in each language. The name in your default channel's default
    language is required.
@@ -4723,8 +4738,10 @@ engraving text, gift wrapping or a file to print, each with an optional extra pr
 5. Fill in the fields for the type:
    - **Text** or **Textarea**: shoppers type text. Enter the **Max Characters** and the
      **Price**.
-   - **File**: shoppers upload a file. Enter the **Supported File Extensions** and the
-     **Price**.
+   - **File**: shoppers upload a file. Enter the **Supported File Extensions**, separated by
+     commas, such as `jpg, png, pdf`, and the **Price**. Web pages, SVG images, XML and script
+     files are never accepted, even when listed, and each file can be up to 10 MB. When a file
+     is refused, the shopper sees *Invalid file extension found.*
    - **Date**, **Datetime** or **Time**: shoppers pick a date or time. Enter the **Price**.
    - **Checkbox**, **Radio**, **Select** or **Multiselect**: shoppers choose from a list.
      You add the list's choices after saving the option.
@@ -5331,7 +5348,7 @@ Go to **Customers >> Customers**.
 
 Each row shows three columns:
 
-- **Customer Name / Email / Contact Number**: **N/A** when the customer has no phone number.
+- **Customer Name / Email / Phone**: **N/A** when the customer has no phone number.
 - **Status / Gender / Group / Customer ID / Channel**: an **Active** or **Inactive** badge, with a
   **Suspended** badge when the account is suspended, then the gender, the customer group, the
   channel the account belongs to and the customer's ID.
@@ -5342,7 +5359,7 @@ Each row shows three columns:
 
 - **Search:** type in the search box to find customers by name or email.
 - **Filter:** click **Filter** and filter by **Channel**, **Customer ID**, **Customer Name**,
-  **Email**, **Contact Number**, **Status** or **Group**.
+  **Email**, **Phone**, **Status** or **Group**.
 - **Sort:** click **Customer Name**, **Email**, **Status**, **Gender**, **Channel**, **Order
   Count** or **Address Count** in the header row.
 
@@ -5385,7 +5402,7 @@ The file lists the customers with their details, without the **Revenue** column.
 |---|---|
 | **First Name** and **Last Name** | The customer's name. Both are required. |
 | **Email** | Required. The customer signs in with it, and it can belong to only one account in a channel. |
-| **Contact Number** | Optional. A phone number can belong to only one customer. |
+| **Phone** | Optional. A phone number can belong to only one customer. |
 | **Date of Birth** | Optional. It must be before today. |
 | **Gender** | Required: **Male**, **Female** or **Other**. |
 | **Channel** | Required. The channel the account belongs to. The customer signs in on that channel's storefront, and you can't change the channel later. |
@@ -5750,7 +5767,8 @@ The shopper sees *Review submitted successfully.*, and the review is held as **P
 
 Signed-in customers can write reviews while **Allow Customer Review** is on. While **Allow Guest
 Review** is also on, shoppers who aren't signed in can write them too, and they enter their
-**Name** with the review. Both settings are described in [Review](../configure/review.md).
+**Name** with the review. Both settings are described in [Review](../configure/review.md), along
+with [what shoppers can submit](../configure/review.md#what-shoppers-can-submit) in a review.
 
 ### What shoppers see
 
@@ -6287,7 +6305,7 @@ Starting an order doesn't change the customer's own cart on the storefront.
 If no customer matches, the panel shows **No customers found**.
 
 1. Click **Create Customer**. The **Create New Customer** form opens.
-2. Enter the **First Name**, **Last Name** and **Email**, and any **Contact Number** or **Date of Birth**.
+2. Enter the **First Name**, **Last Name** and **Email**, and any **Phone** or **Date of Birth**.
 3. Choose the **Gender**.
 4. Choose the **Channel**, and a **Customer Group** if needed.
 5. Click **Save customer**. The **Create Order for** page opens for the new customer.
@@ -6323,7 +6341,7 @@ The **Address** step appears once the cart has a product.
 ### Add a new address
 
 1. Under **Billing Address** or **Shipping Address**, click **Add Address**.
-2. Fill in **Company Name**, **Vat ID**, **First Name**, **Last Name**, **Email**, **Street Address**, **Country**, **State**, **City**, **Zip/Postcode** and **Telephone**.
+2. Fill in **Company Name**, **Vat ID**, **First Name**, **Last Name**, **Email**, **Street Address**, **Country**, **State**, **City**, **Zip/Postcode** and **Phone**.
 3. To keep the address on the customer's account, tick **Save this to address book**.
 4. Click **Save**.
 

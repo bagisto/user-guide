@@ -67,7 +67,6 @@ A reference for merchants and store administrators working in the Bagisto admin 
 - [Review](/configure/review)
 - [Social Share](/configure/social-share)
 - [Cart View Page](/configure/cart-view-page)
-- [Image Size](/configure/image-size)
 - [Attribute](/configure/attribute)
 - [Omnibus Price Disclosure](/configure/omnibus)
 - [Inventory](/configure/back-orders)
