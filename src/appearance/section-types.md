@@ -66,6 +66,8 @@ A block of your own content, such as an offer banner or a promotional band betwe
 
 **HTML:** The block's markup. Click **Add Media** to upload an image, or an MP4, WebM or OGG video, of up to 50 MB. It's added to the markup where your cursor is. Images are saved in WebP format.
 
+The markup refers to the file with an address that starts with `__media__/`. Leave it as it is: the storefront turns it into the file's real address, and it keeps working if your store's domain or folder changes.
+
 **CSS:** The styles for the block.
 
 <ImagePopup src="/images/appearance/static-content.png" alt="Static Content fields with the HTML editor, the Add Media button and the CSS editor" />
@@ -78,7 +80,9 @@ Scripts, frames and forms are removed from the HTML when it's saved, so a block 
 
 ## Services Content
 
-The service promises shown on most storefront pages, such as free shipping or easy returns. Click **Add Services** to add a promise. Each one has these fields:
+The service promises shown on most storefront pages, such as free shipping or easy returns. A channel has one **Services Content** section. It's pinned to the bottom of the page, above **Footer Links**, so it can't be moved or duplicated.
+
+Click **Add Services** to add a promise. Each one has these fields:
 
 **Service Icon:** The name of the icon shown beside the promise, typed as text, such as `icon-truck` for delivery.
 

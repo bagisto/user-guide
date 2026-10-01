@@ -2,7 +2,7 @@
 
 <div class="feature-meta feature--ai"><span class="feature-meta__primary">Generative AI</span><span>Storefront</span></div>
 
-After an order is placed, the order confirmation page shows **Thank you for your order!** and a standard line: "We will email you, your order details and tracking information". With the personalized checkout message on, Magic AI writes a short thank-you message for that order and shows it in place of the standard line. It gives the moment a personal touch, with no work on your side.
+After an order is placed, the order confirmation page shows **Thank you for your order!** and a standard line: "We will email you your order details and tracking information". With the personalized checkout message on, Magic AI writes a short thank-you message for that order and shows it in place of the standard line. It gives the moment a personal touch, with no work on your side.
 
 ## Where it appears
 

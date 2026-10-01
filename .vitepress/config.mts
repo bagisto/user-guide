@@ -284,7 +284,6 @@ export default defineConfig({
                   { text: "Review", link: "/configure/review" },
                   { text: "Social Share", link: "/configure/social-share" },
                   { text: "Cart View Page", link: "/configure/cart-view-page" },
-                  { text: "Image Size", link: "/configure/image-size" },
                   { text: "Attribute", link: "/configure/attribute" },
                   {
                     text: "Omnibus Price Disclosure",

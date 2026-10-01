@@ -14,7 +14,7 @@ Go to **Settings >> Users** to see every user with their **ID**, **Name**, **Sta
 2. Click **Create User**. The **Create User** form opens.
 3. Enter the user's **Name** and **Email**. The user signs in with this email address.
 4. Enter a **Password** of at least 6 characters, and enter it again in **Confirm Password**.
-5. Choose the **Role**.
+5. Choose the **Role**. If your own role doesn't have every permission, only roles whose permissions your role also has are listed.
 6. Switch **Status** on so the user can sign in.
 7. Optionally, upload a profile image. A 110 × 110 px image in PNG or JPG format is recommended.
 8. Click **Save User**.

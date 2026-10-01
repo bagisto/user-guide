@@ -47,8 +47,8 @@ Each search mode can be **Use Default** (the default), **Database** or **Elastic
 | **Password** | Appears with **Username**. The password paired with it. |
 | **API Key** | Appears for the two API key methods. |
 | **Index Prefix** | Added to the front of every index name, so several stores can share one cluster. |
-| **Minimum Query Length** | The shortest search term the storefront search box accepts. The default is `0`. |
-| **Maximum Query Length** | The longest search term the storefront search box accepts. The default is `1000`. |
+| **Minimum Query Length** | The shortest search term the storefront search box accepts, from `0` to `255`. The default is `0`. |
+| **Maximum Query Length** | The longest search term the storefront search box accepts, from `1` to `1000`, and at least the **Minimum Query Length**. The default is `1000`. |
 
 The two query lengths apply to the storefront search box whichever engine it uses.
 

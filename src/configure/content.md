@@ -24,7 +24,7 @@ The copyright line is shown at the bottom of the storefront footer. It is saved 
 2. In **Copyright Content**, enter the text, such as `© 2026 Example Store. All rights reserved.`
 3. Click **Save Configuration**.
 
-While the field is empty, the footer shows Bagisto's default line, which names Webkul Software, so enter your own line for every language. The text can include HTML, such as a link to your terms page.
+While the field is empty, the footer shows Bagisto's default line, which names Webkul Software, so enter your own line for every language. The text can include HTML, such as a link to your terms page. Scripts are removed.
 
 <ImagePopup src="/images/configure/content-copyright-storefront.png" alt="Default copyright line in the storefront footer" />
 

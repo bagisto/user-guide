@@ -16,3 +16,10 @@ The **Review** section decides who can review products and how reviews are summa
 | **Summary** | The number shown with a product's rating on product cards and product pages. **Display the review count for ratings.**, the default, shows the number of reviews. **Display the star count in ratings.** shows the total number of stars given. |
 
 New reviews are held as pending, and appear on the storefront only after you approve them under **Customers >> Reviews**; see [Customer Reviews](../customer/customer-review.md).
+
+## What shoppers can submit
+
+- **Title**: up to 255 characters.
+- **Comment**: up to 5000 characters.
+- **Add Image/Video**: up to 5 photos or videos per review, each up to 10 MB.
+- Up to 10 reviews or translations a minute from one shopper. After that, the store refuses more until the minute is up.

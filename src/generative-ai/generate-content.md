@@ -23,7 +23,7 @@ The button is greyed out until Magic AI and text generation are both switched on
 1. Open the item you're editing, for example a product under **Catalog >> Products**.
 2. In the editor's toolbar, click **Magic AI**. The **AI Assistance** dialog opens.
 3. In **Prompt**, describe what to write. For example: "Write a 120-word product description for a men's blue zipper hoodie made of soft cotton fleece, with a relaxed fit and two front pockets. Use a warm, friendly tone."
-4. Choose the **Model**, for example **OpenAI: GPT-5.2**. The list holds the text models of the providers allowed for text generation.
+4. Choose the **Model**. Each option names the provider and then the model, for example **OpenAI: GPT-5.6 Terra**. The list holds the text models of the providers allowed for text generation, and changes as providers release and retire models.
 5. Click **Generate**. The button reads **Generating...** while the model works. The draft then appears in **Generated Content**.
 
    <ImagePopup src="/images/generative-ai/textgeneration.png" alt="The AI Assistance dialog with a prompt, the Model list, the Generate button and an empty Generated Content box" />
@@ -32,7 +32,7 @@ The button is greyed out until Magic AI and text generation are both switched on
 7. Click **Apply**. The draft goes into the editor and the dialog closes.
 8. Check the text in the editor, then save the item, for example with **Save Product**.
 
-If the provider returns an error, for example because its API key is missing, the error message appears at the top of the screen and **Generated Content** stays empty.
+If the provider returns an error, for example because its API key is missing or wrong, the provider's own error message appears at the top of the screen and **Generated Content** stays empty.
 
 ### Apply replaces what's in the editor
 

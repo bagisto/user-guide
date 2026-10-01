@@ -53,7 +53,7 @@ Instead of entering rates by hand, you can fetch the latest rates from an exchan
 2. Go to **Settings >> Exchange Rates**.
 3. Click **Update Exchange Rate**.
 
-Bagisto fetches the latest rate for each of your currencies and creates or updates its exchange rate. The message *Exchange Rate Updated Successfully* appears. A currency the service doesn't return a rate for keeps its current rate. If the service can't be reached or the API key is wrong, the error the service returns is shown.
+Bagisto fetches the latest rate for each of your currencies and creates or updates its exchange rate. The message *Exchange Rate Updated Successfully* appears. A currency the service doesn't return a rate for keeps its current rate. If the service can't be reached, or its API key is missing or wrong, the message *Exchange rates could not be updated. Either the exchange rate service is unavailable, or its API key has not been configured.* appears. Check the key under **Configure >> General >> Exchange Rates**. Your developer can find the exact error in the store's log.
 
 Updating rates needs the **Edit** permission for exchange rates in your [role](./roles.md).
 

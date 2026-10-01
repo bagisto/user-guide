@@ -24,7 +24,8 @@ The shopper sees *Review submitted successfully.*, and the review is held as **P
 
 Signed-in customers can write reviews while **Allow Customer Review** is on. While **Allow Guest
 Review** is also on, shoppers who aren't signed in can write them too, and they enter their
-**Name** with the review. Both settings are described in [Review](../configure/review.md).
+**Name** with the review. Both settings are described in [Review](../configure/review.md), along
+with [what shoppers can submit](../configure/review.md#what-shoppers-can-submit) in a review.
 
 ### What shoppers see
 

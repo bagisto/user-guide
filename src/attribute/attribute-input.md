@@ -20,8 +20,13 @@ The **Attribute Type** list offers these types, in this order:
 | **Multiselect** | A list of options. You pick one or more. | Several values at once, such as the seasons a jacket suits. |
 | **Date** | A date picker. | Dates, such as a release date. |
 | **Datetime** | A date and time picker. | Moments, such as the start of a live event. |
-| **Image** | An image upload in BMP, JPEG, JPG, PNG or WEBP format. | A picture, such as a size chart. |
-| **File** | A file upload. | A document, such as a user manual. |
+| **Image** | An **Add Image** tile that takes a BMP, JPEG, JPG, PNG or WEBP file. | A picture, such as a size chart. |
+| **File** | An **Add File** tile that takes a file. | A document, such as a user manual. |
+
+After you upload a file, the **Image** tile shows a preview, and the **File** tile shows the
+file's name. Point at the tile to show its icons: **Replace** picks another file, **Download**
+downloads the saved file, and **Delete** removes it. **Delete** isn't offered while the
+attribute's **Is Required** is on. Changes are kept when you save the product.
 
 ## Settings each type supports
 

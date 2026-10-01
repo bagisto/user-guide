@@ -9,6 +9,8 @@ You don't set these up in the admin panel. Ask your developer or hosting provide
 - **The scheduler.** The server runs Bagisto's scheduler every minute, and the scheduler starts each task below at its time.
 - **A queue worker, if the store uses a queue.** A store can hand slow work, such as sending emails, to a background queue so pages stay fast. When it does, a queue worker must keep running to process that work. When the store doesn't use a queue, this work happens straight away and no worker is needed.
 
+Real-time admin notifications are optional. They need a real-time messaging service set up by your developer and, when the store uses a queue, a queue worker for the notifications. With them, the bell in the admin header updates on its own as orders come in. Without them, it updates when you open or reload a page. See [Notifications](./admin-panel.md#notifications).
+
 ## Tasks that run on a timetable
 
 | What happens | When | Page |

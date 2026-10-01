@@ -26,7 +26,7 @@ Starting an order doesn't change the customer's own cart on the storefront.
 If no customer matches, the panel shows **No customers found**.
 
 1. Click **Create Customer**. The **Create New Customer** form opens.
-2. Enter the **First Name**, **Last Name** and **Email**, and any **Contact Number** or **Date of Birth**.
+2. Enter the **First Name**, **Last Name** and **Email**, and any **Phone** or **Date of Birth**.
 3. Choose the **Gender**.
 4. Choose the **Channel**, and a **Customer Group** if needed.
 5. Click **Save customer**. The **Create Order for** page opens for the new customer.
@@ -62,7 +62,7 @@ The **Address** step appears once the cart has a product.
 ### Add a new address
 
 1. Under **Billing Address** or **Shipping Address**, click **Add Address**.
-2. Fill in **Company Name**, **Vat ID**, **First Name**, **Last Name**, **Email**, **Street Address**, **Country**, **State**, **City**, **Zip/Postcode** and **Telephone**.
+2. Fill in **Company Name**, **Vat ID**, **First Name**, **Last Name**, **Email**, **Street Address**, **Country**, **State**, **City**, **Zip/Postcode** and **Phone**.
 3. To keep the address on the customer's account, tick **Save this to address book**.
 4. Click **Save**.
 

@@ -13,7 +13,7 @@ Go to **Customers >> Customers**.
 
 Each row shows three columns:
 
-- **Customer Name / Email / Contact Number**: **N/A** when the customer has no phone number.
+- **Customer Name / Email / Phone**: **N/A** when the customer has no phone number.
 - **Status / Gender / Group / Customer ID / Channel**: an **Active** or **Inactive** badge, with a
   **Suspended** badge when the account is suspended, then the gender, the customer group, the
   channel the account belongs to and the customer's ID.
@@ -24,7 +24,7 @@ Each row shows three columns:
 
 - **Search:** type in the search box to find customers by name or email.
 - **Filter:** click **Filter** and filter by **Channel**, **Customer ID**, **Customer Name**,
-  **Email**, **Contact Number**, **Status** or **Group**.
+  **Email**, **Phone**, **Status** or **Group**.
 - **Sort:** click **Customer Name**, **Email**, **Status**, **Gender**, **Channel**, **Order
   Count** or **Address Count** in the header row.
 
@@ -67,7 +67,7 @@ The file lists the customers with their details, without the **Revenue** column.
 |---|---|
 | **First Name** and **Last Name** | The customer's name. Both are required. |
 | **Email** | Required. The customer signs in with it, and it can belong to only one account in a channel. |
-| **Contact Number** | Optional. A phone number can belong to only one customer. |
+| **Phone** | Optional. A phone number can belong to only one customer. |
 | **Date of Birth** | Optional. It must be before today. |
 | **Gender** | Required: **Male**, **Female** or **Other**. |
 | **Channel** | Required. The channel the account belongs to. The customer signs in on that channel's storefront, and you can't change the channel later. |

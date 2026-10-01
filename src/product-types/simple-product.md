@@ -30,8 +30,10 @@ engraving text, gift wrapping or a file to print, each with an optional extra pr
 5. Fill in the fields for the type:
    - **Text** or **Textarea**: shoppers type text. Enter the **Max Characters** and the
      **Price**.
-   - **File**: shoppers upload a file. Enter the **Supported File Extensions** and the
-     **Price**.
+   - **File**: shoppers upload a file. Enter the **Supported File Extensions**, separated by
+     commas, such as `jpg, png, pdf`, and the **Price**. Web pages, SVG images, XML and script
+     files are never accepted, even when listed, and each file can be up to 10 MB. When a file
+     is refused, the shopper sees *Invalid file extension found.*
    - **Date**, **Datetime** or **Time**: shoppers pick a date or time. Enter the **Price**.
    - **Checkbox**, **Radio**, **Select** or **Multiselect**: shoppers choose from a list.
      You add the list's choices after saving the option.

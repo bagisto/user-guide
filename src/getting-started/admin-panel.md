@@ -88,6 +88,8 @@ The sidebar lists the parts of the admin panel. Click an item to open it; its pa
 
 A notification is added when an order is placed, and updated when the order's status changes.
 
+The bell is refreshed when you open or reload a page. If your developer has set up real-time notifications, it also updates on its own as orders come in or change.
+
 1. Click the bell in the header. Up to five unread notifications are listed, each with the order's status.
 2. Click a notification to open the order. The notification is marked as read.
 

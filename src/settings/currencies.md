@@ -28,7 +28,7 @@ The message *Currency created successfully.* appears and the currency is added t
 |---|---|
 | **Code** | The three-letter currency code, such as `USD`, `EUR` or `KES`. Each code can be used only once, and you can't change it later. |
 | **Name** | The name of the currency. |
-| **Symbol** | The symbol shown with prices, such as `$` or `KSh`. If you leave it empty, the usual symbol for the code is used, or the code itself when a **Currency Position** is chosen. |
+| **Symbol** | The symbol shown with prices, such as `$` or `KSh`. If you leave it empty, the usual symbol for the code is used, or the code itself when a **Currency Position** is chosen. It can't contain `<`, `>`, `"`, `'`, a backtick or `&`. |
 | **Decimal** | How many digits to show after the decimal separator, from 0 to 9, such as `2`. |
 | **Group Separator** | The character between groups of thousands, such as the comma in `1,000`. Use a comma, dot, apostrophe or space. |
 | **Decimal Separator** | The character before the decimals, such as the dot in `10.50`. Use a comma or dot. |

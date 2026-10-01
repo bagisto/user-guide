@@ -26,9 +26,11 @@ The review's text is replaced on the shopper's screen by the translation, in the
 
 | Setting | What it does |
 |---|---|
-| **Enabled** under **Configure >> Magic AI >> General** | Switches Magic AI on for your store |
+| **Enabled** under **Configure >> Magic AI >> General** | Switches every Magic AI feature on or off. Reviews are translated only while it's on |
 | **Enabled** in the **Review Translation** section of **Configure >> Magic AI >> Storefront Features** | Shows the **Translate** button, per channel |
 | **Model** in the **Review Translation** section | The model that translates reviews, per channel |
+
+Switching **Enabled** off under **General** doesn't hide the **Translate** button. Shoppers still see it, and get an error when they click it. To remove the button, switch **Enabled** off in the **Review Translation** section.
 
 Save the API key of the chosen model's provider under **Configure >> Magic AI >> Providers** first. To set everything up, see [Enable the storefront features](../configure/magic-ai.md#enable-the-storefront-features).
 

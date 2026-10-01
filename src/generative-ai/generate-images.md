@@ -23,7 +23,7 @@ The tile appears only when Magic AI and image generation are both switched on. I
 4. Enter the **Number of Images**, from 1 to 10.
 5. Choose the **Size**: **Square (1:1)**, **Portrait (2:3)** or **Landscape (3:2)**.
 6. Choose the **Quality**: **High**, **Medium** or **Low**.
-7. Choose the **Model**, for example **OpenAI: GPT Image 1.5**. The list holds the image models of the providers allowed for image generation.
+7. Choose the **Model**. Each option names the provider and then the model, for example **OpenAI: GPT Image 2.5 Flare**. The list holds the image models of the providers allowed for image generation, and changes as providers release and retire models.
 8. Click **Generate**. The button reads **Generating...** while the images are created.
 
    <ImagePopup src="/images/generative-ai/image-generate.png" alt="The AI Image Generation dialog with Prompt, Number of Images, Size, Quality and Model filled in" />

@@ -32,7 +32,7 @@ All settings are saved per channel, so choose the channel at the top of the scre
 3. Enter the **Project ID**.
 4. Enter the **API Key**.
 5. Enter the **Site Key**.
-6. Enter the **Score Threshold**, a number from `0.0` to `1.0` with one decimal place. The default is `0.5`.
+6. Enter the **Score Threshold**, any number from `0` to `1`, such as `0.5`, which is the default.
 7. Click **Save Configuration**.
 
 <ImagePopup src="/images/configure/google-captcha-settings.png" alt="Credentials section of the Google Captcha screen with Status turned on and placeholder keys" />

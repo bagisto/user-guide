@@ -13,4 +13,8 @@ The **Settings** section of the **Products** screen turns two storefront feature
 
 **Image Search Option:** Shows a camera icon in the storefront search bar, so shoppers can search by uploading a photo. The photo is recognized in the shopper's browser, or by an AI model when [AI image search](../generative-ai/image-search.md) is switched on under [Generative AI (Magic AI)](./magic-ai.md#enable-the-storefront-features).
 
-The **Products** screen also holds the [Storefront](./frontend.md), [Product View Page](./product-view-page.md), [Review](./review.md), [Social Share](./social-share.md), [Cart View Page](./cart-view-page.md), [Image Size](./image-size.md), [Attribute](./attribute.md) and [Omnibus Price Disclosure](./omnibus.md) sections. The wishlist is turned on or off under [Customer Settings](./settings.md#wishlist).
+The **Products** screen also holds the [Storefront](./frontend.md), [Product View Page](./product-view-page.md), [Review](./review.md), [Social Share](./social-share.md), [Cart View Page](./cart-view-page.md), [Attribute](./attribute.md) and [Omnibus Price Disclosure](./omnibus.md) sections. The wishlist is turned on or off under [Customer Settings](./settings.md#wishlist).
+
+## Differences in Bagisto 2.4
+
+In Bagisto 2.4, the **Products** screen also has **Small Image**, **Medium Image** and **Large image** sections, which set the width and height of product images and the placeholder shown when a product has no image. Bagisto 2.5 doesn't have these settings: image sizes and the placeholder come from your storefront theme.

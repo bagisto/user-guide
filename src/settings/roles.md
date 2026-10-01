@@ -38,6 +38,7 @@ A role with **Custom** permissions needs at least one permission. If a role ends
 - Menu items and buttons for things the role can't do are hidden.
 - If the user opens a page the role doesn't allow, for example from a bookmark, a **401 Unauthorized** page is shown.
 - If the role doesn't include **Dashboard**, the user goes straight to the first page the role allows when they sign in.
+- If the role lets the user manage roles or users, they can give out only the permissions their own role has. **All** isn't offered under **Permissions**, the permission tree lists only their own permissions, and roles and users with more access than theirs have no edit or delete icon.
 
 ## Edit or delete a role
 

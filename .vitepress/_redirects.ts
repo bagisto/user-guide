@@ -59,7 +59,8 @@ const MARKETPLACE_PAGES: Record<string, string> = {
  * area; captcha and the payment and shipping method pages were consolidated
  * onto the pages that already documented them; the weight unit, custom scripts
  * and guest checkout pages were merged into the configuration screen pages that
- * hold those settings.
+ * hold those settings. The image size page went when Bagisto 2.5 removed those
+ * settings from the Products screen, so it lands on that screen's page.
  */
 const MOVED_PAGES: Record<string, string> = {
   "settings/themes": "/appearance/themes",
@@ -71,6 +72,7 @@ const MOVED_PAGES: Record<string, string> = {
   "configure/weight-unit": "/configure/general",
   "configure/custom-scripts": "/configure/content.html#custom-scripts",
   "configure/guest-checkout": "/configure/checkout.html#guest-checkout",
+  "configure/image-size": "/configure/configurable-choices",
 };
 
 /**
@@ -152,7 +154,7 @@ const LEGACY_PATHS: Record<string, string> = {
   "configure/product-view-page.html": "/configure/product-view-page",
   "configure/cart-view-page.html": "/configure/cart-view-page",
   "configure/frontend.html": "/configure/frontend",
-  "configure/image-size.html": "/configure/image-size",
+  "configure/image-size.html": "/configure/configurable-choices",
   "configure/review.html": "/configure/review",
   "configure/attribute.html": "/configure/attribute",
   "configure/captcha.html": "/configure/google-captcha",

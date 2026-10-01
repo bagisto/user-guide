@@ -69,7 +69,7 @@ options of a configurable product: **Dropdown**, **Color Swatch**, **Image Swatc
 To add an option:
 
 1. In **Options**, click **Add Row**. The **Add Option** dialog opens.
-2. For a **Color Swatch**, pick the **Color**. For an **Image Swatch**, upload the **Image**.
+2. For a **Color Swatch**, pick the **Color**. For an **Image Swatch**, upload the **Image** in BMP, JPEG, JPG, PNG or WEBP format.
 3. Enter the **Admin** name.
 4. Enter the option's name in each language. The name in your default channel's default
    language is required.

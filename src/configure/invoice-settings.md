@@ -45,7 +45,7 @@ The due date of an invoice is its invoice date plus the due duration. The invoic
 |---|---|
 | **Display Invoice ID in Header** | Prints the invoice ID at the top of the PDF. It's on in a new store. |
 | **Display Order ID in Header** | Prints the order ID at the top of the PDF. It's on in a new store. |
-| **Logo** | The logo printed on the PDF. A size of 131 × 30 pixels is recommended. |
+| **Logo** | The logo printed on the PDF: a BMP, JPEG, JPG, PNG or WEBP image of up to 2 MB (2048 KB). A size of 131 × 30 pixels is recommended. |
 | **Footer text** | Saved with these settings, but not printed on the invoice PDF. |
 
 The same PDF is used when you [print an invoice](../orders/create-invoice.md#print-an-invoice) in the admin panel, when customers download it from their account, and when it's attached to the invoice email. The two switches apply to the whole store. The logo is per channel, and the footer text is per channel and per language.

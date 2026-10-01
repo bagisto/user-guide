@@ -88,7 +88,7 @@ When the channel has more than one language, choose the language at the top righ
 
 <ImagePopup src="/images/appearance/section-actions.png" alt="The ⋯ menu of a section row open, with Duplicate and Delete" />
 
-**Footer Links** is pinned to the bottom of the page, so it has no drag handle and can't be duplicated.
+**Services Content** and **Footer Links** are pinned to the bottom of the page, so they have no drag handle and can't be duplicated.
 
 ::: warning Deleting can't be undone
 A deleted section disappears from the storefront straight away. Deleting isn't held for publishing. To take a section off the storefront and keep it, switch it off instead.
@@ -141,11 +141,11 @@ Creating or duplicating a section saves it straight away, still hidden from shop
 
    <ImagePopup src="/images/appearance/create-section.png" alt="The Create Section panel with Product Carousel chosen and the name Summer Picks" />
 
-4. Click **Save Section**. The section is added at the bottom of the list, above **Footer Links**, shown switched on with an unsaved change, and its fields open.
+4. Click **Save Section**. The section is added at the bottom of the list, above the pinned **Services Content** and **Footer Links**, shown switched on with an unsaved change, and its fields open.
 5. Fill in the fields.
 6. Click **Publish**.
 
-A channel can have only one **Footer Links** section, so that type isn't offered once the channel has one.
+A channel can have only one **Services Content** and one **Footer Links** section, so those types aren't offered once the channel has one.
 
 ## Section types
 

@@ -66,11 +66,15 @@ Stripe takes card payments. After clicking **Place Order**, shoppers pay on Stri
 |---|---|
 | **API Key** | The live secret key from your Stripe account, used while **Sandbox** is off. |
 | **API Publishable Key** | The live publishable key from your Stripe account, used while **Sandbox** is off. |
+| **Webhook Signing Secret** | The signing secret of the webhook you add in your Stripe dashboard, used while **Sandbox** is off. The help text under the field lists the address and the events to set up in Stripe. |
 | **Sandbox** | Uses the test keys below, so no real payments are taken. |
 | **API Test Secret Key** | The test secret key from your Stripe account, used while **Sandbox** is on. |
 | **API Test Publishable Key** | The test publishable key from your Stripe account, used while **Sandbox** is on. |
+| **Webhook Test Signing Secret** | The signing secret of the webhook you add in Stripe's test mode, used while **Sandbox** is on. |
 
 Stripe appears at checkout only while both keys for the current mode have a value.
+
+The webhook lets Stripe tell your store about payments, refunds and disputes. With it, an order is placed even when a shopper pays and doesn't return to the store, and a refund you make in Stripe, or a shopper's dispute, is recorded on the order. Without the signing secret for the current mode, the store refuses these messages.
 
 ## Razorpay
 

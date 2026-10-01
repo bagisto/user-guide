@@ -33,7 +33,9 @@ A customer who was asked to sign in on the way to another page returns to that p
 
 ## Social login
 
-Social login lets customers sign in with their Facebook, X (Twitter), Google, LinkedIn or GitHub account. The button of each provider you switch on appears under the storefront's sign-in and sign-up forms. The first time a customer signs in with a provider, the store creates their account, or links it to an existing account with the same email address. It then opens their account profile, or the page they were on when they were asked to sign in.
+Social login lets customers sign in with their Facebook, X (Twitter), Google, LinkedIn or GitHub account. The button of each provider you switch on appears under the storefront's sign-in and sign-up forms. The first time a customer signs in with a provider, the store creates an account for them. It then opens their account profile, or the page they were on when they were asked to sign in.
+
+The store doesn't link a provider to an account that already exists. A customer whose email address already has an account sees *An account with this email already exists. Please sign in with your email and password.*, and must sign in with their password instead. A customer whose account is inactive can't sign in with a provider either.
 
 Before you start, create an app in the developer console of each provider you want to offer, and copy its client ID and client secret.
 

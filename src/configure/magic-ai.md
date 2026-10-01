@@ -80,4 +80,6 @@ The storefront features respond to what a shopper does: searching with a photo, 
 
 Choose a model from a provider whose key you have saved. Until a **Model** is saved, the feature uses a default OpenAI model, which needs an OpenAI key.
 
-**AI Image Search** and **Personalized Checkout Message** work only while **Enabled** is also on under **General**. To stop review translation, switch **Review Translation** off: switching off **Enabled** under **General** doesn't hide the **Translate** button.
+All three storefront features work only while **Enabled** is also on under **General**. Switching it off there stops review translation too, but doesn't hide the **Translate** button: shoppers still see it, and get an error when they click it. To remove the button, switch **Enabled** off in the **Review Translation** section.
+
+Providers retire models over time. When you upgrade Bagisto, a feature whose saved model has been retired moves to the replacement that provider recommends, and **Model** shows the new one. Check the three features after an upgrade, because a different model can cost more or answer differently.
