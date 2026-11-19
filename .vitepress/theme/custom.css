@@ -904,3 +904,57 @@ html::-webkit-scrollbar-corner,
     transition: none;
   }
 }
+
+.VPHero .actions a[href*="ai-agentchecker"] {
+  position: relative;
+  overflow: hidden;
+  color: #fff !important;
+  border: 0 !important;
+  background: linear-gradient(120deg, #7c3aed, #2563eb, #06b6d4, #d946ef, #7c3aed) !important;
+  background-size: 300% 300% !important;
+  animation: ai-btn-flow 6s ease infinite, ai-btn-glow 2.4s ease-in-out infinite;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.VPHero .actions a[href*="ai-agentchecker"]::before {
+  content: "✨ ";
+}
+
+.VPHero .actions a[href*="ai-agentchecker"]::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.55), transparent);
+  transform: skewX(-20deg);
+  animation: ai-btn-shine 3.5s ease-in-out infinite;
+}
+
+.VPHero .actions a[href*="ai-agentchecker"]:hover {
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 8px 28px rgba(124, 58, 237, 0.55);
+}
+
+@keyframes ai-btn-flow {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes ai-btn-glow {
+  0%, 100% { box-shadow: 0 0 10px rgba(124, 58, 237, 0.45), 0 0 22px rgba(6, 182, 212, 0.25); }
+  50% { box-shadow: 0 0 18px rgba(217, 70, 239, 0.6), 0 0 34px rgba(37, 99, 235, 0.4); }
+}
+
+@keyframes ai-btn-shine {
+  0%, 60% { left: -60%; }
+  100% { left: 130%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .VPHero .actions a[href*="ai-agentchecker"],
+  .VPHero .actions a[href*="ai-agentchecker"]::after {
+    animation: none;
+  }
+}
