@@ -215,7 +215,7 @@ onUnmounted(() => observer?.disconnect())
   animation: mp-spin 8s linear infinite;
 }
 
-:global(.dark) .mp-card {
+.dark .mp-card {
   --mp-bg: var(--vp-c-bg-soft);
   --mp-ink: linear-gradient(100deg, #a78bfa 0%, #60a5fa 55%, #22d3ee 100%);
   --mp-accent: #a78bfa;

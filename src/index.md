@@ -14,10 +14,10 @@ hero:
       text: Store Setup Checklist
       link: /getting-started/store-setup-checklist
     - theme: alt
-      text: Admin Panel
-      link: /getting-started/admin-panel
+      text: Check AI Readiness
+      link: https://ai-agentchecker.bagisto.com
   image:
-    src: /logo-large.png
+    src: /logo-large.svg
     alt: Bagisto
 
 features:
